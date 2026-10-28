@@ -1,0 +1,7 @@
+# Source hashes must survive checkout regardless of core.autocrlf.
+research/*.py text eol=lf
+research/*.md text eol=lf
+research/tests/*.py text eol=lf
+
+# Preserve measured artifact bytes (including recorded Windows line endings).
+research/results/** -text
