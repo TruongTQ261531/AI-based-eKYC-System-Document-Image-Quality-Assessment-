@@ -1,4 +1,8 @@
 # Local data and third-party model caches
+research/data/
+research/cache/
+research/private_outputs/
+research/results/**/*.jsonl
 outputs/
 full_dataset_original/
 dataset_224/

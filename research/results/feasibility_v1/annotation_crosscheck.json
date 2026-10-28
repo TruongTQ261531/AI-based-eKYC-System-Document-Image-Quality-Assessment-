@@ -1,0 +1,8 @@
+{
+  "mirror_url": "https://raw.githubusercontent.com/fcakyon/midv500/2f1cd74e0bb8da2301a96e3fb0cd9f17005ed08c/coco/midv500_coco.json",
+  "sha256": "8f49136904ee497a4377b6b53581de782a1698eebcc9b3d0e379c2b589e39bf0",
+  "compared_frame_annotations": 600,
+  "exact_quad_matches": 600,
+  "independent_mirror_physical_ids": 2,
+  "limitation": "Mirror covers only two document types; original FTP annotation integrity still recorded separately."
+}

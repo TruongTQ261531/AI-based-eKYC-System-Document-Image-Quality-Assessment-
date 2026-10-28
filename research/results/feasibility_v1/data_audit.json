@@ -1,0 +1,21 @@
+{
+  "frames_in_annotations": 21000,
+  "reference_annotations": 100,
+  "sampled_frames": 3500,
+  "physical_documents": 50,
+  "source_counts": {
+    "midv2019": 1000,
+    "midv500": 2500
+  },
+  "quality_label_counts": {
+    "Distorted": 500,
+    "Dark": 500,
+    "Clean": 1500,
+    "Blur": 500,
+    "Cropped": 500
+  },
+  "missing_images": [],
+  "annotations_source_hash": "be4d5f260754c1bccf8de8fbf104580556b37318232cee43f6bbe9e7503a6b53",
+  "license": "MIDV author FTP: CC BY-SA 2.5, source transport FTP; JSON entry CRC checked",
+  "selection": "Every clip, frame numbers 01/08/15/22/30; reference images not independent benchmark rows"
+}
