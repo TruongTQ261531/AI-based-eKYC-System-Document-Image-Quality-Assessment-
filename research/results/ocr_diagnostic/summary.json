@@ -1,0 +1,162 @@
+[
+  {
+    "engine": "easyocr_en",
+    "method": "unmasked_oracle_field",
+    "n": 58,
+    "macro_cer": 0.6066609444195651,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5694864048338368
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "single",
+    "n": 58,
+    "macro_cer": 0.6078103697069215,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5709969788519638
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "medoid",
+    "n": 58,
+    "macro_cer": 0.6378391053391053,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5906344410876133
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_05",
+    "n": 58,
+    "macro_cer": 0.6262011743046225,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.581570996978852
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_10",
+    "n": 58,
+    "macro_cer": 0.6227528984425535,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5785498489425982
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_20",
+    "n": 58,
+    "macro_cer": 0.6210287605115191,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5770392749244713
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "adaptive_uncalibrated",
+    "n": 58,
+    "macro_cer": 0.6066609444195651,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5694864048338368
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_constant",
+    "n": 58,
+    "macro_cer": 0.6066609444195651,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5694864048338368
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_adaptive",
+    "n": 58,
+    "macro_cer": 0.6066609444195651,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5694864048338368
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_fields",
+    "n": 58,
+    "macro_cer": 0.6066609444195651,
+    "exact_match": 0.10344827586206896,
+    "micro_cer": 0.5694864048338368
+  },
+  {
+    "engine": "vietocr",
+    "method": "unmasked_oracle_field",
+    "n": 58,
+    "macro_cer": 0.478868822748133,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5800604229607251
+  },
+  {
+    "engine": "vietocr",
+    "method": "single",
+    "n": 58,
+    "macro_cer": 0.48844736680943573,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5876132930513596
+  },
+  {
+    "engine": "vietocr",
+    "method": "medoid",
+    "n": 58,
+    "macro_cer": 0.5179013897979414,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.6072507552870091
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_05",
+    "n": 58,
+    "macro_cer": 0.5045393208324243,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5966767371601208
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_10",
+    "n": 58,
+    "macro_cer": 0.5045393208324243,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5966767371601208
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_20",
+    "n": 58,
+    "macro_cer": 0.5028151829013897,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.595166163141994
+  },
+  {
+    "engine": "vietocr",
+    "method": "adaptive_uncalibrated",
+    "n": 58,
+    "macro_cer": 0.48844736680943573,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5876132930513596
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_constant",
+    "n": 58,
+    "macro_cer": 0.478868822748133,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5800604229607251
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_adaptive",
+    "n": 58,
+    "macro_cer": 0.478868822748133,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5800604229607251
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_fields",
+    "n": 58,
+    "macro_cer": 0.478868822748133,
+    "exact_match": 0.13793103448275862,
+    "micro_cer": 0.5800604229607251
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "protocol_sha256": "0ed5fa7244c614e91deb7c2e56cae2eaf80f8bbeb70c26d25458e6f4080db3a3",
+  "support_code_sha256": "718ae54f535c2e6226dd0471ed00d34ee8d794b44a4542fcb4e11965d2352e05",
+  "benchmark_sha256": "ed6e8e0c40ebecdd1c4c109cee7c729cb606b31c9ab444c7821e6d4ab19909bc",
+  "predictions_sha256": "350017c954b79ff139bda51c3b352057bf276a0e13e3e017b9c4b9fda61e8312",
+  "samples_sha256": "ea08963450eadc39fdbec9c4e4168bd91b09f4dd8d077590883698da66b24014",
+  "input_set_sha256": "38f58508af0b6ad86b98bc710b9339ffc68d1d0a30e8b98cf427e746154b8af8",
+  "seeds": [
+    13,
+    29,
+    47,
+    71,
+    97
+  ],
+  "distinct_images": 3500,
+  "independent_physical_documents": 50,
+  "inference_passes": 1,
+  "views_per_image": 3,
+  "model_training_runs": 0,
+  "alpha": 0.1,
+  "elapsed_seconds": 686.75,
+  "prediction_seconds_sum": 1752.5240000002086,
+  "localizer_failures": 631,
+  "analysis_repeats": "calibration split repetitions, not independent model training",
+  "scope": "geometric/text-field area retention, not OCR accuracy or eKYC verification"
+}

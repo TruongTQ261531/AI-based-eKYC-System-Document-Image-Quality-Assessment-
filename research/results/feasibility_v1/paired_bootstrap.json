@@ -1,0 +1,101 @@
+[
+  {
+    "method": "single",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": 0.0,
+    "cluster_bootstrap_95_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "medoid",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": 0.03623696764018176,
+    "cluster_bootstrap_95_ci": [
+      0.026579658339649946,
+      0.04695041712337109
+    ]
+  },
+  {
+    "method": "fixed_05",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": 0.011202785245614574,
+    "cluster_bootstrap_95_ci": [
+      -0.0317233939758036,
+      0.055825261253105996
+    ]
+  },
+  {
+    "method": "fixed_10",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": -0.3540752364108092,
+    "cluster_bootstrap_95_ci": [
+      -0.3921030659181258,
+      -0.31230633998137436
+    ]
+  },
+  {
+    "method": "fixed_20",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": -0.36717615793884073,
+    "cluster_bootstrap_95_ci": [
+      -0.3976475525641794,
+      -0.3326417031878726
+    ]
+  },
+  {
+    "method": "adaptive_uncalibrated",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": 0.05916311452117078,
+    "cluster_bootstrap_95_ci": [
+      0.03672337920675516,
+      0.08366383509925705
+    ]
+  },
+  {
+    "method": "calibrated_constant",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": -0.3666930661514011,
+    "cluster_bootstrap_95_ci": [
+      -0.40032825770368724,
+      -0.3333540747577422
+    ]
+  },
+  {
+    "method": "calibrated_adaptive",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": -0.36717615793884073,
+    "cluster_bootstrap_95_ci": [
+      -0.39855787815883437,
+      -0.33230696308374097
+    ]
+  },
+  {
+    "method": "calibrated_fields",
+    "reference": "single",
+    "metric": "utility_success",
+    "physical_groups": 30,
+    "mean_paired_delta": -0.36717615793884073,
+    "cluster_bootstrap_95_ci": [
+      -0.4003231895721732,
+      -0.3337464454308654
+    ]
+  }
+]

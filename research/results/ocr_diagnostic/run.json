@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "e13706432697287caa1dc284374db0d88a439dd8ccd1db9209b297ffd45adba3",
+  "code_sha256": "3d22f57f5b2c0ae59dcf450d52c7ea7fd491f78caeed53ac2896f132904e4d35",
+  "prediction_cache_sha256": "350017c954b79ff139bda51c3b352057bf276a0e13e3e017b9c4b9fda61e8312",
+  "field_cases": 58,
+  "physical_documents": 29,
+  "method_engine_rows": 1160,
+  "elapsed_seconds": 44.59,
+  "field_selection": "fixed hash among fully visible Latin GT fields",
+  "scope": "oracle-controlled crop-induced OCR harm; NOT end-to-end card OCR accuracy",
+  "saved_personal_text_or_images": false
+}
