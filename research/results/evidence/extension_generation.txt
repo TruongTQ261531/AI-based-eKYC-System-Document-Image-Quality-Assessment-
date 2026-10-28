@@ -1,0 +1,308 @@
+{
+  "neural": [
+    {
+      "method": "neural_single",
+      "mean_iou": {
+        "mean": 0.7882087606317445,
+        "split_sd": 0.005213469326695065,
+        "defined_splits": 5
+      },
+      "field_retention_98": {
+        "mean": 0.9990407618697092,
+        "split_sd": 0.0013134971996140534,
+        "defined_splits": 5
+      },
+      "utility_success": {
+        "mean": 0.6958828479163731,
+        "split_sd": 0.006405141806794405,
+        "defined_splits": 5
+      },
+      "auto_accept": {
+        "mean": 0.7061904761904763,
+        "split_sd": 0.00664963811608047,
+        "defined_splits": 5
+      },
+      "crop_harm_given_auto": {
+        "mean": 0.0013606071825249908,
+        "split_sd": 0.0018631599615084977,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "neural_fixed_05",
+      "mean_iou": {
+        "mean": 0.6696935256863054,
+        "split_sd": 0.003974942795073205,
+        "defined_splits": 5
+      },
+      "field_retention_98": {
+        "mean": 0.9990407618697092,
+        "split_sd": 0.0013134971996140534,
+        "defined_splits": 5
+      },
+      "utility_success": {
+        "mean": 0.7073776360224391,
+        "split_sd": 0.006902470018198088,
+        "defined_splits": 5
+      },
+      "auto_accept": {
+        "mean": 0.7061904761904763,
+        "split_sd": 0.00664963811608047,
+        "defined_splits": 5
+      },
+      "crop_harm_given_auto": {
+        "mean": 0.0013606071825249908,
+        "split_sd": 0.0018631599615084977,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "single",
+      "mean_iou": {
+        "mean": 0.6435971942992561,
+        "split_sd": 0.008368827276984778,
+        "defined_splits": 5
+      },
+      "field_retention_98": {
+        "mean": 0.8764167411580972,
+        "split_sd": 0.012206530527272785,
+        "defined_splits": 5
+      },
+      "utility_success": {
+        "mean": 0.36879566963853194,
+        "split_sd": 0.015671544791504628,
+        "defined_splits": 5
+      },
+      "auto_accept": {
+        "mean": 0.6519047619047619,
+        "split_sd": 0.01351072472296295,
+        "defined_splits": 5
+      },
+      "crop_harm_given_auto": {
+        "mean": 0.18914718282087872,
+        "split_sd": 0.015589496117716643,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "adaptive_uncalibrated",
+      "mean_iou": {
+        "mean": 0.6142285730761902,
+        "split_sd": 0.009185926643230343,
+        "defined_splits": 5
+      },
+      "field_retention_98": {
+        "mean": 0.9243028627888125,
+        "split_sd": 0.013290402967531706,
+        "defined_splits": 5
+      },
+      "utility_success": {
+        "mean": 0.424820396163913,
+        "split_sd": 0.01239498771680465,
+        "defined_splits": 5
+      },
+      "auto_accept": {
+        "mean": 0.5928571428571429,
+        "split_sd": 0.01773769574494208,
+        "defined_splits": 5
+      },
+      "crop_harm_given_auto": {
+        "mean": 0.12071378929950359,
+        "split_sd": 0.017320789190047706,
+        "defined_splits": 5
+      }
+    }
+  ],
+  "partial": [
+    {
+      "method": "neural_original",
+      "auto_accept": {
+        "mean": 0.7061904761904764,
+        "split_sd": 0.006649638116080492,
+        "defined_splits": 5
+      },
+      "harmful_auto": {
+        "mean": 0.0009523809523809523,
+        "split_sd": 0.0013041013273932525,
+        "defined_splits": 5
+      },
+      "conditional_harm": {
+        "mean": 0.0013606071825249908,
+        "split_sd": 0.0018631599615084977,
+        "defined_splits": 5
+      },
+      "accepted_utility": {
+        "mean": 0.6919047619047621,
+        "split_sd": 0.0064329790886220395,
+        "defined_splits": 5
+      },
+      "correct_field_auto": {
+        "mean": 0.7052380952380954,
+        "split_sd": 0.007788298682760097,
+        "defined_splits": 5
+      },
+      "mean_iou": {
+        "mean": 0.7882087606317445,
+        "split_sd": 0.005213469326695065,
+        "defined_splits": 5
+      },
+      "median_area_ratio": {
+        "mean": 1.0011270430510897,
+        "split_sd": 0.0001817018004216073,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "partial_triangle",
+      "auto_accept": {
+        "mean": 0.8428571428571429,
+        "split_sd": 0.009066396554599888,
+        "defined_splits": 5
+      },
+      "harmful_auto": {
+        "mean": 0.1376190476190476,
+        "split_sd": 0.006162942431211789,
+        "defined_splits": 5
+      },
+      "conditional_harm": {
+        "mean": 0.16325875163942508,
+        "split_sd": 0.006556598024060789,
+        "defined_splits": 5
+      },
+      "accepted_utility": {
+        "mean": 0.6919047619047621,
+        "split_sd": 0.0064329790886220395,
+        "defined_splits": 5
+      },
+      "correct_field_auto": {
+        "mean": 0.7052380952380954,
+        "split_sd": 0.007788298682760097,
+        "defined_splits": 5
+      },
+      "mean_iou": {
+        "mean": 0.8167762625771828,
+        "split_sd": 0.004546134794825407,
+        "defined_splits": 5
+      },
+      "median_area_ratio": {
+        "mean": 0.9996173973545143,
+        "split_sd": 0.00021519110831683932,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "partial_parallelogram",
+      "auto_accept": {
+        "mean": 0.8428571428571429,
+        "split_sd": 0.009066396554599888,
+        "defined_splits": 5
+      },
+      "harmful_auto": {
+        "mean": 0.026190476190476188,
+        "split_sd": 0.0053239713749995,
+        "defined_splits": 5
+      },
+      "conditional_harm": {
+        "mean": 0.031082932210615317,
+        "split_sd": 0.006408693206608788,
+        "defined_splits": 5
+      },
+      "accepted_utility": {
+        "mean": 0.7371428571428572,
+        "split_sd": 0.005976143046671892,
+        "defined_splits": 5
+      },
+      "correct_field_auto": {
+        "mean": 0.8166666666666667,
+        "split_sd": 0.011040022018447233,
+        "defined_splits": 5
+      },
+      "mean_iou": {
+        "mean": 0.8796018933590538,
+        "split_sd": 0.004395937018459775,
+        "defined_splits": 5
+      },
+      "median_area_ratio": {
+        "mean": 1.000011757287517,
+        "split_sd": 0.00022420023029048487,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "partial_support",
+      "auto_accept": {
+        "mean": 0.8428571428571429,
+        "split_sd": 0.009066396554599888,
+        "defined_splits": 5
+      },
+      "harmful_auto": {
+        "mean": 0.0009523809523809523,
+        "split_sd": 0.0013041013273932525,
+        "defined_splits": 5
+      },
+      "conditional_harm": {
+        "mean": 0.0011396103896103896,
+        "split_sd": 0.00156048634793713,
+        "defined_splits": 5
+      },
+      "accepted_utility": {
+        "mean": 0.6919047619047621,
+        "split_sd": 0.0064329790886220395,
+        "defined_splits": 5
+      },
+      "correct_field_auto": {
+        "mean": 0.8419047619047618,
+        "split_sd": 0.010045249099870968,
+        "defined_splits": 5
+      },
+      "mean_iou": {
+        "mean": 0.8184323066165989,
+        "split_sd": 0.004808011661837426,
+        "defined_splits": 5
+      },
+      "median_area_ratio": {
+        "mean": 1.0011270430510897,
+        "split_sd": 0.0001817018004216073,
+        "defined_splits": 5
+      }
+    },
+    {
+      "method": "partial_support_padded",
+      "auto_accept": {
+        "mean": 0.8428571428571429,
+        "split_sd": 0.009066396554599888,
+        "defined_splits": 5
+      },
+      "harmful_auto": {
+        "mean": 0.0009523809523809523,
+        "split_sd": 0.0013041013273932525,
+        "defined_splits": 5
+      },
+      "conditional_harm": {
+        "mean": 0.0011396103896103896,
+        "split_sd": 0.00156048634793713,
+        "defined_splits": 5
+      },
+      "accepted_utility": {
+        "mean": 0.6933333333333336,
+        "split_sd": 0.006162942431211812,
+        "defined_splits": 5
+      },
+      "correct_field_auto": {
+        "mean": 0.8419047619047618,
+        "split_sd": 0.010045249099870968,
+        "defined_splits": 5
+      },
+      "mean_iou": {
+        "mean": 0.8173212513563365,
+        "split_sd": 0.005001300345553337,
+        "defined_splits": 5
+      },
+      "median_area_ratio": {
+        "mean": 1.0011270430510897,
+        "split_sd": 0.0001817018004216073,
+        "defined_splits": 5
+      }
+    }
+  ]
+}

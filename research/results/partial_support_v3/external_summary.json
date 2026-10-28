@@ -1,0 +1,72 @@
+[
+  {
+    "method": "neural_original",
+    "harmful_auto": 0.0,
+    "auto_accept": 0.9,
+    "correct_field_auto": 0.9,
+    "accepted_utility": 0.8,
+    "harm": 0.0,
+    "n": 20,
+    "physical_ids": 20,
+    "conditional_harm": 0.0,
+    "mean_iou": 0.890729187876078,
+    "median_area_ratio": 0.9968640415651182,
+    "invisible_auto": 0
+  },
+  {
+    "method": "partial_triangle",
+    "harmful_auto": 0.05,
+    "auto_accept": 0.95,
+    "correct_field_auto": 0.9,
+    "accepted_utility": 0.8,
+    "harm": 0.05,
+    "n": 20,
+    "physical_ids": 20,
+    "conditional_harm": 0.05263157894736842,
+    "mean_iou": 0.9127360510617596,
+    "median_area_ratio": 0.9955451927579855,
+    "invisible_auto": 0
+  },
+  {
+    "method": "partial_parallelogram",
+    "harmful_auto": 0.0,
+    "auto_accept": 0.95,
+    "correct_field_auto": 0.95,
+    "accepted_utility": 0.8,
+    "harm": 0.0,
+    "n": 20,
+    "physical_ids": 20,
+    "conditional_harm": 0.0,
+    "mean_iou": 0.9347861767159531,
+    "median_area_ratio": 0.9955451927579855,
+    "invisible_auto": 0
+  },
+  {
+    "method": "partial_support",
+    "harmful_auto": 0.0,
+    "auto_accept": 0.95,
+    "correct_field_auto": 0.95,
+    "accepted_utility": 0.8,
+    "harm": 0.0,
+    "n": 20,
+    "physical_ids": 20,
+    "conditional_harm": 0.0,
+    "mean_iou": 0.8983478605582716,
+    "median_area_ratio": 0.9968640415651182,
+    "invisible_auto": 0
+  },
+  {
+    "method": "partial_support_padded",
+    "harmful_auto": 0.0,
+    "auto_accept": 0.95,
+    "correct_field_auto": 0.95,
+    "accepted_utility": 0.8,
+    "harm": 0.0,
+    "n": 20,
+    "physical_ids": 20,
+    "conditional_harm": 0.0,
+    "mean_iou": 0.8985576030835402,
+    "median_area_ratio": 0.9968640415651182,
+    "invisible_auto": 0
+  }
+]

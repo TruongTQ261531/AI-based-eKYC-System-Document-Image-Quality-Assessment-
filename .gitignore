@@ -3,6 +3,8 @@ research/data/
 research/cache/
 research/private_outputs/
 research/results/**/*.jsonl
+research/results/repeat/*
+!research/results/repeat/run.json
 outputs/
 full_dataset_original/
 dataset_224/

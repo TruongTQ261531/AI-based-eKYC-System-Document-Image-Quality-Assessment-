@@ -1,0 +1,21 @@
+{
+  "kind": "evaluation implementation corrections, not method tuning",
+  "selected_id_count_unchanged": 20,
+  "sampling_and_operating_points_unchanged": true,
+  "corrections": [
+    {
+      "issue": "Some canonical JPEGs have APP/EXIF segments longer than the initial 8192-byte prefix",
+      "fix": "Read a bounded prefix up to 1 MiB when necessary, retaining every selected identity",
+      "stage": "acquisition, before external inference"
+    },
+    {
+      "issue": "PIL raw header dimensions differed from OpenCV EXIF-oriented decode on ten photo59 cases",
+      "fix": "Use EXIF-oriented dimensions and assert agreement with decoded pixels before geometry scoring",
+      "invalid_first_pass_invisible_cases": 3,
+      "corrected_pass_invisible_cases": 0,
+      "superseded_results": "pre_exif_correction/; invalid, excluded from all reported conclusions",
+      "regression_test": "research/tests/test_external_and_neural.py::test_exif_annotation_frame_matches_opencv_decoding"
+    }
+  ],
+  "elapsed_time_note": "Current run.json elapsed_seconds is cached-image inference/scoring. Earlier acquisition plus invalid first scoring took 313.27 seconds; this is not pure data-download latency."
+}

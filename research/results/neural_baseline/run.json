@@ -1,0 +1,40 @@
+{
+  "model_sha256": "7f9f5a8935b2eb22b3ee0245d34996063f54562df390d34714af2d76928695bc",
+  "code_sha256": "7827bc474ab2f3d8841486f97c40833186858b3477e42cf85f10894a2a9c0a42",
+  "protocol_sha256": "10c6b018a4f11a83eb329c062c57b8a7a727edb62751f92f30662f2af1af3987",
+  "primary_images": 700,
+  "external_images": 20,
+  "localizer_failures": 203,
+  "elapsed_seconds": 179.94,
+  "prediction_seconds_sum": 176.9090000000433,
+  "io_contract": {
+    "inputs": [
+      {
+        "name": "img",
+        "shape": [
+          "batch_size",
+          3,
+          256,
+          256
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "heatmap",
+        "shape": [
+          "Sigmoidheatmap_dim_0",
+          4,
+          128,
+          128
+        ],
+        "type": "tensor(float)"
+      }
+    ]
+  },
+  "training_split_provenance": "Not independently established; possible MIDV exposure",
+  "upstream_package_numeric_equivalence_verified": false,
+  "device": "CPU",
+  "new_dependencies": false
+}

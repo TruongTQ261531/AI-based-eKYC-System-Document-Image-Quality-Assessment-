@@ -1,0 +1,256 @@
+{
+  "protocol_sha256": "3f62f170b2dae090d0bbe06c8aa247b0d6a1d42ff363355c96247828c86bea04",
+  "code_sha256": "ae56a52e0a4c3cc814c41c16e4e2c0bb61a9adfb8025e946b92907b779039799",
+  "images": 20,
+  "physical_ids": 20,
+  "template_types": 10,
+  "calibration_images": 0,
+  "transferred_primary_seed": 13,
+  "raw_image_bytes": 77412400,
+  "elapsed_seconds": 7.86,
+  "scope": "Small new-identity check; overlapping template types; no OOD coverage guarantee",
+  "license": "MIDV-2020 CC BY-SA 2.5; synthetic portraits attributed to Generated Photos",
+  "transport": "Author FTP; TAR header checksums/metadata sizes and block hashes; whole TAR MD5 not verified",
+  "selection": [
+    {
+      "uid": "midv2020/alb_id/05",
+      "filename": "05.jpg",
+      "image_sha256": "c655bdda8136d573637aa3e626d86736d495e9226e1cd51a6b1316db2db852f5",
+      "file_bytes": 5083386,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "ae6bf80d2c539d7bfc9805fce4beb2f9b53d239cc32393214f467a1b5b6d82b1"
+    },
+    {
+      "uid": "midv2020/alb_id/59",
+      "filename": "59.jpg",
+      "image_sha256": "3a6852737fddd0cb30cf81a726c81aecaed48ca7f63f69b79d653fb3db69b54d",
+      "file_bytes": 2805831,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "dab8a5b044a7fda93f1b0cdf3d2ce66c893a0b7777a6bdb3ffb052174023008e"
+    },
+    {
+      "uid": "midv2020/aze_passport/05",
+      "filename": "05.jpg",
+      "image_sha256": "7d1cdbc9d76a8e45cedfd480c559628c51fef054b69a3c85331c60716d5b0fb1",
+      "file_bytes": 4418172,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 19,
+      "prediction_sha256": "bf536ba67e7c477ceeba5aaebf2b543eaa024dc9f34ba160355cf58fd36235dc"
+    },
+    {
+      "uid": "midv2020/aze_passport/59",
+      "filename": "59.jpg",
+      "image_sha256": "f487acffff95e404c96256f23d2bd8809f5b7b4fbc0020311c11baff5b55002b",
+      "file_bytes": 2871847,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 19,
+      "prediction_sha256": "7eff2e9894105a1b83368c713f95d3ff0a7a47237e6e4a882e6a2ea83a6562df"
+    },
+    {
+      "uid": "midv2020/esp_id/05",
+      "filename": "05.jpg",
+      "image_sha256": "acd083ce5b9d20d3cd004a53c347b00281f18b09fab6e3f5cd732ec413f48613",
+      "file_bytes": 4585595,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "6c27086f3c4fe1462577eb51ecf7c1a2ceac17f1ee5900a3211b3576d20d4227"
+    },
+    {
+      "uid": "midv2020/esp_id/59",
+      "filename": "59.jpg",
+      "image_sha256": "82c415d41bf8f8c938a006ff0d1c307a8e7c5f7641e11bec39ab08bb08f81318",
+      "file_bytes": 2615779,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "c4a63abb80f3fb96c7dd5b55ae678c6a3360399b9752bd9121bca18f473b1cd0"
+    },
+    {
+      "uid": "midv2020/est_id/05",
+      "filename": "05.jpg",
+      "image_sha256": "2eedb0128d7b118add2f74c100d068982bfbbccbf976d05e38541f2e54246134",
+      "file_bytes": 4818292,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 10,
+      "prediction_sha256": "bec0254c2f33967eed6ad7b878c6487486ed20c2c1472e828cf8a074ca2ffb43"
+    },
+    {
+      "uid": "midv2020/est_id/59",
+      "filename": "59.jpg",
+      "image_sha256": "26cecfccdc5872a7f36b61ea05900545b7a2282451a719da616950a1a45c54ae",
+      "file_bytes": 2879793,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 10,
+      "prediction_sha256": "1c07867ad18463d8d96e0e9c60e4c7cef42a29e56d8f1602506f92f15252e440"
+    },
+    {
+      "uid": "midv2020/fin_id/05",
+      "filename": "05.jpg",
+      "image_sha256": "39ddadabee166fcbf1f68bfe2e06e249bd9d2a8a34ba427b80a1075c6234ede4",
+      "file_bytes": 4895229,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "8c55ca354f2a6d81624dd9c560018e2b3480090701f45b66f3ec622fd75f9aea"
+    },
+    {
+      "uid": "midv2020/fin_id/59",
+      "filename": "59.jpg",
+      "image_sha256": "9522ef3ff852fcae9191c44157745de5a298e0003a621d066b10ea473199af4b",
+      "file_bytes": 2537771,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 11,
+      "prediction_sha256": "d0e04991c2a2771d526342dbfe9b6e4df25675f9c23acf1f455fee1599531476"
+    },
+    {
+      "uid": "midv2020/grc_passport/05",
+      "filename": "05.jpg",
+      "image_sha256": "ab99707aa92cf079a45b9240e0489f8ae4a70b274369233f727c38d74ff4d745",
+      "file_bytes": 4657573,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 19,
+      "prediction_sha256": "bec0254c2f33967eed6ad7b878c6487486ed20c2c1472e828cf8a074ca2ffb43"
+    },
+    {
+      "uid": "midv2020/grc_passport/59",
+      "filename": "59.jpg",
+      "image_sha256": "fe486ae7a877be07345bed34fc80a29322583f0801e2ffa6743dc77db908cd33",
+      "file_bytes": 2848505,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 19,
+      "prediction_sha256": "a9ca3591f93185f44bb2340dd91592a3e09cd652773efd0e82aefb82b98bc4d1"
+    },
+    {
+      "uid": "midv2020/lva_passport/05",
+      "filename": "05.jpg",
+      "image_sha256": "8f11c577dceda61ba36f2814efbc6539981245bc619a63b3b38592379903c91d",
+      "file_bytes": 4645542,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 17,
+      "prediction_sha256": "c5d8e7e3fe471b8a2701a890354ef3457a16442eb93039b513bd7c8469894020"
+    },
+    {
+      "uid": "midv2020/lva_passport/59",
+      "filename": "59.jpg",
+      "image_sha256": "e5ad9e0a3802005ccbcbafe1ca76423b391724253e812f1b0c3b293c26f1231a",
+      "file_bytes": 2767476,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 17,
+      "prediction_sha256": "e92e9f4321e910523f23d027980349315e5ca4edb30227953b9d9f0b478499df"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/05",
+      "filename": "05.jpg",
+      "image_sha256": "e7a79270224cabeb129b1b81144f65f91378c49f976e882a617622a8273c3d2c",
+      "file_bytes": 5490088,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 8,
+      "prediction_sha256": "b6039869b6c0daa58d40f9cd959d7869e92387f8b33edb40fe226e9c17975a84"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/59",
+      "filename": "59.jpg",
+      "image_sha256": "81efd88d5fbe4dc2ce347aa882e554512dff2de7f2a9821e0103475ce6cb3bb1",
+      "file_bytes": 2811183,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 8,
+      "prediction_sha256": "393b370c0618d939afdb6a5843f9ae86520f737341e19450c63637652f8a9f37"
+    },
+    {
+      "uid": "midv2020/srb_passport/05",
+      "filename": "05.jpg",
+      "image_sha256": "49e7474328637eb478f9cb02ba23547f14476bafdcfee73715d109db8d343fc5",
+      "file_bytes": 6173704,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 18,
+      "prediction_sha256": "c54ba0d3707dca8fe2b47a3d44422241d4eb05af77346ba1e83e9d8a18dbaeb1"
+    },
+    {
+      "uid": "midv2020/srb_passport/59",
+      "filename": "59.jpg",
+      "image_sha256": "29d804de5bdd44dc265ffca5471caff9c808f4da457d65c8a67c1c72c7fc0e63",
+      "file_bytes": 2616575,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 18,
+      "prediction_sha256": "d9e5c589a78b60b2b176a603b31c1b8aabea9ebb580c2ae6a51b541b42cecdee"
+    },
+    {
+      "uid": "midv2020/svk_id/05",
+      "filename": "05.jpg",
+      "image_sha256": "ff8c846b3dcd1ee0ce93349fb669e9f3b30d3f642dc4514bdcaa43c34e582417",
+      "file_bytes": 5007331,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 10,
+      "prediction_sha256": "1054198861eba6812532640ebfb53dcef16445ce297d006decddfe25f9d84d99"
+    },
+    {
+      "uid": "midv2020/svk_id/59",
+      "filename": "59.jpg",
+      "image_sha256": "6a87802a0b00c1cd1320f356b1c9cde01ade7072e802f9230828dfdaf7f6f166",
+      "file_bytes": 2882728,
+      "dimensions": [
+        2268,
+        4032
+      ],
+      "text_fields": 10,
+      "prediction_sha256": "441670480011c4f0dd273877e61d1be12cb4e395f0d10648acb7bbecb4b378db"
+    }
+  ]
+}

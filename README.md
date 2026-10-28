@@ -1,5 +1,10 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
+Nhánh này chứa phần **nghiên cứu riêng**, không thay runtime mentor. Xem
+[báo cáo kết quả thực nghiệm](research/REPORT_VI.md) và
+[trạng thái để tiếp tục công việc](research/STATUS.md).
+Bản mentor được giữ tại nhánh `mentor/ekyc-v3.2.0`.
+
 API **3.2.0** cải thiện chọn toàn vùng thẻ/góc bo tròn và đọc thông tin theo nội dung từng giấy tờ. Form chỉ hiện các mục đã đọc, có cả mã/lớp học sinh hoặc hạng bằng lái, cùng phần văn bản chưa phân loại. [Cách sửa và kiểm thử](docs/document_recovery_and_fields.md). Giữ FastAPI, `.venv`, 4 động tác/180 giây và PAD MiniFASNet; hệ thống không tự phê duyệt eKYC.
 
 ## Chạy

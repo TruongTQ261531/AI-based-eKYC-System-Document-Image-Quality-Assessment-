@@ -1,0 +1,178 @@
+[
+  {
+    "method": "partial_triangle",
+    "reference": "neural_original",
+    "metric": "auto_accept",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.10238095238095236,
+      0.17619047619047615
+    ]
+  },
+  {
+    "method": "partial_triangle",
+    "reference": "neural_original",
+    "metric": "harmful_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523808,
+    "ci95": [
+      0.10238095238095239,
+      0.17380952380952383
+    ]
+  },
+  {
+    "method": "partial_triangle",
+    "reference": "neural_original",
+    "metric": "accepted_utility",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "partial_triangle",
+    "reference": "neural_original",
+    "metric": "correct_field_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "partial_parallelogram",
+    "reference": "neural_original",
+    "metric": "auto_accept",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.10232142857142854,
+      0.1738095238095238
+    ]
+  },
+  {
+    "method": "partial_parallelogram",
+    "reference": "neural_original",
+    "metric": "harmful_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.03095238095238095,
+    "ci95": [
+      0.014285714285714285,
+      0.04999999999999998
+    ]
+  },
+  {
+    "method": "partial_parallelogram",
+    "reference": "neural_original",
+    "metric": "accepted_utility",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.04523809523809522,
+    "ci95": [
+      0.026190476190476177,
+      0.06666666666666664
+    ]
+  },
+  {
+    "method": "partial_parallelogram",
+    "reference": "neural_original",
+    "metric": "correct_field_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.10714285714285712,
+    "ci95": [
+      0.07142857142857141,
+      0.14285714285714285
+    ]
+  },
+  {
+    "method": "partial_support",
+    "reference": "neural_original",
+    "metric": "auto_accept",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.10238095238095236,
+      0.1738095238095238
+    ]
+  },
+  {
+    "method": "partial_support",
+    "reference": "neural_original",
+    "metric": "harmful_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "partial_support",
+    "reference": "neural_original",
+    "metric": "accepted_utility",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "partial_support",
+    "reference": "neural_original",
+    "metric": "correct_field_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.10476190476190474,
+      0.17142857142857143
+    ]
+  },
+  {
+    "method": "partial_support_padded",
+    "reference": "neural_original",
+    "metric": "auto_accept",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.10238095238095238,
+      0.17380952380952377
+    ]
+  },
+  {
+    "method": "partial_support_padded",
+    "reference": "neural_original",
+    "metric": "harmful_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "method": "partial_support_padded",
+    "reference": "neural_original",
+    "metric": "accepted_utility",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.00238095238095238,
+    "ci95": [
+      0.0,
+      0.00714285714285714
+    ]
+  },
+  {
+    "method": "partial_support_padded",
+    "reference": "neural_original",
+    "metric": "correct_field_auto",
+    "physical_ids": 30,
+    "mean_paired_delta": 0.13809523809523805,
+    "ci95": [
+      0.09999999999999999,
+      0.1738095238095238
+    ]
+  }
+]

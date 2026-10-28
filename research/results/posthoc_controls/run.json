@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "2170863838b2946391aa519eb9828c3b69777d007cf5555c40a64427a4dd35ec",
+  "code_sha256": "a0284cc704b39fd8627bf11b32d2ad0796d848503e74e52a0d07c4ed7b60bb2f",
+  "timing": "Post-hoc after v3; not confirmatory",
+  "new_neural_calls": 0,
+  "training_runs": 0,
+  "primary_images": 700,
+  "external_images": 20
+}
