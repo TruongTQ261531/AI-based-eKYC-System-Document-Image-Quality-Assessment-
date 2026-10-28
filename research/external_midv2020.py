@@ -90,8 +90,15 @@ def acquire_class(args):
         raise ValueError('Selected photo/template order differs; do not guess correspondence')
     records=[]
     for photo,template in zip(photos,templates):
-        prefix=read_range('/midv-2020/dataset/templates.tar',template['data_offset'],min(template['bytes'],8192))
-        with Image.open(io.BytesIO(prefix)) as image:rw,rh=image.size
+        # Some source JPEGs have large APP/EXIF segments before the SOF marker.
+        # Increase the bounded prefix instead of dropping those identities.
+        for prefix_limit in (8192,65536,262144,1048576):
+            prefix=read_range('/midv-2020/dataset/templates.tar',template['data_offset'],min(template['bytes'],prefix_limit))
+            try:
+                with Image.open(io.BytesIO(prefix)) as image:rw,rh=image.size
+                break
+            except OSError:
+                if len(prefix)==template['bytes'] or prefix_limit==1048576:raise
         raw=read_range('/midv-2020/dataset/photo.tar',photo['data_offset'],photo['bytes'])
         with Image.open(io.BytesIO(raw)) as image:width,height=image.size;image.verify()
         (folder/photo['filename']).write_bytes(raw)
