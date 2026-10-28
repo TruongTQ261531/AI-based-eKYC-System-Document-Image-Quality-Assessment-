@@ -1,0 +1,16 @@
+{
+  "python": "3.11.4",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "packages": {
+    "numpy": "2.4.6",
+    "opencv-python-headless": "5.0.0.93",
+    "torch": "2.14.1",
+    "easyocr": "1.7.2",
+    "vietocr": "0.3.13",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  },
+  "device": "CPU",
+  "new_dependencies_installed": false
+}

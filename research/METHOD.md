@@ -16,6 +16,8 @@ grayscale, and 0.75-scale round trip. The IoU medoid provides q. Endpoint
 disagreement projected onto each edge normal and its observed edge support
 produce a positive scale s_i, with a source-pixel and document-size floor.
 Unreliable view agreement falls back explicitly to full-frame review.
+These are separate deterministic localizer calls on correlated views, not
+statistically independent samples. No independence of these views is assumed.
 
 For calibration target polygons T (visible card, or projected visible text
 fields), compute

@@ -1,0 +1,218 @@
+[
+  {
+    "engine": "easyocr_en",
+    "method": "single",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0011494252873563216,
+    "ci95": [
+      0.0,
+      0.0034482758620689646
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "medoid",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.031178160919540225,
+    "ci95": [
+      0.0,
+      0.07040229885057471
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_05",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.019540229885057468,
+    "ci95": [
+      0.0,
+      0.057471264367816084
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_10",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.016091954022988502,
+    "ci95": [
+      0.0,
+      0.04655172413793102
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "fixed_20",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.014367816091954021,
+    "ci95": [
+      0.0,
+      0.04310344827586207
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "adaptive_uncalibrated",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_constant",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_adaptive",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "easyocr_en",
+    "method": "calibrated_fields",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "single",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.009578544061302681,
+    "ci95": [
+      0.0,
+      0.028735632183908042
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "medoid",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.039032567049808425,
+    "ci95": [
+      0.008620689655172414,
+      0.07998084291187739
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_05",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.02567049808429118,
+    "ci95": [
+      0.0,
+      0.06570881226053638
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_10",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.02567049808429118,
+    "ci95": [
+      0.0,
+      0.06230363984674305
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "fixed_20",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.023946360153256706,
+    "ci95": [
+      0.0,
+      0.062260536398467424
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "adaptive_uncalibrated",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.009578544061302681,
+    "ci95": [
+      0.0,
+      0.028735632183908042
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_constant",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_adaptive",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "engine": "vietocr",
+    "method": "calibrated_fields",
+    "reference": "unmasked_oracle_field",
+    "metric": "macro_cer",
+    "physical_ids": 29,
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  }
+]

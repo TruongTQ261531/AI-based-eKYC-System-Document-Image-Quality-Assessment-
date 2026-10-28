@@ -1,0 +1,37 @@
+{
+  "inference_repeated": false,
+  "new_inference_passes": 0,
+  "files": [
+    {
+      "file": "data_audit.json",
+      "identical": true,
+      "sha256": "337893bca92d9671ace6cdada200f31d2efdc4436e2dc19b2de2da6a2d952f52"
+    },
+    {
+      "file": "splits.json",
+      "identical": true,
+      "sha256": "b21c776d2d7650fad894e3da31d7602de7f9bfe742fe9844717b7402cb59e9f0"
+    },
+    {
+      "file": "summary.json",
+      "identical": true,
+      "sha256": "3c38f337f19137a4d12ea9da92473c2f5cd6b675d41eae2b0208e31faecb63cb"
+    },
+    {
+      "file": "summary.csv",
+      "identical": true,
+      "sha256": "17012ba6530d28ab122ceb0d801720907b621bbc5ecb6b267e69b269bc0fdae5"
+    },
+    {
+      "file": "paired_bootstrap.json",
+      "identical": true,
+      "sha256": "7c9a99c361f2c53ac5512e46159f93b8ebdc73d7181582f72323cdd40dde23eb"
+    },
+    {
+      "file": "per_image.jsonl.gz",
+      "identical": true,
+      "sha256": "24a19973c052c8a72c7da610c0bd06ed9a1637cc7332060845ff329480102b88"
+    }
+  ],
+  "metadata_note": "Legacy repeat/run.json inference_passes=1 describes the cached experiment, not new inference."
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "method": "single",
+    "auto_accept": {
+      "mean": 0.6825714285714286,
+      "split_sd": 0.008912525263692914
+    },
+    "harmful_auto": {
+      "mean": 0.14657142857142857,
+      "split_sd": 0.004459441816549781
+    },
+    "conditional_harm": {
+      "mean": 0.21471962630599442,
+      "split_sd": 0.005225188717563216
+    },
+    "correct_field_auto": {
+      "mean": 0.536,
+      "split_sd": 0.006987192689342736
+    },
+    "accepted_utility": {
+      "mean": 0.38219047619047625,
+      "split_sd": 0.013034926047053525
+    }
+  },
+  {
+    "method": "adaptive_uncalibrated",
+    "auto_accept": {
+      "mean": 0.6177142857142858,
+      "split_sd": 0.008501033683978965
+    },
+    "harmful_auto": {
+      "mean": 0.09104761904761903,
+      "split_sd": 0.0061019308493871815
+    },
+    "conditional_harm": {
+      "mean": 0.14735573880450467,
+      "split_sd": 0.008772333046077878
+    },
+    "correct_field_auto": {
+      "mean": 0.5266666666666667,
+      "split_sd": 0.0071190078036790765
+    },
+    "accepted_utility": {
+      "mean": 0.43961904761904763,
+      "split_sd": 0.010990616488334572
+    }
+  }
+]

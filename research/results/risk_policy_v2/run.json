@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "43acacc7f54e7fe4e499c938641c0ef96220eff796e6a8d53028b233d4adc678",
+  "code_sha256": "fef471ee12410bf5993309b3e5636a0c5003c59681fda1fb206c9929fa7eca74",
+  "primary_predictions_sha256": "350017c954b79ff139bda51c3b352057bf276a0e13e3e017b9c4b9fda61e8312",
+  "grids_evaluated": 105000,
+  "distinct_images": 3500,
+  "seeds": [
+    13,
+    29,
+    47,
+    71,
+    97
+  ],
+  "new_model_inference_passes": 0,
+  "training_runs": 0,
+  "monotonicity_violations": 0,
+  "elapsed_seconds": 27.33,
+  "exploratory_after_v1": true
+}
