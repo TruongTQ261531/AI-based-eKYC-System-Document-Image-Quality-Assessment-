@@ -1,3 +1,15 @@
+# Local data and third-party model caches
+outputs/
+full_dataset_original/
+dataset_224/
+data/thumbnail_cache/
+models/*
+!models/quality_original_transfer.pth
+!models/quality_original_transfer.report.json
+!models/model_sources.json
+!models/identity_model_sources.json
+versions/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

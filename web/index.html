@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eKYC · Camera xác minh</title>
+<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<header><small>EKYC · CAMERA</small><h1>Xác minh bằng camera</h1><p>Chụp giấy tờ → Kiểm tra thông tin → Thử thách cử động và đối chiếu selfie</p></header>
+<main>
+<nav aria-label="Tiến trình"><span id="step-card" aria-current="step">1. Giấy tờ</span><span id="step-form">2. Thông tin</span><span id="step-selfie">3. Selfie</span></nav>
+<p id="status" role="status" aria-live="polite">Bấm “Mở camera” để bắt đầu.</p>
+<section id="feedback-panel" class="panel feedback" aria-live="polite" hidden>
+<h2>Điều chỉnh ảnh chụp</h2><div id="feedback-items"></div>
+</section>
+<section id="camera-panel" class="panel">
+<h2 id="camera-title">Chụp giấy tờ</h2><p id="camera-help">Đặt toàn bộ giấy tờ trong khung, tránh lóa và giữ máy ổn định. Khung chỉ để căn chỉnh, ảnh gửi đi giữ toàn bộ khung hình.</p>
+<div id="camera-view">
+<video id="video" autoplay muted playsinline></video>
+<img id="preview" alt="Ảnh vừa chụp để xác nhận" hidden>
+<div id="guide" aria-hidden="true"></div>
+<canvas id="geometry-overlay" aria-hidden="true" hidden></canvas>
+<span id="gaze-target" aria-hidden="true" hidden></span>
+</div>
+<section id="liveness-panel" hidden>
+<h3>Kiểm tra cử động và chống giả qua camera</h3>
+<p id="live-instruction" role="status" aria-live="polite">Bấm bắt đầu và làm theo từng hướng dẫn.</p>
+<progress id="live-progress" max="4" value="0" aria-label="Tiến độ thử thách"></progress>
+<p id="live-progress-label"></p>
+<dl class="geometry-metrics">
+<div><dt>Hướng đầu (yaw / pitch / roll)</dt><dd id="live-pose">Chưa đo</dd></div>
+<div><dt>Hai mắt</dt><dd id="live-eyes">Chưa đo</dd></div>
+<div><dt>Ánh nhìn tương đối</dt><dd id="live-gaze">Chưa đo</dd></div>
+<div><dt>Độ nét / độ sáng vùng mặt</dt><dd id="live-quality">Chưa đo</dd></div>
+<div><dt>Kiểm tra chống giả</dt><dd id="live-pad">Chưa đo</dd></div>
+</dl>
+<p class="privacy">Các chỉ số là ước lượng. Kính phản chiếu, ánh sáng và góc camera có thể ảnh hưởng kết quả.</p>
+</section>
+<p id="resolution"></p>
+<div class="buttons">
+<button id="open-camera" type="button">Mở camera</button>
+<button id="switch-camera" type="button" hidden>Đổi camera</button>
+<button id="start-liveness" type="button" hidden>Bắt đầu kiểm tra cử động</button>
+<button id="cancel-liveness" type="button" class="secondary" hidden>Dừng kiểm tra</button>
+<button id="capture" type="button" hidden>Chụp ảnh</button>
+<button id="retake" type="button" hidden>Chụp lại</button>
+<button id="confirm-photo" type="button" hidden>Xác nhận ảnh</button>
+</div>
+</section>
+<section id="form-panel" class="panel" hidden>
+<h2>Kiểm tra thông tin giấy tờ</h2>
+<p id="document-kind"></p>
+<p id="recognized-summary">Chỉ hiển thị các mục đã đọc được trên giấy tờ. Mỗi loại thẻ có thể có thông tin khác nhau; bạn có thể sửa trước khi xác nhận.</p>
+<form id="details-form" autocomplete="off">
+<div id="row-full_name" hidden><label for="full_name">Họ tên</label><input id="full_name" name="full_name" maxlength="150" autocomplete="off"></div>
+<div id="row-id_number" hidden><label for="id_number">Số giấy tờ</label><input id="id_number" name="id_number" maxlength="40" autocomplete="off"></div>
+<div id="row-dob" hidden><label for="dob">Ngày sinh</label><input id="dob" name="dob" type="date"></div>
+<div id="row-gender" hidden><label for="gender">Giới tính</label><input id="gender" name="gender" maxlength="30" autocomplete="off"></div>
+<div id="row-address" hidden><label for="address">Địa chỉ</label><textarea id="address" name="address" maxlength="500" rows="3"></textarea></div>
+<div id="dynamic-fields"></div>
+<details id="ocr-text-panel" hidden><summary>Toàn bộ văn bản OCR đã đọc</summary><pre id="ocr-text"></pre><p class="privacy">Văn bản có thể sai ký tự hoặc chưa gán đúng mục. Nội dung không được coi là đã xác minh.</p></details>
+<p id="portrait-status" role="status"></p>
+<button id="confirm-details" type="submit">Xác nhận thông tin và chụp selfie</button>
+<button id="retake-document" type="button" class="secondary">Chụp lại giấy tờ và đọc lại thông tin</button>
+</form>
+</section>
+<section id="result-panel" class="panel" hidden><h2>Kết quả đối chiếu</h2><p id="result-title"></p><p id="result-score"></p><ul id="result-checks"></ul><p id="result-liveness"></p><p class="privacy">Kiểm tra chống giả bằng camera RGB có thể bỏ sót hoặc từ chối nhầm. Chưa được kiểm định trên cuộc gọi Zalo/Messenger, camera giả và deepfake; cần kiểm tra thêm trước khi phê duyệt eKYC.</p></section>
+<button id="reset" type="button" class="secondary">Xóa phiên và bắt đầu lại</button>
+<p class="privacy">Ảnh giấy tờ và ảnh chân dung cuối được gửi sau khi bạn xác nhận. Khi bấm “Bắt đầu kiểm tra cử động”, các khung hình camera được gửi để phân tích trong lúc thực hiện thử thách. Luồng này không lưu ảnh, video, OCR hoặc embedding ra tệp; dữ liệu phiên trên RAM hết hạn sau 10 phút và bị xóa sau đối chiếu. Camera tự tắt khi rời trang.</p>
+<p class="privacy">Camera cần localhost hoặc HTTPS. Trên điện thoại, dùng HTTPS với chứng chỉ tin cậy; địa chỉ HTTP của máy tính trong mạng LAN không đáp ứng yêu cầu này.</p>
+</main>
+</body></html>

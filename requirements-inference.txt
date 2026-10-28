@@ -1,0 +1,5 @@
+# Install only into the existing environment with: pip install --no-deps -r requirements-inference.txt
+# VietOCR training/download extras are intentionally unused. See docs/ocr_and_pad.md.
+onnxruntime==1.24.4
+vietocr==0.3.13
+einops==0.2.0
