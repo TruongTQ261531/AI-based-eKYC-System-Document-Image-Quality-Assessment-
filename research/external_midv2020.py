@@ -24,6 +24,14 @@ SIZES = {'photo':4002467840, 'templates':863293440}
 def padded(size): return ((size+511)//512)*512
 
 
+def displayed_geometry(path):
+    with Image.open(path) as image:
+        width,height=image.size;orientation=image.getexif().get(274,1)
+    raw=[width,height]
+    if orientation in (5,6,7,8):width,height=height,width
+    return dict(width=width,height=height,raw_dimensions=raw,exif_orientation=orientation)
+
+
 def header(raw):
     if len(raw)!=512 or raw[257:262]!=b'ustar': raise ValueError('Unexpected TAR header')
     stored=int(raw[148:156].strip(b'\0 '),8)
@@ -83,6 +91,8 @@ def acquire_class(args):
         records=json.loads(record_path.read_text())
         for record in records:
             if digest(folder/record['filename'])!=record['image_sha256']:raise ValueError('Cached external image hash mismatch')
+            record.update(displayed_geometry(folder/record['filename']))
+        save(record_path,records)
         return records
     photos=selected_entries('photo',code,photo_meta,photo_start)
     templates=selected_entries('templates',code,template_meta,template_start)
@@ -121,6 +131,7 @@ def acquire_class(args):
         records.append(dict(code=code,**photo,image_sha256=hashlib.sha256(raw).hexdigest(),
             template_prefix_sha256=hashlib.sha256(prefix).hexdigest(),width=width,height=height,
             template_dimensions=[rw,rh],gt=quad.tolist(),fields=fields))
+        records[-1].update(displayed_geometry(folder/photo['filename']))
     save(record_path,records);print(f'Acquired {code}: 2 external photos',flush=True)
     return records
 
@@ -141,6 +152,8 @@ def main():
         uid=record['code']+'/'+Path(record['filename']).stem
         sample=dict(record,uid='midv2020/'+uid,physical_id=uid,source='midv2020',quality_label='external_photo')
         image=cv2.imdecode(np.fromfile(str(ROOT/record['code']/record['filename']),np.uint8),cv2.IMREAD_COLOR)
+        if image is None or image.shape[:2]!=(sample['height'],sample['width']):
+            raise ValueError('EXIF-oriented source dimensions must match annotation frame')
         pred=predict(image)
         for method in METHODS:
             row=metrics(sample,pred,method,quantiles)
