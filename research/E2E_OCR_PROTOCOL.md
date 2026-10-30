@@ -1,5 +1,22 @@
 # Locked end-to-end OCR experiment, 2026-10-30
 
+## Runtime-only amendment before inspecting OCR accuracy
+
+The initial engineering invocation completed six images before being stopped
+for CPU feasibility; only execution times/route metadata were inspected, not
+OCR accuracy/text outcomes. Its original protocol/manifest/checkpoints remain
+under e2e_ocr_v1, labelled engineering pilot and excluded from main results.
+
+Final schedule v2: pass1 includes all161 images. Pass2/pass3 each freshly infer
+the **same32-image replication panel**: 24 distinct physical IDs from the
+three-corner stratum, four four-corner controls with different primary IDs,
+and four external IDs, selected by fixed SHA256 `e2e-replication-20261030/UID`.
+No accuracy-dependent selection. Primary accuracy uses only full pass1;
+repeat agreement/timing SD compare the matched32 in all three passes, never
+average populations of different size. Total225 image executions. All references
+below to three complete passes mean the complete scheduled sets161/32/32;
+there are **not three full161-image runs**. No cross-pass OCR reuse.
+
 This follow-up addresses the missing downstream evidence in REPORT_VI.md.
 Earlier geometry outcomes are known; no outcome from this new OCR benchmark
 has been inspected when this protocol and runner are committed. This is an

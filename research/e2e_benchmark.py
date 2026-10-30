@@ -14,13 +14,13 @@ import numpy as np
 
 from ekyc.io import StageError
 from research.benchmark import digest,save
-from research.e2e_data import MODELS,load_samples,image_path,source_manifest
+from research.e2e_data import MODELS,load_samples,image_path,source_manifest,replication_panel
 from research.e2e_eval import score,aggregate,target_fields
 from research.e2e_pipeline import Engine,POLICIES,tick,elapsed,policy_image,to_source,raster_hash
 from research.ocr_diagnostic import normalized
 
-OUT=Path('research/results/e2e_ocr_v1')
-CACHE=Path('research/cache/e2e_ocr_v1')
+OUT=Path('research/results/e2e_ocr_v2')
+CACHE=Path('research/cache/e2e_ocr_v2')
 ENGINES=('easyocr_en','vietocr')
 
 
@@ -52,7 +52,8 @@ def prepared_signature(samples):
         model_sources=provenance,image_uids=[s['uid'] for s in samples],
         input_hashes={s['uid']:s['input_sha256'] for s in samples},
         evaluation_annotations_sha256=hash_json([{k:s[k] for k in ('uid','gt','fields')} for s in samples]),
-        repeats=3,order_seeds=[202610301,202610302,202610303],policies=list(POLICIES),engines=list(ENGINES),
+        repeats=3,pass_image_counts=[161,32,32],replication_uids=[s['uid'] for s in replication_panel(samples)],
+        order_seeds=[202610301,202610302,202610303],policies=list(POLICIES),engines=list(ENGINES),
         scope='Predicted-box OCR with spatial field transcription evaluation; not semantic KIE',
         fresh_ocr_across_passes=True,within_image_identical_raster_reuse=True)
     return hash_json(manifest),manifest
@@ -103,7 +104,7 @@ def process_image(engine,sample,repeat,signature):
 def publish(samples,signature,manifest):
     rows=[];executions=0
     for repeat in (1,2,3):
-        for sample in samples:
+        for sample in samples if repeat==1 else replication_panel(samples):
             case=json.loads(checkpoint_path(repeat,sample['uid']).read_text(encoding='utf-8'))
             if case['signature']!=signature:raise ValueError('Checkpoint signature mismatch')
             executions+=case['unique_ocr_executions']
@@ -127,7 +128,7 @@ def publish(samples,signature,manifest):
             expected_corners=sample['expected_corners'],eligible_fields=len(targets),excluded_fields=excluded))
     save(OUT/'sample_audit.json',sample_audit);save(OUT/'manifest.json',dict(signature=signature,**manifest))
     comparisons=[]
-    for sample in samples:
+    for sample in replication_panel(samples):
         for policy in POLICIES:
             for reader in ENGINES:
                 matched=[r for r in rows if r['uid']==sample['uid'] and r['policy']==policy and r['engine']==reader]
@@ -137,7 +138,8 @@ def publish(samples,signature,manifest):
     save(OUT/'repeat_audit.json',dict(compared_image_policy_engine=len(comparisons),
         prediction_mismatches=sum(not r['predictions_identical'] for r in comparisons),
         field_score_mismatches=sum(not r['field_scores_identical'] for r in comparisons),
-        unique_ocr_executions=executions,unique_localizer_calls=len(samples)*3,
+        unique_ocr_executions=executions,unique_localizer_calls=len(samples)+64,
+        replication_panel_images=32,full_sample_passes=1,additional_panel_passes=2,
         no_cross_pass_ocr_cache=True,rows=comparisons))
     print('PUBLISHED',len(rows),'image-policy-engine rows',flush=True)
 
@@ -150,9 +152,10 @@ def main():
     save(lock,dict(signature=signature));save(OUT/'manifest.json',dict(signature=signature,**manifest))
     pending=[]
     for repeat in (1,2,3):
-        order=np.random.default_rng(202610300+repeat).permutation(len(samples))
+        scheduled=samples if repeat==1 else replication_panel(samples)
+        order=np.random.default_rng(202610300+repeat).permutation(len(scheduled))
         for index in order:
-            sample=samples[int(index)];path=checkpoint_path(repeat,sample['uid'])
+            sample=scheduled[int(index)];path=checkpoint_path(repeat,sample['uid'])
             if path.exists():
                 case=json.loads(path.read_text(encoding='utf-8'))
                 if case['signature']!=signature or case['uid']!=sample['uid']:raise ValueError('Invalid completed checkpoint')
@@ -173,7 +176,7 @@ def main():
                 raise
             print(f'E2E pass{repeat} image {index}/{len(pending)} {sample["uid"]} unique_ocr={case["unique_ocr_executions"]} wall={time.perf_counter()-started:.1f}s',flush=True)
         save(OUT/'execution.json',dict(signature=signature,fresh_images_this_invocation=len(pending),
-            elapsed_seconds=time.perf_counter()-started,complete_image_checkpoints=len(samples)*3,
+            elapsed_seconds=time.perf_counter()-started,complete_image_checkpoints=len(samples)+64,
             startup_excluded=True,unexpected_cases_dropped=0))
     publish(samples,signature,manifest)
     event(dict(event='complete_experiment',signature=signature))

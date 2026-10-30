@@ -74,3 +74,17 @@ def source_manifest():
     return dict(weights=records,packages=packages,annotation_manifest_sha256=digest('research/data/sources.json'),
         upstream_training_overlap='Not independently resolved; MIDV exposure possible',
         predictor_receives_ground_truth=False,existing_mentor_runtime_changed=False)
+
+
+def replication_panel(samples):
+    selected=[];seen=set()
+    for stratum,count in (('three_corners',24),('four_corner_control',4),('external',4)):
+        group=sorted([s for s in samples if s['selection_stratum']==stratum],
+            key=lambda s:hashlib.sha256(('e2e-replication-20261030/'+s['uid']).encode()).digest())
+        picked=0
+        for sample in group:
+            if sample['physical_id'] in seen:continue
+            selected.append(sample);seen.add(sample['physical_id']);picked+=1
+            if picked==count:break
+        if picked!=count:raise ValueError('Insufficient distinct IDs for fixed replication panel')
+    return sorted(selected,key=lambda s:s['uid'])
