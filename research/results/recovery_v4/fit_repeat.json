@@ -1,0 +1,16 @@
+{
+  "fit_calls": 2,
+  "byte_identical": true,
+  "hashes": {
+    "selector_models.json": "3ddcba3532ff6f62b42b38e90b6e105896e80a7a513b80947f16ee27574f51a5",
+    "selector_lock.json": "763c6782603841445dd88f457d7b0b9458df85c139b796cecbb00687de91b06f"
+  },
+  "checkpoint_counts": [
+    540,
+    24,
+    24
+  ],
+  "test_scores_opened": false,
+  "code_sha256": "946fbce9be0cd9673f38be568f758b2f8981fa40f1a601826093b5a8d700765c",
+  "meaning": "Deterministic repeated fitting, not independent samples or performance replications"
+}

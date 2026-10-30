@@ -1,0 +1,581 @@
+{
+  "images": 80,
+  "document_ids": 20,
+  "spatial_layouts": 2,
+  "original_generator_configs": 6,
+  "original_language_font_order_groups": 4,
+  "original_structural_aliases": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "protocol_sha256": "3a8dba37a69db61d38ecd595cf111bab2012a25446acf9ff75be30c89de761e1",
+  "generator_sha256": "92fa50d80d86def8d19cac0452184ff017d04d492ec94fefc327c7401608ee3a",
+  "samples": [
+    {
+      "uid": "extra_specimen/two_column/00/full",
+      "physical_id": "extra_specimen/two_column/00",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "c1f745b8134f8a910f31b1e6b4a72fb0000a2ad05e2d761511042a6ff128e8a5"
+    },
+    {
+      "uid": "extra_specimen/two_column/00/corner_clip",
+      "physical_id": "extra_specimen/two_column/00",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "fbec8e2ec9b453d07109c8bb573ee504cd7ad9a94144f246c1affbbc6c384f9d"
+    },
+    {
+      "uid": "extra_specimen/two_column/00/field_clip",
+      "physical_id": "extra_specimen/two_column/00",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "78ab32e12426cbc96f5903d5602274f5ac74835e5f288e136720dc93bdd2495e"
+    },
+    {
+      "uid": "extra_specimen/two_column/00/blur_glare",
+      "physical_id": "extra_specimen/two_column/00",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "483760c0178e0de72be60fb97c308dc3017e4bb4592161196179db5216e26075"
+    },
+    {
+      "uid": "extra_specimen/two_column/01/full",
+      "physical_id": "extra_specimen/two_column/01",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "d9ca2e76457ee68a4ffb5dfa02190be4c5385a9390c5e7efefc67820534c644b"
+    },
+    {
+      "uid": "extra_specimen/two_column/01/corner_clip",
+      "physical_id": "extra_specimen/two_column/01",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "f6510cfe1cf6d86dcb13e69cadd8c81c110452883d706f7ad96c35d7fb904667"
+    },
+    {
+      "uid": "extra_specimen/two_column/01/field_clip",
+      "physical_id": "extra_specimen/two_column/01",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "a470198decb8da42a9fafe620c550ad0768e2d2068c4e5009a2f7e5e131bea43"
+    },
+    {
+      "uid": "extra_specimen/two_column/01/blur_glare",
+      "physical_id": "extra_specimen/two_column/01",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "6df5228d54350fb2365cb7a21037f2de7b000c2d91c85b9e5bb6d274bcf56bf9"
+    },
+    {
+      "uid": "extra_specimen/two_column/02/full",
+      "physical_id": "extra_specimen/two_column/02",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "5235ed7f60e3b9887aca5fea2d92e2fea616a7a9cf698ebe1f5f9f44a9209e5f"
+    },
+    {
+      "uid": "extra_specimen/two_column/02/corner_clip",
+      "physical_id": "extra_specimen/two_column/02",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "26f37a07f96a865e580964d27a84a961ebf668db0becd4f714a71bd25eb6fbc6"
+    },
+    {
+      "uid": "extra_specimen/two_column/02/field_clip",
+      "physical_id": "extra_specimen/two_column/02",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "562d1ef277130832b58ea0f5ed00d729e878ac6e2afcdaded335e12cc6ccbfd9"
+    },
+    {
+      "uid": "extra_specimen/two_column/02/blur_glare",
+      "physical_id": "extra_specimen/two_column/02",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "26779d3c570c07770e043959b3deb6b6752a1f6a711714d0b27dab67ecf1c570"
+    },
+    {
+      "uid": "extra_specimen/two_column/03/full",
+      "physical_id": "extra_specimen/two_column/03",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "ba4a0c5e6dee2ead91a035f8d8f96c195c2add768c11891d94bde1e8f6ce9dfa"
+    },
+    {
+      "uid": "extra_specimen/two_column/03/corner_clip",
+      "physical_id": "extra_specimen/two_column/03",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "907720da825265709d1d081e403baf9ece31b00e98717e9108d2da7bd89b3363"
+    },
+    {
+      "uid": "extra_specimen/two_column/03/field_clip",
+      "physical_id": "extra_specimen/two_column/03",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "e715bf2e4c04acbc6d1b1627335fbe02b5cb7a1be54539f89c97f98448dc4ae4"
+    },
+    {
+      "uid": "extra_specimen/two_column/03/blur_glare",
+      "physical_id": "extra_specimen/two_column/03",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "d7567fd07c11d25f5b687280b35069a567a3bd363e9cd29c34c8f3afed67761a"
+    },
+    {
+      "uid": "extra_specimen/two_column/04/full",
+      "physical_id": "extra_specimen/two_column/04",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "748bd4054a3f746a0eac86f5c6d1ce1d64cff20dcbfaf2e00446898d94d4a873"
+    },
+    {
+      "uid": "extra_specimen/two_column/04/corner_clip",
+      "physical_id": "extra_specimen/two_column/04",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "b7611d041b7449756c17f6476e364e2d07e85c417e752be2d01875308623b883"
+    },
+    {
+      "uid": "extra_specimen/two_column/04/field_clip",
+      "physical_id": "extra_specimen/two_column/04",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "24e86cdfd253613f6749dc34048db7e635d343f314c8d2b330d9c26f58620662"
+    },
+    {
+      "uid": "extra_specimen/two_column/04/blur_glare",
+      "physical_id": "extra_specimen/two_column/04",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "aa0025eebca456ba4b88951fb208e95e68b2e23c5d349f0b8b1c8498c8bea1f0"
+    },
+    {
+      "uid": "extra_specimen/two_column/05/full",
+      "physical_id": "extra_specimen/two_column/05",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "618fe065962e33377d6cbfb3746ac31934f7b47717217b561180ee0c6c0025a4"
+    },
+    {
+      "uid": "extra_specimen/two_column/05/corner_clip",
+      "physical_id": "extra_specimen/two_column/05",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "ede9793318a188146e8ad3c158748096de43939c0f6e6e5fbf1cf335d65b82c3"
+    },
+    {
+      "uid": "extra_specimen/two_column/05/field_clip",
+      "physical_id": "extra_specimen/two_column/05",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "8e7801b3bd69e122920d69f1c10d18ee78dba7cb0eb4c814e9ae1e4cd8e5413e"
+    },
+    {
+      "uid": "extra_specimen/two_column/05/blur_glare",
+      "physical_id": "extra_specimen/two_column/05",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "a86c1f19eb3377341d6110272c02fd361216c8df3fc3d5f0d627cac697764bf5"
+    },
+    {
+      "uid": "extra_specimen/two_column/06/full",
+      "physical_id": "extra_specimen/two_column/06",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "bc6856f3b9d7f3a18934aa39b56b8a7a26bacbe7fc09cf583d38446fcddee592"
+    },
+    {
+      "uid": "extra_specimen/two_column/06/corner_clip",
+      "physical_id": "extra_specimen/two_column/06",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "7ac9dd9e379bd47ed55e85cd0368229107d77361ecfa9eacbcd92c3354c9fec4"
+    },
+    {
+      "uid": "extra_specimen/two_column/06/field_clip",
+      "physical_id": "extra_specimen/two_column/06",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "3812daa2d8cdf4c971b4dcb2708db0731c04d993294ca6066fbd98ab62fe24f0"
+    },
+    {
+      "uid": "extra_specimen/two_column/06/blur_glare",
+      "physical_id": "extra_specimen/two_column/06",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "300587ec4a1d7a7b0da12ed264e0fda0fd066fbaa80338a83d2a14efbd0af56d"
+    },
+    {
+      "uid": "extra_specimen/two_column/07/full",
+      "physical_id": "extra_specimen/two_column/07",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "a8f70f8ce131ee70c69dbc4f744db86567bdedac46bae830b6dae657ed868d1d"
+    },
+    {
+      "uid": "extra_specimen/two_column/07/corner_clip",
+      "physical_id": "extra_specimen/two_column/07",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "704d94caa8f39d066bcdb477adb1ec164dc6c4df7729969efa80afbb9cdf4893"
+    },
+    {
+      "uid": "extra_specimen/two_column/07/field_clip",
+      "physical_id": "extra_specimen/two_column/07",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "33cb109023575f79366c28718d4cf889fe2a350aad4ac9b17c736224821ae6a4"
+    },
+    {
+      "uid": "extra_specimen/two_column/07/blur_glare",
+      "physical_id": "extra_specimen/two_column/07",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "e64be1158a519d40b2b7aab47dd0c45a25a5c16be979caf6c483ed68fd726587"
+    },
+    {
+      "uid": "extra_specimen/two_column/08/full",
+      "physical_id": "extra_specimen/two_column/08",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "7e03eff88450422898cf7f3ec9b06972e0efc32afffd514432a98474cb3e65dd"
+    },
+    {
+      "uid": "extra_specimen/two_column/08/corner_clip",
+      "physical_id": "extra_specimen/two_column/08",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "da911142f7999101d81a3022942155a5ad4439167b5f0b9e610d1904c12ace4f"
+    },
+    {
+      "uid": "extra_specimen/two_column/08/field_clip",
+      "physical_id": "extra_specimen/two_column/08",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "60e222de67302f7435397996b7abf398c1aa4095a6401bfb2d50d41b162571b7"
+    },
+    {
+      "uid": "extra_specimen/two_column/08/blur_glare",
+      "physical_id": "extra_specimen/two_column/08",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "09b619666f0133608d358736e820e8372d9ab2588708dbf0a399cab032f141bc"
+    },
+    {
+      "uid": "extra_specimen/two_column/09/full",
+      "physical_id": "extra_specimen/two_column/09",
+      "layout": "two_column",
+      "capture": "full",
+      "input_sha256": "4cf9d43f1a31b246fb5a2e240e1679742552fc45452c8aad7c25955720c3a721"
+    },
+    {
+      "uid": "extra_specimen/two_column/09/corner_clip",
+      "physical_id": "extra_specimen/two_column/09",
+      "layout": "two_column",
+      "capture": "corner_clip",
+      "input_sha256": "cc78ac9fc97525b474d6a75dddb35917df158984484c7ccb8bafb8ff26f22904"
+    },
+    {
+      "uid": "extra_specimen/two_column/09/field_clip",
+      "physical_id": "extra_specimen/two_column/09",
+      "layout": "two_column",
+      "capture": "field_clip",
+      "input_sha256": "3b18dc3af56fa6cc85e482db74a4371e066989b04452f77cc1275daccfb7ef70"
+    },
+    {
+      "uid": "extra_specimen/two_column/09/blur_glare",
+      "physical_id": "extra_specimen/two_column/09",
+      "layout": "two_column",
+      "capture": "blur_glare",
+      "input_sha256": "13ffed8d116a0e6f77eefcde209e44ff85c391d891ac83f10e4aaa7079111d26"
+    },
+    {
+      "uid": "extra_specimen/portrait/00/full",
+      "physical_id": "extra_specimen/portrait/00",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "4686ca9f6bf3ccf8ff7d99c763f3729833fe0fec6bef931d56f5a44336eb32c4"
+    },
+    {
+      "uid": "extra_specimen/portrait/00/corner_clip",
+      "physical_id": "extra_specimen/portrait/00",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "157c01583d761033821c3a23af525bc1c76f3eb6289b12c32559a77d2bb0257d"
+    },
+    {
+      "uid": "extra_specimen/portrait/00/field_clip",
+      "physical_id": "extra_specimen/portrait/00",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "58f3b74025bb376424976b7cb3d55318b78d2f39f61eaab6b5cfd36b5e807df6"
+    },
+    {
+      "uid": "extra_specimen/portrait/00/blur_glare",
+      "physical_id": "extra_specimen/portrait/00",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "f9d37b837a0dcf3c58833a838b95c544e414673561dd5afa9470d856621c621d"
+    },
+    {
+      "uid": "extra_specimen/portrait/01/full",
+      "physical_id": "extra_specimen/portrait/01",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "d6ac1a29311f2999050486016f57a5f5f0ccfc4d3fc4af2e66437045264e81c3"
+    },
+    {
+      "uid": "extra_specimen/portrait/01/corner_clip",
+      "physical_id": "extra_specimen/portrait/01",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "a95d2ff6443427dd03d2050ec47e9d1f1271157bcfd715ff5db7af71751c8f87"
+    },
+    {
+      "uid": "extra_specimen/portrait/01/field_clip",
+      "physical_id": "extra_specimen/portrait/01",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "9d25453dea5ef3e1ce0bf9678148f53633b569c3379efff388e2ddb77cc0ac21"
+    },
+    {
+      "uid": "extra_specimen/portrait/01/blur_glare",
+      "physical_id": "extra_specimen/portrait/01",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "2bd57de46f54a15b3fa674fda228f2dc4b7ec560b98d7b14eca7187bd44f7895"
+    },
+    {
+      "uid": "extra_specimen/portrait/02/full",
+      "physical_id": "extra_specimen/portrait/02",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "3c52e60669d6d39d74a3fc4d1f24388d7eb900df3f601735db23c3096a63093a"
+    },
+    {
+      "uid": "extra_specimen/portrait/02/corner_clip",
+      "physical_id": "extra_specimen/portrait/02",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "2bda5f28d822aee7840bb06531d31a8a2ef709168084943c44021137fa89fde2"
+    },
+    {
+      "uid": "extra_specimen/portrait/02/field_clip",
+      "physical_id": "extra_specimen/portrait/02",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "5af9132a95dbb2c8227f11393868b046f96954c490c52e6c0a9b0728b0c71aee"
+    },
+    {
+      "uid": "extra_specimen/portrait/02/blur_glare",
+      "physical_id": "extra_specimen/portrait/02",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "4ec9df6e2a124081d3e07be8c08102be8ad2fdaa2986a1199d746abcb7805ca9"
+    },
+    {
+      "uid": "extra_specimen/portrait/03/full",
+      "physical_id": "extra_specimen/portrait/03",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "d5761c53c1a2ec26ef0486406af71d8369139cc8ab68da1ddd804cdead1ddc40"
+    },
+    {
+      "uid": "extra_specimen/portrait/03/corner_clip",
+      "physical_id": "extra_specimen/portrait/03",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "97edd1fe256ced4ff5f86ac1f3aabc6f177fd8eb8a2cda51f01b9999125a8efc"
+    },
+    {
+      "uid": "extra_specimen/portrait/03/field_clip",
+      "physical_id": "extra_specimen/portrait/03",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "4d6eebef072d2744858ff870167a0940e655fda1cac59b5d1bbe2e9793f684b1"
+    },
+    {
+      "uid": "extra_specimen/portrait/03/blur_glare",
+      "physical_id": "extra_specimen/portrait/03",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "66b9a5aa8c265a732b6838fe69c3982b2ae12a05b1931600fad5b5d32c7ef76e"
+    },
+    {
+      "uid": "extra_specimen/portrait/04/full",
+      "physical_id": "extra_specimen/portrait/04",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "67f6d115074ed3022e29d5a6ba5af54e15336db6709f7efcde6cdef6b2770556"
+    },
+    {
+      "uid": "extra_specimen/portrait/04/corner_clip",
+      "physical_id": "extra_specimen/portrait/04",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "ac52a33cc6d0f92d83ec768ec60d818ea4d0b170c2e4adeb762ecea82cf56c07"
+    },
+    {
+      "uid": "extra_specimen/portrait/04/field_clip",
+      "physical_id": "extra_specimen/portrait/04",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "b7e5d3cfd3b0575eb39cf46643c0a51347f540ad919537ebda654c86d4391f59"
+    },
+    {
+      "uid": "extra_specimen/portrait/04/blur_glare",
+      "physical_id": "extra_specimen/portrait/04",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "3db436180a17c0a0c4db744e3de686c5f2d4d0301c3d54dc4474b3563a3b1c97"
+    },
+    {
+      "uid": "extra_specimen/portrait/05/full",
+      "physical_id": "extra_specimen/portrait/05",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "1bd8d63172c6349d31f36a5761c19afa95530b9cbf2294ebad3cea08539e5725"
+    },
+    {
+      "uid": "extra_specimen/portrait/05/corner_clip",
+      "physical_id": "extra_specimen/portrait/05",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "5989d5907d20e67763a09fb9bd95f575637a94da06c20e4732e6ed47894c1a8e"
+    },
+    {
+      "uid": "extra_specimen/portrait/05/field_clip",
+      "physical_id": "extra_specimen/portrait/05",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "72e82af6668854b636da16a5c8624465c74db4b0263fee3c7ff587345a376735"
+    },
+    {
+      "uid": "extra_specimen/portrait/05/blur_glare",
+      "physical_id": "extra_specimen/portrait/05",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "d6be03f4791140fea29f849201cd942ec6f9d35d3e4d4d69c5fa528edc324424"
+    },
+    {
+      "uid": "extra_specimen/portrait/06/full",
+      "physical_id": "extra_specimen/portrait/06",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "3b5382cbe336c12ebdae71fe8acdf78baf33150fbcfef0be92dfbaeeaf0ef231"
+    },
+    {
+      "uid": "extra_specimen/portrait/06/corner_clip",
+      "physical_id": "extra_specimen/portrait/06",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "306e7a2bb1f483546da3eb6f458290ccd774373ec55537ed4ec359877777e757"
+    },
+    {
+      "uid": "extra_specimen/portrait/06/field_clip",
+      "physical_id": "extra_specimen/portrait/06",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "27214c0e86dce2fbff5aff0253752f17e03183870784852839251db4f1e39797"
+    },
+    {
+      "uid": "extra_specimen/portrait/06/blur_glare",
+      "physical_id": "extra_specimen/portrait/06",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "cfe1c97c88c01b593b0a5612c533f5fc69c61b2e9bad66fde764c9e2a7425717"
+    },
+    {
+      "uid": "extra_specimen/portrait/07/full",
+      "physical_id": "extra_specimen/portrait/07",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "7ca909356e7606800996e19af4731754bae8c4442fc2069f6463c03fee87e3b1"
+    },
+    {
+      "uid": "extra_specimen/portrait/07/corner_clip",
+      "physical_id": "extra_specimen/portrait/07",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "78aec33c59423e457a872fded9e906cea528832f6f15d6aee9f672ddc202a6b7"
+    },
+    {
+      "uid": "extra_specimen/portrait/07/field_clip",
+      "physical_id": "extra_specimen/portrait/07",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "707e591b07efedafa44b2f60062acfd0b749763468ed83e633e9116e0113a53b"
+    },
+    {
+      "uid": "extra_specimen/portrait/07/blur_glare",
+      "physical_id": "extra_specimen/portrait/07",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "2fe623b279c0e72be4f377f51fd0c28299f5f6723686024d8a990f2c970d7eb8"
+    },
+    {
+      "uid": "extra_specimen/portrait/08/full",
+      "physical_id": "extra_specimen/portrait/08",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "2f2cf0e92ae0d2b1079f3fa65c5fff4b96a8f3c7595669c41a03620e2e6ef820"
+    },
+    {
+      "uid": "extra_specimen/portrait/08/corner_clip",
+      "physical_id": "extra_specimen/portrait/08",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "37605f3b49a908a73f59b6333cb9484355680cbe1650679d97b3cf7342e8f264"
+    },
+    {
+      "uid": "extra_specimen/portrait/08/field_clip",
+      "physical_id": "extra_specimen/portrait/08",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "82755deddf814f290e46c6c08e66794557752d26f72ef87229763c5132dad18b"
+    },
+    {
+      "uid": "extra_specimen/portrait/08/blur_glare",
+      "physical_id": "extra_specimen/portrait/08",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "0e0d21dedcaa8f15c93854daf73b0e3afba2bcfd72aa77ad31e47c56aa69092c"
+    },
+    {
+      "uid": "extra_specimen/portrait/09/full",
+      "physical_id": "extra_specimen/portrait/09",
+      "layout": "portrait",
+      "capture": "full",
+      "input_sha256": "c1307c2c7a168bc0b3414189effd618d932e4c7c9cf9de374b585ab6516279c3"
+    },
+    {
+      "uid": "extra_specimen/portrait/09/corner_clip",
+      "physical_id": "extra_specimen/portrait/09",
+      "layout": "portrait",
+      "capture": "corner_clip",
+      "input_sha256": "ab5e2c40ad566d855abd53acdba931a73497a375f11f04e06877709e65320bfb"
+    },
+    {
+      "uid": "extra_specimen/portrait/09/field_clip",
+      "physical_id": "extra_specimen/portrait/09",
+      "layout": "portrait",
+      "capture": "field_clip",
+      "input_sha256": "781e9c34e6ba3898770c61e77ce3853c7f5a155ef808e7a0546211e4107b0674"
+    },
+    {
+      "uid": "extra_specimen/portrait/09/blur_glare",
+      "physical_id": "extra_specimen/portrait/09",
+      "layout": "portrait",
+      "capture": "blur_glare",
+      "input_sha256": "e001f319f7ee0f9502eb5c372bb3e776a10324b24b5ee5915d7a89ff8d8064bb"
+    }
+  ]
+}

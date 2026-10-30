@@ -1,0 +1,3351 @@
+{
+  "signature": "981e3e937e9d2d4355f57fee0464c82de0023d75a69bd205cb3747902435d351",
+  "code_sha256": {
+    "recovery_assets.py": "d1ff144397bbe2cedd436221f462cb51fc5e52311b9712452679ec75943f4dd5",
+    "recovery_acquire.py": "0b8f45f09a0eb5e52f8ea655de154a69f165d8e7c6ccf41ccbb572ddf034950b",
+    "recovery_data.py": "2036253ea24ea1d194f8b7052c2d2a92ccee7ade3be69e6c776f1331f941aca5",
+    "recovery_runtime.py": "6574ee1dd4b72d993936688836c09a9c2335cfb28d90f4a789df4091c63c7e01",
+    "recovery_upstream.py": "609ed64fbb367d9bd75cc0ca0022a56c8e815bb4d8b05522b1c3d4272ac29fb3",
+    "recovery_selection.py": "8c66c6d5c9e33cfa6cc559c92060e526344f6991be8e9e7161af005dc1e29575",
+    "recovery_study.py": "ba259a60ab3de732252f769282bed3ef80b11b2c036179f51c92306cc608efd0"
+  },
+  "shared_code_sha256": {
+    "e2e_pipeline.py": "086d352ebaa8c31214c2e0c4a9b326ede75bb790e79b819eaacf6e95cdc5e056",
+    "e2e_eval.py": "19fb32393fba274c575e679abe240e6639e71ec9f2a29129041f89dba9a2f5e0",
+    "partial_support.py": "4d1a1210a008a2adb0ca1a74b70179c6b8b8ad1783159038bc9efa4418d057f3"
+  },
+  "protocol_sha256": "cd3dad798cc889e7ba8a20ef64dfc354a064d9e09de2d8ada3f7bcae0db2cbce",
+  "assets": {
+    "rapidocr_version": "1.4.4",
+    "wheel_sha256": "971d7d5f223a7a808662229df1ef69893809d8457d834e6373d3854bc1782cbf",
+    "files_sha256": {
+      "rapidocr_onnxruntime/config.yaml": "bf94a1da4cba828e67b1d61e27cee14d9e7da27c9f272e04048a17e41ae97332",
+      "rapidocr_onnxruntime/main.py": "156c49e683fddd26f04280f391f882b857a74d2f020497870f7dd8d850ed5a2c",
+      "rapidocr_onnxruntime/__init__.py": "25e7859135d306af5eb626086e2211a9b4da01cff1327beb0fb2298dcba33a51",
+      "rapidocr_onnxruntime/cal_rec_boxes/main.py": "d7cf9cb01f189a873cef9897150e379085608f9908a7288857ea2599ff7eee76",
+      "rapidocr_onnxruntime/cal_rec_boxes/__init__.py": "485d5bca0cd84c80ea4576ff4ed5e906828851b287c581c746a9a272a7ce945c",
+      "rapidocr_onnxruntime/ch_ppocr_cls/text_cls.py": "ead555ddeb7a8a0da067f4d2f9e2760e93db9e46d906888e0522277dda6620c8",
+      "rapidocr_onnxruntime/ch_ppocr_cls/utils.py": "a6d3debaaf21b092731b20a249b816512070b8e932db7b0f15d5536dcda2328a",
+      "rapidocr_onnxruntime/ch_ppocr_cls/__init__.py": "aeaf19b49fb6b5a361547544e7cb98972dd0b6756e9ad320d9fe7008891ae9b2",
+      "rapidocr_onnxruntime/ch_ppocr_det/text_detect.py": "fc9d63ba47940d3e5bfefe6738f310b583cd4de4708fefe114fce11236f2c199",
+      "rapidocr_onnxruntime/ch_ppocr_det/utils.py": "0b3405390c37c7d6f0c9c7099eeec36b050b8e0dee7659fbd82a73bcbd265cd0",
+      "rapidocr_onnxruntime/ch_ppocr_det/__init__.py": "8f33f181e76809c609ead8f5d44afed1e83f74e752239c0f30ca961fdf152e63",
+      "rapidocr_onnxruntime/ch_ppocr_rec/text_recognize.py": "48d8656d11403d09b2ed32b65a686906b9502ca1a4e16a3934d91b35129d032a",
+      "rapidocr_onnxruntime/ch_ppocr_rec/utils.py": "4a1dc2e8602d12374b12124bbe99a1b42080d72a337799760beaf0d51a32ca90",
+      "rapidocr_onnxruntime/ch_ppocr_rec/__init__.py": "989f6e9e87508f91cdfc496c7c4ef7580bbb6cc1a0f87a90e139029d10970de0",
+      "rapidocr_onnxruntime/models/ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+      "rapidocr_onnxruntime/models/ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+      "rapidocr_onnxruntime/models/ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "rapidocr_onnxruntime/utils/infer_engine.py": "3e402c95026ab793533b0de296b0b7e897ad50618d089b2b2214bd90833c3f29",
+      "rapidocr_onnxruntime/utils/load_image.py": "2335171bf0574b56fc4d6d7261bd9bf0dc955db6cec3b5aaf060d345256e65a4",
+      "rapidocr_onnxruntime/utils/logger.py": "2efcad9f0f7afb77c6734d9ec2fcce60f3045b3e6ce7e4752f69ed9e1e647f17",
+      "rapidocr_onnxruntime/utils/parse_parameters.py": "a59078f844649e9b08638345a32cd3981a27fd731f4f844a1155f850cb7a6c9e",
+      "rapidocr_onnxruntime/utils/process_img.py": "c54bfd7cb592e40c7be9042fce4a40e5fa5359e8c11a26c3492534065f42f236",
+      "rapidocr_onnxruntime/utils/vis_res.py": "5225cfd945fd99968cfe2883960949e043d760a8d0dab92ec912e98b01e42205",
+      "rapidocr_onnxruntime/utils/__init__.py": "2623808f8f540452cc02951858cb65ef5dacd615b5409ec6c970bc375b1f946d"
+    },
+    "author_source_sha256": {
+      "docaligner_heatmap_reg_infer.py": "cb333575ccde501bc731a73de21f4fd05a96247550e45fea969e79d6cc1e4672",
+      "capybara-1.0.1.whl": "0872a0c21c128e66f4efc595d36bafca6b22a01c462c5329ce59d387c961ad06"
+    },
+    "latin_model_sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+    "latin_model_bytes": 7904513,
+    "latin_model_source": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.9.2/onnx/PP-OCRv5/rec/latin_PP-OCRv5_rec_mobile.onnx",
+    "installed_dependencies": false,
+    "source": "Official PyPI wheel; official RapidAI model registry",
+    "upstream_code_unmodified": true,
+    "lcnet_sha256": "f4117b786e3a18470f3865c93f3c2bd69d9b998edd60f385574a5c665e79594e"
+  },
+  "inputs": [
+    {
+      "uid": "midv2020/alb_id/33/corner_clip",
+      "physical_id": "midv2020/alb_id/33",
+      "role": "development",
+      "input_sha256": "9609038a208ae470fc6204a3321650b535a45d723d37120aed5222e54191b225"
+    },
+    {
+      "uid": "midv2020/alb_id/33/field_clip",
+      "physical_id": "midv2020/alb_id/33",
+      "role": "development",
+      "input_sha256": "741d32d5bd192fb1c687807e9afcb11da920ea7dd247ff7330a07b9a98fcb657"
+    },
+    {
+      "uid": "midv2020/alb_id/33/full",
+      "physical_id": "midv2020/alb_id/33",
+      "role": "development",
+      "input_sha256": "5a8fd61a438dc5ce83287175d7471c065f1b0c0ac18d777fe10275f8800b3951"
+    },
+    {
+      "uid": "midv2020/alb_id/47/corner_clip",
+      "physical_id": "midv2020/alb_id/47",
+      "role": "test",
+      "input_sha256": "8ca471efae5840118fd4fb62c6c04b66c9c619eabbb33a5a85283d22c650e2b2"
+    },
+    {
+      "uid": "midv2020/alb_id/47/field_clip",
+      "physical_id": "midv2020/alb_id/47",
+      "role": "test",
+      "input_sha256": "274bf9b9152f3548e35a90a974a9ece851a303800aa0d95783c3a1699154763f"
+    },
+    {
+      "uid": "midv2020/alb_id/47/full",
+      "physical_id": "midv2020/alb_id/47",
+      "role": "test",
+      "input_sha256": "936eaf2658fdc8d9a51da2832ec6602065040abb2788169aa3d0eb6648a27af6"
+    },
+    {
+      "uid": "midv2020/alb_id/63/corner_clip",
+      "physical_id": "midv2020/alb_id/63",
+      "role": "test",
+      "input_sha256": "658f47ce7505c94e8ed0b79f1bce6fa2b54bc9b675f9ed1a098d85ef23d86348"
+    },
+    {
+      "uid": "midv2020/alb_id/63/field_clip",
+      "physical_id": "midv2020/alb_id/63",
+      "role": "test",
+      "input_sha256": "0ed4bac2690918098013bbe6d01243f34dcddf86a19cb96a0a4c3cadbbc988e3"
+    },
+    {
+      "uid": "midv2020/alb_id/63/full",
+      "physical_id": "midv2020/alb_id/63",
+      "role": "test",
+      "input_sha256": "9d0cfd9cfef283cbc319e5483bcb4ada8dc9b6461363ef0099daff3eaa6bcc87"
+    },
+    {
+      "uid": "midv2020/alb_id/67/corner_clip",
+      "physical_id": "midv2020/alb_id/67",
+      "role": "test",
+      "input_sha256": "dd00937b018e9af0bfe9663e701c646909f035d23a5cf83f0ef132ffdf80fd0b"
+    },
+    {
+      "uid": "midv2020/alb_id/67/field_clip",
+      "physical_id": "midv2020/alb_id/67",
+      "role": "test",
+      "input_sha256": "137e10f194c68b473a3813f3b12f9795f1e1153a5b3ce5ba46e675b152007e1d"
+    },
+    {
+      "uid": "midv2020/alb_id/67/full",
+      "physical_id": "midv2020/alb_id/67",
+      "role": "test",
+      "input_sha256": "11e8d29eb470f1762fadfc232969573e1ea53e84e1832d4db8361ab3d4ed5e8f"
+    },
+    {
+      "uid": "midv2020/alb_id/69/corner_clip",
+      "physical_id": "midv2020/alb_id/69",
+      "role": "development",
+      "input_sha256": "afce1096a5a5686436646df1b075333ef82461f31066189549c58f9dd0593d53"
+    },
+    {
+      "uid": "midv2020/alb_id/69/field_clip",
+      "physical_id": "midv2020/alb_id/69",
+      "role": "development",
+      "input_sha256": "a0d0a29f3fe9494afdaef51f0b0b2c56e6a73a23656df6c1f103dd543b788869"
+    },
+    {
+      "uid": "midv2020/alb_id/69/full",
+      "physical_id": "midv2020/alb_id/69",
+      "role": "development",
+      "input_sha256": "292d474a9105872f361f8feceea7334729fee2de0426c1b1dd956fd03c82ecf5"
+    },
+    {
+      "uid": "midv2020/alb_id/94/corner_clip",
+      "physical_id": "midv2020/alb_id/94",
+      "role": "calibration",
+      "input_sha256": "ad64bcd9efc80f73ef4b2456c3e85ce965b511f9471290879b558738f248e278"
+    },
+    {
+      "uid": "midv2020/alb_id/94/field_clip",
+      "physical_id": "midv2020/alb_id/94",
+      "role": "calibration",
+      "input_sha256": "3705a380366e7f1e58c23dd619bfbbf216f81545e71dab86051f1e541dda7fc8"
+    },
+    {
+      "uid": "midv2020/alb_id/94/full",
+      "physical_id": "midv2020/alb_id/94",
+      "role": "calibration",
+      "input_sha256": "300b2e8d6df9499d83ed76c7d68570d495cb035cedc0a96b797718356362613c"
+    },
+    {
+      "uid": "midv2020/aze_passport/47/corner_clip",
+      "physical_id": "midv2020/aze_passport/47",
+      "role": "test",
+      "input_sha256": "779c05e2b6f5e1d78604d7ad586e0a69fa4685184e0e76c95ddd7c33919072f6"
+    },
+    {
+      "uid": "midv2020/aze_passport/47/field_clip",
+      "physical_id": "midv2020/aze_passport/47",
+      "role": "test",
+      "input_sha256": "c8772bf183d868310516c43fa5920f9646d066df2a57c479bfc06713901fe045"
+    },
+    {
+      "uid": "midv2020/aze_passport/47/full",
+      "physical_id": "midv2020/aze_passport/47",
+      "role": "test",
+      "input_sha256": "0aa4a4f81f153d755ec74479cde80839e461e86dc44733c9147ebb4b3899d04c"
+    },
+    {
+      "uid": "midv2020/aze_passport/63/corner_clip",
+      "physical_id": "midv2020/aze_passport/63",
+      "role": "calibration",
+      "input_sha256": "51e9e59837e076aec2ab5a79ef60d1363d0b70517e24e9c191eacd5affd4a79d"
+    },
+    {
+      "uid": "midv2020/aze_passport/63/field_clip",
+      "physical_id": "midv2020/aze_passport/63",
+      "role": "calibration",
+      "input_sha256": "9ce600af972610cc2f5f52850800545aa761987abbadcd9cd36a1decfdd99f11"
+    },
+    {
+      "uid": "midv2020/aze_passport/63/full",
+      "physical_id": "midv2020/aze_passport/63",
+      "role": "calibration",
+      "input_sha256": "1aa29d0c3acc2e129b9fdd0f00dd1481847ac624b15b56f33e4c7a09e6f07923"
+    },
+    {
+      "uid": "midv2020/aze_passport/69/corner_clip",
+      "physical_id": "midv2020/aze_passport/69",
+      "role": "test",
+      "input_sha256": "40c6d878f2737671df66f375bb2f91edc087a025ac92901cd6a1b22f74b4e07e"
+    },
+    {
+      "uid": "midv2020/aze_passport/69/field_clip",
+      "physical_id": "midv2020/aze_passport/69",
+      "role": "test",
+      "input_sha256": "664fe09c9373d5553d52799ca77c4a8b1901b1727631ab82527c9c581665b10b"
+    },
+    {
+      "uid": "midv2020/aze_passport/69/full",
+      "physical_id": "midv2020/aze_passport/69",
+      "role": "test",
+      "input_sha256": "856117803b453d299cb12a3834a674fece55569586ed62652f584d03560cea57"
+    },
+    {
+      "uid": "midv2020/aze_passport/70/corner_clip",
+      "physical_id": "midv2020/aze_passport/70",
+      "role": "development",
+      "input_sha256": "decafc1b1eef879735cd95fcdf18fbd9d6c8ab138f2994376543dd65060da6e8"
+    },
+    {
+      "uid": "midv2020/aze_passport/70/field_clip",
+      "physical_id": "midv2020/aze_passport/70",
+      "role": "development",
+      "input_sha256": "47f0a3524ef32709d58d9835b3b4e0b213ec1e4eb6198fdf117b48afe14803f5"
+    },
+    {
+      "uid": "midv2020/aze_passport/70/full",
+      "physical_id": "midv2020/aze_passport/70",
+      "role": "development",
+      "input_sha256": "1bcb4498425f6e99d80be2c6b2e2805dc197ca4316fa0d76a797bb31ff0f2dcd"
+    },
+    {
+      "uid": "midv2020/aze_passport/90/corner_clip",
+      "physical_id": "midv2020/aze_passport/90",
+      "role": "development",
+      "input_sha256": "bdd524f61d22aec5cfdaa89daf75d0c8bfdba5e678518cd9e082f22afe824541"
+    },
+    {
+      "uid": "midv2020/aze_passport/90/field_clip",
+      "physical_id": "midv2020/aze_passport/90",
+      "role": "development",
+      "input_sha256": "d97d5b385377b15be62fb0fc83f37c3f140168a061af157b32101bf614f910c2"
+    },
+    {
+      "uid": "midv2020/aze_passport/90/full",
+      "physical_id": "midv2020/aze_passport/90",
+      "role": "development",
+      "input_sha256": "a6c2dfb6e0ccc4f200830a3b0a1155690058ef30e6d1afd15c61209fe11ad0d9"
+    },
+    {
+      "uid": "midv2020/aze_passport/94/corner_clip",
+      "physical_id": "midv2020/aze_passport/94",
+      "role": "test",
+      "input_sha256": "b01271eb5d2cd0e6c717781d65bbfacd40ab3bfbe2fde3d3c099624122d9d4ce"
+    },
+    {
+      "uid": "midv2020/aze_passport/94/field_clip",
+      "physical_id": "midv2020/aze_passport/94",
+      "role": "test",
+      "input_sha256": "93bbf08b6a54c5a68f63aa882daeff1cdbf4254f24def85abb90e6074b21613d"
+    },
+    {
+      "uid": "midv2020/aze_passport/94/full",
+      "physical_id": "midv2020/aze_passport/94",
+      "role": "test",
+      "input_sha256": "a3a664e9b20bc0f2932897bbe31f3be1c8b82f5c3ea1b08625803cd798dffe9f"
+    },
+    {
+      "uid": "midv2020/esp_id/44/corner_clip",
+      "physical_id": "midv2020/esp_id/44",
+      "role": "test",
+      "input_sha256": "2d9788312273a722b72c422145c985289d8dd7897b09d3317ce801555bf398f0"
+    },
+    {
+      "uid": "midv2020/esp_id/44/field_clip",
+      "physical_id": "midv2020/esp_id/44",
+      "role": "test",
+      "input_sha256": "c7cc1dd6ee8644b2e9eac32d77bf82371006ccf64bb4a891b55b4401f7dbc678"
+    },
+    {
+      "uid": "midv2020/esp_id/44/full",
+      "physical_id": "midv2020/esp_id/44",
+      "role": "test",
+      "input_sha256": "c51690c24ec2a346db809ec8e7eaeabfb9e7039bee8d2d8c881d8c6629e876dc"
+    },
+    {
+      "uid": "midv2020/esp_id/67/corner_clip",
+      "physical_id": "midv2020/esp_id/67",
+      "role": "test",
+      "input_sha256": "19eb672e3ed61600545d4389eb7cfb0512a2690eb8e46dc337fc44c7e56136b5"
+    },
+    {
+      "uid": "midv2020/esp_id/67/field_clip",
+      "physical_id": "midv2020/esp_id/67",
+      "role": "test",
+      "input_sha256": "9fb714160bb1377ea5a8b3c4d3c489af02e30e0dca4438bc06ddc65c9ee44c0d"
+    },
+    {
+      "uid": "midv2020/esp_id/67/full",
+      "physical_id": "midv2020/esp_id/67",
+      "role": "test",
+      "input_sha256": "b8ca3b3e0ba81e692887e4b264218c9ee32955e6b02bab28dce0768d8f5c13b4"
+    },
+    {
+      "uid": "midv2020/esp_id/69/corner_clip",
+      "physical_id": "midv2020/esp_id/69",
+      "role": "calibration",
+      "input_sha256": "f8cbafcb6b490e667f528398319160395a5042676abed47214827e2afe1f024b"
+    },
+    {
+      "uid": "midv2020/esp_id/69/field_clip",
+      "physical_id": "midv2020/esp_id/69",
+      "role": "calibration",
+      "input_sha256": "424c25921136a70273de1ad2595255d6db71dc4cfa5d3cb7f144b99ec035cdf8"
+    },
+    {
+      "uid": "midv2020/esp_id/69/full",
+      "physical_id": "midv2020/esp_id/69",
+      "role": "calibration",
+      "input_sha256": "9a4824500a2d05abe64ccbc83faa63b2b3e014dc4f05e3f9f545a0c63f7d5a73"
+    },
+    {
+      "uid": "midv2020/esp_id/70/corner_clip",
+      "physical_id": "midv2020/esp_id/70",
+      "role": "development",
+      "input_sha256": "f4ba7a935e6a79b6abc7772c6de2fccfd44c28a520208bdca45fd979125d5f23"
+    },
+    {
+      "uid": "midv2020/esp_id/70/field_clip",
+      "physical_id": "midv2020/esp_id/70",
+      "role": "development",
+      "input_sha256": "5f11964503b533674042aa84d0888834498b020b6edaa4f55e4ff3cd8215687d"
+    },
+    {
+      "uid": "midv2020/esp_id/70/full",
+      "physical_id": "midv2020/esp_id/70",
+      "role": "development",
+      "input_sha256": "937679239e1bf2830a218f7ffddc61b308641936a50d98e1f9d33a3d7bef20d9"
+    },
+    {
+      "uid": "midv2020/esp_id/82/corner_clip",
+      "physical_id": "midv2020/esp_id/82",
+      "role": "test",
+      "input_sha256": "88b0e802bb3bd36f6456238608fbb0820e1a6f981325556aeb4acd17ed773005"
+    },
+    {
+      "uid": "midv2020/esp_id/82/field_clip",
+      "physical_id": "midv2020/esp_id/82",
+      "role": "test",
+      "input_sha256": "6bf6400799a786a14c011d8b5a15ef37bcb927a7e2d9fac6c5367ccd16a930f6"
+    },
+    {
+      "uid": "midv2020/esp_id/82/full",
+      "physical_id": "midv2020/esp_id/82",
+      "role": "test",
+      "input_sha256": "1bfbc679c91985591d9bbc052ae44db265f7fa6a57f455872828869474736b27"
+    },
+    {
+      "uid": "midv2020/esp_id/90/corner_clip",
+      "physical_id": "midv2020/esp_id/90",
+      "role": "development",
+      "input_sha256": "b2c6b95e8483d22bd91e5a7332fb76f77872fa8511649fa8418e4008c7d70d42"
+    },
+    {
+      "uid": "midv2020/esp_id/90/field_clip",
+      "physical_id": "midv2020/esp_id/90",
+      "role": "development",
+      "input_sha256": "1f4ce0491a7c8f521e25b759f78cca89f7b05883ca769d819e8170c1b7dd199b"
+    },
+    {
+      "uid": "midv2020/esp_id/90/full",
+      "physical_id": "midv2020/esp_id/90",
+      "role": "development",
+      "input_sha256": "bd5dbf2d8774b1c2ba60e905f501af3fa6f4c463f2aa1f4116766b22f94ebfc7"
+    },
+    {
+      "uid": "midv2020/est_id/33/corner_clip",
+      "physical_id": "midv2020/est_id/33",
+      "role": "calibration",
+      "input_sha256": "425ff67447d3ce192dc23a40babbfca7dce2cd01b6e114258e37d630eee0bacd"
+    },
+    {
+      "uid": "midv2020/est_id/33/field_clip",
+      "physical_id": "midv2020/est_id/33",
+      "role": "calibration",
+      "input_sha256": "bcb63ae7d2e567b35616cda1b50937fb7916fcab0af9fe38550dc20a6f4df35d"
+    },
+    {
+      "uid": "midv2020/est_id/33/full",
+      "physical_id": "midv2020/est_id/33",
+      "role": "calibration",
+      "input_sha256": "b8f198860932704d76ca823cbe4b4587d9581b2d00b2844d66d2f2cbd4b1fa01"
+    },
+    {
+      "uid": "midv2020/est_id/44/corner_clip",
+      "physical_id": "midv2020/est_id/44",
+      "role": "test",
+      "input_sha256": "d088f2952268414e45752e4211d5978fe5817ef68f426b976638b4cfeca5afcd"
+    },
+    {
+      "uid": "midv2020/est_id/44/field_clip",
+      "physical_id": "midv2020/est_id/44",
+      "role": "test",
+      "input_sha256": "17bb29a4170d99e3955309d660dd5446efdc8fbeadf89ae784eb0dbb41f1605d"
+    },
+    {
+      "uid": "midv2020/est_id/44/full",
+      "physical_id": "midv2020/est_id/44",
+      "role": "test",
+      "input_sha256": "ceeb24b9f0854f67b98dcd5d2df5f10c64dae6e0220becb3dfcd080d532963b7"
+    },
+    {
+      "uid": "midv2020/est_id/63/corner_clip",
+      "physical_id": "midv2020/est_id/63",
+      "role": "test",
+      "input_sha256": "0b5a7056334fa7988ddcd16bbfc8a764fa8e0bf413e7472214307a35d07cb2cb"
+    },
+    {
+      "uid": "midv2020/est_id/63/field_clip",
+      "physical_id": "midv2020/est_id/63",
+      "role": "test",
+      "input_sha256": "0f92e91efb70c5fd666966b47ba894eddb5835c52e37263cc8e9039003a15297"
+    },
+    {
+      "uid": "midv2020/est_id/63/full",
+      "physical_id": "midv2020/est_id/63",
+      "role": "test",
+      "input_sha256": "57bbcbb10bf4cafa643f9d8a65040ed6cbfb3eb0f01a803cdd986103a70d5799"
+    },
+    {
+      "uid": "midv2020/est_id/69/corner_clip",
+      "physical_id": "midv2020/est_id/69",
+      "role": "test",
+      "input_sha256": "2ba6ab5a47d81968cd34ee3b9e65893332f0b235707240d237081f5c43388367"
+    },
+    {
+      "uid": "midv2020/est_id/69/field_clip",
+      "physical_id": "midv2020/est_id/69",
+      "role": "test",
+      "input_sha256": "8d6d7322ce05dbdf332c42c4cd7a9ed6f0bb43ddb5beb66dfa3cdc059e212564"
+    },
+    {
+      "uid": "midv2020/est_id/69/full",
+      "physical_id": "midv2020/est_id/69",
+      "role": "test",
+      "input_sha256": "51c8ead718fb51f516a8b0c7dc8185763b8b419563e20295a0dca74d7524575b"
+    },
+    {
+      "uid": "midv2020/est_id/82/corner_clip",
+      "physical_id": "midv2020/est_id/82",
+      "role": "development",
+      "input_sha256": "472795b780617352bc8ce82abbecaf6cf9e4defd55b03ea935d635692c3d424e"
+    },
+    {
+      "uid": "midv2020/est_id/82/field_clip",
+      "physical_id": "midv2020/est_id/82",
+      "role": "development",
+      "input_sha256": "0c66d8283b6c8992785c3bab9944070a1e666e0699edbbfb8f57cc0a6bcd03d3"
+    },
+    {
+      "uid": "midv2020/est_id/82/full",
+      "physical_id": "midv2020/est_id/82",
+      "role": "development",
+      "input_sha256": "93cbd9094fd593c1723aa114ff3b033054c3d9c784acf85dfd1737aad2d6b7b2"
+    },
+    {
+      "uid": "midv2020/est_id/94/corner_clip",
+      "physical_id": "midv2020/est_id/94",
+      "role": "development",
+      "input_sha256": "ad30cad2503beef07ec375e721671c00a80791ac54125b5638e28092445d0582"
+    },
+    {
+      "uid": "midv2020/est_id/94/field_clip",
+      "physical_id": "midv2020/est_id/94",
+      "role": "development",
+      "input_sha256": "7e14da15d01558700d93f9ba39648a1fecd32c9b581600938f4290875bb2ff6c"
+    },
+    {
+      "uid": "midv2020/est_id/94/full",
+      "physical_id": "midv2020/est_id/94",
+      "role": "development",
+      "input_sha256": "9fc814e6fb4f07ddb3374c4ae189a4758a1688d534ec121a34dcf38229fa229b"
+    },
+    {
+      "uid": "midv2020/fin_id/44/corner_clip",
+      "physical_id": "midv2020/fin_id/44",
+      "role": "calibration",
+      "input_sha256": "16d1c1aa4189aae795d555c5613bd86feb068af6383cd299708477e2a3e70340"
+    },
+    {
+      "uid": "midv2020/fin_id/44/field_clip",
+      "physical_id": "midv2020/fin_id/44",
+      "role": "calibration",
+      "input_sha256": "1aabddd6e4ee49be1cb7b0c5dd214579e0f3f42683acfca74a78e4bf406fc5f7"
+    },
+    {
+      "uid": "midv2020/fin_id/44/full",
+      "physical_id": "midv2020/fin_id/44",
+      "role": "calibration",
+      "input_sha256": "6ff2fdd836c238ec8b3ab4694960a4ddba47889972ec06bfb4da739c2f20682f"
+    },
+    {
+      "uid": "midv2020/fin_id/47/corner_clip",
+      "physical_id": "midv2020/fin_id/47",
+      "role": "test",
+      "input_sha256": "9d766f1c8707e29b4166a71b46d1fbe5d9cd2565b02386b50f9bc2e60726b780"
+    },
+    {
+      "uid": "midv2020/fin_id/47/field_clip",
+      "physical_id": "midv2020/fin_id/47",
+      "role": "test",
+      "input_sha256": "43a555316d3ffaa983ea518ad617fd70d6a1e7ae1e966e22f628eef02f531057"
+    },
+    {
+      "uid": "midv2020/fin_id/47/full",
+      "physical_id": "midv2020/fin_id/47",
+      "role": "test",
+      "input_sha256": "9f78a900862b55dcb9956d5a9f3b5ac6dd0a99ed4efbfca20397eec39acbdb92"
+    },
+    {
+      "uid": "midv2020/fin_id/67/corner_clip",
+      "physical_id": "midv2020/fin_id/67",
+      "role": "test",
+      "input_sha256": "379c982438233a57c65d746bff816bad442d3ac512f01537559f31d768c1b78d"
+    },
+    {
+      "uid": "midv2020/fin_id/67/field_clip",
+      "physical_id": "midv2020/fin_id/67",
+      "role": "test",
+      "input_sha256": "2410f162c11a4ee538186413946fdb9f574799351587546435588c999901435b"
+    },
+    {
+      "uid": "midv2020/fin_id/67/full",
+      "physical_id": "midv2020/fin_id/67",
+      "role": "test",
+      "input_sha256": "bf77d27f4206508b172ffa85efda5c64eebbd3c82d857883958fc49dfd346e1d"
+    },
+    {
+      "uid": "midv2020/fin_id/70/corner_clip",
+      "physical_id": "midv2020/fin_id/70",
+      "role": "test",
+      "input_sha256": "4c1dd5790c2321bc2a04907a423ccd77849efc8e9857660ca1c00f69ee5c56c7"
+    },
+    {
+      "uid": "midv2020/fin_id/70/field_clip",
+      "physical_id": "midv2020/fin_id/70",
+      "role": "test",
+      "input_sha256": "090463526d06d195c5b730e5ce094e7c987bf95ed2a40159ff2bcf48fa7ed053"
+    },
+    {
+      "uid": "midv2020/fin_id/70/full",
+      "physical_id": "midv2020/fin_id/70",
+      "role": "test",
+      "input_sha256": "e27c2ac6562f4fd298e784184b27f330d27da25471fff25665f9fd914e035457"
+    },
+    {
+      "uid": "midv2020/fin_id/90/corner_clip",
+      "physical_id": "midv2020/fin_id/90",
+      "role": "development",
+      "input_sha256": "d5a758586f490ace1604d2289d28ed3d276965153a2e6f8942b430a680db88d2"
+    },
+    {
+      "uid": "midv2020/fin_id/90/field_clip",
+      "physical_id": "midv2020/fin_id/90",
+      "role": "development",
+      "input_sha256": "1e48810ccadd03d78a07dde8a6e231421d884c7e27aaf1e77387dcdfb8aaab6b"
+    },
+    {
+      "uid": "midv2020/fin_id/90/full",
+      "physical_id": "midv2020/fin_id/90",
+      "role": "development",
+      "input_sha256": "20babea914ed15178e2fba1d93dff648980801464a993a7664aad3ce6a98ed43"
+    },
+    {
+      "uid": "midv2020/fin_id/94/corner_clip",
+      "physical_id": "midv2020/fin_id/94",
+      "role": "development",
+      "input_sha256": "f46b0dce10f415f3a7a46181f3fda958a3776973c159d9a5f9914baa40e8ef85"
+    },
+    {
+      "uid": "midv2020/fin_id/94/field_clip",
+      "physical_id": "midv2020/fin_id/94",
+      "role": "development",
+      "input_sha256": "ddf09ec4f4373706930f19bea0699f65022565e31d7ce000a6814b960ddb6ab5"
+    },
+    {
+      "uid": "midv2020/fin_id/94/full",
+      "physical_id": "midv2020/fin_id/94",
+      "role": "development",
+      "input_sha256": "13b8b22345875e5a824addaad69b0deb1fc64cafb5ca870de701fe22790dcba9"
+    },
+    {
+      "uid": "midv2020/grc_passport/44/corner_clip",
+      "physical_id": "midv2020/grc_passport/44",
+      "role": "test",
+      "input_sha256": "d23ab6db1c9fbecd19a9fb29963ed27a0656ba95c80947e898d73e5b8330d32b"
+    },
+    {
+      "uid": "midv2020/grc_passport/44/field_clip",
+      "physical_id": "midv2020/grc_passport/44",
+      "role": "test",
+      "input_sha256": "de742df00f8b0ea415ae15004e6c39d70797b2f58bab6359ba891837c71bf578"
+    },
+    {
+      "uid": "midv2020/grc_passport/44/full",
+      "physical_id": "midv2020/grc_passport/44",
+      "role": "test",
+      "input_sha256": "3d8c84a70f8f6fbeb354f5279874fff2871220f98aa9dad662d015dfbf32d644"
+    },
+    {
+      "uid": "midv2020/grc_passport/47/corner_clip",
+      "physical_id": "midv2020/grc_passport/47",
+      "role": "test",
+      "input_sha256": "6fca57875d9b49a99aab03cb8b2f5c158c6b23609a65e91b87c89403a850e85e"
+    },
+    {
+      "uid": "midv2020/grc_passport/47/field_clip",
+      "physical_id": "midv2020/grc_passport/47",
+      "role": "test",
+      "input_sha256": "50952211ab3c44dd3dc4c35d847116119d2b2c31ba937f6adbac521b09228ec3"
+    },
+    {
+      "uid": "midv2020/grc_passport/47/full",
+      "physical_id": "midv2020/grc_passport/47",
+      "role": "test",
+      "input_sha256": "508656fad99b6b22255e288483f98fb53248584ca3d5e9421c4a0445fe4df24a"
+    },
+    {
+      "uid": "midv2020/grc_passport/63/corner_clip",
+      "physical_id": "midv2020/grc_passport/63",
+      "role": "test",
+      "input_sha256": "ecbf2cedd6e07353a2295dd3f83e8322dda96bc30d77fae2b46204569dd65016"
+    },
+    {
+      "uid": "midv2020/grc_passport/63/field_clip",
+      "physical_id": "midv2020/grc_passport/63",
+      "role": "test",
+      "input_sha256": "b02805ca3affa58ed352f432e9cc6832b46efb5d768b5456a835135eba148da1"
+    },
+    {
+      "uid": "midv2020/grc_passport/63/full",
+      "physical_id": "midv2020/grc_passport/63",
+      "role": "test",
+      "input_sha256": "f656c960c838305e4027cc7788b245e2591019570e52043c155e7e40ed216171"
+    },
+    {
+      "uid": "midv2020/grc_passport/69/corner_clip",
+      "physical_id": "midv2020/grc_passport/69",
+      "role": "development",
+      "input_sha256": "08da5598d929681edd8797f1d908876d535e585f7255046f8d2638beced5b7be"
+    },
+    {
+      "uid": "midv2020/grc_passport/69/field_clip",
+      "physical_id": "midv2020/grc_passport/69",
+      "role": "development",
+      "input_sha256": "5e105b7ce808ca6bbe64604a29361e4025dbe4ea9fcef4399a39330afcf40b33"
+    },
+    {
+      "uid": "midv2020/grc_passport/69/full",
+      "physical_id": "midv2020/grc_passport/69",
+      "role": "development",
+      "input_sha256": "c04db93b4453c4b789836312525d2c9bf2582876c149b507945b3ac930e418be"
+    },
+    {
+      "uid": "midv2020/grc_passport/82/corner_clip",
+      "physical_id": "midv2020/grc_passport/82",
+      "role": "development",
+      "input_sha256": "125b6a8ba33692312ae9400c53b45a87ac8b5ad52cf34e70ab60da62df77d126"
+    },
+    {
+      "uid": "midv2020/grc_passport/82/field_clip",
+      "physical_id": "midv2020/grc_passport/82",
+      "role": "development",
+      "input_sha256": "003feb22830cae270719a73c4591b77a0815ae09c0024a0bb71e382887337db8"
+    },
+    {
+      "uid": "midv2020/grc_passport/82/full",
+      "physical_id": "midv2020/grc_passport/82",
+      "role": "development",
+      "input_sha256": "61e0cf292a4ec911d58bcd35d8eaaa2e447ddd847384cb8112686c043889a48f"
+    },
+    {
+      "uid": "midv2020/grc_passport/94/corner_clip",
+      "physical_id": "midv2020/grc_passport/94",
+      "role": "calibration",
+      "input_sha256": "9549631a53e860da44f10a8f9a6ec36d2e9e1b7f20b682653ff41018417967a1"
+    },
+    {
+      "uid": "midv2020/grc_passport/94/field_clip",
+      "physical_id": "midv2020/grc_passport/94",
+      "role": "calibration",
+      "input_sha256": "955be16f9b0aff2e576aed881e6209c1bd2d0e58d9f41dbbc813acaf5e4ca9a0"
+    },
+    {
+      "uid": "midv2020/grc_passport/94/full",
+      "physical_id": "midv2020/grc_passport/94",
+      "role": "calibration",
+      "input_sha256": "220c52b986b941f97783853a9de50ec1e5a02c2cddeffd5bd3a9f2b334272161"
+    },
+    {
+      "uid": "midv2020/lva_passport/44/corner_clip",
+      "physical_id": "midv2020/lva_passport/44",
+      "role": "development",
+      "input_sha256": "4a6fe79c6084a2fa42dc13b57bf7ec13abac0ff0ad13c44512a13159c78df05b"
+    },
+    {
+      "uid": "midv2020/lva_passport/44/field_clip",
+      "physical_id": "midv2020/lva_passport/44",
+      "role": "development",
+      "input_sha256": "afa608481c231a6af6672ace296114a165e98fdddadc3882b966e29f448dbb0c"
+    },
+    {
+      "uid": "midv2020/lva_passport/44/full",
+      "physical_id": "midv2020/lva_passport/44",
+      "role": "development",
+      "input_sha256": "c50dfa2ddbf4ecc3cc71357e886cbb7a02be18b0b0fe9db01598a8d77d1ab30a"
+    },
+    {
+      "uid": "midv2020/lva_passport/67/corner_clip",
+      "physical_id": "midv2020/lva_passport/67",
+      "role": "test",
+      "input_sha256": "fe49270028622451b7a099d713b7e29b7f55197c7f418dfbdd5275dba671136a"
+    },
+    {
+      "uid": "midv2020/lva_passport/67/field_clip",
+      "physical_id": "midv2020/lva_passport/67",
+      "role": "test",
+      "input_sha256": "439a0afc0e06ff5d3f2d4cc67a560f388b267c5b87908b5afa0421824164146c"
+    },
+    {
+      "uid": "midv2020/lva_passport/67/full",
+      "physical_id": "midv2020/lva_passport/67",
+      "role": "test",
+      "input_sha256": "bffdfcd5000a0eadc12bde610c4a5cb7d62cb032434f8f77622424e6b14387a8"
+    },
+    {
+      "uid": "midv2020/lva_passport/69/corner_clip",
+      "physical_id": "midv2020/lva_passport/69",
+      "role": "test",
+      "input_sha256": "741539d4eaed3aa4c247cf44f2a35059ccf32106f389519118221e15fa57af3e"
+    },
+    {
+      "uid": "midv2020/lva_passport/69/field_clip",
+      "physical_id": "midv2020/lva_passport/69",
+      "role": "test",
+      "input_sha256": "c0c119a5422ae62b7a24afb61d2dbca3c745cfdc63d29886dd3502e987e709eb"
+    },
+    {
+      "uid": "midv2020/lva_passport/69/full",
+      "physical_id": "midv2020/lva_passport/69",
+      "role": "test",
+      "input_sha256": "df61cf6f56e9625c1195a44ace16ba1f953f1a3ed93e67a36e717a92df66b7a3"
+    },
+    {
+      "uid": "midv2020/lva_passport/70/corner_clip",
+      "physical_id": "midv2020/lva_passport/70",
+      "role": "calibration",
+      "input_sha256": "8a6b75a3e8e4994e9ea8c625557198a7ab339324bdc708a0de5e4c6b434cdf21"
+    },
+    {
+      "uid": "midv2020/lva_passport/70/field_clip",
+      "physical_id": "midv2020/lva_passport/70",
+      "role": "calibration",
+      "input_sha256": "69ebc917b09898096488f7bc3d55cc26dcf0353fe5ac7b5cff898fac6f8bc68a"
+    },
+    {
+      "uid": "midv2020/lva_passport/70/full",
+      "physical_id": "midv2020/lva_passport/70",
+      "role": "calibration",
+      "input_sha256": "2ac1cae817683a3d53c1f8b660ccd8ed3b7cbf055647bd56c7c83e3b9d1bc9e3"
+    },
+    {
+      "uid": "midv2020/lva_passport/90/corner_clip",
+      "physical_id": "midv2020/lva_passport/90",
+      "role": "test",
+      "input_sha256": "f4aff2a944dbc40e4e8560e2c4c74e71f0be0537af2a13b8364535bf614e85b2"
+    },
+    {
+      "uid": "midv2020/lva_passport/90/field_clip",
+      "physical_id": "midv2020/lva_passport/90",
+      "role": "test",
+      "input_sha256": "caae49c8d1ec1573ae243ce10ca40feac82a663ece79fd426c4af6b2741359cb"
+    },
+    {
+      "uid": "midv2020/lva_passport/90/full",
+      "physical_id": "midv2020/lva_passport/90",
+      "role": "test",
+      "input_sha256": "b9b29ddade1a2c93ebd7e44cfb0f1f75c76d9ea072a71d8d3cd3250102009693"
+    },
+    {
+      "uid": "midv2020/lva_passport/94/corner_clip",
+      "physical_id": "midv2020/lva_passport/94",
+      "role": "development",
+      "input_sha256": "a24d7208e2491c168938aa07e24b176562df5f1235c93e225f76d00c802f3889"
+    },
+    {
+      "uid": "midv2020/lva_passport/94/field_clip",
+      "physical_id": "midv2020/lva_passport/94",
+      "role": "development",
+      "input_sha256": "b12e7042792d84642adf96983d63d1008be35f4c8dcd38ee49f4c11c76e711c4"
+    },
+    {
+      "uid": "midv2020/lva_passport/94/full",
+      "physical_id": "midv2020/lva_passport/94",
+      "role": "development",
+      "input_sha256": "cb69366dcf2c8b50e3792e1369db12a5546f3b623db10b4440322e93b2b379fc"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/33/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "role": "development",
+      "input_sha256": "e4a6e852b0d8febce5146645d8e84074c3c1a08baa5bd2ed16ef2e908a7a3143"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/33/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "role": "development",
+      "input_sha256": "6fa2a88a3fe4de8f21b93f244981f164349035edc6c449b997886e66d48dc959"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/33/full",
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "role": "development",
+      "input_sha256": "3742ead06a584a7d593c0ff35c57230443e39dc234f62e031e21d1995a79c995"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/47/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/47",
+      "role": "test",
+      "input_sha256": "6362b346daf39733b070259517130fa6b118f69f1ffa840475d6de8182399003"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/47/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/47",
+      "role": "test",
+      "input_sha256": "38b78e365bff4b9be4b300402a4bb30a8e09c6e2f5e051d728f5938128e8a55d"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/47/full",
+      "physical_id": "midv2020/rus_internalpassport/47",
+      "role": "test",
+      "input_sha256": "2a4132ed9d43a2dcfad65712cca8363984678f209d211fedbebda49698472cb6"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/67/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/67",
+      "role": "development",
+      "input_sha256": "bcb4b1cc99bbb60934c592d901126d2987a8588b09efab0a7c23f1f51e1de3db"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/67/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/67",
+      "role": "development",
+      "input_sha256": "d9bb5f8b046694069b6758df77cb4e7c394788e7d07e2b4792c0d18a1600ef41"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/67/full",
+      "physical_id": "midv2020/rus_internalpassport/67",
+      "role": "development",
+      "input_sha256": "4ed21ef38666e712e15db20cd09270ef970159380b8010e89fdbece6194e498f"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/69/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/69",
+      "role": "test",
+      "input_sha256": "b29c40f88b0255bf030a8091fd62eec8ee844a08c57d4660c7fdbf8ebea474e4"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/69/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/69",
+      "role": "test",
+      "input_sha256": "bbb251224f7fcdea57a94ed3dbd247876f687ffda3dd6d7976cb28d1f04a27a9"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/69/full",
+      "physical_id": "midv2020/rus_internalpassport/69",
+      "role": "test",
+      "input_sha256": "ea3dbe8b0f906d7e217e26a463c893205d1da9fdc2ea164d4c0e58451e5e19c9"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/70/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "role": "test",
+      "input_sha256": "1cf1f7172c01b2ececdc135788a7769586782a7959efbefb5fd3d7bd360b30f7"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/70/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "role": "test",
+      "input_sha256": "3946cd7bcb3f479e946dcfca3924f3896ab510073d98e48e7461a85d0b8fe12b"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/70/full",
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "role": "test",
+      "input_sha256": "8a7fc4660340fa8f5d66ea1d2c9249c215920550b0803f9c6d38ee386dfda1ed"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/82/corner_clip",
+      "physical_id": "midv2020/rus_internalpassport/82",
+      "role": "calibration",
+      "input_sha256": "1582706e3968bea4545f68e15e2300fc4189a018095c1f08e528a901d0129ce5"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/82/field_clip",
+      "physical_id": "midv2020/rus_internalpassport/82",
+      "role": "calibration",
+      "input_sha256": "83e60e1321e864726ddaa0e0eb61083951233fc1df4c9c223b4432491286b39f"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/82/full",
+      "physical_id": "midv2020/rus_internalpassport/82",
+      "role": "calibration",
+      "input_sha256": "ce1fef8ed85d07517b200713a39996a4a1fc7894dfde31a304b8982d53bba784"
+    },
+    {
+      "uid": "midv2020/srb_passport/33/corner_clip",
+      "physical_id": "midv2020/srb_passport/33",
+      "role": "test",
+      "input_sha256": "9ac6f2282245861b5a5507ae09864bd7cdabd44b90521ceb60a7f923acade35e"
+    },
+    {
+      "uid": "midv2020/srb_passport/33/field_clip",
+      "physical_id": "midv2020/srb_passport/33",
+      "role": "test",
+      "input_sha256": "90ef7e6dcb49d9a907865b9a83b13c635e491e0b4e5f267978f6f4eac8a7bc7b"
+    },
+    {
+      "uid": "midv2020/srb_passport/33/full",
+      "physical_id": "midv2020/srb_passport/33",
+      "role": "test",
+      "input_sha256": "c8924e5ef8e5ab81572861083ff48c63f316b706ac76b1ee4205c99aca4e136d"
+    },
+    {
+      "uid": "midv2020/srb_passport/44/corner_clip",
+      "physical_id": "midv2020/srb_passport/44",
+      "role": "calibration",
+      "input_sha256": "c6eb8746a28b3ef099bb31b4b8afc0227c0043114775eef1d309565a10e7c58c"
+    },
+    {
+      "uid": "midv2020/srb_passport/44/field_clip",
+      "physical_id": "midv2020/srb_passport/44",
+      "role": "calibration",
+      "input_sha256": "1f8c5c7e8bc261760fe55ba73351b7b300780e7f1931c37bd4335d5ad49c05e8"
+    },
+    {
+      "uid": "midv2020/srb_passport/44/full",
+      "physical_id": "midv2020/srb_passport/44",
+      "role": "calibration",
+      "input_sha256": "631b9ac352ae09879d061e3cec55d21e8066319149157afce65fea27d835bb40"
+    },
+    {
+      "uid": "midv2020/srb_passport/47/corner_clip",
+      "physical_id": "midv2020/srb_passport/47",
+      "role": "development",
+      "input_sha256": "c483b6d4c7091df680c7912699590e15f2550ff99fb232e1f6d59e4e5b2504df"
+    },
+    {
+      "uid": "midv2020/srb_passport/47/field_clip",
+      "physical_id": "midv2020/srb_passport/47",
+      "role": "development",
+      "input_sha256": "ebd91475d2db24d7f3307ed073315a0b597a49ca4fcbf04a1e133fcc84f27586"
+    },
+    {
+      "uid": "midv2020/srb_passport/47/full",
+      "physical_id": "midv2020/srb_passport/47",
+      "role": "development",
+      "input_sha256": "c741bdad6874e277e7542e9c4b1e4c047d25093bf75a2c7d8a49ad759c542c51"
+    },
+    {
+      "uid": "midv2020/srb_passport/67/corner_clip",
+      "physical_id": "midv2020/srb_passport/67",
+      "role": "test",
+      "input_sha256": "b3724f1f35bc15dd0f9bf333cdb5b91ae53fa9f0f3259c917b427ea53b907dfc"
+    },
+    {
+      "uid": "midv2020/srb_passport/67/field_clip",
+      "physical_id": "midv2020/srb_passport/67",
+      "role": "test",
+      "input_sha256": "abdbedbfe14219541f5e87af16e3a23d5ce3ef649c6c8bdabe1bc44fc4d93f9a"
+    },
+    {
+      "uid": "midv2020/srb_passport/67/full",
+      "physical_id": "midv2020/srb_passport/67",
+      "role": "test",
+      "input_sha256": "2ae438af4eec40090d94959a2c19006977de101dd858997cc827b65b90c95d12"
+    },
+    {
+      "uid": "midv2020/srb_passport/70/corner_clip",
+      "physical_id": "midv2020/srb_passport/70",
+      "role": "test",
+      "input_sha256": "19955242fad6f1b191c451c10a410180f5c04cb94cfba61c71e729140b7b5717"
+    },
+    {
+      "uid": "midv2020/srb_passport/70/field_clip",
+      "physical_id": "midv2020/srb_passport/70",
+      "role": "test",
+      "input_sha256": "3759db6781aaf3b4a6227e9a4559fbf7aa33c7a512fdc6e4719b546ce8bbf122"
+    },
+    {
+      "uid": "midv2020/srb_passport/70/full",
+      "physical_id": "midv2020/srb_passport/70",
+      "role": "test",
+      "input_sha256": "e6be7f124a5aec76f84c6b201b1f7fd8ee0796d67b332e11e1a59f0625d0e734"
+    },
+    {
+      "uid": "midv2020/srb_passport/90/corner_clip",
+      "physical_id": "midv2020/srb_passport/90",
+      "role": "development",
+      "input_sha256": "bee63df915d803578394be6f746fda816c04186ae105bfb56a8c971e0ce3eea2"
+    },
+    {
+      "uid": "midv2020/srb_passport/90/field_clip",
+      "physical_id": "midv2020/srb_passport/90",
+      "role": "development",
+      "input_sha256": "5b315b34b8adc92e8e212de87a8f8889af5e264bc94d24ca2cf5cfaee0956f8a"
+    },
+    {
+      "uid": "midv2020/srb_passport/90/full",
+      "physical_id": "midv2020/srb_passport/90",
+      "role": "development",
+      "input_sha256": "5604c8345f7ecdda76b017707162fc3a821771cff61f0e22cb95be4793c62ae4"
+    },
+    {
+      "uid": "midv2020/svk_id/33/corner_clip",
+      "physical_id": "midv2020/svk_id/33",
+      "role": "calibration",
+      "input_sha256": "f778950ab00ee5b007ca1355ba97ca2fa44840004d49ee145e2fc4466816d8e2"
+    },
+    {
+      "uid": "midv2020/svk_id/33/field_clip",
+      "physical_id": "midv2020/svk_id/33",
+      "role": "calibration",
+      "input_sha256": "20336f27305ac372419368d27f9cfb39630fbc32feba74c8078b1d8e6441e963"
+    },
+    {
+      "uid": "midv2020/svk_id/33/full",
+      "physical_id": "midv2020/svk_id/33",
+      "role": "calibration",
+      "input_sha256": "75161c663faf494db16b64f55c6a202b00a780950d4e832f0427e48dd9ae8f74"
+    },
+    {
+      "uid": "midv2020/svk_id/44/corner_clip",
+      "physical_id": "midv2020/svk_id/44",
+      "role": "development",
+      "input_sha256": "759917a9111de561f57fec3380b7bcbfb8d4ac33abac64d85587415b1cb4b916"
+    },
+    {
+      "uid": "midv2020/svk_id/44/field_clip",
+      "physical_id": "midv2020/svk_id/44",
+      "role": "development",
+      "input_sha256": "50ea865e9233827770ce93000abe34b5d50b7c62e569fe3596d9e252fb47411d"
+    },
+    {
+      "uid": "midv2020/svk_id/44/full",
+      "physical_id": "midv2020/svk_id/44",
+      "role": "development",
+      "input_sha256": "d04e828d93c3c1a937a66c163d25b8e13bb81210ceadc54edc2944d27238422d"
+    },
+    {
+      "uid": "midv2020/svk_id/47/corner_clip",
+      "physical_id": "midv2020/svk_id/47",
+      "role": "development",
+      "input_sha256": "4cfcf2cc79f7b646b66e78a7ab8f8c26636682f029eb10fb9edde99f63bcce1b"
+    },
+    {
+      "uid": "midv2020/svk_id/47/field_clip",
+      "physical_id": "midv2020/svk_id/47",
+      "role": "development",
+      "input_sha256": "870deefd24c69eb9926f5fa641ff6ce127d0b3078ac2b68835d135b64f87c4d1"
+    },
+    {
+      "uid": "midv2020/svk_id/47/full",
+      "physical_id": "midv2020/svk_id/47",
+      "role": "development",
+      "input_sha256": "0cb2cdc70f1bd8fab0be927c60d51d75fea47a0432ec254a79b87388303e127d"
+    },
+    {
+      "uid": "midv2020/svk_id/69/corner_clip",
+      "physical_id": "midv2020/svk_id/69",
+      "role": "test",
+      "input_sha256": "e8f42feb4e0c0e7eb7faeb2e5783c188111a185911aa69ce5754dbbd6234c1fe"
+    },
+    {
+      "uid": "midv2020/svk_id/69/field_clip",
+      "physical_id": "midv2020/svk_id/69",
+      "role": "test",
+      "input_sha256": "dd6af138f42c295e4ac8f2529699cd86ee57ea0dcc0249c3e4f1124eede6bd3a"
+    },
+    {
+      "uid": "midv2020/svk_id/69/full",
+      "physical_id": "midv2020/svk_id/69",
+      "role": "test",
+      "input_sha256": "b6e491e4f9572ced9577a3caaebc956d61d1bff120a9751c80744a163c9da553"
+    },
+    {
+      "uid": "midv2020/svk_id/82/corner_clip",
+      "physical_id": "midv2020/svk_id/82",
+      "role": "test",
+      "input_sha256": "e2a163559cf1d31f34c227729fabb3f4bf3a35c94225c8cc66f71ee5530457d6"
+    },
+    {
+      "uid": "midv2020/svk_id/82/field_clip",
+      "physical_id": "midv2020/svk_id/82",
+      "role": "test",
+      "input_sha256": "03aa9dfb58211f6ab9ab656862438a6c60515db23fc633e9ab6ac13b13777c9c"
+    },
+    {
+      "uid": "midv2020/svk_id/82/full",
+      "physical_id": "midv2020/svk_id/82",
+      "role": "test",
+      "input_sha256": "f27c8f1478c805705415e941b01acaf81b79a882c5e7b2d11e4ea61cb22675f5"
+    },
+    {
+      "uid": "midv2020/svk_id/90/corner_clip",
+      "physical_id": "midv2020/svk_id/90",
+      "role": "test",
+      "input_sha256": "3bb16745f52e9efafff05c2b0ff7a5da2591215b36b03d5941ec7fc3518b7dba"
+    },
+    {
+      "uid": "midv2020/svk_id/90/field_clip",
+      "physical_id": "midv2020/svk_id/90",
+      "role": "test",
+      "input_sha256": "83af699e90a328f4d93dbc5559c9808df69a2c0c05ba514604c9ad9cf595782a"
+    },
+    {
+      "uid": "midv2020/svk_id/90/full",
+      "physical_id": "midv2020/svk_id/90",
+      "role": "test",
+      "input_sha256": "45d19434ed3b57de73f8e8a4ab050b995341a637dd495a5c1c2d88966f83b360"
+    },
+    {
+      "uid": "specimen/L0/00/blur_glare",
+      "physical_id": "specimen/L0/00",
+      "role": "development",
+      "input_sha256": "caaa3a0bed7ee6dd8763400decf08fdfd2a553b6283d105f47998824c9ec0fbd"
+    },
+    {
+      "uid": "specimen/L0/00/corner_clip",
+      "physical_id": "specimen/L0/00",
+      "role": "development",
+      "input_sha256": "7fb28048c22ba601e67aec0b6bd5134d94098451995a888d767a419f65d11577"
+    },
+    {
+      "uid": "specimen/L0/00/field_clip",
+      "physical_id": "specimen/L0/00",
+      "role": "development",
+      "input_sha256": "56984c86510ae9dd7c9033947990c03f3d9dcd6914fa198761680262cbf15ab1"
+    },
+    {
+      "uid": "specimen/L0/00/full",
+      "physical_id": "specimen/L0/00",
+      "role": "development",
+      "input_sha256": "6dfd187ac31b09b952bdec91d4e63ba759b8c53553469f45c4eca0556d183949"
+    },
+    {
+      "uid": "specimen/L0/01/blur_glare",
+      "physical_id": "specimen/L0/01",
+      "role": "development",
+      "input_sha256": "ccda41076fdef32edc970b51e0f060b1bb65be340c14f8160b915d20815b08f2"
+    },
+    {
+      "uid": "specimen/L0/01/corner_clip",
+      "physical_id": "specimen/L0/01",
+      "role": "development",
+      "input_sha256": "7c0a7bf69e57ff3a5ef0c39010cf6a82c046d89d9fbe2fc629f5e58c3693f3f7"
+    },
+    {
+      "uid": "specimen/L0/01/field_clip",
+      "physical_id": "specimen/L0/01",
+      "role": "development",
+      "input_sha256": "bf7628a5f9794f3aeababbe6b1e4a87e84aef9b1d4de052cc89538504b14c9ff"
+    },
+    {
+      "uid": "specimen/L0/01/full",
+      "physical_id": "specimen/L0/01",
+      "role": "development",
+      "input_sha256": "faf5d159c295de99ad4306748e8245e6bb4c4124f1d57502d616c05b0d2da673"
+    },
+    {
+      "uid": "specimen/L0/02/blur_glare",
+      "physical_id": "specimen/L0/02",
+      "role": "development",
+      "input_sha256": "16980dbb052335d2e4155436c5bb7857809118f49e559b37b027ed4d6052700c"
+    },
+    {
+      "uid": "specimen/L0/02/corner_clip",
+      "physical_id": "specimen/L0/02",
+      "role": "development",
+      "input_sha256": "318f61147f283d43edc5ccfd5c9d4079cc20d503a5894fb1c23a9c6dcebdf6a5"
+    },
+    {
+      "uid": "specimen/L0/02/field_clip",
+      "physical_id": "specimen/L0/02",
+      "role": "development",
+      "input_sha256": "3a4842758c6b2a2457ce786f0dee4786b2ec8a571d7a7e86a50e678317a8d737"
+    },
+    {
+      "uid": "specimen/L0/02/full",
+      "physical_id": "specimen/L0/02",
+      "role": "development",
+      "input_sha256": "11b9e6f6af08147f65669de1d4d4979d6a271b11f774975de15dd012c1ecadb1"
+    },
+    {
+      "uid": "specimen/L0/03/blur_glare",
+      "physical_id": "specimen/L0/03",
+      "role": "development",
+      "input_sha256": "5c44d8978fc058749edf0276aa3ae6b7557e5a487004fbb93ff6832bce6c85f6"
+    },
+    {
+      "uid": "specimen/L0/03/corner_clip",
+      "physical_id": "specimen/L0/03",
+      "role": "development",
+      "input_sha256": "25bafede8c7b9724ba6ce711a2bb51683a3e93f3928d73841f9e211265fe4acd"
+    },
+    {
+      "uid": "specimen/L0/03/field_clip",
+      "physical_id": "specimen/L0/03",
+      "role": "development",
+      "input_sha256": "7e56d5999c6b2e516ac69bb8609b7f194c6e39e700818760510981dd31374914"
+    },
+    {
+      "uid": "specimen/L0/03/full",
+      "physical_id": "specimen/L0/03",
+      "role": "development",
+      "input_sha256": "f5c8fb3b72ca58827259b6319cd0ed442934a7594e79699f35e247ab25413ad4"
+    },
+    {
+      "uid": "specimen/L0/04/blur_glare",
+      "physical_id": "specimen/L0/04",
+      "role": "development",
+      "input_sha256": "16fd0e6438e2f3979a305e9087c92df6821af57a23cc0a20c46f655bd893c61f"
+    },
+    {
+      "uid": "specimen/L0/04/corner_clip",
+      "physical_id": "specimen/L0/04",
+      "role": "development",
+      "input_sha256": "8fb05bed45ebd33b5770697f5beb29436bb391dfc05d0f91b9c63faec8d8bba0"
+    },
+    {
+      "uid": "specimen/L0/04/field_clip",
+      "physical_id": "specimen/L0/04",
+      "role": "development",
+      "input_sha256": "9bcf0e231527aa4fed1670059a396f9e0ba308ba603844bce84d97cbde1d53b6"
+    },
+    {
+      "uid": "specimen/L0/04/full",
+      "physical_id": "specimen/L0/04",
+      "role": "development",
+      "input_sha256": "8380b070c3d3ae3e2d6e504e38ce19962c8d1f6a867743d4727c45b8a6305012"
+    },
+    {
+      "uid": "specimen/L0/05/blur_glare",
+      "physical_id": "specimen/L0/05",
+      "role": "calibration",
+      "input_sha256": "d332e2f0d595715818d79d5ccd1ac5aa4a34b29885a0bd7aca9070dc0a0d5216"
+    },
+    {
+      "uid": "specimen/L0/05/corner_clip",
+      "physical_id": "specimen/L0/05",
+      "role": "calibration",
+      "input_sha256": "f56daa3653a497113bfd0ea1a441920b5af5101b774203082a34354218c96d70"
+    },
+    {
+      "uid": "specimen/L0/05/field_clip",
+      "physical_id": "specimen/L0/05",
+      "role": "calibration",
+      "input_sha256": "381ffa90281216a5db1cfde93de7d682094c631755703a480cdb85c6060ffe45"
+    },
+    {
+      "uid": "specimen/L0/05/full",
+      "physical_id": "specimen/L0/05",
+      "role": "calibration",
+      "input_sha256": "3026f381a26d502179e17e5e709f81e55e67d5f4ff77573f237468a9d72bd4e6"
+    },
+    {
+      "uid": "specimen/L0/06/blur_glare",
+      "physical_id": "specimen/L0/06",
+      "role": "calibration",
+      "input_sha256": "881104099bf4aeb274e4c10f2d87dad754bba56f53dba41f33064fea62e6144c"
+    },
+    {
+      "uid": "specimen/L0/06/corner_clip",
+      "physical_id": "specimen/L0/06",
+      "role": "calibration",
+      "input_sha256": "6d693127534c0d290a8814381c6a71c5f252bbfd2767becbe6a18144ebadcd3d"
+    },
+    {
+      "uid": "specimen/L0/06/field_clip",
+      "physical_id": "specimen/L0/06",
+      "role": "calibration",
+      "input_sha256": "1e5d0d0b89148563609861a048daa0c5b528d92bfe9b8fdaf3cd39933e8be3d4"
+    },
+    {
+      "uid": "specimen/L0/06/full",
+      "physical_id": "specimen/L0/06",
+      "role": "calibration",
+      "input_sha256": "62f1355a26eee9aa623ea186f44699ff6ce9dc49f1b2a5f3c8c33c2596420891"
+    },
+    {
+      "uid": "specimen/L0/07/blur_glare",
+      "physical_id": "specimen/L0/07",
+      "role": "calibration",
+      "input_sha256": "e8828a1305bb825ab8deabdfe7fc98f795335565ad9ad349887b3ad49e664560"
+    },
+    {
+      "uid": "specimen/L0/07/corner_clip",
+      "physical_id": "specimen/L0/07",
+      "role": "calibration",
+      "input_sha256": "7b3048460048816978f329b58e6f0b0f7b53662488a0ef8f413c765cdb65b2c4"
+    },
+    {
+      "uid": "specimen/L0/07/field_clip",
+      "physical_id": "specimen/L0/07",
+      "role": "calibration",
+      "input_sha256": "360c338812bdc283c4eb1cff1ac9594bc2c6736883fdea3075068f2eae121121"
+    },
+    {
+      "uid": "specimen/L0/07/full",
+      "physical_id": "specimen/L0/07",
+      "role": "calibration",
+      "input_sha256": "c6ed641785ec2af65368bb7fde9ea51b6a00a1fe8144761b7b550527248d71e1"
+    },
+    {
+      "uid": "specimen/L0/08/blur_glare",
+      "physical_id": "specimen/L0/08",
+      "role": "calibration",
+      "input_sha256": "e060f88e1de2701d64ed98eaab91d83af93c18c2c2512b403d3a5e7d5f225f0d"
+    },
+    {
+      "uid": "specimen/L0/08/corner_clip",
+      "physical_id": "specimen/L0/08",
+      "role": "calibration",
+      "input_sha256": "169b2e0c0a674f9c19c60933b68a69dd3ded8de302b32736a2ac4f937d188de5"
+    },
+    {
+      "uid": "specimen/L0/08/field_clip",
+      "physical_id": "specimen/L0/08",
+      "role": "calibration",
+      "input_sha256": "91a976aa965adefeb41e5b00c97eab8e3d0eafc0841b304c5d8772e5b0ea62c8"
+    },
+    {
+      "uid": "specimen/L0/08/full",
+      "physical_id": "specimen/L0/08",
+      "role": "calibration",
+      "input_sha256": "080f85e3f05a80ab1233b4daa5024c0aa738768f8a84806e88cece7f00cd0e5b"
+    },
+    {
+      "uid": "specimen/L0/09/blur_glare",
+      "physical_id": "specimen/L0/09",
+      "role": "calibration",
+      "input_sha256": "fafb913f659d09e472836570e2b1ad252b655375dc16c10e0478a0ffd93de5d6"
+    },
+    {
+      "uid": "specimen/L0/09/corner_clip",
+      "physical_id": "specimen/L0/09",
+      "role": "calibration",
+      "input_sha256": "4c71ece6b9bbc0d47501ef91e3c5b8a2d3a01dd3f1b6b8f8d3fd6576e88ffa0f"
+    },
+    {
+      "uid": "specimen/L0/09/field_clip",
+      "physical_id": "specimen/L0/09",
+      "role": "calibration",
+      "input_sha256": "4ff4d5c23000f09f6ef8ab50960a2bfa2afd2600efd7e6f868615ace0192edbf"
+    },
+    {
+      "uid": "specimen/L0/09/full",
+      "physical_id": "specimen/L0/09",
+      "role": "calibration",
+      "input_sha256": "ca2175883a9b5546d277bef5e15a4d18b5c6fc3ca65c1257e70b6e3cbba282eb"
+    },
+    {
+      "uid": "specimen/L0/10/blur_glare",
+      "physical_id": "specimen/L0/10",
+      "role": "test",
+      "input_sha256": "633932ebae2128b4e275c8ef9120e25ca100b08cd714fe59aac0f9eec8137447"
+    },
+    {
+      "uid": "specimen/L0/10/corner_clip",
+      "physical_id": "specimen/L0/10",
+      "role": "test",
+      "input_sha256": "0b732b1877b0f8d42f6d29e936715dbfc4d7645d99e37ebacd4d94234f31f8fe"
+    },
+    {
+      "uid": "specimen/L0/10/field_clip",
+      "physical_id": "specimen/L0/10",
+      "role": "test",
+      "input_sha256": "9c1816d0e6873df919766d22aaca71252a2b7865d4f4e7f954c2a822f821d6ed"
+    },
+    {
+      "uid": "specimen/L0/10/full",
+      "physical_id": "specimen/L0/10",
+      "role": "test",
+      "input_sha256": "4141ebc665efaef741da7d5f731a814f1eacb30717c4240dc9e3e0f586cddadc"
+    },
+    {
+      "uid": "specimen/L0/11/blur_glare",
+      "physical_id": "specimen/L0/11",
+      "role": "test",
+      "input_sha256": "42bba32a388ad9cefbed889abd3a1d8becea7c8bf090163984d4fa3061628c71"
+    },
+    {
+      "uid": "specimen/L0/11/corner_clip",
+      "physical_id": "specimen/L0/11",
+      "role": "test",
+      "input_sha256": "f03f2d55ae5c2238f9db383dcdc665854b3c3274aae7a6e3203c810eefa89f52"
+    },
+    {
+      "uid": "specimen/L0/11/field_clip",
+      "physical_id": "specimen/L0/11",
+      "role": "test",
+      "input_sha256": "5f5fc96da1fc650dc418c5c5db44a82bbb2eb3987ae699b79ed91b46a2d95b71"
+    },
+    {
+      "uid": "specimen/L0/11/full",
+      "physical_id": "specimen/L0/11",
+      "role": "test",
+      "input_sha256": "21aea6bfcdc225e9d4af855055ef064005f238df754e6c300f837c0dcb4599ab"
+    },
+    {
+      "uid": "specimen/L0/12/blur_glare",
+      "physical_id": "specimen/L0/12",
+      "role": "test",
+      "input_sha256": "37d840df8e6633918c5b6a1ded019932b4ba482f837035aa58b9ca5c62092ae5"
+    },
+    {
+      "uid": "specimen/L0/12/corner_clip",
+      "physical_id": "specimen/L0/12",
+      "role": "test",
+      "input_sha256": "bf70f655d6ec9c2d12f95db21db8ebe40911fbf981886c59599192ff4a02dd36"
+    },
+    {
+      "uid": "specimen/L0/12/field_clip",
+      "physical_id": "specimen/L0/12",
+      "role": "test",
+      "input_sha256": "2cebd9180988de05b4bc14ff89c7bdbd0c3d3dacad5e4b67265f93b573ab009e"
+    },
+    {
+      "uid": "specimen/L0/12/full",
+      "physical_id": "specimen/L0/12",
+      "role": "test",
+      "input_sha256": "c1cd2587e8b8d5737e6e7a4d6b25c2b4f652ba51946c4822a7fb902c8eb0aea6"
+    },
+    {
+      "uid": "specimen/L0/13/blur_glare",
+      "physical_id": "specimen/L0/13",
+      "role": "test",
+      "input_sha256": "279dfaa9f2b27ca00686f98fac3462f410c190fbe8f78a284fe20a3c4a6bb1e8"
+    },
+    {
+      "uid": "specimen/L0/13/corner_clip",
+      "physical_id": "specimen/L0/13",
+      "role": "test",
+      "input_sha256": "b49aa4ef2f531fe4662875474b7f9022e14384e956083e218d9bfa1e537a583d"
+    },
+    {
+      "uid": "specimen/L0/13/field_clip",
+      "physical_id": "specimen/L0/13",
+      "role": "test",
+      "input_sha256": "a4a3841279add03bf90105ba0dacd16cbde58f7c7ef806266f3e67b5e193ea92"
+    },
+    {
+      "uid": "specimen/L0/13/full",
+      "physical_id": "specimen/L0/13",
+      "role": "test",
+      "input_sha256": "5782ac15a1e7d613f21c404fe7c1b3d67851cf23f5c69281454bf56f2d7de2f7"
+    },
+    {
+      "uid": "specimen/L0/14/blur_glare",
+      "physical_id": "specimen/L0/14",
+      "role": "test",
+      "input_sha256": "0efbc4ab4c55456f2e13d388b41405f8ba1b21ff32c535b8478ad0b0624dcd66"
+    },
+    {
+      "uid": "specimen/L0/14/corner_clip",
+      "physical_id": "specimen/L0/14",
+      "role": "test",
+      "input_sha256": "019a875783f7f00e1d36b29e774220fbf01984f391eb1b448449289798166a65"
+    },
+    {
+      "uid": "specimen/L0/14/field_clip",
+      "physical_id": "specimen/L0/14",
+      "role": "test",
+      "input_sha256": "b6e206b2154a6ac77034e9677c2462370f3b8bf394c9f30653d3177f4d721f7a"
+    },
+    {
+      "uid": "specimen/L0/14/full",
+      "physical_id": "specimen/L0/14",
+      "role": "test",
+      "input_sha256": "2d18247f6b145785076a0c616f8d7506962572319d9a824c2557ee306f9e93dd"
+    },
+    {
+      "uid": "specimen/L1/00/blur_glare",
+      "physical_id": "specimen/L1/00",
+      "role": "development",
+      "input_sha256": "f716645d79545866390937cb4556a32ac04a1d7ff3ba99bc7b97a437c87cb899"
+    },
+    {
+      "uid": "specimen/L1/00/corner_clip",
+      "physical_id": "specimen/L1/00",
+      "role": "development",
+      "input_sha256": "d78519a57012f7efd6bed45ca243163edc48e6343ce3a198950f316f09d19d30"
+    },
+    {
+      "uid": "specimen/L1/00/field_clip",
+      "physical_id": "specimen/L1/00",
+      "role": "development",
+      "input_sha256": "903633fb5f3a318c7b2bd0b55521f38a157d02aadf6d0bd417415b6a80629bc9"
+    },
+    {
+      "uid": "specimen/L1/00/full",
+      "physical_id": "specimen/L1/00",
+      "role": "development",
+      "input_sha256": "6b2d0cc0c7da05edec5ec450d1c4ec9a2c36cfdeff203b9eeac22ea87c2c40fd"
+    },
+    {
+      "uid": "specimen/L1/01/blur_glare",
+      "physical_id": "specimen/L1/01",
+      "role": "development",
+      "input_sha256": "d1ad97483b26abd5e31905e89a16d2c1fefde4b2313bcb1fcaff56dbf71ec539"
+    },
+    {
+      "uid": "specimen/L1/01/corner_clip",
+      "physical_id": "specimen/L1/01",
+      "role": "development",
+      "input_sha256": "fbee614687403cbfe2a0ff49343beaee9f211640ad2aa59973cf355e81760f57"
+    },
+    {
+      "uid": "specimen/L1/01/field_clip",
+      "physical_id": "specimen/L1/01",
+      "role": "development",
+      "input_sha256": "0b745336ec0115746c990f3ac8ce363c0b6d3c45f8b736e9bfc67f9e5c199728"
+    },
+    {
+      "uid": "specimen/L1/01/full",
+      "physical_id": "specimen/L1/01",
+      "role": "development",
+      "input_sha256": "5e0fea3b4c46889aaf9d6af0b2fcb1a20ed9c2e6157395b99db9814d55d44eaa"
+    },
+    {
+      "uid": "specimen/L1/02/blur_glare",
+      "physical_id": "specimen/L1/02",
+      "role": "development",
+      "input_sha256": "d3c7af59fb2adf04208faf05a22e5422f1a7443f483945a57601a2087f2f3a8e"
+    },
+    {
+      "uid": "specimen/L1/02/corner_clip",
+      "physical_id": "specimen/L1/02",
+      "role": "development",
+      "input_sha256": "6da02b83cef0b9d1066f0b9b3306d8da3311910af0d18e31802c8dad7ab3f71e"
+    },
+    {
+      "uid": "specimen/L1/02/field_clip",
+      "physical_id": "specimen/L1/02",
+      "role": "development",
+      "input_sha256": "80f24b21fc3b8814abf85bd14e5e0a151805bd115b1492c3dfb5b55b107cb4e6"
+    },
+    {
+      "uid": "specimen/L1/02/full",
+      "physical_id": "specimen/L1/02",
+      "role": "development",
+      "input_sha256": "3b0675728d26db2ab0b27c036725cb79d81ae0615bc7b0bf01f77c26497d9d82"
+    },
+    {
+      "uid": "specimen/L1/03/blur_glare",
+      "physical_id": "specimen/L1/03",
+      "role": "development",
+      "input_sha256": "7c8b0da41a36eb82967845bb5aa186e04490deaadcfce3b8c984956f8b7dff2a"
+    },
+    {
+      "uid": "specimen/L1/03/corner_clip",
+      "physical_id": "specimen/L1/03",
+      "role": "development",
+      "input_sha256": "1a8cb680fe96c78bb9cd90e1032dba4c05b2f77c685fe00fb0fed1e371c91287"
+    },
+    {
+      "uid": "specimen/L1/03/field_clip",
+      "physical_id": "specimen/L1/03",
+      "role": "development",
+      "input_sha256": "75eef56f989fe098f9dc768faed20350d8ad3cf98b160482c14ff1fd6566ed07"
+    },
+    {
+      "uid": "specimen/L1/03/full",
+      "physical_id": "specimen/L1/03",
+      "role": "development",
+      "input_sha256": "2e2e4697252143c75078c3ef7569c60801201267a7e58e8ea5b47a6892edcd8d"
+    },
+    {
+      "uid": "specimen/L1/04/blur_glare",
+      "physical_id": "specimen/L1/04",
+      "role": "development",
+      "input_sha256": "55201a7ab0964809e2938aa1520a8efc191dbcf3032d22acdcb2bee9bf85a469"
+    },
+    {
+      "uid": "specimen/L1/04/corner_clip",
+      "physical_id": "specimen/L1/04",
+      "role": "development",
+      "input_sha256": "d0781c9a9e9a76c86cd6e3ba7c6377dd5cecee9fde2b3683f2fffa3aecbd9b28"
+    },
+    {
+      "uid": "specimen/L1/04/field_clip",
+      "physical_id": "specimen/L1/04",
+      "role": "development",
+      "input_sha256": "b64a3c69b38f6cc148e554ce55356565840e5aa171c8592ca585bfff7e84a1dd"
+    },
+    {
+      "uid": "specimen/L1/04/full",
+      "physical_id": "specimen/L1/04",
+      "role": "development",
+      "input_sha256": "6d44e1d27762f1fd2f6f87a64233015d01cf3d2273c642c642b528859874dbff"
+    },
+    {
+      "uid": "specimen/L1/05/blur_glare",
+      "physical_id": "specimen/L1/05",
+      "role": "calibration",
+      "input_sha256": "8fd1ad70609f0c632ea1c24089dd508501094680c7f31f77079ae52a36af0df8"
+    },
+    {
+      "uid": "specimen/L1/05/corner_clip",
+      "physical_id": "specimen/L1/05",
+      "role": "calibration",
+      "input_sha256": "c5186c7c6ef1de1f7cbadffa8e0090f5f6ed2201922d46d10966bf20dda9aad6"
+    },
+    {
+      "uid": "specimen/L1/05/field_clip",
+      "physical_id": "specimen/L1/05",
+      "role": "calibration",
+      "input_sha256": "e0ac8b5f3660d109c76929da65fb73602f0a883bfbfe463c9ad419ec7b00aa8e"
+    },
+    {
+      "uid": "specimen/L1/05/full",
+      "physical_id": "specimen/L1/05",
+      "role": "calibration",
+      "input_sha256": "938f4198138943741b19e2d25646c0c7164e4e19fe92904b3ade37444d882216"
+    },
+    {
+      "uid": "specimen/L1/06/blur_glare",
+      "physical_id": "specimen/L1/06",
+      "role": "calibration",
+      "input_sha256": "40caa96724388ea5b4d7c4532a5156207654e7d69b98b448fd3ab386182a9ecf"
+    },
+    {
+      "uid": "specimen/L1/06/corner_clip",
+      "physical_id": "specimen/L1/06",
+      "role": "calibration",
+      "input_sha256": "ea04264757c3402159073a9892997d4251de101c862bae2b90b9043cf1b8ebe7"
+    },
+    {
+      "uid": "specimen/L1/06/field_clip",
+      "physical_id": "specimen/L1/06",
+      "role": "calibration",
+      "input_sha256": "161379e3f687f4e35ff32aa810a216e7aee677192ab741b340602dd757a1fe1c"
+    },
+    {
+      "uid": "specimen/L1/06/full",
+      "physical_id": "specimen/L1/06",
+      "role": "calibration",
+      "input_sha256": "fce394230528a4ce5862fd83beaab22f6bfa013ae1d5ae5c05083f4c6bfa938e"
+    },
+    {
+      "uid": "specimen/L1/07/blur_glare",
+      "physical_id": "specimen/L1/07",
+      "role": "calibration",
+      "input_sha256": "1c558b9d024062d54ba14a1f191b58e46799bcd499890b91b0abea23f8c85b3b"
+    },
+    {
+      "uid": "specimen/L1/07/corner_clip",
+      "physical_id": "specimen/L1/07",
+      "role": "calibration",
+      "input_sha256": "fd6c681dac53cd6364958444d04e059a05af2af8ac14a571fea8df882746e09f"
+    },
+    {
+      "uid": "specimen/L1/07/field_clip",
+      "physical_id": "specimen/L1/07",
+      "role": "calibration",
+      "input_sha256": "20ab21c53a0d255f72b5c6fb569f036b8d5c7201f16eb73dda76ef006f06bd67"
+    },
+    {
+      "uid": "specimen/L1/07/full",
+      "physical_id": "specimen/L1/07",
+      "role": "calibration",
+      "input_sha256": "157b43c34d0dde647d1a5fe3ef259ec9afa731a4068a999d92b35c2b24047e51"
+    },
+    {
+      "uid": "specimen/L1/08/blur_glare",
+      "physical_id": "specimen/L1/08",
+      "role": "calibration",
+      "input_sha256": "0647c81a3612ee3983b28cac15d84dfa0db5c5afbd5ed4ad2e279fc851ab4571"
+    },
+    {
+      "uid": "specimen/L1/08/corner_clip",
+      "physical_id": "specimen/L1/08",
+      "role": "calibration",
+      "input_sha256": "46c491d0ecefb7f91d4d064311792e8a46ce0e75017669b26dd92a83460e0171"
+    },
+    {
+      "uid": "specimen/L1/08/field_clip",
+      "physical_id": "specimen/L1/08",
+      "role": "calibration",
+      "input_sha256": "c2b9faec14aabe5cc15c133d88ce849ed31c63b9bfff3ba5d9faf210514065eb"
+    },
+    {
+      "uid": "specimen/L1/08/full",
+      "physical_id": "specimen/L1/08",
+      "role": "calibration",
+      "input_sha256": "12a5c1c5052611a36aac4b8a47e4f560a8ee0a3f3fc13f244238acfbb505af39"
+    },
+    {
+      "uid": "specimen/L1/09/blur_glare",
+      "physical_id": "specimen/L1/09",
+      "role": "calibration",
+      "input_sha256": "e15eb23d9b704d41494b7b860c7883c61748960a91458f3a56d09dae971f9033"
+    },
+    {
+      "uid": "specimen/L1/09/corner_clip",
+      "physical_id": "specimen/L1/09",
+      "role": "calibration",
+      "input_sha256": "dc34b3b861a4db1d602039c02b10a0b488a7f67393fd97bb280dcda1d9cded0e"
+    },
+    {
+      "uid": "specimen/L1/09/field_clip",
+      "physical_id": "specimen/L1/09",
+      "role": "calibration",
+      "input_sha256": "84979dbc90003d622d02c01a8b486c7fc86881ed54c9fc95f1ee97e04da9c0a4"
+    },
+    {
+      "uid": "specimen/L1/09/full",
+      "physical_id": "specimen/L1/09",
+      "role": "calibration",
+      "input_sha256": "35800e6318119d8397bd7ff010c556617cddef2a231eb3d212f4b25af7e39048"
+    },
+    {
+      "uid": "specimen/L1/10/blur_glare",
+      "physical_id": "specimen/L1/10",
+      "role": "test",
+      "input_sha256": "eecb5316a00a81438f4d68bacc9f1d2020a69079133ea912e3189bbe5963b859"
+    },
+    {
+      "uid": "specimen/L1/10/corner_clip",
+      "physical_id": "specimen/L1/10",
+      "role": "test",
+      "input_sha256": "06f12d3c8a83103a02d2382b3f339af2d61fca33c512ff55737bba91f6392cd7"
+    },
+    {
+      "uid": "specimen/L1/10/field_clip",
+      "physical_id": "specimen/L1/10",
+      "role": "test",
+      "input_sha256": "dc9771b6e27e21975951e62e666526da9f8082bd410135eb9a754328bdc6bde1"
+    },
+    {
+      "uid": "specimen/L1/10/full",
+      "physical_id": "specimen/L1/10",
+      "role": "test",
+      "input_sha256": "7a374b380ff4b925330f3d1b2cd831d2d75baa8b91e5d40c20b245ee23f8b30d"
+    },
+    {
+      "uid": "specimen/L1/11/blur_glare",
+      "physical_id": "specimen/L1/11",
+      "role": "test",
+      "input_sha256": "41665f3f54a7e8d25ae90266bc4f2235e8730b322cbf5ca7e39bfb6590ec7b9a"
+    },
+    {
+      "uid": "specimen/L1/11/corner_clip",
+      "physical_id": "specimen/L1/11",
+      "role": "test",
+      "input_sha256": "5baa13a84a9da2de76827191dcd018b98345a1bbe9c269a9c6f569e79afa8661"
+    },
+    {
+      "uid": "specimen/L1/11/field_clip",
+      "physical_id": "specimen/L1/11",
+      "role": "test",
+      "input_sha256": "71713d00e67737cf276e96a330366d975cbad3f14023f2965c68db25c1cfeb99"
+    },
+    {
+      "uid": "specimen/L1/11/full",
+      "physical_id": "specimen/L1/11",
+      "role": "test",
+      "input_sha256": "7f00e32ca6dafa285950a99a6587826b11bce90820fae61b0f8434e97ac8d54b"
+    },
+    {
+      "uid": "specimen/L1/12/blur_glare",
+      "physical_id": "specimen/L1/12",
+      "role": "test",
+      "input_sha256": "558e8926d2647a34962f3e61766a4afa28ed33e694b1bfa24775f04b75e1e9e3"
+    },
+    {
+      "uid": "specimen/L1/12/corner_clip",
+      "physical_id": "specimen/L1/12",
+      "role": "test",
+      "input_sha256": "d8c681d71efcb9aa046ca3bfd27891a79f29471360d3b5e3b52060e834b799eb"
+    },
+    {
+      "uid": "specimen/L1/12/field_clip",
+      "physical_id": "specimen/L1/12",
+      "role": "test",
+      "input_sha256": "641cd4085d6762baee81f34760c2ccdc7992770c6504628d21ae57e76f9452bb"
+    },
+    {
+      "uid": "specimen/L1/12/full",
+      "physical_id": "specimen/L1/12",
+      "role": "test",
+      "input_sha256": "25adbd17d4a0c82098065afc735a534f89ee07a750972dc0cfcfbf59cee13a30"
+    },
+    {
+      "uid": "specimen/L1/13/blur_glare",
+      "physical_id": "specimen/L1/13",
+      "role": "test",
+      "input_sha256": "cca7e2db17d1846ff7ec3bec6b872df2d7b69a122b23027549f23195424a4bc6"
+    },
+    {
+      "uid": "specimen/L1/13/corner_clip",
+      "physical_id": "specimen/L1/13",
+      "role": "test",
+      "input_sha256": "47f16e18e31f5f4cde4837629e251f2b3d7812606a08710a6550b34d68de43c0"
+    },
+    {
+      "uid": "specimen/L1/13/field_clip",
+      "physical_id": "specimen/L1/13",
+      "role": "test",
+      "input_sha256": "868dd05765c27768ffbaca173a641133fe99a2320e46626e3f3b27bc70640a30"
+    },
+    {
+      "uid": "specimen/L1/13/full",
+      "physical_id": "specimen/L1/13",
+      "role": "test",
+      "input_sha256": "42cc8b981307a4d4fcea2e24975d1dc4a897a4c81ce3b052914995f8a35d62fb"
+    },
+    {
+      "uid": "specimen/L1/14/blur_glare",
+      "physical_id": "specimen/L1/14",
+      "role": "test",
+      "input_sha256": "3a426f8a715aee5fbccc8f3cb2aceeca896be7e09c5874be24c83e0492697ad3"
+    },
+    {
+      "uid": "specimen/L1/14/corner_clip",
+      "physical_id": "specimen/L1/14",
+      "role": "test",
+      "input_sha256": "de84afb93f54b9bc80647401ab1a3d7c1f5287e6e04c0d95c6b6af49544575fb"
+    },
+    {
+      "uid": "specimen/L1/14/field_clip",
+      "physical_id": "specimen/L1/14",
+      "role": "test",
+      "input_sha256": "bc757b61f81f6f82d95a7ce0fb1ca1d495e64bfa85135e73d8de3aeff4598b7b"
+    },
+    {
+      "uid": "specimen/L1/14/full",
+      "physical_id": "specimen/L1/14",
+      "role": "test",
+      "input_sha256": "21244fddfc73b9fe990f0adbffef8a86fbfca496644321a8a45345b95fa0e7f6"
+    },
+    {
+      "uid": "specimen/L2/00/blur_glare",
+      "physical_id": "specimen/L2/00",
+      "role": "development",
+      "input_sha256": "7d0d8ee068a8a845dccd8aff63682cefd54e2471b6f99e0fa0b66b8cd88bf3f1"
+    },
+    {
+      "uid": "specimen/L2/00/corner_clip",
+      "physical_id": "specimen/L2/00",
+      "role": "development",
+      "input_sha256": "6e8916344f4307126b493f12f815f4a267c4c5f3fd4a0e58f847ea20efde4685"
+    },
+    {
+      "uid": "specimen/L2/00/field_clip",
+      "physical_id": "specimen/L2/00",
+      "role": "development",
+      "input_sha256": "2c612775b33053280e331f7d31bd2792549183cb03d1d31710645a2e29f799d3"
+    },
+    {
+      "uid": "specimen/L2/00/full",
+      "physical_id": "specimen/L2/00",
+      "role": "development",
+      "input_sha256": "a5c32d13c43af61d2b489f52c483307cc99bb204b1d61775eb0df66ad29749df"
+    },
+    {
+      "uid": "specimen/L2/01/blur_glare",
+      "physical_id": "specimen/L2/01",
+      "role": "development",
+      "input_sha256": "e26aad6cd2c10774239917c177c671549d889df8f255876149abad3fbdbbdd4b"
+    },
+    {
+      "uid": "specimen/L2/01/corner_clip",
+      "physical_id": "specimen/L2/01",
+      "role": "development",
+      "input_sha256": "d663044f71d53f3fefa83793d4af94173a04b50de8435c1e65c64490456d8f42"
+    },
+    {
+      "uid": "specimen/L2/01/field_clip",
+      "physical_id": "specimen/L2/01",
+      "role": "development",
+      "input_sha256": "53d40120618eece060140ac862d2cb96f427921473e83d6a2e792cff49178cb2"
+    },
+    {
+      "uid": "specimen/L2/01/full",
+      "physical_id": "specimen/L2/01",
+      "role": "development",
+      "input_sha256": "af14859e3dff2e7ad49a385b0e5639304a189e0b879f17a9cbb037d17da843d1"
+    },
+    {
+      "uid": "specimen/L2/02/blur_glare",
+      "physical_id": "specimen/L2/02",
+      "role": "development",
+      "input_sha256": "262427d2a597bb83c3b51dd57cdcee2120afb9f326fa61d1e25336ee2b0fbd38"
+    },
+    {
+      "uid": "specimen/L2/02/corner_clip",
+      "physical_id": "specimen/L2/02",
+      "role": "development",
+      "input_sha256": "b5641d944a3b2b4b70be7adbd6c09bcaa525ee977756e61081f8d53f7414c3ee"
+    },
+    {
+      "uid": "specimen/L2/02/field_clip",
+      "physical_id": "specimen/L2/02",
+      "role": "development",
+      "input_sha256": "81daaab54fec7ad4751bfd31ef45876a1447d573b399475d68fa1fa799be4455"
+    },
+    {
+      "uid": "specimen/L2/02/full",
+      "physical_id": "specimen/L2/02",
+      "role": "development",
+      "input_sha256": "5f814d21835efb77cfe6292dcb11a0a974fc624d3ecdeca4fc09b304aad0bd12"
+    },
+    {
+      "uid": "specimen/L2/03/blur_glare",
+      "physical_id": "specimen/L2/03",
+      "role": "development",
+      "input_sha256": "b0491c8da7173ca035c33726a9be9ed854bcbdc32d7dfd1b40c97f4398a0298d"
+    },
+    {
+      "uid": "specimen/L2/03/corner_clip",
+      "physical_id": "specimen/L2/03",
+      "role": "development",
+      "input_sha256": "6fdb68b8a606e7698ee0c7a67592177badc2feb82b5b98b2de5898106e00c802"
+    },
+    {
+      "uid": "specimen/L2/03/field_clip",
+      "physical_id": "specimen/L2/03",
+      "role": "development",
+      "input_sha256": "66e9ff75e1f16b6cae73b92706aeb13c4b08a9ec1121dc1dcac188d5340e05ca"
+    },
+    {
+      "uid": "specimen/L2/03/full",
+      "physical_id": "specimen/L2/03",
+      "role": "development",
+      "input_sha256": "5893d8c9e1a44d566d4069f61af9f5e6d2d167063cfc92b14e3296ea951c084e"
+    },
+    {
+      "uid": "specimen/L2/04/blur_glare",
+      "physical_id": "specimen/L2/04",
+      "role": "development",
+      "input_sha256": "6412652928cc97e4f09d3060e69773ab4345775443a16040b8f5aae6ebdea4bd"
+    },
+    {
+      "uid": "specimen/L2/04/corner_clip",
+      "physical_id": "specimen/L2/04",
+      "role": "development",
+      "input_sha256": "671c571a8b01225eb75544a9303c3e6815b511904b1a3d6be4252235fad5ceeb"
+    },
+    {
+      "uid": "specimen/L2/04/field_clip",
+      "physical_id": "specimen/L2/04",
+      "role": "development",
+      "input_sha256": "8d203e71aa5ee8a1978bbfab618460990d3334372567756c23973144ba7fbff3"
+    },
+    {
+      "uid": "specimen/L2/04/full",
+      "physical_id": "specimen/L2/04",
+      "role": "development",
+      "input_sha256": "97c642ca5618e06ced8447ee5d566374dab1a2083b01d7b8d7c8d90a27ba0d1f"
+    },
+    {
+      "uid": "specimen/L2/05/blur_glare",
+      "physical_id": "specimen/L2/05",
+      "role": "calibration",
+      "input_sha256": "6aa7a2e11f1cf1b7567c426cfd9825af91a5c50a3bd2755e5687e66fd52f466c"
+    },
+    {
+      "uid": "specimen/L2/05/corner_clip",
+      "physical_id": "specimen/L2/05",
+      "role": "calibration",
+      "input_sha256": "229ac39f50661df94b3b10995aa8a1c9698e7f87983902f3f89fd1a1429a2a28"
+    },
+    {
+      "uid": "specimen/L2/05/field_clip",
+      "physical_id": "specimen/L2/05",
+      "role": "calibration",
+      "input_sha256": "841aa417674cca0864da187c392825292be9fa39ec8a57c2513dc60ce49ecf7a"
+    },
+    {
+      "uid": "specimen/L2/05/full",
+      "physical_id": "specimen/L2/05",
+      "role": "calibration",
+      "input_sha256": "5c82ed0d41025958667f8e318ea5966f37f5ab4448162b85527fe206d8539d79"
+    },
+    {
+      "uid": "specimen/L2/06/blur_glare",
+      "physical_id": "specimen/L2/06",
+      "role": "calibration",
+      "input_sha256": "cf3a5898ca900cfdc7811ba7e9f6fcf3a21eb96d248f94ffd434fec73e03c9b2"
+    },
+    {
+      "uid": "specimen/L2/06/corner_clip",
+      "physical_id": "specimen/L2/06",
+      "role": "calibration",
+      "input_sha256": "0871fef3cec24727920225a9aaab4d38d7288472f9da89870bdf42d31257f48c"
+    },
+    {
+      "uid": "specimen/L2/06/field_clip",
+      "physical_id": "specimen/L2/06",
+      "role": "calibration",
+      "input_sha256": "0d72403f42647f895f7f5aed4a39495da999267eaa11bdc3309daee673297132"
+    },
+    {
+      "uid": "specimen/L2/06/full",
+      "physical_id": "specimen/L2/06",
+      "role": "calibration",
+      "input_sha256": "4eb47dbcf0060a20c2ce2d0c4e6d37b3458a319f5d5915b26b0d0baa661ae96c"
+    },
+    {
+      "uid": "specimen/L2/07/blur_glare",
+      "physical_id": "specimen/L2/07",
+      "role": "calibration",
+      "input_sha256": "958284c0f66d726754c23147ed3d1fd7db8cbd0de361ca00b1dba0df4ab8f66d"
+    },
+    {
+      "uid": "specimen/L2/07/corner_clip",
+      "physical_id": "specimen/L2/07",
+      "role": "calibration",
+      "input_sha256": "254f1f570c0d11f235a9260b94bbe3d4bf230eca8b8cf92ba8c2d1154b9d95d1"
+    },
+    {
+      "uid": "specimen/L2/07/field_clip",
+      "physical_id": "specimen/L2/07",
+      "role": "calibration",
+      "input_sha256": "f876e1ac9511cf2c9c0bf0b7c061ed612ad58e2aa4a79d926a639c41f5760275"
+    },
+    {
+      "uid": "specimen/L2/07/full",
+      "physical_id": "specimen/L2/07",
+      "role": "calibration",
+      "input_sha256": "118ac4759033cadafdb16208d4387453c5c5770ad75ae4869a0597d658909fa9"
+    },
+    {
+      "uid": "specimen/L2/08/blur_glare",
+      "physical_id": "specimen/L2/08",
+      "role": "calibration",
+      "input_sha256": "ecc685306dbbc8bedd899a73586e8fe3d1b585d38d90f36d864cab64b21610f7"
+    },
+    {
+      "uid": "specimen/L2/08/corner_clip",
+      "physical_id": "specimen/L2/08",
+      "role": "calibration",
+      "input_sha256": "e48427639a0b7a8323de1daec8ea84aabecb43ff621fa27aa87468644113ecc6"
+    },
+    {
+      "uid": "specimen/L2/08/field_clip",
+      "physical_id": "specimen/L2/08",
+      "role": "calibration",
+      "input_sha256": "d3bb244ba896f54c3a35072e6d7428eded41e2895ae3ff06aec494b4370964dd"
+    },
+    {
+      "uid": "specimen/L2/08/full",
+      "physical_id": "specimen/L2/08",
+      "role": "calibration",
+      "input_sha256": "7ba8a84f275715cb294be0b8402657fbafa706ad6512fdb19f2a2ee41d7551d7"
+    },
+    {
+      "uid": "specimen/L2/09/blur_glare",
+      "physical_id": "specimen/L2/09",
+      "role": "calibration",
+      "input_sha256": "93dad6763d6373d1bf86ee10b0c9de807b758d352c142ff91ec3ff1b01078469"
+    },
+    {
+      "uid": "specimen/L2/09/corner_clip",
+      "physical_id": "specimen/L2/09",
+      "role": "calibration",
+      "input_sha256": "52be4c586d52a0227b2d9028351528424f8f498fe4d0d7956875ca2102f0d6ee"
+    },
+    {
+      "uid": "specimen/L2/09/field_clip",
+      "physical_id": "specimen/L2/09",
+      "role": "calibration",
+      "input_sha256": "b91a66090f4a8c51767639d7c78d16d8a981b90c74cc8539defde98351bc6ffd"
+    },
+    {
+      "uid": "specimen/L2/09/full",
+      "physical_id": "specimen/L2/09",
+      "role": "calibration",
+      "input_sha256": "31c6ff6e79b5b240a54a0098281a4848dc0c6cf16bdbaae91a8033c16dfa2f1d"
+    },
+    {
+      "uid": "specimen/L2/10/blur_glare",
+      "physical_id": "specimen/L2/10",
+      "role": "test",
+      "input_sha256": "ba2cfdd8a0dd213ccafbfa08f2a78f7e7feeef7ee12e67b8e7ed1487e0a900fc"
+    },
+    {
+      "uid": "specimen/L2/10/corner_clip",
+      "physical_id": "specimen/L2/10",
+      "role": "test",
+      "input_sha256": "bfc674e65420cafa02ed1d4dab8ed1f28605b67c51458426980f11a73c9421fd"
+    },
+    {
+      "uid": "specimen/L2/10/field_clip",
+      "physical_id": "specimen/L2/10",
+      "role": "test",
+      "input_sha256": "1ad950477ef5a5cb33db66a6595a2072d5b6adf1e9779d984ba7fd1de25d9038"
+    },
+    {
+      "uid": "specimen/L2/10/full",
+      "physical_id": "specimen/L2/10",
+      "role": "test",
+      "input_sha256": "83327d542f47c37e3782aa5663379c6f42324dbd4d9b99b6825b0200cb2db7de"
+    },
+    {
+      "uid": "specimen/L2/11/blur_glare",
+      "physical_id": "specimen/L2/11",
+      "role": "test",
+      "input_sha256": "ace4269bb5ff90bc403ff70f43c069323b3538be40164328dd1cd6794e9049e7"
+    },
+    {
+      "uid": "specimen/L2/11/corner_clip",
+      "physical_id": "specimen/L2/11",
+      "role": "test",
+      "input_sha256": "77da0897ea78a31c55d785579c537c9c0f7eee6ad7c8e2cbf1a356791ec50600"
+    },
+    {
+      "uid": "specimen/L2/11/field_clip",
+      "physical_id": "specimen/L2/11",
+      "role": "test",
+      "input_sha256": "39fdf3c9b1e8d41c13c0b2aef30c2c6eb1513e532fa479d1938482ca8976ce2e"
+    },
+    {
+      "uid": "specimen/L2/11/full",
+      "physical_id": "specimen/L2/11",
+      "role": "test",
+      "input_sha256": "ed3cf6123af60123fcb7ece1241b284a5b74d5726f884510579ee26bbf9d2f18"
+    },
+    {
+      "uid": "specimen/L2/12/blur_glare",
+      "physical_id": "specimen/L2/12",
+      "role": "test",
+      "input_sha256": "29dcc73123462360df2449c7bc396dff4c0190882888306819be926e377f08f3"
+    },
+    {
+      "uid": "specimen/L2/12/corner_clip",
+      "physical_id": "specimen/L2/12",
+      "role": "test",
+      "input_sha256": "6e86f91e0dad83d8dc8360ac2829d61bef2bc242e2b30f2b1350b9c4059c48e2"
+    },
+    {
+      "uid": "specimen/L2/12/field_clip",
+      "physical_id": "specimen/L2/12",
+      "role": "test",
+      "input_sha256": "687978d184ad96fad958f82893598b165727309c975083d70a7e6f1ccdde2fa2"
+    },
+    {
+      "uid": "specimen/L2/12/full",
+      "physical_id": "specimen/L2/12",
+      "role": "test",
+      "input_sha256": "512c62758c21ed3b0898a1e26a0763f9bcc552c843504f728933a99f4f099fe4"
+    },
+    {
+      "uid": "specimen/L2/13/blur_glare",
+      "physical_id": "specimen/L2/13",
+      "role": "test",
+      "input_sha256": "212015833e20fba8ea168d9fd7c5f28910927b1cb17f08e9358ba8f2e091cf3b"
+    },
+    {
+      "uid": "specimen/L2/13/corner_clip",
+      "physical_id": "specimen/L2/13",
+      "role": "test",
+      "input_sha256": "c911f619345032de92afd13a6d71c45dceaa722b6f68eaa3009f6616a65ccbaa"
+    },
+    {
+      "uid": "specimen/L2/13/field_clip",
+      "physical_id": "specimen/L2/13",
+      "role": "test",
+      "input_sha256": "4e17983302fca5627fd06e633a822795b5cc40cbdece5addc5d8dc90ff1f2309"
+    },
+    {
+      "uid": "specimen/L2/13/full",
+      "physical_id": "specimen/L2/13",
+      "role": "test",
+      "input_sha256": "e2f2b7e34145d3d4cce57a8f0b53e25d139781ee720b8640b190b7e6f7dfbaee"
+    },
+    {
+      "uid": "specimen/L2/14/blur_glare",
+      "physical_id": "specimen/L2/14",
+      "role": "test",
+      "input_sha256": "f76715810d649758a80f1f07ecffbe3d00fe68061c4b8f5a946319df1cf93f8f"
+    },
+    {
+      "uid": "specimen/L2/14/corner_clip",
+      "physical_id": "specimen/L2/14",
+      "role": "test",
+      "input_sha256": "bcbe04ec8aec780f7c7267a6f13185808e66229dd58900ab3dc55726eb32caaa"
+    },
+    {
+      "uid": "specimen/L2/14/field_clip",
+      "physical_id": "specimen/L2/14",
+      "role": "test",
+      "input_sha256": "fc47b958bc74b86d9e5fb03d45101109675d50b4885bcca8115bf82c7a1c20f1"
+    },
+    {
+      "uid": "specimen/L2/14/full",
+      "physical_id": "specimen/L2/14",
+      "role": "test",
+      "input_sha256": "c61e507fc1db311dcd3493effe99b040eda4c0f98bd9c4c30b9b297108fcf05b"
+    },
+    {
+      "uid": "specimen/L3/00/blur_glare",
+      "physical_id": "specimen/L3/00",
+      "role": "development",
+      "input_sha256": "23d56cf9f40bbd7c68255d34fc90cf35fffc7243dd453c33544d515527bbaf76"
+    },
+    {
+      "uid": "specimen/L3/00/corner_clip",
+      "physical_id": "specimen/L3/00",
+      "role": "development",
+      "input_sha256": "7c0b7756cdc1bf58d688d8a99cc7779d2f84e6d8d14e9e39592e17d98e94d56c"
+    },
+    {
+      "uid": "specimen/L3/00/field_clip",
+      "physical_id": "specimen/L3/00",
+      "role": "development",
+      "input_sha256": "13c7a0d6b1bc741f29e3053ed028cb4358009c6871100e452fb52cc89b6cceab"
+    },
+    {
+      "uid": "specimen/L3/00/full",
+      "physical_id": "specimen/L3/00",
+      "role": "development",
+      "input_sha256": "f5bd0db5d71a946eb1f50311aeffb13dd44ccce82fcc188adc42ed1eff102b8a"
+    },
+    {
+      "uid": "specimen/L3/01/blur_glare",
+      "physical_id": "specimen/L3/01",
+      "role": "development",
+      "input_sha256": "1f5c04636bead13e930c7cef3fb0a390a1d674e8fc6244b625baf6c27a8a921c"
+    },
+    {
+      "uid": "specimen/L3/01/corner_clip",
+      "physical_id": "specimen/L3/01",
+      "role": "development",
+      "input_sha256": "069a3ee1c65b7e63c7e1efd18dd38cf1b99a89e938231e8a57e9c0869641127a"
+    },
+    {
+      "uid": "specimen/L3/01/field_clip",
+      "physical_id": "specimen/L3/01",
+      "role": "development",
+      "input_sha256": "1841b134890ae43a09f06c062bc9a809ba92df19430a6f3c3b6085072bbf94c9"
+    },
+    {
+      "uid": "specimen/L3/01/full",
+      "physical_id": "specimen/L3/01",
+      "role": "development",
+      "input_sha256": "5884629409f8890b44dab7fa5aaf656aa6d367278bef1eefcb589daf2839b266"
+    },
+    {
+      "uid": "specimen/L3/02/blur_glare",
+      "physical_id": "specimen/L3/02",
+      "role": "development",
+      "input_sha256": "cb184b4d7e5dd95ca8e160c22b8fa2133aedb2868bd5f983767e6cd7e11c6e52"
+    },
+    {
+      "uid": "specimen/L3/02/corner_clip",
+      "physical_id": "specimen/L3/02",
+      "role": "development",
+      "input_sha256": "83e8420d2566b9834bea91f741cf3076296fea70bfd39d2d083d78b9dd0796bf"
+    },
+    {
+      "uid": "specimen/L3/02/field_clip",
+      "physical_id": "specimen/L3/02",
+      "role": "development",
+      "input_sha256": "d85624e1e4d11450015523f604a346d72218819d39676bb8f00f29cd6cc8448f"
+    },
+    {
+      "uid": "specimen/L3/02/full",
+      "physical_id": "specimen/L3/02",
+      "role": "development",
+      "input_sha256": "a94ce59ae35d918d0e7b146bb342ac5b5c410c726c9907fbdc4a4086e03fe18a"
+    },
+    {
+      "uid": "specimen/L3/03/blur_glare",
+      "physical_id": "specimen/L3/03",
+      "role": "development",
+      "input_sha256": "bb51cc96b77dbf0cc7cadd0129bcdf8e45bd5a9a4bf27bb94895668b4a6fabb5"
+    },
+    {
+      "uid": "specimen/L3/03/corner_clip",
+      "physical_id": "specimen/L3/03",
+      "role": "development",
+      "input_sha256": "318e3e8ec5d3ae1793e56e67e4adcb2cdbc1f1ad933801d552d9d3a75e5befb8"
+    },
+    {
+      "uid": "specimen/L3/03/field_clip",
+      "physical_id": "specimen/L3/03",
+      "role": "development",
+      "input_sha256": "737d28feff77de375b5c4d0514130e56ff3bc7582e5875e94c21ef32d8f2f29f"
+    },
+    {
+      "uid": "specimen/L3/03/full",
+      "physical_id": "specimen/L3/03",
+      "role": "development",
+      "input_sha256": "23ad942fb8ba9b13e73511e751ba96b10099bc52056909ecb415afaeb62c3acb"
+    },
+    {
+      "uid": "specimen/L3/04/blur_glare",
+      "physical_id": "specimen/L3/04",
+      "role": "development",
+      "input_sha256": "4190bc9841e11ec9e7a2650058a7b34011df8cc92cef712ca26fd1ee53c2696d"
+    },
+    {
+      "uid": "specimen/L3/04/corner_clip",
+      "physical_id": "specimen/L3/04",
+      "role": "development",
+      "input_sha256": "6224798bcf78de00bff989119ebef1ac9813a45e2279525d82d36cef8a661750"
+    },
+    {
+      "uid": "specimen/L3/04/field_clip",
+      "physical_id": "specimen/L3/04",
+      "role": "development",
+      "input_sha256": "2f5138c0c359039307041a164af524e69e4f250f617806459d28abc35b5f001f"
+    },
+    {
+      "uid": "specimen/L3/04/full",
+      "physical_id": "specimen/L3/04",
+      "role": "development",
+      "input_sha256": "0902f969de72d65de71940a44cbb8764679c3f9f45f4722fe2a97db216bdd84a"
+    },
+    {
+      "uid": "specimen/L3/05/blur_glare",
+      "physical_id": "specimen/L3/05",
+      "role": "calibration",
+      "input_sha256": "b964b9acc87003f18a0492e97eb198c8e72a841a922d129f81b2919de4aac805"
+    },
+    {
+      "uid": "specimen/L3/05/corner_clip",
+      "physical_id": "specimen/L3/05",
+      "role": "calibration",
+      "input_sha256": "a80ee8c68d77d84b293d7c7d3a12b590826fd56676fb3cfe96c35e41051146b5"
+    },
+    {
+      "uid": "specimen/L3/05/field_clip",
+      "physical_id": "specimen/L3/05",
+      "role": "calibration",
+      "input_sha256": "af47968b3018608726fce8fda22b055d8bc70df140d2963fc42a052d11850835"
+    },
+    {
+      "uid": "specimen/L3/05/full",
+      "physical_id": "specimen/L3/05",
+      "role": "calibration",
+      "input_sha256": "eba34fe3ccdffb618b164c5ab9fe69a57d854268940bbca847e9b30158d5e126"
+    },
+    {
+      "uid": "specimen/L3/06/blur_glare",
+      "physical_id": "specimen/L3/06",
+      "role": "calibration",
+      "input_sha256": "493c39cca56445dcce34f2621dd9257b5f6cebe29416eccd4790701df2fd7caa"
+    },
+    {
+      "uid": "specimen/L3/06/corner_clip",
+      "physical_id": "specimen/L3/06",
+      "role": "calibration",
+      "input_sha256": "66a4d78aff95fed8e5d3c6f3a61d77d6d1e21f9d6575b5b91f605c88b38b5592"
+    },
+    {
+      "uid": "specimen/L3/06/field_clip",
+      "physical_id": "specimen/L3/06",
+      "role": "calibration",
+      "input_sha256": "3f2b07676b3a4266c053e347bc0f2bff8228f85f43de4790fa7b691e98d94bb2"
+    },
+    {
+      "uid": "specimen/L3/06/full",
+      "physical_id": "specimen/L3/06",
+      "role": "calibration",
+      "input_sha256": "9c9aac87d24d14cb924eefe76c7672a98bbdd18a84e010459a9ab7672bc27484"
+    },
+    {
+      "uid": "specimen/L3/07/blur_glare",
+      "physical_id": "specimen/L3/07",
+      "role": "calibration",
+      "input_sha256": "6ca9548bc33a161b1daa44aa4d09081a2894101679c989570539aedd8c96752c"
+    },
+    {
+      "uid": "specimen/L3/07/corner_clip",
+      "physical_id": "specimen/L3/07",
+      "role": "calibration",
+      "input_sha256": "64a180c0a0b3c74458b29e56af96c318ba0437fb37bdc69eb2c8475709dcae99"
+    },
+    {
+      "uid": "specimen/L3/07/field_clip",
+      "physical_id": "specimen/L3/07",
+      "role": "calibration",
+      "input_sha256": "5821d36f09d10a8491d7d0c1a946fe7ce9f48986ab84d0b91a9c95206bef6b12"
+    },
+    {
+      "uid": "specimen/L3/07/full",
+      "physical_id": "specimen/L3/07",
+      "role": "calibration",
+      "input_sha256": "59234f96c78a93a1c965bb66230ff8f6df98459162aea637234b4e4a198f93c0"
+    },
+    {
+      "uid": "specimen/L3/08/blur_glare",
+      "physical_id": "specimen/L3/08",
+      "role": "calibration",
+      "input_sha256": "a892dacbb631dc21e692c9951be58b9869ea29a62a1a5babc2d5a70b4ee3c9e9"
+    },
+    {
+      "uid": "specimen/L3/08/corner_clip",
+      "physical_id": "specimen/L3/08",
+      "role": "calibration",
+      "input_sha256": "d9c879088414044b3094e01b7e5e696406ab250bc4e563c777758b0075d49fe9"
+    },
+    {
+      "uid": "specimen/L3/08/field_clip",
+      "physical_id": "specimen/L3/08",
+      "role": "calibration",
+      "input_sha256": "42740a195da5f987136e9085b28b4c2fbc780517a6334d921cf113d7aa0aae9c"
+    },
+    {
+      "uid": "specimen/L3/08/full",
+      "physical_id": "specimen/L3/08",
+      "role": "calibration",
+      "input_sha256": "20dc27389a90cfd9af01ff36e0b7f4f4affd3dc5b12cb3680947e301c9a1b989"
+    },
+    {
+      "uid": "specimen/L3/09/blur_glare",
+      "physical_id": "specimen/L3/09",
+      "role": "calibration",
+      "input_sha256": "4f34d0dc06112dc034506993da23d3edaa0a5606f6c1111bb7078b4b4e05a080"
+    },
+    {
+      "uid": "specimen/L3/09/corner_clip",
+      "physical_id": "specimen/L3/09",
+      "role": "calibration",
+      "input_sha256": "7aa757f1df3eb25810f15ead77c6b58d238c3848f9c76cda05e3a8d98f9f1791"
+    },
+    {
+      "uid": "specimen/L3/09/field_clip",
+      "physical_id": "specimen/L3/09",
+      "role": "calibration",
+      "input_sha256": "ddfa63412ea251a3f2fc917d993c08413d32d7981b417d4c0798fb104bc5badb"
+    },
+    {
+      "uid": "specimen/L3/09/full",
+      "physical_id": "specimen/L3/09",
+      "role": "calibration",
+      "input_sha256": "a68dca9c970622f8b510ce43625e7e83a5b5eef359f3feccbb11b95c7201756e"
+    },
+    {
+      "uid": "specimen/L3/10/blur_glare",
+      "physical_id": "specimen/L3/10",
+      "role": "test",
+      "input_sha256": "5468217f79e4e9b2f97c0186693426b5d89a38f59afd519e3b3658db08cb98f6"
+    },
+    {
+      "uid": "specimen/L3/10/corner_clip",
+      "physical_id": "specimen/L3/10",
+      "role": "test",
+      "input_sha256": "0137c8d5ab3f8e8da0c87bb6464db85117432b3787adf2136bd1c3bfbf77e4a2"
+    },
+    {
+      "uid": "specimen/L3/10/field_clip",
+      "physical_id": "specimen/L3/10",
+      "role": "test",
+      "input_sha256": "60aa769d150b75f4bcb8e96ca3b306a40d893ba2dbbc0a1675a13948ae17c97f"
+    },
+    {
+      "uid": "specimen/L3/10/full",
+      "physical_id": "specimen/L3/10",
+      "role": "test",
+      "input_sha256": "4309b4f15196081c907777f7016c83ce04c8c6b736c9677724de6c7305a4d85b"
+    },
+    {
+      "uid": "specimen/L3/11/blur_glare",
+      "physical_id": "specimen/L3/11",
+      "role": "test",
+      "input_sha256": "ea66dd82903f4d1379ee4d53e06af66c28e28dcedf882dd9aaa09a8f62381023"
+    },
+    {
+      "uid": "specimen/L3/11/corner_clip",
+      "physical_id": "specimen/L3/11",
+      "role": "test",
+      "input_sha256": "d97988973c2af3106d39133c3b313f9192f02ba7e4b492da92a3d15e068cae35"
+    },
+    {
+      "uid": "specimen/L3/11/field_clip",
+      "physical_id": "specimen/L3/11",
+      "role": "test",
+      "input_sha256": "1c5143f6f2bca8cba176a17d4fdb2bd853feac33af96a88dad21562386fa9ebc"
+    },
+    {
+      "uid": "specimen/L3/11/full",
+      "physical_id": "specimen/L3/11",
+      "role": "test",
+      "input_sha256": "8306a5f96029f03a901f9e4fc6566988dc4cf220314638cf7d7c1e00528f6f5c"
+    },
+    {
+      "uid": "specimen/L3/12/blur_glare",
+      "physical_id": "specimen/L3/12",
+      "role": "test",
+      "input_sha256": "8f0a5ac37c5c69449d474b602fdbced58937bf3f717d92621615198afef2e511"
+    },
+    {
+      "uid": "specimen/L3/12/corner_clip",
+      "physical_id": "specimen/L3/12",
+      "role": "test",
+      "input_sha256": "52d8895852a3126873ebcd3c1ec0fd809b2a5454189cd0a851ec906b0631c2d5"
+    },
+    {
+      "uid": "specimen/L3/12/field_clip",
+      "physical_id": "specimen/L3/12",
+      "role": "test",
+      "input_sha256": "30cd68fa3677c6bdec9d994bd2727384c15cee1d078253373047baa71cdcef48"
+    },
+    {
+      "uid": "specimen/L3/12/full",
+      "physical_id": "specimen/L3/12",
+      "role": "test",
+      "input_sha256": "8355edd6acc23b97a53eb7ec5c29edbb4e81c53a7f0139b2fc39d8be807943c7"
+    },
+    {
+      "uid": "specimen/L3/13/blur_glare",
+      "physical_id": "specimen/L3/13",
+      "role": "test",
+      "input_sha256": "f1b504692cf9e0fdeefc08b8a4cdffaae9ef723181c326495073d57716e89fc8"
+    },
+    {
+      "uid": "specimen/L3/13/corner_clip",
+      "physical_id": "specimen/L3/13",
+      "role": "test",
+      "input_sha256": "8de6ef683e67bf04d3589875805d4d54bf25827c69a4ef624ec7e986de6bc093"
+    },
+    {
+      "uid": "specimen/L3/13/field_clip",
+      "physical_id": "specimen/L3/13",
+      "role": "test",
+      "input_sha256": "9433fc3d3691b39cec7dfb45183b1453aab40a06bae7bdd891fc561ae30d91ee"
+    },
+    {
+      "uid": "specimen/L3/13/full",
+      "physical_id": "specimen/L3/13",
+      "role": "test",
+      "input_sha256": "b43db1de3b3d6f377dad9cd11e24999423c26b490605268815934a4d01790f6d"
+    },
+    {
+      "uid": "specimen/L3/14/blur_glare",
+      "physical_id": "specimen/L3/14",
+      "role": "test",
+      "input_sha256": "52ff3f2786958524cc2e3a616c35ce8d2c436e762ed34d0e087c8bc494af10ac"
+    },
+    {
+      "uid": "specimen/L3/14/corner_clip",
+      "physical_id": "specimen/L3/14",
+      "role": "test",
+      "input_sha256": "df8791ec43a8eff72c8ac3e00d19ae8abb64d7f3acaeed3c360b254db215d496"
+    },
+    {
+      "uid": "specimen/L3/14/field_clip",
+      "physical_id": "specimen/L3/14",
+      "role": "test",
+      "input_sha256": "849bd6a47fea3c8633b6ce9c4a40c4ad9349f2de0190705ce1562854842c93d0"
+    },
+    {
+      "uid": "specimen/L3/14/full",
+      "physical_id": "specimen/L3/14",
+      "role": "test",
+      "input_sha256": "505e824dc08a7e0ff863b034cba2830a9a6c19a417dc05861b48c223dfca8b36"
+    },
+    {
+      "uid": "specimen/L4/00/blur_glare",
+      "physical_id": "specimen/L4/00",
+      "role": "test",
+      "input_sha256": "2328788228f3ff2df70c9c453c144e718880858a49f265b78b831345707ae043"
+    },
+    {
+      "uid": "specimen/L4/00/corner_clip",
+      "physical_id": "specimen/L4/00",
+      "role": "test",
+      "input_sha256": "128495ba735bcce8750d5f2306fe314edd9965671ace5ed050aaa5a0b0c451f6"
+    },
+    {
+      "uid": "specimen/L4/00/field_clip",
+      "physical_id": "specimen/L4/00",
+      "role": "test",
+      "input_sha256": "8211c00d5f305e90ae871f9dc9db1426ef9a38bcadff6e2a09ad063025939624"
+    },
+    {
+      "uid": "specimen/L4/00/full",
+      "physical_id": "specimen/L4/00",
+      "role": "test",
+      "input_sha256": "3f862a38b663f0df6c6bd6822fd04e75d2abcf6d4a1ec866079955925fa5163f"
+    },
+    {
+      "uid": "specimen/L4/01/blur_glare",
+      "physical_id": "specimen/L4/01",
+      "role": "test",
+      "input_sha256": "583e0c36544ff60cd34068e982f2b7db708c54e4b25d6bc8e6e77e0c01fa386a"
+    },
+    {
+      "uid": "specimen/L4/01/corner_clip",
+      "physical_id": "specimen/L4/01",
+      "role": "test",
+      "input_sha256": "6f42565f6ba17c6da661eddc278a7dedfe99ca03f0736f91824cd42edcb893f1"
+    },
+    {
+      "uid": "specimen/L4/01/field_clip",
+      "physical_id": "specimen/L4/01",
+      "role": "test",
+      "input_sha256": "1335a9765b4acca3d709d6e6cb07a48f70ac9a78385bc2a13c87a7a72bd3ecfa"
+    },
+    {
+      "uid": "specimen/L4/01/full",
+      "physical_id": "specimen/L4/01",
+      "role": "test",
+      "input_sha256": "b982dc281efd2619ab749e45df8079433f05bb5be23f10a5a35314cc83418e34"
+    },
+    {
+      "uid": "specimen/L4/02/blur_glare",
+      "physical_id": "specimen/L4/02",
+      "role": "test",
+      "input_sha256": "123311fced3ed98a2204f52cb7594848fa67e5eab48fdb180d2c358444e7a9ac"
+    },
+    {
+      "uid": "specimen/L4/02/corner_clip",
+      "physical_id": "specimen/L4/02",
+      "role": "test",
+      "input_sha256": "fd0de776f7bde9f2c34eafb285e7cdf2646b84805f26f043a12fc19ea7fd5390"
+    },
+    {
+      "uid": "specimen/L4/02/field_clip",
+      "physical_id": "specimen/L4/02",
+      "role": "test",
+      "input_sha256": "84bb034a457cecb52926f76ce0f4509a82404bab2ab90cd072394c9f3736520a"
+    },
+    {
+      "uid": "specimen/L4/02/full",
+      "physical_id": "specimen/L4/02",
+      "role": "test",
+      "input_sha256": "bb0601bef4184474c21074e0b3e4c9b1915b4adf29f1a92d36d3a56a73587f54"
+    },
+    {
+      "uid": "specimen/L4/03/blur_glare",
+      "physical_id": "specimen/L4/03",
+      "role": "test",
+      "input_sha256": "f531b97b3dab2c9a85209510ea54c594ba2a07b5bf7a1a650ee5ca500f71ef05"
+    },
+    {
+      "uid": "specimen/L4/03/corner_clip",
+      "physical_id": "specimen/L4/03",
+      "role": "test",
+      "input_sha256": "c95456e7afb99df02601fc63e41d4fb5b2abc59c4c8172dfa300e5aafdd69c38"
+    },
+    {
+      "uid": "specimen/L4/03/field_clip",
+      "physical_id": "specimen/L4/03",
+      "role": "test",
+      "input_sha256": "f4e95b0c0cc82161cf12f4ae967ea895b0af173a61a566cf8710c73dfb5c7933"
+    },
+    {
+      "uid": "specimen/L4/03/full",
+      "physical_id": "specimen/L4/03",
+      "role": "test",
+      "input_sha256": "1473c3b2eefafbe1d04df50ddada8f8ce0a2066e1d33a99c4fcb7f754e6fc940"
+    },
+    {
+      "uid": "specimen/L4/04/blur_glare",
+      "physical_id": "specimen/L4/04",
+      "role": "test",
+      "input_sha256": "d2380f41eb580cf12c50ec20fb5778c3da05396abdbeefd21fe004959b48e277"
+    },
+    {
+      "uid": "specimen/L4/04/corner_clip",
+      "physical_id": "specimen/L4/04",
+      "role": "test",
+      "input_sha256": "5b4027ae1cf2533b597db713caba6f92da28142f10bccfc351e28672287795a5"
+    },
+    {
+      "uid": "specimen/L4/04/field_clip",
+      "physical_id": "specimen/L4/04",
+      "role": "test",
+      "input_sha256": "8bd3f85f407438c098679a83bc00e84e605b96a770b7880d1956a1c30c805ace"
+    },
+    {
+      "uid": "specimen/L4/04/full",
+      "physical_id": "specimen/L4/04",
+      "role": "test",
+      "input_sha256": "4b89f8c64c61ed01ae1c37bf93325619a71744eef8cdd753fc3cf41be408fef7"
+    },
+    {
+      "uid": "specimen/L4/05/blur_glare",
+      "physical_id": "specimen/L4/05",
+      "role": "test",
+      "input_sha256": "f43861742ae0c14d49f0f554d11672cadbe6c44cba935c96b1ab7a2d431e16c3"
+    },
+    {
+      "uid": "specimen/L4/05/corner_clip",
+      "physical_id": "specimen/L4/05",
+      "role": "test",
+      "input_sha256": "70a08c84d2d70e2d2333d0b24b49c22adc1d3c26c525af7e70189985a5c3bfda"
+    },
+    {
+      "uid": "specimen/L4/05/field_clip",
+      "physical_id": "specimen/L4/05",
+      "role": "test",
+      "input_sha256": "675043ac288fdf014156dd5205bb1cc2e9feb5872fb99721813a4265cc71f794"
+    },
+    {
+      "uid": "specimen/L4/05/full",
+      "physical_id": "specimen/L4/05",
+      "role": "test",
+      "input_sha256": "31defe2fe97d1d6577f347207fb86e28f40745b70e2ed67b9a1e55a2dec5041e"
+    },
+    {
+      "uid": "specimen/L4/06/blur_glare",
+      "physical_id": "specimen/L4/06",
+      "role": "test",
+      "input_sha256": "edb2c3a3556ef44a40c28b330dc034166d6587d513fcba6d52b53542df8f30e0"
+    },
+    {
+      "uid": "specimen/L4/06/corner_clip",
+      "physical_id": "specimen/L4/06",
+      "role": "test",
+      "input_sha256": "5b082b0817590015595089363625678f780a8c1536c7797157d3ee8a8c0c0bb5"
+    },
+    {
+      "uid": "specimen/L4/06/field_clip",
+      "physical_id": "specimen/L4/06",
+      "role": "test",
+      "input_sha256": "0d1605253098fc69105671a879ab262b7fcbc309cab15e74a610d4617f52381f"
+    },
+    {
+      "uid": "specimen/L4/06/full",
+      "physical_id": "specimen/L4/06",
+      "role": "test",
+      "input_sha256": "3bc69d207a1c25dc598e22f7b9d26dfb9264a103690b1d3dd7a284979e64f5ab"
+    },
+    {
+      "uid": "specimen/L4/07/blur_glare",
+      "physical_id": "specimen/L4/07",
+      "role": "test",
+      "input_sha256": "ded11717b2e921087d9df0d3d6385887c8150b95f80dc4fb1bacf05f9a83edba"
+    },
+    {
+      "uid": "specimen/L4/07/corner_clip",
+      "physical_id": "specimen/L4/07",
+      "role": "test",
+      "input_sha256": "764d92c6be40b12aec6de54fdc696077086f6cb7937d5b8bc73e08a032509d54"
+    },
+    {
+      "uid": "specimen/L4/07/field_clip",
+      "physical_id": "specimen/L4/07",
+      "role": "test",
+      "input_sha256": "be2d32e19ce2adec61b934b7f66d796f410c9d28e01a37200164262cb87ac6e1"
+    },
+    {
+      "uid": "specimen/L4/07/full",
+      "physical_id": "specimen/L4/07",
+      "role": "test",
+      "input_sha256": "f41bea0d714e10dcfc522a7853e0cb2e4e3b2efaed2c4f3ec4147531f8d557e5"
+    },
+    {
+      "uid": "specimen/L4/08/blur_glare",
+      "physical_id": "specimen/L4/08",
+      "role": "test",
+      "input_sha256": "ea5a86022f934a40beedbc9ebb9062d8bd78af16fa202e6b9b55dedfd3d8b5fe"
+    },
+    {
+      "uid": "specimen/L4/08/corner_clip",
+      "physical_id": "specimen/L4/08",
+      "role": "test",
+      "input_sha256": "8cc33b1d911723a911618d616d2854290a0593bbac092335ef1ff4a65582a324"
+    },
+    {
+      "uid": "specimen/L4/08/field_clip",
+      "physical_id": "specimen/L4/08",
+      "role": "test",
+      "input_sha256": "dce126c64843adc5ca66edcc1523628c2ee7aa680faa4a3185c0c5b7517efe37"
+    },
+    {
+      "uid": "specimen/L4/08/full",
+      "physical_id": "specimen/L4/08",
+      "role": "test",
+      "input_sha256": "e0d7b81383ac71f188c6fcc7ac210a088eb4c2cb8740a208a144d4a3bbefd420"
+    },
+    {
+      "uid": "specimen/L4/09/blur_glare",
+      "physical_id": "specimen/L4/09",
+      "role": "test",
+      "input_sha256": "6213fc30d8a08dfe0e82680590d7d0d282c876bbeaedb4a1e3a14b87ded1d941"
+    },
+    {
+      "uid": "specimen/L4/09/corner_clip",
+      "physical_id": "specimen/L4/09",
+      "role": "test",
+      "input_sha256": "4744c480b19ae449482129e9597f0df068cd871715895f5da95d963f8bfcdea5"
+    },
+    {
+      "uid": "specimen/L4/09/field_clip",
+      "physical_id": "specimen/L4/09",
+      "role": "test",
+      "input_sha256": "0265f5e8070f0e7bcd9962a8d7971801ee21724ac6737e6b7002fa081437e09a"
+    },
+    {
+      "uid": "specimen/L4/09/full",
+      "physical_id": "specimen/L4/09",
+      "role": "test",
+      "input_sha256": "1d4c8eb10594674d3bb86ef360e5cc7d8e1e59be89f9d483cbf6e907ef71880c"
+    },
+    {
+      "uid": "specimen/L4/10/blur_glare",
+      "physical_id": "specimen/L4/10",
+      "role": "test",
+      "input_sha256": "6749265b05b360eeaded0d250e8530b95bb0a58c414a1a6b1fb2edbbfe65304f"
+    },
+    {
+      "uid": "specimen/L4/10/corner_clip",
+      "physical_id": "specimen/L4/10",
+      "role": "test",
+      "input_sha256": "db977e66f5ac9bffd3b2168f2b0286f195a52a3e7e3d4db61eeaebbf9aa6f143"
+    },
+    {
+      "uid": "specimen/L4/10/field_clip",
+      "physical_id": "specimen/L4/10",
+      "role": "test",
+      "input_sha256": "18f998c193ce7d745c2a12a427c38d85f83af931ebcf3056fdd72d4d23257aab"
+    },
+    {
+      "uid": "specimen/L4/10/full",
+      "physical_id": "specimen/L4/10",
+      "role": "test",
+      "input_sha256": "e519bd7480165a87ca70e5c220c42b0d8131f6340070dc39698bf34394cf7e74"
+    },
+    {
+      "uid": "specimen/L4/11/blur_glare",
+      "physical_id": "specimen/L4/11",
+      "role": "test",
+      "input_sha256": "18fe1a8c5968eb72a05ac4ce7dda895e2f90c2973f3611c3cfedce8f251d88b7"
+    },
+    {
+      "uid": "specimen/L4/11/corner_clip",
+      "physical_id": "specimen/L4/11",
+      "role": "test",
+      "input_sha256": "3c4deb73a4ac1a36ce1461209e1ef41e044cb6f0edbaf49fe756b42725200c17"
+    },
+    {
+      "uid": "specimen/L4/11/field_clip",
+      "physical_id": "specimen/L4/11",
+      "role": "test",
+      "input_sha256": "93e05046c2f96605372bc89dfe5a9ece11aab21cc6eaeece206addc699c5214f"
+    },
+    {
+      "uid": "specimen/L4/11/full",
+      "physical_id": "specimen/L4/11",
+      "role": "test",
+      "input_sha256": "6adcdc3294c961d317c12181d00a6115ffe0c16ee077aad3fe87fb87a71335b4"
+    },
+    {
+      "uid": "specimen/L4/12/blur_glare",
+      "physical_id": "specimen/L4/12",
+      "role": "test",
+      "input_sha256": "5bf2193fa5d468d090eb469ee3a9a0fc6bc57e282b7e80c07a205030e368384e"
+    },
+    {
+      "uid": "specimen/L4/12/corner_clip",
+      "physical_id": "specimen/L4/12",
+      "role": "test",
+      "input_sha256": "4af9eda3f3a3af19f45252d6c46b425c2ade3c40c8b39a77286c0487396b0a15"
+    },
+    {
+      "uid": "specimen/L4/12/field_clip",
+      "physical_id": "specimen/L4/12",
+      "role": "test",
+      "input_sha256": "a3c0f14b93a562a541757a7aef19d731e8510b8647075895e0a2cae480da6ea0"
+    },
+    {
+      "uid": "specimen/L4/12/full",
+      "physical_id": "specimen/L4/12",
+      "role": "test",
+      "input_sha256": "bca8948a5f2098e8cac7bc12e3351d659c12415bd92e15c4d4f9e30d77e46fa4"
+    },
+    {
+      "uid": "specimen/L4/13/blur_glare",
+      "physical_id": "specimen/L4/13",
+      "role": "test",
+      "input_sha256": "e3493b22f4c54d2fe618e23a710715053a19b9f686f9bb67142147357a509ecf"
+    },
+    {
+      "uid": "specimen/L4/13/corner_clip",
+      "physical_id": "specimen/L4/13",
+      "role": "test",
+      "input_sha256": "bf53dbb1e3b81d62ff74157234b186d29b70bea6195a94e50454234d2f8d736c"
+    },
+    {
+      "uid": "specimen/L4/13/field_clip",
+      "physical_id": "specimen/L4/13",
+      "role": "test",
+      "input_sha256": "0146e4263c569a379816e1795645c46914e9fee7826cbb74cf1f9ddfe826bb9c"
+    },
+    {
+      "uid": "specimen/L4/13/full",
+      "physical_id": "specimen/L4/13",
+      "role": "test",
+      "input_sha256": "67f7ec50577bdfbc86bb07e3eeb9c0ae715683b15e7b8362834616fcae143816"
+    },
+    {
+      "uid": "specimen/L4/14/blur_glare",
+      "physical_id": "specimen/L4/14",
+      "role": "test",
+      "input_sha256": "ba5eeac300774bcc0dd7f7a9201e9e607304a91e945ef94dfb965447491c650d"
+    },
+    {
+      "uid": "specimen/L4/14/corner_clip",
+      "physical_id": "specimen/L4/14",
+      "role": "test",
+      "input_sha256": "e505ba82cbe92cd9d09133a613bd55b08f9100a8fe80ec0539328fa36190e031"
+    },
+    {
+      "uid": "specimen/L4/14/field_clip",
+      "physical_id": "specimen/L4/14",
+      "role": "test",
+      "input_sha256": "d228695c64c97d9e375231cde84ba2cd71650094aff094e73508b2fae6603623"
+    },
+    {
+      "uid": "specimen/L4/14/full",
+      "physical_id": "specimen/L4/14",
+      "role": "test",
+      "input_sha256": "1222554da1761c9c2a0b00b309ed9af3e5e87190f651c50de72c4aa6dfb1c000"
+    },
+    {
+      "uid": "specimen/L5/00/blur_glare",
+      "physical_id": "specimen/L5/00",
+      "role": "test",
+      "input_sha256": "894d47e2493c7a2fb9aebca8e30d7f9a09a0f1b1c8fd75f5a13deb1791275c80"
+    },
+    {
+      "uid": "specimen/L5/00/corner_clip",
+      "physical_id": "specimen/L5/00",
+      "role": "test",
+      "input_sha256": "d25951b5653baafe52e49e05b28a3c69fbd5d74691828142efc643a8823a9922"
+    },
+    {
+      "uid": "specimen/L5/00/field_clip",
+      "physical_id": "specimen/L5/00",
+      "role": "test",
+      "input_sha256": "d91d212b783dc33038d0775f246c9b712b7fb684dd1c3115e9a6927003d261b8"
+    },
+    {
+      "uid": "specimen/L5/00/full",
+      "physical_id": "specimen/L5/00",
+      "role": "test",
+      "input_sha256": "651b246b2a83f6f229599b94e3adccc30aacf26b9858b32c194924fd955ca0a0"
+    },
+    {
+      "uid": "specimen/L5/01/blur_glare",
+      "physical_id": "specimen/L5/01",
+      "role": "test",
+      "input_sha256": "b071de4421446aaafad44f4f628c1879712bac333955993981cb5b377417e20f"
+    },
+    {
+      "uid": "specimen/L5/01/corner_clip",
+      "physical_id": "specimen/L5/01",
+      "role": "test",
+      "input_sha256": "4ff55402c146713972307ed31d6982211610920ed0d7594275d0f34a92d3d00f"
+    },
+    {
+      "uid": "specimen/L5/01/field_clip",
+      "physical_id": "specimen/L5/01",
+      "role": "test",
+      "input_sha256": "1554e4b901721267c42daed031e374be2bb5cc7ddb32d8fb999eadcb718214e3"
+    },
+    {
+      "uid": "specimen/L5/01/full",
+      "physical_id": "specimen/L5/01",
+      "role": "test",
+      "input_sha256": "8d1adfe9464c82aa6e36281afeda51c9c54a794221c0949b77a6c01133d7c2b6"
+    },
+    {
+      "uid": "specimen/L5/02/blur_glare",
+      "physical_id": "specimen/L5/02",
+      "role": "test",
+      "input_sha256": "f7b04d37143faae9fb75009c0daf3b0211ee1bec06c15101044dced2b719b367"
+    },
+    {
+      "uid": "specimen/L5/02/corner_clip",
+      "physical_id": "specimen/L5/02",
+      "role": "test",
+      "input_sha256": "0b70e81a7244cb64806f0201bf76d15b2e55aac540744741ccdbfc9986ea8fdb"
+    },
+    {
+      "uid": "specimen/L5/02/field_clip",
+      "physical_id": "specimen/L5/02",
+      "role": "test",
+      "input_sha256": "966c3ece817abc59aca73857d4bef68cc76e14c22775203a324140c4ade8666e"
+    },
+    {
+      "uid": "specimen/L5/02/full",
+      "physical_id": "specimen/L5/02",
+      "role": "test",
+      "input_sha256": "ef181933fd50940489ada4c537cd78dbc00d2dfb9e25544ce09d0db572a55021"
+    },
+    {
+      "uid": "specimen/L5/03/blur_glare",
+      "physical_id": "specimen/L5/03",
+      "role": "test",
+      "input_sha256": "e39198a2f1e28c7e2bdd9b69a3a2f6e51e7eecaacb3f52a2bfaf832a9b5afed9"
+    },
+    {
+      "uid": "specimen/L5/03/corner_clip",
+      "physical_id": "specimen/L5/03",
+      "role": "test",
+      "input_sha256": "46d31442128ab1b6f6306b0273e621661fdc70286e808a63b9a716927ab6d6b9"
+    },
+    {
+      "uid": "specimen/L5/03/field_clip",
+      "physical_id": "specimen/L5/03",
+      "role": "test",
+      "input_sha256": "251bc6e3c840019b1b036d55909db5a7368062a75bdb7303bf309596bacf41cf"
+    },
+    {
+      "uid": "specimen/L5/03/full",
+      "physical_id": "specimen/L5/03",
+      "role": "test",
+      "input_sha256": "3644402b574c45e9a3f7b6bae783f100757c9b75be5006d4d2131783d473c8fe"
+    },
+    {
+      "uid": "specimen/L5/04/blur_glare",
+      "physical_id": "specimen/L5/04",
+      "role": "test",
+      "input_sha256": "b0f9bc051a6b5aa92576b87bc5cf185a7767c0a424719e5b293ad6c4f9e20f8c"
+    },
+    {
+      "uid": "specimen/L5/04/corner_clip",
+      "physical_id": "specimen/L5/04",
+      "role": "test",
+      "input_sha256": "bfed108db6ec99dd38a9ece3204a86fde62e29db968c394e730e6cf84d526bd0"
+    },
+    {
+      "uid": "specimen/L5/04/field_clip",
+      "physical_id": "specimen/L5/04",
+      "role": "test",
+      "input_sha256": "e855a21470d9bb367439e37bffb32b0b97e48394850f2c7313d4a6f2d07e9402"
+    },
+    {
+      "uid": "specimen/L5/04/full",
+      "physical_id": "specimen/L5/04",
+      "role": "test",
+      "input_sha256": "13ee862eded9fea72fb0893e921733a7a6b4fb8d8467bc4201ae720b402f4aa3"
+    },
+    {
+      "uid": "specimen/L5/05/blur_glare",
+      "physical_id": "specimen/L5/05",
+      "role": "test",
+      "input_sha256": "7c0fcfc22be2d94da26168ad388f6aff263b68c24eb0a73f14252b66765da1a3"
+    },
+    {
+      "uid": "specimen/L5/05/corner_clip",
+      "physical_id": "specimen/L5/05",
+      "role": "test",
+      "input_sha256": "f012faedf8a0963b1d29c6c99ec0c2eecc6f0573bdfc188bba1cbf465c2393a0"
+    },
+    {
+      "uid": "specimen/L5/05/field_clip",
+      "physical_id": "specimen/L5/05",
+      "role": "test",
+      "input_sha256": "5c7400f3da569694ed2c224030447e01216e4ab6a10d3938ef2befbc1313a3f4"
+    },
+    {
+      "uid": "specimen/L5/05/full",
+      "physical_id": "specimen/L5/05",
+      "role": "test",
+      "input_sha256": "5f66f8251dba4581af08673e46d0fb16562c26f39791b4d637cf6d85ea20c633"
+    },
+    {
+      "uid": "specimen/L5/06/blur_glare",
+      "physical_id": "specimen/L5/06",
+      "role": "test",
+      "input_sha256": "a2e8f7f822233c1568cfe51704ff0cbd87c38abbf81ba8bb1e986835385ffd16"
+    },
+    {
+      "uid": "specimen/L5/06/corner_clip",
+      "physical_id": "specimen/L5/06",
+      "role": "test",
+      "input_sha256": "f2ab94bc5c807348728ebbbeb8ec5d889e4a2c303db2b4f3775a68e7edac4d8d"
+    },
+    {
+      "uid": "specimen/L5/06/field_clip",
+      "physical_id": "specimen/L5/06",
+      "role": "test",
+      "input_sha256": "9ca6427acd515686b8bef5b229c45b079d71c7790aff0f7468721e739802b3a6"
+    },
+    {
+      "uid": "specimen/L5/06/full",
+      "physical_id": "specimen/L5/06",
+      "role": "test",
+      "input_sha256": "11d7fbe1206c8d35124af166a971bdc5f07f622388599cbaddcd3fd78cce41a8"
+    },
+    {
+      "uid": "specimen/L5/07/blur_glare",
+      "physical_id": "specimen/L5/07",
+      "role": "test",
+      "input_sha256": "e50be907fa1b651e56a8fe26daceacbe434d12187599260c1ccd42e1f0448a5f"
+    },
+    {
+      "uid": "specimen/L5/07/corner_clip",
+      "physical_id": "specimen/L5/07",
+      "role": "test",
+      "input_sha256": "918780ff050143355015068c4502db2689fc164c12ce4808bcd6e4facf97ce42"
+    },
+    {
+      "uid": "specimen/L5/07/field_clip",
+      "physical_id": "specimen/L5/07",
+      "role": "test",
+      "input_sha256": "42fa0e5226714d1557110ccc6b00c538b0f5404e384574e6444050efa4cd9110"
+    },
+    {
+      "uid": "specimen/L5/07/full",
+      "physical_id": "specimen/L5/07",
+      "role": "test",
+      "input_sha256": "5a9e0557bae91b629485169ae710ee22f4143af2971dedb6edac31bc06755d76"
+    },
+    {
+      "uid": "specimen/L5/08/blur_glare",
+      "physical_id": "specimen/L5/08",
+      "role": "test",
+      "input_sha256": "f34724c69efbc61ebbe599dbcde5fe51bfd998c44edce3fff171b43fb42acce1"
+    },
+    {
+      "uid": "specimen/L5/08/corner_clip",
+      "physical_id": "specimen/L5/08",
+      "role": "test",
+      "input_sha256": "3ae3531ccbf967c0e45f890d5ea02b01f35dbe24eb33433f47198f52b08b941b"
+    },
+    {
+      "uid": "specimen/L5/08/field_clip",
+      "physical_id": "specimen/L5/08",
+      "role": "test",
+      "input_sha256": "045072ba4b390ef4880fb5d7112ad25502006498da6ae2500e6436cdb79cd195"
+    },
+    {
+      "uid": "specimen/L5/08/full",
+      "physical_id": "specimen/L5/08",
+      "role": "test",
+      "input_sha256": "736b664dce643742181e951e41c60524efa32de3e34927baedc4dadf66630911"
+    },
+    {
+      "uid": "specimen/L5/09/blur_glare",
+      "physical_id": "specimen/L5/09",
+      "role": "test",
+      "input_sha256": "940bf242f76d156f7e0710d8c4daafbb14f581835f87c96029fd954111673d83"
+    },
+    {
+      "uid": "specimen/L5/09/corner_clip",
+      "physical_id": "specimen/L5/09",
+      "role": "test",
+      "input_sha256": "9b3a701bc7d45a7bae20b0e056e999e77b938a63be263c8bc14c18d433d97a40"
+    },
+    {
+      "uid": "specimen/L5/09/field_clip",
+      "physical_id": "specimen/L5/09",
+      "role": "test",
+      "input_sha256": "f244a91384458ed0afc47a64d81537aad6a460815d5564e2650196724fd926da"
+    },
+    {
+      "uid": "specimen/L5/09/full",
+      "physical_id": "specimen/L5/09",
+      "role": "test",
+      "input_sha256": "4ba47be2ad47da2a094b60c35de1a95e4c584243a7242243c608a02c1a059fab"
+    },
+    {
+      "uid": "specimen/L5/10/blur_glare",
+      "physical_id": "specimen/L5/10",
+      "role": "test",
+      "input_sha256": "b43ce12cc98a504b304be94c71cb3ca0f3e7dd303e44b7a21d2eadd1ba156fa6"
+    },
+    {
+      "uid": "specimen/L5/10/corner_clip",
+      "physical_id": "specimen/L5/10",
+      "role": "test",
+      "input_sha256": "45e0fca4d106fa87c49b5687fc2a6ae5bf1004b5bfb6e0de22c81f0c1f08fb56"
+    },
+    {
+      "uid": "specimen/L5/10/field_clip",
+      "physical_id": "specimen/L5/10",
+      "role": "test",
+      "input_sha256": "da1e7ae4b8f2364c5b65fec106e3a6a243d27fd0683974da024eb0f3ff3e6238"
+    },
+    {
+      "uid": "specimen/L5/10/full",
+      "physical_id": "specimen/L5/10",
+      "role": "test",
+      "input_sha256": "5c4708ed80a0140f595afbab4577e32c5f91a3fec18adcd85adbc19b085ae0d2"
+    },
+    {
+      "uid": "specimen/L5/11/blur_glare",
+      "physical_id": "specimen/L5/11",
+      "role": "test",
+      "input_sha256": "252ce6f704115093f14407365b8dbee766a39f1f55f58cb49c1206d80a017e14"
+    },
+    {
+      "uid": "specimen/L5/11/corner_clip",
+      "physical_id": "specimen/L5/11",
+      "role": "test",
+      "input_sha256": "1390b62a5784ec7459fa420d5fda6cbf653d141627eb37dd6726b8f06055c989"
+    },
+    {
+      "uid": "specimen/L5/11/field_clip",
+      "physical_id": "specimen/L5/11",
+      "role": "test",
+      "input_sha256": "e65416c890511509b508ccf95fd79697a09c12565ebd8ccce339788da1d51db2"
+    },
+    {
+      "uid": "specimen/L5/11/full",
+      "physical_id": "specimen/L5/11",
+      "role": "test",
+      "input_sha256": "d1e26a3a64b435f780d85b5783d76ff80abe90e4395a052d037c11cd137acaf5"
+    },
+    {
+      "uid": "specimen/L5/12/blur_glare",
+      "physical_id": "specimen/L5/12",
+      "role": "test",
+      "input_sha256": "1895749bcf0628c49846a1078136327ecaddde73c558dde6e8af7728b00b9669"
+    },
+    {
+      "uid": "specimen/L5/12/corner_clip",
+      "physical_id": "specimen/L5/12",
+      "role": "test",
+      "input_sha256": "ca57747c359f146fa87d6c1106780390c4f7e152656ffbbe6c2aa8e5ab45c521"
+    },
+    {
+      "uid": "specimen/L5/12/field_clip",
+      "physical_id": "specimen/L5/12",
+      "role": "test",
+      "input_sha256": "cd0767fd0576b2935deaf74e7853c18a05e0f4574794bd7e8e43cd2db8db4a86"
+    },
+    {
+      "uid": "specimen/L5/12/full",
+      "physical_id": "specimen/L5/12",
+      "role": "test",
+      "input_sha256": "758a6a41463b48b30247e9ab3ca114aa16d30fdcf249ce524a6045c5ceaf3c29"
+    },
+    {
+      "uid": "specimen/L5/13/blur_glare",
+      "physical_id": "specimen/L5/13",
+      "role": "test",
+      "input_sha256": "b8c619fa966093b0c761685529a969cfafe3bba24446adff0404e7c478e36d15"
+    },
+    {
+      "uid": "specimen/L5/13/corner_clip",
+      "physical_id": "specimen/L5/13",
+      "role": "test",
+      "input_sha256": "8a7dedadbcb09b7944004fc6298d49afe97dba7f9f72fa2aa364e6d8cea2eec7"
+    },
+    {
+      "uid": "specimen/L5/13/field_clip",
+      "physical_id": "specimen/L5/13",
+      "role": "test",
+      "input_sha256": "d3e9b9c503660723797ccf4d38bb151c2c43fe4c9a59ccccf2e838452ec180dc"
+    },
+    {
+      "uid": "specimen/L5/13/full",
+      "physical_id": "specimen/L5/13",
+      "role": "test",
+      "input_sha256": "8739c88e5ba923970211afb5ace30b83d6fef4171f2eb367fa570e725aac33e6"
+    },
+    {
+      "uid": "specimen/L5/14/blur_glare",
+      "physical_id": "specimen/L5/14",
+      "role": "test",
+      "input_sha256": "73592faabfe9fb335b3e6b23587bec1fe69ca1dc2429f6513a92ecb873c94f8d"
+    },
+    {
+      "uid": "specimen/L5/14/corner_clip",
+      "physical_id": "specimen/L5/14",
+      "role": "test",
+      "input_sha256": "67f489554a71c3dc02176851f91ac8695027ad584b6a2a6cbfecb28a06ba7390"
+    },
+    {
+      "uid": "specimen/L5/14/field_clip",
+      "physical_id": "specimen/L5/14",
+      "role": "test",
+      "input_sha256": "1470a1d75463e137c38c590815c76e65c3cea40a43d3f3321beafc381e431f80"
+    },
+    {
+      "uid": "specimen/L5/14/full",
+      "physical_id": "specimen/L5/14",
+      "role": "test",
+      "input_sha256": "ff18168cbb8f56d0b96f217c2064348f7fa3c89ac9ec9d7a30110c51578a8969"
+    }
+  ],
+  "annotations_sha256": "2d358525ddc68567bd59eeda63a8260815549d596a4309b88478c85aa932ccb5",
+  "sample_counts": [
+    540,
+    24,
+    24
+  ],
+  "panel_uids": [
+    "midv2020/alb_id/67/full",
+    "midv2020/alb_id/94/field_clip",
+    "midv2020/aze_passport/47/corner_clip",
+    "midv2020/aze_passport/63/full",
+    "midv2020/esp_id/69/corner_clip",
+    "midv2020/esp_id/90/corner_clip",
+    "midv2020/fin_id/47/corner_clip",
+    "midv2020/fin_id/90/full",
+    "midv2020/grc_passport/94/corner_clip",
+    "midv2020/lva_passport/94/full",
+    "midv2020/rus_internalpassport/67/corner_clip",
+    "midv2020/svk_id/69/corner_clip",
+    "specimen/L0/05/blur_glare",
+    "specimen/L1/00/blur_glare",
+    "specimen/L1/01/corner_clip",
+    "specimen/L1/02/field_clip",
+    "specimen/L1/08/field_clip",
+    "specimen/L1/09/corner_clip",
+    "specimen/L2/04/full",
+    "specimen/L2/13/blur_glare",
+    "specimen/L3/08/full",
+    "specimen/L4/06/blur_glare",
+    "specimen/L4/14/full",
+    "specimen/L5/01/field_clip"
+  ],
+  "policies": [
+    "raw",
+    "strict",
+    "completion",
+    "bbox",
+    "contour",
+    "text_deskew",
+    "lcnet"
+  ],
+  "readers": [
+    "rapid_v4",
+    "rapid_latin_v5"
+  ],
+  "python": "3.11.4",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "threads": 2,
+  "test_scoring_after_model_lock": true,
+  "randomized_nonraw_policy_order": true
+}

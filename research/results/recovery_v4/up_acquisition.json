@@ -1,0 +1,410 @@
+{
+  "samples": [
+    {
+      "uid": "midvup/irn_bc/006",
+      "physical_id": "midvup/irn_bc/006",
+      "document_type": "irn_bc",
+      "camera": "iphone",
+      "input_sha256": "5c164230986183f4592884cd19161fe9fed9303c4393115e5ede4d23fea84dd2",
+      "width": 5712,
+      "height": 4284,
+      "eligible_fields": 7,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 15
+      }
+    },
+    {
+      "uid": "midvup/irn_bc/090",
+      "physical_id": "midvup/irn_bc/090",
+      "document_type": "irn_bc",
+      "camera": "iphone",
+      "input_sha256": "7383d5e617a17a3f2c21411fda8567e5ca0804ba9a3b0fc306e893ce5a0e38c0",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 7,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 15
+      }
+    },
+    {
+      "uid": "midvup/irn_bc/064",
+      "physical_id": "midvup/irn_bc/064",
+      "document_type": "irn_bc",
+      "camera": "iphone",
+      "input_sha256": "a9779793694adb1c20df53e113c33e289c1798644b5020550f116038d79100a4",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 7,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 15
+      }
+    },
+    {
+      "uid": "midvup/irn_bc/207",
+      "physical_id": "midvup/irn_bc/207",
+      "document_type": "irn_bc",
+      "camera": "samsung",
+      "input_sha256": "1d0a7b011211fd8ea95129906e2b1770d6af14666c66a17927b813a35f61ecea",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 7,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 15
+      }
+    },
+    {
+      "uid": "midvup/irn_bc/190",
+      "physical_id": "midvup/irn_bc/190",
+      "document_type": "irn_bc",
+      "camera": "samsung",
+      "input_sha256": "ed8212c705badf61a342afefe11ff69c0e1c56f5ec50bb0f5358131aae0ed22c",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 7,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 15
+      }
+    },
+    {
+      "uid": "midvup/irn_bc/164",
+      "physical_id": "midvup/irn_bc/164",
+      "document_type": "irn_bc",
+      "camera": "samsung",
+      "input_sha256": "dcb6565629728f5791c174cc30db67288810c2fcc6698d5c16b960e1656e9f5c",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 6,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 16
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/012",
+      "physical_id": "midvup/irn_drvlic/012",
+      "document_type": "irn_drvlic",
+      "camera": "iphone",
+      "input_sha256": "21274a6f937f20b86e305ad067dd2ce64c407f2691d00ca5dadb080dcf5371c6",
+      "width": 5712,
+      "height": 4284,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/007",
+      "physical_id": "midvup/irn_drvlic/007",
+      "document_type": "irn_drvlic",
+      "camera": "iphone",
+      "input_sha256": "aa2e9c1531efb2f04c9345a1a14bf5b921f3cc5ba2a5f71bf1c89cbb66041482",
+      "width": 5712,
+      "height": 4284,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/031",
+      "physical_id": "midvup/irn_drvlic/031",
+      "document_type": "irn_drvlic",
+      "camera": "iphone",
+      "input_sha256": "231a1071ba785dae1728622fa12386c8a29a8aef1648bb32a742586ccf7224c7",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/129",
+      "physical_id": "midvup/irn_drvlic/129",
+      "document_type": "irn_drvlic",
+      "camera": "samsung",
+      "input_sha256": "d27e120f3f7bd575f2f54a3bd9c10004c5b84a35608c8e81a8ad32238ea7517b",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/193",
+      "physical_id": "midvup/irn_drvlic/193",
+      "document_type": "irn_drvlic",
+      "camera": "samsung",
+      "input_sha256": "fa32c4f3a30398a68c8ab9bc2c395603e98cbf7ab3e4b0d98fcbdabde4247b2f",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_drvlic/223",
+      "physical_id": "midvup/irn_drvlic/223",
+      "document_type": "irn_drvlic",
+      "camera": "samsung",
+      "input_sha256": "3f057b768dc16644cac7a100a919ee4b288c7a30c339eafad1441fa7133060ba",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 4,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 5
+      }
+    },
+    {
+      "uid": "midvup/irn_id/081",
+      "physical_id": "midvup/irn_id/081",
+      "document_type": "irn_id",
+      "camera": "iphone",
+      "input_sha256": "5d7556278b1f82fa640c411a0d34e17383c39e5c1ecb93e857d40e7cc2cb42e7",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/irn_id/086",
+      "physical_id": "midvup/irn_id/086",
+      "document_type": "irn_id",
+      "camera": "iphone",
+      "input_sha256": "aa7ad64452ab73bbd44baa0c6ad5d573bcd88111af0b5fa7cb992a9b08b8edaf",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/irn_id/078",
+      "physical_id": "midvup/irn_id/078",
+      "document_type": "irn_id",
+      "camera": "iphone",
+      "input_sha256": "3683758076a9a06f9025718fd9806a312836a9e2a7991623a7e60d4c4b21b4cc",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/irn_id/170",
+      "physical_id": "midvup/irn_id/170",
+      "document_type": "irn_id",
+      "camera": "samsung",
+      "input_sha256": "c18c155f7a5e7400ae94cda188910af9e57cc5a586e20ee29e7ad8c919074adc",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/irn_id/231",
+      "physical_id": "midvup/irn_id/231",
+      "document_type": "irn_id",
+      "camera": "samsung",
+      "input_sha256": "d6691d3c562959da7a150415017f7c56adaa8d6e2e72f72ac671e92115a9f141",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/irn_id/156",
+      "physical_id": "midvup/irn_id/156",
+      "document_type": "irn_id",
+      "camera": "samsung",
+      "input_sha256": "cb0557828cc583024474f83aceb4e9c2285cd4e4da87ac4dbbb21761355a3587",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 3,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 3
+      }
+    },
+    {
+      "uid": "midvup/pak_id/009",
+      "physical_id": "midvup/pak_id/009",
+      "document_type": "pak_id",
+      "camera": "iphone",
+      "input_sha256": "cb6fda68675132bdb07ff7c2a05a05b21eb1ed56a26b3e513cff434a9da8955d",
+      "width": 5712,
+      "height": 4284,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    },
+    {
+      "uid": "midvup/pak_id/057",
+      "physical_id": "midvup/pak_id/057",
+      "document_type": "pak_id",
+      "camera": "iphone",
+      "input_sha256": "4e632ea1cd5572e8b06b9c1890bf4d98d8230236902aa46f43c30eb429a2379a",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    },
+    {
+      "uid": "midvup/pak_id/076",
+      "physical_id": "midvup/pak_id/076",
+      "document_type": "pak_id",
+      "camera": "iphone",
+      "input_sha256": "b5e2ae18bb2fde2996b63f3c519164f802fe8dba16c0f525cce96983ccc81d9b",
+      "width": 4032,
+      "height": 3024,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    },
+    {
+      "uid": "midvup/pak_id/214",
+      "physical_id": "midvup/pak_id/214",
+      "document_type": "pak_id",
+      "camera": "samsung",
+      "input_sha256": "8ab1e3752fe44214f21cb5680a27a0656361201ba332a8aff3a80ea9c6efdab4",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    },
+    {
+      "uid": "midvup/pak_id/245",
+      "physical_id": "midvup/pak_id/245",
+      "document_type": "pak_id",
+      "camera": "samsung",
+      "input_sha256": "ccbd61eb635303a85a42652e9a91e41d786a444ba09b8f699d667110f3e08351",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    },
+    {
+      "uid": "midvup/pak_id/250",
+      "physical_id": "midvup/pak_id/250",
+      "document_type": "pak_id",
+      "camera": "samsung",
+      "input_sha256": "3b5369fcfb4a498b7fbbc48763b941ba85fadc55a41c0e70ee8119eb9bfd4859",
+      "width": 4000,
+      "height": 3000,
+      "eligible_fields": 9,
+      "excluded_fields": {
+        "partial": 0,
+        "non_latin_or_invalid": 2
+      }
+    }
+  ],
+  "source_blocks": [
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_bc_iphone.json",
+      "sha256": "fc4fecc6073f7abf09bd0b2cb2952f70d0adc67558216eb76b88d3315ce1c57f",
+      "crc32": 1732018228
+    },
+    {
+      "entry": "dataset/dataset/templates/annotations/irn_bc.json",
+      "sha256": "fe087f2410a7f5387b2a5463f833c08cfe33d6d525ab964117d05847ec896057",
+      "crc32": 2324234378
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_bc_samsung.json",
+      "sha256": "61a41cbae393c621b94d622b13d52eb397adcdecd954c525d3995cb1de54ab90",
+      "crc32": 639717849
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_drvlic_iphone.json",
+      "sha256": "8a37997729b9e1398009a11ff8c267bde385f1c20fd903d6bd68bb6af48578a0",
+      "crc32": 1998745216
+    },
+    {
+      "entry": "dataset/dataset/templates/annotations/irn_drvlic.json",
+      "sha256": "5bd654b1f15c10595831258af84ba3ea992cc104bcb7d6bfd7a845ca942a0ef6",
+      "crc32": 932149113
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_drvlic_samsung.json",
+      "sha256": "d9104372ab3fdb381d4b197e1416b51366192f20db2c7f7a00f03ababd3e92f3",
+      "crc32": 2555441145
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_id_iphone.json",
+      "sha256": "ab877460386059a3b06b84c9e870cc2fd8c9b01e48bcaf9177ed869e54c370d3",
+      "crc32": 2932871648
+    },
+    {
+      "entry": "dataset/dataset/templates/annotations/irn_id.json",
+      "sha256": "83281d7079f4b1a07cc8d5bd46a67a32d6abeef5b1e2b4d96c71268b043e8102",
+      "crc32": 1675719165
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/irn_id_samsung.json",
+      "sha256": "7596763f081c27695ca0b8178cee589c6fecbb3cffc60c22568e162515691425",
+      "crc32": 3388837554
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/pak_id_iphone.json",
+      "sha256": "aebeab6fe0539cf0dbf3286ee0f299c0347b5abe59dc09193fad3b94440c4026",
+      "crc32": 169152951
+    },
+    {
+      "entry": "dataset/dataset/templates/annotations/pak_id.json",
+      "sha256": "1f9615880df6483891b432bc252711c22dd6910b72ed20e446a242d55868b84a",
+      "crc32": 3782046594
+    },
+    {
+      "entry": "dataset/dataset/photo/annotations/pak_id_samsung.json",
+      "sha256": "ce97c371a6c5332bc00589a0ae3612b3c3b47280aaf8a3e5c7c4906d51126906",
+      "crc32": 1527767092
+    }
+  ],
+  "protocol_sha256": "89352cafad72670e4906fed26adfc2205b21b97195a386a7a63ae5d04758f70b",
+  "archive_bytes": 12586662513,
+  "whole_archive_checksum_verified": false,
+  "source": "ftp://smartengines.com/midv-up/dataset.zip",
+  "license": "CC BY-SA2.5 Generic",
+  "new_self_captured_collection": false,
+  "unseen_pretraining_verified": false,
+  "annotation_matching": "Normalize numeric leading-zero filenames; require unique match and photo byte-count agreement"
+}

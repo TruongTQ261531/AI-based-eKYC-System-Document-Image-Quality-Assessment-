@@ -1,0 +1,8 @@
+{
+  "signature": "981e3e937e9d2d4355f57fee0464c82de0023d75a69bd205cb3747902435d351",
+  "fresh_cases": 588,
+  "expected_cases": 588,
+  "elapsed_seconds": 6460.788278499967,
+  "no_cases_dropped": true,
+  "exit_status": "complete"
+}
