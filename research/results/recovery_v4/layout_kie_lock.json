@@ -1,0 +1,16 @@
+{
+  "signature": "20805f1b67e6ac5013886bc9b19a8f305852a189d385e08b812ced77b755b214",
+  "development_cases": 80,
+  "source_locked_before_supplement_evaluation": true,
+  "main_test_comparison_is_post_hoc": true,
+  "development_correct": {
+    "baseline": 175,
+    "layout_assignment": 203
+  },
+  "development_complete_field_f1": {
+    "baseline": 0.6566604127579737,
+    "layout_assignment": 0.6928327645051194
+  },
+  "deployment_approved_on_development": true,
+  "protocol_sha256": "d20f6da9a9e2017f9d472757c9e789152c1be438898cc7d4fafb43d51aa93a6f"
+}
