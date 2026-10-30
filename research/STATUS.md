@@ -1,4 +1,4 @@
-# Research checkpoint, 2026-10-28
+# Research checkpoints (latest active follow-up: 2026-10-30)
 
 ## Active follow-up, 2026-10-30
 
@@ -98,7 +98,9 @@ Later code/analysis checks are in the research Git history and audit manifest.
    corner completion before drafting novelty claims. Read REPORT_VI.md and
    PAPER_OUTLINE.md; no restart of completed cached inference is needed.
 
-All launched experiment processes completed before this checkpoint. The local
+At the historical 2026-10-28 checkpoint, all then-launched experiments had
+completed. This statement does not apply to the active 2026-10-30 OCR follow-up
+at the top of this file. The local
 mentor server was not listening at the latest read-only health check; this
 research did not restart or change it. Tests do not substitute for a live
 camera/security deployment assessment.

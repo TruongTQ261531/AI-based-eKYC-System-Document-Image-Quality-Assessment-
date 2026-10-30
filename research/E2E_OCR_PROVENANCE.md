@@ -36,6 +36,14 @@ No new environment, dependency installation, training or model download occurred
 The numeric manifest lists actual local weight size/hash and installed package
 source hashes, so a name alone is not treated as provenance.
 
+The two recognizers share the same CRAFT detector; these are not two fully
+independent OCR systems. EasyOCR's predicted-line crop utility produces
+grayscale, height-normalized patches. VietOCR receives those same grayscale
+patches converted to RGB and applies its pinned input normalization. Therefore
+this benchmark does not establish equivalence to the mentor's original
+color-crop VietOCR path, and a future color-input ablation must be labelled as
+a separate experiment rather than silently replacing these results.
+
 ## Performance implementation audit
 
 VietOCR groups only tensors with identical width; it never pads one line to match
@@ -52,6 +60,9 @@ policy rasters within one image can share one execution; its stage time is
 charged to each equivalent policy. No prediction is reused across repeat passes.
 Results are serial desktop CPU timings with shared resident models, not server
 throughput, peak-memory or exclusive-machine benchmark guarantees.
+Policy execution order is fixed within an image; image order is shuffled.
+Cache/shape warmup effects can affect comparisons, so timing differences must
+not be described as an unbiased standalone-server speed guarantee.
 
 ## Experiment schedule and preserved deviations
 
