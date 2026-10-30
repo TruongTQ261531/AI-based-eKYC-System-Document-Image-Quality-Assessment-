@@ -3,6 +3,7 @@ import base64
 import io
 import json
 import threading
+import time
 from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -115,7 +116,8 @@ def health():
 
 @app.get('/api/results')
 def results():
-    if not (OUT/'summary.json').exists():return dict(status='running',rows=[],message='Chưa công bố điểm test trước khi khóa selector.')
+    if not (OUT/'summary.json').exists() or not (OUT/'independent_audit.json').exists():
+        return dict(status='running',rows=[],message='Chờ chấm và audit điểm test sau khi khóa selector.')
     rows=json.loads((OUT/'summary.json').read_text())
     models=json.loads((OUT/'selector_models.json').read_text())
     return dict(status='complete',rows=[r for r in rows if r['role']=='test'],
@@ -134,6 +136,7 @@ def specimen(kind:str):
 
 @app.post('/api/scan')
 async def scan(request:Request):
+    request_started=time.perf_counter()
     if request.headers.get('content-type','').split(';')[0] not in ('image/jpeg','image/png'):
         raise HTTPException(415,'Gửi trực tiếp ảnh JPEG hoặc PNG.')
     model=locked_model();raw=await request.body()
@@ -142,6 +145,9 @@ async def scan(request:Request):
     try:
         image=decode_image(raw)
         result=await run_in_threadpool(engine().online,image,model)
+        from ekyc.document_fields import observed_information,LABELS
+        _,items,_=observed_information(result['predictions'],{})
+        result['field_labels']={**LABELS,**{item['key']:item['label'] for item in items}}
         preview=result.pop('_private_preview');scale=min(1.,1280/max(preview.shape[:2]))
         preview=cv2.resize(preview,None,fx=scale,fy=scale)
         ok,encoded=cv2.imencode('.jpg',preview,[cv2.IMWRITE_JPEG_QUALITY,88])
@@ -149,6 +155,7 @@ async def scan(request:Request):
         result['preview_data_url']='data:image/jpeg;base64,'+base64.b64encode(encoded).decode('ascii')
         result['source_dimensions']=[image.shape[1],image.shape[0]]
         result['privacy']='Ảnh và text không được ghi vào file hoặc phiên máy chủ.'
+        result['request_processing_wall_seconds']=time.perf_counter()-request_started
         return result
     except HTTPException:raise
     except Exception:raise HTTPException(500,'Xử lý OCR gặp lỗi. Không lưu ảnh. Hãy thử lại hoặc kiểm tra terminal máy chủ.')

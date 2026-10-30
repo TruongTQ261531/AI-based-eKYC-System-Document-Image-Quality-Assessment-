@@ -1,0 +1,12 @@
+[
+  {
+    "source": "ftp://smartengines.com/midv-2020/license.txt",
+    "bytes": 439,
+    "sha256": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d"
+  },
+  {
+    "source": "ftp://smartengines.com/midv-2020/readme.txt",
+    "bytes": 9576,
+    "sha256": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+  }
+]
