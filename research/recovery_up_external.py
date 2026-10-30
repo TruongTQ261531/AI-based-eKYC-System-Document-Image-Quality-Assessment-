@@ -29,6 +29,11 @@ ROOT=Path('research/data/midv_up')
 ARCHIVE='/midv-up/dataset.zip'
 
 
+def canonical_filename(name):
+    path=PurePosixPath(name);stem=path.stem
+    return (str(int(stem)) if stem.isdigit() else stem)+path.suffix.lower()
+
+
 def get_range(offset,count):
     for attempt in range(3):
         try:return read_range(ARCHIVE,offset,count)
@@ -67,8 +72,9 @@ def acquisition():
         chosen=[]
         for e in ordered:
             identity=doc+'/'+PurePosixPath(e['name']).stem
-            if identity in seen:continue
-            seen.add(identity);chosen.append(dict(e,document_type=doc,camera=camera,physical_id='midvup/'+identity))
+            canonical_id=doc+'/'+canonical_filename(PurePosixPath(e['name']).name)
+            if canonical_id in seen:continue
+            seen.add(canonical_id);chosen.append(dict(e,document_type=doc,camera=camera,physical_id='midvup/'+identity))
             if len(chosen)==3:break
         if len(chosen)!=3:raise ValueError('Missing fixed transfer identity')
         selected.extend(chosen)
@@ -82,7 +88,9 @@ def acquisition():
             if path.exists():raw=path.read_bytes()
             else:raw,_=entry_bytes(source);path.write_bytes(raw)
             if len(raw)!=source['size'] or zlib.crc32(raw)&0xffffffff!=source['crc']:raise ValueError('Annotation CRC mismatch')
-            data=json.loads(raw);meta[key]={v['filename']:v for v in data['_via_img_metadata'].values()}
+            data=json.loads(raw);values=list(data['_via_img_metadata'].values())
+            meta[key]={canonical_filename(v['filename']):v for v in values}
+            if len(meta[key])!=len(values):raise ValueError('Ambiguous canonical annotation filename')
             source_blocks.append(dict(entry=source['name'],sha256=hashlib.sha256(raw).hexdigest(),crc32=source['crc']))
     def acquire(entry):
         identity=entry['physical_id'];name=PurePosixPath(entry['name']).name;doc=entry['document_type'];camera=entry['camera']
@@ -90,15 +98,19 @@ def acquisition():
         if path.exists():raw=path.read_bytes()
         else:raw,_=entry_bytes(entry);path.write_bytes(raw)
         if len(raw)!=entry['size'] or zlib.crc32(raw)&0xffffffff!=entry['crc']:raise ValueError('Photo CRC mismatch')
-        template=by[prefix+'templates/images/'+doc+'/'+Path(name).stem+'.png']
+        template_candidates=[e for e in entries if e['name'].startswith(prefix+'templates/images/'+doc+'/') and
+                             canonical_filename(e['name'])==canonical_filename(Path(name).stem+'.png')]
+        if len(template_candidates)!=1:raise ValueError('Ambiguous template image match')
+        template=template_candidates[0]
         png,prefix_sha=entry_bytes(template,True)
         if png[:8]!=b'\x89PNG\r\n\x1a\n' or zlib.crc32(png[12:29])&0xffffffff!=struct.unpack('>I',png[29:33])[0]:
             raise ValueError('Template PNG IHDR CRC mismatch')
-        rw,rh=struct.unpack('>II',png[16:24]);ann=meta[('photo',doc+'_'+camera)][name]
+        rw,rh=struct.unpack('>II',png[16:24]);ann=meta[('photo',doc+'_'+camera)][canonical_filename(name)]
+        if ann['size']!=entry['size']:raise ValueError('Photo size differs from normalized annotation match')
         region=next(r['shape_attributes'] for r in ann['regions'] if r['region_attributes']['field_name']=='doc_quad')
         gt=np.float32(list(zip(region['all_points_x'],region['all_points_y'])))
         H=cv2.getPerspectiveTransform(np.float32([[0,0],[rw-1,0],[rw-1,rh-1],[0,rh-1]]),gt)
-        reference=meta[('templates',doc)][Path(name).stem+'.png'];fields=[]
+        reference=meta[('templates',doc)][canonical_filename(Path(name).stem+'.png')];fields=[]
         for item in reference['regions']:
             attrs=item['region_attributes'];shape=item['shape_attributes'];value=attrs.get('value')
             if not isinstance(value,str) or not value or shape['name']!='rect':continue
@@ -116,7 +128,8 @@ def acquisition():
                  eligible_fields=len(target_fields(s)[0]),excluded_fields=target_fields(s)[1]) for s in samples]
     save(OUT/'up_acquisition.json',dict(samples=public,source_blocks=source_blocks,protocol_sha256=digest('research/RECOVERY_EXTERNAL_UP_PROTOCOL.md'),
         archive_bytes=index['archive_size'],whole_archive_checksum_verified=False,source='ftp://smartengines.com/midv-up/dataset.zip',
-        license='CC BY-SA2.5 Generic',new_self_captured_collection=False,unseen_pretraining_verified=False))
+        license='CC BY-SA2.5 Generic',new_self_captured_collection=False,unseen_pretraining_verified=False,
+        annotation_matching='Normalize numeric leading-zero filenames; require unique match and photo byte-count agreement'))
     print('UP_ACQUIRED',len(samples),'fixed external photos',flush=True)
 
 
