@@ -158,6 +158,10 @@ def main():
             if extract(framed)[0]!=item['_private_graph_fields']:raise ValueError('KIE predictor replay mismatch')
             if published['baseline']!=score_semantics(s,item['_private_base_fields']):raise ValueError('KIE baseline rescore mismatch')
             if published['layout_assignment']!=score_semantics(s,item['_private_graph_fields']):raise ValueError('KIE assignment rescore mismatch')
+            for method,private_key in (('baseline','_private_base_fields'),('layout_assignment','_private_graph_fields')):
+                if published[method+'_predicted_keys']!=len(item[private_key]):raise ValueError('KIE predicted-key count mismatch')
+                unknown=sum(k not in {f['key'] for f in s['fields']} for k in item[private_key])
+                if published[method+'_unexpected_keys']!=unknown:raise ValueError('KIE unexpected-key count mismatch')
             if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('KIE publication mismatch')
         validation_counts['kie_cases_replayed_and_rescored']=len(result['rows'])
     events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text(encoding='utf-8').splitlines()]

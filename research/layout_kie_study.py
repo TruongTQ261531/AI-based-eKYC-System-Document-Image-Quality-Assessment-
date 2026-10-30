@@ -5,6 +5,7 @@ import time
 from pathlib import Path
 
 import cv2
+import numpy as np
 
 from research.benchmark import save,digest
 from research.e2e_benchmark import atomic_json,hash_json
@@ -57,6 +58,10 @@ def run(development_only):
             row=dict(signature=sig,uid=sample['uid'],physical_id=sample['physical_id'],role=sample['role'],source=sample['source'],
                 input_sha256=sample['input_sha256'],ocr_prediction_sha256=canonical(predictions),
                 baseline=score_semantics(sample,baseline),layout_assignment=score_semantics(sample,fields),
+                all_fields_geometrically_visible=all(f['geometric_visibility']>=.995 for f in sample['fields']),
+                baseline_predicted_keys=len(baseline),layout_assignment_predicted_keys=len(fields),
+                baseline_unexpected_keys=sum(k not in {f['key'] for f in sample['fields']} for k in baseline),
+                layout_assignment_unexpected_keys=sum(k not in {f['key'] for f in sample['fields']} for k in fields),
                 setup_wall=setup_wall,setup_cpu=setup_cpu,parser_wall=parser_wall,parser_cpu=parser_cpu,
                 extra_ocr_calls=0,deterministic_parser_repeat=True,metadata=metadata,
                 _private_base_fields=baseline,_private_graph_fields=fields,
@@ -74,8 +79,21 @@ def run(development_only):
             protocol_sha256=digest('research/LAYOUT_KIE_PROTOCOL.md')))
     else:
         dev=json.loads((OUT/'layout_kie_development.json').read_text(encoding='utf-8'))['rows']
+        intervals=[]
+        for source,role in (('authored_specimen','test'),('authored_layout_stress','external_layout')):
+            grouped={}
+            for row in rows:
+                if row['source']!=source or row['role']!=role:continue
+                n=row['baseline']['eligible_fields']
+                if n:grouped.setdefault(row['physical_id'],[]).append((row['layout_assignment']['canonical_exact']-row['baseline']['canonical_exact'])/n)
+            delta=np.asarray([np.mean(values) for values in grouped.values()])
+            rng=np.random.default_rng(20261031);boot=delta[rng.integers(0,len(delta),(2000,len(delta)))].mean(axis=1)
+            intervals.append(dict(source=source,role=role,document_ids=len(delta),mean_delta=float(delta.mean()),
+                ci95=np.quantile(boot,[.025,.975]).tolist(),exploratory=True,bootstrap_resamples=2000,
+                weighting='Equal per-document mean of per-image semantic accuracy differences'))
         save(OUT/'layout_kie.json',dict(signature=sig,rows=dev+rows,cases=len(dev)+len(rows),
             additional_ocr_calls=0,main_comparison_post_hoc=True,parser_repeat_mismatches=0,
+            paired_intervals=intervals,
             timing_scope='Parser only; separate setup includes redundant localization/transform for cached-source-box reconstruction',
             source_hashes=dict(parser=digest('research/layout_kie.py'),runner=digest(__file__))))
 

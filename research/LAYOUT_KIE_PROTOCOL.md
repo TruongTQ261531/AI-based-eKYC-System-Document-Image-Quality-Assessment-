@@ -44,3 +44,11 @@ enable spatial parsing if its total correct count is at least the original
 parser's on the same development OCR and relevant unit tests pass. Otherwise
 retain the original parser and report the failed alternative. Do not change
 this decision based on test/stress outcomes.
+
+The per-target canonical exact score is a recall-like metric, not extraction
+precision. Also report predicted/unexpected key counts against the full
+annotated authored schema. On images whose annotated fields are all
+geometrically visible, report exact key-value micro precision/recall/F1 with
+all predicted keys in the precision denominator. Keep this separate from
+partial-field evaluation, where an observed substring is not automatically a
+false positive against an unavailable full-field value.

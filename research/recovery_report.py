@@ -29,6 +29,7 @@ def main():
     external=read('up_external.json');stress=read('layout_stress.json');alphabet=read('alphabet_coverage.json')
     target_coverage=read('target_coverage.json')
     environment=read('environment.json')
+    kie=read('layout_kie.json');kie_lock=read('layout_kie_lock.json')
     panel_ids=set(read('manifest.json')['panel_uids'])
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:
         native_panel=[r for r in map(json.loads,stream) if r['repeat']==1 and r['uid'] in panel_ids and r['policy']=='completion']
@@ -198,6 +199,32 @@ def main():
     lines.extend(['','[MIDV-UP traces](results/recovery_v4/up_external.json), '
         '[spatial stress traces](results/recovery_v4/layout_stress.json). Tỷ lệ giữ của raw chỉ loại trường hợp không có chữ, '
         'không được xem là cùng gate calibration với cascade/completion.','',
+        '## Sửa gán thông tin vào form: ablation bổ sung','',
+        'Giữ nguyên OCR Latin completion, thêm ghép nhãn–giá trị theo hình học phải/dưới và assignment một giá trị/một nhãn. '
+        'Tái dùng alias/kiểm tra ngày, giới tính, số giấy tờ hiện có; hỗ trợ nhãn lạ có dấu hai chấm. '
+        'Không dùng GT box, ID hoặc giá trị mong đợi khi ghép. Đây là kỹ thuật quen thuộc được kiểm cho ứng dụng, '
+        'không tuyên bố Hungarian assignment hoặc parser nhãn–giá trị là thuật toán mới.','',
+        'So 360 ảnh authored chính và 80 ảnh stress, 440 ca, chỉ lượt 1. Dùng lại output OCR đã lưu: '
+        '**0 lượt OCR bổ sung**. Hai lần chạy parser trên cùng output kiểm tra tính xác định, không phải hai lượt camera. '
+        'Phương án được khóa sau kiểm tra development. Kết quả chính V4 đã được xem tổng hợp trước khi thiết kế parser, '
+        'nên so sánh trên V4 dưới đây là **post hoc**; ghi rõ trong [giao thức](LAYOUT_KIE_PROTOCOL.md).','',
+        '| Nguồn / role | Bộ gán | Trường | Canonical key–value exact (%) |',
+        '|---|---|---:|---:|'])
+    for source,role in (('authored_specimen','development'),('authored_specimen','calibration'),('authored_specimen','test'),('authored_layout_stress','external_layout')):
+        selected=[r for r in kie['rows'] if r['source']==source and r['role']==role]
+        for method in ('baseline','layout_assignment'):
+            n=sum(r[method]['eligible_fields'] for r in selected)
+            exact=sum(r[method]['canonical_exact'] for r in selected)/max(n,1)
+            lines.append(f'| {source} / {role} | {method} | {n} | {pct(exact)} |')
+    lines.extend(['','Bootstrap 2.000 lần theo document ID, thăm dò và không điều chỉnh nhiều phép so sánh:','',
+        '| Nguồn | ID | Delta semantic exact (điểm %) | CI95% |','|---|---:|---:|---:|'])
+    for r in kie['paired_intervals']:
+        lo,hi=r['ci95'];lines.append(f'| {r["source"]} | {r["document_ids"]} | {100*r["mean_delta"]:+.2f} | [{100*lo:.2f}; {100*hi:.2f}] |')
+    lines.extend(['',f'Chi phí parser TB **{1000*statistics.mean(r["parser_wall"] for r in kie["rows"]):.2f} ms/ảnh**; '
+        'chi phí tái dựng tọa độ từ cache được lưu riêng, không trộn vào thời gian OCR. '
+        f'Bật bộ gán mới trên web theo quyết định development: **{kie_lock["deployment_approved_on_development"]}**. '
+        'Nếu không cải thiện trên test thì vẫn công bố và giữ đúng quyết định development. '
+        '[Lock](results/recovery_v4/layout_kie_lock.json), [từng ca](results/recovery_v4/layout_kie.json).','',
         '## Audit, kiểm thử và lịch sử','',
         f'- **{audit["native_rows_rescored"]} native rows chấm lại**, **{audit["selector_decisions_replayed"]} quyết định selector replay**, '
         f'**{audit["public_rows"]} hàng công khai**. Sai khác score/publication/wall/CPU: 0.',
