@@ -29,3 +29,17 @@ unique raster stages. These estimates omit selector evaluation overhead and
 are not online request latency. Report fresh actual online traces separately
 and keep both sets, even if the estimate is inaccurate. Do not claim that all
 views were skipped during the exhaustive candidate-generation experiment.
+
+Pre-test secondary reader ablation: on the same fixed24-case panel, additionally
+run existing VietOCR on original colour predicted-line crops, compare with the
+locked grayscale-crop VietOCR and EasyOCR paths. Use CRAFT predicted boxes and
+0/180 confidence selection, no GT crops or language hints. Report all three
+legacy alternatives, shared detector cost and source hashes. This panel-only
+colour ablation cannot substitute for the full540-case reader comparison.
+
+Also report geometric-truncation diagnostics for the fixed review decisions:
+fraction of retained images containing any annotated field clipped by the
+capture frame, and recall of the review flag for these images. This is a
+geometric capture diagnostic, not a universal legal requirement or a claim of
+human illegibility. A visible-fields-only transcription score must never be
+presented as evidence that the complete identity document was verified.
