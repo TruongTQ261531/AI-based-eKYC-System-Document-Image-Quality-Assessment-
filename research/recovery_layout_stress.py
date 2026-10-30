@@ -85,7 +85,7 @@ def fixed_raw(engine,image,reader):
 
 
 def run():
-    model=json.loads((OUT/'selector_models.json').read_text());lock=json.loads((OUT/'selector_lock.json').read_text())
+    model=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'));lock=json.loads((OUT/'selector_lock.json').read_text(encoding='utf-8'))
     if digest(OUT/'selector_models.json')!=lock['model_sha256']:raise ValueError('Selector model lock changed')
     samples=json.loads((ROOT/'samples.json').read_text(encoding='utf-8'));engine=RecoveryEngine();reader='rapid_latin_v5'
     baseline=copy.deepcopy(model);baseline['selectors'][reader]['primary_method']='forced_completion'

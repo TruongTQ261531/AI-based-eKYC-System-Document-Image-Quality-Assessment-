@@ -35,8 +35,8 @@ def repeat_checks(rows):
 
 def main():
     samples=load_samples();signature,_=prepared(samples)
-    manifest=json.loads((OUT/'manifest.json').read_text());model=json.loads((OUT/'selector_models.json').read_text())
-    lock=json.loads((OUT/'selector_lock.json').read_text())
+    manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'));model=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'))
+    lock=json.loads((OUT/'selector_lock.json').read_text(encoding='utf-8'))
     if signature!=manifest['signature'] or model['signature']!=signature or digest(OUT/'selector_models.json')!=lock['model_sha256']:
         raise ValueError('Immutable signature/model lock mismatch')
     roles=defaultdict(set);image_roles=defaultdict(set)
@@ -83,7 +83,7 @@ def main():
     for path in OUT.glob('*.json'):inspect(json.loads(path.read_text(encoding='utf-8')))
     validation_counts={};supplement_repeats={}
     if (OUT/'online_traces.json').exists():
-        public=json.loads((OUT/'online_traces.json').read_text())['rows']
+        public=json.loads((OUT/'online_traces.json').read_text(encoding='utf-8'))['rows']
         by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
         for repeat in (1,2,3):
             for i,s in enumerate(panel(samples)):
@@ -94,7 +94,7 @@ def main():
                     if {k:v for k,v in r.items() if not k.startswith('_private')}!=published:raise ValueError('Online publication mismatch')
         validation_counts['online_rescored']=len(public)
     if (OUT/'legacy_panel.json').exists():
-        public=json.loads((OUT/'legacy_panel.json').read_text())['rows'];by_key={(r['uid'],r['reader']):r for r in public}
+        public=json.loads((OUT/'legacy_panel.json').read_text(encoding='utf-8'))['rows'];by_key={(r['uid'],r['reader']):r for r in public}
         for i,s in enumerate(panel(samples),1):
             r=json.loads((CACHE/'legacy'/f'{i}.json').read_text(encoding='utf-8'))
             for item in r['rows']:
@@ -103,7 +103,7 @@ def main():
     if (OUT/'up_external.json').exists():
         from pathlib import Path
         external=json.loads(Path('research/data/midv_up/samples.json').read_text(encoding='utf-8'))
-        public=json.loads((OUT/'up_external.json').read_text())['rows'];by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
+        public=json.loads((OUT/'up_external.json').read_text(encoding='utf-8'))['rows'];by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
         for repeat in (1,2):
             for i,s in enumerate(external):
                 for method in ('raw','fixed_completion','primary_cascade'):
@@ -120,7 +120,7 @@ def main():
         from research.recovery_semantic_eval import score_semantics
         stress=json.loads(Path('research/data/layout_stress/samples.json').read_text(encoding='utf-8'))
         lookup={s['uid']:s for s in stress}
-        public=json.loads((OUT/'layout_stress.json').read_text())['rows']
+        public=json.loads((OUT/'layout_stress.json').read_text(encoding='utf-8'))['rows']
         if len(public)!=288:raise ValueError('Incomplete layout stress run')
         for published in public:
             s=lookup[published['uid']]
@@ -134,7 +134,7 @@ def main():
             if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('Stress publication mismatch')
         validation_counts['external_layout_rescored']=len(public)
         supplement_repeats['spatial_layout']=repeat_checks(public)
-    events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text().splitlines()]
+    events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text(encoding='utf-8').splitlines()]
     save(OUT/'independent_audit.json',dict(signature=signature,code_sha256=digest(__file__),
         native_rows_rescored=checked,selector_decisions_replayed=costs,public_rows=public_row_count,
         score_mismatches=0,publication_mismatches=0,wall_sum_mismatches=0,cpu_sum_mismatches=0,

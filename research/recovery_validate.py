@@ -29,8 +29,8 @@ def canonical(predictions):
 
 def online():
     samples=load_samples();signature,_=prepared(samples)
-    models=json.loads((OUT/'selector_models.json').read_text());model_sha=digest(OUT/'selector_models.json')
-    lock=json.loads((OUT/'selector_lock.json').read_text())
+    models=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'));model_sha=digest(OUT/'selector_models.json')
+    lock=json.loads((OUT/'selector_lock.json').read_text(encoding='utf-8'))
     if lock['model_sha256']!=model_sha or models['signature']!=signature:raise ValueError('Model lock changed')
     engine=RecoveryEngine();baseline=copy.deepcopy(models);reader='rapid_latin_v5'
     baseline['selectors'][reader]['primary_method']='forced_completion'
@@ -81,7 +81,7 @@ def online():
 def legacy():
     if not (OUT/'selector_lock.json').exists():raise RuntimeError('Lock selectors before opening panel test annotations')
     folder=Path(os.environ.get('EKYC_MODELS_DIR',str(MODELS)))
-    sources=json.loads(Path('models/identity_model_sources.json').read_text());provenance=[]
+    sources=json.loads(Path('models/identity_model_sources.json').read_text(encoding='utf-8'));provenance=[]
     for name in ('base.yml','vgg-transformer.yml','vgg_transformer.pth'):
         path=folder/'scanocr'/name;expected=next(s for s in sources if s['file']=='scanocr/'+name)
         if digest(path)!=expected['sha256']:raise ValueError('Pinned legacy VietOCR asset mismatch')

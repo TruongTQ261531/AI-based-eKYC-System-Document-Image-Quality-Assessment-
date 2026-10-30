@@ -75,9 +75,9 @@ def engine():return RecoveryEngine()
 def locked_model():
     from research.recovery_assets import sha
     try:
-        lock=json.loads((OUT/'selector_lock.json').read_text());model_path=OUT/'selector_models.json'
+        lock=json.loads((OUT/'selector_lock.json').read_text(encoding='utf-8'));model_path=OUT/'selector_models.json'
         if sha(model_path)!=lock['model_sha256']:raise ValueError('Model lock mismatch')
-        model=json.loads(model_path.read_text());manifest=json.loads((OUT/'manifest.json').read_text())
+        model=json.loads(model_path.read_text(encoding='utf-8'));manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
         if model['signature']!=lock['signature'] or lock['signature']!=manifest['signature']:raise ValueError('Experiment signature mismatch')
         if any(sha(ROOT/name)!=value for name,value in manifest['code_sha256'].items()):raise ValueError('Runtime code differs from frozen study')
         return model
@@ -118,11 +118,11 @@ def health():
 def results():
     if not (OUT/'summary.json').exists() or not (OUT/'independent_audit.json').exists():
         return dict(status='running',rows=[],message='Chờ chấm và audit điểm test sau khi khóa selector.')
-    rows=json.loads((OUT/'summary.json').read_text())
-    models=json.loads((OUT/'selector_models.json').read_text())
+    rows=json.loads((OUT/'summary.json').read_text(encoding='utf-8'))
+    models=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'))
     return dict(status='complete',rows=[r for r in rows if r['role']=='test'],
         primary_methods={key:value['primary_method'] for key,value in models['selectors'].items()},
-        dataset=json.loads((OUT/'dataset_card.json').read_text()),
+        dataset=json.loads((OUT/'dataset_card.json').read_text(encoding='utf-8')),
         latency_note='Selector trong bảng dùng chi phí tái dựng trace; thời gian xử lý camera bên dưới được đo thực tế.')
 
 

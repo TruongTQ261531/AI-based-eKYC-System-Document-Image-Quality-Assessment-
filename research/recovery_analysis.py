@@ -36,7 +36,7 @@ def paired_interval(rows,method,reader,source,metric='exact'):
 def main():
     if not (OUT/'audit.json').exists():raise RuntimeError('Evaluate after locking selectors before analysis')
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:rows=[json.loads(line) for line in stream]
-    summary=json.loads((OUT/'summary.json').read_text());models=json.loads((OUT/'selector_models.json').read_text())
+    summary=json.loads((OUT/'summary.json').read_text(encoding='utf-8'));models=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'))
     samples=load_samples();lookup={s['uid']:s for s in samples}
     from research.e2e_eval import target_fields
     target_coverage=[]

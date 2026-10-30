@@ -27,7 +27,7 @@ def main():
     n=sum(int(s.attrib['tests']) for s in xml.iter('testsuite'))
     failed=sum(int(s.attrib['failures'])+int(s.attrib['errors']) for s in xml.iter('testsuite'))
     if failed:raise ValueError('JUnit reported failures')
-    manifest=json.loads((OUT/'manifest.json').read_text())
+    manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
     from pathlib import Path
     for name,value in manifest['code_sha256'].items():
         if digest(Path('research')/name)!=value:raise ValueError('Frozen inference code changed')

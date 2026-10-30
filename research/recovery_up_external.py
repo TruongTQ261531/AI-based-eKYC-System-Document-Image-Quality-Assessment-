@@ -59,7 +59,7 @@ def entry_bytes(entry,prefix_only=False):
 
 
 def acquisition():
-    index=json.loads((ROOT/'index.json').read_text());entries=index['entries'];by={e['name']:e for e in entries}
+    index=json.loads((ROOT/'index.json').read_text(encoding='utf-8'));entries=index['entries'];by={e['name']:e for e in entries}
     prefix='dataset/dataset/';photo_groups=defaultdict(list)
     for e in entries:
         if '/photo/images/' in e['name'] and e['name'].endswith('.jpg'):
@@ -134,13 +134,13 @@ def acquisition():
 
 
 def run():
-    model=json.loads((OUT/'selector_models.json').read_text());lock=json.loads((OUT/'selector_lock.json').read_text())
+    model=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'));lock=json.loads((OUT/'selector_lock.json').read_text(encoding='utf-8'))
     if digest(OUT/'selector_models.json')!=lock['model_sha256']:raise ValueError('Selector lock mismatch')
     engine=RecoveryEngine();reader='rapid_latin_v5';fixed=copy.deepcopy(model)
     fixed['selectors'][reader]['primary_method']='forced_completion'
     fixed['selectors'][reader]['models']['forced_completion']=dict(regressor=dict(kind='stumps',base=-1.,stumps=[]),expected_fallback_wall={p:0. for p in ('raw','bbox','contour','lcnet')})
     fixed['review_thresholds'][reader]['forced_completion']=model['review_thresholds'][reader]['fixed_completion']
-    samples=json.loads((ROOT/'samples.json').read_text());rows=[]
+    samples=json.loads((ROOT/'samples.json').read_text(encoding='utf-8'));rows=[]
     signature=hash_json(dict(code_sha256=digest(__file__),protocol_sha256=digest('research/RECOVERY_EXTERNAL_UP_PROTOCOL.md'),
         model_sha256=lock['model_sha256'],samples_sha256=digest(ROOT/'samples.json')))
     from research.ocr_diagnostic import normalized
