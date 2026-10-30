@@ -58,3 +58,13 @@ or human legibility labels; fully/partly readable edge glyphs can differ from
 this conservative proxy. Keep the original full-string reference and report
 both metrics. Do not change the locked selector training target or primary OCR
 denominator in response to this diagnostic.
+
+Generator structure audit, still before primary test release: the six layout
+indices are six generation configurations, not six independent spatial
+templates. Configurations0/2 share English/Sans slot positions;1/3 share
+Vietnamese/Sans positions;4/5 change language/font/field order. Thus distinguish
+four language/font/order groups and a held-out configuration shift, not six
+independently designed layouts. Preserve all original540 images and published
+protocol history. Add a separately declared two-column/portrait stress set with
+new document IDs to test genuinely different spatial organization, without
+refitting the primary selector or changing its original test set.
