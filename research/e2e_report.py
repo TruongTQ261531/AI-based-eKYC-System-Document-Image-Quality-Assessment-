@@ -17,6 +17,8 @@ def main():
     full=[r for r in json.loads((ROOT/'summary.json').read_text()) if r['repeat']==1]
     failures=json.loads((ROOT/'failure_breakdown.json').read_text());alphabet=json.loads((ROOT/'alphabet_coverage.json').read_text())
     paired=json.loads((ROOT/'paired_bootstrap.json').read_text())
+    mechanism=json.loads((ROOT/'mechanism_bootstrap.json').read_text())
+    matched=json.loads((ROOT/'matched_repeat_means.json').read_text())
     paragraphs=['# Benchmark OCR đầu cuối: kết quả thực nghiệm 30/10/2026','',
         'Đây là nghiên cứu riêng trên nhánh `research/document-recovery-core-b`. Runtime mentor được giữ nguyên. '
         'Kết quả đo OCR từ pixel ảnh và vùng chữ do model tự phát hiện; không dùng tọa độ GT để cắt chữ đưa vào model. '
@@ -56,6 +58,8 @@ def main():
     paragraphs.extend(['## Chạy lặp và audit','',
         f'- Audit **{audit["image_checkpoints"]} checkpoint**, **{audit["public_rows"]} hàng ảnh-policy-reader**; '
         f'chấm lại từ output private:{audit["score_mismatches"]} sai khác, cộng stage timing:{audit["timing_sum_mismatches"]} sai khác.',
+        f'- Toàn bộ hàng công khai khớp projection checkpoint; tính lại **{audit["summary_rows_recomputed"]}** hàng summary '
+        'và kiểm hash prediction. Audit phát hiện lỗi lưu/xuất/tổng hợp; evaluator vẫn dùng cùng thuật toán chấm.',
         f'- Panel32 so cùng ảnh-policy-reader trong ba lượt: **{repeat["prediction_mismatches"]}** mismatch canonical prediction hash '
         '(text normalize, box làm tròn6 chữ số, không gồm confidence) và '
         f'**{repeat["field_score_mismatches"]}** mismatch score; không dùng cache OCR giữa các lượt.',
@@ -69,6 +73,17 @@ def main():
         f'{init["vietocr_batch_parity"]["max_confidence_difference"]:.3g}. Đây không phải chứng minh parity cho mọi ảnh.',
         '- [Audit checkpoint](results/e2e_ocr_v2/audit.json), [repeat audit](results/e2e_ocr_v2/repeat_audit.json), '
         '[thống kê cùng panel](results/e2e_ocr_v2/matched_repeat_summary.json).','',
+        '### Biến thiên thời gian trên cùng panel','',
+        'Bảng này chỉ dùng28 ảnh chính của panel (24 ba góc +4 control) trong cả ba lượt; '
+        'không lấy SD giữa tập161 và tập32. Mean ± SD là giữa ba trung bình lượt, không phải CI hay SD từng ảnh.','',
+        '| Reader | Policy | Wall trung bình ± SD lượt (s/ảnh) | P95 trung bình ± SD lượt (s) |',
+        '|---|---|---:|---:|'])
+    for r in matched:
+        if r['stratum']!='primary':continue
+        wall=r['mean_wall_seconds'];tail=r['p95_wall_seconds']
+        paragraphs.append(f'| {r["engine"]} | {r["policy"]} | {number(wall["mean"])} ± {number(wall["repeat_sd"])} | '
+                          f'{number(tail["mean"])} ± {number(tail["repeat_sd"])} |')
+    paragraphs.extend(['',
         '## Sai số và giới hạn ngôn ngữ','',
         '| Reader | Policy | Review hình học (ảnh) | Route nhưng không có text (ảnh) | Field không ghép được vùng | Field có vùng nhưng sai |',
         '|---|---|---:|---:|---:|---:|'])
@@ -84,12 +99,28 @@ def main():
         'không thay bảng chính bằng subset dễ hơn. [Alphabet audit](results/e2e_ocr_v2/alphabet_coverage.json).','',
         '## Độ bất định và tỷ lệ xem xét','',
         'Bootstrap2.000 lần theo physical ID trên test seed13, chỉ lượt đầy đủ đầu tiên. '
-        'Năm split ID có chồng lặp và panel lặp không phải thêm mẫu độc lập. Các CI là thăm dò, không chỉnh nhiều phép so sánh.','',
+        'Trung bình field trong ảnh rồi ảnh trong ID; mỗi ID có trọng số bằng nhau. Vì vậy delta này không nhất thiết '
+        'bằng chênh lệch bảng pooled-field phía trên. Năm split ID có chồng lặp và panel lặp không phải thêm mẫu độc lập. '
+        'Các CI là thăm dò, không chỉnh nhiều phép so sánh.','',
         '| Reader | Policy so với raw | Delta exact theo ID (điểm %) | CI95% (điểm %) |',
         '|---|---|---:|---:|'])
     for r in paired:
         if r['metric']!='field_exact':continue
         lo,hi=r['ci95'];paragraphs.append(f'| {r["engine"]} | {r["policy"]} | {100*r["mean_paired_delta"]:.2f} | [{100*lo:.2f}; {100*hi:.2f}] |')
+    paragraphs.extend(['','### Kiểm tra cơ chế riêng trên nhóm ba góc','',
+        'Các đối chiếu bổ sung được ghi trước khi xem accuracy trong [kế hoạch phân tích](E2E_ANALYSIS_PLAN.md). '
+        'Đây là test IDs seed13 có ảnh thuộc nhóm ba góc, không phải toàn bộ91 ảnh. Dấu dương là policy lớn hơn control; '
+        'với thời gian, số âm nghĩa là nhanh hơn. Không có điều chỉnh nhiều phép so sánh.','',
+        '| Reader | Policy − control | Số ID | Delta exact (điểm %) [CI95%] | Delta wall (s) [CI95%] |',
+        '|---|---|---:|---:|---:|'])
+    for r in mechanism:
+        if r['metric']!='field_exact':continue
+        t=next(t for t in mechanism if t['engine']==r['engine'] and t['policy']==r['policy'] and
+               t['reference']==r['reference'] and t['metric']=='total_wall')
+        lo,hi=r['ci95'];tlo,thi=t['ci95']
+        paragraphs.append(f'| {r["engine"]} | {r["policy"]} − {r["reference"]} | {r["physical_ids"]} | '
+            f'{100*r["mean_paired_delta"]:.2f} [{100*lo:.2f}; {100*hi:.2f}] | '
+            f'{t["mean_paired_delta"]:.3f} [{tlo:.3f}; {thi:.3f}] |')
     paragraphs.extend(['','Đã báo đủ đường cong confidence0/.25/.5/.75/.9/.95. '
         'Confidence là tín hiệu của model, không phải nhãn đúng; chưa chọn ngưỡng sản phẩm từ tập test. '
         '“Review proxy” gồm gate hình học/no-text/confidence thấp, không chứng minh khách hàng chắc chắn cần chụp lại. '

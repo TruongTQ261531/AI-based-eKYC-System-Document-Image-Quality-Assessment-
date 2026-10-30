@@ -27,18 +27,21 @@ def scalar(row,metric):
     raise KeyError(metric)
 
 
-def paired_bootstrap(rows,policy,reader,metric,test_ids,rng):
+def paired_bootstrap(rows,policy,reader,metric,test_ids,rng,reference='raw_fullframe',stratum=None):
     grouped=defaultdict(list)
     for row in rows:
         if row['repeat']!=1 or row['source']=='midv2020' or row['physical_id'] not in test_ids or row['engine']!=reader:continue
-        if row['policy'] not in (policy,'raw_fullframe'):continue
+        if stratum is not None and row['selection_stratum']!=stratum:continue
+        if row['policy'] not in (policy,reference):continue
         value=scalar(row,metric)
         if value is not None:grouped[(row['policy'],row['physical_id'])].append(value)
-    ids=[g for g in sorted(test_ids) if (policy,g) in grouped and ('raw_fullframe',g) in grouped]
-    delta=np.array([np.mean(grouped[(policy,g)])-np.mean(grouped[('raw_fullframe',g)]) for g in ids])
+    ids=[g for g in sorted(test_ids) if (policy,g) in grouped and (reference,g) in grouped]
+    if not ids:raise ValueError('No paired physical IDs for bootstrap')
+    delta=np.array([np.mean(grouped[(policy,g)])-np.mean(grouped[(reference,g)]) for g in ids])
     bootstrap=delta[rng.integers(0,len(delta),(2000,len(delta)))].mean(axis=1)
-    return dict(policy=policy,reference='raw_fullframe',engine=reader,metric=metric,physical_ids=len(ids),
+    return dict(policy=policy,reference=reference,engine=reader,metric=metric,physical_ids=len(ids),stratum=stratum,
         mean_paired_delta=float(delta.mean()),ci95=np.quantile(bootstrap,[.025,.975]).tolist(),
+        weighting='Equal physical-ID means of per-image field means; differs from pooled-field tables',
         interpretation='Exploratory paired ID-level interval; no multiplicity correction')
 
 
@@ -86,6 +89,19 @@ def main():
             for metric in ('field_exact','macro_cer','total_wall'):
                 intervals.append(paired_bootstrap(rows,policy,reader,metric,set(splits[0]['test_ids']),rng))
     save(ROOT/'paired_bootstrap.json',intervals)
+    # Mechanism controls: a gain over strict rejection alone cannot identify a
+    # benefit from support masking/cropping. Pre-outcome supplementary plan.
+    rng=np.random.default_rng(20261031);mechanism=[]
+    for reader in ('easyocr_en','vietocr'):
+        for policy,reference in (('three_support','three_fullframe'),
+                                 ('three_support_bbox','three_fullframe'),
+                                 ('three_parallelogram05','three_fullframe'),
+                                 ('three_support','three_support_bbox'),
+                                 ('three_support','three_parallelogram05')):
+            for metric in ('field_exact','macro_cer','total_wall'):
+                mechanism.append(paired_bootstrap(rows,policy,reader,metric,set(splits[0]['test_ids']),rng,
+                                                  reference=reference,stratum='three_corners'))
+    save(ROOT/'mechanism_bootstrap.json',mechanism)
     curves=[]
     for reader in ('easyocr_en','vietocr'):
         for policy in POLICIES:
@@ -138,6 +154,7 @@ def main():
     plt.close(fig)
     save(ROOT/'analysis_provenance.json',dict(code_sha256=digest(__file__),input_rows_sha256=digest(ROOT/'per_image.jsonl.gz'),
          bootstrap_resamples=2000,bootstrap_unit='physical_document',bootstrap_test_seed=13,
+         supplementary_plan_sha256=digest('research/E2E_ANALYSIS_PLAN.md'),
          repeats_are_independent_samples=False,semantic_kie_evaluated=False))
     print('ANALYSIS_COMPLETE',len(rows),'rows')
 
