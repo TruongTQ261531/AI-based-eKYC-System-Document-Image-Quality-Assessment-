@@ -128,6 +128,10 @@ def results():
 
 @app.get('/api/specimen/{kind}')
 def specimen(kind:str):
+    if kind in ('two_column','portrait'):
+        path=ROOT/'data/layout_stress'/f'extra_specimen_{kind}_00_full.png'
+        if not path.exists():raise HTTPException(503,'Chưa tạo ảnh SPECIMEN bổ sung.')
+        return FileResponse(path,media_type='image/png',headers={'X-Specimen-Role':'external_layout'})
     choices={k:('L4','00',k) for k in ('full','corner_clip','field_clip','blur_glare')}
     choices.update(student=('L4','01','full'),licence=('L5','02','full'))
     if kind not in choices:raise HTTPException(404)

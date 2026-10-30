@@ -14,7 +14,7 @@ This is a candidate dataset contribution, not an established world-first claim.
 | Additional author MIDV-2020 photos |60|180|Original, corner clip, field clip|
 | Total |150|540|Two sources, separately reported|
 
-The authored cards cover three mock document families, six layouts and
+The authored cards cover three mock document families, six configuration IDs and
 English/Vietnamese labels.90 mock document identities are not90 human subjects.
 Text values are fictitious; avatars are simple illustrations. No state seals,
 authentic credentials, biometric evaluation or genuine identity approval.
@@ -22,12 +22,22 @@ SPECIMEN and NOT A VALID DOCUMENT are visibly printed on every authored card.
 
 Physical-document roles are40 development,30 calibration,80 test. All captures
 of one ID stay in one role.20 authored development IDs and20 calibration IDs
-use layouts0..3. Test includes20 other IDs from these layouts and30 IDs from
-layouts4..5. The two held-out layouts also use a different font and field order;
-this is a combined domain shift, not isolation of layout alone. There are only
-six authored layouts and two held-out layouts, not hundreds of independent
-document designs. Common label/name vocabularies can overlap roles; image and
+use configurations0..3. Test includes20 other IDs from these configurations and30 IDs from
+configurations4..5. Configurations0/2 share slot geometry and language/font;
+1/3 also share them. Thus there are four language/font/order groups, not six
+independent spatial layouts. The two held-out configurations change font and
+field order; this is a combined shift, not isolation of spatial layout alone.
+The correction is recorded in RECOVERY_EVALUATION_ADDENDUM.md, preserving the
+frozen generator and all540 original images. Common label/name vocabularies can overlap roles; image and
 document-ID separation does not imply every word is unseen.
+
+Two supplements do not change those primary roles or fit any model. The
+layout stress set adds80 authored captures from20 new mock document IDs with
+two genuinely different arrangements: two columns and portrait format. It
+has its own protocol and two fresh8-image panel passes. MIDV-UP adds24 real
+author photographs from four additional template types and two phone strata;
+all24 are evaluated twice. Neither is a new self-collected camera population.
+See RECOVERY_LAYOUT_STRESS_PROTOCOL.md and RECOVERY_EXTERNAL_UP_PROTOCOL.md.
 
 Per MIDV type, inspect only the first12 source-TAR entries, exclude the earlier
 study's two IDs, choose six by the locked hash and assign2/1/3 roles by that

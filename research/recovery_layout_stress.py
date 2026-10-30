@@ -112,8 +112,12 @@ def run():
                     row=dict(signature=signature,uid=sample['uid'],physical_id=sample['physical_id'],layout=sample['layout'],capture=sample['capture'],method=method,repeat=repeat,
                         score=score(sample,answer['predictions'],True),visible_score=score_visible(sample,answer['predictions']),
                         actual_wall=answer['actual_wall_seconds'],actual_cpu=answer['actual_cpu_seconds'],ocr_executions=answer['ocr_executions'],
-                        review_recommended=answer['review_recommended'],prediction_sha256=canonical(answer['predictions']),_private_predictions=answer['predictions'])
-                    if method!='raw':row['semantic_score']=score_semantics(sample,answer['fields'])
+                        review_recommended=answer['review_recommended'],selected_policy=answer['selected_policy'],
+                        geometrically_partial=any(f['geometric_visibility']<.995 for f in sample['fields']),
+                        prediction_sha256=canonical(answer['predictions']),_private_predictions=answer['predictions'])
+                    if method!='raw':
+                        row['semantic_score']=score_semantics(sample,answer['fields'])
+                        row['_private_semantic']=answer['fields']
                     atomic_json(path,row)
                 rows.append({k:v for k,v in row.items() if not k.startswith('_private')});print('LAYOUT_STRESS',len(rows),'/288',flush=True)
     save(OUT/'layout_stress.json',dict(signature=signature,rows=rows,images=80,document_ids=20,panel_images=8,passes=[80,8,8],

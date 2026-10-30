@@ -38,6 +38,16 @@ def main():
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:rows=[json.loads(line) for line in stream]
     summary=json.loads((OUT/'summary.json').read_text());models=json.loads((OUT/'selector_models.json').read_text())
     samples=load_samples();lookup={s['uid']:s for s in samples}
+    from research.e2e_eval import target_fields
+    target_coverage=[]
+    for source in ('authored_specimen','midv2020_derived'):
+        for capture in sorted({s['capture'] for s in samples if s['source']==source}):
+            selected=[s for s in samples if s['role']=='test' and s['source']==source and s['capture']==capture]
+            counts=[len(target_fields(s)[0]) for s in selected]
+            target_coverage.append(dict(source=source,capture=capture,images=len(selected),
+                zero_eligible_target_images=sum(n==0 for n in counts),eligible_fields=sum(counts),
+                images_retained_in_latency_and_review_denominators=True))
+    save(OUT/'target_coverage.json',target_coverage)
     # Alphabet compatibility is a diagnostic only; keep the complete locked
     # target set regardless of unsupported characters.
     from research.recovery_runtime import RecoveryEngine

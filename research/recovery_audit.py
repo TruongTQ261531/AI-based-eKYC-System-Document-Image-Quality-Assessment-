@@ -23,6 +23,16 @@ def inspect(value):
         for x in value:inspect(x)
 
 
+def repeat_checks(rows):
+    groups=defaultdict(list)
+    for row in rows:groups[(row['uid'],row['method'])].append(row)
+    repeated=[items for items in groups.values() if len(items)>1]
+    return dict(repeated_image_method_groups=len(repeated),
+        canonical_prediction_mismatches=sum(len({r['prediction_sha256'] for r in items})>1 for items in repeated),
+        score_mismatches=sum(len({json.dumps(r['score'],sort_keys=True) for r in items})>1 for items in repeated),
+        repeated_images_are_not_additional_independent_documents=True)
+
+
 def main():
     samples=load_samples();signature,_=prepared(samples)
     manifest=json.loads((OUT/'manifest.json').read_text());model=json.loads((OUT/'selector_models.json').read_text())
@@ -36,6 +46,7 @@ def main():
     if any(len(role)>1 for role in image_roles.values()):raise ValueError('Identical image bytes in different roles')
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:published=[json.loads(line) for line in stream]
     actual={(r['repeat'],r['uid'],r['engine'],r['policy']):r for r in published}
+    public_row_count=len(published)
     expected_count=588*len(READERS)*(len(POLICIES)+len(METHODS))
     if len(actual)!=len(published) or len(actual)!=expected_count:raise ValueError('Missing/duplicate published rows')
     checked=0;costs=0;hashes=[];calls=0
@@ -70,7 +81,7 @@ def main():
                     costs+=1
     for row in published:inspect(row)
     for path in OUT.glob('*.json'):inspect(json.loads(path.read_text(encoding='utf-8')))
-    validation_counts={}
+    validation_counts={};supplement_repeats={}
     if (OUT/'online_traces.json').exists():
         public=json.loads((OUT/'online_traces.json').read_text())['rows']
         by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
@@ -101,15 +112,38 @@ def main():
                     if published['score']!=score(s,item['_private_predictions'],True):raise ValueError('UP rescore mismatch')
                     if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('UP publication mismatch')
         validation_counts['external_up_rescored']=len(public)
+        supplement_repeats['midv_up']=repeat_checks(public)
+    if (OUT/'layout_stress.json').exists():
+        from pathlib import Path
+        from research.recovery_data import seed
+        from research.recovery_visible_eval import score_visible
+        from research.recovery_semantic_eval import score_semantics
+        stress=json.loads(Path('research/data/layout_stress/samples.json').read_text(encoding='utf-8'))
+        lookup={s['uid']:s for s in stress}
+        public=json.loads((OUT/'layout_stress.json').read_text())['rows']
+        if len(public)!=288:raise ValueError('Incomplete layout stress run')
+        for published in public:
+            s=lookup[published['uid']]
+            path=CACHE/'layout_stress'/(str(published['repeat'])+'_'+str(seed(s['uid']))+'_'+published['method']+'.json')
+            item=json.loads(path.read_text(encoding='utf-8'))
+            if digest(s['path'])!=s['input_sha256']:raise ValueError('Stress input changed')
+            if published['score']!=score(s,item['_private_predictions'],True):raise ValueError('Stress rescore mismatch')
+            if published['visible_score']!=score_visible(s,item['_private_predictions']):raise ValueError('Stress visible rescore mismatch')
+            if 'semantic_score' in published and published['semantic_score']!=score_semantics(s,item['_private_semantic']):
+                raise ValueError('Stress semantic rescore mismatch')
+            if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('Stress publication mismatch')
+        validation_counts['external_layout_rescored']=len(public)
+        supplement_repeats['spatial_layout']=repeat_checks(public)
     events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text().splitlines()]
     save(OUT/'independent_audit.json',dict(signature=signature,code_sha256=digest(__file__),
-        native_rows_rescored=checked,selector_decisions_replayed=costs,public_rows=len(published),
+        native_rows_rescored=checked,selector_decisions_replayed=costs,public_rows=public_row_count,
         score_mismatches=0,publication_mismatches=0,wall_sum_mismatches=0,cpu_sum_mismatches=0,
         cross_role_identity_overlap=0,cross_role_image_hash_overlap=0,unique_ocr_executions=calls,
         failure_events=[r for r in events if r['event']=='failure'],checkpoint_hashes=hashes,
         model_sha256=lock['model_sha256'],raw_text_in_public_json=False,additional_validation=validation_counts,
+        supplement_repeats=supplement_repeats,
         limitations='Shares the frozen spatial evaluator; not independent human ground-truth verification'))
-    print('RECOVERY_INDEPENDENT_AUDIT_PASS',checked,costs,len(published),flush=True)
+    print('RECOVERY_INDEPENDENT_AUDIT_PASS',checked,costs,public_row_count,flush=True)
 
 
 if __name__=='__main__':main()

@@ -13,12 +13,20 @@ def pct(x):return '—' if x is None else f'{100*x:.2f}'
 def num(x):return '—' if x is None else f'{x:.3f}'
 
 
+def field_summary(rows):
+    fields=[f for r in rows for f in r['score']['fields']]
+    n=len(fields);chars=sum(f['truth_length'] for f in fields)
+    return n,sum(f['exact'] for f in fields)/max(n,1),sum(f['edit_distance'] for f in fields)/max(chars,1)
+
+
 def main():
     audit=read('independent_audit.json');summary=read('summary.json');models=read('selector_models.json')
     repeat=read('repeat_audit.json');data=read('dataset_card.json');online=read('online_traces.json')
     legacy=read('legacy_panel.json');paired=read('paired_bootstrap.json');schema=read('canonical_semantic_summary.json')
     visible=read('visible_transcription_summary.json');truncation=read('truncation_diagnostics.json')
     execution=read('execution.json');validation=read('validation.json')
+    external=read('up_external.json');stress=read('layout_stress.json');alphabet=read('alphabet_coverage.json')
+    target_coverage=read('target_coverage.json')
     panel_ids=set(read('manifest.json')['panel_uids'])
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:
         native_panel=[r for r in map(json.loads,stream) if r['repeat']==1 and r['uid'] in panel_ids and r['policy']=='completion']
@@ -31,7 +39,9 @@ def main():
         f'- **{data["images"]} ảnh / {data["identities"]} document ID**, gồm 360 ảnh SPECIMEN mới từ 90 ID '
         'và 180 biến thể của 60 ID MIDV chọn thêm. SPECIMEN không phải CCCD thật hoặc 90 người thật.',
         '- Tách **40 ID development, 30 calibration, 80 test**. Không có ID hoặc ảnh byte-identical đi qua nhiều role. '
-        '30 ID SPECIMEN test thuộc hai layout/font chưa dùng ở development; đây là thay đổi kết hợp, không tách riêng tác động layout.',
+        '30 ID SPECIMEN test thuộc hai cấu hình font/thứ tự trường chưa dùng ở development. '
+        'Sáu mã cấu hình gốc chỉ tạo bốn nhóm ngôn ngữ/font/thứ tự; 0/2 và 1/3 dùng chung vị trí. '
+        'Không diễn giải chúng thành sáu layout không gian độc lập.',
         '- Một lượt đủ 540 ca và hai lượt mới trên cùng 24 ca khác ID: **588 lượt inference**, không phải ba lượt đủ 540 ảnh. '
         'Các lần lặp không tạo thêm ID độc lập.',
         f'- Thời gian toàn đợt inference: **{execution["elapsed_seconds"]/60:.2f} phút**. '
@@ -120,7 +130,14 @@ def main():
     for r in visible:
         if r['reader']==latin and r['scope']=='partially_captured_fields' and r['method'] in ('raw','completion','bbox',primary):
             lines.append(f'| {r["method"]} | {r["fields"]} | {pct(r["exact"])} | {num(r["micro_cer"])} |')
-    lines.extend(['','### Review đối với ảnh bị cắt trường','',
+    lines.extend(['','### Mẫu không có target nguyên vẹn','',
+        '| Nguồn / capture, chỉ test | Ảnh | Ảnh không có trường đủ điều kiện | Trường đủ điều kiện |',
+        '|---|---:|---:|---:|'])
+    for r in target_coverage:
+        lines.append(f'| {r["source"]} / {r["capture"]} | {r["images"]} | {r["zero_eligible_target_images"]} | {r["eligible_fields"]} |')
+    lines.extend(['','Các ảnh không có target không đóng góp mẫu số primary OCR; vẫn nằm trong mẫu số latency/review. '
+        'Đây là giới hạn cần đọc cùng secondary visible metric, không phải ảnh được OCR chính xác 100%.','',
+        '### Review đối với ảnh bị cắt trường','',
         '| Nguồn / Latin | Phương án | Ảnh giữ lại có field bị cắt (%) | Recall cờ review cho ảnh bị cắt (%) |',
         '|---|---|---:|---:|'])
     for r in truncation:
@@ -128,9 +145,54 @@ def main():
             lines.append(f'| {r["source"]} | {r["method"]} | {pct(r["retained_partial_fraction"])} | {pct(r["truncation_review_recall"])} |')
     lines.extend(['','Không diễn giải visible-field exact cao hoặc confidence cao là giấy tờ đầy đủ/hợp lệ. '
         'Ảnh/text còn có thể sai hoặc bị thiếu; người dùng phải kiểm tra. Web không duyệt eKYC hoặc xác thực chân dung.','',
+        '## Kiểm chứng chuyển miền, không fit lại','',
+        '**MIDV-UP:** 24 ảnh tác giả chụp thực, 24 ID, bốn loại giấy tờ bổ sung và hai nhóm điện thoại; '
+        'hai lượt fresh, ba phương án = 144 yêu cầu. Mẫu nhỏ chọn hash cố định và không chứng minh unseen-pretraining. '
+        'Latin reader chưa hỗ trợ toàn bộ tiếng Urdu/Persian. Bảng tính lượt 1, lượt 2 chỉ kiểm độ lặp lại.','',
+        '| Tập / phương án | Số trường đủ điều kiện | Field exact (%) | CER micro | Wall thật TB (s) | Giữ lại (%) |',
+        '|---|---:|---:|---:|---:|---:|'])
+    for dataset,label in ((external,'MIDV-UP'),(stress,'Spatial stress')):
+        for method in ('raw','fixed_completion','primary_cascade'):
+            selected=[r for r in dataset['rows'] if r['repeat']==1 and r['method']==method]
+            n,exact,cer=field_summary(selected)
+            lines.append(f'| {label} / {method} | {n} | {pct(exact)} | {num(cer)} | '
+                f'{statistics.mean(r["actual_wall"] for r in selected):.3f} | '
+                f'{pct(statistics.mean(not r["review_recommended"] for r in selected))} |')
+    lines.extend(['',
+        '**Spatial stress:** 80 ảnh SPECIMEN từ 20 ID mới với hai cấu trúc hai cột/thẻ dọc. '
+        'Một lượt đủ 80 ảnh và hai lượt mới trên cùng 8 ảnh panel: 288 yêu cầu cho ba phương án. '
+        'Chỉ stress test mô hình đã khóa; không dùng để thay thế tập test gốc hoặc chọn lại threshold. '
+        'Không phải 80 ảnh chụp camera thực. KIE của raw không chấm trong supplement này.','',
+        '| Spatial layout | Phương án | Trường | Field exact (%) | CER |',
+        '|---|---|---:|---:|---:|'])
+    for layout in ('two_column','portrait'):
+        for method in ('raw','fixed_completion','primary_cascade'):
+            selected=[r for r in stress['rows'] if r['repeat']==1 and r['layout']==layout and r['method']==method]
+            n,exact,cer=field_summary(selected)
+            lines.append(f'| {layout} | {method} | {n} | {pct(exact)} | {num(cer)} |')
+    lines.extend(['','| Spatial stress | Canonical KIE (%) | Ảnh giữ lại có field bị cắt (%) |',
+        '|---|---:|---:|'])
+    for method in ('fixed_completion','primary_cascade'):
+        selected=[r for r in stress['rows'] if r['repeat']==1 and r['method']==method]
+        n=sum(r['semantic_score']['eligible_fields'] for r in selected)
+        exact=sum(r['semantic_score']['canonical_exact'] for r in selected)/max(n,1)
+        kept=[r for r in selected if not r['review_recommended']]
+        fraction=sum(r['geometrically_partial'] for r in kept)/max(len(kept),1)
+        lines.append(f'| {method} | {pct(exact)} | {pct(fraction)} |')
+    coverage=external['coverage']
+    lines.extend(['',f'MIDV-UP có **{sum(r["unsupported_alphabet_fields"] for r in coverage)} / '
+        f'{sum(r["eligible_fields"] for r in coverage)}** trường đủ predicate gốc nhưng chứa ký tự ngoài alphabet reader. '
+        'Không âm thầm loại các trường khó sau khi xem kết quả. Số tương ứng theo nguồn/reader chính:','',
+        '| Reader / nguồn test | Trường hỗ trợ toàn bộ alphabet / tổng |','|---|---:|'])
+    for r in alphabet:lines.append(f'| {r["reader"]} / {r["source"]} | {r["fully_supported_fields"]} / {r["fields"]} |')
+    lines.extend(['','[MIDV-UP traces](results/recovery_v4/up_external.json), '
+        '[spatial stress traces](results/recovery_v4/layout_stress.json). Tỷ lệ giữ của raw chỉ loại trường hợp không có chữ, '
+        'không được xem là cùng gate calibration với cascade/completion.','',
         '## Audit, kiểm thử và lịch sử','',
         f'- **{audit["native_rows_rescored"]} native rows chấm lại**, **{audit["selector_decisions_replayed"]} quyết định selector replay**, '
         f'**{audit["public_rows"]} hàng công khai**. Sai khác score/publication/wall/CPU: 0.',
+        f'- Các kiểm chứng online/legacy/ngoài miền được chấm lại: {audit["additional_validation"]}.',
+        f'- Audit lặp supplement: `{audit["supplement_repeats"]}`. Không đếm ảnh lặp thành ID mới.',
         f'- Panel inference 24 ảnh: {repeat["prediction_mismatches"]} canonical prediction mismatch, '
         f'{repeat["score_mismatches"]} field-score mismatch qua 3 lượt. Không gọi số hàng là số inference độc lập.',
         f'- Test cuối: **{validation["python_tests"]} Python**, **{validation["frontend_tests"]} frontend** đạt. '
@@ -164,7 +226,8 @@ def main():
         'Mobile document systems can lose text when four-corner localization fails, yet forwarding or completing the card '
         'can be stronger than complex recovery. We investigate visibility-aware evaluation and bounded OCR view selection '
         'on540 captures from150 document IDs:90 newly authored bilingual specimen identities and60 additional MIDV identities. '
-        'Development, calibration and test IDs are disjoint, with an additional layout/font shift. We compare seven geometric '
+        'Development, calibration and test IDs are disjoint, with an additional font/field-order shift. Six original '
+        'configuration IDs represent four style groups, not six independent spatial designs. We compare seven geometric '
         'views, two CPU OCR alternatives, naive confidence selection, linear/stump predictors and bounded cascades. '
         'We distinguish fully visible-field transcription, conservative visible-substring transcription, semantic schema '
         'extraction and review behaviour, and verify deployment using fresh online traces. All outcomes, code/model/input '
@@ -182,6 +245,9 @@ def main():
         'See DATASET_CARD_V4.md and RESEARCH_V4_PROTOCOL.md.540 cases;40/30/80 document IDs by role; '
         'two additional fresh24-case passes. Character support is a typography-derived geometric proxy, not human legibility. '
         'Synthetic examples and new-to-study MIDV images must remain separately labelled. Source training overlap is disclosed.','',
+        'Separate frozen-model supplements comprise24 MIDV-UP physical photographs from four templates/two phones '
+        'and80 authored captures from20 additional IDs with two-column/portrait layouts. They do not alter the primary '
+        'fit, calibration or test results. Their sample size and language limitations are reported explicitly.','',
         '## 4. Methods','',
         'Pin two corner-localizer backbones and official CPU OCR code/weights. Generate seven prediction-only views. '
         'Fit competing view-quality and fallback-gain models with grouped development folds. Calibration selects confidence '
