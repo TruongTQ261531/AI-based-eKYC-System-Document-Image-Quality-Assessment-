@@ -20,7 +20,8 @@ from research.recovery_validate import canonical
 def signature():
     return hash_json(dict(parser=digest('research/layout_kie.py'),runner=digest(__file__),
         protocol=digest('research/LAYOUT_KIE_PROTOCOL.md'),mentor_parser=digest('ekyc/document_fields.py'),
-        model=digest(OUT/'selector_models.json'),primary_manifest=digest(OUT/'manifest.json')))
+        model=digest(OUT/'selector_models.json'),primary_manifest=digest(OUT/'manifest.json'),
+        stress_annotations=digest('research/data/layout_stress/samples.json')))
 
 
 def run(development_only):
