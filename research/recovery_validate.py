@@ -2,7 +2,10 @@
 import argparse
 import copy
 import json
+import hashlib
+import os
 import time
+from pathlib import Path
 
 import cv2
 import numpy as np
@@ -73,7 +76,20 @@ def online():
 
 def legacy():
     if not (OUT/'selector_lock.json').exists():raise RuntimeError('Lock selectors before opening panel test annotations')
-    samples=load_samples();signature,_=prepared(samples);engine=RecoveryEngine();legacy=LegacyEngine(MODELS);rows=[]
+    folder=Path(os.environ.get('EKYC_MODELS_DIR',str(MODELS)))
+    sources=json.loads(Path('models/identity_model_sources.json').read_text());provenance=[]
+    for name in ('base.yml','vgg-transformer.yml','vgg_transformer.pth'):
+        path=folder/'scanocr'/name;expected=next(s for s in sources if s['file']=='scanocr/'+name)
+        if digest(path)!=expected['sha256']:raise ValueError('Pinned legacy VietOCR asset mismatch')
+        provenance.append(dict(file='scanocr/'+name,sha256=digest(path),source=expected['url']))
+    import easyocr.config
+    for name in ('craft','english_g2'):
+        cfg=easyocr.config.detection_models[name] if name=='craft' else easyocr.config.recognition_models['gen2'][name]
+        path=folder/'easyocr'/cfg['filename']
+        with path.open('rb') as stream:md5=hashlib.file_digest(stream,'md5').hexdigest()
+        if md5!=cfg['md5sum']:raise ValueError('Official legacy EasyOCR MD5 mismatch')
+        provenance.append(dict(file='easyocr/'+path.name,sha256=digest(path),official_md5=md5,source=cfg['url']))
+    samples=load_samples();signature,_=prepared(samples);engine=RecoveryEngine();legacy=LegacyEngine(folder);rows=[]
     for index,sample in enumerate(panel(samples),1):
         path=CACHE/'legacy'/(str(index)+'.json')
         if path.exists():
@@ -108,7 +124,7 @@ def legacy():
             rows.append({**{k:v for k,v in row.items() if not k.startswith('_private')},
                 **{k:sample[k] for k in ('uid','physical_id','source','role')}})
         print('LEGACY',index,'/24',flush=True)
-    save(OUT/'legacy_panel.json',dict(rows=rows,images=24,reader_variants=3,
+    save(OUT/'legacy_panel.json',dict(rows=rows,images=24,reader_variants=3,models=provenance,
         full_540_case_run=False,shared_detector='CRAFT',views='Same native-decoder padded-completion pixels',
         white_vs_colour_crops='Grayscale normalization retained in original path; colour alternative additionally reported',
         code_sha256=digest(__file__)))

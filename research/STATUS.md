@@ -18,6 +18,11 @@ run is active: code/input/model hashes invalidate cache on changes.
 The process lock prevents simultaneous invocations. Inspect current OS process
 and checkpoint count before attempting resume after usage interruption.
 
+After infer exits0, run fit twice BEFORE opening test scores and verify the
+model/threshold JSON bytes match. Save fit_repeat.json; deterministic refitting
+does not add independent data. Commit/push selector_models.json and selector_lock
+before evaluate. Frozen inference has no test scores; keep that guarantee.
+
 Remaining commands from this worktree, using the original environment:
 
 ```powershell
@@ -25,6 +30,12 @@ D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study infer
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study fit
 # Commit the numeric selector lock before viewing test scores.
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study evaluate
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_analysis
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_validate online
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_validate legacy
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_audit
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_release
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_report
 ```
 
 Do not re-launch infer while its original process is still running. Planned
@@ -34,6 +45,14 @@ web validation, regression tests and a transparent updated paper decision.
 Local web implemented separately in research/recovery_web.py and research/web;
 launcher research/start-research.ps1 uses port8001, mentor8000 stays untouched.
 Web must not emit invented fields/results while selector lock is unavailable.
+Current research web source was updated after its initial server startup;
+restart only the owned research server8001 after models/audit are ready, then
+verify held-out full/student/licence demos through the browser. No physical
+camera-motion test has been performed. Save and embed an actual UI screenshot.
+The pre-test RECOVERY_EVALUATION_ADDENDUM.md preserves literal OCR metrics,
+adds canonical date/gender KIE and conservative visible-substring metrics,
+and discloses trace-estimated selector cost versus actual online timings.
+Do not modify the locked predictor to implement these analysis-only additions.
 Camera inputs remain memory-only. User explicitly chose localhost, not public
 deployment. No venv/site-packages changes; optional official code/models live
 in Git-ignored cache. Eight source-level adapter/native OCR parity checks pass;
