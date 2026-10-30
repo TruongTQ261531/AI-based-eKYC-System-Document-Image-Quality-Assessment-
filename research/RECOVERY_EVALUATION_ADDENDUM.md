@@ -43,3 +43,18 @@ capture frame, and recall of the review flag for these images. This is a
 geometric capture diagnostic, not a universal legal requirement or a claim of
 human illegibility. A visible-fields-only transcription score must never be
 presented as evidence that the complete identity document was verified.
+
+Source-geometry review, before test release, also shows that a vertical field
+clip can truncate every left-aligned value on an authored card. Such images
+remain in latency/routing but can have zero fully-visible whole-field targets.
+Therefore report a secondary **visible-reference transcription** metric on
+authored cards, using their already-generated character support rectangles:
+retain characters with at least.995 geometric visibility, then compare OCR
+against that visible substring. Associate predictions using the visible
+intersection of the field polygon; use the original field transform for line
+order. Explicitly report partial-field count and number with no visible target.
+Character rectangles derive from font advances/bounding boxes, not pixel masks
+or human legibility labels; fully/partly readable edge glyphs can differ from
+this conservative proxy. Keep the original full-string reference and report
+both metrics. Do not change the locked selector training target or primary OCR
+denominator in response to this diagnostic.
