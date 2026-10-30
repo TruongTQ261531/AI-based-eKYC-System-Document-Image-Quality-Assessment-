@@ -27,6 +27,7 @@ def main():
     execution=read('execution.json');validation=read('validation.json')
     external=read('up_external.json');stress=read('layout_stress.json');alphabet=read('alphabet_coverage.json')
     target_coverage=read('target_coverage.json')
+    environment=read('environment.json')
     panel_ids=set(read('manifest.json')['panel_uids'])
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:
         native_panel=[r for r in map(json.loads,stream) if r['repeat']==1 and r['uid'] in panel_ids and r['policy']=='completion']
@@ -55,6 +56,10 @@ def main():
         'Nguồn SPECIMEN được tạo mới, nhưng chưa có bộ camera thực mới độc lập.',
         '- [Dataset card](DATASET_CARD_V4.md), [giao thức](RESEARCH_V4_PROTOCOL.md), '
         '[bổ sung chấm trước test](RECOVERY_EVALUATION_ADDENDUM.md), [prior art/baseline](RESEARCH_V4_RELATED_WORK.md).','',
+        f'Máy đo: **{environment["cpu"]}**, {environment["logical_processors"]} logical processors, '
+        f'{environment["ram_bytes"]/1024**3:.2f} GiB RAM, Windows / Python {environment["python"]}. '
+        'ONNX CPU, 2 thread/session; máy desktop không dành riêng CPU. '
+        '[Phiên bản thư viện và máy](results/recovery_v4/environment.json).','',
         '## Kết quả chính trên ID test','',
         f'Cascade chính cho Latin là **{primary}**, chọn từ development trước khi chấm test. '
         'Field exact dưới đây yêu cầu đúng toàn bộ trường còn nhìn thấy đầy đủ; trường bị bỏ sót/ảnh bị từ chối tính sai. '
@@ -238,9 +243,19 @@ def main():
         'Half-plane geometry, ridge regression, boosted stumps and cascades are established techniques. '
         'Algorithmic superiority must be supported by the held-out comparisons below, not presumed from a method name.','',
         '## 2. Related work','',
-        'Discuss DocAttentionRect, ArbDR, DocRes, DocAligner, RapidOCR, MIDV-2020, SIDTD and OCR-selection methods. '
-        'Explicitly distinguish the partial-boundary problem from the proposed visibility/field/review evaluation. '
-        'Primary links and actual baseline availability are in RESEARCH_V4_RELATED_WORK.md.','',
+        '[DocAttentionRect](https://bmvc2025.bmva.org/proceedings/39/) and '
+        '[ArbDR](https://github.com/chaoyunwang/ArbDR) already consider difficult document geometry; '
+        '[DocRes](https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_DocRes_A_Generalist_Model_Toward_Unifying_Document_Image_Restoration_Tasks_CVPR_2024_paper.html) '
+        'studies general restoration. Missing boundaries alone are therefore not a new task. '
+        '[MIDV-2020](https://arxiv.org/abs/2107.00396), '
+        '[SIDTD](https://www.nature.com/articles/s41597-024-04160-9) and '
+        '[DocXPand](https://github.com/quicksign/docxpand) also precede our generated specimen artifact.','',
+        '[Kim, Han and Yang (IJDAR2026)](https://link.springer.com/article/10.1007/s10032-026-00620-7) '
+        'separate visible/intended transcripts and study confidence-based OCR/VLM routing. We do not claim either '
+        'idea as new. Our narrower setting concerns partial ID capture, spatially matched field transcription, '
+        'semantic extraction, non-generative geometric rereading and measured CPU/review behaviour. Geometric '
+        'character support differs materially from their human-legibility reference; neither label should be substituted '
+        'for the other. The companion prior-work table distinguishes measured baselines from papers cited only as context.','',
         '## 3. Dataset and protocol','',
         'See DATASET_CARD_V4.md and RESEARCH_V4_PROTOCOL.md.540 cases;40/30/80 document IDs by role; '
         'two additional fresh24-case passes. Character support is a typography-derived geometric proxy, not human legibility. '
@@ -253,6 +268,30 @@ def main():
         'Fit competing view-quality and fallback-gain models with grouped development folds. Calibration selects confidence '
         'thresholds for80% target retention without a distribution-free safety claim. The primary cascade starts with '
         'padded completion and executes at most one alternative OCR view. No GT/template value lookup enters prediction.','',
+        '### 4.1 Prediction and budget','',
+        'Let x be the captured raster, v0 the completion view and Yv the OCR predictions for a candidate view. '
+        'A regressor predicts the field-exact gain of a fallback v from features of Yv0 plus a one-hot view code. '
+        'At inference it has no ground-truth transcript, document-type ID or annotated field locations. '
+        'Features comprise raster size/aspect, observed corner count, text/confidence/edge statistics and view indicators.','',
+        '`v* = argmax_v [ predicted_gain(features(Yv0), v) - 0.002 * development_mean_cost(v) ]`','',
+        'Only if this quantity exceeds0.02 is v* executed; otherwise the completion output is returned. '
+        'An identical raster also skips the fallback. The selected fallback is returned directly, without a third '
+        'OCR pass or GT-based reranking. Ridge strengths0.1/1/10 and8/24 boosted-stump rounds are compared '
+        'in four physical-ID-grouped development folds. The primary is the better development-CV cascade family. '
+        'All-view ridge/stump and maximum-confidence alternatives are separate, costlier comparators.','',
+        '### 4.2 Metrics and inference boundary','',
+        'Primary field targets have valid Latin/alphanumeric text and at least99.5% geometric visibility. '
+        'OCR always receives prediction-derived images, never reference field crops. Only the evaluator maps '
+        'predicted boxes into source coordinates and assigns them to a reference field when prediction coverage '
+        'is at least0.5 and IoU at least0.01. Reading order is evaluated in the reference field coordinate frame. '
+        'Strings use NFC, uppercase and collapsed whitespace. CER micro is summed Levenshtein distance divided '
+        'by summed reference length; it is not clipped or a per-image macro mean. Missing output counts as errors.','',
+        'Semantic KIE instead compares predicted field keys and values without oracle box-to-key assignment. '
+        'Dates/gender receive the documented canonical schema; raw literal results are retained. A secondary '
+        'authored-data score evaluates surviving character-reference substrings. No-target images remain in '
+        'the latency/review denominator. Confidence review is distinct from OCR output availability and from '
+        'geometric truncation; it does not certify document completeness. Exploratory intervals use2000 '
+        'physical-ID bootstrap resamples without multiplicity correction.','',
         '## 5. Results','',
         'The following primary choices were locked on development before test scoring. Values are pooled test-field exact; '
         'trace costs and actual online timings are distinct.','',
