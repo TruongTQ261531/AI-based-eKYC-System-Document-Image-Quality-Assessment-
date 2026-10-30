@@ -92,15 +92,18 @@ def main():
         'Cùng 24 ảnh panel, 3 lượt fresh, so cascade Latin với completion; thứ tự hai phương án được đối trọng. '
         '144 yêu cầu pipeline, không dùng lại OCR giữa yêu cầu. Các role trong panel gồm development/calibration/test; '
         'đây là kiểm chứng triển khai/timing, không phải thêm 24 test ID mới. Model cùng resident, desktop CPU không độc quyền.','',
-        '| Nguồn | Phương án | Mean ± SD giữa 3 lượt (s/ảnh) | OCR TB / yêu cầu |',
-        '|---|---|---:|---:|'])
+        '| Nguồn | Phương án | Mean ± SD giữa 3 lượt (s/ảnh) | OCR TB / yêu cầu | Giữ lại thực tế (%) |',
+        '|---|---|---:|---:|---:|'])
     for source in ('authored_specimen','midv2020_derived'):
         for method in ('fixed_completion','primary_cascade'):
             chosen=[r for r in online['rows'] if r['source']==source and r['method']==method]
             means=[statistics.mean(r['actual_wall'] for r in chosen if r['repeat']==i) for i in (1,2,3)]
-            lines.append(f'| {source} | {method} | {statistics.mean(means):.3f} ± {statistics.stdev(means):.3f} | {statistics.mean(r["ocr_executions"] for r in chosen):.2f} |')
+            lines.append(f'| {source} | {method} | {statistics.mean(means):.3f} ± {statistics.stdev(means):.3f} | '
+                f'{statistics.mean(r["ocr_executions"] for r in chosen):.2f} | {pct(statistics.mean(not r["review_recommended"] for r in chosen))} |')
     lines.extend(['',f'Output online so với lựa chọn từ exhaustive candidates: **{online["output_mismatches"]} mismatch**; '
         f'tối đa **{online["maximum_ocr_executions"]} OCR execution/yêu cầu**. '
+        f'Gate review online khác gate exhaustive ở **{online["review_gate_differences"]}** yêu cầu: '
+        'online bổ sung cờ review khi output rỗng, kể cả khi threshold bằng0. '
         'Wall này đo phần dự đoán, chưa gồm HTTP transfer/decode. Web còn báo thời gian xử lý request có decode/encode/cold load. '
         '[Actual traces](results/recovery_v4/online_traces.json).','',
         '## OCR reader đối chứng trên cùng panel','',
@@ -275,7 +278,7 @@ def main():
         'Features comprise raster size/aspect, observed corner count, text/confidence/edge statistics and view indicators.','',
         '`v* = argmax_v [ predicted_gain(features(Yv0), v) - 0.002 * development_mean_cost(v) ]`','',
         'Only if this quantity exceeds0.02 is v* executed; otherwise the completion output is returned. '
-        'An identical raster also skips the fallback. The selected fallback is returned directly, without a third '
+        'An identical raster skips duplicate OCR, while view construction can still incur overhead. The selected fallback is returned directly, without a third '
         'OCR pass or GT-based reranking. Ridge strengths0.1/1/10 and8/24 boosted-stump rounds are compared '
         'in four physical-ID-grouped development folds. The primary is the better development-CV cascade family. '
         'All-view ridge/stump and maximum-confidence alternatives are separate, costlier comparators.','',

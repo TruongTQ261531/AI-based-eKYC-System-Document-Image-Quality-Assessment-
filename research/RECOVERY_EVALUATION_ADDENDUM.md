@@ -68,3 +68,13 @@ independently designed layouts. Preserve all original540 images and published
 protocol history. Add a separately declared two-column/portrait stress set with
 new document IDs to test genuinely different spatial organization, without
 refitting the primary selector or changing its original test set.
+
+Deployment review audit, before test release: the frozen online implementation
+always flags empty OCR output for review. The exhaustive selector table uses
+its original routed/confidence gate, which can retain empty output when its
+calibrated threshold is zero. Keep both behaviours unchanged, measure their
+differences on fresh online traces and report actual retention separately.
+For identical fallback rasters online skips duplicate OCR through memoization;
+it can still construct/report the requested view, so reconstructed trace costs
+exclude some deployment overhead. Canonical output equality does not imply
+identical policy labels, review behaviour or measured request latency.

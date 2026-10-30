@@ -60,6 +60,8 @@ def online():
                         actual_wall=answer['actual_wall_seconds'],actual_cpu=answer['actual_cpu_seconds'],
                         ocr_executions=answer['ocr_executions'],selected_policy=answer['selected_policy'],
                         canonical_output_matches_exhaustive=canonical(answer['predictions'])==expected['prediction_sha256'],
+                        exhaustive_review_recommended=not (expected['routed'] and expected['features'][6]>=models['review_thresholds'][reader][
+                            models['selectors'][reader]['primary_method'] if method=='primary_cascade' else 'fixed_completion']),
                         score=score(sample,answer['predictions'],True),review_recommended=answer['review_recommended'],
                         _private_predictions=answer['predictions'],_private_semantic=answer['fields'])
                     if sample['source']=='authored_specimen':saved['semantic_canonical']=score_semantics(sample,answer['fields'])
@@ -69,6 +71,8 @@ def online():
     save(OUT/'online_traces.json',dict(rows=result,reader=reader,fresh_request_units=144,
         output_mismatches=sum(not r['canonical_output_matches_exhaustive'] for r in result),
         maximum_ocr_executions=max(r['ocr_executions'] for r in result),
+        review_gate_differences=sum(r['review_recommended']!=r['exhaustive_review_recommended'] for r in result),
+        review_difference_scope='Online adds empty-output guard; exhaustive calibration gate is retained unchanged',
         cross_request_prediction_cache=False,models_resident=True,policy_order_counterbalanced=True,
         scope='Actual prediction pipeline wall time, not HTTP transfer/decode latency',
         code_sha256=digest(__file__),addendum_sha256=digest('research/RECOVERY_EVALUATION_ADDENDUM.md')))
