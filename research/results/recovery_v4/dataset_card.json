@@ -1,0 +1,21 @@
+{
+  "images": 540,
+  "identities": 150,
+  "authored_specimens": 360,
+  "derived_midv": 180,
+  "physical_ids_by_role": {
+    "development": 40,
+    "calibration": 30,
+    "test": 80
+  },
+  "generator_sha256": "2036253ea24ea1d194f8b7052c2d2a92ccee7ade3be69e6c776f1331f941aca5",
+  "font_sha256": {
+    "NotoSans-Regular.ttf": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+    "NotoSerif-Regular.ttf": "c8f669ceb2c9c60ccf55198b305e08a997ffca79a38cc7eeb551e643cbe66505"
+  },
+  "geometric_visibility_is_human_legibility": false,
+  "midv_pretraining_unseen": false,
+  "new_real_world_camera_collection": false,
+  "authored_text_is_synthetic": true,
+  "license": "Authored code MIT under repository licence; authored specimen images CC BY4.0; MIDV derivatives CC BY-SA2.5; fonts OFL1.1, not redistributed"
+}

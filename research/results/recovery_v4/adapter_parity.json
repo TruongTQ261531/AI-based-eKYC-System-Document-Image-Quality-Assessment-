@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "uid": "specimen/L0/00/full",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/00/corner_clip",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/00/field_clip",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/00/blur_glare",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/01/full",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/01/corner_clip",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/01/field_clip",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    },
+    {
+      "uid": "specimen/L0/01/blur_glare",
+      "preprocess_identical": true,
+      "postprocess_max_difference": 0.0,
+      "rapid_native_wrapper_identical": true
+    }
+  ],
+  "full_package_installation_tested": false,
+  "source_level_default_path_verified": true,
+  "centre_crop_tested": false,
+  "equal_peak_ambiguity_tested": true,
+  "source_commit": "3275b0f07f8e99d8c01cb0774dea2549be1416b6",
+  "capybara_wheel_sha256": "0872a0c21c128e66f4efc595d36bafca6b22a01c462c5329ce59d387c961ad06"
+}

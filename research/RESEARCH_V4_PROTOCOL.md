@@ -30,7 +30,10 @@ Thus20 development,20 calibration,50 test identities. Text/geometry/rendering
 are seeded and versioned; no real identity documents or portrait photos.
 
 Acquire60 previously unused MIDV-2020 photo identities, six per template type,
-excluding the20 used earlier. Select filenames by SHA256 before OCR. Per type:
+excluding the20 used earlier. Bounded acquisition amendment before any new OCR:
+inspect the first12 author-TAR entries per type, exclude old identities, then
+select six filenames by SHA256 before OCR (not a random sample of all1000).
+Per type:
 two development,one calibration,three test. Derive original plus two fixed
 frame-clipping views; total180 images,20/10/30 identities by role. Upstream
 DocAligner may already have seen MIDV; call these newly selected study IDs,
@@ -55,8 +58,10 @@ with source/model hashes and alphabet coverage recorded before test scoring.
 If a baseline is unavailable, record the actual failure rather than inventing
 results. Commercial API systems without credentials are not claimed tested.
 
+Before new test inference, add the author-published LCNet100 DocAligner model
+as a second lightweight geometry architecture (hash pinned when acquired).
 Image policies: raw, strict four-corner warp, padded parallelogram+5%,
-observed-support bbox, classical contour warp, and text-line deskew. Non-strict
+observed-support bbox, classical contour warp, text-line deskew, and LCNet warp. Non-strict
 policies explicitly fall back to raw when geometry is unavailable. No GT/type
 or expected aspect ratio enters inference. Identical rasters within a case may
 share OCR, with measured stage cost charged to every equivalent policy.
@@ -87,6 +92,16 @@ order. Report matched-panel mean/SD and exact canonical prediction agreement.
 New inference or adapter bugs require an explicitly versioned run, not silent
 replacement. Counterbalanced panel timing is distinct from replaying cached
 scores. Legacy OCR is cross-checked on the same panel, not claimed run on all540.
+
+Source-contract correction before new test inference: the author decoder
+discards a channel when multiple equal-largest contours flatten to more than
+one point. The old independent adapter chose one contour. V4 executes the
+pinned author's reviewed preprocess/postprocess functions and Capybara polygon
+utilities directly via a minimal AST harness; test8 development images for
+numeric parity and a tied-peak edge case. This verifies the normal BGR,
+non-centre-crop path, not installation of the entire upstream package. Earlier
+V2 numbers retain their original adapter and are not overwritten. Record
+loading and a synthetic model warmup separately from measured cases.
 
 Final test scores are released only after fitting/locking selectors on dev and
 review threshold on calibration. Resample physical IDs2000 times; report paired

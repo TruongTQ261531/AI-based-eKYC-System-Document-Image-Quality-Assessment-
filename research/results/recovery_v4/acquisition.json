@@ -1,0 +1,311 @@
+{
+  "identities": 60,
+  "newly_selected_study_ids": true,
+  "verified_unseen_pretraining": false,
+  "bytes": 256814096,
+  "license": "MIDV-2020 CC BY-SA2.5; Generated Photos portrait attribution retained in source",
+  "source": "ftp://smartengines.com/midv-2020/dataset/photo.tar",
+  "transport": "Bounded FTP REST; checked TAR headers/sizes; local SHA256, not whole TAR MD5",
+  "selection": [
+    {
+      "physical_id": "midv2020/alb_id/33",
+      "role": "development",
+      "image_sha256": "0becfd8a6bcda649eae0fba8b692d3b864b66be0da78d50e9551469c6a17f1c7"
+    },
+    {
+      "physical_id": "midv2020/alb_id/69",
+      "role": "development",
+      "image_sha256": "d6b33dfe6ca0c42f44e1eefe7948ed5076c55de074f1a787872f88fe99d490a6"
+    },
+    {
+      "physical_id": "midv2020/alb_id/94",
+      "role": "calibration",
+      "image_sha256": "19baaad90831efcf8a8fd06d86e3d19fd24e3289797b0b799c8b213cc9efdeaf"
+    },
+    {
+      "physical_id": "midv2020/alb_id/47",
+      "role": "test",
+      "image_sha256": "c13bebde86139292ac6cecacbde83cf08e90c8421a40240ed10372ff9fcd6059"
+    },
+    {
+      "physical_id": "midv2020/alb_id/67",
+      "role": "test",
+      "image_sha256": "b51ecb61b94e56471dfa57cd67098384ff0b382ebe66aa1d16fcbd7d7bb6e884"
+    },
+    {
+      "physical_id": "midv2020/alb_id/63",
+      "role": "test",
+      "image_sha256": "90af138eb936748ada537a9adb18395e6a2313461eb4b11706868f5b8097fee2"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/70",
+      "role": "development",
+      "image_sha256": "7a6279309f444c8ba1b09f1cf38da663611fd54dc074a97ef790cc6a8e1f8391"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/90",
+      "role": "development",
+      "image_sha256": "0286eba88b533aafc43f165fd0e3f9c8d06fa32cb178fab885a6d247055d4201"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/63",
+      "role": "calibration",
+      "image_sha256": "16fc47e2edc80dd5818d150435b95124d946ccb5104ca96375eb10aa054be4d3"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/47",
+      "role": "test",
+      "image_sha256": "e80d97d6e7d1042d31d80bc37264b053fa9dd97a7c7988b72e0b77460172d08e"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/69",
+      "role": "test",
+      "image_sha256": "1af11edee03b83e8053b3faa2b60603de7c2cc2532372683e478e9b7d1566a8f"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/94",
+      "role": "test",
+      "image_sha256": "b816a570672d09eda2c941a658c31849a5a74550529104fb6e346cd7ed5ea339"
+    },
+    {
+      "physical_id": "midv2020/esp_id/90",
+      "role": "development",
+      "image_sha256": "4446dee41448b05903f4c9a8cf0aeede8abdaf525276051c0a2324fecbcd3c95"
+    },
+    {
+      "physical_id": "midv2020/esp_id/70",
+      "role": "development",
+      "image_sha256": "8a50c5c2ef9132cd717ba6bd9b78f5277fef55c4b121d27eb41340b1cb33dcc7"
+    },
+    {
+      "physical_id": "midv2020/esp_id/69",
+      "role": "calibration",
+      "image_sha256": "2bc8780213612b56ea3129d9868fbf23d53a51aed9df68df199b8e37d45cfb6e"
+    },
+    {
+      "physical_id": "midv2020/esp_id/44",
+      "role": "test",
+      "image_sha256": "9db1455002763f9debfcf23226aa8c34904f174d39e65aa307806667d486235c"
+    },
+    {
+      "physical_id": "midv2020/esp_id/82",
+      "role": "test",
+      "image_sha256": "8164b8da4a63757dbdfc373c523c86682a359e0825660c60342197c2193b0d7a"
+    },
+    {
+      "physical_id": "midv2020/esp_id/67",
+      "role": "test",
+      "image_sha256": "ff55f96e2f51ec90f182b93f7feacac18c3ee6bd533bc69ae2b8879b987ea462"
+    },
+    {
+      "physical_id": "midv2020/est_id/94",
+      "role": "development",
+      "image_sha256": "d524fa687a386b5de7f454fea10abf0e9d74a4e60ea0a95d719deb769df0aae7"
+    },
+    {
+      "physical_id": "midv2020/est_id/82",
+      "role": "development",
+      "image_sha256": "6d9340d30f1efaf37247b89f8720e1747d1b6ed4f1bf97014f056aa21000e363"
+    },
+    {
+      "physical_id": "midv2020/est_id/33",
+      "role": "calibration",
+      "image_sha256": "f4b67f0166a72588f4b0a124409d389e8a3ce864571d9b3af7968a312d953d16"
+    },
+    {
+      "physical_id": "midv2020/est_id/63",
+      "role": "test",
+      "image_sha256": "7693ec3cf732aa90cbfac69664dd1711ae95dd5b7aa3d09950f52a0ff3c3d3c5"
+    },
+    {
+      "physical_id": "midv2020/est_id/44",
+      "role": "test",
+      "image_sha256": "458116148469fee7435db634e8bb23d5946cd4b1e7ff003ff767fa5449e65b22"
+    },
+    {
+      "physical_id": "midv2020/est_id/69",
+      "role": "test",
+      "image_sha256": "ea36e00b8ed8dcb9c907e1771459866be86b2657169a7cc2a6ac6ef21e670777"
+    },
+    {
+      "physical_id": "midv2020/fin_id/94",
+      "role": "development",
+      "image_sha256": "b9e275d78b73cb43d718b642067699788eeb277faba1c0e5a5157fb1569834d1"
+    },
+    {
+      "physical_id": "midv2020/fin_id/90",
+      "role": "development",
+      "image_sha256": "c30c8d298805ee989f7cd389cb687806603e03a75f779782d2ee86c58aab3f8e"
+    },
+    {
+      "physical_id": "midv2020/fin_id/44",
+      "role": "calibration",
+      "image_sha256": "591382771427104cd23f9629dae316cc89a237e228db29839ac241fc14062e5c"
+    },
+    {
+      "physical_id": "midv2020/fin_id/67",
+      "role": "test",
+      "image_sha256": "cd7542c31833915e5470688ee393020711721fa3f0f9c3bd6f2668988318f205"
+    },
+    {
+      "physical_id": "midv2020/fin_id/70",
+      "role": "test",
+      "image_sha256": "65b916de32e9c82bf3c37ed4b15d635b5a4b13c0e69851ecb9ce8eed3d205ca1"
+    },
+    {
+      "physical_id": "midv2020/fin_id/47",
+      "role": "test",
+      "image_sha256": "4e2384b7565eb2a6af0d1a812ffe78385c1a50bd9af484845bed3620af646c39"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/69",
+      "role": "development",
+      "image_sha256": "c49851f81e9c1cf045c4f52ff14c8396e8f6e37869d3c910b92d905dcf7de956"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/82",
+      "role": "development",
+      "image_sha256": "f96c34499debb5dba12ee171698a6bc56eb94de103817ea7d0fa9c205c945f08"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/94",
+      "role": "calibration",
+      "image_sha256": "0fec56f1bcc3d83dfeb71c63f1fb3cbcbee38ef3911960c03cb921f352858325"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/63",
+      "role": "test",
+      "image_sha256": "46a52f12bbaae35d15a47fcb532619098d4e05f00e72f394dc8abb862befe5a0"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/44",
+      "role": "test",
+      "image_sha256": "06dcea7df05c75452926a1bd253c35ae7115fb449527053fa2a2bb58188ff601"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/47",
+      "role": "test",
+      "image_sha256": "e591d04ca91f3bb645bfa64abdefcc275cfcf4efe6b62f794b8b2d2ac9309e34"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/44",
+      "role": "development",
+      "image_sha256": "b895c52bb228cdbf28ab0be4832f68e32150fe39449bdaea5e56b0d7ab8f2f57"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/94",
+      "role": "development",
+      "image_sha256": "92c2eac1dbf84a64e8d575d1a02904a32af57e615d73e07cb577a018a7bb2e40"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/70",
+      "role": "calibration",
+      "image_sha256": "dc0e3a1c59fc9c293a4ab7c48d7e695a774d5426ab3fb60a73f4d8072e25b3d4"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/67",
+      "role": "test",
+      "image_sha256": "8ac6701fb7110c257be386203d7f2026b95adb53892d605430ce46598a36e95b"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/69",
+      "role": "test",
+      "image_sha256": "b4feceee3c1b22c56136dc990e18fd86bb5994a875f91281e0b5a9c7e597f9cf"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/90",
+      "role": "test",
+      "image_sha256": "064584238b2ccda0d40e8c6161b2e229ebf4d2ebd77731a0f87c4ca9132ea7d8"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "role": "development",
+      "image_sha256": "d2f7188795d79fa87f99e456d8ac2d676f8ad8247f2ccf746131ede3fd7e404a"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/67",
+      "role": "development",
+      "image_sha256": "2b648962c5227574d0fe5a46e81c9798e89d851842914db825c8f6aed9cd42de"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/82",
+      "role": "calibration",
+      "image_sha256": "62e61642262879500d8b00ee834bb9cdf8881917cb6cb63156072469563aa167"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/69",
+      "role": "test",
+      "image_sha256": "f81328b48be12dcfdaf8c4bddc984dfb9b8bb63f90cb31fc9b6f55ea9809d787"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/47",
+      "role": "test",
+      "image_sha256": "d83d712adaa6cdd96dcf3cbd398bcf9f90830dc9e82e175f4c120a7bbf695008"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "role": "test",
+      "image_sha256": "532e6864a41de2bd7295b033fa55217055980b2468c2de2bcea951e16dbea6b7"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/47",
+      "role": "development",
+      "image_sha256": "f234a9408925e985018b5a92d04bf4ab2a8e7b74f5b37f220aac6a2e25f14154"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/90",
+      "role": "development",
+      "image_sha256": "ccb36b0bc2d5219c2f14e6e836c9e82554289fd5946fc37f6e1b650050314347"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/44",
+      "role": "calibration",
+      "image_sha256": "96177810888969637e8505e2dad713229c3546a5a9fddc7655d6568dad39414a"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/33",
+      "role": "test",
+      "image_sha256": "d69eda3b1e94aa351a047dc2aa1b483e8ce327762974a7e0440742dd308c7bfe"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/67",
+      "role": "test",
+      "image_sha256": "8370d1af9d3cbbba97a53c8bc2429f640346a324df38ee92c62d1819d73670e1"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/70",
+      "role": "test",
+      "image_sha256": "58fb0a0b7b94a9d9e0454a3d9fbb20c9f49ba0510cd962d230470c9a4de6db95"
+    },
+    {
+      "physical_id": "midv2020/svk_id/44",
+      "role": "development",
+      "image_sha256": "42b3ab14365ebfe488622adb8c9b5426a114f7682314e6e1fd419ac67c030448"
+    },
+    {
+      "physical_id": "midv2020/svk_id/47",
+      "role": "development",
+      "image_sha256": "84c33dc2c55184a2894cb3b56b4438bd551fac4e55be3ad37c60fcbe976233d3"
+    },
+    {
+      "physical_id": "midv2020/svk_id/33",
+      "role": "calibration",
+      "image_sha256": "34dc014d8b51dbd3753d8ed5ac1b8bcdf134afbafa1e8cb17561590c1d44ae56"
+    },
+    {
+      "physical_id": "midv2020/svk_id/82",
+      "role": "test",
+      "image_sha256": "ef73835338b92f1f089062852a464906f4a26c2362e5bc3260790fb9e58a6a6e"
+    },
+    {
+      "physical_id": "midv2020/svk_id/90",
+      "role": "test",
+      "image_sha256": "6e41efc9aea6fb608f3208635c7db95bfcddf56b9b2994d1ed436a982bf22bc7"
+    },
+    {
+      "physical_id": "midv2020/svk_id/69",
+      "role": "test",
+      "image_sha256": "c710fc2e87738b62d50b6f05a04fb9b6c210e856e377f680ef64b46bbb924fdd"
+    }
+  ]
+}
