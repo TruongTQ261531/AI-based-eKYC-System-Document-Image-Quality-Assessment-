@@ -38,6 +38,23 @@ def main():
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:rows=[json.loads(line) for line in stream]
     summary=json.loads((OUT/'summary.json').read_text());models=json.loads((OUT/'selector_models.json').read_text())
     samples=load_samples();lookup={s['uid']:s for s in samples}
+    # Alphabet compatibility is a diagnostic only; keep the complete locked
+    # target set regardless of unsupported characters.
+    from research.recovery_runtime import RecoveryEngine
+    from research.e2e_eval import target_fields
+    from research.ocr_diagnostic import normalized
+    baseline=RecoveryEngine();alphabet=[]
+    for reader in READERS:
+        characters=baseline.readers[reader].text_rec.postprocess_op.character
+        supported=set(normalized(''.join(c for c in characters if c!='blank')))|{' '}
+        for source in ('authored_specimen','midv2020_derived'):
+            selected=[s for s in samples if s['role']=='test' and s['source']==source]
+            targets=[f for s in selected for f in target_fields(s)[0]]
+            alphabet.append(dict(reader=reader,source=source,fields=len(targets),
+                fully_supported_fields=sum(all(c in supported for c in normalized(f['text'])) for f in targets),
+                target_set_redefined=False))
+    save(OUT/'alphabet_coverage.json',alphabet)
+    del baseline
     for reader in READERS:
         used=set(models['selectors'][reader]['training_ids']);test={s['physical_id'] for s in samples if s['role']=='test'}
         if used&test:raise ValueError('Test identity in model fitting provenance')

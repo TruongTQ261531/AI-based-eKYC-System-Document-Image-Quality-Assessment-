@@ -128,10 +128,13 @@ def results():
 
 @app.get('/api/specimen/{kind}')
 def specimen(kind:str):
-    if kind not in ('full','corner_clip','field_clip','blur_glare'):raise HTTPException(404)
-    path=ROOT/'data/recovery_v4/synthetic'/f'specimen_L0_00_{kind}.png'
+    choices={k:('L4','00',k) for k in ('full','corner_clip','field_clip','blur_glare')}
+    choices.update(student=('L4','01','full'),licence=('L5','02','full'))
+    if kind not in choices:raise HTTPException(404)
+    layout,index,capture=choices[kind]
+    path=ROOT/'data/recovery_v4/synthetic'/f'specimen_{layout}_{index}_{capture}.png'
     if not path.exists():raise HTTPException(503,'Chưa tạo ảnh SPECIMEN.')
-    return FileResponse(path,media_type='image/png')
+    return FileResponse(path,media_type='image/png',headers={'X-Specimen-Role':'test'})
 
 
 @app.post('/api/scan')

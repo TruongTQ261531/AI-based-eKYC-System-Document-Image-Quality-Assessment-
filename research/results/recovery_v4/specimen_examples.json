@@ -1,0 +1,34 @@
+[
+  {
+    "uid": "specimen/L0/00/full",
+    "export_sha256": "6dc93800763b872aaa9bf48c28985acfab3bf6148773438ee4a659b9edd8d37c",
+    "inference_input_sha256": "6dfd187ac31b09b952bdec91d4e63ba759b8c53553469f45c4eca0556d183949",
+    "illustration_only": true,
+    "colors": "green full geometric field support; amber partially clipped field",
+    "authored_synthetic_not_real_identity": true
+  },
+  {
+    "uid": "specimen/L0/00/corner_clip",
+    "export_sha256": "8def0be396fea3c62f54d561f3d316111dea58b0eb2e75e72bf8ad12261c15bb",
+    "inference_input_sha256": "7fb28048c22ba601e67aec0b6bd5134d94098451995a888d767a419f65d11577",
+    "illustration_only": true,
+    "colors": "green full geometric field support; amber partially clipped field",
+    "authored_synthetic_not_real_identity": true
+  },
+  {
+    "uid": "specimen/L0/00/field_clip",
+    "export_sha256": "954ee0142497ce1a945ed1ae4b936e06dbd1ac342a287f1cab418825461def09",
+    "inference_input_sha256": "56984c86510ae9dd7c9033947990c03f3d9dcd6914fa198761680262cbf15ab1",
+    "illustration_only": true,
+    "colors": "green full geometric field support; amber partially clipped field",
+    "authored_synthetic_not_real_identity": true
+  },
+  {
+    "uid": "specimen/L0/00/blur_glare",
+    "export_sha256": "daf1b5053279d455ef258dac9428804b02f9155fd11f07d1b8a6f80dbbd6c0ff",
+    "inference_input_sha256": "caaa3a0bed7ee6dd8763400decf08fdfd2a553b6283d105f47998824c9ec0fbd",
+    "illustration_only": true,
+    "colors": "green full geometric field support; amber partially clipped field",
+    "authored_synthetic_not_real_identity": true
+  }
+]
