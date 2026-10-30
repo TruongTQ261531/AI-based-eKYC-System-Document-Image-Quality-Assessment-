@@ -14,10 +14,24 @@ CRAFT predicted text regions, EasyOCR English and existing VietOCR. GT is used
 only for post-inference spatial field-transcription scoring. Not semantic KIE.
 Do not claim three full161-image runs. No new dependencies or weights.
 
-Resume after interruption using the existing environment from this worktree:
+Read-only checkpoint at2026-10-30T12:10:43Z:127/225 images complete, all in
+pass1; one benchmark invocation remains active, journal has zero failure
+events. This is a historical progress snapshot, not a completion claim.
+Latest analysis/audit supplement is committed in759f05e; three additional
+analysis-integrity tests passed. Full regression is pending experiment end.
+
+After a chat/usage interruption, inspect the OS process and progress first:
 
 ```powershell
+Get-CimInstance Win32_Process | Where-Object { $_.Name -eq 'python.exe' -and $_.CommandLine -match '\s-m\s+research\.e2e_benchmark(?:\s|$)' } | Select-Object ProcessId,ParentProcessId
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_progress
+```
+
+**Do not start another benchmark while the original process is running.**
+Windows can show the venv launcher and its child interpreter for one invocation.
+Only when that invocation has stopped, resume from this worktree:
+
+```powershell
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_benchmark
 ```
 
