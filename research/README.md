@@ -10,6 +10,31 @@ No new environment or dependency is required on the original machine.
 
 Start with [the Vietnamese evidence report](REPORT_VI.md),
 [literature/venue review](LITERATURE_REVIEW.md) and [resume status](STATUS.md).
+The V4 expansion requested on2026-10-30 is tracked in STATUS.md. Read its
+[locked protocol](RESEARCH_V4_PROTOCOL.md), [dataset card](DATASET_CARD_V4.md),
+[pre-test evaluation clarification](RECOVERY_EVALUATION_ADDENDUM.md) and
+[updated closest prior](RESEARCH_V4_RELATED_WORK.md). Do not mistake a running
+experiment for a completed result. Its final generated reports are
+RECOVERY_RESULTS_VI.md and MANUSCRIPT_DRAFT.md once all validation finishes.
+
+The separate localhost research workbench uses the original Python environment:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\research\start-research.ps1
+```
+
+Open **http://127.0.0.1:8001/** in Chrome/Edge. Mentor remains on8000.
+The workbench does not invent results while the model lock is absent; camera
+photos/OCR text are memory-only and are not research training inputs.
+Sample buttons use newly authored held-out-layout SPECIMEN cards, not a lookup
+database of identities used to recognize user documents.
+
+On a new machine with the required packages already available, the V4 asset
+and data cache can be rebuilt with `python -m research.recovery_setup --data`.
+The script downloads bounded author sources/pinned assets without pip or venv
+creation. Optional legacy-reader checks additionally require the existing
+EasyOCR/VietOCR files; set EKYC_MODELS_DIR to their model root if necessary.
+Do not run acquisition/generation over an active experiment's immutable data.
 Primary results, including failed candidates, remain unchanged. Subsequent
 protocols explicitly identify their exploratory timing.
 

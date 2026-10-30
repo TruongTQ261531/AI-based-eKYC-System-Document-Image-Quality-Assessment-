@@ -63,6 +63,16 @@ MIDV500/2019 and training examples in the MIDV2020 demo. Do not label new MIDV
 study IDs unseen-pretraining. New SPECIMEN identities/layouts provide separately
 authored data, but no new real-world camera collection has been performed.
 
+User explicitly answered that no additional self-captured research-permitted
+images are available. MIDV-UP public-source acquisition is an additional
+bounded transfer diagnostic, declared separately before any test result:
+RECOVERY_EXTERNAL_UP_PROTOCOL.md; recovery_up_external acquire/run.24 photos,
+four new-to-selector template types,two camera strata,three fixed methods,
+two fresh passes(144 online units). This is not a new self-captured collection
+and does not prove unseen pretraining or Urdu/Persian capability. After the
+primary model lock run the external check, audit it and report every result.
+Do not let this supplement alter primary540-case fitting/metrics/thresholds.
+
 ---
 
 ## Completed end-to-end OCR follow-up, 2026-10-30
