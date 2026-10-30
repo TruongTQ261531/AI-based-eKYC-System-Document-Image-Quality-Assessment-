@@ -38,3 +38,9 @@ workbench use this parser as an explicitly labelled alternative. Preserve the
 original mentor runtime and all V4 prediction/selector signatures. Existing
 SciPy is available; no installation or new environment. This ablation cannot
 by itself establish CORE B novelty or new-camera validity.
+
+Deployment selection uses development canonical key-value correctness only:
+enable spatial parsing if its total correct count is at least the original
+parser's on the same development OCR and relevant unit tests pass. Otherwise
+retain the original parser and report the failed alternative. Do not change
+this decision based on test/stress outcomes.

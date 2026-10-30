@@ -134,6 +134,32 @@ def main():
             if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('Stress publication mismatch')
         validation_counts['external_layout_rescored']=len(public)
         supplement_repeats['spatial_layout']=repeat_checks(public)
+    if (OUT/'layout_kie.json').exists():
+        from pathlib import Path
+        from research.layout_kie import extract,to_view
+        from research.recovery_data import seed
+        from research.recovery_semantic_eval import score_semantics
+        from research.layout_kie_study import signature as kie_signature
+        extra=json.loads(Path('research/data/layout_stress/samples.json').read_text(encoding='utf-8'))
+        lookup={s['uid']:s for s in samples+extra}
+        result=json.loads((OUT/'layout_kie.json').read_text(encoding='utf-8'))
+        if result['signature']!=kie_signature() or len(result['rows'])!=440:raise ValueError('KIE source/count mismatch')
+        for published in result['rows']:
+            s=lookup[published['uid']]
+            item=json.loads((CACHE/'layout_kie'/('case_'+str(seed(s['uid']))+'.json')).read_text(encoding='utf-8'))
+            if s['source']=='authored_specimen':
+                original=json.loads(path_for(1,s['uid']).read_text(encoding='utf-8'))
+                original=next(r for r in original['rows'] if r['engine']=='rapid_latin_v5' and r['policy']=='completion')
+            else:
+                original=json.loads((CACHE/'layout_stress'/('1_'+str(seed(s['uid']))+'_fixed_completion.json')).read_text(encoding='utf-8'))
+            if item['_private_base_fields']!=original['_private_semantic']:raise ValueError('KIE baseline changed')
+            framed=to_view(original['_private_predictions'],item['_private_inverse'])
+            if canonical(framed)!=canonical(item['_private_framed_predictions']):raise ValueError('KIE frame replay mismatch')
+            if extract(framed)[0]!=item['_private_graph_fields']:raise ValueError('KIE predictor replay mismatch')
+            if published['baseline']!=score_semantics(s,item['_private_base_fields']):raise ValueError('KIE baseline rescore mismatch')
+            if published['layout_assignment']!=score_semantics(s,item['_private_graph_fields']):raise ValueError('KIE assignment rescore mismatch')
+            if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('KIE publication mismatch')
+        validation_counts['kie_cases_replayed_and_rescored']=len(result['rows'])
     events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text(encoding='utf-8').splitlines()]
     save(OUT/'independent_audit.json',dict(signature=signature,code_sha256=digest(__file__),
         native_rows_rescored=checked,selector_decisions_replayed=costs,public_rows=public_row_count,

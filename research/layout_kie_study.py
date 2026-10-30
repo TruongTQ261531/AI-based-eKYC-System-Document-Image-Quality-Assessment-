@@ -59,14 +59,19 @@ def run(development_only):
                 baseline=score_semantics(sample,baseline),layout_assignment=score_semantics(sample,fields),
                 setup_wall=setup_wall,setup_cpu=setup_cpu,parser_wall=parser_wall,parser_cpu=parser_cpu,
                 extra_ocr_calls=0,deterministic_parser_repeat=True,metadata=metadata,
-                _private_base_fields=baseline,_private_graph_fields=fields)
+                _private_base_fields=baseline,_private_graph_fields=fields,
+                _private_framed_predictions=framed,_private_inverse=inverse.tolist())
             atomic_json(path,row)
         rows.append({k:v for k,v in row.items() if not k.startswith('_private')})
         print('KIE_DEV' if development_only else 'KIE_EVAL',index,'/',len(samples),flush=True)
     if development_only:
         save(OUT/'layout_kie_development.json',dict(signature=sig,rows=rows,test_predictions_evaluated=False))
+        base=sum(r['baseline']['canonical_exact'] for r in rows)
+        graph=sum(r['layout_assignment']['canonical_exact'] for r in rows)
         save(OUT/'layout_kie_lock.json',dict(signature=sig,development_cases=len(rows),source_locked_before_supplement_evaluation=True,
-            main_test_comparison_is_post_hoc=True,protocol_sha256=digest('research/LAYOUT_KIE_PROTOCOL.md')))
+            main_test_comparison_is_post_hoc=True,development_correct=dict(baseline=base,layout_assignment=graph),
+            deployment_approved_on_development=graph>=base,
+            protocol_sha256=digest('research/LAYOUT_KIE_PROTOCOL.md')))
     else:
         dev=json.loads((OUT/'layout_kie_development.json').read_text(encoding='utf-8'))['rows']
         save(OUT/'layout_kie.json',dict(signature=sig,rows=dev+rows,cases=len(dev)+len(rows),

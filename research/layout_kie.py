@@ -11,7 +11,7 @@ from ekyc.document_fields import LABELS,PATTERNS,fold,observed_information
 from research.recovery_runtime import RecoveryEngine,semantic,make_view
 
 
-def label(text):
+def known_prefix(text):
     text=' '.join(text.split());plain=fold(text);matches=[]
     for key,pattern in PATTERNS.items():
         match=re.match(pattern,plain)
@@ -19,8 +19,18 @@ def label(text):
     for key,title in LABELS.items():
         alias=fold(title)
         if plain==alias or plain.startswith(alias+':'):matches.append((len(alias),key))
-    if matches:
-        end,key=max(matches);value=text[end:].strip(' :：/.-')
+    return max(matches) if matches else None
+
+
+def label(text):
+    text=' '.join(text.split());found=known_prefix(text)
+    if found:
+        end,key=found;tail=text[end:];value=tail.strip(' :：/.-()')
+        # Slash/parenthesis-separated bilingual labels are still labels.
+        while value and tail.lstrip().startswith(('/','(')):
+            repeated=known_prefix(value)
+            if not repeated or repeated[1]!=key:break
+            tail=value[repeated[0]:];value=tail.strip(' :：/.-()')
         return key,LABELS.get(key,key),value
     custom=re.fullmatch(r'([^:：]{2,60})[:：]\s*(.*)',text)
     if custom:
@@ -42,8 +52,12 @@ def extract(predictions):
         if found:
             key,title,inline=found;labels[key]=title
             if inline:
-                cleaned,_,_=observed_information([], {key:inline})
-                if key in cleaned:candidates[key]=cleaned[key]
+                same_line=semantic([item])
+                if len([k for k in same_line if not k.startswith('extra_')])>1:
+                    candidates.update(same_line)
+                else:
+                    cleaned,_,_=observed_information([], {key:inline})
+                    if key in cleaned:candidates[key]=cleaned[key]
             else:nodes.append(dict(key=key,box=geometry(item)))
         else:values.append(dict(value=text,box=geometry(item)))
     if nodes and values:
@@ -61,9 +75,20 @@ def extract(predictions):
                 down_cost=2+max(0.,b-y2)/h+abs(a-x1)/(2*h) if down else 1e6
                 costs[i,j]=min(right_cost,down_cost)
         rr,cc=linear_sum_assignment(costs)
+        consumed={int(j) for i,j in zip(rr,cc) if j<len(values) and costs[i,j]<6}
         for i,j in zip(rr,cc):
             if j<len(values) and costs[i,j]<6:
-                candidates.setdefault(nodes[i]['key'],values[j]['value'])
+                key=nodes[i]['key'];value=values[j]['value'];last=values[j]['box']
+                if key in ('address','hometown'):
+                    for _ in range(2):
+                        h=max(5.,last[3]-last[1]);following=[]
+                        for n,part in enumerate(values):
+                            a,b,c,d=part['box']
+                            if n not in consumed and 0<=b-last[3]<=1.8*h and abs(a-last[0])<=h:
+                                following.append((b,n))
+                        if not following:break
+                        _,n=min(following);consumed.add(n);value+=' '+values[n]['value'];last=values[n]['box']
+                candidates.setdefault(key,value)
     # An explicitly associated observed value supersedes the row-concatenation
     # alternative. No missing mandatory fields are manufactured.
     fields={**base,**candidates};fields,_,_=observed_information([],fields)

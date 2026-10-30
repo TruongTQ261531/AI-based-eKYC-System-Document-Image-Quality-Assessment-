@@ -69,7 +69,26 @@ async def privacy(request,call_next):
 
 
 @lru_cache(1)
-def engine():return RecoveryEngine()
+def engine():
+    settings=kie_settings()
+    if settings and settings['deployment_approved_on_development']:
+        from research.layout_kie import LayoutKIEEngine
+        return LayoutKIEEngine()
+    return RecoveryEngine()
+
+
+def kie_settings():
+    path=OUT/'layout_kie_lock.json'
+    if not path.exists():return None
+    from research.layout_kie_study import signature
+    settings=json.loads(path.read_text(encoding='utf-8'))
+    if settings['signature']!=signature():raise ValueError('Exploratory field-parser lock changed')
+    return settings
+
+
+def predict(image,model):
+    # Initial model loading also stays off the async HTTP event loop.
+    return engine().online(image,model)
 
 
 def locked_model():
@@ -80,6 +99,7 @@ def locked_model():
         model=json.loads(model_path.read_text(encoding='utf-8'));manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
         if model['signature']!=lock['signature'] or lock['signature']!=manifest['signature']:raise ValueError('Experiment signature mismatch')
         if any(sha(ROOT/name)!=value for name,value in manifest['code_sha256'].items()):raise ValueError('Runtime code differs from frozen study')
+        kie_settings()
         return model
     except (OSError,ValueError,KeyError):raise HTTPException(503,'Mô hình chọn view chưa được khóa. Benchmark đang hoàn thiện; chưa có kết quả giả lập thay thế.')
 
@@ -120,7 +140,16 @@ def results():
         return dict(status='running',rows=[],message='Chờ chấm và audit điểm test sau khi khóa selector.')
     rows=json.loads((OUT/'summary.json').read_text(encoding='utf-8'))
     models=json.loads((OUT/'selector_models.json').read_text(encoding='utf-8'))
-    return dict(status='complete',rows=[r for r in rows if r['role']=='test'],
+    extra=[]
+    audited=json.loads((OUT/'independent_audit.json').read_text(encoding='utf-8'))
+    if (OUT/'layout_kie.json').exists() and audited.get('additional_validation',{}).get('kie_cases_replayed_and_rescored')==440:
+        data=json.loads((OUT/'layout_kie.json').read_text(encoding='utf-8'))['rows']
+        for source,role in (('authored_specimen','test'),('authored_layout_stress','external_layout')):
+            selected=[r for r in data if r['source']==source and r['role']==role]
+            for method in ('baseline','layout_assignment'):
+                n=sum(r[method]['eligible_fields'] for r in selected)
+                extra.append(dict(source=source,method=method,fields=n,canonical_exact=sum(r[method]['canonical_exact'] for r in selected)/max(n,1)))
+    return dict(status='complete',rows=[r for r in rows if r['role']=='test'],kie_comparison=extra,
         primary_methods={key:value['primary_method'] for key,value in models['selectors'].items()},
         dataset=json.loads((OUT/'dataset_card.json').read_text(encoding='utf-8')),
         latency_note='Selector trong bảng dùng chi phí tái dựng trace; thời gian xử lý camera bên dưới được đo thực tế.')
@@ -151,10 +180,10 @@ async def scan(request:Request):
     if not inference_lock.acquire(blocking=False):raise HTTPException(429,'Đang xử lý một ảnh khác. Hãy thử lại sau.')
     try:
         image=decode_image(raw)
-        result=await run_in_threadpool(engine().online,image,model)
+        result=await run_in_threadpool(predict,image,model)
         from ekyc.document_fields import observed_information,LABELS
         _,items,_=observed_information(result['predictions'],{})
-        result['field_labels']={**LABELS,**{item['key']:item['label'] for item in items}}
+        result['field_labels']={**LABELS,**{item['key']:item['label'] for item in items},**result.get('field_labels',{})}
         preview=result.pop('_private_preview');scale=min(1.,1280/max(preview.shape[:2]))
         preview=cv2.resize(preview,None,fx=scale,fy=scale)
         ok,encoded=cv2.imencode('.jpg',preview,[cv2.IMWRITE_JPEG_QUALITY,88])
