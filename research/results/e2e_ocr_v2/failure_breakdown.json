@@ -1,0 +1,194 @@
+[
+  {
+    "engine": "easyocr_en",
+    "policy": "raw_fullframe",
+    "geometry_review_images": 0,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 810,
+    "detected_wrong_fields": 630,
+    "truncated_regions": 183,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "neural_strict",
+    "geometry_review_images": 93,
+    "routed_no_text_images": 0,
+    "missed_target_fields": 1070,
+    "detected_wrong_fields": 345,
+    "truncated_regions": 0,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_fullframe",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 564,
+    "detected_wrong_fields": 736,
+    "truncated_regions": 183,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 498,
+    "detected_wrong_fields": 764,
+    "truncated_regions": 74,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support_bbox",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 497,
+    "detected_wrong_fields": 765,
+    "truncated_regions": 82,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_parallelogram05",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 3,
+    "missed_target_fields": 450,
+    "detected_wrong_fields": 779,
+    "truncated_regions": 0,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "raw_fullframe",
+    "geometry_review_images": 0,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 810,
+    "detected_wrong_fields": 495,
+    "truncated_regions": 183,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "neural_strict",
+    "geometry_review_images": 93,
+    "routed_no_text_images": 0,
+    "missed_target_fields": 1070,
+    "detected_wrong_fields": 289,
+    "truncated_regions": 0,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_fullframe",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 564,
+    "detected_wrong_fields": 594,
+    "truncated_regions": 183,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 498,
+    "detected_wrong_fields": 608,
+    "truncated_regions": 74,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support_bbox",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 2,
+    "missed_target_fields": 497,
+    "detected_wrong_fields": 609,
+    "truncated_regions": 82,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_parallelogram05",
+    "geometry_review_images": 1,
+    "routed_no_text_images": 3,
+    "missed_target_fields": 450,
+    "detected_wrong_fields": 612,
+    "truncated_regions": 0,
+    "gt_corner_visibility": {
+      "0": 0,
+      "1": 1,
+      "2": 8,
+      "3": 73,
+      "4": 79
+    }
+  }
+]

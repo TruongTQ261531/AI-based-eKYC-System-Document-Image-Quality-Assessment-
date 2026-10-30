@@ -1,0 +1,61 @@
+[
+  {
+    "engine": "easyocr_en",
+    "eligible_fields": 1643,
+    "alphabet_supported_fields": 1522,
+    "unsupported_codepoints": {
+      "U+00C1": 21,
+      "U+00C4": 3,
+      "U+00C7": 2,
+      "U+00CB": 1,
+      "U+00CD": 7,
+      "U+00D1": 13,
+      "U+00D6": 14,
+      "U+00DC": 6,
+      "U+00DD": 3,
+      "U+0100": 3,
+      "U+0106": 2,
+      "U+010C": 15,
+      "U+011E": 5,
+      "U+012A": 4,
+      "U+0130": 40,
+      "U+013B": 3,
+      "U+0145": 1,
+      "U+0158": 3,
+      "U+015E": 12,
+      "U+0160": 1,
+      "U+017D": 6,
+      "U+018F": 31,
+      "U+01CD": 3
+    },
+    "interpretation": "Necessary alphabet compatibility only; not a recognition-accuracy bound"
+  },
+  {
+    "engine": "vietocr",
+    "eligible_fields": 1643,
+    "alphabet_supported_fields": 1542,
+    "unsupported_codepoints": {
+      "U+00C4": 3,
+      "U+00C7": 2,
+      "U+00CB": 1,
+      "U+00D1": 13,
+      "U+00D6": 14,
+      "U+00DC": 6,
+      "U+0100": 3,
+      "U+0106": 2,
+      "U+010C": 15,
+      "U+011E": 5,
+      "U+012A": 4,
+      "U+0130": 40,
+      "U+013B": 3,
+      "U+0145": 1,
+      "U+0158": 3,
+      "U+015E": 12,
+      "U+0160": 1,
+      "U+017D": 6,
+      "U+018F": 31,
+      "U+01CD": 3
+    },
+    "interpretation": "Necessary alphabet compatibility only; not a recognition-accuracy bound"
+  }
+]

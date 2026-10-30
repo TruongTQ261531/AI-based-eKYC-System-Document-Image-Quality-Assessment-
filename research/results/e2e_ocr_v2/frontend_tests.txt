@@ -1,0 +1,23 @@
+✔ insecure origin and denied camera produce actionable errors without upload (23.7288ms)
+✔ rear camera, full video resolution, preview then explicit confirmation (2.5434ms)
+✔ reset cancels pending camera and stops a late permission response (0.9302ms)
+✔ OCR edits are submitted and the front camera requires a challenge before selfie (2.3546ms)
+✔ Vietnamese OCR autofills all fields and replaces old values on a new scan (1.7151ms)
+✔ student card renders only observed fields, keeps raw OCR, and submits editable extra fields (1.3751ms)
+✔ unknown card can show unassigned text without inventing required fields (0.9591ms)
+✔ server challenge, preview confirmation and final result are required in order (2.1965ms)
+✔ failed challenge cannot enable capture and cancelling invalidates server state (1.2516ms)
+✔ timeout shows an ended timer instead of contradictory remaining seconds (2.7308ms)
+✔ spoof on final photo clears the photo and requires a new challenge (1.1578ms)
+✔ frame spoof rejection is displayed before any selfie can be submitted (0.9177ms)
+✔ retake discards captured image and opens a fresh stream (0.6727ms)
+✔ a failed capture displays backend diagnosis and concrete instructions (0.8269ms)
+✔ missing portrait keeps OCR form but blocks selfie and offers a fresh document capture (0.9006ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 124.9426

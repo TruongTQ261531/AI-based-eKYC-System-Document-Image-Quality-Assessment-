@@ -1,0 +1,41 @@
+{
+  "time_utc": "2026-10-30T13:39:05Z",
+  "signature": "31c00e69dad9ee35916e692ee7d17e4691b827caa48936f50db6a0d9a6ef62d1",
+  "commands": [
+    {
+      "name": "python",
+      "command": [
+        "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "research/tests",
+        "--ignore=tests/test_manifest.py",
+        "-q",
+        "--junitxml=research\\results\\e2e_ocr_v2\\tests.xml"
+      ],
+      "tests": 134,
+      "failures": 0,
+      "return_code": 0,
+      "log_sha256": "9f483e6e23c6cc96f23982207a8144381d61aad6d39eb2d72da49c33b2ec4be4"
+    },
+    {
+      "name": "frontend",
+      "command": [
+        "node",
+        "--test",
+        "tests/camera_frontend.test.cjs"
+      ],
+      "tests": 15,
+      "passed": 15,
+      "failures": 0,
+      "return_code": 0,
+      "log_sha256": "370520e6ffbc92f51293c46fb1b109ff57b4e7ce9caaf11a38c0908d0a17c863"
+    }
+  ],
+  "core_inference_source_hashes_match": true,
+  "mentor_runtime_changed_paths": [],
+  "excluded_test": "tests/test_manifest.py requires original raw manifest in worktree; experiment inputs independently hash-audited",
+  "warning": "Pre-existing Starlette httpx deprecation; no dependency changes",
+  "logging_note": "Tests exited0 and logs saved; initial wrapper console print hit cp1252 Unicode error after Node success. Manifest built from completed logs/XML without re-running tests."
+}

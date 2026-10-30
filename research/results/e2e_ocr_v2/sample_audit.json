@@ -1,0 +1,2095 @@
+[
+  {
+    "uid": "midv2019/DG02_15",
+    "physical_id": 2,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ecb4c323de80b081407e607e6220d76b75ab5717c377d5ebda1a2d44a30c2288",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG04_15",
+    "physical_id": 4,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "9a1b28efa119154af544075ff8af01b51e79da1f84030cbc0ad51b1364dcbed6",
+    "expected_corners": 4,
+    "eligible_fields": 7,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG05_15",
+    "physical_id": 5,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "166aac44a098337161abf6178f9df1830ca5a39fb3e1a4336b598abf598cbc8b",
+    "expected_corners": 3,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG11_15",
+    "physical_id": 11,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "6743d6a47e6a8aa028e9d270d0cb9d7f4a5788c3babc6ddb437aebd6a078cb63",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG34_15",
+    "physical_id": 34,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "cc1bf7a3847c6d11a977230007a174534d078d9adf5f31d7212adf9463ff0d72",
+    "expected_corners": 4,
+    "eligible_fields": 16,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG39_15",
+    "physical_id": 39,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "1a972c6d079ee315517878681f9424c1ba6f3e642bb7f6c3ad41cc0f59e2841b",
+    "expected_corners": 3,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv2019/DG42_15",
+    "physical_id": 42,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "6be069576fc391da4767a871a1fc5706a23264be0ae719e9fdab6b93fea9b7d7",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DG45_15",
+    "physical_id": 45,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "fd6e01c22e6dbb72710a13776a3114072b0b6e5bd305cb29003330377adf3823",
+    "expected_corners": 3,
+    "eligible_fields": 7,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 8
+    }
+  },
+  {
+    "uid": "midv2019/DX01_15",
+    "physical_id": 1,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "351ffae362941d187e3b669a1f5f816001cccd1bcdc836bbcca295b98c876ac3",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX03_15",
+    "physical_id": 3,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "f0bdf966858190f5d2d31b97f9d358c5e6bf2283672efbf982aa519be8862236",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX06_15",
+    "physical_id": 6,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "297d884fda892539661f10a9d5f568c16061323da893044ab3fb41a5c46ac310",
+    "expected_corners": 4,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX20_15",
+    "physical_id": 20,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ec5d8a9642e1f2943ad271b92e2ad9017747fdc6974b7832a1c28fd80cd6fa62",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX24_15",
+    "physical_id": 24,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "6d3a302503e21bb52d402ee3e48cbb2d20a10205e9c59e31622814e9c7f31ac3",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX25_15",
+    "physical_id": 25,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "b1c58cafec8a680cc6591121b32bf5967626b32b0bb03638d2e9bd4e770ddc18",
+    "expected_corners": 3,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2019/DX30_15",
+    "physical_id": 30,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "90d0a00599f268780604d0637776deffac825c1bd564f77cddfce775a6734467",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX39_15",
+    "physical_id": 39,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "b5b638230da846cd2d59b787d2ca63c7b1341c839bc389c3188365d4f28c84e0",
+    "expected_corners": 4,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv2019/DX41_15",
+    "physical_id": 41,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "ee8d8c61412cf0a744e0d173cb71b63f1d51293ed2da58412d3926996d0af6a2",
+    "expected_corners": 4,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX47_15",
+    "physical_id": 47,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "171bf0cdee806705fefaf9803d29b7b73715ba01a6799a4d307fd76c8ee5d772",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/DX49_15",
+    "physical_id": 49,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "038299371ad3044f67d69648ba7e37f59af20371bb482a874441cd9db175b999",
+    "expected_corners": 4,
+    "eligible_fields": 3,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LG07_15",
+    "physical_id": 7,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "26cb4c120465943c47ca6710da24ee2461eaf39494daa2ce046d254342569971",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LG08_15",
+    "physical_id": 8,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "a638c954bca7264e6768046ba9f162341e7b719d000281e74b11b32306779369",
+    "expected_corners": 4,
+    "eligible_fields": 5,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 3
+    }
+  },
+  {
+    "uid": "midv2019/LG25_15",
+    "physical_id": 25,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "4d2e4493ef488077796669c46f2314ce93ea48f0274c464773221409af2afac9",
+    "expected_corners": 4,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2019/LG26_15",
+    "physical_id": 26,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "fe88a6ed7faeec031a45aa642496a159c28cea58ef4a4652879f975dfa3b44dc",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LG43_15",
+    "physical_id": 43,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "ec0cb709b7c7ba20afac853de663d51e221ba3bd46c199236b52bdee376e14c7",
+    "expected_corners": 4,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LX06_15",
+    "physical_id": 6,
+    "source": "midv2019",
+    "selection_stratum": "three_corners",
+    "input_sha256": "16d15cf10664578f0aa9c7d34bde4c9957b4f6c21187b065fcd9030002f569bb",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LX11_15",
+    "physical_id": 11,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "6b3aacd6ae4aee56ed2f758a9e16492adbd52f87e162714651348226e91d8c48",
+    "expected_corners": 4,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2019/LX35_15",
+    "physical_id": 35,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "cf401ef2667921fe9aa2941e61093f7947486ae893451d7b1a707d925c50f1b6",
+    "expected_corners": 4,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv2019/LX44_15",
+    "physical_id": 44,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "516dc29055dca89198e586929b1254805226ed0ca2ddff8f5ece4f410920f0e1",
+    "expected_corners": 4,
+    "eligible_fields": 6,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv2019/LX46_15",
+    "physical_id": 46,
+    "source": "midv2019",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "821afae0041398d82a1d2923013f006f065cf9c81ed8bc4799d886a2f7072915",
+    "expected_corners": 4,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/alb_id/05",
+    "physical_id": "alb_id/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "c655bdda8136d573637aa3e626d86736d495e9226e1cd51a6b1316db2db852f5",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/alb_id/59",
+    "physical_id": "alb_id/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "3a6852737fddd0cb30cf81a726c81aecaed48ca7f63f69b79d653fb3db69b54d",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/aze_passport/05",
+    "physical_id": "aze_passport/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "7d1cdbc9d76a8e45cedfd480c559628c51fef054b69a3c85331c60716d5b0fb1",
+    "expected_corners": 4,
+    "eligible_fields": 19,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/aze_passport/59",
+    "physical_id": "aze_passport/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "f487acffff95e404c96256f23d2bd8809f5b7b4fbc0020311c11baff5b55002b",
+    "expected_corners": 4,
+    "eligible_fields": 19,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/esp_id/05",
+    "physical_id": "esp_id/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "acd083ce5b9d20d3cd004a53c347b00281f18b09fab6e3f5cd732ec413f48613",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/esp_id/59",
+    "physical_id": "esp_id/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "82c415d41bf8f8c938a006ff0d1c307a8e7c5f7641e11bec39ab08bb08f81318",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/est_id/05",
+    "physical_id": "est_id/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "2eedb0128d7b118add2f74c100d068982bfbbccbf976d05e38541f2e54246134",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/est_id/59",
+    "physical_id": "est_id/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "26cecfccdc5872a7f36b61ea05900545b7a2282451a719da616950a1a45c54ae",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/fin_id/05",
+    "physical_id": "fin_id/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "39ddadabee166fcbf1f68bfe2e06e249bd9d2a8a34ba427b80a1075c6234ede4",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/fin_id/59",
+    "physical_id": "fin_id/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "9522ef3ff852fcae9191c44157745de5a298e0003a621d066b10ea473199af4b",
+    "expected_corners": 0,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/grc_passport/05",
+    "physical_id": "grc_passport/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "ab99707aa92cf079a45b9240e0489f8ae4a70b274369233f727c38d74ff4d745",
+    "expected_corners": 4,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2020/grc_passport/59",
+    "physical_id": "grc_passport/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "fe486ae7a877be07345bed34fc80a29322583f0801e2ffa6743dc77db908cd33",
+    "expected_corners": 4,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2020/lva_passport/05",
+    "physical_id": "lva_passport/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "8f11c577dceda61ba36f2814efbc6539981245bc619a63b3b38592379903c91d",
+    "expected_corners": 4,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/lva_passport/59",
+    "physical_id": "lva_passport/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "e5ad9e0a3802005ccbcbafe1ca76423b391724253e812f1b0c3b293c26f1231a",
+    "expected_corners": 4,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/05",
+    "physical_id": "rus_internalpassport/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "e7a79270224cabeb129b1b81144f65f91378c49f976e882a617622a8273c3d2c",
+    "expected_corners": 4,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/59",
+    "physical_id": "rus_internalpassport/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "81efd88d5fbe4dc2ce347aa882e554512dff2de7f2a9821e0103475ce6cb3bb1",
+    "expected_corners": 4,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv2020/srb_passport/05",
+    "physical_id": "srb_passport/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "49e7474328637eb478f9cb02ba23547f14476bafdcfee73715d109db8d343fc5",
+    "expected_corners": 4,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/srb_passport/59",
+    "physical_id": "srb_passport/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "29d804de5bdd44dc265ffca5471caff9c808f4da457d65c8a67c1c72c7fc0e63",
+    "expected_corners": 4,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/svk_id/05",
+    "physical_id": "svk_id/05",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "ff8c846b3dcd1ee0ce93349fb669e9f3b30d3f642dc4514bdcaa43c34e582417",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv2020/svk_id/59",
+    "physical_id": "svk_id/59",
+    "source": "midv2020",
+    "selection_stratum": "external",
+    "input_sha256": "6a87802a0b00c1cd1320f356b1c9cde01ade7072e802f9230828dfdaf7f6f166",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA05_15",
+    "physical_id": 5,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "fff0add601b59e37ab9262ce6ca26eb7484a664a92416a736dccd44fa7a625bb",
+    "expected_corners": 4,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA08_15",
+    "physical_id": 8,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "0d8c6e8b8771649e6e78eef38d640dec292686e09eb158b0d3c13feb8e5cbb77",
+    "expected_corners": 3,
+    "eligible_fields": 5,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 3
+    }
+  },
+  {
+    "uid": "midv500/CA09_15",
+    "physical_id": 9,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "f22b4f493417f202df399ec668374636b3f374ceac6e1e1a89426dc4eb31554a",
+    "expected_corners": 3,
+    "eligible_fields": 0,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 2
+    }
+  },
+  {
+    "uid": "midv500/CA17_15",
+    "physical_id": 17,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "894b0cd8138a94dda7fc4eec495807db07c62f10841a058dc25c88de34f30fdf",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA18_15",
+    "physical_id": 18,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "5fc8077677b60ae200ba0e15775a53c8cf5f94d0d0455afa92b9cd4dfc70c98d",
+    "expected_corners": 4,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 4
+    }
+  },
+  {
+    "uid": "midv500/CA19_15",
+    "physical_id": 19,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "a17639f031bd1e6f1cbe0c30833e1581aa9492d7bd22b051c9f59a9b90d00ad9",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA20_15",
+    "physical_id": 20,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "64626e3010d9f6dc82bbb99e9bd27e3d608e598c7aada7fb5a972110ffac0095",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA21_15",
+    "physical_id": 21,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "d1fcb44583497adab53aaa8cae8319a303b0ad551331a82288057657410790a8",
+    "expected_corners": 4,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA27_15",
+    "physical_id": 27,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "a0af97ab5f3482f1ee33c91d6ea45207622c2aecc7c31ee930d581843045012f",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA30_15",
+    "physical_id": 30,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "9ca0b6b6860ef67ee8b67299fc23b67b597af2c3901a566562e6b38fd18d6814",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CA40_15",
+    "physical_id": 40,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "b27eb768e218b030f4a3acc240f90d2e7cda392f64946efd7c405a1a96bea97d",
+    "expected_corners": 3,
+    "eligible_fields": 4,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 4
+    }
+  },
+  {
+    "uid": "midv500/CS02_15",
+    "physical_id": 2,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "a2bbb65d30eb2c738827d0d7c6694cd3bee58aec301d7c92c0147c18d39bc2a7",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS05_15",
+    "physical_id": 5,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "eaf79ce21bf00a98ea2656ff135773128ac9a2b333107f882daf608bad030dc5",
+    "expected_corners": 3,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS06_15",
+    "physical_id": 6,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "9ab84126c30810fb7435ce46a72aa42d5f43e0efc78c9ce3b6152f994223b65a",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS07_15",
+    "physical_id": 7,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "218589b0da23ecf28a3503578826405eab6d4849360bd98d38a8da139c975666",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS09_15",
+    "physical_id": 9,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "ca953d8e967711cffafd1c0ac18fdc0acb390a61b35f79ca56823b4b1d69b088",
+    "expected_corners": 4,
+    "eligible_fields": 0,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 2
+    }
+  },
+  {
+    "uid": "midv500/CS11_15",
+    "physical_id": 11,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "396c8307f022e60cb96dc0443102e7edabc51f9135b43c937a7b6074dfba5668",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS15_15",
+    "physical_id": 15,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "33b13ce2be50d22015e766d0d0b70fb639108485ad75cc376b9e33dff3f170ec",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS16_15",
+    "physical_id": 16,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "552d3c91d27badd5538f84b9575980237da01eb34aa96918e6403521d3c639fd",
+    "expected_corners": 4,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS19_15",
+    "physical_id": 19,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "6d046f36df437b01417a3145296ce349ae7ca961f38504cab5febd118cc6f894",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS20_15",
+    "physical_id": 20,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "07b3a7110a9a39ae14f49d487cd0739fc440da0d39b02bda377a84df3b8d06f4",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS25_15",
+    "physical_id": 25,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "eed4dfa61fe28bf17406869a8c47f9f08c49f380d890c84f9ab7b92a55f5d26e",
+    "expected_corners": 3,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv500/CS28_15",
+    "physical_id": 28,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "4e13f13f0b6c159f840c6156c4a568c56d235c0b8b61c856cee29f4dc6449bfb",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS33_15",
+    "physical_id": 33,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "7b044f032cab6b373247eeb8bb0400cbac1ccce02011b2bb2680d8e4e598f328",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/CS34_15",
+    "physical_id": 34,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "499c5bde082f0eaf6568c1b954c7ea470d232759a204a5dc8a063772de68deee",
+    "expected_corners": 3,
+    "eligible_fields": 16,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS35_15",
+    "physical_id": 35,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "1646ea76182561ea0a9634b781b4bd0f1cb02763def250ada95ebc9589e9143f",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/CS37_15",
+    "physical_id": 37,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "08aba02d391b76a17e18b12e74d8632c3082f758716d2a85114cba7fa3b54e77",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS38_15",
+    "physical_id": 38,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "07d0de20ecd2f0f13d21959c4fc3d2f21e12c9fe4deb92a24f6e5fc041f69c4d",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS39_15",
+    "physical_id": 39,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c185814e0918dd5ee947a05ecd77affda12c63e8d453db41a290ebdfa51389af",
+    "expected_corners": 3,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv500/CS40_15",
+    "physical_id": 40,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "be57d552c8a3f44e319d49682b93c7f3d729382628fb99031f6016d5fc2d57a2",
+    "expected_corners": 3,
+    "eligible_fields": 4,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 4
+    }
+  },
+  {
+    "uid": "midv500/CS41_15",
+    "physical_id": 41,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "24108e8aaabb912ce3c09581df092e870e22b8efd5baf52ca8e807a229cfacf2",
+    "expected_corners": 3,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/CS44_15",
+    "physical_id": 44,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "e3720fb33df4159db5e5b235bbd2905c39f781624d06cdfd69fca391aa476121",
+    "expected_corners": 3,
+    "eligible_fields": 6,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv500/HA05_15",
+    "physical_id": 5,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "229800f3ea4e1e7ef1cf8ab06973aed1cbabdb9554d849afd968d4aa524e27d3",
+    "expected_corners": 3,
+    "eligible_fields": 18,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA09_15",
+    "physical_id": 9,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c7b5502e60270ce33e3ff61158afd3d55eed7cd1c36d767c6c23a39765be31fe",
+    "expected_corners": 3,
+    "eligible_fields": 0,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 2
+    }
+  },
+  {
+    "uid": "midv500/HA10_15",
+    "physical_id": 10,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "f6e47cc6ee5f522696e8c5554e0c6db69de987c4c6fa9ed574c8f309c184e794",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA12_15",
+    "physical_id": 12,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "b9d388688ff418f9d393c98a5dc17ec8969bc2071ceed2a890a3fb0262fa0b00",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA21_15",
+    "physical_id": 21,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "a0cbcc6abea2c9e635236e2a72d4b61f2181ffafc8b492b838965455bb24813e",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA27_15",
+    "physical_id": 27,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "67f25a21c49e7f9597062c6bb972e17ef21df99604d2e1781df8344748b1c468",
+    "expected_corners": 4,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA30_15",
+    "physical_id": 30,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "843cac451b9d6c3fcea68c6a088026d4b43feeec00caeeb81b1f931fa873cc3b",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA31_15",
+    "physical_id": 31,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "b3669d433b4d6a46d9bc165980cf2b058bda9c39319b8f1f67a3be95f96b0665",
+    "expected_corners": 4,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 9
+    }
+  },
+  {
+    "uid": "midv500/HA32_15",
+    "physical_id": 32,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "09e3f7f955c2ddf7be96246daa9e16b2cccd85c75bc2ac61c2a160f436e6ca47",
+    "expected_corners": 4,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA36_15",
+    "physical_id": 36,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "1e318ad9e66a9d335df35a03934441f23a39cda4ab912775029f8c8278d01096",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/HA48_15",
+    "physical_id": 48,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ea09b6423dc718e6b0c100b14d54451f1e08e735651a61a54e48b8b9c14fc93d",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 1,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HA50_15",
+    "physical_id": 50,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c890f7e76d75adaf80324b322c9acc2c0537f2eddc59b6688f8c8aa22a22737f",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS01_15",
+    "physical_id": 1,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "9a39e17005857da310cc5038ff2fdde5c3db8d778b2bb9b8d93a42531a22257d",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS04_15",
+    "physical_id": 4,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "30a8962f6a60dc3e867c0547643f015f5409be8ede1b594814b3393020bdf344",
+    "expected_corners": 3,
+    "eligible_fields": 7,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS06_15",
+    "physical_id": 6,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "2b74d32af894c5b4a639310ceabf2dd7e24bf2962f5a6f41e36f627147f8a1a2",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS08_15",
+    "physical_id": 8,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "7d4254abcefeb53c42d6760d7e6fdcc0f0dfc20550c364ef11214c54c487eae2",
+    "expected_corners": 3,
+    "eligible_fields": 5,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 3
+    }
+  },
+  {
+    "uid": "midv500/HS09_15",
+    "physical_id": 9,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "b21e1ddb3a57eac71e6c2c2c6ac7837f1ec83ba5a02da0595f8a48c19a2de62b",
+    "expected_corners": 3,
+    "eligible_fields": 0,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 2
+    }
+  },
+  {
+    "uid": "midv500/HS14_15",
+    "physical_id": 14,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "74f133431dae513ba7c32269c0247af3784293b31b1fd02f2614b436ed7d0b70",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS16_15",
+    "physical_id": 16,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ecfed14b7a62cb60fbcb91b93708241be0601a42d93d40218c5ec7c829591899",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS17_15",
+    "physical_id": 17,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "0bc3aa3246e179a58d61792949867b378d057d602eaf0b174238069583f27bf2",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS19_15",
+    "physical_id": 19,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "97fa0f4831119ee6e4d93b81558bd5aa96c0e548cd94d9ae7192142d2ac7363e",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS22_15",
+    "physical_id": 22,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "8da758c7e1f015d50e5750c60919a823c3d4107d8a0f76735c6fe1afc691c7df",
+    "expected_corners": 4,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS24_15",
+    "physical_id": 24,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "51a4747d0636f08c6f27af415e2b085c368eb2f03cefa8c210f25f967e74a710",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS25_15",
+    "physical_id": 25,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "1f64e681987e34f491572e217bf33a279958c9a9144d7226b90098a8d1660a63",
+    "expected_corners": 3,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv500/HS28_15",
+    "physical_id": 28,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "a7d7daae36970c6d866817f6a1a19679371b0952a7d29eed658f5bb7e9f50c05",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/HS31_15",
+    "physical_id": 31,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "65d0ab8f6dca85bd1ff7b88bbafefcb0f6df04b51730afd5c4eb2b6370404b68",
+    "expected_corners": 3,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 9
+    }
+  },
+  {
+    "uid": "midv500/HS41_15",
+    "physical_id": 41,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "160bdc9bf87d38db871b1c2b909cab1c1ae464c798401438b369bf8eff0213f5",
+    "expected_corners": 3,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA02_15",
+    "physical_id": 2,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "fa251152e5a4ffbedd328c5b06b496745f354c40a36a0dd556de01720ef21794",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA03_15",
+    "physical_id": 3,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "44b163885ffad0bac16773435f6632294bbff6cc75cda7c5a39687ed1a108449",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA10_15",
+    "physical_id": 10,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "a439230c752e25e5836d4ee5bf8a6bf0ea81dfc377f0b8361865d26ac2baa26e",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA16_15",
+    "physical_id": 16,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "dc70a16fb1761e8d2c46b08138efd0bbd945b082d57d6a0843f74fc60f29149a",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA20_15",
+    "physical_id": 20,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "d2d7ab5082a6412d8018053ab64d23b2048d03b8d3d9b0a233a04410c26465e8",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA22_15",
+    "physical_id": 22,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "69b64fd6a7a49aec6fd152380bf246a91a71a4828a33b18d9c62d221bcbeee11",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA23_15",
+    "physical_id": 23,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "e92ff12e375b576a5fcc8d2921172e4240a2dcfe1c007c623168a9f50901a754",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA26_15",
+    "physical_id": 26,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "de3546ee7b62666a9f6fb75442c5f6e573f7513cb1be77dfabe558359a73f9f4",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KA29_15",
+    "physical_id": 29,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "5e0c21676ebd202265409fa4f700b11cf690598230d7b9a87f3691e54b17e256",
+    "expected_corners": 4,
+    "eligible_fields": 0,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 7
+    }
+  },
+  {
+    "uid": "midv500/KA33_15",
+    "physical_id": 33,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "c735abe33245b6aaeb3ca09a92ae3b2b0b0142ae1624cee366594234bc5699d7",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/KA50_15",
+    "physical_id": 50,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "13bdd550f6785cf67c696cb9a4e89db96fea2106066e1390e20571ee38a6cac3",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KS02_15",
+    "physical_id": 2,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ed9523a6ef2b65fd89af525691fbfe54a95e43869944d0287075fdf81c56a5a9",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KS13_15",
+    "physical_id": 13,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "529978418fff6e903d85a363dd756b835b96930e49e98b40b4e9784a6037bbdb",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/KS23_15",
+    "physical_id": 23,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "275ce8dd74c182226509e125c3eef3bbd3633c60ea506f04ef9c119ed55f6215",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KS25_15",
+    "physical_id": 25,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "cef8541f367e20ed42a54187d5524d275c23eb16a3bb019822519072210a627f",
+    "expected_corners": 3,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv500/KS27_15",
+    "physical_id": 27,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "2907987062748868ce9f61bf830b59c4d23802d3ded87058e001797ad17cf337",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KS30_15",
+    "physical_id": 30,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "358884783856eba893c1721b15d11273fc43258a123c6bb2971be8012a6c2dc6",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/KS33_15",
+    "physical_id": 33,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "e1e145d356183b7feb942fb62dc70f39816a4f86c9ec88b63d2eccaf03a9b9f2",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/KS36_15",
+    "physical_id": 36,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "147be4d278f9c8e2fbdc8664949d786e9c940cba23ec6facb13a8830d40201d9",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/KS40_15",
+    "physical_id": 40,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "19e278dd30351c117a8db79a1c6a18b4dd8321098f77f62ff98ff970172c6ce6",
+    "expected_corners": 4,
+    "eligible_fields": 4,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 4
+    }
+  },
+  {
+    "uid": "midv500/KS45_15",
+    "physical_id": 45,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "90fad82fc0339d9e858d877034115acc15b2e74252ff4aeead739f384c0e0dc8",
+    "expected_corners": 4,
+    "eligible_fields": 7,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 8
+    }
+  },
+  {
+    "uid": "midv500/PA02_15",
+    "physical_id": 2,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "3b8182d0f80a633a17e0d92935b0129913e513d603bea429bc10031c5e25a5ba",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PA04_15",
+    "physical_id": 4,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "aaa8eaec6090bdb88376e6fffaefb801d068dd1d540896ecc8cf3ea18174e11a",
+    "expected_corners": 3,
+    "eligible_fields": 7,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PA21_15",
+    "physical_id": 21,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "35ef1e250764d2d3398e726538d02f411c87ca279525326599f1c5e7e25d04c8",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PA25_15",
+    "physical_id": 25,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "978868a0baffc270d0f319ab671752d5c18e4eb16d9de70753c708a3646b5310",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 2,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv500/PA48_15",
+    "physical_id": 48,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "3bdf3db586d40060322b8c4e5a62fb4aa646d7b3cb131ae8299b3555dc18ff3c",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS10_15",
+    "physical_id": 10,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "3d64cc65ae24f48f325594d6af4f2cc5a843bb8093425fbc523317db1ed773ae",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 2,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS12_15",
+    "physical_id": 12,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "fc4a8b4c0e315c7eb1d4ab35df3b48d4720f97d9d8189dace551a6afe40e4b83",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS21_15",
+    "physical_id": 21,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ff3cc8a1da2c4ea9158eeb59c5857a9e6d27b0f67557ad377e7d48f766ff0ce6",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS23_15",
+    "physical_id": 23,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "62d3560bff0f16ca2faa6215035c5f386680f37f13ed7e1b3e5f7b01154705eb",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS24_15",
+    "physical_id": 24,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "def4f70198b57904ac5643d39aadfb034fa90ddaced3261cff3fb290382a039e",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS26_15",
+    "physical_id": 26,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c0336c319ac72ebfc5b904d5e5b24bcc3ebf46a91cdcf4975150dd0746bb0811",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS36_15",
+    "physical_id": 36,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "b59665685d4e8fb5ebfb2036c16dfbcd68b183caa31684de0e2a2b4b41d5079f",
+    "expected_corners": 3,
+    "eligible_fields": 6,
+    "excluded_fields": {
+      "partial": 5,
+      "non_latin_or_invalid": 1
+    }
+  },
+  {
+    "uid": "midv500/PS38_15",
+    "physical_id": 38,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c362689540822a955d0765b0978ac9e1a031f0ff80ef3acdb0e893ac21b58691",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/PS40_15",
+    "physical_id": 40,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "8a57cdbb717227f56c8f4fa0e21a2dccc7bee67b3d61fbf9e0f1fa9b33847273",
+    "expected_corners": 3,
+    "eligible_fields": 4,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 4
+    }
+  },
+  {
+    "uid": "midv500/PS48_15",
+    "physical_id": 48,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "41d807b897aec1b3904f125b867424ee6d73eb0a3ff562e57fbde7e2a928415e",
+    "expected_corners": 3,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA12_15",
+    "physical_id": 12,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "2a42aef9a2c7e1aa0f83ed5e116b6fbbea319d9bfa5af5a428c5a67557450309",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA17_15",
+    "physical_id": 17,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "0ff59d57282fd2b03000e1e67b31a0f23f12ee5fb2eb114587032cf3a4a5cfc4",
+    "expected_corners": 4,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA22_15",
+    "physical_id": 22,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "7df39066b55945b8e0c37ae51942de33263bd598efeb6a43942b686f6ca8b287",
+    "expected_corners": 3,
+    "eligible_fields": 8,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA23_15",
+    "physical_id": 23,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "6da12fd56d5152ba9301a7c490de46349124ae36bf2a5b3f8ce18b7aef1497e5",
+    "expected_corners": 4,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA28_15",
+    "physical_id": 28,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "4d6e19623de56037336e96da2d0650f680ddda6a0f25a60115872f37799ea69d",
+    "expected_corners": 4,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA37_15",
+    "physical_id": 37,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "94fd71a9dcad625eb1f3eb6d51bf040abb029f578190091b703f13d4c5b667fe",
+    "expected_corners": 3,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TA39_15",
+    "physical_id": 39,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "d4ff2f2f47a9492252eb1016ddcc8782c8b70306ab0c89061d77100e021a774e",
+    "expected_corners": 3,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv500/TA44_15",
+    "physical_id": 44,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "e7856f4d75a9025e854db09f9b7e7b6a94de523217ce7b2ad6701a3569039bf9",
+    "expected_corners": 3,
+    "eligible_fields": 6,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv500/TS07_15",
+    "physical_id": 7,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "c199a1f231d5c23f80dc145cea438ae7b5e204dd8d7fda9bc61452d6b2d1a9f2",
+    "expected_corners": 3,
+    "eligible_fields": 10,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS15_15",
+    "physical_id": 15,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "e13f47cc828338e67131a7b79ad4be7a0219bb171c2b946c38c665de975a3547",
+    "expected_corners": 4,
+    "eligible_fields": 9,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS16_15",
+    "physical_id": 16,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "88ba75a942e1eff9938fc694ab962cfc07dc975e5cffb31cab003c3d609b6280",
+    "expected_corners": 3,
+    "eligible_fields": 15,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS25_15",
+    "physical_id": 25,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "352466095e4f1909b2f6c1b6ccf499643d95de8363b993ef84d7f9cd0f0e3d24",
+    "expected_corners": 3,
+    "eligible_fields": 13,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 6
+    }
+  },
+  {
+    "uid": "midv500/TS27_15",
+    "physical_id": 27,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "469547881602e44050a937a808a689381171614e2940f48b7cd41efa27c2961d",
+    "expected_corners": 3,
+    "eligible_fields": 14,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS34_15",
+    "physical_id": 34,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "ededd06fa614a9e7d7859e68867eb95424acced0079febfc6cc9ca780e659e1a",
+    "expected_corners": 3,
+    "eligible_fields": 16,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS39_15",
+    "physical_id": 39,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "16f9c51bf5d10777c755475986ed82644b01bbca0f7117c1c50e75a261140cb3",
+    "expected_corners": 3,
+    "eligible_fields": 2,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 5
+    }
+  },
+  {
+    "uid": "midv500/TS41_15",
+    "physical_id": 41,
+    "source": "midv500",
+    "selection_stratum": "three_corners",
+    "input_sha256": "11e78e1a53152b4155eea104d8947b2b809ae3e4610461997138f36b662c3a7d",
+    "expected_corners": 3,
+    "eligible_fields": 17,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  },
+  {
+    "uid": "midv500/TS48_15",
+    "physical_id": 48,
+    "source": "midv500",
+    "selection_stratum": "four_corner_control",
+    "input_sha256": "fa87d4a220dc128a62b4dbaad3abb4aea2b482d36d9afb5a4c8147633341c3e3",
+    "expected_corners": 4,
+    "eligible_fields": 11,
+    "excluded_fields": {
+      "partial": 0,
+      "non_latin_or_invalid": 0
+    }
+  }
+]

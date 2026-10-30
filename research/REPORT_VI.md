@@ -1,10 +1,20 @@
 # Báo cáo nghiên cứu khả thi hướng CORE B
 
-Ngày đối chiếu tài liệu và chạy thử: **28/10/2026**. Đây là báo cáo kết quả
+Ngày đối chiếu tài liệu và chạy thử ban đầu: **28/10/2026**; bổ sung OCR
+đầu cuối hoàn tất **30/10/2026**. Đây là báo cáo kết quả
 thật của các ứng viên nghiên cứu, chưa phải tuyên bố đã hoàn thành một paper
 đủ điều kiện được nhận. CORE B là hạng hội nghị, khác với Q2 của tạp chí.
 
 ## 1. Kết luận tại thời điểm này
+
+**Cập nhật30/10:** [benchmark OCR đầu cuối](E2E_RESULTS_VI.md) đã xong:
+161 ảnh + hai lượt lặp cùng panel32, tổng225 lượt ảnh/2700 hàng kết quả.
+VietOCR trên91 ca neural ba góc: raw22,09%, support27,69%, hình bình hành
+nới5%32,64% field exact; latency tương ứng14,78/16,25/12,76 giây/ảnh.
+Support cải thiện so với raw nhưng không vượt baseline completion đơn giản;
+mask không tăng field exact tổng so với bbox. Vì vậy thiếu sót hiện tại đã
+chuyển từ **chưa đo OCR thật** sang **chưa chứng minh lợi ích riêng đủ mạnh
+của ứng viên mới**. Không thay kết quả âm bằng tuyên bố đủ CORE B.
 
 Hướng phù hợp nhất với máy hiện có là **bảo toàn vùng thông tin khi định vị/cắt
 giấy tờ, kết hợp quyết định xử lý tự động hoặc yêu cầu xem xét**. Nó dùng lại
@@ -374,7 +384,7 @@ là ích lợi OCR/KIE khi bảo toàn phần quan sát được với chi phí 
 | Lợi ích phương pháp | Hỗn hợp; giữ chữ tốt hơn nhưng IoU/throughput/utility có thể giảm |
 | Điểm mới thuật toán | Chưa đủ: phần lớn thành phần có tiền lệ gần |
 | So sánh neural mạnh | Đã có DocAligner trên cùng 700 ảnh và 20 ảnh ngoài; còn thiếu đối chiếu SOTA/adapter và provenance train |
-| OCR/KIE end-to-end | Chưa đủ; diagnostic 58 vùng không thay thế benchmark end-to-end |
+| OCR/KIE end-to-end | Đã đo OCR với predicted boxes trên161 ảnh + panel lặp; support thua baseline completion về mô tả accuracy/CPU; semantic KIE chưa đo |
 | Kiểm chứng ngoài | Đã chạy 20 ID mới, nhưng chỉ hai điều kiện và template trùng; còn quá nhỏ |
 | PAD/liveness/face matching | Nằm ngoài giả thuyết nghiên cứu này; không có đánh giá PAD mới |
 
@@ -388,11 +398,11 @@ Các mốc còn cần trước khi viết lời khẳng định mạnh trong pap
 1. **Baseline/provenance:** xác minh adapter với package tác giả và lịch sử
    train; bổ sung một model khác và so sánh với incomplete-boundary methods.
    Không gắn nhãn SOTA chỉ vì đã có neural network.
-2. **Chốt bài toán partial-content thay vì coverage đơn thuần:** kiểm tra OCR
-   end-to-end của support so với full-frame và parallelogram+5% ở cùng mức lỗi,
-   đo cả crop bounding box và latency. Chỉ phát triển thêm thuật toán khi một
-   hạn chế cụ thể còn tồn tại trước các baseline đơn giản đó. Không tune trên
-   test cũ rồi gọi test cũ là xác nhận độc lập.
+2. **Sau benchmark OCR đã hoàn tất:** support chưa vượt parallelogram+5%.
+   Tìm nhóm lỗi cụ thể của baseline này, dùng tập development khác để phát
+   triển selector/refinement nếu có cơ sở, rồi khóa trên ID mới. Giữ cả raw,
+   full-frame ba góc, bbox và completion trong so sánh. Không tune trên test
+   cũ rồi gọi test cũ là xác nhận độc lập.
 3. **Test ngoài đủ lớn và OCR thật:** tăng số ID/camera/điều kiện, có GT text,
    báo cáo CER, field exact match, ID-number exact match, recapture/review và
    latency. Dùng đủ ít nhất hai OCR reader phù hợp ngôn ngữ.
@@ -408,6 +418,11 @@ khi kiểm tra. ICPR và ICIP là lựa chọn khác trong literature review, nh
 cần kiểm tra đúng kỳ/track. Không bảo đảm được nhận chỉ từ hạng hội nghị.
 
 ## 10. Các file để kiểm tra độc lập
+
+- [Báo cáo OCR đầu cuối30/10](E2E_RESULTS_VI.md),
+  [mọi hàng OCR](results/e2e_ocr_v2/per_image.jsonl.gz),
+  [audit độc lập](results/e2e_ocr_v2/audit.json),
+  [chạy lặp thật](results/e2e_ocr_v2/repeat_audit.json).
 
 - [Protocol v1](PROTOCOL.md), [OCR phụ](SECONDARY_OCR_PROTOCOL.md),
   [protocol v2](RISK_POLICY_PROTOCOL.md), [protocol ngoài](EXTERNAL_PROTOCOL.md).

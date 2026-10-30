@@ -1,0 +1,17 @@
+{
+  "model_loading": {
+    "wall": 3.234923699987121,
+    "cpu": 3.78125
+  },
+  "synthetic_warmup": {
+    "wall": 2.1403071999084204,
+    "cpu": 4.265625
+  },
+  "vietocr_batch_parity": {
+    "synthetic_lines": 8,
+    "text_mismatches": 0,
+    "max_confidence_difference": 4.355724041449349e-07,
+    "tolerance": 0.0001
+  },
+  "excluded_from_inference_latency": true
+}

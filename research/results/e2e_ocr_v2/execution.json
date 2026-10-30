@@ -1,0 +1,8 @@
+{
+  "signature": "31c00e69dad9ee35916e692ee7d17e4691b827caa48936f50db6a0d9a6ef62d1",
+  "fresh_images_this_invocation": 225,
+  "elapsed_seconds": 13459.884119200055,
+  "complete_image_checkpoints": 225,
+  "startup_excluded": true,
+  "unexpected_cases_dropped": 0
+}

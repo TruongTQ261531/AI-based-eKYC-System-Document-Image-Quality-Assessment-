@@ -1,0 +1,10 @@
+{
+  "code_sha256": "4a8a6ecc049a708862675658542a11b64eb62e48115ae9694714555a4be8aa88",
+  "input_rows_sha256": "3b0feb3f510ba45fc50acb23213d373616611b591c70fdc9d3942d50092a1602",
+  "bootstrap_resamples": 2000,
+  "bootstrap_unit": "physical_document",
+  "bootstrap_test_seed": 13,
+  "supplementary_plan_sha256": "4f77abc14a3a988017a4602694be49c5a78bc5d8af7cb6bbc52543c1c06dd7a3",
+  "repeats_are_independent_samples": false,
+  "semantic_kie_evaluated": false
+}

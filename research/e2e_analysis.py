@@ -41,7 +41,8 @@ def paired_bootstrap(rows,policy,reader,metric,test_ids,rng,reference='raw_fullf
     bootstrap=delta[rng.integers(0,len(delta),(2000,len(delta)))].mean(axis=1)
     return dict(policy=policy,reference=reference,engine=reader,metric=metric,physical_ids=len(ids),stratum=stratum,
         mean_paired_delta=float(delta.mean()),ci95=np.quantile(bootstrap,[.025,.975]).tolist(),
-        weighting='Equal physical-ID means of per-image field means; differs from pooled-field tables',
+        weighting=('Equal physical-ID means of per-image latencies' if metric=='total_wall' else
+                   'Equal physical-ID means of per-image field means; differs from pooled-field tables'),
         interpretation='Exploratory paired ID-level interval; no multiplicity correction')
 
 
@@ -130,12 +131,20 @@ def main():
                 truncated_regions=sum(r['truncated_regions'] for r in selected),
                 gt_corner_visibility={str(k):sum(r['score']['gt_visible_corners']==k for r in selected) for k in range(5)}))
     save(ROOT/'failure_breakdown.json',failures)
+    corner_rows=[r for r in rows if r['repeat']==1 and r['engine']=='easyocr_en' and
+                 r['policy']=='raw_fullframe' and r['selection_stratum']=='three_corners']
+    save(ROOT/'corner_visibility.json',dict(neural_three_corner_images=len(corner_rows),
+        ground_truth_visible_corner_counts={str(k):sum(r['score']['gt_visible_corners']==k for r in corner_rows) for k in range(5)},
+        interpretation='Neural observed-corner count is a prediction, not GT physical corner visibility'))
     full=[r for r in summary if r['repeat']==1]
     fig,axes=plt.subplots(1,2,figsize=(12,5),constrained_layout=True)
     for ax,reader in zip(axes,('easyocr_en','vietocr')):
         selected=[r for r in full if r['engine']==reader and r['stratum']=='three_corners']
         x=np.arange(len(selected));ax.bar(x,[100*r['field_exact'] for r in selected],color='#087f8c')
-        ax.set(xticks=x,xticklabels=[r['policy'].replace('three_','').replace('raw_','') for r in selected],
+        labels={'raw_fullframe':'raw full frame','neural_strict':'strict reject',
+                'three_fullframe':'3-corner full frame','three_support':'support mask',
+                'three_support_bbox':'support bbox','three_parallelogram05':'parallelogram +5%'}
+        ax.set(xticks=x,xticklabels=[labels[r['policy']] for r in selected],
                ylabel='Exact transcription of evaluable fields (%)',title=reader)
         ax.tick_params(axis='x',rotation=35)
     fig.suptitle('Prediction-only end-to-end OCR on the 91 three-corner cases\nSpatial transcription evaluation; not semantic field labeling')
@@ -148,8 +157,12 @@ def main():
             ax.scatter(result['mean_wall_seconds'],100*result['field_exact'],s=40)
         ax.set(xlabel='Mean measured CPU-pipeline wall time (seconds/image)',ylabel='Exact field transcription (%)',title=reader)
         for index,result in enumerate(selected):
-            ax.annotate(str(index+1),(result['mean_wall_seconds'],100*result['field_exact']),xytext=(3,3),textcoords='offset points')
+            offset=(-22,13) if result['policy']=='three_support' else (10,-15) if result['policy']=='three_support_bbox' else (4,4)
+            ax.annotate(str(index+1),(result['mean_wall_seconds'],100*result['field_exact']),xytext=offset,
+                        textcoords='offset points',arrowprops={'arrowstyle':'-','linewidth':.5} if index in (3,4) else None)
+        ax.margins(x=.12,y=.1)
         ax.text(.02,.98,'\n'.join(f'{i+1}: {r["policy"]}' for i,r in enumerate(selected)),transform=ax.transAxes,va='top',fontsize=8)
+    fig.suptitle('Full first pass: 141 primary images; support and bbox nearly coincide')
     for suffix in ('png','pdf'):fig.savefig(ROOT/f'accuracy_latency.{suffix}')
     plt.close(fig)
     save(ROOT/'analysis_provenance.json',dict(code_sha256=digest(__file__),input_rows_sha256=digest(ROOT/'per_image.jsonl.gz'),

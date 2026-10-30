@@ -1,0 +1,452 @@
+[
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.04263337672428581,
+    "ci95": [
+      0.013985348616030438,
+      0.07201749639249638
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.06153527650053074,
+    "ci95": [
+      -0.0923186714824958,
+      -0.03322763872207353
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 1.4559420340540952,
+    "ci95": [
+      -0.14006903197043113,
+      3.2422998456228513
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.043939646212373486,
+    "ci95": [
+      0.020163465007215,
+      0.07015605133502856
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.061669418219112274,
+    "ci95": [
+      -0.09139417031665051,
+      -0.03496887162290531
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 1.4845613521440257,
+    "ci95": [
+      0.538725560240625,
+      2.3825680016648803
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.07981233833506561,
+    "ci95": [
+      0.0472864262210853,
+      0.11266489665637393
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.10208552791578351,
+    "ci95": [
+      -0.1644003507734717,
+      -0.048891347747392296
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "easyocr_en",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": -1.7964091453194262,
+    "ci95": [
+      -3.1066324398497835,
+      -0.7151945296971913
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "easyocr_en",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.0013062694880876682,
+    "ci95": [
+      -0.010585342687615412,
+      0.009275743196197742
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "easyocr_en",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.0001341417185815193,
+    "ci95": [
+      -0.006867593550272947,
+      0.007251796869406568
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "easyocr_en",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.02861931808993015,
+    "ci95": [
+      -0.9666267173366969,
+      1.125365739327347
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "easyocr_en",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.037178961610779805,
+    "ci95": [
+      -0.0698243118413573,
+      -0.004914720170402023
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "easyocr_en",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.040550251415252765,
+    "ci95": [
+      -0.0047619859739504115,
+      0.09294849370926521
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "easyocr_en",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 3.2523511793735214,
+    "ci95": [
+      1.8385899148262033,
+      4.9241384913696615
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.08811225353671878,
+    "ci95": [
+      0.03968798446614289,
+      0.14320909631070045
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.09874537403254725,
+    "ci95": [
+      -0.15678646920861902,
+      -0.05112140246874439
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 1.3327134539625451,
+    "ci95": [
+      0.42018922153375043,
+      2.26145178333731
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.08811225353671878,
+    "ci95": [
+      0.03964609885064431,
+      0.13998308236067258
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.10546317508373902,
+    "ci95": [
+      -0.16616431623881647,
+      -0.05719591292984414
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support_bbox",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 1.321624149257938,
+    "ci95": [
+      0.5358747016837605,
+      2.0685282829482494
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.12624056288829014,
+    "ci95": [
+      0.07266889176690311,
+      0.18418321840196836
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.14496589734670917,
+    "ci95": [
+      -0.20437803748897848,
+      -0.08787419066812356
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_parallelogram05",
+    "reference": "three_fullframe",
+    "engine": "vietocr",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": -1.6865294373339461,
+    "ci95": [
+      -2.6799841750237925,
+      -0.6954740903795824
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "vietocr",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "vietocr",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.006717801051191769,
+    "ci95": [
+      -0.0013997182321046125,
+      0.018345853526373204
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_support_bbox",
+    "engine": "vietocr",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.011089304704607025,
+    "ci95": [
+      -0.4841857636654377,
+      0.45083948658016615
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "vietocr",
+    "metric": "field_exact",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": -0.038128309351571375,
+    "ci95": [
+      -0.08543601118133202,
+      0.009831798938583698
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "vietocr",
+    "metric": "macro_cer",
+    "physical_ids": 22,
+    "stratum": "three_corners",
+    "mean_paired_delta": 0.046220523314161904,
+    "ci95": [
+      -0.015960809434363923,
+      0.11069170251514139
+    ],
+    "weighting": "Equal physical-ID means of per-image field means; differs from pooled-field tables",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  },
+  {
+    "policy": "three_support",
+    "reference": "three_parallelogram05",
+    "engine": "vietocr",
+    "metric": "total_wall",
+    "physical_ids": 23,
+    "stratum": "three_corners",
+    "mean_paired_delta": 3.0192428912964915,
+    "ci95": [
+      2.3390252541421037,
+      3.649996073211735
+    ],
+    "weighting": "Equal physical-ID means of per-image latencies",
+    "interpretation": "Exploratory paired ID-level interval; no multiplicity correction"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "neural_three_corner_images": 91,
+  "ground_truth_visible_corner_counts": {
+    "0": 0,
+    "1": 1,
+    "2": 7,
+    "3": 73,
+    "4": 10
+  },
+  "interpretation": "Neural observed-corner count is a prediction, not GT physical corner visibility"
+}

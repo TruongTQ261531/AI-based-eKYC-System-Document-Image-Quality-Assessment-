@@ -13,6 +13,28 @@ Start with [the Vietnamese evidence report](REPORT_VI.md),
 Primary results, including failed candidates, remain unchanged. Subsequent
 protocols explicitly identify their exploratory timing.
 
+The completed2026-10-30 follow-up is [end-to-end OCR evidence](E2E_RESULTS_VI.md):
+161 distinct images plus two fresh32-image panel repetitions,225 image
+executions,2700 result rows, and independent checkpoint/publication re-scoring.
+Support improves over raw but loses to the simple padded-parallelogram control
+in descriptive three-corner accuracy and latency; this is not a superiority
+or submission-readiness claim. No mentor runtime changes were made.
+
+Inspect progress before resuming a stopped chat; a usage interruption does not
+necessarily stop its Python process. Never launch a duplicate invocation.
+After all225 checkpoints exist, reproduce the analysis/audit/report with:
+
+```powershell
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_progress
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_analysis
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_alphabet_audit
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.audit_e2e
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_report
+```
+
+These commands do not re-run OCR. Raw text predictions stay in the local
+Git-ignored cache; published artifacts contain numeric metrics/hashes only.
+
 From this worktree, using the existing Python environment:
 
 ```powershell

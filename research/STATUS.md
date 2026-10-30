@@ -1,8 +1,10 @@
-# Research checkpoints (latest active follow-up: 2026-10-30)
+# Research checkpoints (latest completed follow-up: 2026-10-30)
 
-## Active follow-up, 2026-10-30
+## Completed end-to-end OCR follow-up, 2026-10-30
 
-Prediction-only end-to-end OCR has been implemented separately and launched.
+Prediction-only end-to-end OCR completed with exit0 after13459.884 seconds
+(224.33 minutes),225/225 image executions,2700 public rows. Nothing remains
+running in this OCR study. Read [E2E_RESULTS_VI.md](E2E_RESULTS_VI.md).
 Read E2E_OCR_PROTOCOL.md and E2E_OCR_PROVENANCE.md. Protocol/code initially
 locked in8819841; runtime-only161/32/32 schedule amended in8cef538 before
 accuracy inspection. Six original engineering pilot images are retained
@@ -14,11 +16,23 @@ CRAFT predicted text regions, EasyOCR English and existing VietOCR. GT is used
 only for post-inference spatial field-transcription scoring. Not semantic KIE.
 Do not claim three full161-image runs. No new dependencies or weights.
 
-Read-only checkpoint at2026-10-30T12:10:43Z:127/225 images complete, all in
-pass1; one benchmark invocation remains active, journal has zero failure
-events. This is a historical progress snapshot, not a completion claim.
-Latest analysis/audit supplement is committed in759f05e; three additional
-analysis-integrity tests passed. Full regression is pending experiment end.
+Audit:225 private checkpoints re-scored;2700 public rows match private numeric
+projections;144 summary rows re-aggregated; zero score/timing/hash mismatches
+and zero failure events.32-image repeat panel:384 image-policy-reader groups,
+zero canonical prediction or field-score mismatches across three fresh passes.
+225 actual localizer calls,731 unique within-image/pass OCR rasters; this is
+not2700 independent inferences. All tests passed:134 Python and15 frontend.
+One pre-existing dependency deprecation warning; no packages were changed.
+
+Main finding on91 neural-three-corner images (VietOCR): raw22.09%, support
+27.69%, expanded parallelogram32.64% pooled field exact; mean wall time
+14.78/16.25/12.76 seconds/image. Masking adds no pooled exact over bbox.
+English has the same descriptive ordering. Support-vs-parallelogram VietOCR
+ID-level accuracy CI includes zero, so do not claim universal statistical
+superiority. This removes the missing OCR measurement, but does not establish
+a novel superior support-mask algorithm or CORE B submission readiness.
+Final source/data/model signature:
+31c00e69dad9ee35916e692ee7d17e4691b827caa48936f50db6a0d9a6ef62d1.
 
 After a chat/usage interruption, inspect the OS process and progress first:
 
@@ -29,7 +43,8 @@ D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_progress
 
 **Do not start another benchmark while the original process is running.**
 Windows can show the venv launcher and its child interpreter for one invocation.
-Only when that invocation has stopped, resume from this worktree:
+Only when an invocation has stopped with missing checkpoints, resume from this
+worktree. This study already has all225, so no OCR rerun is currently needed:
 
 ```powershell
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_benchmark
@@ -40,9 +55,9 @@ checkpoints within the same scheduled pass. Different passes never share OCR
 predictions. Do not edit e2e_data/eval/pipeline/benchmark or the protocol while
 this experiment is running; that intentionally invalidates its cache signature.
 Private text checkpoints are Git-ignored at research/cache/e2e_ocr_v2.
-After completion run e2e_analysis and e2e_alphabet_audit, inspect all policies,
-write the Vietnamese results report, run regression tests, update this status
-and push the research branch. Do not overwrite earlier negative studies.
+Analysis, alphabet audit, independent audit, plots and Vietnamese report are
+complete. See research/README.md for analysis-only commands. Do not overwrite
+earlier negative studies or retune on these exposed test identities.
 
 ---
 
@@ -82,6 +97,10 @@ but **submission readiness and sufficient novelty are not established**.
    accepted utility appreciably; full-frame routing has the same coverage.
 9. Post-hoc full-frame and padded-parallelogram controls: all results retained;
    parallelogram+5% has higher utility with some additional field harm.
+10. End-to-end predicted-region OCR on161 images with32-image fresh replication
+    twice:225 image runs,2700 rows, both readers, clustered intervals, confidence
+    review curves, independent re-scoring and publication audit. Simple padded
+    completion beats support descriptively; no unique mask advantage established.
 
 Protocol commits: v1 `3e3c781`, secondary OCR `a808d77`, v2 `ccfdac1`,
 external `7bb5133`, neural `716935c`, EXIF correction `d9512b1`, v3 `4c134a4`.
@@ -103,9 +122,10 @@ Later code/analysis checks are in the research Git history and audit manifest.
 
 1. Validate the adapter against the upstream package and audit pretrained-data
    provenance; keep model/code pinned. Add another strong localizer.
-2. Benchmark actual OCR/KIE, crop bounding boxes and wall latency for support,
-   full-frame and padded-parallelogram at comparable error/coverage. Confidence
-   is not ground truth; use annotated character/field accuracy.
+2. Use the now-completed OCR benchmark to characterize failures of padded
+   completion. Any new selector/refinement needs separate development IDs and
+   fresh locked evaluation; preserve full-frame/bbox/completion controls.
+   Semantic KIE is still unmeasured. Confidence is not ground truth.
 3. Expand external identities and capture conditions with a new locked protocol.
    Keep unseen identity versus unseen template claims separate.
 4. Reassess closest prior on incomplete-boundary rectification and line-based
@@ -113,8 +133,8 @@ Later code/analysis checks are in the research Git history and audit manifest.
    PAPER_OUTLINE.md; no restart of completed cached inference is needed.
 
 At the historical 2026-10-28 checkpoint, all then-launched experiments had
-completed. This statement does not apply to the active 2026-10-30 OCR follow-up
-at the top of this file. The local
+completed. The2026-10-30 OCR follow-up at the top of this file is now complete
+as well. The local
 mentor server was not listening at the latest read-only health check; this
 research did not restart or change it. Tests do not substitute for a live
 camera/security deployment assessment.

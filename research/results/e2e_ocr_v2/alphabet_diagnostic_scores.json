@@ -1,0 +1,326 @@
+[
+  {
+    "engine": "easyocr_en",
+    "policy": "raw_fullframe",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.12355447352404139,
+    "micro_cer": 0.718236339404709,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "raw_fullframe",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.133377135348226,
+    "micro_cer": 0.7134759553848967,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "raw_fullframe",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.7670206121174266,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "neural_strict",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.13877054169202677,
+    "micro_cer": 0.7508884940026654,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "neural_strict",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.1498028909329829,
+    "micro_cer": 0.7440726519168648,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "neural_strict",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.820737039350406,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_fullframe",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.2087644552647596,
+    "micro_cer": 0.5834073745002222,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_fullframe",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.22536136662286466,
+    "micro_cer": 0.5745108795026513,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_fullframe",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.674578388507183,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.23189287888009738,
+    "micro_cer": 0.5589737894269213,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.2503285151116951,
+    "micro_cer": 0.550374840007314,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.6470955652717052,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support_bbox",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.23189287888009738,
+    "micro_cer": 0.5573633940470902,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support_bbox",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.2503285151116951,
+    "micro_cer": 0.549460596087036,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_support_bbox",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.6383510306058713,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_parallelogram05",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.2519780888618381,
+    "micro_cer": 0.5493669480231008,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_parallelogram05",
+    "subset": "alphabet_supported",
+    "fields": 1522,
+    "field_exact": 0.2720105124835742,
+    "micro_cer": 0.543182787834461,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "easyocr_en",
+    "policy": "three_parallelogram05",
+    "subset": "alphabet_unsupported",
+    "fields": 121,
+    "field_exact": 0.0,
+    "micro_cer": 0.6127420362273579,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "raw_fullframe",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.2057212416311625,
+    "micro_cer": 0.6902487783207464,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "raw_fullframe",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.2191958495460441,
+    "micro_cer": 0.6862263246223927,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "raw_fullframe",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.7409365558912386,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "neural_strict",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.17285453438831405,
+    "micro_cer": 0.7824855619724567,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "neural_strict",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.18417639429312582,
+    "micro_cer": 0.7799688324142892,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "neural_strict",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.8141993957703928,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_fullframe",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.2951917224589166,
+    "micro_cer": 0.6038427365615282,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_fullframe",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.314526588845655,
+    "micro_cer": 0.6015943418844402,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_fullframe",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.6321752265861027,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.3268411442483262,
+    "micro_cer": 0.5837405597512216,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.34824902723735407,
+    "micro_cer": 0.5797170942220091,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.6344410876132931,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support_bbox",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.3268411442483262,
+    "micro_cer": 0.5815748556197246,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support_bbox",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.34824902723735407,
+    "micro_cer": 0.5785782785902661,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_support_bbox",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.6193353474320241,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_parallelogram05",
+    "subset": "all_locked_fields",
+    "fields": 1643,
+    "field_exact": 0.3536214242239805,
+    "micro_cer": 0.5408707241226122,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_parallelogram05",
+    "subset": "alphabet_supported",
+    "fields": 1542,
+    "field_exact": 0.3767833981841764,
+    "micro_cer": 0.5395588587868617,
+    "secondary_diagnostic_not_primary_redefinition": true
+  },
+  {
+    "engine": "vietocr",
+    "policy": "three_parallelogram05",
+    "subset": "alphabet_unsupported",
+    "fields": 101,
+    "field_exact": 0.0,
+    "micro_cer": 0.5574018126888217,
+    "secondary_diagnostic_not_primary_redefinition": true
+  }
+]

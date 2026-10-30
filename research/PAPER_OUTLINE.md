@@ -3,6 +3,35 @@
 This is an evidence-based outline, not a submission-ready paper. The data do
 not support a new general statistical theory or a broad eKYC security claim.
 
+## Decision update,2026-10-30
+
+The previously missing end-to-end benchmark is now complete; see
+[E2E_RESULTS_VI.md](E2E_RESULTS_VI.md). On91 neural-three-corner cases, VietOCR
+field exact is22.09% raw,27.69% support,32.64% expanded parallelogram; mean
+wall time14.78/16.25/12.76 seconds per image, respectively. English follows
+the same descriptive ordering. Support masking does not improve pooled exact
+over support-bbox. The VietOCR held-out ID bootstrap for support versus
+parallelogram includes zero; do not convert descriptive ordering to universal
+statistical superiority. Missing neural corners and actual off-frame corners
+are distinct (10/91 have all four GT corners visible).
+
+**Submission decision: hold the proposed support-mask algorithm claim.**
+The new evidence closes the measurement gap and reveals that the simple
+completion baseline is stronger on this sample. A positive difference from
+strict rejection/raw alone is insufficient to establish a novel advantage.
+Do not discard the winning baseline or tune against these now-exposed tests.
+
+Next useful experiments should first characterize when padded completion
+damages legible content under perspective or bad corner predictions. Any new
+selector/refinement must be developed on separate development identities, then
+locked and evaluated on fresh identities against full-frame, bbox, and padded
+completion. Pair accuracy with real latency and review costs. If there is no
+stable advantage, pursue a carefully scoped empirical benchmark/negative-result
+paper instead of renaming the elementary support geometry as a new algorithm.
+External breadth, upstream adapter equivalence, model/data exposure, semantic
+KIE and closest-prior distinction remain unresolved; this OCR study does not
+settle those requirements.
+
 ## Working title
 
 **When Four Corners Are Unavailable: Content Preservation and Review Trade-offs
