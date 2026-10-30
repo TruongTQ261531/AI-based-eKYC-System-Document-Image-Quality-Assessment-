@@ -1,5 +1,37 @@
 # Research checkpoint, 2026-10-28
 
+## Active follow-up, 2026-10-30
+
+Prediction-only end-to-end OCR has been implemented separately and launched.
+Read E2E_OCR_PROTOCOL.md and E2E_OCR_PROVENANCE.md. Protocol/code initially
+locked in8819841; runtime-only161/32/32 schedule amended in8cef538 before
+accuracy inspection. Six original engineering pilot images are retained
+separately under e2e_ocr_v1, excluded from main results.
+
+Final schedule: all161 images once (91 three-corner,50 controls,20 external),
+then32 fixed distinct-ID cases repeated twice with fresh OCR. Six policies,
+CRAFT predicted text regions, EasyOCR English and existing VietOCR. GT is used
+only for post-inference spatial field-transcription scoring. Not semantic KIE.
+Do not claim three full161-image runs. No new dependencies or weights.
+
+Resume after interruption using the existing environment from this worktree:
+
+```powershell
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_progress
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.e2e_benchmark
+```
+
+The benchmark verifies its signature and skips only completed atomic image
+checkpoints within the same scheduled pass. Different passes never share OCR
+predictions. Do not edit e2e_data/eval/pipeline/benchmark or the protocol while
+this experiment is running; that intentionally invalidates its cache signature.
+Private text checkpoints are Git-ignored at research/cache/e2e_ocr_v2.
+After completion run e2e_analysis and e2e_alphabet_audit, inspect all policies,
+write the Vietnamese results report, run regression tests, update this status
+and push the research branch. Do not overwrite earlier negative studies.
+
+---
+
 User target: **CORE B conference**, separate from the mentor assignment.
 Current conclusion: substantial reproducible feasibility evidence exists,
 but **submission readiness and sufficient novelty are not established**.
