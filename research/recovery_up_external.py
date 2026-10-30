@@ -16,7 +16,7 @@ import numpy as np
 from PIL import Image,ImageOps
 
 from research.benchmark import save,digest
-from research.e2e_benchmark import atomic_json
+from research.e2e_benchmark import atomic_json,hash_json
 from research.e2e_eval import score,target_fields
 from research.e2e_pipeline import to_source
 from research.fetch_annotations import read_range
@@ -141,15 +141,27 @@ def run():
     fixed['selectors'][reader]['models']['forced_completion']=dict(regressor=dict(kind='stumps',base=-1.,stumps=[]),expected_fallback_wall={p:0. for p in ('raw','bbox','contour','lcnet')})
     fixed['review_thresholds'][reader]['forced_completion']=model['review_thresholds'][reader]['fixed_completion']
     samples=json.loads((ROOT/'samples.json').read_text());rows=[]
+    signature=hash_json(dict(code_sha256=digest(__file__),protocol_sha256=digest('research/RECOVERY_EXTERNAL_UP_PROTOCOL.md'),
+        model_sha256=lock['model_sha256'],samples_sha256=digest(ROOT/'samples.json')))
+    from research.ocr_diagnostic import normalized
+    alphabet=set(normalized(''.join(c for c in engine.readers[reader].text_rec.postprocess_op.character if c!='blank')))|{' '}
+    coverage=[]
+    for s in samples:
+        targets,excluded=target_fields(s)
+        coverage.append(dict(uid=s['uid'],annotated_fields=len(s['fields']),eligible_fields=len(targets),excluded=excluded,
+            unsupported_alphabet_fields=sum(any(c not in alphabet for c in normalized(f['text'])) for f in targets)))
     for repeat in (1,2):
         for i,sample in enumerate(samples):
-            image=cv2.imread(sample['path']);methods=['raw','fixed_completion','primary_cascade']
+            if digest(sample['path'])!=sample['input_sha256']:raise ValueError('External source image changed')
+            image=cv2.imread(sample['path'])
+            if image.shape[:2]!=(sample['height'],sample['width']):raise ValueError('External EXIF geometry mismatch')
+            methods=['raw','fixed_completion','primary_cascade']
             methods=methods[(i+repeat)%3:]+methods[:(i+repeat)%3]
             for method in methods:
                 path=CACHE/'up_external'/f'{repeat}_{i}_{method}.json'
                 if path.exists():
                     row=json.loads(path.read_text(encoding='utf-8'))
-                    if row['model_sha256']!=lock['model_sha256']:raise ValueError('Stale external result')
+                    if row['model_sha256']!=lock['model_sha256'] or row.get('signature')!=signature:raise ValueError('Stale external result')
                 else:
                     if method=='raw':
                         tw=time.perf_counter();tc=time.process_time();answer=engine.ocr(image,reader)
@@ -157,15 +169,15 @@ def run():
                             actual_cpu_seconds=time.process_time()-tc,ocr_executions=1,selected_policy='raw',
                             review_recommended=not answer['predictions'])
                     else:response=engine.online(image,model if method=='primary_cascade' else fixed,reader)
-                    row=dict(uid=sample['uid'],physical_id=sample['physical_id'],document_type=sample['document_type'],camera=sample['camera'],
+                    row=dict(signature=signature,uid=sample['uid'],physical_id=sample['physical_id'],document_type=sample['document_type'],camera=sample['camera'],
                         method=method,repeat=repeat,model_sha256=lock['model_sha256'],input_sha256=sample['input_sha256'],
                         score=score(sample,response['predictions'],True),actual_wall=response['actual_wall_seconds'],actual_cpu=response['actual_cpu_seconds'],
                         ocr_executions=response['ocr_executions'],selected_policy=response['selected_policy'],
                         review_recommended=response['review_recommended'],prediction_sha256=canonical(response['predictions']),_private_predictions=response['predictions'])
                     atomic_json(path,row)
                 rows.append({k:v for k,v in row.items() if not k.startswith('_private')});print('UP_EVAL',len(rows),'/144',flush=True)
-    save(OUT/'up_external.json',dict(rows=rows,images=24,passes=2,newly_selected_templates=4,cameras=['iphone','samsung'],
-        test_threshold_retuned=False,language_scope='Latin/alphanumeric targets only; Persian/Urdu support not established',
+    save(OUT/'up_external.json',dict(signature=signature,rows=rows,images=24,passes=2,newly_selected_templates=4,cameras=['iphone','samsung'],coverage=coverage,
+        test_threshold_retuned=False,language_scope='Frozen Latin-letter/alphanumeric predicate; unsupported Unicode digits/letters counted, not removed. Urdu/Persian support not established',
         code_sha256=digest(__file__),protocol_sha256=digest('research/RECOVERY_EXTERNAL_UP_PROTOCOL.md')))
 
 

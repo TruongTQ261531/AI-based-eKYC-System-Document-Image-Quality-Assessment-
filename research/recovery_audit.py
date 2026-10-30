@@ -70,13 +70,44 @@ def main():
                     costs+=1
     for row in published:inspect(row)
     for path in OUT.glob('*.json'):inspect(json.loads(path.read_text(encoding='utf-8')))
+    validation_counts={}
+    if (OUT/'online_traces.json').exists():
+        public=json.loads((OUT/'online_traces.json').read_text())['rows']
+        by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
+        for repeat in (1,2,3):
+            for i,s in enumerate(panel(samples)):
+                for method in ('primary_cascade','fixed_completion'):
+                    p=CACHE/'online'/f'{repeat}_{i}_{method}.json';r=json.loads(p.read_text(encoding='utf-8'))
+                    published=by_key[(repeat,s['uid'],method)]
+                    if r['score']!=score(s,r['_private_predictions'],True):raise ValueError('Online rescore mismatch')
+                    if {k:v for k,v in r.items() if not k.startswith('_private')}!=published:raise ValueError('Online publication mismatch')
+        validation_counts['online_rescored']=len(public)
+    if (OUT/'legacy_panel.json').exists():
+        public=json.loads((OUT/'legacy_panel.json').read_text())['rows'];by_key={(r['uid'],r['reader']):r for r in public}
+        for i,s in enumerate(panel(samples),1):
+            r=json.loads((CACHE/'legacy'/f'{i}.json').read_text(encoding='utf-8'))
+            for item in r['rows']:
+                if by_key[(s['uid'],item['reader'])]['score']!=score(s,item['_private_predictions'],True):raise ValueError('Legacy rescore mismatch')
+        validation_counts['legacy_rescored']=len(public)
+    if (OUT/'up_external.json').exists():
+        from pathlib import Path
+        external=json.loads(Path('research/data/midv_up/samples.json').read_text(encoding='utf-8'))
+        public=json.loads((OUT/'up_external.json').read_text())['rows'];by_key={(r['repeat'],r['uid'],r['method']):r for r in public}
+        for repeat in (1,2):
+            for i,s in enumerate(external):
+                for method in ('raw','fixed_completion','primary_cascade'):
+                    item=json.loads((CACHE/'up_external'/f'{repeat}_{i}_{method}.json').read_text(encoding='utf-8'))
+                    published=by_key[(repeat,s['uid'],method)]
+                    if published['score']!=score(s,item['_private_predictions'],True):raise ValueError('UP rescore mismatch')
+                    if {k:v for k,v in item.items() if not k.startswith('_private')}!=published:raise ValueError('UP publication mismatch')
+        validation_counts['external_up_rescored']=len(public)
     events=[json.loads(s) for s in (CACHE/'events.jsonl').read_text().splitlines()]
     save(OUT/'independent_audit.json',dict(signature=signature,code_sha256=digest(__file__),
         native_rows_rescored=checked,selector_decisions_replayed=costs,public_rows=len(published),
         score_mismatches=0,publication_mismatches=0,wall_sum_mismatches=0,cpu_sum_mismatches=0,
         cross_role_identity_overlap=0,cross_role_image_hash_overlap=0,unique_ocr_executions=calls,
         failure_events=[r for r in events if r['event']=='failure'],checkpoint_hashes=hashes,
-        model_sha256=lock['model_sha256'],raw_text_in_public_json=False,
+        model_sha256=lock['model_sha256'],raw_text_in_public_json=False,additional_validation=validation_counts,
         limitations='Shares the frozen spatial evaluator; not independent human ground-truth verification'))
     print('RECOVERY_INDEPENDENT_AUDIT_PASS',checked,costs,len(published),flush=True)
 
