@@ -220,6 +220,19 @@ def main():
         '| Nguồn | ID | Delta semantic exact (điểm %) | CI95% |','|---|---:|---:|---:|'])
     for r in kie['paired_intervals']:
         lo,hi=r['ci95'];lines.append(f'| {r["source"]} | {r["document_ids"]} | {100*r["mean_delta"]:+.2f} | [{100*lo:.2f}; {100*hi:.2f}] |')
+    lines.extend(['','Canonical exact ở trên tính theo trường GT đủ điều kiện, có tính chất recall; không gọi nó là precision. '
+        'Bảng sau chỉ lấy ảnh mà mọi trường annotated còn nguyên hình học; tất cả key dự đoán nằm trong mẫu số precision. '
+        'Không áp cách phạt full-value này cho substring của field bị cắt.','',
+        '| Nguồn test / phương án | Ảnh | Exact precision (%) | Recall (%) | F1 (%) | Key ngoài schema authored |',
+        '|---|---:|---:|---:|---:|---:|'])
+    for source,role in (('authored_specimen','test'),('authored_layout_stress','external_layout')):
+        selected=[r for r in kie['rows'] if r['source']==source and r['role']==role and r['all_fields_geometrically_visible']]
+        for method in ('baseline','layout_assignment'):
+            correct=sum(r[method]['canonical_exact'] for r in selected)
+            refs=sum(r[method]['eligible_fields'] for r in selected);preds=sum(r[method+'_predicted_keys'] for r in selected)
+            precision=correct/max(preds,1);recall=correct/max(refs,1);f1=2*correct/max(preds+refs,1)
+            lines.append(f'| {source} / {method} | {len(selected)} | {pct(precision)} | {pct(recall)} | {pct(f1)} | '
+                f'{sum(r[method+"_unexpected_keys"] for r in selected)} |')
     lines.extend(['',f'Chi phí parser TB **{1000*statistics.mean(r["parser_wall"] for r in kie["rows"]):.2f} ms/ảnh**; '
         'chi phí tái dựng tọa độ từ cache được lưu riêng, không trộn vào thời gian OCR. '
         f'Bật bộ gán mới trên web theo quyết định development: **{kie_lock["deployment_approved_on_development"]}**. '
@@ -338,6 +351,23 @@ def main():
         ('The locked primary cascades match completion accuracy in all four source/reader comparisons; algorithmic '
          'superiority is not supported. The learned routing result is retained as a negative experiment.'
          if identical_accuracy else 'Interpret each source/reader comparison with its paired interval; do not generalize one positive result.'),'',
+        '### Exploratory field-assignment application improvement','',
+        'After seeing the V4 aggregate semantic gap, we added a separate printed-label right/below assignment '
+        'alternative using existing aliases, typed validation and rectangular assignment. Its source and deployment '
+        'choice are locked on development; all V4 main-set comparisons are post hoc. It reuses identical Latin '
+        'completion OCR predictions and adds zero OCR calls. This is an application ablation, not new graph-learning theory.','',
+        '| Source / role | Original key-value exact | Spatial assignment exact | Fields |',
+        '|---|---:|---:|---:|'])
+    for source,role in (('authored_specimen','test'),('authored_layout_stress','external_layout')):
+        selected=[r for r in kie['rows'] if r['source']==source and r['role']==role]
+        n=sum(r['baseline']['eligible_fields'] for r in selected)
+        base=sum(r['baseline']['canonical_exact'] for r in selected)/max(n,1)
+        improved=sum(r['layout_assignment']['canonical_exact'] for r in selected)/max(n,1)
+        manuscript.append(f'| {source} / {role} | {pct(base)}% | {pct(improved)}% | {n} |')
+    manuscript.extend(['','Per-target exact is recall-like. Exact extraction precision/recall/F1 on geometrically '
+        'complete-field images, unexpected key counts and ID-clustered exploratory intervals are reported in the '
+        'companion report. Values, document IDs and reference boxes never enter prediction. This additional '
+        'parser does not retrospectively change the frozen primary cascade results.','',
         '## 6. Limitations and submission decision','',
         'The dataset contains few layouts/fonts and no newly collected real camera population. MIDV pretraining exposure '
         'is not excluded. Synthetic visibility differs from human legibility. The legacy reader check is panel-only and '

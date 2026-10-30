@@ -73,9 +73,16 @@ def run(development_only):
         save(OUT/'layout_kie_development.json',dict(signature=sig,rows=rows,test_predictions_evaluated=False))
         base=sum(r['baseline']['canonical_exact'] for r in rows)
         graph=sum(r['layout_assignment']['canonical_exact'] for r in rows)
+        complete=[r for r in rows if r['all_fields_geometrically_visible']]
+        f1={}
+        for method in ('baseline','layout_assignment'):
+            correct=sum(r[method]['canonical_exact'] for r in complete)
+            refs=sum(r[method]['eligible_fields'] for r in complete);preds=sum(r[method+'_predicted_keys'] for r in complete)
+            f1[method]=2*correct/max(refs+preds,1)
         save(OUT/'layout_kie_lock.json',dict(signature=sig,development_cases=len(rows),source_locked_before_supplement_evaluation=True,
             main_test_comparison_is_post_hoc=True,development_correct=dict(baseline=base,layout_assignment=graph),
-            deployment_approved_on_development=graph>=base,
+            development_complete_field_f1=f1,
+            deployment_approved_on_development=graph>=base and f1['layout_assignment']>=f1['baseline'],
             protocol_sha256=digest('research/LAYOUT_KIE_PROTOCOL.md')))
     else:
         dev=json.loads((OUT/'layout_kie_development.json').read_text(encoding='utf-8'))['rows']
