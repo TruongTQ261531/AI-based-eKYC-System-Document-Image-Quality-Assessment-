@@ -1,5 +1,49 @@
 # Research checkpoints (active V4 expansion:2026-10-30)
 
+## Latest checkpoint,2026-10-31 after primary test release
+
+- Main inference finished588/588, exit0,6460.788 seconds(107.68min).
+  Do not rerun or refit. Deterministic two-fit byte equality passed. Model
+  SHA256 starts3ddcba35; model/threshold lock was committed and pushed in
+  **8fff9bf before test scoring**. Fitting opened no test checkpoints.
+- Evaluation finished15288 rows and analysis finished. Both readers selected
+  cascade_stumps on development. Primary cascades match completion accuracy;
+  no algorithmic-superiority evidence. Latin test exact: SPECIMEN raw79.733%,
+  completion80%; MIDV raw42.824%,completion57.292%. Semantic canonical exact
+  for SPECIMEN completion66.667%, not80%. Global confidence retention shifts
+  from98% SPECIMEN to28.889% MIDV. Preserve these negative findings.
+- Sequential fresh validation is running: online144, legacy24cases/72rows,
+  MIDV-UP144 and spatial stress288. In the current Codex session its unified
+  exec ID is72867. Inspect actual checkpoint counts and live process before
+  resuming; each phase uses the shared exclusive process lock. The primary
+  inference session82245 and fit watcher41169 are complete. Do not launch
+  a duplicate validation process.
+- Public photographs: user confirmed no new self-captured collection.24
+  MIDV-UP author photos acquired with CRC/SHA checks; four template types,
+  two phone strata, no unseen-pretraining claim. A4-image geometry overlay
+  sanity check aligns, not independent human legibility validation. Stress:
+  80 authored rasters/20new IDs,two actual spatial arrangements; regenerated
+  byte-identically. Original six config IDs have aliases0/2 and1/3; disclose.
+- Full regression passed155Python+20frontend. Explicit UTF8 reads were then
+  added to the analysis/validation/web helpers; final regression is still to
+  be captured again. Two earlier sandbox TestClient attempts stalled in
+  Windows asyncio.socketpair before application execution; run the release
+  validator with loopback-capable execution, without changing application
+  code or installing dependencies.
+- Research web restarted at8001, owned session90775(PID14616), source updated
+  once afterward for explicit UTF8 reads; restart again before final real OCR
+  UI checks. Original mentor8000 is untouched.390px responsive overflow found
+  and fixed; observed scrollWidth=clientWidth=375. No physical camera-motion
+  test performed. Final browser OCR/form/edit/clear checks and screenshot are
+  still pending. Cua binding recoveryTab is the owned IAB tab1 at8001.
+- After all validation: run recovery_audit, recovery_release, recovery_report;
+  inspect figures/UI, save actual screenshot and browser validation artifact,
+  update this status/README/summary, privacy-scan public artifacts, commit/push
+  only research files and verify main/mentor branch hashes unchanged. Reports
+  must not claim CORE B acceptance or resolved novelty. No new venv/pip install.
+
+---
+
 ## Active V4 expansion requested after e7e4602
 
 Read RESEARCH_V4_PROTOCOL.md first. Core study locked/pushed in6e871cc.

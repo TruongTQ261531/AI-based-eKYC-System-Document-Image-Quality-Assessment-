@@ -16,6 +16,7 @@ def num(x):return '—' if x is None else f'{x:.3f}'
 def field_summary(rows):
     fields=[f for r in rows for f in r['score']['fields']]
     n=len(fields);chars=sum(f['truth_length'] for f in fields)
+    if not n:return 0,None,None
     return n,sum(f['exact'] for f in fields)/max(n,1),sum(f['edit_distance'] for f in fields)/max(chars,1)
 
 
@@ -85,6 +86,7 @@ def main():
             lo,hi=r['ci95'];lines.append(f'| {reader} | {source} | {r["method"]} | {r["physical_ids"]} | {100*r["mean_delta"]:+.2f} | [{100*lo:.2f}; {100*hi:.2f}] |')
             decisions.append(r)
     positive=[r for r in decisions if r['mean_delta']>0 and r['ci95'][0]>0]
+    identical_accuracy=all(r['mean_delta']==0 for r in decisions)
     lines.extend(['',f'Có **{len(positive)}/{len(decisions)}** đối chiếu cascade chính cho CI exact hoàn toàn trên 0. '
         'Không suy từ một tập/reader thắng sang ưu thế phổ quát. Các cấu trúc còn lại và mọi số liệu native nằm trong '
         '[summary CSV](results/recovery_v4/summary.csv) và [bootstrap](results/recovery_v4/paired_bootstrap.json).','',
@@ -214,9 +216,11 @@ def main():
         'Đã bổ sung dataset/giao thức, nhiều baseline/cấu trúc, chấm KIE và visible references, '
         'đo online thực tế, audit và web chạy thật. Đây là các artifact có thể kiểm tra được; '
         'không đồng nghĩa một regressor/cascade quen thuộc trở thành thuật toán mới.','',
-        f'Trong bốn đối chiếu nguồn–reader của cascade chính, chỉ {len(positive)} có CI accuracy hoàn toàn dương. '
-        'Cần đọc thêm thời gian thực tế và review/truncation trước khi đưa ra claim trade-off. '
-        'Nếu không cải thiện ổn định so với completion, loại claim thuật toán vượt trội và cân nhắc bài đánh giá/benchmark đúng phạm vi.',
+        f'Trong bốn đối chiếu nguồn–reader của cascade chính, {len(positive)} có CI accuracy hoàn toàn dương. '
+        +('Cascade cho độ chính xác bằng completion trong cả bốn đối chiếu. Kết quả này không hỗ trợ claim thuật toán mới vượt baseline. '
+          if identical_accuracy else 'Mức cải thiện phải được giới hạn đúng từng nguồn/reader và CI được công bố. ')+
+        'Đọc thời gian thực tế và review/truncation để đánh giá ứng dụng. Hướng paper phù hợp để xem xét tiếp là '
+        'đánh giá/benchmark có phạm vi rõ; số lượng test và một website chạy được không tự tạo ra novelty.',
         '', 'Các hạn chế chưa thể xóa bằng unit test: ít layout/font/camera, nguồn tổng hợp có khoảng cách thực tế, '
         'MIDV có thể đã thấy trong pretraining, chưa có annotation legibility độc lập và chưa chạy mọi neural rectifier/market API. '
         'Cần dữ liệu camera mới có quyền sử dụng và đối chiếu closest-prior chặt trước quyết định nộp CORE B. '
@@ -304,6 +308,9 @@ def main():
             manuscript.append(f'| {r["source"]} | {r["method"]} | {pct(r["field_exact"])}% | {num(r["mean_wall_seconds"])} | {pct(r["retention"])}% |')
     manuscript.extend(['','All methods, paired ID intervals, semantic/visibility diagnostics and fresh online timings are '
         'reported in RECOVERY_RESULTS_VI.md and machine-readable artifacts. Do not replace these by best-test-only tables.','',
+        ('The locked primary cascades match completion accuracy in all four source/reader comparisons; algorithmic '
+         'superiority is not supported. The learned routing result is retained as a negative experiment.'
+         if identical_accuracy else 'Interpret each source/reader comparison with its paired interval; do not generalize one positive result.'),'',
         '## 6. Limitations and submission decision','',
         'The dataset contains few layouts/fonts and no newly collected real camera population. MIDV pretraining exposure '
         'is not excluded. Synthetic visibility differs from human legibility. The legacy reader check is panel-only and '
