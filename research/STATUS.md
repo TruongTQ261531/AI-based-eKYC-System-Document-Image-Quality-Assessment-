@@ -1,4 +1,50 @@
-# Research checkpoints (latest completed follow-up: 2026-10-30)
+# Research checkpoints (active V4 expansion:2026-10-30)
+
+## Active V4 expansion requested after e7e4602
+
+Read RESEARCH_V4_PROTOCOL.md first. Core study locked/pushed in6e871cc.
+540 images/150 identities:360 newly authored SPECIMEN captures from90 IDs,
+180 derivatives of60 additional MIDV photo IDs. Disjoint roles40 development,
+30 calibration,80 test IDs. Two reader architectures (Rapid PP-OCRv4 and Latin
+PP-OCRv5), two localizer architectures (FastViT-SA24 and LCNet100), seven views,
+ridge/stump selector alternatives and budgeted actual online cascade.
+
+Inference currently running with588 scheduled executions:540 plus two fresh
+24-image panels. Private checkpoints at research/cache/recovery_v4/pass1..3.
+Test scores are not computed by inference. Only after inference run fit,
+commit selector_models/selector_lock, and then evaluate. Never edit protocol
+or recovery_assets/acquire/data/runtime/upstream/selection/study while this
+run is active: code/input/model hashes invalidate cache on changes.
+The process lock prevents simultaneous invocations. Inspect current OS process
+and checkpoint count before attempting resume after usage interruption.
+
+Remaining commands from this worktree, using the original environment:
+
+```powershell
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study infer
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study fit
+# Commit the numeric selector lock before viewing test scores.
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.recovery_study evaluate
+```
+
+Do not re-launch infer while its original process is still running. Planned
+follow-up: independent rescoring/publication audit, physical-ID bootstrap,
+24-case legacy OCR check, fresh actual-online timing/output checks, localhost
+web validation, regression tests and a transparent updated paper decision.
+Local web implemented separately in research/recovery_web.py and research/web;
+launcher research/start-research.ps1 uses port8001, mentor8000 stays untouched.
+Web must not emit invented fields/results while selector lock is unavailable.
+Camera inputs remain memory-only. User explicitly chose localhost, not public
+deployment. No venv/site-packages changes; optional official code/models live
+in Git-ignored cache. Eight source-level adapter/native OCR parity checks pass;
+this is not an entire upstream-package installation/every-path test.
+
+Upstream training exposure is now positively documented: author pages mention
+MIDV500/2019 and training examples in the MIDV2020 demo. Do not label new MIDV
+study IDs unseen-pretraining. New SPECIMEN identities/layouts provide separately
+authored data, but no new real-world camera collection has been performed.
+
+---
 
 ## Completed end-to-end OCR follow-up, 2026-10-30
 

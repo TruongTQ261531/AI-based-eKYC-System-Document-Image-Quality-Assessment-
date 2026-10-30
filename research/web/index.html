@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Document Recovery · Research Lab</title><link rel="stylesheet" href="/assets/style.css"><script type="module" src="/assets/app.js"></script></head>
+<body>
+<header><a class="brand" href="/">DR<span> / </span>RESEARCH LAB</a><span class="local">● LOCALHOST · DỮ LIỆU TRÊN MÁY</span></header>
+<main>
+<section class="hero"><div><p class="eyebrow">DOCUMENT CAPTURE / EXPERIMENT 04</p><h1>Đọc thông tin.<br><em>Giữ nguyên bằng chứng.</em></h1><p>Chụp giấy tờ, xem cách hệ thống xử lý hình học và kiểm tra từng thông tin OCR đã đọc được.</p></div><aside><span class="small">TRẠNG THÁI NGHIÊN CỨU</span><strong id="study-count">Đang kiểm tra…</strong><p id="study-state">Số liệu chỉ xuất hiện sau khi khóa mô hình và chấm tập test.</p><a href="#benchmark">Xem benchmark ↓</a></aside></section>
+<div class="workspace">
+<section class="panel camera-panel"><div class="section-head"><div><p class="eyebrow">01 / CAPTURE</p><h2>Chụp giấy tờ</h2></div><span class="pill" id="capture-state">Sẵn sàng</span></div>
+<p class="hint">Giữ đủ thông tin trong ảnh. Khung chỉ để căn chỉnh; ảnh gửi đi giữ toàn bộ độ phân giải camera.</p>
+<div class="camera-stage"><video id="video" autoplay muted playsinline hidden></video><img id="capture-preview" alt="Ảnh giấy tờ chờ xác nhận" hidden><div id="guide" hidden></div><div id="empty-camera"><span class="camera-icon">⌑</span><h3>Bắt đầu bằng camera</h3><p>Camera sau được ưu tiên trên điện thoại.<br>Ảnh chỉ gửi khi bạn bấm xác nhận.</p></div></div>
+<p id="resolution" class="small">Chưa có ảnh. Không có dữ liệu được lưu.</p>
+<div class="actions"><button id="open-camera" class="primary">Mở camera</button><button id="capture" hidden>Chụp ảnh</button><button id="retake" hidden>Chụp lại</button><button id="submit" class="primary" hidden>Xác nhận & đọc OCR</button><button id="clear" class="quiet">Xóa ảnh</button></div>
+<div class="sample-row"><span>Hoặc thử SPECIMEN:</span><button data-demo="full">Đủ khung</button><button data-demo="corner_clip">Cắt góc</button><button data-demo="field_clip">Cắt chữ</button><button data-demo="blur_glare">Mờ / lóa</button></div>
+<p class="message" id="status" role="status" aria-live="polite">Chưa gửi ảnh lên máy chủ.</p></section>
+<section class="panel result-panel"><div class="section-head"><div><p class="eyebrow">02 / OBSERVED INFORMATION</p><h2>Kiểm tra thông tin</h2></div><span class="pill">Có thể chỉnh sửa</span></div>
+<div id="result-empty" class="result-empty"><span>↗</span><h3>Thông tin sẽ xuất hiện ở đây</h3><p>Chỉ những trường OCR thực sự đọc được mới được điền. Không có giá trị mặc định theo loại giấy tờ.</p></div>
+<div id="result" hidden><div id="warnings" class="warnings" role="status"></div><div id="fields" class="fields"></div><p id="no-fields" hidden>Chưa ghép được nhãn và giá trị. Xem text OCR bên dưới hoặc chụp lại.</p><button id="confirm-fields" class="primary">Xác nhận thông tin đã kiểm tra</button><p id="confirmed" class="hint" hidden>Đã xác nhận trên trình duyệt. Đây chưa phải phê duyệt eKYC hoặc xác minh danh tính.</p><details><summary>Text OCR & bằng chứng xử lý</summary><p id="trace" class="small"></p><pre id="ocr-text"></pre><img id="rectified" alt="Ảnh sau xử lý hình học"></details></div>
+<p class="privacy-note">Bản nghiên cứu xử lý giấy tờ. Không đánh giá liveness, chống giả khuôn mặt hay duyệt danh tính. Ảnh/text camera không được ghi ra file.</p></section>
+</div>
+<section class="panel benchmark" id="benchmark"><div class="section-head"><div><p class="eyebrow">03 / REPRODUCIBLE EVIDENCE</p><h2>Kết quả trên tập test đã tách ID</h2></div><span class="pill">Không dùng dữ liệu camera của bạn</span></div><p id="benchmark-note" class="hint">Đang tải kết quả thực nghiệm…</p><div class="table-wrap"><table><thead><tr><th>Nguồn / Reader</th><th>Phương án</th><th>Field exact</th><th>CER</th><th>Wall TB</th><th>Giữ lại</th></tr></thead><tbody id="benchmark-body"></tbody></table></div><p class="small">SPECIMEN là dữ liệu tổng hợp mới; MIDV là dữ liệu dẫn xuất có thể đã xuất hiện trong pretraining. Tỷ lệ giữ lại không đồng nghĩa chấp nhận giấy tờ hoặc xác minh danh tính.</p></section>
+</main><footer>EXPERIMENT 04 · CPU / ONNX · LOCAL RESEARCH WORKBENCH</footer>
+</body></html>
