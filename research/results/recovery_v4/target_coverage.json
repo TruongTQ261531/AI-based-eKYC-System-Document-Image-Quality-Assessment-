@@ -1,0 +1,58 @@
+[
+  {
+    "source": "authored_specimen",
+    "capture": "blur_glare",
+    "images": 50,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 250,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "authored_specimen",
+    "capture": "corner_clip",
+    "images": 50,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 250,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "authored_specimen",
+    "capture": "field_clip",
+    "images": 50,
+    "zero_eligible_target_images": 50,
+    "eligible_fields": 0,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "authored_specimen",
+    "capture": "full",
+    "images": 50,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 250,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "midv2020_derived",
+    "capture": "corner_clip",
+    "images": 30,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 365,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "midv2020_derived",
+    "capture": "field_clip",
+    "images": 30,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 131,
+    "images_retained_in_latency_and_review_denominators": true
+  },
+  {
+    "source": "midv2020_derived",
+    "capture": "full",
+    "images": 30,
+    "zero_eligible_target_images": 0,
+    "eligible_fields": 368,
+    "images_retained_in_latency_and_review_denominators": true
+  }
+]

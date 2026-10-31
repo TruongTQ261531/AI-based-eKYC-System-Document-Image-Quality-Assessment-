@@ -8,14 +8,18 @@ Read `PROTOCOL.md` before interpreting any numbers. This is a feasibility
 benchmark with no claim of guaranteed novelty, SOTA or CORE B acceptance.
 No new environment or dependency is required on the original machine.
 
-Start with [the Vietnamese evidence report](REPORT_VI.md),
-[literature/venue review](LITERATURE_REVIEW.md) and [resume status](STATUS.md).
-The V4 expansion requested on2026-10-30 is tracked in STATUS.md. Read its
+The completed2026-10-31 expansion is documented in [the V4 evidence report](RECOVERY_RESULTS_VI.md),
+[manuscript draft](MANUSCRIPT_DRAFT.md), [claim boundaries](CORE_B_SUBMISSION_GATES.md)
+and [resume status](STATUS.md). Earlier results remain in [REPORT_VI.md](REPORT_VI.md).
+Read the V4
 [locked protocol](RESEARCH_V4_PROTOCOL.md), [dataset card](DATASET_CARD_V4.md),
 [pre-test evaluation clarification](RECOVERY_EVALUATION_ADDENDUM.md) and
-[updated closest prior](RESEARCH_V4_RELATED_WORK.md). Do not mistake a running
-experiment for a completed result. Its final generated reports are
-RECOVERY_RESULTS_VI.md and MANUSCRIPT_DRAFT.md once all validation finishes.
+[updated closest prior](RESEARCH_V4_RELATED_WORK.md). Main inference completed588/588;
+15288 published rows were independently re-scored/replayed. The full final
+regression passed162 Python + 21 frontend tests. Fresh validation includes144
+online calls,24legacy cases,144MIDV-UP calls and288spatial-stress calls.
+The additional440-case semantic-parser ablation reuses fixed OCR outputs;
+it is not440 new OCR inferences. All negative outcomes are retained.
 
 The separate localhost research workbench uses the original Python environment:
 
@@ -26,8 +30,23 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\research\start-research.ps
 Open **http://127.0.0.1:8001/** in Chrome/Edge. Mentor remains on8000.
 The workbench does not invent results while the model lock is absent; camera
 photos/OCR text are memory-only and are not research training inputs.
-Sample buttons use newly authored held-out-layout SPECIMEN cards, not a lookup
+Sample buttons use authored test-configuration/extra-layout SPECIMEN cards, not a lookup
 database of identities used to recognize user documents.
+
+The deployed parser validates source/model hashes from
+`results/recovery_v4/kie_deployment.json`; inference does not open training
+annotations or use an identity lookup. The offline `recovery_deploy.py`
+exporter binds that seal to the development lock. Camera data remains in
+memory; benchmark regeneration and demo images are separate from prediction.
+
+The development-locked spatial parser improves test key-value exact from
+66.67% to76.27%, and42.19% to79.69% on the separate synthetic layout stress
+set. Its main-set comparison is explicitly post hoc. It is an established
+label-assignment technique, not a new learning theory. The primary learned
+cascade matches completion accuracy, and completion loses to raw on the
+additional layouts/MIDV-UP. New camera collection and independent legibility
+annotation are absent. Do not claim guaranteed CORE B readiness, SOTA or
+production eKYC/PAD security from these results.
 
 On a new machine with the required packages already available, the V4 asset
 and data cache can be rebuilt with `python -m research.recovery_setup --data`.

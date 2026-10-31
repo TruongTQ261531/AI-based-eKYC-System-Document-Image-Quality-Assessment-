@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:8001/",
+  "browser": "Actual in-app browser",
+  "specimen_only": true,
+  "physical_camera_capture_tested": false,
+  "tested_cases": [
+    {
+      "demo": "two_column",
+      "observed_fields": 5,
+      "all_five_match_specimen": true,
+      "canonical_correct": 5,
+      "reference_fields": 5
+    },
+    {
+      "demo": "full",
+      "observed_fields": 5,
+      "all_five_match_specimen": true,
+      "canonical_correct": 5,
+      "reference_fields": 5
+    },
+    {
+      "demo": "licence",
+      "observed_fields": 4,
+      "limitation": "Full-name label OCR corrupted; name absent, not invented"
+    },
+    {
+      "demo": "student",
+      "observed_fields": 5,
+      "limitation": "School assigned course value; manual correction remains necessary",
+      "canonical_correct": 4,
+      "reference_fields": 5
+    },
+    {
+      "demo": "field_clip",
+      "observed_fields": 4,
+      "partial_extra_labels": true,
+      "visible_review_warning": true,
+      "limitation": "Fragments remain editable; neither field completeness nor identity approval is established"
+    }
+  ],
+  "explicit_preview_confirmation": true,
+  "editable_fields": true,
+  "confirmation_cleared_when_edited": true,
+  "clear_removes_photo_and_fields": true,
+  "audited_benchmark_visible": true,
+  "responsive": {
+    "viewport_width": 390,
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "horizontal_page_overflow": false
+  },
+  "source_sha256": {
+    "recovery_web.py": "5ffdc407450220ec2b0ad50629a3d942cb53377df200c2bbc031830cc4e10ebe",
+    "web/app.js": "d9f95359041f741883e3263d0220cf9d95be3cbefadefabca5c6a415256a66f5",
+    "web/style.css": "5f6ed8b99374c60994f43812ac73ae8d8e3d89f15152280777234b73aff391ea",
+    "web/index.html": "443911c05ceed9418cf89c6801dbc1ddf6fd3712c439cd4ef7d8f1d76e3d2fc4"
+  },
+  "screenshots": {
+    "web_validation.jpg": "c2e0f20bf8c5fd4df7a43fbdfbc52782119961d6abdbabc35c5bf821196bbdf7",
+    "web_warning.jpg": "6c744e5e65c0785bd790837e049a281951b398111149fd576d2f037189ec0762"
+  },
+  "ui_review_scope": "Warnings trigger visible manual-review state even when frozen confidence gate is false; no offline metrics changed",
+  "raw_camera_or_personal_data_in_artifact": false,
+  "private_dom_observation_sha256": "0486c349405f96f425dd31e4e69b23c5878b70d68580812da09d5240e7925eb7",
+  "final_scan_after_data_independent_seal_verified": true,
+  "runtime_training_annotation_dependency": false,
+  "deployment_seal_sha256": "5ba8471169021210236727e538ed78b0a2fba1c590db23b24b6ba77960be4952"
+}

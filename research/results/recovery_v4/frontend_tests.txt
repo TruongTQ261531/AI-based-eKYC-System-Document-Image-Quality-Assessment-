@@ -1,0 +1,29 @@
+✔ research camera preserves source resolution and waits for explicit upload (4.4304ms)
+✔ late camera permission cannot reactivate camera after reset (1.4256ms)
+✔ camera denial is actionable and never submits a photo (1.4659ms)
+✔ observed student fields are editable without invented CCCD fields (2.1796ms)
+✔ backend unavailability leaves a retake path and no fabricated form (0.9613ms)
+✔ geometric warning requires visible review even with high OCR confidence (1.9375ms)
+✔ insecure origin and denied camera produce actionable errors without upload (59.4601ms)
+✔ rear camera, full video resolution, preview then explicit confirmation (5.1286ms)
+✔ reset cancels pending camera and stops a late permission response (1.1933ms)
+✔ OCR edits are submitted and the front camera requires a challenge before selfie (3.0203ms)
+✔ Vietnamese OCR autofills all fields and replaces old values on a new scan (2.0496ms)
+✔ student card renders only observed fields, keeps raw OCR, and submits editable extra fields (1.4397ms)
+✔ unknown card can show unassigned text without inventing required fields (1.0189ms)
+✔ server challenge, preview confirmation and final result are required in order (2.6929ms)
+✔ failed challenge cannot enable capture and cancelling invalidates server state (1.5083ms)
+✔ timeout shows an ended timer instead of contradictory remaining seconds (2.6247ms)
+✔ spoof on final photo clears the photo and requires a new challenge (1.4568ms)
+✔ frame spoof rejection is displayed before any selfie can be submitted (1.8661ms)
+✔ retake discards captured image and opens a fresh stream (0.8578ms)
+✔ a failed capture displays backend diagnosis and concrete instructions (1.0368ms)
+✔ missing portrait keeps OCR form but blocks selfie and offers a fresh document capture (1.014ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 207.0435

@@ -1,5 +1,12 @@
 # Báo cáo nghiên cứu khả thi hướng CORE B
 
+**Cập nhật31/10/2026:** đợt mở rộng đã xong. Đọc
+[báo cáo V4](RECOVERY_RESULTS_VI.md) và [bản thảo hiện tại](MANUSCRIPT_DRAFT.md):
+588 lượt inference chính,15.288 hàng kết quả, kiểm chứng ngoài miền và web
+localhost8001;162 test Python+21 frontend đạt. Bộ gán thông tin theo vị trí
+cải thiện key–value exact nhưng cascade không hơn completion. Các phần dưới
+giữ nguyên lịch sử feasibility/V2, không phải kết quả mới nhất.
+
 Ngày đối chiếu tài liệu và chạy thử ban đầu: **28/10/2026**; bổ sung OCR
 đầu cuối hoàn tất **30/10/2026**. Đây là báo cáo kết quả
 thật của các ứng viên nghiên cứu, chưa phải tuyên bố đã hoàn thành một paper

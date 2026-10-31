@@ -80,9 +80,17 @@ def engine():
 def kie_settings():
     path=OUT/'layout_kie_lock.json'
     if not path.exists():return None
-    from research.layout_kie_study import signature
+    from research.recovery_assets import sha
     settings=json.loads(path.read_text(encoding='utf-8'))
-    if settings['signature']!=signature():raise ValueError('Exploratory field-parser lock changed')
+    seal=json.loads((OUT/'kie_deployment.json').read_text(encoding='utf-8'))
+    if sha(path)!=seal['source_lock_sha256'] or settings['signature']!=seal['study_signature']:
+        raise ValueError('Exploratory field-parser lock changed')
+    if sha(OUT/'selector_models.json')!=seal['model_sha256']:raise ValueError('Deployed selector changed')
+    if settings['deployment_approved_on_development']!=seal['deployment_approved_on_development']:
+        raise ValueError('Development deployment decision changed')
+    for name,value in seal['code_sha256'].items():
+        source=(ROOT.parent/name).resolve()
+        if not source.is_relative_to(ROOT.parent) or sha(source)!=value:raise ValueError('Deployed parser source changed')
     return settings
 
 

@@ -49,10 +49,20 @@ test('observed student fields are editable without invented CCCD fields',async()
  assert.equal(inputs.find(x=>x.name==='student_id').value,'MOCK42');assert.equal(inputs.find(x=>x.name==='dob').type,'date');
  inputs[0].value='Corrected';const posts=h.requests.filter(r=>r.options?.method==='POST').length;await h.click('confirm-fields');
  assert.equal(h.requests.filter(r=>r.options?.method==='POST').length,posts);assert.equal(h.element('ocr-text').textContent,'<script>TEST</script>');
+ inputs[0].value='Edited again';inputs[0].listeners.input();assert.equal(h.element('confirmed').hidden,true);
  await h.click('clear');assert.equal(h.element('fields').children.length,0);assert.ok(h.revoked.length>0);
 });
 
 test('backend unavailability leaves a retake path and no fabricated form',async()=>{
  const h=harness();await h.demos[1].listeners.click();h.respond({error:true,detail:'Model not locked'});await h.click('submit');
  assert.equal(h.element('fields').children.length,0);assert.equal(h.element('submit').disabled,false);assert.match(h.element('status').textContent,/Model not locked/);
+});
+
+test('geometric warning requires visible review even with high OCR confidence',async()=>{
+ const h=harness();await h.demos[0].listeners.click();
+ h.respond({fields:{},warnings:['Text touches capture edge; retake if clipped'],predictions:[],
+  selected_policy:'raw',actual_wall_seconds:.2,ocr_executions:1,source_dimensions:[1000,640],reader:'rapid_latin_v5',
+  preview_data_url:'data:image/jpeg;base64,AA',review_recommended:false});
+ await h.click('submit');assert.equal(h.element('capture-state').textContent,'Cần kiểm tra');
+ assert.match(h.element('status').textContent,/chụp lại/);assert.match(h.element('warnings').textContent,/capture edge/);
 });

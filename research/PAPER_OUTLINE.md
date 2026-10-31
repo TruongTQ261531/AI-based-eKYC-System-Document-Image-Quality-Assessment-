@@ -1,5 +1,12 @@
 # Candidate manuscript scope and decision gates
 
+Completed2026-10-31 expansion: see [MANUSCRIPT_DRAFT.md](MANUSCRIPT_DRAFT.md),
+[RECOVERY_RESULTS_VI.md](RECOVERY_RESULTS_VI.md) and
+[CORE_B_SUBMISSION_GATES.md](CORE_B_SUBMISSION_GATES.md). The primary cascade
+has null accuracy gains; the separate development-locked spatial KIE ablation
+improves form extraction and is labelled post hoc for the original dataset.
+The historical outline below is preserved, not a replacement of new outcomes.
+
 This is an evidence-based outline, not a submission-ready paper. The data do
 not support a new general statistical theory or a broad eKYC security claim.
 

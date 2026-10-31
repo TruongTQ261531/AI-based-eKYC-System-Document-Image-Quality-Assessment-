@@ -1,0 +1,704 @@
+[
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "raw",
+    "fields": 300,
+    "canonical_exact": 0.48,
+    "literal_exact": 0.25,
+    "transcription_correct_semantic_wrong": 48
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "strict",
+    "fields": 300,
+    "canonical_exact": 0.19666666666666666,
+    "literal_exact": 0.09333333333333334,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "completion",
+    "fields": 300,
+    "canonical_exact": 0.39,
+    "literal_exact": 0.18666666666666668,
+    "transcription_correct_semantic_wrong": 72
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "bbox",
+    "fields": 300,
+    "canonical_exact": 0.41,
+    "literal_exact": 0.2,
+    "transcription_correct_semantic_wrong": 67
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "contour",
+    "fields": 300,
+    "canonical_exact": 0.36333333333333334,
+    "literal_exact": 0.17666666666666667,
+    "transcription_correct_semantic_wrong": 74
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "text_deskew",
+    "fields": 300,
+    "canonical_exact": 0.3433333333333333,
+    "literal_exact": 0.16,
+    "transcription_correct_semantic_wrong": 78
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "lcnet",
+    "fields": 300,
+    "canonical_exact": 0.4033333333333333,
+    "literal_exact": 0.20666666666666667,
+    "transcription_correct_semantic_wrong": 71
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "fixed_completion",
+    "fields": 300,
+    "canonical_exact": 0.39,
+    "literal_exact": 0.18666666666666668,
+    "transcription_correct_semantic_wrong": 72
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "max_confidence",
+    "fields": 300,
+    "canonical_exact": 0.3466666666666667,
+    "literal_exact": 0.16333333333333333,
+    "transcription_correct_semantic_wrong": 76
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "allviews_ridge",
+    "fields": 300,
+    "canonical_exact": 0.37666666666666665,
+    "literal_exact": 0.17666666666666667,
+    "transcription_correct_semantic_wrong": 72
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "allviews_stumps",
+    "fields": 300,
+    "canonical_exact": 0.47333333333333333,
+    "literal_exact": 0.24333333333333335,
+    "transcription_correct_semantic_wrong": 50
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "cascade_ridge",
+    "fields": 300,
+    "canonical_exact": 0.4,
+    "literal_exact": 0.19666666666666666,
+    "transcription_correct_semantic_wrong": 69
+  },
+  {
+    "role": "development",
+    "reader": "rapid_v4",
+    "method": "cascade_stumps",
+    "fields": 300,
+    "canonical_exact": 0.39,
+    "literal_exact": 0.18666666666666668,
+    "transcription_correct_semantic_wrong": 72
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "raw",
+    "fields": 300,
+    "canonical_exact": 0.64,
+    "literal_exact": 0.38,
+    "transcription_correct_semantic_wrong": 46
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "strict",
+    "fields": 300,
+    "canonical_exact": 0.33666666666666667,
+    "literal_exact": 0.20333333333333334,
+    "transcription_correct_semantic_wrong": 42
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "completion",
+    "fields": 300,
+    "canonical_exact": 0.5833333333333334,
+    "literal_exact": 0.34,
+    "transcription_correct_semantic_wrong": 66
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "bbox",
+    "fields": 300,
+    "canonical_exact": 0.5933333333333334,
+    "literal_exact": 0.3466666666666667,
+    "transcription_correct_semantic_wrong": 62
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "contour",
+    "fields": 300,
+    "canonical_exact": 0.5933333333333334,
+    "literal_exact": 0.35,
+    "transcription_correct_semantic_wrong": 58
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "text_deskew",
+    "fields": 300,
+    "canonical_exact": 0.58,
+    "literal_exact": 0.34,
+    "transcription_correct_semantic_wrong": 64
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "lcnet",
+    "fields": 300,
+    "canonical_exact": 0.6133333333333333,
+    "literal_exact": 0.36333333333333334,
+    "transcription_correct_semantic_wrong": 59
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "fixed_completion",
+    "fields": 300,
+    "canonical_exact": 0.5833333333333334,
+    "literal_exact": 0.34,
+    "transcription_correct_semantic_wrong": 66
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "max_confidence",
+    "fields": 300,
+    "canonical_exact": 0.5933333333333334,
+    "literal_exact": 0.35333333333333333,
+    "transcription_correct_semantic_wrong": 62
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_ridge",
+    "fields": 300,
+    "canonical_exact": 0.5833333333333334,
+    "literal_exact": 0.3433333333333333,
+    "transcription_correct_semantic_wrong": 64
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_stumps",
+    "fields": 300,
+    "canonical_exact": 0.6133333333333333,
+    "literal_exact": 0.37,
+    "transcription_correct_semantic_wrong": 57
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_ridge",
+    "fields": 300,
+    "canonical_exact": 0.5866666666666667,
+    "literal_exact": 0.3433333333333333,
+    "transcription_correct_semantic_wrong": 65
+  },
+  {
+    "role": "development",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_stumps",
+    "fields": 300,
+    "canonical_exact": 0.5833333333333334,
+    "literal_exact": 0.34,
+    "transcription_correct_semantic_wrong": 66
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "raw",
+    "fields": 300,
+    "canonical_exact": 0.43666666666666665,
+    "literal_exact": 0.20333333333333334,
+    "transcription_correct_semantic_wrong": 64
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "strict",
+    "fields": 300,
+    "canonical_exact": 0.22333333333333333,
+    "literal_exact": 0.09,
+    "transcription_correct_semantic_wrong": 45
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "completion",
+    "fields": 300,
+    "canonical_exact": 0.39666666666666667,
+    "literal_exact": 0.17,
+    "transcription_correct_semantic_wrong": 68
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "bbox",
+    "fields": 300,
+    "canonical_exact": 0.3933333333333333,
+    "literal_exact": 0.17,
+    "transcription_correct_semantic_wrong": 68
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "contour",
+    "fields": 300,
+    "canonical_exact": 0.3566666666666667,
+    "literal_exact": 0.16333333333333333,
+    "transcription_correct_semantic_wrong": 79
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "text_deskew",
+    "fields": 300,
+    "canonical_exact": 0.35,
+    "literal_exact": 0.14333333333333334,
+    "transcription_correct_semantic_wrong": 80
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "lcnet",
+    "fields": 300,
+    "canonical_exact": 0.41333333333333333,
+    "literal_exact": 0.18666666666666668,
+    "transcription_correct_semantic_wrong": 64
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "fixed_completion",
+    "fields": 300,
+    "canonical_exact": 0.39666666666666667,
+    "literal_exact": 0.17,
+    "transcription_correct_semantic_wrong": 68
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "max_confidence",
+    "fields": 300,
+    "canonical_exact": 0.38,
+    "literal_exact": 0.17666666666666667,
+    "transcription_correct_semantic_wrong": 71
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "allviews_ridge",
+    "fields": 300,
+    "canonical_exact": 0.39,
+    "literal_exact": 0.17,
+    "transcription_correct_semantic_wrong": 69
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "allviews_stumps",
+    "fields": 300,
+    "canonical_exact": 0.4166666666666667,
+    "literal_exact": 0.18333333333333332,
+    "transcription_correct_semantic_wrong": 68
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "cascade_ridge",
+    "fields": 300,
+    "canonical_exact": 0.4,
+    "literal_exact": 0.17333333333333334,
+    "transcription_correct_semantic_wrong": 67
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_v4",
+    "method": "cascade_stumps",
+    "fields": 300,
+    "canonical_exact": 0.39666666666666667,
+    "literal_exact": 0.17,
+    "transcription_correct_semantic_wrong": 68
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "raw",
+    "fields": 300,
+    "canonical_exact": 0.6466666666666666,
+    "literal_exact": 0.3566666666666667,
+    "transcription_correct_semantic_wrong": 47
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "strict",
+    "fields": 300,
+    "canonical_exact": 0.36333333333333334,
+    "literal_exact": 0.19333333333333333,
+    "transcription_correct_semantic_wrong": 33
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "completion",
+    "fields": 300,
+    "canonical_exact": 0.6,
+    "literal_exact": 0.32666666666666666,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "bbox",
+    "fields": 300,
+    "canonical_exact": 0.5966666666666667,
+    "literal_exact": 0.3233333333333333,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "contour",
+    "fields": 300,
+    "canonical_exact": 0.6133333333333333,
+    "literal_exact": 0.33,
+    "transcription_correct_semantic_wrong": 49
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "text_deskew",
+    "fields": 300,
+    "canonical_exact": 0.59,
+    "literal_exact": 0.31,
+    "transcription_correct_semantic_wrong": 59
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "lcnet",
+    "fields": 300,
+    "canonical_exact": 0.6166666666666667,
+    "literal_exact": 0.33,
+    "transcription_correct_semantic_wrong": 49
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "fixed_completion",
+    "fields": 300,
+    "canonical_exact": 0.6,
+    "literal_exact": 0.32666666666666666,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "max_confidence",
+    "fields": 300,
+    "canonical_exact": 0.61,
+    "literal_exact": 0.32666666666666666,
+    "transcription_correct_semantic_wrong": 53
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_ridge",
+    "fields": 300,
+    "canonical_exact": 0.59,
+    "literal_exact": 0.32,
+    "transcription_correct_semantic_wrong": 53
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_stumps",
+    "fields": 300,
+    "canonical_exact": 0.63,
+    "literal_exact": 0.3433333333333333,
+    "transcription_correct_semantic_wrong": 48
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_ridge",
+    "fields": 300,
+    "canonical_exact": 0.6,
+    "literal_exact": 0.32666666666666666,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "calibration",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_stumps",
+    "fields": 300,
+    "canonical_exact": 0.6,
+    "literal_exact": 0.32666666666666666,
+    "transcription_correct_semantic_wrong": 51
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "raw",
+    "fields": 750,
+    "canonical_exact": 0.556,
+    "literal_exact": 0.292,
+    "transcription_correct_semantic_wrong": 90
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "strict",
+    "fields": 750,
+    "canonical_exact": 0.31733333333333336,
+    "literal_exact": 0.16933333333333334,
+    "transcription_correct_semantic_wrong": 89
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "completion",
+    "fields": 750,
+    "canonical_exact": 0.5186666666666667,
+    "literal_exact": 0.2773333333333333,
+    "transcription_correct_semantic_wrong": 118
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "bbox",
+    "fields": 750,
+    "canonical_exact": 0.524,
+    "literal_exact": 0.2786666666666667,
+    "transcription_correct_semantic_wrong": 115
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "contour",
+    "fields": 750,
+    "canonical_exact": 0.49066666666666664,
+    "literal_exact": 0.25866666666666666,
+    "transcription_correct_semantic_wrong": 118
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "text_deskew",
+    "fields": 750,
+    "canonical_exact": 0.5106666666666667,
+    "literal_exact": 0.264,
+    "transcription_correct_semantic_wrong": 108
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "lcnet",
+    "fields": 750,
+    "canonical_exact": 0.528,
+    "literal_exact": 0.2826666666666667,
+    "transcription_correct_semantic_wrong": 106
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "fixed_completion",
+    "fields": 750,
+    "canonical_exact": 0.5186666666666667,
+    "literal_exact": 0.2773333333333333,
+    "transcription_correct_semantic_wrong": 118
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "max_confidence",
+    "fields": 750,
+    "canonical_exact": 0.49466666666666664,
+    "literal_exact": 0.25866666666666666,
+    "transcription_correct_semantic_wrong": 114
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "allviews_ridge",
+    "fields": 750,
+    "canonical_exact": 0.5093333333333333,
+    "literal_exact": 0.2693333333333333,
+    "transcription_correct_semantic_wrong": 120
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "allviews_stumps",
+    "fields": 750,
+    "canonical_exact": 0.5573333333333333,
+    "literal_exact": 0.29333333333333333,
+    "transcription_correct_semantic_wrong": 89
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "cascade_ridge",
+    "fields": 750,
+    "canonical_exact": 0.52,
+    "literal_exact": 0.2773333333333333,
+    "transcription_correct_semantic_wrong": 116
+  },
+  {
+    "role": "test",
+    "reader": "rapid_v4",
+    "method": "cascade_stumps",
+    "fields": 750,
+    "canonical_exact": 0.5186666666666667,
+    "literal_exact": 0.2773333333333333,
+    "transcription_correct_semantic_wrong": 118
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "raw",
+    "fields": 750,
+    "canonical_exact": 0.676,
+    "literal_exact": 0.38666666666666666,
+    "transcription_correct_semantic_wrong": 112
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "strict",
+    "fields": 750,
+    "canonical_exact": 0.428,
+    "literal_exact": 0.24,
+    "transcription_correct_semantic_wrong": 81
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "completion",
+    "fields": 750,
+    "canonical_exact": 0.6666666666666666,
+    "literal_exact": 0.37733333333333335,
+    "transcription_correct_semantic_wrong": 121
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "bbox",
+    "fields": 750,
+    "canonical_exact": 0.668,
+    "literal_exact": 0.37866666666666665,
+    "transcription_correct_semantic_wrong": 119
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "contour",
+    "fields": 750,
+    "canonical_exact": 0.6653333333333333,
+    "literal_exact": 0.376,
+    "transcription_correct_semantic_wrong": 112
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "text_deskew",
+    "fields": 750,
+    "canonical_exact": 0.6626666666666666,
+    "literal_exact": 0.37466666666666665,
+    "transcription_correct_semantic_wrong": 117
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "lcnet",
+    "fields": 750,
+    "canonical_exact": 0.6666666666666666,
+    "literal_exact": 0.37733333333333335,
+    "transcription_correct_semantic_wrong": 117
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "fixed_completion",
+    "fields": 750,
+    "canonical_exact": 0.6666666666666666,
+    "literal_exact": 0.37733333333333335,
+    "transcription_correct_semantic_wrong": 121
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "max_confidence",
+    "fields": 750,
+    "canonical_exact": 0.668,
+    "literal_exact": 0.38133333333333336,
+    "transcription_correct_semantic_wrong": 117
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_ridge",
+    "fields": 750,
+    "canonical_exact": 0.664,
+    "literal_exact": 0.376,
+    "transcription_correct_semantic_wrong": 120
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "allviews_stumps",
+    "fields": 750,
+    "canonical_exact": 0.6746666666666666,
+    "literal_exact": 0.384,
+    "transcription_correct_semantic_wrong": 111
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_ridge",
+    "fields": 750,
+    "canonical_exact": 0.6666666666666666,
+    "literal_exact": 0.37733333333333335,
+    "transcription_correct_semantic_wrong": 121
+  },
+  {
+    "role": "test",
+    "reader": "rapid_latin_v5",
+    "method": "cascade_stumps",
+    "fields": 750,
+    "canonical_exact": 0.6666666666666666,
+    "literal_exact": 0.37733333333333335,
+    "transcription_correct_semantic_wrong": 121
+  }
+]

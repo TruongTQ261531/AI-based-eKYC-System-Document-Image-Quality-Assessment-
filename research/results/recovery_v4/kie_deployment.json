@@ -1,0 +1,19 @@
+{
+  "source_lock_sha256": "ba5b278af7d81833960cd6416a379606f8fcd98d3fab1fdfab97bb2049871b68",
+  "study_signature": "20805f1b67e6ac5013886bc9b19a8f305852a189d385e08b812ced77b755b214",
+  "model_sha256": "3ddcba3532ff6f62b42b38e90b6e105896e80a7a513b80947f16ee27574f51a5",
+  "deployment_approved_on_development": true,
+  "code_sha256": {
+    "research/layout_kie.py": "20f14035b7e047efb52c78a81da823864e3001750f4e801baeeeec4c0359744a",
+    "research/recovery_runtime.py": "6574ee1dd4b72d993936688836c09a9c2335cfb28d90f4a789df4091c63c7e01",
+    "research/recovery_selection.py": "8c66c6d5c9e33cfa6cc559c92060e526344f6991be8e9e7161af005dc1e29575",
+    "research/recovery_upstream.py": "609ed64fbb367d9bd75cc0ca0022a56c8e815bb4d8b05522b1c3d4272ac29fb3",
+    "research/e2e_pipeline.py": "086d352ebaa8c31214c2e0c4a9b326ede75bb790e79b819eaacf6e95cdc5e056",
+    "research/partial_support.py": "4d1a1210a008a2adb0ca1a74b70179c6b8b8ad1783159038bc9efa4418d057f3",
+    "ekyc/document_fields.py": "43e733d1380b0ff9a26a8dbcbaa9c4c4d52ad1cd07656f501e52478600067277",
+    "ekyc/module2_homography.py": "02ea0a5a3f6fc82eed3b7f2aa688055e891533240e00c1e310635f91bbeb8be8",
+    "ekyc/io.py": "58b5ade6fd84c09268cc39bbc9030f7a3a6230b5bf9eb9223aff693e3b049b92"
+  },
+  "training_annotations_required_at_inference": false,
+  "code_sha256_exporter": "c2875256707267c9a92c731613fbd87f9e25f85ac10d06eb009caa80a2420dfc"
+}

@@ -1,0 +1,26 @@
+{
+  "images": 4,
+  "source": "midv_up_external",
+  "items": [
+    {
+      "uid": "midvup/irn_bc/006",
+      "input_sha256": "5c164230986183f4592884cd19161fe9fed9303c4393115e5ede4d23fea84dd2"
+    },
+    {
+      "uid": "midvup/irn_drvlic/012",
+      "input_sha256": "21274a6f937f20b86e305ad067dd2ce64c407f2691d00ca5dadb080dcf5371c6"
+    },
+    {
+      "uid": "midvup/irn_id/081",
+      "input_sha256": "5d7556278b1f82fa640c411a0d34e17383c39e5c1ecb93e857d40e7cc2cb42e7"
+    },
+    {
+      "uid": "midvup/pak_id/009",
+      "input_sha256": "cb6fda68675132bdb07ff7c2a05a05b21eb1ed56a26b3e513cff434a9da8955d"
+    }
+  ],
+  "outcome": "Projected author field polygons visually align in one photo per template type",
+  "limit": "Single-agent geometry sanity check, not independent human legibility annotation or full24-image validation",
+  "overlay_sha256": "e6183330b137ac40539ac8faf50fff76ad1a60e9c591523b826498a4b9117fa5",
+  "raw_images_released": false
+}

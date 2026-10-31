@@ -1,0 +1,43 @@
+{
+  "code_sha256": "ae9d1b64feb9c37e2754f8019b01d77e8ffdd4347a080977cf97cdb329dcc3d2",
+  "time_utc": "2026-10-31T00:29:17Z",
+  "python_tests": 162,
+  "frontend_tests": 21,
+  "failed": 0,
+  "commands": [
+    {
+      "name": "python",
+      "command": [
+        "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "research/tests",
+        "--ignore=tests/test_manifest.py",
+        "-q",
+        "--junitxml=research\\results\\recovery_v4\\tests.xml"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 16.419346899958327,
+      "log_sha256": "4f471eaa4f40a603512ac9e07897117f1d5d12f291be644f6cf1714766d6eaa8"
+    },
+    {
+      "name": "frontend",
+      "command": [
+        "node",
+        "--test",
+        "tests/camera_frontend.test.cjs",
+        "research/tests/recovery_frontend.test.cjs"
+      ],
+      "return_code": 0,
+      "elapsed_seconds": 1.380661299917847,
+      "log_sha256": "f7db0a0d8ef60b56174fa5beb2abe32e8e2ac6856026894bdaa79cd0dd245ab1",
+      "tests": 21
+    }
+  ],
+  "mentor_changed_paths": [],
+  "excluded_tests": "tests/test_manifest.py requires original raw manifest; study inputs hash-audited separately",
+  "physical_camera_motion_tested": false,
+  "frontend_camera_tests": "Mocked DOM/media plus actual browser specimen flow",
+  "core_source_hashes_match": true
+}

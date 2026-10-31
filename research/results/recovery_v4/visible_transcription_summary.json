@@ -1,0 +1,418 @@
+[
+  {
+    "reader": "rapid_v4",
+    "method": "raw",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5564681724845996,
+    "micro_cer": 0.10813881429456723
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "raw",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "strict",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.3213552361396304,
+    "micro_cer": 0.5077463334021897
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "strict",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.0,
+    "micro_cer": 1.0
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "completion",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5574948665297741,
+    "micro_cer": 0.11061764098326791
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "completion",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "bbox",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5585215605749486,
+    "micro_cer": 0.10958479652964263
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "bbox",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "contour",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5369609856262834,
+    "micro_cer": 0.11650485436893204
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "contour",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "text_deskew",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5369609856262834,
+    "micro_cer": 0.11392274323486883
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "text_deskew",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.22321428571428573,
+    "micro_cer": 0.20378548895899054
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "lcnet",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5503080082135524,
+    "micro_cer": 0.11082420987399298
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "lcnet",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "fixed_completion",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5574948665297741,
+    "micro_cer": 0.11061764098326791
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "fixed_completion",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "max_confidence",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5328542094455853,
+    "micro_cer": 0.11505887213385664
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "max_confidence",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.22321428571428573,
+    "micro_cer": 0.20441640378548895
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "allviews_ridge",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5513347022587269,
+    "micro_cer": 0.11196033877298078
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "allviews_ridge",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "allviews_stumps",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.555441478439425,
+    "micro_cer": 0.10793224540384218
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "allviews_stumps",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "cascade_ridge",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5564681724845996,
+    "micro_cer": 0.10989464986573022
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "cascade_ridge",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "cascade_stumps",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.5574948665297741,
+    "micro_cer": 0.11061764098326791
+  },
+  {
+    "reader": "rapid_v4",
+    "method": "cascade_stumps",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.24553571428571427,
+    "micro_cer": 0.19936908517350158
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "raw",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6940451745379876,
+    "micro_cer": 0.06527576946911795
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "raw",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "strict",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.39630390143737165,
+    "micro_cer": 0.48171865317083246
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "strict",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.0,
+    "micro_cer": 1.0
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "completion",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6960985626283368,
+    "micro_cer": 0.06496591613303036
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "completion",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "bbox",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6950718685831622,
+    "micro_cer": 0.06496591613303036
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "bbox",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "contour",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6817248459958932,
+    "micro_cer": 0.06651518281346828
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "contour",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "text_deskew",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6735112936344969,
+    "micro_cer": 0.06723817393100599
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "text_deskew",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.28125,
+    "micro_cer": 0.16340694006309148
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "lcnet",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6899383983572895,
+    "micro_cer": 0.065482338359843
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "lcnet",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "fixed_completion",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6960985626283368,
+    "micro_cer": 0.06496591613303036
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "fixed_completion",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "max_confidence",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.688911704312115,
+    "micro_cer": 0.06579219169593059
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "max_confidence",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.33035714285714285,
+    "micro_cer": 0.15646687697160883
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "allviews_ridge",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6878850102669405,
+    "micro_cer": 0.06579219169593059
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "allviews_ridge",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.33482142857142855,
+    "micro_cer": 0.15457413249211358
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "allviews_stumps",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6909650924024641,
+    "micro_cer": 0.06568890725056807
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "allviews_stumps",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.33482142857142855,
+    "micro_cer": 0.15709779179810726
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "cascade_ridge",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6960985626283368,
+    "micro_cer": 0.06486263168766784
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "cascade_ridge",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "cascade_stumps",
+    "scope": "all_visible_references",
+    "fields": 974,
+    "exact": 0.6960985626283368,
+    "micro_cer": 0.06496591613303036
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "method": "cascade_stumps",
+    "scope": "partially_captured_fields",
+    "fields": 224,
+    "exact": 0.3482142857142857,
+    "micro_cer": 0.15331230283911673
+  }
+]

@@ -73,3 +73,21 @@ def test_model_hash_tampering_is_detected(tmp_path,monkeypatch):
     (tmp_path/'selector_lock.json').write_text(json.dumps({'signature':'x','model_sha256':'wrong'}))
     with pytest.raises(web.HTTPException) as error:web.locked_model()
     assert error.value.status_code==503
+
+
+def test_deployed_parser_validation_does_not_open_training_annotations(tmp_path,monkeypatch):
+    from research.benchmark import digest
+    import research.layout_kie_study as study
+    monkeypatch.setattr(web,'OUT',tmp_path)
+    monkeypatch.setattr(study,'signature',lambda:(_ for _ in ()).throw(AssertionError('Training data must not be opened')))
+    lock={'signature':'offline-study','deployment_approved_on_development':True}
+    (tmp_path/'layout_kie_lock.json').write_text(json.dumps(lock),encoding='utf-8')
+    (tmp_path/'selector_models.json').write_text('{}',encoding='utf-8')
+    seal=dict(source_lock_sha256=digest(tmp_path/'layout_kie_lock.json'),study_signature='offline-study',
+        model_sha256=digest(tmp_path/'selector_models.json'),deployment_approved_on_development=True,
+        code_sha256={'research/layout_kie.py':digest(web.ROOT/'layout_kie.py')})
+    (tmp_path/'kie_deployment.json').write_text(json.dumps(seal),encoding='utf-8')
+    assert web.kie_settings()==lock
+    seal['code_sha256']['research/layout_kie.py']='tampered'
+    (tmp_path/'kie_deployment.json').write_text(json.dumps(seal),encoding='utf-8')
+    with pytest.raises(ValueError):web.kie_settings()

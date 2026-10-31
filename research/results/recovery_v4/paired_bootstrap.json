@@ -1,0 +1,1346 @@
+[
+  {
+    "method": "raw",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.0013333333333333374,
+    "ci95": [
+      -0.017333333333333336,
+      0.012000000000000009
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.1746026345010614,
+    "ci95": [
+      -0.20847121583108674,
+      -0.14290619057739973
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.2333333333333334,
+    "ci95": [
+      -0.24933333333333338,
+      -0.21866666666666668
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.5600884205062175,
+    "ci95": [
+      -0.5885484935876883,
+      -0.534376833443428
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.001333333333333333,
+    "ci95": [
+      -0.002666666666666666,
+      0.005333333333333332
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.008606051009264775,
+    "ci95": [
+      -0.021629822520786546,
+      0.0034649486664420667
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.026666666666666682,
+    "ci95": [
+      -0.04000000000000003,
+      -0.013333333333333341
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.040765079007833264,
+    "ci95": [
+      -0.07583676115068375,
+      -0.009886521921318498
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.020000000000000007,
+    "ci95": [
+      -0.03733333333333335,
+      -0.003999999999999997
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.48284456349734683,
+    "ci95": [
+      0.32485222287934445,
+      0.6454746355696113
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.009333333333333334,
+    "ci95": [
+      -0.022666666666666665,
+      0.002666666666666677
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.062058688012184574,
+    "ci95": [
+      -0.09958295352915593,
+      -0.02606718264069059
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.02533333333333335,
+    "ci95": [
+      -0.04000000000000003,
+      -0.010666666666666673
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.9492693899932783,
+    "ci95": [
+      2.7678964404872826,
+      3.139537916527566
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.008000000000000002,
+    "ci95": [
+      -0.017333333333333343,
+      6.661338147750939e-18
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.9492693899932783,
+    "ci95": [
+      2.7678964404872826,
+      3.139537916527566
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.0026666666666666726,
+    "ci95": [
+      -0.017333333333333346,
+      0.010666666666666666
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.9492693899932783,
+    "ci95": [
+      2.7678964404872826,
+      3.139537916527566
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.001333333333333333,
+    "ci95": [
+      -0.003999999999999999,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.028095091501018032,
+    "ci95": [
+      0.006610759999603033,
+      0.05369900322670579
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.002666666666666666,
+    "ci95": [
+      -0.013333333333333332,
+      0.00666666666666667
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.151553945489577,
+    "ci95": [
+      -0.16856678611000825,
+      -0.13573613856315203
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.2853333333333333,
+    "ci95": [
+      -0.3147000000000001,
+      -0.2586666666666667
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.46317497599346097,
+    "ci95": [
+      -0.48397682510047163,
+      -0.44661614316389026
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.001333333333333331,
+    "ci95": [
+      -0.003999999999999992,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.001514321498107165,
+    "ci95": [
+      -0.006608583639696008,
+      0.0033724036348576182
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.018666666666666658,
+    "ci95": [
+      -0.030666666666666637,
+      -0.007999999999999991
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.13853536898852326,
+    "ci95": [
+      -0.15659320173373273,
+      -0.12212594935076779
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.00933333333333333,
+    "ci95": [
+      -0.018666666666666668,
+      -4.385380947269671e-18
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.39678822200919966,
+    "ci95": [
+      0.2724848310362431,
+      0.529362280546411
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.007999999999999998,
+    "ci95": [
+      -0.017333333333333333,
+      0.0013333333333333352
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": -0.08500415849441197,
+    "ci95": [
+      -0.10240480659884633,
+      -0.06771743005131431
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.003999999999999995,
+    "ci95": [
+      -0.011999999999999997,
+      0.0040000000000000036
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.3492667244974292,
+    "ci95": [
+      2.2029371651047405,
+      2.505441883053412
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.006666666666666663,
+    "ci95": [
+      -0.014666666666666654,
+      8.881784197001253e-18
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.3492667244974292,
+    "ci95": [
+      2.2029371651047405,
+      2.505441883053412
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": -0.0026666666666666705,
+    "ci95": [
+      -0.010666666666666673,
+      0.005333333333333325
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 2.3492667244974292,
+    "ci95": [
+      2.2029371651047405,
+      2.505441883053412
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.011247288499725982,
+    "ci95": [
+      0.0,
+      0.028821109498967417
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "exact",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "metric": "wall",
+    "physical_ids": 50,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.11361935779505439,
+    "ci95": [
+      -0.15157304056810636,
+      -0.07884415656845352
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.7121537211157072,
+    "ci95": [
+      -0.8596486833015095,
+      -0.5712085534824939
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.28443311895840273,
+    "ci95": [
+      -0.3347613277722928,
+      -0.2315037399677493
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -1.534676081109016,
+    "ci95": [
+      -1.762295388527564,
+      -1.307172099719465
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.01392004891488896,
+    "ci95": [
+      -0.030895762982192307,
+      0.0007099568531456946
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.08369967334308769,
+    "ci95": [
+      -0.025041207582689788,
+      0.19905632933918654
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.09060031285650479,
+    "ci95": [
+      -0.129361692879656,
+      -0.05434608699717705
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.6512989611132071,
+    "ci95": [
+      -0.7884764101717479,
+      -0.5147002731444085
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.07930038404625607,
+    "ci95": [
+      -0.11521008069492329,
+      -0.045805344317179975
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 1.4831243210924894,
+    "ci95": [
+      1.087321407287608,
+      1.8331672601230737
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.04886498210156621,
+    "ci95": [
+      -0.07089763287657379,
+      -0.028791514957923637
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.28095943556788067,
+    "ci95": [
+      -0.4025172127447634,
+      -0.15582729804400716
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.06968565814799042,
+    "ci95": [
+      -0.10527045337416854,
+      -0.03580670773059832
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 6.414161264434613,
+    "ci95": [
+      5.538921571809945,
+      7.283631546028869
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.0011530780880626072,
+    "ci95": [
+      -0.011320606065188109,
+      0.012627469652237443
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 6.414161264434613,
+    "ci95": [
+      5.538921571809945,
+      7.283631546028869
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.014535655835965432,
+    "ci95": [
+      -0.031790908867534245,
+      0.0036669045608674006
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 6.414161264434613,
+    "ci95": [
+      5.538921571809945,
+      7.283631546028869
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.001010101010101011,
+    "ci95": [
+      0.0,
+      0.0030303030303030333
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.12469201444829296,
+    "ci95": [
+      0.029948065555395767,
+      0.2352941797831833
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.10299512388005679,
+    "ci95": [
+      -0.15673938730640222,
+      -0.05160593172880329
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "raw",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.5899248266877192,
+    "ci95": [
+      -0.6780912629563439,
+      -0.5053509378236295
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.33420157824440594,
+    "ci95": [
+      -0.3829346729742757,
+      -0.2847775132170127
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "strict",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -1.2234196177748446,
+    "ci95": [
+      -1.3852425992083672,
+      -1.0655322779323453
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.011295466706973418,
+    "ci95": [
+      -0.03225613950391427,
+      0.009029415999520467
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "bbox",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.12088770332565114,
+    "ci95": [
+      0.03551783572397348,
+      0.21324723963822978
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.08693045239742865,
+    "ci95": [
+      -0.13731770370057264,
+      -0.0402678274788698
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "contour",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.546575521129287,
+    "ci95": [
+      -0.6317037919798815,
+      -0.46322441864920433
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.05531507245000536,
+    "ci95": [
+      -0.1081637486932572,
+      -0.0024595938690367
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "text_deskew",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 1.1485511866514568,
+    "ci95": [
+      0.8174913566040858,
+      1.4414968782857047
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.039406792324748974,
+    "ci95": [
+      -0.07223578095546619,
+      -0.006486610167724716
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "lcnet",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": -0.22155823778852615,
+    "ci95": [
+      -0.28677408188280723,
+      -0.15463267374502426
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "fixed_completion",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.07771512858200165,
+    "ci95": [
+      -0.12237542459833484,
+      -0.03809562738793905
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "max_confidence",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 5.196440337771653,
+    "ci95": [
+      4.555665802369767,
+      5.8224010054133
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": -0.0004021371358832635,
+    "ci95": [
+      -0.02911857015533485,
+      0.03451537511909026
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 5.196440337771653,
+    "ci95": [
+      4.555665802369767,
+      5.8224010054133
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.007442995457701349,
+    "ci95": [
+      -0.01083492222646633,
+      0.02599415569452335
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "allviews_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 5.196440337771653,
+    "ci95": [
+      4.555665802369767,
+      5.8224010054133
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.006565656565656564,
+    "ci95": [
+      -0.002020202020202021,
+      0.020707070707070705
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_ridge",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.11156267111137926,
+    "ci95": [
+      0.026949004444759346,
+      0.21092692458455634
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "exact",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  },
+  {
+    "method": "cascade_stumps",
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "metric": "wall",
+    "physical_ids": 30,
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "weighting": "Equal physical-document means of per-image values",
+    "exploratory_no_multiplicity_correction": true
+  }
+]

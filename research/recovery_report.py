@@ -30,6 +30,14 @@ def main():
     target_coverage=read('target_coverage.json')
     environment=read('environment.json')
     kie=read('layout_kie.json');kie_lock=read('layout_kie_lock.json')
+    kie_rates={}
+    for source,role in (('authored_specimen','test'),('authored_layout_stress','external_layout')):
+        group=[r for r in kie['rows'] if r['source']==source and r['role']==role]
+        total=sum(r['baseline']['eligible_fields'] for r in group)
+        kie_rates[source]={method:sum(r[method]['canonical_exact'] for r in group)/max(total,1)
+                           for method in ('baseline','layout_assignment')}
+    transfer_exact={name:{method:field_summary([r for r in data['rows'] if r['repeat']==1 and r['method']==method])[1]
+        for method in ('raw','fixed_completion')} for name,data in (('stress',stress),('up',external))}
     panel_ids=set(read('manifest.json')['panel_uids'])
     with gzip.open(OUT/'per_image.jsonl.gz','rt') as stream:
         native_panel=[r for r in map(json.loads,stream) if r['repeat']==1 and r['uid'] in panel_ids and r['policy']=='completion']
@@ -198,7 +206,10 @@ def main():
     for r in alphabet:lines.append(f'| {r["reader"]} / {r["source"]} | {r["fully_supported_fields"]} / {r["fields"]} |')
     lines.extend(['','[MIDV-UP traces](results/recovery_v4/up_external.json), '
         '[spatial stress traces](results/recovery_v4/layout_stress.json). Tỷ lệ giữ của raw chỉ loại trường hợp không có chữ, '
-        'không được xem là cùng gate calibration với cascade/completion.','',
+        'không được xem là cùng gate calibration với cascade/completion. '
+        f'Trên spatial stress, raw đạt {pct(transfer_exact["stress"]["raw"])}% còn completion {pct(transfer_exact["stress"]["fixed_completion"])}%; '
+        f'MIDV-UP tương ứng {pct(transfer_exact["up"]["raw"])}% và {pct(transfer_exact["up"]["fixed_completion"])}%. '
+        'Vì vậy kết quả không hỗ trợ ép mọi ảnh qua nắn hình hoặc claim phục hồi vượt raw ở mọi miền.','',
         '## Sửa gán thông tin vào form: ablation bổ sung','',
         'Giữ nguyên OCR Latin completion, thêm ghép nhãn–giá trị theo hình học phải/dưới và assignment một giá trị/một nhãn. '
         'Tái dùng alias/kiểm tra ngày, giới tính, số giấy tờ hiện có; hỗ trợ nhãn lạ có dấu hai chấm. '
@@ -270,20 +281,36 @@ def main():
         'mở **http://127.0.0.1:8001/** trong Chrome/Edge. Camera live → preview → xác nhận → OCR → form có thể sửa. '
         'Ảnh giữ nguyên độ phân giải gốc khi gửi; không ghi ảnh/text camera ra file hoặc gửi tới API ngoài. '
         'Đây là nghiên cứu document processing, tách khỏi mentor8000.','',
+        'Đường suy luận kiểm tra seal mã/model, không mở annotation huấn luyện/benchmark hoặc tra database định danh. '
+        'Seal được xuất offline bởi recovery_deploy.py từ bản khóa development.','',
+        'Kiểm thử browser với OCR thật: thẻ hai cột và mẫu đủ khung điền đúng5 trường; mẫu giấy phép thiếu họ tên '
+        'do nhãn OCR sai; mẫu sinh viên có lỗi ghép Trường thành giá trị Khóa. Giữ cả lỗi này trong '
+        '[browser validation](results/recovery_v4/browser_validation.json). UI có cảnh báo/chỉnh sửa/xóa; '
+        'mọi cảnh báo hình học đều hiện Cần kiểm tra, kể cả gate confidence không bật. Đây là trợ giúp hiển thị, '
+        'không thay đổi các metric V4. Sửa sau xác nhận yêu cầu xác nhận lại. Chưa kiểm thử chụp camera vật lý.','',
+        'Ảnh minh chứng: [form hai cột](results/recovery_v4/web_validation.jpg), '
+        '[cảnh báo cắt chữ](results/recovery_v4/web_warning.jpg).','',
         'Biểu đồ: [test accuracy](results/recovery_v4/test_accuracy.png), [trace costs](results/recovery_v4/trace_cost.png).'])
     report=Path('research/RECOVERY_RESULTS_VI.md');report.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
-    manuscript=['# Partial Identity-Document Capture: Visibility, Budgeted OCR Views and Auditable Evaluation','',
+    manuscript=['# Auditing Information Loss in Partial Identity-Document Capture: Rectification, OCR Confidence and Field Extraction','',
         'Working manuscript. Venue decision pending; no claim of accepted CORE B status.','',
         '## Abstract','',
         'Mobile document systems can lose text when four-corner localization fails, yet forwarding or completing the card '
         'can be stronger than complex recovery. We investigate visibility-aware evaluation and bounded OCR view selection '
-        'on540 captures from150 document IDs:90 newly authored bilingual specimen identities and60 additional MIDV identities. '
+        'on 540 captures from 150 document IDs: 90 newly authored bilingual specimen identities and 60 additional MIDV identities. '
         'Development, calibration and test IDs are disjoint, with an additional font/field-order shift. Six original '
         'configuration IDs represent four style groups, not six independent spatial designs. We compare seven geometric '
         'views, two CPU OCR alternatives, naive confidence selection, linear/stump predictors and bounded cascades. '
         'We distinguish fully visible-field transcription, conservative visible-substring transcription, semantic schema '
         'extraction and review behaviour, and verify deployment using fresh online traces. All outcomes, code/model/input '
-        'hashes, negative results and numeric rows are released. The study does not establish document authenticity or PAD.','',
+        'hashes, negative results and numeric rows are released. Primary cascades match completion accuracy in all '
+        'four source/reader comparisons; rectification also loses to raw on the additional spatial layouts. '
+        f'A separate exploratory spatial field-assignment ablation improves canonical key-value exact from '
+        f'{pct(kie_rates["authored_specimen"]["baseline"])}% to {pct(kie_rates["authored_specimen"]["layout_assignment"])}% '
+        f'on the authored test set and from {pct(kie_rates["authored_layout_stress"]["baseline"])}% to '
+        f'{pct(kie_rates["authored_layout_stress"]["layout_assignment"])}% on the layout stress set, reusing the same OCR outputs. '
+        'Its main-set comparison is post hoc. These findings support separating transcription, extraction and '
+        'information-loss review; they do not establish new routing theory, document authenticity or PAD.','',
         '## 1. Research question and contribution boundary','',
         'When does completion or rereading preserve more useful text, and when is additional computation justified? '
         'The contribution under evaluation is the task/dataset/evaluation contract and an auditable implementation. '

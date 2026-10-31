@@ -1,0 +1,30 @@
+[
+  {
+    "reader": "rapid_v4",
+    "source": "authored_specimen",
+    "fields": 750,
+    "fully_supported_fields": 621,
+    "target_set_redefined": false
+  },
+  {
+    "reader": "rapid_v4",
+    "source": "midv2020_derived",
+    "fields": 864,
+    "fully_supported_fields": 810,
+    "target_set_redefined": false
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "source": "authored_specimen",
+    "fields": 750,
+    "fully_supported_fields": 633,
+    "target_set_redefined": false
+  },
+  {
+    "reader": "rapid_latin_v5",
+    "source": "midv2020_derived",
+    "fields": 864,
+    "fully_supported_fields": 813,
+    "target_set_redefined": false
+  }
+]
