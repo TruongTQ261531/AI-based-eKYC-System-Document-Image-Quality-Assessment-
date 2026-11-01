@@ -1,0 +1,13 @@
+{
+  "lock_commit": "10268e47bbb25a536f51d2aa7ac71753762f0d8b",
+  "remote_confirmed_commit": "10268e47bbb25a536f51d2aa7ac71753762f0d8b",
+  "time_utc": "2026-11-01T07:32:39Z",
+  "signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "control_signature": "20aec305373964783201ef088f6e854974de1cb76a98de624096d58c30315051",
+  "locks": {
+    "test_lock.json": "c30c38c3a46b7429e2def2134ef084fe24320531fdc4143da6a9f9ccf5af71e7",
+    "control/test_lock.json": "ee385e9155f717691a223d1a7b083bbabd59c5f3f5d23e48e657326b4d766981"
+  },
+  "test_scoring_started": false,
+  "selection_uses_development_only": true
+}
