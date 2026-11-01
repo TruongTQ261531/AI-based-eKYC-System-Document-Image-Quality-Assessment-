@@ -66,5 +66,6 @@
       "ram_available_bytes": 4006281216
     }
   ],
-  "scope": "four separate authored smoke inputs, one-microbatch backward; main uses accumulation four"
+  "scope": "four separate authored smoke inputs, one-microbatch backward; main uses accumulation four",
+  "long_answer_eligible": true
 }

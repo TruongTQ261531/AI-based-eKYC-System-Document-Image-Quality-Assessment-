@@ -1,0 +1,29 @@
+{
+  "eligible": true,
+  "profile": "raw4",
+  "gradient_accumulation": 4,
+  "events": [
+    {
+      "step": 1,
+      "time_utc": "2026-11-01T11:37:57Z",
+      "loss": 1.740277498960495,
+      "gradient_norm": 2.978606939315796,
+      "learning_rate": 0.0,
+      "max_tokens": 1367,
+      "cursor": 4,
+      "wall_seconds": 6.615784600027837,
+      "peak_allocated_bytes": 3916724224,
+      "peak_reserved_bytes": 7151288320,
+      "process_rss_bytes": 3669843968,
+      "process_peak_rss_bytes": 7421272064,
+      "ram_available_bytes": 3451187200
+    }
+  ],
+  "training_only_source_ids": [
+    "midv2020/srb_passport/70",
+    "midv2020/srb_passport/33",
+    "midv2020/srb_passport/05",
+    "midv2020/srb_passport/44"
+  ],
+  "test_used": false
+}

@@ -1,0 +1,11 @@
+{
+  "name_dob_role_overlap": 0,
+  "reference_self_score_passed": true,
+  "python_tests": 21,
+  "python_failed": 0,
+  "frontend_tests": 8,
+  "frontend_failed": 0,
+  "scope": "Mock/HTTP unit tests use fake predictor and camera; not OCR accuracy evidence",
+  "environment_retry": "Windows restricted loopback event-loop initialization hung before API; traced socketpair; tests passed with loopback enabled",
+  "live_camera_tested": false
+}

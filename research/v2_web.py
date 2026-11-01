@@ -55,7 +55,7 @@ def index():return FileResponse(WEB/'index.html')
 
 @app.get('/assets/{name}')
 def asset(name:str):
-    paths={'app.js':WEB/'app.js','style.css':ROOT/'research/web/style.css'}
+    paths={'app.js':WEB/'app.js','style.css':WEB/'style.css','base.css':ROOT/'research/web/style.css'}
     if name not in paths:raise HTTPException(404)
     return FileResponse(paths[name])
 

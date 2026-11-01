@@ -74,6 +74,41 @@ def compare_inputs(profile):
 
 def choose_inputs():
     records=[read(OUT/f'input_panel_{p}.json') for p in PROFILES]
+    # Re-score persisted raw predictions with ONE final metric implementation,
+    # even if a development-only scoring correction was made during the panel.
+    samples={r['uid']:r for r in panel('development',8)}
+    for record in records:
+        for row in record['rows']:
+            path=CACHE/'input_panel'/record['profile']/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')
+            metrics,_=scoring(samples[row['uid']],read(path)['text']);row.update(metrics)
+        record['summary']=summary(record['rows']);record['metric_sha256']=sha(ROOT/'research/v2_metrics.py')
+        save(OUT/f"input_panel_{record['profile']}.json",record)
+    # The early smoke has short authored answers. Also test actual longest
+    # training answers before declaring a tile budget feasible on this GPU.
+    for profile in ('raw2','raw4'):
+        path=OUT/f'probe_long_{profile}.json'
+        if not path.exists():
+            import gc
+            model=None
+            try:
+                configure_training('v2-long-training-only/'+profile+'/'+sha(ROOT/'research/v2_study.py'))
+                model=VLM(42,profile);pool=load('train','control')+load('train','partial')
+                ranked=sorted(pool,key=lambda r:int(model.tokens(r['target'])[0].numel()),reverse=True)
+                chosen=[];seen=set()
+                for row in ranked:
+                    if row['physical_id'] not in seen:chosen.append(row);seen.add(row['physical_id'])
+                    if len(chosen)==4:break
+                feature_all(model,chosen);model.offload_vision();model.lora(CONFIG)
+                events,_=trainer.train_steps(model,chosen,[],42,1,4,CACHE/'probe_long'/profile,save_every=1)
+                save(path,dict(eligible=True,profile=profile,gradient_accumulation=4,events=events,
+                     training_only_source_ids=[r['physical_id'] for r in chosen],test_used=False))
+            except torch.cuda.OutOfMemoryError as exc:
+                save(path,dict(eligible=False,profile=profile,error_type=type(exc).__name__,detail=str(exc),
+                              test_used=False,no_silent_batch_change=True))
+            finally:
+                del model;gc.collect();torch.cuda.empty_cache()
+        probe=read(OUT/f'probe_raw{profile[-1]}.json');probe['long_answer_eligible']=read(path)['eligible']
+        probe['eligible']=probe['eligible'] and read(path)['eligible'];save(OUT/f'probe_{profile}.json',probe)
     eligible=[r for r in records if read(OUT/f"probe_raw{r['profile'][-1]}.json")['eligible']]
     choice=max(eligible,key=lambda r:(r['summary']['f1'],-r['summary']['unsupported_nonempty'],-r['mean_fresh_seconds']))
     save(OUT/'input_choice.json',dict(profile=choice['profile'],development_panel_ids=8,development_inputs=16,
@@ -86,6 +121,11 @@ def train(variant,seed0):
     if (OUT/'test_lock.json').exists():raise ValueError('V2 test already sealed; do not retrain')
     configure_training();profile=read(OUT/'input_choice.json')['profile'];rows=load('train',variant)
     model=VLM(seed0,profile);dev=panel('development',4)
+    token_lengths=[model.tokens(r['target']) for r in rows]
+    token_exposure=dict(input_and_answer_tokens=2*sum(int(ids.numel()) for ids,_ in token_lengths),
+                        answer_loss_tokens=2*sum(int(labels.ne(-100).sum()) for _,labels in token_lengths),
+                        scope='Exactly two epochs of the paired 640 slots; answer lengths can differ between arms')
+    del token_lengths
     setup=feature_all(model,rows+dev);model.offload_vision();model.lora(CONFIG)
     folder=CACHE/'training'/f'{variant}_{seed0}'
     existing=sorted(p for p in folder.glob('step_*') if (p/'complete.json').exists())
@@ -102,6 +142,8 @@ def train(variant,seed0):
         feature_setup_seconds=setup,events=all_events,identities=len(set(ids)),presentations=1280,
         identity_sequence_sha256=stable_hash(ids),identity_slot_sequence_sha256=stable_hash(slots),
         steps=320,train_rasters=len({r['input_sha256'] for r in rows}),resumed_from=str(resume) if resume else None))
+    record=read(OUT/f'train_{variant}_{seed0}.json');record['token_exposure']=token_exposure
+    save(OUT/f'train_{variant}_{seed0}.json',record)
 
 def adapter_for(key):
     if key=='original':return None,read(ROOT/'research/results/vlm_lora_v1/training_environment.json')['model_sha256']
