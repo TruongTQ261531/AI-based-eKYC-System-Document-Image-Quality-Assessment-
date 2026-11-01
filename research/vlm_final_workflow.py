@@ -28,6 +28,7 @@ def main():
             ('test_cpu',False,['research.vlm_baseline','test'],OUT/'test_ocr.json'),
             ('fresh_online',True,['research.vlm_online'],OUT/'fresh_online.json'),
             ('secondary_format',False,['research.vlm_analysis'],None),
+            ('error_taxonomy',False,['research.vlm_errors'],None),
             ('audit',False,['research.vlm_final_report','audit'],None),
             ('report',False,['research.vlm_final_report','report'],None),
             ('adapter_export',False,['research.vlm_package'],None)])

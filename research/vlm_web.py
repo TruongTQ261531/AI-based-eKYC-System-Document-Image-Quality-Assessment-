@@ -32,6 +32,8 @@ def deployment():
         raise ValueError('Study source/audit changed')
     if provenance['model_lock_sha256']!=sha(OUT/'test_lock.json') or provenance['audit_sha256']!=sha(OUT/'audit.json'):
         raise ValueError('Published deployment evidence changed')
+    if provenance['report_sha256']!=sha(ROOT/'research/VLM_RESULTS_VI.md'):
+        raise ValueError('Published report changed')
     if not lock['deployment_approved']:raise ValueError('Development deployment gate did not pass')
     record=lock['adapters'][lock['selected_model'].split('_')[1]]
     path=(ROOT/record['selected_checkpoint']).resolve()

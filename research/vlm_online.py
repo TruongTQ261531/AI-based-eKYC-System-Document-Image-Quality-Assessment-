@@ -61,4 +61,6 @@ def main():
         all_calls_recomputed_vision=True))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    from research.vlm_train import process_lock
+    with process_lock():main()

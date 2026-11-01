@@ -3,13 +3,37 @@ const labels={full_name:'Họ và tên',id_number:'Số giấy tờ',dob:'Ngày 
 let stream=null,photo=null,url=null,busy=false,generation=0,ready=false;
 function status(text,error=false){$('status').textContent=text;$('status').classList.toggle('error',error);}
 function stop(){stream?.getTracks().forEach(t=>t.stop());stream=null;$('video').srcObject=null;$('video').hidden=true;$('guide').hidden=true;}
+function clearResult(){$('fields').replaceChildren();$('confirmed').hidden=true;$('confirm').hidden=true;$('empty-result').hidden=false;$('warnings').textContent='';$('timing').textContent='';}
 function reset(){generation++;stop();photo=null;if(url)URL.revokeObjectURL(url);url=null;$('capture-preview').removeAttribute('src');$('capture-preview').hidden=true;$('empty-camera').hidden=false;$('fields').replaceChildren();$('warnings').textContent='';$('timing').textContent='';$('confirm').hidden=true;$('confirmed').hidden=true;$('empty-result').hidden=false;$('capture').hidden=true;$('submit').hidden=true;$('open-camera').hidden=false;$('resolution').textContent='Ảnh và thông tin đã được bỏ khỏi trang.';}
 function usePhoto(blob){photo=blob;if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(blob);$('capture-preview').src=url;$('capture-preview').hidden=false;$('empty-camera').hidden=true;$('open-camera').hidden=true;$('capture').hidden=true;$('submit').hidden=false;}
 $('open-camera').addEventListener('click',async()=>{if(busy)return;reset();const current=++generation;try{if(!isSecureContext||!navigator.mediaDevices?.getUserMedia)throw Error('Camera cần localhost hoặc HTTPS.');const next=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:'environment'},width:{ideal:2560},height:{ideal:1440}}});if(current!==generation){next.getTracks().forEach(t=>t.stop());return;}stream=next;$('video').srcObject=next;$('video').hidden=false;$('empty-camera').hidden=true;$('guide').hidden=false;$('open-camera').hidden=true;$('capture').hidden=false;await $('video').play();status('Giữ đủ giấy tờ rồi bấm chụp.');}catch(e){stop();status(e.name==='NotAllowedError'?'Chưa được cấp quyền camera. Cho phép camera rồi thử lại.':e.name==='NotReadableError'?'Camera đang bận. Đóng ứng dụng dùng camera rồi thử lại.':e.name==='NotFoundError'?'Không tìm thấy camera.':e.message,true);}});
 $('capture').addEventListener('click',async()=>{const video=$('video');if(!video.videoWidth){status('Camera chưa sẵn sàng. Hãy đợi hình ảnh ổn định.',true);return;}const current=generation,canvas=document.createElement('canvas');canvas.width=video.videoWidth;canvas.height=video.videoHeight;canvas.getContext('2d').drawImage(video,0,0);const blob=await new Promise(r=>canvas.toBlob(r,'image/jpeg',.96));if(!blob||current!==generation)return;stop();usePhoto(blob);$('resolution').textContent=`Ảnh gốc ${canvas.width} × ${canvas.height} pixel. Chưa gửi lên máy chủ.`;status('Kiểm tra ảnh rồi bấm Xác nhận & đọc.');});
 $('clear').addEventListener('click',()=>{if(!busy){reset();status('Đã xóa ảnh và thông tin khỏi trang.');}});
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',async()=>{if(busy)return;reset();const current=generation;try{const r=await fetch('/api/specimen/'+button.dataset.demo,{cache:'no-store'});if(!r.ok)throw Error('Chưa lấy được ảnh mẫu.');const blob=await r.blob();if(current!==generation)return;usePhoto(blob);$('resolution').textContent='SPECIMEN tổng hợp thuộc tập train; dùng kiểm tra giao diện, không thay thế kết quả test.';status('Xác nhận để chạy model thật.');}catch(e){status(e.message,true);}}));
-$('submit').addEventListener('click',async()=>{if(busy||!photo)return;if(!ready){status('Mô hình chưa sẵn sàng. Xem trạng thái phía trên.',true);return;}busy=true;const current=generation;document.querySelectorAll('button').forEach(b=>b.disabled=true);status('Đang đọc ảnh bằng LoRA trên máy…');try{const r=await fetch('/api/scan',{method:'POST',headers:{'Content-Type':photo.type},body:photo,cache:'no-store'});const result=await r.json();if(current!==generation)return;if(!r.ok)throw Error(result.detail||'Không đọc được ảnh.');$('fields').replaceChildren();$('confirmed').hidden=true;for(const [key,value] of Object.entries(result.fields)){const label=document.createElement('label');label.textContent=labels[key]||key;const input=document.createElement('input');input.type='text';input.value=value;input.name=key;input.autocomplete='off';input.addEventListener('input',()=>{$('confirmed').hidden=true;status('Thông tin đã sửa. Hãy đối chiếu và xác nhận lại.');});label.append(input);$('fields').append(label);}$('empty-result').hidden=Object.keys(result.fields).length>0;$('warnings').textContent=result.warnings.join(' ');$('confirm').hidden=!Object.keys(result.fields).length;$('timing').textContent=`${result.model} · suy luận ảnh mới ${result.inference_seconds.toFixed(2)}s · ${result.source_dimensions.join(' × ')} pixel`;status('Đọc xong. Kiểm tra từng trường trước khi xác nhận.');}catch(e){status(e.message,true);}finally{busy=false;document.querySelectorAll('button').forEach(b=>b.disabled=false);}});
+$('submit').addEventListener('click',async()=>{
+ if(busy||!photo)return;
+ if(!ready){status('Mô hình chưa sẵn sàng. Xem trạng thái phía trên.',true);return;}
+ clearResult();busy=true;const current=generation;
+ document.querySelectorAll('button').forEach(b=>b.disabled=true);
+ status('Đang đọc ảnh bằng LoRA trên máy…');
+ try{
+  const r=await fetch('/api/scan',{method:'POST',headers:{'Content-Type':photo.type},body:photo,cache:'no-store'});
+  const result=await r.json();if(current!==generation)return;
+  if(!r.ok)throw Error(result.detail||'Không đọc được ảnh.');
+  for(const [key,value] of Object.entries(result.fields)){
+   const label=document.createElement('label');label.textContent=labels[key]||key;
+   const input=document.createElement('input');input.type='text';input.value=value;input.name=key;input.autocomplete='off';
+   input.addEventListener('input',()=>{$('confirmed').hidden=true;status('Thông tin đã sửa. Hãy đối chiếu và xác nhận lại.');});
+   label.append(input);$('fields').append(label);
+  }
+  $('empty-result').hidden=Object.keys(result.fields).length>0;
+  $('warnings').textContent=result.warnings.join(' ');$('confirm').hidden=!Object.keys(result.fields).length;
+  const wall=Number.isFinite(result.request_processing_wall_seconds)?` · xử lý request ${result.request_processing_wall_seconds.toFixed(2)}s`:'';
+  $('timing').textContent=`${result.model} · suy luận ảnh mới ${result.inference_seconds.toFixed(2)}s${wall} · ${result.source_dimensions.join(' × ')} pixel`;
+  status('Đọc xong. Kiểm tra từng trường trước khi xác nhận.');
+ }catch(e){status(e.message,true);}
+ finally{busy=false;document.querySelectorAll('button').forEach(b=>b.disabled=false);}
+});
 $('confirm').addEventListener('click',()=>{$('confirmed').hidden=false;status('Đã xác nhận trên trình duyệt, không gửi thêm dữ liệu.');});
 window.addEventListener('pagehide',reset);
 async function health(){try{const r=await(await fetch('/api/health',{cache:'no-store'})).json();ready=r.ready;$('ready-state').textContent=ready?'Model sẵn sàng':'Chưa bật model';$('model-state').textContent=r.message;if(!photo&&!stream)status(r.message);}catch{status('Chưa kết nối được máy chủ.',true);}}

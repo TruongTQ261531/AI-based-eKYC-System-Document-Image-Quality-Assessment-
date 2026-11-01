@@ -45,3 +45,26 @@ Mở bản thử LoRA bằng `powershell -NoProfile -ExecutionPolicy Bypass -Fil
 cổng development và audit, dùng ảnh camera trong bộ nhớ, không ghi ảnh/text
 ra file. Bản OCR nghiên cứu cũ ở8001 và bản mentor được giữ riêng. Demo trong
 web dùng ảnh train để thử giao diện, không dùng làm bằng chứng accuracy test.
+
+Kết quả hoàn chỉnh đọc ở `research/VLM_RESULTS_VI.md`. Để kiểm tra lại số
+từ raw output/checkpoint còn trên chính máy này, không chạy lại training:
+
+```powershell
+python -m research.vlm_analysis
+python -m research.vlm_errors
+python -m research.vlm_final_report audit
+python -m research.vlm_final_report report
+```
+
+Audit này cần cache private, không chỉ các file số trên Git. Clone mới phải
+chuẩn bị lại corpus/runtime và tái lập model/inference; checksum adapter khác
+sẽ không được thay vào khóa nghiên cứu cũ. Reproduction training ở trên so
+checksum trong thư mục riêng, không tuyên bố test đã công bố là test mới.
+`vlm_final_workflow` là supervisor của đợt chấm đã khóa, có lưu log từng giai
+đoạn và tiếp tục từ các prediction cache hoàn tất khi bị ngắt. Nó yêu cầu cả
+khóa chính và đối chứng đã được commit trước khi mở test. Không dùng
+`vlm_report.py` bản scaffold để thay audit có đối chứng ở trên.
+
+Phạm vi train là SPECIMEN có target từng trường. Ảnh full_dataset_original
+và nhãn chất lượng của manifest hiện tại không được giả thành transcript OCR.
+Kiểm kê phạm vi thật nằm ở results/vlm_lora_v1/input_scope.json.

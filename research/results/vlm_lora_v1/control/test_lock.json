@@ -1,0 +1,30 @@
+{
+  "signature": "20aec305373964783201ef088f6e854974de1cb76a98de624096d58c30315051",
+  "primary_signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "selected_model": "seed_42",
+  "adapters": {
+    "42": {
+      "selected_checkpoint": "research/cache/vlm_lora_v1/control/seed_42/step_0048",
+      "selected_adapter_sha256": "73c12407a4580489cd7eb3e395335ec23b69a88782bbbdad703f2bf3763c6ef9"
+    }
+  },
+  "development_summary": {
+    "cases": 80,
+    "correct": 298,
+    "reference": 306,
+    "predicted": 388,
+    "precision": 0.7680412371134021,
+    "recall": 0.9738562091503268,
+    "f1": 0.8587896253602305,
+    "json_valid_rate": 0.975,
+    "document_exact_rate": 0.6375,
+    "extra_keys": 88,
+    "missing_keys": 6,
+    "literal_correct": 297,
+    "masked_field_outputs": 57
+  },
+  "test_scored": false,
+  "main_choice_unchanged": true,
+  "source_control_sha256": "db3c2eef65e9bfd145838238a7bd8a37bd497b0d80c06613e221d8c618c179fa",
+  "protocol_sha256": "2e954136ec21436df45c5bb7073f830c2bc2f2d0470813d3c62e6d7af958b817"
+}

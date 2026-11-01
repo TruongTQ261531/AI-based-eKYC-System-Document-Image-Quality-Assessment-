@@ -43,3 +43,9 @@ test('unavailable model never fabricates fields',async()=>{
  const h=harness();await h.demos[0].listeners.click();h.respond({error:true,detail:'Model not approved'});await h.click('submit');
  assert.equal(h.element('fields').children.length,0);assert.match(h.element('status').textContent,/Model not approved/);assert.equal(h.element('submit').disabled,false);
 });
+test('failed retry cannot leave an old successful result to confirm',async()=>{
+ const h=harness();await h.demos[0].listeners.click();h.respond({fields:{id_number:'MOCK'},warnings:[],model:'mock',inference_seconds:.1,source_dimensions:[100,70]});
+ await h.click('submit');await h.click('confirm');assert.equal(h.element('fields').children.length,1);
+ h.respond({error:true,detail:'Temporary failure'});await h.click('submit');
+ assert.equal(h.element('fields').children.length,0);assert.equal(h.element('confirmed').hidden,true);assert.equal(h.element('confirm').hidden,true);
+});

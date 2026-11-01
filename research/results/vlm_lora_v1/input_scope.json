@@ -1,0 +1,25 @@
+{
+  "original_folder_file_suffix_counts": {
+    ".tif": 21100
+  },
+  "original_manifest_rows": 21050,
+  "original_manifest_column_names": [
+    "image_name",
+    "relative_path",
+    "document",
+    "original_document",
+    "label",
+    "source",
+    "origin",
+    "split",
+    "match_rmse",
+    "match_ratio",
+    "is_reference",
+    "mapping_kind"
+  ],
+  "original_json_xml_annotation_files": 0,
+  "fine_tuning_images": 720,
+  "fine_tuning_source": "new deterministic synthetic SPECIMEN only",
+  "quality_labels_are_not_ocr_transcriptions": true,
+  "original_raw_photos_used_for_this_lora_training": false
+}

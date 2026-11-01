@@ -45,13 +45,30 @@ def paired_interval(candidate,comparator,seed=20261101):
 def audit():
     lock=read('test_lock.json');sig=signature();cl=read('control/test_lock.json')
     if lock['signature']!=sig or cl['signature']!=control_signature():raise ValueError('Source changed after lock')
+    publication=read('pretest_publication.json')
+    if any(sha(OUT/name)!=digest for name,digest in publication['locks'].items()):raise ValueError('Published lock bytes changed')
     samples={r['uid']:r for r in load()};published={};repeats={};total=control_count=0
     variants=[(m,m,OUT,CACHE,sig,lock) for m in MODELS]
     variants.append((CONTROL,'seed_42',OUT/'control',CACHE/'control',control_signature(),cl))
     base=next(x['sha256'] for x in read('assets.json')['model'] if x['file']=='model.safetensors')
+    training_reviews=[]
     for label,key,public,private_root,expected_sig,seal in variants:
         digest=base if key=='original' else seal['adapters'][key.split('_')[1]]['selected_adapter_sha256']
-        if key!='original' and sha(ROOT/seal['adapters'][key.split('_')[1]]['selected_checkpoint']/'adapter_model.safetensors')!=digest:raise ValueError('Adapter changed')
+        if key!='original':
+            selected=ROOT/seal['adapters'][key.split('_')[1]]['selected_checkpoint']
+            if sha(selected/'adapter_model.safetensors')!=digest:raise ValueError('Adapter changed')
+            train=json.loads((public/f'train_{key}.json').read_text(encoding='utf-8'));events=train['events']
+            if train['signature']!=expected_sig or [e['step'] for e in events]!=list(range(1,193)):raise ValueError('Training trace incomplete')
+            best=min((e for e in events if 'development_loss' in e),key=lambda e:(e['development_loss'],e['step']))
+            if best['development_loss']!=train['development_loss'] or selected.name!=f"step_{best['step']:04}":raise ValueError('Checkpoint was not selected by development loss')
+            complete=json.loads((selected/'complete.json').read_text(encoding='utf-8'))
+            if complete['signature']!=expected_sig or any(sha(selected/name)!=h for name,h in complete['sha256'].items()):raise ValueError('Checkpoint state changed')
+            from safetensors import safe_open
+            with safe_open(str(selected/'adapter_model.safetensors'),framework='pt',device='cpu') as tensors:
+                keys=list(tensors.keys());params=sum(tensors.get_tensor(k).numel() for k in keys)
+            if params!=1081344 or len(keys)!=192:raise ValueError('Wrong LoRA scope')
+            training_reviews.append(dict(model=label,optimizer_steps=len(events),selected_step=best['step'],
+                adapter_tensors=len(keys),trainable_parameters=params,optimizer_and_rng_file_hash_verified=True))
         for role in ('development','test'):
             rs=[s for s in samples.values() if s['role']==role]
             for repeat in ([1,2,3] if role=='test' else [1]):
@@ -101,11 +118,25 @@ def audit():
         intervals.append(dict(candidate=a,comparator=b,**paired_interval(published[('test',a)],published[('test',b)],20261101+i)))
     slices=[dict(role=role,model=model,capture=c,**aggregate([r for r in rows if r['capture']==c]))
             for (role,model),rows in published.items() for c in sorted({r['capture'] for r in rows})]
+    fresh=read('fresh_online.json');fresh_count=0;fresh_mismatches=0
+    if fresh['signature']!=sig or len(fresh['rows'])!=72:raise ValueError('Fresh timing cases missing')
+    for row in fresh['rows']:
+        name=f"{row['pass_id']}_{row['model']}";uidhash=hashlib.sha256(row['uid'].encode()).hexdigest()+'.json'
+        private=json.loads((CACHE/'online'/name/uidhash).read_text(encoding='utf-8'))
+        fields,valid=parsed(private['_private_text']);actual=score(samples[row['uid']]['target'],fields,valid)
+        if any(row[k]!=v for k,v in actual.items()) or row['visual_features_cached']:raise ValueError('Fresh metric/cache flag mismatch')
+        digest=hashlib.sha256(private['_private_text'].encode()).hexdigest()
+        cached=json.loads((CACHE/'predictions'/f"test_{row['model']}_1"/uidhash).read_text(encoding='utf-8'))
+        identical=digest==cached['prediction_sha256']
+        if digest!=row['prediction_sha256'] or identical!=row['cached_output_identical']:raise ValueError('Fresh output hash mismatch')
+        fresh_mismatches+=not identical;fresh_count+=1
+    if fresh_mismatches!=fresh['cached_output_mismatches']:raise ValueError('Fresh mismatch count differs')
     value=dict(status='passed',signature=sig,control_signature=control_signature(),vlm_rows_replayed=total-control_count,
         control_rows_replayed=control_count,cpu_rows_replayed=cpu_count,repeated_groups=len(groups3),
+        fresh_rows_replayed=fresh_count,fresh_cached_output_mismatches=fresh_mismatches,
         repeat_mismatches=0,metric_mismatches=0,paired_intervals=intervals,slices=slices,
         calibration_images_used=0,test_physical_ids=24,test_rasters=120,independent_human_annotation=False,
-        pretest_publication=read('pretest_publication.json'),secondary_analysis_sha256=sha(OUT/'format_analysis.json'),
+        pretest_publication=publication,training_reviews=training_reviews,secondary_analysis_sha256=sha(OUT/'format_analysis.json'),
         script_sha256=sha(__file__),audit_scope='replay saved outputs with frozen scorer; not independent human verification')
     save(OUT/'audit.json',value);print('AUDIT_PASSED',total,cpu_count,len(groups3),flush=True)
 
@@ -127,6 +158,7 @@ def report():
         f"Chọn **{lock['selected_model']}** trên development, trước test; cổng development đạt: **{lock['deployment_approved']}**. Không đổi lựa chọn theo test/đối chứng.",'',
         '## Dữ liệu và khóa trước test','',
         '720 ảnh/144 mock physical IDs: train480/96IDs, development80/16, calibration40/8, test120/24. Calibration chưa dùng. Tách theo ID và checksum ảnh; cùng generator, hai bố cục/hai font giữa các tập. GT giữ cặp nhãn–giá trị còn đủ trong raster và bỏ trường che kín. Đây là proxy hình học tổng hợp, không phải nhãn legibility từ người chấm. Chưa có ảnh camera mới hoặc held-out-layout.',
+        'Đợt LoRA này không train trên ảnh full_dataset_original. Manifest local có21,050 dòng với nhãn chất lượng; thư mục gốc có21,100 TIF và không có annotation JSON/XML. Nhãn Clean/Blur không thay thế bản chép từng trường cho OCR. Kiểm kê: input_scope.json.',
         f"Commit khóa trước test: `{audit['pretest_publication']['lock_commit']}`. Hai seed chính và một đối chứng:192 optimizer steps,768 presentations/lượt. Đối chứng chỉ full/corner_clip/blur_glare:288ảnh, cùng96IDs; chính480ảnh. Khớp compute và identities, không khớp số raster/epoch. Đối chứng phát sinh từ development, đã khai báo trước test.",'',
         '## Test chính','',
         '| Phương án | Đúng/reference | Precision | Recall | F1 strict | F1 bỏ fence/null | Đúng định dạng | Xuất trường che kín |',
@@ -149,6 +181,7 @@ def report():
         text.append(f"|{LABELS[v['candidate']]} − {LABELS[v['comparator']]}|{v['f1_difference']:.4f}|[{v['ci95'][0]:.4f}, {v['ci95'][1]:.4f}]|")
     text+=['','Bootstrap ghép cặp2000 lần theo24 physical IDs, giữ5biến thể cùng ID đi chung. Exploratory, chưa điều chỉnh nhiều phép thử. Hai seed không phải hai corpus độc lập.',
         f"Replay: {audit['vlm_rows_replayed']} hàng VLM chính, {audit['control_rows_replayed']} đối chứng, {audit['cpu_rows_replayed']} OCR; {audit['repeated_groups']} nhóm, mỗi nhóm3 lần suy luận. Rerun là panel12ảnh ×2 sau test120, không phải3 bộ120ảnh. Không sai khác score/hash. Audit số từ output đã lưu, không phải xác nhận độc lập của người.",'',
+        'Phân loại lỗi đọc sai/bỏ sót/định dạng và trường che/cắt/không in được lưu số trong `error_taxonomy.json`; không công bố giá trị cá nhân.','',
         '## Thời gian, bộ nhớ','', '| Phương án | p50/p95 giây (cached vision) | p50/p95 giây (fresh ảnh+vision+sinh) |','|---|---:|---:|']
     for k,r in records.items():
         fresh=[x for x in online['rows'] if x['model']==k];text.append(f"|{LABELS[k]}|{timing(r['rows'])}|{timing(fresh) if fresh else 'chưa đo fresh riêng'}|")
@@ -157,8 +190,10 @@ def report():
         '| Train | Step chọn | Dev token loss | Optimizer invocation(s) | Feature setup(s) | Peak allocated VRAM(GiB) | Peak process RSS(GiB) |','|---|---:|---:|---:|---:|---:|---:|']
     for k,f in [('seed_42','train_seed_42.json'),('seed_31415','train_seed_31415.json'),(CONTROL,'control/train_seed_42.json')]:
         r=read(f);e=r['events'];text.append(f"|{LABELS[k]}|{r['selected_checkpoint'].rsplit('_',1)[-1]}|{r['development_loss']:.6f}|{r['invocation_train_seconds']:.2f}|{r['feature_cache_setup_seconds']:.2f}|{max(x['peak_allocated_bytes'] for x in e)/2**30:.3f}|{max(x['process_peak_rss_bytes'] for x in e)/2**30:.3f}|")
+        gaps=[dict(after_step=a['step'],before_step=b['step'],seconds=b['wall_seconds']-a['wall_seconds']) for a,b in zip(e,e[1:]) if b['wall_seconds']-a['wall_seconds']>120]
+        if gaps:text.append(f"Lưu ý {LABELS[k]}: khoảng không tăng step >120s: `{json.dumps(gaps)}`. Thời gian invocation giữ nguyên; chưa xác định nguyên nhân khoảng dừng, không diễn giải nó là tốc độ GPU.")
     smoke=read('smoke.json')
-    text+=['','RAM16GB, RTX3050 Laptop6GB. Base938,193,024tham số, trainable1,081,344; BF16 LoRA r8/alpha16, không phải QLoRA. Frozen vision/projector/baseLM. Trace lưu cả allocated/reserved VRAM; RSS gồm load, không phải tổng RAM máy. Tải/chuẩn bị nhiềuGB tách thời gian optimizer.',
+    text+=['','RAM16GB, RTX3050 Laptop6GB. Base938,193,024tham số, trainable1,081,344; BF16 LoRA r8/alpha16, không phải QLoRA. Frozen vision/projector/baseLM. Trace lưu cả allocated/reserved VRAM; RSS gồm load, không phải tổng RAM máy. Tải/chuẩn bị nhiềuGB tách thời gian optimizer. Checkpoint được chọn có4×step presentations; đối chứng được giữ sớm hơn theo cùng quy tắc development.',
         f"GPU smoke:{smoke['optimizer_steps_continuous']} bước +resume{smoke['resumed_steps']} bước; 192tensor thay đổi; maxabs resume/continuous={smoke['resume_max_abs_difference']}. Lỗi logger sau4bước đầu và Host ở fixture TestClient được giữ trong lịch sử, đã sửa/kiểm tra lại.",'',
         '## Triển khai và giới hạn','',
         'Web LoRA opt-in: http://127.0.0.1:8002/ . Camera xử lý trong bộ nhớ, tính mới vision; không tra dataset/GT, không lưu ảnh/text, không gọi API ngoài. Demo lấy ảnh train để thử UI, không là accuracy test. Không phê duyệt danh tính hoặc tuyên bố liveness/PAD qua thí nghiệm OCR.',

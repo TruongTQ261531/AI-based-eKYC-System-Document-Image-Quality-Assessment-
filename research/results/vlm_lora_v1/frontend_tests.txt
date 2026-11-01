@@ -1,13 +1,14 @@
-✔ native-resolution camera capture waits for confirmation (13.2436ms)
-✔ late camera permission is stopped after reset (2.5662ms)
-✔ camera denial provides guidance (3.4859ms)
-✔ only model fields appear, dates remain editable, edits invalidate confirmation (4.279ms)
-✔ unavailable model never fabricates fields (4.5678ms)
-ℹ tests 5
+✔ native-resolution camera capture waits for confirmation (3.8904ms)
+✔ late camera permission is stopped after reset (0.833ms)
+✔ camera denial provides guidance (0.9383ms)
+✔ only model fields appear, dates remain editable, edits invalidate confirmation (1.3418ms)
+✔ unavailable model never fabricates fields (0.813ms)
+✔ failed retry cannot leave an old successful result to confirm (1.9125ms)
+ℹ tests 6
 ℹ suites 0
-ℹ pass 5
+ℹ pass 6
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 284.5595
+ℹ duration_ms 101.4604
