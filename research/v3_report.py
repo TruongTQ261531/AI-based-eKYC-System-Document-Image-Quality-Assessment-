@@ -88,6 +88,9 @@ def report():
         f"p50={fresh['p50_fresh_seconds']:.2f}s, p95={fresh['p95_fresh_seconds']:.2f}s. Thời gian này có xử lý ảnh/vision, khác đọc feature cache.",
         '- Không tự gán thế kỷ; chữ số kiểm tra MRZ không chứng minh giấy tờ thật. Không phê duyệt danh tính, không đánh giá liveness ở trang OCR nghiên cứu.',
         '- Camera thật của người dùng chưa được dùng làm benchmark. Nhãn sửa bằng tay trên web được phân biệt với kết quả OCR và chỉ tồn tại trên trình duyệt.','',
+        'Đã chuẩn bị [trang đánh giá độc lập](http://127.0.0.1:8003/review) với 48 ảnh, mỗi ID một view. '
+        'Hiện chưa nhận được nhãn của người; kiểm thử giao diện bằng câu trả lời giả không tính là annotation. '
+        'Xem V3_HUMAN_REVIEW.md; phần bổ sung không đổi tham chiếu chính đã khóa.','',
         '## Đóng góp có thể viết và giới hạn','',
         'Có thể viết về sai lệch đánh giá khi dùng một ô làm toàn bộ bằng chứng, nhãn theo nhiều nguồn/thành phần và độ chính xác ngày, '
         'và phép thử LoRA ít tham số được kiểm soát pixel/ngân sách. Chỉ kết quả thực nghiệm mới quyết định can thiệp có hiệu quả.',

@@ -90,6 +90,26 @@ def health():
         return dict(app_id='source_visibility_v3',ready=False,recommended=False,stage=state.get('stage','preparing'),progress=counts,
             message='Đang huấn luyện hoặc kiểm tra kết quả; chưa mở model cho camera.')
 
+@app.get('/review')
+def review_index():
+    from research.v3_review import WEB as REVIEW_WEB
+    return FileResponse(REVIEW_WEB/'index.html')
+
+@app.get('/review/assets/{name}')
+def review_asset(name:str):
+    from research.v3_review import WEB as REVIEW_WEB,PACKET
+    paths={'app.js':REVIEW_WEB/'app.js','style.css':REVIEW_WEB/'style.css','index.json':PACKET/'index.json'}
+    if name not in paths or not paths[name].exists():raise HTTPException(404)
+    return FileResponse(paths[name])
+
+@app.get('/review/images/{name}')
+def review_image(name:str):
+    from research.v3_review import PACKET
+    try:allowed={i['file'] for i in read(PACKET/'index.json')['items']}
+    except OSError:raise HTTPException(503,'Chưa có bộ ảnh đánh giá.')
+    if name not in allowed:raise HTTPException(404)
+    return FileResponse(PACKET/'images'/name,media_type='image/png')
+
 @app.get('/api/specimen/{kind}')
 def specimen(kind:str):
     # Training and fresh fictional fixtures; never return reference fields.

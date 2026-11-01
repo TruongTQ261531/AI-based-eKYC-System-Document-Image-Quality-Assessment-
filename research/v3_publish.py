@@ -14,9 +14,11 @@ def publish(stage):
     else:publish_r2('final')
     if git('branch','--show-current').decode().strip()!=BRANCH:raise ValueError('Wrong research branch')
     paths=list((ROOT/'research').glob('v3_*.py'))+list((ROOT/'research').glob('V3*.md'))+list((ROOT/'research/tests').glob('test_v3*.py'))
+    paths+=list((ROOT/'research/tests').glob('v3*.cjs'))
     paths+=list(OUT.glob('*.json'))+list((OUT/'figures').glob('*.png'))+list((OUT/'figures').glob('*.svg'))
     paths+=[R2OUT/'lock_publication.json',ROOT/'start-source-v3.ps1']
     if (ROOT/'research/v3_web').exists():paths+=list((ROOT/'research/v3_web').glob('*'))
+    if (ROOT/'research/v3_review_web').exists():paths+=list((ROOT/'research/v3_review_web').glob('*'))
     for path in OUT.glob('*.json'):
         value=path.read_text(encoding='utf-8')
         if any('"'+k+'"' in value for k in ('target','body_target','source_refs','accepted_values','_private_text','_private_fields')):

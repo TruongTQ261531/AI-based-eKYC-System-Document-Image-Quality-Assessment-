@@ -1,0 +1,10 @@
+{
+  "source_HTTP_tests": 15,
+  "combined_unique_python_tests": 55,
+  "review_frontend_synthetic_checks": 5,
+  "total_frontend_synthetic_checks": 21,
+  "packet_size": 48,
+  "review_UI_answers_generated": 0,
+  "actual_human_annotations_received": 0,
+  "source_signature_unchanged": true
+}

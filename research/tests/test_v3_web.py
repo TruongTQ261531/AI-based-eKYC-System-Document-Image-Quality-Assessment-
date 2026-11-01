@@ -29,3 +29,19 @@ class SourceHTTP(test_v2_web.LocalHTTP):
         self.assertEqual(hashlib.sha256(r.content).hexdigest(),provenance['image_sha256'])
         self.assertFalse(provenance['used_for_training']);self.assertFalse(provenance['expected_output_served_by_API'])
 
+    def test_blinded_review_packet_contains_images_but_no_reference_values(self):
+        data=self.client.get('/review/assets/index.json').json()
+        self.assertEqual(len(data['items']),48);self.assertFalse(data['contains_model_outputs'])
+        self.assertFalse(data['contains_reference_values'])
+        self.assertTrue(all(set(i)=={'id','file','image_sha256'} for i in data['items']))
+
+    def test_review_private_mapping_and_other_images_are_not_served(self):
+        for path in ('/review/assets/private_mapping.json','/review/images/sources.json','/review/images/nonexistent.png'):
+            self.assertEqual(self.client.get(path).status_code,404)
+
+    def test_review_image_hash_matches_blinded_index(self):
+        import hashlib
+        item=self.client.get('/review/assets/index.json').json()['items'][0]
+        response=self.client.get('/review/images/'+item['file'])
+        self.assertEqual(response.status_code,200);self.assertEqual(hashlib.sha256(response.content).hexdigest(),item['image_sha256'])
+

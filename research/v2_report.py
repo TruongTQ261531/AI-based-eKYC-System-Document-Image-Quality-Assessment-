@@ -25,7 +25,8 @@ def report():
         '- Test có 14 nguồn Samsung không dùng trong train V2, 10 nguồn iPhone. '
         'Hai loại fin_id/lva_passport (8 ID) không có trong train; ảnh dựng test dùng bố cục và font khác.',
         '- Đây là tác vụ KIE trên 17 khóa tùy chọn, không phải đánh giá mọi văn bản trên mọi giấy tờ. '
-        'Trường bản ngữ trùng lặp, MRZ và các trường không được ánh xạ không thuộc target của thí nghiệm này.',
+        'Các biến thể bản ngữ/phiên âm và nhóm dòng đã ánh xạ được giữ trong tham chiếu. '
+        'R2 chưa dùng MRZ hoặc các trường chưa ánh xạ làm nguồn hỗ trợ bổ sung; phép so sánh nguồn được báo riêng ở V3.',
         '- Mỗi phương án nhận đúng cùng chuỗi ID/slot và cùng ngân sách optimizer. '
         'Số token câu trả lời và thời gian thực tế có thể khác; đã lưu riêng trong train_*.json.',
         '- MIDV là ảnh chụp giấy tờ GIẢ LẬP có transcript của tác giả, không phải một bộ CCCD thật mới tự thu thập. '
@@ -81,8 +82,8 @@ def report():
            'V2 bổ sung phép đo chuyển từ ảnh dựng sang ảnh chụp, chống rò rỉ ID, tách bố cục/camera, đối chứng đồng ngân sách '
            'và ghi riêng bỏ sót/đọc sai/trường không được hỗ trợ. Đây là bằng chứng phương pháp và dữ liệu tốt hơn V1, '
            'chưa phải xác nhận novelty đủ CORE B hoặc bảo đảm được nhận bài.',
-           'KIE-HVQA đã nghiên cứu hallucination OCR và SFT/GRPO: https://arxiv.org/abs/2506.20168 . '
-           'Nguồn MIDV-2020: https://arxiv.org/abs/2107.00396 . V2 không nhận ý tưởng fine-tune chống bịa là phát minh đầu tiên.',
+           '[KIE-HVQA](https://arxiv.org/abs/2506.20168) đã nghiên cứu hallucination OCR và SFT/GRPO. '
+           'Nguồn dữ liệu: [MIDV-2020](https://arxiv.org/abs/2107.00396). V2 không nhận ý tưởng fine-tune chống bịa là phát minh đầu tiên.',
            'Thiếu sót còn lại: chưa có bộ ảnh Việt Nam mới tự thu thập có phép; chưa có nhãn legibility độc lập; '
            'chỉ một backbone nhỏ, hai seed và ít ID/type. Font test Arial phụ thuộc font Windows đúng checksum trong manifest. '
            'Cần căn cứ riêng kết quả ảnh chụp và CI khi quyết định có mở rộng thí nghiệm hoặc viết claim.', '']

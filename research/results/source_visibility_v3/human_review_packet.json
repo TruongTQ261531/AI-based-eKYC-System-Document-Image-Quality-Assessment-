@@ -1,0 +1,20 @@
+{
+  "items": 48,
+  "physical_identities": 48,
+  "one_view_per_identity": true,
+  "source_counts": {
+    "authored": 24,
+    "midv2020": 24
+  },
+  "capture_counts": {
+    "full": 16,
+    "field_clip": 16,
+    "value_mask": 16
+  },
+  "public_packet_index_sha256": "af7ffcf11b74d18ce3b02369d66061d84c9ed57795fe60e43c9492d3f4c6dde9",
+  "model_outputs_included": false,
+  "reference_values_included": false,
+  "actual_human_annotations_received": 0,
+  "primary_benchmark_references_changed": false,
+  "purpose": "Independent supplementary human review, not model selection or replacement of the preregistered test"
+}
