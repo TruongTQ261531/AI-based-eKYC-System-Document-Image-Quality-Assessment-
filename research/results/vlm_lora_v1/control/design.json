@@ -1,0 +1,17 @@
+{
+  "signature": "20aec305373964783201ef088f6e854974de1cb76a98de624096d58c30315051",
+  "primary_signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "training_images": 288,
+  "training_ids": 96,
+  "captures": [
+    "full",
+    "corner_clip",
+    "blur_glare"
+  ],
+  "seed": 42,
+  "steps": 192,
+  "microbatches": 4,
+  "development_motivated": true,
+  "matched_optimizer_budget": true,
+  "matched_unique_raster_count": false
+}

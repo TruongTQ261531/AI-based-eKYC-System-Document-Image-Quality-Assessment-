@@ -1,0 +1,79 @@
+{
+  "signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "selected_model": "seed_42",
+  "adapters": {
+    "42": {
+      "selected_checkpoint": "research/cache/vlm_lora_v1/seed_42/step_0192",
+      "selected_adapter_sha256": "4043a81c444c5efd6f602bc15ce85c479b3a0e6c9f1659461db2dae93bf5320b"
+    },
+    "31415": {
+      "selected_checkpoint": "research/cache/vlm_lora_v1/seed_31415/step_0192",
+      "selected_adapter_sha256": "a3d3a68136a379ff004eb0c17f85816bf807d50865a3d054cc8c29776c00f4e7"
+    }
+  },
+  "development_summaries": {
+    "original": {
+      "cases": 80,
+      "correct": 94,
+      "reference": 306,
+      "predicted": 288,
+      "precision": 0.3263888888888889,
+      "recall": 0.30718954248366015,
+      "f1": 0.3164983164983165,
+      "json_valid_rate": 0.3625,
+      "document_exact_rate": 0.0,
+      "extra_keys": 189,
+      "missing_keys": 207,
+      "literal_correct": 94,
+      "masked_field_outputs": 34
+    },
+    "seed_42": {
+      "cases": 80,
+      "correct": 303,
+      "reference": 306,
+      "predicted": 307,
+      "precision": 0.9869706840390879,
+      "recall": 0.9901960784313726,
+      "f1": 0.9885807504078303,
+      "json_valid_rate": 1.0,
+      "document_exact_rate": 0.9375,
+      "extra_keys": 3,
+      "missing_keys": 2,
+      "literal_correct": 303,
+      "masked_field_outputs": 0
+    },
+    "seed_31415": {
+      "cases": 80,
+      "correct": 303,
+      "reference": 306,
+      "predicted": 310,
+      "precision": 0.9774193548387097,
+      "recall": 0.9901960784313726,
+      "f1": 0.9837662337662337,
+      "json_valid_rate": 1.0,
+      "document_exact_rate": 0.925,
+      "extra_keys": 4,
+      "missing_keys": 0,
+      "literal_correct": 303,
+      "masked_field_outputs": 0
+    }
+  },
+  "development_ocr_summary": {
+    "cases": 80,
+    "correct": 251,
+    "reference": 306,
+    "predicted": 314,
+    "precision": 0.7993630573248408,
+    "recall": 0.8202614379084967,
+    "f1": 0.8096774193548387,
+    "json_valid_rate": 1.0,
+    "document_exact_rate": 0.525,
+    "extra_keys": 36,
+    "missing_keys": 28,
+    "literal_correct": 161,
+    "masked_field_outputs": 7
+  },
+  "deployment_approved": true,
+  "test_scored": false,
+  "selection_uses_development_only": true
+}

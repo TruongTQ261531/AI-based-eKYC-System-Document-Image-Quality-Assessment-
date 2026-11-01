@@ -1,0 +1,13 @@
+✔ native-resolution camera capture waits for confirmation (13.2436ms)
+✔ late camera permission is stopped after reset (2.5662ms)
+✔ camera denial provides guidance (3.4859ms)
+✔ only model fields appear, dates remain editable, edits invalidate confirmation (4.279ms)
+✔ unavailable model never fabricates fields (4.5678ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 284.5595

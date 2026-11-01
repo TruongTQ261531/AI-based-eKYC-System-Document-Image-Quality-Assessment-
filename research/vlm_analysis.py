@@ -34,12 +34,15 @@ def main():
     sig=signature();lock=json.loads((OUT/'test_lock.json').read_text(encoding='utf-8'))
     if lock['signature']!=sig:raise ValueError('Source changed after lock')
     samples={r['uid']:r for r in load()};results=[]
+    from research.vlm_control import signature as control_signature
+    variants=[(m,m,OUT,CACHE,sig) for m in ('original','seed_42','seed_31415')]
+    variants.append(('control_seed_42','seed_42',OUT/'control',CACHE/'control',control_signature()))
     for role in ('development','test'):
-        for model in ('original','seed_42','seed_31415'):
-            source=json.loads((OUT/f'{role}_{model}_1.json').read_text(encoding='utf-8'));rows=[]
-            if source['signature']!=sig:raise ValueError('Evaluation source changed')
+        for model,key,public,private_root,expected_sig in variants:
+            source=json.loads((public/f'{role}_{key}_1.json').read_text(encoding='utf-8'));rows=[]
+            if source['signature']!=expected_sig:raise ValueError('Evaluation source changed')
             for row in source['rows']:
-                private=json.loads((CACHE/'predictions'/f'{role}_{model}_1'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')).read_text(encoding='utf-8'))
+                private=json.loads((private_root/'predictions'/f'{role}_{key}_1'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')).read_text(encoding='utf-8'))
                 fields,metadata=tolerant(private['_private_text']);sample=samples[row['uid']]
                 rows.append(dict(uid=row['uid'],**score(sample['target'],fields,metadata['syntax_object_success']),**metadata,
                     masked_field_outputs=sum(f.get('occluded',False) and f['key'] in fields for f in sample['fields'])))

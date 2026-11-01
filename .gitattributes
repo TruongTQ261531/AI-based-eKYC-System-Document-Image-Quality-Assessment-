@@ -7,6 +7,8 @@ research/web/** text eol=lf
 research/start-research.ps1 text eol=lf
 research/start-vlm-training.ps1 text eol=lf
 research/vlm_config.json text eol=lf
+research/start-vlm-web.ps1 text eol=lf
+research/vlm_web/** text eol=lf
 
 # Preserve measured artifact bytes (including recorded Windows line endings).
 research/results/** -text

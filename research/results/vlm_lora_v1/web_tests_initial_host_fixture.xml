@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="6" time="4.844" timestamp="2026-11-01T12:54:47.926034+07:00" hostname="LAPTOP-IKCL1TR5"><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_camera_fields_are_model_response_not_demo_lookup" time="0.041"><failure message="AssertionError: 400 != 200">self = &lt;test_vlm_web.VLMWebTests testMethod=test_camera_fields_are_model_response_not_demo_lookup&gt;
+
+    def test_camera_fields_are_model_response_not_demo_lookup(self):
+        image=Image.new('RGB',(96,72),'white');data=io.BytesIO();image.save(data,format='PNG')
+        answer=dict(fields={'full_name':'MODEL OUTPUT'},model='mock',valid_extraction_format=True,
+                    generated_tokens=12,inference_seconds=.01,liveness_evaluated=False,identity_approved=False,warnings=[])
+        with patch('research.vlm_web.deployment',return_value=({},None)),patch('research.vlm_web.predict_image',return_value=answer),TestClient(app) as client:
+            response=client.post('/api/scan',content=data.getvalue(),headers={'Content-Type':'image/png'})
+&gt;           self.assertEqual(response.status_code,200)
+E           AssertionError: 400 != 200
+
+research\tests\test_vlm_web.py:29: AssertionError</failure></testcase><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_cross_origin_denied" time="0.007" /><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_csp_and_local_camera_policy" time="0.009"><failure message="AssertionError: 400 != 200">self = &lt;test_vlm_web.VLMWebTests testMethod=test_csp_and_local_camera_policy&gt;
+
+    def test_csp_and_local_camera_policy(self):
+        with TestClient(app) as client:
+            response=client.get('/')
+&gt;           self.assertEqual(response.status_code,200)
+E           AssertionError: 400 != 200
+
+research\tests\test_vlm_web.py:47: AssertionError</failure></testcase><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_demo_has_no_arbitrary_file_access" time="0.009"><failure message="AssertionError: 400 != 404">self = &lt;test_vlm_web.VLMWebTests testMethod=test_demo_has_no_arbitrary_file_access&gt;
+
+    def test_demo_has_no_arbitrary_file_access(self):
+        with TestClient(app) as client:
+&gt;           self.assertEqual(client.get('/api/specimen/samples.json').status_code,404)
+E           AssertionError: 400 != 404
+
+research\tests\test_vlm_web.py:41: AssertionError</failure></testcase><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_invalid_image_has_specific_error" time="0.010" /><testcase classname="research.tests.test_vlm_web.VLMWebTests" name="test_not_ready_does_not_make_up_model_fields" time="0.010"><failure message="json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)">self = &lt;test_vlm_web.VLMWebTests testMethod=test_not_ready_does_not_make_up_model_fields&gt;
+
+    def test_not_ready_does_not_make_up_model_fields(self):
+        with patch('research.vlm_web.deployment',side_effect=ValueError('pending')),TestClient(app) as client:
+&gt;           self.assertFalse(client.get('/api/health').json()['ready'])
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+research\tests\test_vlm_web.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\.venv\Lib\site-packages\httpx\_models.py:832: in json
+    return jsonlib.loads(self.content, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Environment_Code\Lib\json\__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+D:\Environment_Code\Lib\json\decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;json.decoder.JSONDecoder object at 0x0000025ACD92C610&gt;
+s = 'Invalid host header', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+&gt;           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+D:\Environment_Code\Lib\json\decoder.py:355: JSONDecodeError</failure></testcase></testsuite></testsuites>

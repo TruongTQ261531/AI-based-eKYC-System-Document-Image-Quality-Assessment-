@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="13" time="6.529" timestamp="2026-11-01T13:28:11.588705+07:00" hostname="LAPTOP-IKCL1TR5"><testcase classname="research.tests.test_vlm_analysis.SecondaryFormatTests" name="test_duplicate_rejected" time="0.004" /><testcase classname="research.tests.test_vlm_analysis.SecondaryFormatTests" name="test_empty_and_bad_values_disclosed" time="0.002" /><testcase classname="research.tests.test_vlm_analysis.SecondaryFormatTests" name="test_null_abstention_does_not_discard_visible_value" time="0.002" /><testcase classname="research.tests.test_vlm_analysis.SecondaryFormatTests" name="test_prose_not_guessed" time="0.002" /><testcase classname="research.tests.test_vlm_analysis.SecondaryFormatTests" name="test_whole_fence_unwrapped" time="0.002" /><testcase classname="research.tests.test_vlm_control.ControlIsolationTests" name="test_control_has_same_ids_and_excludes_missing_content" time="0.029" /><testcase classname="research.tests.test_vlm_control.ControlIsolationTests" name="test_control_provenance_separate_from_main" time="0.010" /><testcase classname="research.tests.test_vlm_control.ControlIsolationTests" name="test_development_still_contains_missing_content" time="0.022" /><testcase classname="research.tests.test_vlm_audit.AuditTests" name="test_duplicate_does_not_hide_missing_case" time="0.002" /><testcase classname="research.tests.test_vlm_audit.AuditTests" name="test_interval_groups_views_by_physical_id" time="0.054"><failure message="KeyError: 'valid_json'">self = &lt;test_vlm_audit.AuditTests testMethod=test_interval_groups_views_by_physical_id&gt;
+
+    def test_interval_groups_views_by_physical_id(self):
+        good=[dict(physical_id=uid,correct=1,reference=1,predicted=1) for uid in ('a','b') for _ in range(5)]
+        bad=[dict(r,correct=0) for r in good]
+&gt;       result=paired_interval(good,bad)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+research\tests\test_vlm_audit.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+research\vlm_final_report.py:39: in paired_interval
+    return dict(physical_ids=len(ids),f1_difference=aggregate(candidate)['f1']-aggregate(comparator)['f1'],
+                                                    ^^^^^^^^^^^^^^^^^^^^
+research\vlm_runtime.py:223: in aggregate
+    f1=2*c/max(n+p,1),json_valid_rate=sum(r['valid_json'] for r in rows)/max(len(rows),1),
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+.0 = &lt;list_iterator object at 0x0000013B4C1DA4D0&gt;
+
+&gt;   f1=2*c/max(n+p,1),json_valid_rate=sum(r['valid_json'] for r in rows)/max(len(rows),1),
+                                          ^^^^^^^^^^^^^^^
+    document_exact_rate=sum(r['exact_document'] for r in rows)/max(len(rows),1),
+    extra_keys=sum(r['extra_keys'] for r in rows),missing_keys=sum(r['missing_keys'] for r in rows),
+    literal_correct=sum(r['literal_correct'] for r in rows),
+    masked_field_outputs=sum(r.get('masked_field_outputs',0) for r in rows))
+E   KeyError: 'valid_json'
+
+research\vlm_runtime.py:223: KeyError</failure></testcase><testcase classname="research.tests.test_vlm_audit.AuditTests" name="test_repeat_panel_not_random_on_each_invocation" time="0.002" /><testcase classname="research.tests.test_vlm_audit.AuditTests" name="test_unpaired_ids_rejected" time="0.002" /><testcase classname="research.tests.test_vlm_audit.AuditTests" name="test_wrong_case_same_count_rejected" time="0.002" /></testsuite></testsuites>
