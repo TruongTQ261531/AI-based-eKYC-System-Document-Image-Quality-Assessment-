@@ -4,7 +4,7 @@ import hashlib
 import json
 import numpy as np
 from research.vlm_setup import ROOT,CACHE,OUT,save,sha
-from research.vlm_data import load
+from research.vlm_data import load,DATA
 from research.vlm_runtime import signature,parsed,score,aggregate
 from research.vlm_control import signature as control_signature
 
@@ -47,7 +47,9 @@ def audit():
     if lock['signature']!=sig or cl['signature']!=control_signature():raise ValueError('Source changed after lock')
     publication=read('pretest_publication.json')
     if any(sha(OUT/name)!=digest for name,digest in publication['locks'].items()):raise ValueError('Published lock bytes changed')
+    if sha(DATA/'samples.json')!=read('dataset_card.json')['data_sha256']:raise ValueError('Private ground truth changed')
     samples={r['uid']:r for r in load()};published={};repeats={};total=control_count=0
+    if len(samples)!=720 or any(sha(ROOT/s['path'])!=s['input_sha256'] for s in samples.values()):raise ValueError('Raster corpus changed')
     variants=[(m,m,OUT,CACHE,sig,lock) for m in MODELS]
     variants.append((CONTROL,'seed_42',OUT/'control',CACHE/'control',control_signature(),cl))
     base=next(x['sha256'] for x in read('assets.json')['model'] if x['file']=='model.safetensors')
@@ -67,8 +69,16 @@ def audit():
             with safe_open(str(selected/'adapter_model.safetensors'),framework='pt',device='cpu') as tensors:
                 keys=list(tensors.keys());params=sum(tensors.get_tensor(k).numel() for k in keys)
             if params!=1081344 or len(keys)!=192:raise ValueError('Wrong LoRA scope')
+            from research.vlm_train import sampler
+            from research.vlm_control import CAPTURES
+            pool=load('train')
+            if label==CONTROL:pool=[r for r in pool if r['capture'] in CAPTURES]
+            seen=[sampler(pool,train['seed'],i) for i in range(best['step']*4)]
             training_reviews.append(dict(model=label,optimizer_steps=len(events),selected_step=best['step'],
-                adapter_tensors=len(keys),trainable_parameters=params,optimizer_and_rng_file_hash_verified=True))
+                adapter_tensors=len(keys),trainable_parameters=params,optimizer_and_rng_file_hash_verified=True,
+                selected_presentations=len(seen),selected_unique_rasters=len({r['uid'] for r in seen}),
+                selected_ids_seen=len({r['physical_id'] for r in seen}),training_pool_ids=len({r['physical_id'] for r in pool}),
+                exposure_reconstructed_after_lock=True,model_choice_unchanged=True))
         for role in ('development','test'):
             rs=[s for s in samples.values() if s['role']==role]
             for repeat in ([1,2,3] if role=='test' else [1]):
@@ -192,6 +202,9 @@ def report():
         r=read(f);e=r['events'];text.append(f"|{LABELS[k]}|{r['selected_checkpoint'].rsplit('_',1)[-1]}|{r['development_loss']:.6f}|{r['invocation_train_seconds']:.2f}|{r['feature_cache_setup_seconds']:.2f}|{max(x['peak_allocated_bytes'] for x in e)/2**30:.3f}|{max(x['process_peak_rss_bytes'] for x in e)/2**30:.3f}|")
         gaps=[dict(after_step=a['step'],before_step=b['step'],seconds=b['wall_seconds']-a['wall_seconds']) for a,b in zip(e,e[1:]) if b['wall_seconds']-a['wall_seconds']>120]
         if gaps:text.append(f"Lưu ý {LABELS[k]}: khoảng không tăng step >120s: `{json.dumps(gaps)}`. Thời gian invocation giữ nguyên; chưa xác định nguyên nhân khoảng dừng, không diễn giải nó là tốc độ GPU.")
+    text+=['','Kiểm kê bổ sung sau khóa, không đổi lựa chọn model:']
+    for review in audit['training_reviews']:
+        text.append(f"- {LABELS[review['model']]}: checkpoint đã nhận{review['selected_presentations']} presentations, {review['selected_unique_rasters']} raster riêng, {review['selected_ids_seen']}/{review['training_pool_ids']} ID của pool. Không gọi các checkpoint là khớp effective training exposure.")
     smoke=read('smoke.json')
     text+=['','RAM16GB, RTX3050 Laptop6GB. Base938,193,024tham số, trainable1,081,344; BF16 LoRA r8/alpha16, không phải QLoRA. Frozen vision/projector/baseLM. Trace lưu cả allocated/reserved VRAM; RSS gồm load, không phải tổng RAM máy. Tải/chuẩn bị nhiềuGB tách thời gian optimizer. Checkpoint được chọn có4×step presentations; đối chứng được giữ sớm hơn theo cùng quy tắc development.',
         f"GPU smoke:{smoke['optimizer_steps_continuous']} bước +resume{smoke['resumed_steps']} bước; 192tensor thay đổi; maxabs resume/continuous={smoke['resume_max_abs_difference']}. Lỗi logger sau4bước đầu và Host ở fixture TestClient được giữ trong lịch sử, đã sửa/kiểm tra lại.",'',
