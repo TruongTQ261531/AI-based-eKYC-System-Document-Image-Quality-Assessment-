@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "optimizer_steps_continuous": 20,
+  "resumed_steps": 10,
+  "adapter_tensors_changed": 192,
+  "resume_max_abs_difference": 0.0,
+  "native_generation_parity": {
+    "tokens": 24,
+    "identical_tokens": true,
+    "cached_features_equal_fresh": true,
+    "scope": "one smoke image, same frozen features and prompt; not all possible inputs"
+  },
+  "training_peak_allocated_bytes": 2741228032,
+  "training_peak_reserved_bytes": 5716836352,
+  "process_peak_rss_bytes": 6320070656,
+  "start_loss": 0.8384579420089722,
+  "end_loss": 0.2834020256996155,
+  "original_generation_tokens": 128,
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "dtype": "torch.bfloat16",
+  "new_venv": false,
+  "existing_runtime_changed": false
+}

@@ -1,5 +1,42 @@
 # Local VLM LoRA checkpoint, 2026-11-01
 
+## Live update,05:38UTC: actual GPU smoke passed, main training active
+
+20 actual Vintern optimizer steps completed, then resume from step10 and run
+steps11..20 again. All192adapter tensors changed from initialization; resumed
+vs continuous final tensors have max absolute difference0. Native generation
+matches the feature-cache wrapper; cached visual features equal fresh vision
+features on the smoke image. Smoke is a hardware/implementation check on12
+training images, not a test accuracy claim. Result:results/vlm_lora_v1/smoke.json.
+
+Peak training tensor allocation2.553GiB;reservation5.324GiB;process peakRSS
+5.886GiB including load. No new venv or baseline environment modification.
+Workflow67822 is now preparing480train+80development visual features, then
+trains seed42 and31415,192steps each. Source signature is
+26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c.
+Do not change signature-bound code/config/data while these runs are active.
+No main accuracy result yet. Watch cache/vlm_lora_v1/workflow.json/progress.json.
+
+## Live update,05:37UTC
+
+All model/runtime assets finished and passed their upstream hashes. CUDA12.6
+works onRTX3050 through optional torch2.7.1+cu126; original torchCPU2.14.1 is
+unchanged. The first real Vintern smoke performed4optimizer steps, then a
+progress-logging duplicate timestamp raisedTypeError. Its log/events are
+preserved at cache/vlm_lora_v1/smoke_attempt1_logging_error and failure_*.json.
+No OOM occurred. Observed peak tensor allocation2.546GiB,reservation4.064GiB,
+process peakRSS5.891GiB (includes loading; not entire machine memory).
+
+Fixed logger with a regression test:18contracts+4training-stack tests pass.
+Fix and hardware evidence pushed in1209168. Workflow restarted in owned exec
+session67822(PID21304),currently real GPU smoke; it automatically proceeds to
+seeds42/31415 and development, then stops before test scoring. Read
+research/cache/vlm_lora_v1/workflow.json and progress.json for current stage.
+Do not start a second GPU workflow. No actual1B accuracy result exists yet.
+
+The sections below record the earlier preparation checkpoint and are archived,
+including its obsolete download session IDs/status.
+
 Research branch: research/document-recovery-core-b. Mentor and all locked V4
 sources/results are unchanged. This is an additional exploratory experiment.
 
