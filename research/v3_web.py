@@ -10,12 +10,23 @@ from starlette.concurrency import run_in_threadpool
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from research.recovery_web import BodyLimit,privacy,decode_image
 from research.v3_common import ROOT,CACHE,R2CACHE,OUT,read,sha,signature,preserve_v1
+from research.v3_common import R2OUT
 
 WEB=ROOT/'research/v3_web'
 app=FastAPI(title='Source-aware OCR Research',docs_url=None,redoc_url=None)
 app.add_middleware(TrustedHostMiddleware,allowed_hosts=['127.0.0.1','localhost','[::1]'])
 app.add_middleware(BodyLimit);app.middleware('http')(privacy)
 request_lock=threading.Lock()
+
+def progress():
+    # Counts only: never return private predictions, labels, paths or identities.
+    keys=('original','v1','control_42','partial_42','control_31415','partial_31415')
+    completed={role:sum(len(list((R2CACHE/'predictions'/f'{role}_{k}').glob('*.json'))) for k in keys)+
+        sum(len(list((CACHE/'predictions'/f'{role}_source_{s}').glob('*.json'))) for s in (42,31415)) for role in ('development','test')}
+    trained=(sum((R2OUT/f'train_{a}_{s}.json').exists() for a in ('control','partial') for s in (42,31415))+
+        sum((OUT/f'train_source_{s}.json').exists() for s in (42,31415)))
+    return dict(training_completed=trained,training_total=6,development_completed=completed['development'],development_total=576,
+        test_completed=completed['test'],test_total=1152,audit_passed=(OUT/'audit.json').exists())
 
 def deployment():
     lock=read(OUT/'test_lock.json');audit=read(OUT/'audit.json');pub=read(OUT/'lock_publication.json')
@@ -68,14 +79,15 @@ def asset(name:str):
 
 @app.get('/api/health')
 def health():
+    counts=progress()
     try:
         lock,_=deployment()
-        return dict(app_id='source_visibility_v3',ready=True,recommended=lock['deployment_approved'],model=lock['selected_model'],profile=lock['profile'],
+        return dict(app_id='source_visibility_v3',ready=True,recommended=lock['deployment_approved'],model=lock['selected_model'],profile=lock['profile'],progress=counts,
             message='Đã huấn luyện và kiểm tra. Vẫn cần đối chiếu chữ với giấy tờ.' if lock['deployment_approved'] else
             'Đã kiểm tra nhưng chưa vượt cổng tập phát triển. Chỉ thử khi chủ động chọn chế độ nghiên cứu.')
     except (OSError,ValueError,KeyError):
         state=read(CACHE/'workflow.json') if (CACHE/'workflow.json').exists() else {}
-        return dict(app_id='source_visibility_v3',ready=False,recommended=False,stage=state.get('stage','preparing'),
+        return dict(app_id='source_visibility_v3',ready=False,recommended=False,stage=state.get('stage','preparing'),progress=counts,
             message='Đang huấn luyện hoặc kiểm tra kết quả; chưa mở model cho camera.')
 
 @app.get('/api/specimen/{kind}')

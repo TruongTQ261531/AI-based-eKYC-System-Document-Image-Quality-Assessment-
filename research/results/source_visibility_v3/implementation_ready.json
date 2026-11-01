@@ -1,0 +1,9 @@
+{
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "protocol_commit": "3c46a241b308b9f17b7ee83d42f9d41f46a99e88",
+  "python_tests": 49,
+  "frontend_tests": 16,
+  "published_before_source_training": true,
+  "test_inference_started": false,
+  "time_utc": "2026-11-01T13:53:22Z"
+}

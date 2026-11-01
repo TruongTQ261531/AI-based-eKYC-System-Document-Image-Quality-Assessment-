@@ -1,0 +1,12 @@
+{
+  "R2_signature_preserved": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "development_CPU_independent_repeat_pairs": 144,
+  "CPU_text_mismatches": 0,
+  "source_web_HTTP_contract_tests": 11,
+  "source_web_frontend_behavior_tests": 8,
+  "combined_unique_python_checks": 51,
+  "actual_camera_tested": false,
+  "test_predictions_exist": false,
+  "core_signature_matches_published_pretrain": true
+}

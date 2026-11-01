@@ -32,6 +32,8 @@ def main():
                 if status.get('stage')=='failed':raise ValueError('R2 preparation failed; preserve logs and investigate')
                 time.sleep(10)
             time.sleep(3)
+            ready=read(OUT/'implementation_ready.json')
+            if ready['signature']!=signature():raise ValueError('Implementation differs from the published pretraining contract')
             gpu=['-m','research.vlm_setup','run','--','-m','research.v3_study']
             for seed0 in CONFIG['seeds']:
                 command('source_train_'+str(seed0),gpu+['train','--seed',str(seed0)],OUT/f'train_source_{seed0}.json')

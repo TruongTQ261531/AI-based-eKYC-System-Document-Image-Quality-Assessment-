@@ -31,7 +31,7 @@ def audit():
     card=read(OUT/'dataset_card.json')
     if regenerated!=allrows or public!=read(OUT/'dataset_manifest.json') or stats!=card['source_stats'] or changes!=card['target_changes']:raise ValueError('Source reference derivation replay differs')
     if [(r['uid'],r['input_sha256'],r['path']) for r in allrows]!=[(r['uid'],r['input_sha256'],r['path']) for r in original]:raise ValueError('Source study changed pixels/order')
-    samples={r['uid']:r for r in allrows};records={};replayed=0
+    samples={r['uid']:r for r in allrows};records={};replayed=0;CPU_repeats=0
     for seed0 in CONFIG['seeds']:
         r=read(OUT/f'train_source_{seed0}.json');paired=read(R2OUT/f'train_partial_{seed0}.json')
         if r['signature']!=sig or r['identity_slot_sequence_sha256']!=paired['identity_slot_sequence_sha256'] or r['steps']!=320 or r['presentations']!=1280:raise ValueError('Unmatched source supervision experiment')
@@ -71,13 +71,27 @@ def audit():
             reader,policy=row['model'].split('/');private=read(CACHE/'cpu'/role/reader/policy/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json'))
             metrics,_=scoring(samples[row['uid']],private['_private_text'])
             if any(row[k]!=v for k,v in metrics.items()) or row['prediction_sha256']!=hashlib.sha256(private['_private_text'].encode()).hexdigest():raise ValueError('Source CPU replay differs')
+            if policy=='body':
+                previous=read(R2CACHE/'cpu'/role/reader/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json'))
+                if previous['prediction_sha256']!=row['prediction_sha256']:raise ValueError('Repeated CPU body extraction changed on identical pixels')
+                CPU_repeats+=1
             replayed+=1
     fresh=read(OUT/'fresh_repeats.json')
     if fresh['signature']!=sig or fresh['mismatches'] or fresh['additional_calls']!=16:raise ValueError('Source fresh repeat differs/incomplete')
+    reference={r['uid']:r for r in records[fresh['model']]['rows']};pairs=set()
+    for row in fresh['rows']:
+        token=hashlib.sha256((row['uid']+'/'+str(row['repeat'])).encode()).hexdigest()
+        private=read(CACHE/'fresh'/(token+'.json'));metrics,_=scoring(samples[row['uid']],private['_private_text'])
+        digest=hashlib.sha256(private['_private_text'].encode()).hexdigest()
+        if any(row[k]!=v for k,v in metrics.items()) or row['prediction_sha256']!=digest or reference[row['uid']]['prediction_sha256']!=digest:raise ValueError('Source fresh raw replay differs')
+        if private['signature']!=sig or row['input_sha256']!=samples[row['uid']]['input_sha256']:raise ValueError('Source fresh input differs')
+        pairs.add((row['uid'],row['repeat']))
+    if len(pairs)!=16 or len({u for u,r in pairs})!=8 or {r for u,r in pairs}!={1,2}:raise ValueError('Source fresh coverage differs')
     save(OUT/'paired_intervals.json',intervals(records))
     save(OUT/'audit.json',dict(status='passed',signature=sig,replayed_prediction_rows=replayed,
         same_R2_image_bytes_and_order=True,effective_training_steps_per_run=320,train_presentations_per_run=1280,
         source_reference_rows_regenerated=len(regenerated),source_derivation_replay_is_not_independent_human_annotation=True,
+        independently_repeated_CPU_outputs_verified=CPU_repeats,fresh_raw_rows_replayed=16,
         two_additional_source_seeds=CONFIG['seeds'],fresh_repeat_groups=8,fresh_repeat_mismatches=0,
         source_GT_is_geometric_not_human_legibility=True,both_model_locks_published_before_test=True,
         R2_audit_sha256=sha(R2OUT/'audit.json'),publication_commit=pub['commit'],audit_code_sha256=sha(ROOT/'research/v3_audit.py')))

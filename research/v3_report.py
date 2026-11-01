@@ -11,6 +11,8 @@ def report():
     from research.v3_study import MODELS,adapter_for
     from research.v3_metrics import summary
     records={k:read(OUT/f'test_{k}.json') for k in MODELS};rows={k:r['rows'] for k,r in records.items()}
+    from research.v3_diagnostics import run
+    diagnostics=run()
     names=dict(original='Vintern gốc',v1='V1 chuyển tác vụ',control_42='R2 complete42',partial_42='R2 body-partial42',
         control_31415='R2 complete31415',partial_31415='R2 body-partial31415',source_42='V3 source-partial42',source_31415='V3 source-partial31415')
     for key in cpu['summaries']:rows[key]=[r for r in cpu['rows'] if r['model']==key];names[key]=key
@@ -45,10 +47,20 @@ def report():
     for p in ci['comparisons']:text.append(f"| {p['a']} − {p['b']} | {p['delta']:+.4f} | [{p['ci95_low']:+.4f}, {p['ci95_high']:+.4f}] |")
     text+=['','Bootstrap10000 lần theo48 cụm ID, phân tầng24+24 nguồn; hai seed được báo riêng. '
         'Đây không phải CI bao phủ mọi biến động training hay camera ngoài mẫu.','',
+        '## Phân tích mô tả ảnh hưởng của hợp đồng nhãn','',
+        'Phân tích sau thực nghiệm, không dùng chọn model. Giữ nguyên từng output để chấm theo hai hợp đồng; không phát sinh suy luận mới.',
+        f"Tổng trường tham chiếu test: thân thẻ {diagnostics['body_test_reference_fields']}, nhiều nguồn {diagnostics['source_test_reference_fields']}. "
+        f"Nguồn hỗ trợ cho key bổ sung: {diagnostics['added_reference_origins']}.",'',
+        '| Model | F1 thân thẻ | F1 nhiều nguồn | Ngoài nhãn cũ → đúng theo nguồn | Mới được tính nhưng model bỏ sót |',
+        '|---|---:|---:|---:|---:|']
+    for key,d in diagnostics['models'].items():
+        text.append(f"| {names[key]} | {d['body_contract_f1']:.4f} | {d['source_contract_f1']:.4f} | {d['formerly_outside_now_correct']} | {d['newly_supported_but_omitted']} |")
+    text+=['',
         '## Kiểm chứng và ứng dụng local','',
         f"- Phát lại {audit['replayed_prediction_rows']} hàng kết quả nguồn từ output nguyên văn. "
         'Số hàng chấm lại và ba hậu xử lý dùng chung OCR không được tính thành số lần suy luận độc lập.',
         '- Audit R2 đã đối chiếu mọi feature vision dùng trong nghiên cứu với trích xuất mới từ pixel, cùng các file/weights/checkpoint và budget. V3 dùng đúng các pixel/feature này.',
+        f"- Hai lượt OCR CPU độc lập khớp nguyên văn ở {audit['independently_repeated_CPU_outputs_verified']} cặp output. Mỗi nhóm ba hậu xử lý V3 vẫn dùng chung một lần OCR, được đếm riêng với số cấu hình chấm điểm.",
         f"- Model được chọn từ development: **{lock['selected_model']}**; cổng khuyến nghị: **{lock['deployment_approved']}**. "
         'Nếu model source-aware không tốt hơn, không gọi nó là model thắng chỉ vì là phiên bản mới.',
         f"- Lặp thêm16 lần suy luận ảnh mới trên8 ảnh/4 ID: sai khác {fresh['mismatches']}; "

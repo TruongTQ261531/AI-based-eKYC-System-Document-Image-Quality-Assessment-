@@ -172,6 +172,16 @@ def audit():
             replayed+=1
     repeats=read(OUT/'fresh_repeats.json')
     if repeats['signature']!=sig or repeats['mismatch_count']!=0 or repeats['additional_fresh_calls']!=16:raise ValueError('Fresh repeat mismatch/incomplete')
+    fresh_pairs=set();reference={r['uid']:r for r in tests[repeats['model']]['rows']}
+    for row in repeats['rows']:
+        token=hashlib.sha256((row['uid']+'/'+str(row['repeat'])).encode()).hexdigest()
+        private=read(CACHE/'fresh'/repeats['model']/(token+'.json'))
+        metrics,_=scoring(samples[row['uid']],private['_private_text'])
+        digest=hashlib.sha256(private['_private_text'].encode()).hexdigest()
+        if any(row[k]!=v for k,v in metrics.items()) or row['prediction_sha256']!=digest or reference[row['uid']]['prediction_sha256']!=digest:raise ValueError('Fresh raw replay differs')
+        if row['input_sha256']!=samples[row['uid']]['input_sha256'] or private['signature']!=sig:raise ValueError('Fresh input/source differs')
+        fresh_pairs.add((row['uid'],row['repeat']))
+    if len(fresh_pairs)!=16 or len({u for u,r in fresh_pairs})!=8 or {r for u,r in fresh_pairs}!={1,2}:raise ValueError('Fresh repeat coverage differs')
     vision=vision_replay(samples,lock['profile'])
     if vision['mismatch_count']:raise ValueError('Fresh visual feature differs from the cache; retain evidence and investigate')
     save(OUT/'paired_intervals.json',intervals(tests))
@@ -179,6 +189,7 @@ def audit():
         frozen_v4_files_unchanged=len(old_index['files']),
         original_photo_sources_hashed=64,raw_output_rows_replayed=replayed,training=train,
         fresh_repeat_groups=8,fresh_repeat_mismatches=0,model_count=6,test_inputs=144,test_identities=48,
+        fresh_raw_rows_replayed=16,
         all_visual_caches_replayed=vision['unique_inputs'],visual_cache_mismatches=vision['mismatch_count'],
         audit_implementation_sha256=sha(ROOT/'research/v2_audit.py'),
         test_lock_publication_commit=publication['commit'],human_annotation_replaced_by_audit=False,
