@@ -1,0 +1,71 @@
+{
+  "eligible": true,
+  "profile": "raw2",
+  "steps": 4,
+  "changed_adapter_tensors": 192,
+  "resume_max_abs_difference": 0.0,
+  "events": [
+    {
+      "step": 1,
+      "time_utc": "2026-11-01T12:10:09Z",
+      "loss": 0.6333399415016174,
+      "gradient_norm": 3.5444133281707764,
+      "learning_rate": 1.422588984322123e-05,
+      "max_tokens": 781,
+      "cursor": 1,
+      "wall_seconds": 2.2045841000508517,
+      "peak_allocated_bytes": 2775507456,
+      "peak_reserved_bytes": 3172990976,
+      "process_rss_bytes": 3436122112,
+      "process_peak_rss_bytes": 6314622976,
+      "ram_available_bytes": 3390566400
+    },
+    {
+      "step": 2,
+      "time_utc": "2026-11-01T12:10:10Z",
+      "loss": 0.7378003001213074,
+      "gradient_norm": 4.484305381774902,
+      "learning_rate": 1.6666666666666667e-05,
+      "max_tokens": 781,
+      "cursor": 2,
+      "wall_seconds": 2.948033699998632,
+      "peak_allocated_bytes": 2817713152,
+      "peak_reserved_bytes": 3175088128,
+      "process_rss_bytes": 3439579136,
+      "process_peak_rss_bytes": 6314622976,
+      "ram_available_bytes": 3386994688
+    },
+    {
+      "step": 3,
+      "time_utc": "2026-11-01T12:10:11Z",
+      "loss": 0.4984571039676666,
+      "gradient_norm": 2.6838438510894775,
+      "learning_rate": 7.3223304703363135e-06,
+      "max_tokens": 781,
+      "cursor": 3,
+      "wall_seconds": 3.8790112000424415,
+      "peak_allocated_bytes": 2818452480,
+      "peak_reserved_bytes": 3175088128,
+      "process_rss_bytes": 3444092928,
+      "process_peak_rss_bytes": 6314622976,
+      "ram_available_bytes": 3369930752
+    },
+    {
+      "step": 4,
+      "time_utc": "2026-11-01T12:10:12Z",
+      "loss": 0.5643733143806458,
+      "gradient_norm": 2.8495092391967773,
+      "learning_rate": 0.0,
+      "max_tokens": 779,
+      "cursor": 4,
+      "wall_seconds": 4.6093456000089645,
+      "peak_allocated_bytes": 2818452480,
+      "peak_reserved_bytes": 3175088128,
+      "process_rss_bytes": 3444170752,
+      "process_peak_rss_bytes": 6314622976,
+      "ram_available_bytes": 3372933120
+    }
+  ],
+  "scope": "four separate authored smoke inputs, one-microbatch backward; main uses accumulation four",
+  "long_answer_eligible": true
+}

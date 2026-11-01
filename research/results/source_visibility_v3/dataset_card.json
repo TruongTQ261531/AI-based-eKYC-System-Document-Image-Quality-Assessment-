@@ -1,0 +1,35 @@
+{
+  "samples_sha256": "043fa5c91ebe0119861f24b045b0ca9fb83b003f06a28b8d3ede3ce27c785cf6",
+  "r2_samples_sha256": "4d6d6d4b5fe3cb83078b945d31a931e4d0c728c4019a9f5f8b6cbecb1bfc4f0c",
+  "exact_same_pixels": true,
+  "reference_policy_only_intervention": true,
+  "rows": 1496,
+  "train_images": 640,
+  "source_stats": {
+    "mrz_present": 27,
+    "mrz_parsed": 27,
+    "valid_check/id_number": 27,
+    "valid_check/dob": 27,
+    "valid_check/expiry_date": 27,
+    "valid_check/optional": 27,
+    "valid_check/composite": 27
+  },
+  "target_changes": {
+    "train/changed_targets": 22,
+    "train/new_supported_keys": 88,
+    "train/lost_body_keys": 0,
+    "development/changed_targets": 5,
+    "development/new_supported_keys": 18,
+    "development/lost_body_keys": 0,
+    "test/changed_targets": 17,
+    "test/new_supported_keys": 83,
+    "test/lost_body_keys": 0
+  },
+  "test_images": 144,
+  "test_identities": 48,
+  "date_policy": "Maximum explicitly observed precision as training target; accept observed source realizations; separately score max precision and century overreach",
+  "visibility": "OR over body/duplicate/TD3 realizations, AND over actual component regions; synthetic-mask geometry only",
+  "parsed_mrz_does_not_imply_authenticity": true,
+  "independent_human_legibility_labels": false,
+  "source_contract": "Explicit author-labelled fields and format-recognized ICAO TD3 spans; not every inferable or encoded fact"
+}

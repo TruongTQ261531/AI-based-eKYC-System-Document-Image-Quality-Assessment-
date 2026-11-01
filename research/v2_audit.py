@@ -11,6 +11,40 @@ from research.v2_runtime import scoring,summary
 
 MODELS=('original','v1','control_42','partial_42','control_31415','partial_31415')
 
+def vision_replay(samples,profile):
+    """Verify every shared frozen visual feature against source pixels again."""
+    import torch
+    from safetensors.torch import load_file
+    from PIL import Image
+    from research.v2_runtime import VLM
+    from research.v2_inputs import pixels
+    from research.vlm_train import process_lock
+    result_path=OUT/'vision_cache_replay.json'
+    if result_path.exists():
+        previous=read(result_path)
+        if previous['signature']!=signature():raise ValueError('Vision replay source changed')
+        return previous
+    unique={r['input_sha256']:r for r in samples.values()};results=[]
+    with process_lock():
+        model=VLM(42,profile)
+        for i,row in enumerate(unique.values(),1):
+            key=hashlib.sha256((model.input_version+row['input_sha256']).encode()).hexdigest()
+            path=CACHE/'features'/profile/(key+'.safetensors')
+            if not path.exists():raise ValueError('Missing visual cache used by the study')
+            expected=load_file(str(path))['features']
+            with Image.open(ROOT/row['path']) as im:view,_=model.views.prepare(im,profile)
+            tensor=pixels(view,profile).to(device='cuda',dtype=model.dtype)
+            with torch.no_grad():actual=model.model.extract_feature(tensor).detach().cpu()
+            identical=bool(torch.equal(actual,expected))
+            results.append(dict(input_sha256=row['input_sha256'],feature_file_sha256=sha(path),identical=identical,
+                                max_absolute_difference=float((actual-expected).abs().max())))
+            if i%32==0 or i==len(unique):print('V2_VISION_REPLAY',i,len(unique),flush=True)
+        record=dict(signature=signature(),profile=profile,unique_inputs=len(results),
+            mismatch_count=sum(not r['identical'] for r in results),
+            scope='All referenced train/control/partial, development and test images; fresh frozen vision, no language generation',rows=results)
+        save(result_path,record)
+        return record
+
 def fresh():
     import torch
     from peft import PeftModel
@@ -138,11 +172,15 @@ def audit():
             replayed+=1
     repeats=read(OUT/'fresh_repeats.json')
     if repeats['signature']!=sig or repeats['mismatch_count']!=0 or repeats['additional_fresh_calls']!=16:raise ValueError('Fresh repeat mismatch/incomplete')
+    vision=vision_replay(samples,lock['profile'])
+    if vision['mismatch_count']:raise ValueError('Fresh visual feature differs from the cache; retain evidence and investigate')
     save(OUT/'paired_intervals.json',intervals(tests))
     result=dict(status='passed',signature=sig,frozen_v1_files_unchanged=frozen,unique_rasters_hashed=len(checked_images),
         frozen_v4_files_unchanged=len(old_index['files']),
         original_photo_sources_hashed=64,raw_output_rows_replayed=replayed,training=train,
         fresh_repeat_groups=8,fresh_repeat_mismatches=0,model_count=6,test_inputs=144,test_identities=48,
+        all_visual_caches_replayed=vision['unique_inputs'],visual_cache_mismatches=vision['mismatch_count'],
+        audit_implementation_sha256=sha(ROOT/'research/v2_audit.py'),
         test_lock_publication_commit=publication['commit'],human_annotation_replaced_by_audit=False,
         limitations=['Geometric visibility proxy, not human legibility GT','Only mock documents; no new real-person collection',
                      'Two seeds and 48 test identities are limited evidence','Model pretraining overlap with MIDV is unknown'])

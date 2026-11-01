@@ -23,6 +23,7 @@ def publish(stage):
     paths+=list((ROOT/'research/tests').glob('test_v2*.py'))+list((ROOT/'research/tests').glob('v2*.cjs'))
     paths+=[ROOT/'start-vlm-v2.ps1']
     paths+=list(OUT.glob('*.json'))
+    paths+=list((OUT/'figures').glob('*.png'))+list((OUT/'figures').glob('*.svg'))
     # This allowlist cannot reach research/data, cache, other branches or V1.
     for path in list(OUT.glob('*.json')):
         text=path.read_text(encoding='utf-8')

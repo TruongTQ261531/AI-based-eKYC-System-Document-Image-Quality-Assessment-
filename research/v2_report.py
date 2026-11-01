@@ -30,6 +30,11 @@ def report():
         'Số token câu trả lời và thời gian thực tế có thể khác; đã lưu riêng trong train_*.json.',
         '- MIDV là ảnh chụp giấy tờ GIẢ LẬP có transcript của tác giả, không phải một bộ CCCD thật mới tự thu thập. '
         'Nhãn sau cắt/che dựa trên hình học vùng giá trị; chưa có người đánh giá độc lập độ đọc được.', '',
+        'Pilot R1 dừng sau event286 (báo tiến độ định kỳ284) vì ánh xạ nhãn bỏ sót trường nhiều dòng/song ngữ, '
+        'trước khi đánh giá model đã fine-tune trên development hoặc test. Toàn bộ pilot được giữ riêng; '
+        'bốn lượt R2 khởi tạo lại từ model gốc, không dùng adapter pilot. R2 chấp nhận mọi biến thể tác giả còn '
+        'hiển thị đầy đủ và ghép các dòng do tác giả đặt tên chung. Prediction model gốc chỉ được tái dùng '
+        'khi hash ảnh, prompt và xử lý ảnh trùng hoàn toàn; đã chấm lại trên nhãn R2.', '',
         '## Lựa chọn xử lý ảnh, chỉ dựa trên development', '',
         '| Đầu vào | F1 trên panel | Trường ngoài nhãn, không rỗng | Giây/ảnh mới trung bình |',
         '|---|---:|---:|---:|']
@@ -48,6 +53,11 @@ def report():
     text+=['', '“Ngoài nhãn, không rỗng” là key không có trong target quan sát được; có thể bao gồm chuỗi từ chối như N/A. '
            'Không đồng nhất toàn bộ số này với việc bịa thông tin danh tính. Parser phụ chỉ bỏ JSON fence trọn vẹn và giá trị null/rỗng; '
            'không sửa nội dung dựa trên đáp án. Giữ nguyên output gốc trong cache riêng.', '',
+           'So sánh V1→V2 thay cả dữ liệu, schema, ngân sách và tiền xử lý, nên không tách riêng được tác dụng '
+           'của việc thêm ảnh chụp. Phép so sánh nhân quả chính là control↔partial cùng seed, ngân sách và ID. '
+           'Hai baseline CPU dùng ghép nhãn/vị trí đơn giản và không đại diện mọi hệ thống OCR/KIE hiện đại. '
+           'Latin PP-OCRv5 không phải model dành cho mọi hệ chữ; xem riêng slices theo layout, nhất là '
+           'rus_internalpassport/grc_passport. [Tài liệu tác giả PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/module_usage/text_recognition.en.md).', '',
            '## Chênh lệch có khoảng tin cậy', '',
            '| So sánh | ΔF1 | CI95% theo ID |', '|---|---:|---:|']
     for r in ci['comparisons']:text.append(f"| {r['a']} − {r['b']} | {r['delta_f1']:+.4f} | [{r['ci95_low']:+.4f}, {r['ci95_high']:+.4f}] |")
@@ -56,6 +66,8 @@ def report():
            '## Kiểm chứng và localhost', '',
            f"- Audit phát lại {audit['raw_output_rows_replayed']} hàng output; {audit['frozen_v1_files_unchanged']} file V1 "
            f"và {audit['frozen_v4_files_unchanged']} file V4 không đổi.",
+           f"- Đã trích xuất lại vision từ pixel của toàn bộ {audit['all_visual_caches_replayed']} ảnh tham chiếu duy nhất; "
+           f"cache khác biệt: {audit['visual_cache_mismatches']}. Kiểm tra này không thay thế nhãn legibility của con người.",
            f"- Model web được chọn từ development: **{lock['selected_model']}**. Cổng khuyến nghị triển khai: **{lock['deployment_approved']}**. "
            'Nếu không đạt, trang chỉ mở model khi người dùng chủ động chọn chế độ nghiên cứu.',
            f"- {fresh['additional_fresh_calls']} lần đọc ảnh mới thêm trên 8 ảnh/4 ID; sai khác so với output đã chấm: "
@@ -82,6 +94,8 @@ def report():
         'Browser SPECIMEN checks and actual-user camera validation are separate from benchmark completion.\n',encoding='utf-8',newline='\n')
     from research.v2_export import export
     export()
+    from research.v2_figures import make
+    make()
     print('V2_REPORT_READY',flush=True)
 
 if __name__=='__main__':report()

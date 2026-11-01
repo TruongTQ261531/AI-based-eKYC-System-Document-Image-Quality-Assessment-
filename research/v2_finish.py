@@ -17,6 +17,8 @@ def command(label,args):
     if code:raise RuntimeError(label+' exited '+str(code)+'; '+str(path))
 
 def main():
+    if (OUT/'source_graph_hold.json').exists():
+        raise ValueError('V3 source-aware study registered before test; use research.v3_workflow for the joint sealed comparison')
     import msvcrt,ctypes
     CACHE.mkdir(parents=True,exist_ok=True)
     with (CACHE/'completion.lock').open('a+b') as lock:

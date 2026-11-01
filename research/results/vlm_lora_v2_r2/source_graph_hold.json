@@ -1,0 +1,6 @@
+{
+  "test_scoring_allowed_only_by": "research.v3_workflow after both locks publish",
+  "reason": "Author MRZ repeats observable names/IDs; add prospective source-aware references rather than call all body-absent outputs hallucinations",
+  "test_scored": false,
+  "r2_core_unchanged": true
+}

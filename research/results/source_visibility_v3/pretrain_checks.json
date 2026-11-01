@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "python_tests_total": 49,
+  "source_specific_python_tests": 26,
+  "frontend_behavior_checks": 16,
+  "V2_frontend": 8,
+  "V3_frontend": 8,
+  "mocked_API_and_camera_are_not_accuracy_evidence": true,
+  "source_reference_rows_regenerated": 1496,
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "R2_signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "test_predictions_exist": false,
+  "launcher_ASCII_parse": true,
+  "V1_files_unchanged": 101,
+  "corrected_pretrain_implementation_error": "Refactoring derive/build initially left len(rows) out of scope; fixed to len(result), rebuilt and replayed before V3 training"
+}

@@ -2,7 +2,8 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
-const source=fs.readFileSync(path.join(__dirname,'../v2_web/app.js'),'utf8');
+const web=process.env.OCR_TEST_WEB==='v3'?'v3_web':'v2_web';
+const source=fs.readFileSync(path.join(__dirname,'..',web,'app.js'),'utf8');
 function harness({deny=false,pendingCamera=false,pendingScan=false,recommended=true}={}){
  const elements=new Map(),requests=[],streams=[],constraints=[],canvases=[],revoked=[],events={};let releaseCamera,releaseScan,answer=null;
  function make(id=''){return {id,value:'',checked:false,hidden:false,disabled:false,textContent:'',children:[],listeners:{},dataset:{},videoWidth:2560,videoHeight:1440,
