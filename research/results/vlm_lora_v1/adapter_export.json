@@ -1,0 +1,34 @@
+{
+  "model_id": "5CD-AI/Vintern-1B-v3_5",
+  "revision": "b98f263eab246eb5269ade64edbdca8a887dc44d",
+  "scope": "language_model submodule of full Vintern VLM",
+  "base_weights_sha256": "296a16a6bf28e6d3f0fb9298deba70b3cfa1d7519f4aa326e2f862bf2e63be05",
+  "adapter_sha256": "4043a81c444c5efd6f602bc15ce85c479b3a0e6c9f1659461db2dae93bf5320b",
+  "selected_model": "seed_42",
+  "study_signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "deployment_approved_on_development": true,
+  "loader": "research.vlm_runtime.VLM() then PeftModel.from_pretrained(vlm.model.language_model, adapter_path, is_trainable=False)",
+  "standalone_text_qwen_loader_is_not_equivalent": true,
+  "synthetic_only_finetuning": true,
+  "model_and_code_license": "MIT; generated specimen images CC BY4.0",
+  "no_identity_or_liveness_approval": true,
+  "export_directory": "research/cache/vlm_lora_v1/export/seed_42",
+  "files": {
+    "adapter_config.json": {
+      "bytes": 782,
+      "sha256": "060a832ca1c9ba4d75d10588b2d14ab79963d355c90c710b7257fe6136c3f23a"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 4350392,
+      "sha256": "4043a81c444c5efd6f602bc15ce85c479b3a0e6c9f1659461db2dae93bf5320b"
+    },
+    "README.txt": {
+      "bytes": 420,
+      "sha256": "958097f5be5ee53bf6b887f5abdd7aeca5f5dabe86701e300d719da8bf25cae4"
+    },
+    "vintern_adapter.json": {
+      "bytes": 849,
+      "sha256": "9885ae38c6dd697d919abf731d31701db8c62d5769f672e7b70972f54464c968"
+    }
+  }
+}

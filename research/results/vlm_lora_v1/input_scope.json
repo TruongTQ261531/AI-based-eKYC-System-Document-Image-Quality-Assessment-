@@ -18,8 +18,14 @@
     "mapping_kind"
   ],
   "original_json_xml_annotation_files": 0,
-  "fine_tuning_images": 720,
   "fine_tuning_source": "new deterministic synthetic SPECIMEN only",
   "quality_labels_are_not_ocr_transcriptions": true,
-  "original_raw_photos_used_for_this_lora_training": false
+  "original_raw_photos_used_for_this_lora_training": false,
+  "corpus_images": 720,
+  "optimizer_training_images": 480,
+  "optimizer_training_ids": 96,
+  "development_images": 80,
+  "calibration_images_unused": 40,
+  "test_images": 120,
+  "control_optimizer_training_pool_images": 288
 }

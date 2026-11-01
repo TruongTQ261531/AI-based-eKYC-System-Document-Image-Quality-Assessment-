@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "time_utc": "2026-11-01T08:51:58Z",
+  "frozen_v4_artifacts_verified": 63,
+  "frozen_v4_source_files_verified": 10,
+  "mentor_changed_paths": [],
+  "public_json_files_scanned": 48,
+  "private_key_hits": 0,
+  "python_tests": 44,
+  "python_failures": 0,
+  "frontend_tests": 6,
+  "frontend_log_sha256": "62a63fd88165f43360df762ab304ec20bdbad987d594e8f67045051dcd1712b4",
+  "original_torch": "2.14.1+cpu",
+  "original_cuda_available": false,
+  "new_venv": false,
+  "optional_runtime_isolated": true,
+  "model_cache_git_ignored": true,
+  "physical_camera_tested": false,
+  "actual_browser_validation_sha256": "81d3765d3e1730699e2e90d47e8f79a0376adaf9e704563be9d51878e20e5eeb",
+  "retained_issue_stages": [
+    "first GPU smoke",
+    "initial web tests",
+    "audit helper unit test",
+    "pre-audit import probe",
+    "control training interruption",
+    "first browser model request",
+    "bookkeeping export"
+  ],
+  "execution_notes_sha256": "aa29945613ef995d049a92dcb54a90a46bfa54779b3893c83ff4b88be0f5b0d1",
+  "all_browser_demo_documents_exact": false,
+  "no_core_b_or_liveness_claim": true
+}

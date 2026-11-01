@@ -1,0 +1,100 @@
+{
+  "status": "completed_with_documented_model_omission",
+  "time_utc": "2026-11-01T08:45:04Z",
+  "actual_browser": true,
+  "actual_gpu_model_requests": true,
+  "model": "seed_42",
+  "model_lock_sha256": "c30c38c3a46b7429e2def2134ef084fe24320531fdc4143da6a9f9ccf5af71e7",
+  "rows": [
+    {
+      "capture": "full",
+      "split": "train",
+      "input_sha256": "affa015d7ea7cd8b8375f5eb07beab376ec5f91bf83e236ea9459ae8c2534235",
+      "dom_proof_sha256": "5a1db798c18a2fd8badd78d4ae1a89c8ab834564f9dc87f640da948c4867b81d",
+      "dom_fields_sha256": "e5305bcd22f27eebeef16bd35161648196f5087b56731288525421779151dbe0",
+      "correct": 5,
+      "reference": 5,
+      "predicted": 5,
+      "valid_json": true,
+      "literal_correct": 5,
+      "extra_keys": 0,
+      "missing_keys": 0,
+      "exact_document": true,
+      "missing_field_keys": [],
+      "server_inference_seconds": 5.86,
+      "server_request_seconds": 16.86
+    },
+    {
+      "capture": "field_clip",
+      "split": "train",
+      "input_sha256": "e6e16b35bff508a7e00dea32209b88b11220c53a14449935ad3581f53d9f251f",
+      "dom_proof_sha256": "fd7d609ad329768208fefb4b60cb66e867b7d4e0db635d9a54a5ba10bf2e5743",
+      "dom_fields_sha256": "522806ab7076915f170c53d8d5f1c4c02b9c11df5fbda516bf2c4f872ad1a5d1",
+      "correct": 4,
+      "reference": 4,
+      "predicted": 4,
+      "valid_json": true,
+      "literal_correct": 4,
+      "extra_keys": 0,
+      "missing_keys": 0,
+      "exact_document": true,
+      "missing_field_keys": [],
+      "server_inference_seconds": 4.28,
+      "server_request_seconds": 4.29
+    },
+    {
+      "capture": "value_mask",
+      "split": "train",
+      "input_sha256": "5adfdbaad9873c905a39fb5f0f1570b59307a4c93fc0e153eb14a673cd98fc7c",
+      "dom_proof_sha256": "869923ad4c7fca075697bc0e5fe07c11476faa77ae4b8f6bf58572942d43e4d0",
+      "dom_fields_sha256": "b53e048633868cb10f2f96c0c7a73f4669b4849c0089dc69c4ada03f0996174e",
+      "correct": 1,
+      "reference": 2,
+      "predicted": 1,
+      "valid_json": true,
+      "literal_correct": 1,
+      "extra_keys": 0,
+      "missing_keys": 1,
+      "exact_document": false,
+      "missing_field_keys": [
+        "full_name"
+      ],
+      "server_inference_seconds": 1.79,
+      "server_request_seconds": 1.81
+    }
+  ],
+  "all_demo_documents_exact": false,
+  "demo_is_accuracy_test": false,
+  "fixture_source": "fixed train001 UI fixtures; selected in web code before test",
+  "physical_camera_tested": false,
+  "camera_unit_tests_use_mock_media": true,
+  "edit": {
+    "edit": {
+      "confirmation_invalidated": true,
+      "editable_value_changed": true
+    },
+    "clear": {
+      "confirm_hidden": true,
+      "field_count": 0,
+      "preview_cleared": true
+    }
+  },
+  "mobile": {
+    "body": 375,
+    "document": 375,
+    "viewport": 390,
+    "horizontal_overflow": false,
+    "override_reset_after_test": true
+  },
+  "console_error_or_warning_entries": 0,
+  "screenshots": {
+    "web_full.jpg": {
+      "bytes": 122826,
+      "sha256": "d7ed42034ef2080a381198313a18cfb95033351a23fbd75fdc72794abffbf195"
+    },
+    "web_mobile_mask.jpg": {
+      "bytes": 87184,
+      "sha256": "1d4c3803cff0afc490de1b570ff0e632cf844a96bcf3f88e38d30097bb4886ca"
+    }
+  }
+}

@@ -51,7 +51,9 @@ def main():
         original_torch=torch.__version__,original_cuda_available=torch.cuda.is_available(),new_venv=False,
         optional_runtime_isolated=True,model_cache_git_ignored=True,physical_camera_tested=False,
         actual_browser_validation_sha256=sha(OUT/'browser_validation.json'),
-        retained_initial_failures=['smoke logger duplicate time_utc','TestClient fixture used untrusted host','audit helper expected unnecessary aggregate keys'],
+        retained_issue_stages=[e['stage'] for e in json.loads((OUT/'execution_notes.json').read_text(encoding='utf-8'))['events']],
+        execution_notes_sha256=sha(OUT/'execution_notes.json'),
+        all_browser_demo_documents_exact=json.loads((OUT/'browser_validation.json').read_text(encoding='utf-8'))['all_demo_documents_exact'],
         no_core_b_or_liveness_claim=True)
     save(OUT/'release_validation.json',evidence)
     paths=set(OUT.rglob('*'))

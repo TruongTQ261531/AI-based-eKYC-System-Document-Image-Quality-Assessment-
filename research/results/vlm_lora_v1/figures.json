@@ -1,0 +1,15 @@
+{
+  "code_sha256": "6aedce03a99e8097f8b9a17111b457525a695b56f1828e2235de4c88a9d293d9",
+  "public_numeric_inputs_only": true,
+  "source_sha256": {
+    "format_analysis.json": "cae4aff75ef1e68c6b6b91f12e78f30a2b3cf2248d2012803c894ebc7c482eee",
+    "test_ocr.json": "15658b8fa7b40e4c2f4513fca6557ea89a42a7e3f5a83e987d711aa6a8a1c4e0",
+    "error_taxonomy.json": "83d39adef968efa1ed5684d7fe8c97604cb8792d7d41fc1f33a24b42e34de0f6"
+  },
+  "file_sha256": {
+    "test_metrics.png": "9212c614c4bf61ce441ad55053e29508bcb63d2fe6ff19112153da41496adca4",
+    "test_metrics.svg": "89ba813c5964291100666b587ac597fde84180edd4ec9d7329d5296171da3440"
+  },
+  "invalid_strict_outputs_can_undercount_masked_field_outputs": true,
+  "ocr_python_dict_by_construction_not_generative_schema_benchmark": true
+}

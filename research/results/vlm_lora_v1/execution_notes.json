@@ -1,0 +1,81 @@
+{
+  "scope": "Known experiment/validation issues, including superseded attempts; not independent human annotation",
+  "events": [
+    {
+      "stage": "first GPU smoke",
+      "observed": "Logger TypeError duplicate time_utc after four real optimizer steps",
+      "fix": "Merge progress items after timestamp; preserve failed attempt",
+      "evidence": "local cache/smoke_attempt1_logging_error and public smoke.json",
+      "later_smoke_status": "passed"
+    },
+    {
+      "stage": "initial web tests",
+      "observed": "TestClient default testserver host rejected by localhost whitelist",
+      "initial": {
+        "tests": 6,
+        "failures": 4,
+        "errors": 0
+      },
+      "fix": "Fixture base_url=127.0.0.1:8002; whitelist unchanged",
+      "later": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    {
+      "stage": "audit helper unit test",
+      "observed": "Helper required unnecessary aggregate keys",
+      "initial": {
+        "tests": 13,
+        "failures": 1,
+        "errors": 0
+      },
+      "fix": "Paired point computed from count triples",
+      "later": {
+        "tests": 13,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    {
+      "stage": "pre-audit import probe",
+      "observed": "Original Python has no safetensors; sampler import raised ModuleNotFoundError",
+      "fix": "Use optional cache; audit CLI re-executes into it without global install",
+      "full_audit_status": "passed",
+      "standalone_original_probe_log_retained": false
+    },
+    {
+      "stage": "control training interruption",
+      "after_step": 140,
+      "before_step": 141,
+      "gap_seconds": 2708.1448808999266,
+      "cause": "undetermined",
+      "wall_time_preserved": true,
+      "trace": "control/train_seed_42.json"
+    },
+    {
+      "stage": "first browser model request",
+      "observed": "Locator wait expired while cold request busy; no duplicate request",
+      "later_request_completed": true,
+      "server_request_wall_seconds": 16.86,
+      "evidence_screenshot_sha256": "d7ed42034ef2080a381198313a18cfb95033351a23fbd75fdc72794abffbf195"
+    },
+    {
+      "stage": "bookkeeping export",
+      "observed": "Default Windows cp1252 could not decode private UTF8 browser proof",
+      "fix": "Explicit UTF8 reads; no model/metric change",
+      "raw_standalone_log_retained": false
+    }
+  ],
+  "final_python": {
+    "tests": 44,
+    "failures": 0,
+    "errors": 0
+  },
+  "warnings_retained": [
+    "pinned timm import deprecation",
+    "Starlette TestClient httpx deprecation"
+  ],
+  "no_global_dependency_install_to_hide_warnings": true
+}

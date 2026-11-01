@@ -181,9 +181,10 @@ def report():
         fmt=f"{v['json_valid_rate']:.4f}" if k in secondary else 'dict sẵn'
         text.append(f"|{LABELS[k]}|{v['correct']}/{v['reference']}|{v['precision']:.4f}|{v['recall']:.4f}|{v['f1']:.4f}|{sf}|{fmt}|{v['masked_field_outputs']}|")
     text+=['','Đúng theo cặp khóa–giá trị; ngày/giới tính canonicalization giống nhau, vẫn lưu literal exact. Định dạng extraction strict không phải chỉ JSON syntax: null/bool/nested/fence đều bị từ chối. Parser phụ bỏ một fence toàn bộ và null/empty; không sửa giá trị/ánh xạ bằng GT. OCR trả dict sẵn nên không dùng làm đối chứng formatting sinh. Extra keys có thể có giá trị còn thấy nhưng nhãn bị cắt; không tự coi tất cả là hallucination. Trường bị che kín được đếm riêng.','',
-        '| VLM | Object parse được | Fence | Null/empty | Literal đúng | Extra | Missing |','|---|---:|---:|---:|---:|---:|---:|']
+        'Strict đếm key của trường che kín kể cả khi giá trị là chuỗi rỗng. Parser phụ bỏ null/empty như abstention. Do đó đếm key strict không đồng nghĩa mọi key đều mang giá trị bịa hoặc không rỗng.','',
+        '| VLM | Object parse được | Fence | Null/empty | Literal đúng | Extra | Missing | Key che kín strict / parser phụ |','|---|---:|---:|---:|---:|---:|---:|---:|']
     for k,r in records.items():
-        a=secondary[k];v=r['summary'];text.append(f"|{LABELS[k]}|{a['syntax_success']}/120|{a['fenced_outputs']}|{a['null_or_empty_values']}|{v['literal_correct']}|{v['extra_keys']}|{v['missing_keys']}|")
+        a=secondary[k];v=r['summary'];text.append(f"|{LABELS[k]}|{a['syntax_success']}/120|{a['fenced_outputs']}|{a['null_or_empty_values']}|{v['literal_correct']}|{v['extra_keys']}|{v['missing_keys']}|{v['masked_field_outputs']} / {a['tolerant_summary']['masked_field_outputs']}|")
     text+=['','## Từng điều kiện chụp (F1 strict)','', '| Phương án | full | corner_clip | field_clip | blur_glare | value_mask |','|---|---:|---:|---:|---:|---:|']
     for k in summaries:
         vals=[next(s for s in audit['slices'] if s['role']=='test' and s['model']==k and s['capture']==c)['f1'] for c in ('full','corner_clip','field_clip','blur_glare','value_mask')]
@@ -215,7 +216,12 @@ def report():
         'Web LoRA opt-in: http://127.0.0.1:8002/ . Camera xử lý trong bộ nhớ, tính mới vision; không tra dataset/GT, không lưu ảnh/text, không gọi API ngoài. Demo lấy ảnh train để thử UI, không là accuracy test. Không phê duyệt danh tính hoặc tuyên bố liveness/PAD qua thí nghiệm OCR.',
         'Adapter xuất riêng khoảng4.35MB, cần full Vintern đúng revision/loader gắn language_model. Weights/checkpoints/corpus/raw output ở ignored cache/data, không đưa Git. Python OCR gốc giữ nguyên, CUDA runtime ở cache riêng.',
         'Kết quả xác nhận adaptation trên corpus tổng hợp nhỏ cùng họ bố cục/font. LoRA và synthetic masking là kỹ thuật có sẵn, chưa đủ kết luận thuật toán mới/CORE B. Cần ảnh chụp vật lý khác thiết bị/bố cục, nhãn legibility từ người chấm, closest-prior comparison và phân tích lỗi độc lập trước claim rộng.','']
-    report_path=ROOT/'research/VLM_RESULTS_VI.md';report_path.write_text('\n'.join(text),encoding='utf-8',newline='\n')
+    rendered=[]
+    for line in text:
+        if rendered and line and rendered[-1] and not (line.startswith('|') and rendered[-1].startswith('|')) and not (line.startswith('- ') and rendered[-1].startswith('- ')):
+            rendered.append('')
+        rendered.append(line)
+    report_path=ROOT/'research/VLM_RESULTS_VI.md';report_path.write_text('\n'.join(rendered),encoding='utf-8',newline='\n')
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(report_path),audit_sha256=sha(OUT/'audit.json'),
         model_lock_sha256=sha(OUT/'test_lock.json'),control_lock_sha256=sha(OUT/'control/test_lock.json'),
         fresh_online_sha256=sha(OUT/'fresh_online.json'),format_analysis_sha256=sha(OUT/'format_analysis.json'),report_script_sha256=sha(__file__)))

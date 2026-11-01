@@ -10,7 +10,7 @@ from research.vlm_setup import OUT,sha,save
 def main():
     def read(name):return json.loads((OUT/name).read_text(encoding='utf-8'))
     models=['ocr_existing_web','original','control_seed_42','seed_42','seed_31415']
-    labels=['V4 research OCR\nCPU','Base VLM\nGPU','Intact-content LoRA\nseed42, GPU','Partial-content LoRA\nseed42, GPU','Partial-content LoRA\nseed31415, GPU']
+    labels=['V4 research OCR\nCPU','Base VLM\nGPU','Intact-content LoRA\ns42 / step48, GPU','Partial-content LoRA\ns42 / step192, GPU','Partial-content LoRA\ns31415 / step192, GPU']
     tolerant={r['model']:r for r in read('format_analysis.json')['results'] if r['role']=='test'}
     strict={m:tolerant[m]['strict_summary'] for m in models if m!='ocr_existing_web'}
     strict['ocr_existing_web']=read('test_ocr.json')['summaries']['ocr_existing_web']
@@ -21,14 +21,14 @@ def main():
     fig,axes=plt.subplots(2,1,figsize=(11,8),layout='constrained')
     x=np.arange(len(models));width=.34
     for ax,metric in zip(axes,['f1','masked_field_outputs']):
-        for offset,source,label,color in [(-width/2,strict,'Strict extraction contract','#136f7d'),(width/2,alternative,'Whole-fence/null-tolerant parser','#cb7a37')]:
+        for offset,source,label,color in [(-width/2,strict,'Strict contract (counts empty-string keys)','#136f7d'),(width/2,alternative,'Fence/null/empty-tolerant parser','#cb7a37')]:
             values=[source[m][metric] for m in models]
             bars=ax.bar(x+offset,values,width,label=label,color=color)
             ax.bar_label(bars,labels=[f'{v:.3f}' if metric=='f1' else str(v) for v in values],padding=3,fontsize=9)
         ax.set_xticks(x,labels);ax.grid(axis='y',alpha=.18);ax.set_axisbelow(True)
     axes[0].set_ylim(0,1.16);axes[0].set_ylabel('Exact key-value micro F1')
     axes[0].legend(loc='upper left',ncol=2,frameon=False,fontsize=9)
-    axes[1].set_ylabel('Parsed outputs of masked fields')
+    axes[1].set_ylabel('Parsed keys of opaque-masked fields')
     axes[1].set_ylim(0,max(1,max(alternative[m]['masked_field_outputs'] for m in models))*1.25)
     axes[1].set_title(f'Opaque-mask opportunities: {opportunities}; zero observed is not a calibrated safety guarantee',fontsize=10)
     fig.suptitle('Identity-disjoint synthetic test: 24 mock IDs, 120 images\nShared generator / layouts / fonts across roles; no independent camera collection',fontsize=13)
