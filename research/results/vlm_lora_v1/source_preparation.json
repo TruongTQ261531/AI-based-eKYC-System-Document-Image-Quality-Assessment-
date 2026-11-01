@@ -1,17 +1,19 @@
 {
-  "signature": "dfc62f692e21c2b58b17a9ce672170b8e1613a96efc60952b0fcea5c824c1927",
-  "actual_vintern_training_started": false,
+  "signature": "26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c",
+  "actual_vintern_training_started": true,
+  "main_training_started": false,
+  "first_gpu_smoke_steps_before_logging_error": 4,
   "code_sha256": {
-    "research/vlm_setup.py": "742868784628cc854b222ba40fa3435d5a194500e80112c24dfbc0e5a1a6d9ff",
+    "research/vlm_setup.py": "35f025b4b24792f5e65ee9ae5ad74fdd15e9d914b66c841014538be7a31103ba",
     "research/vlm_data.py": "d1d595e9d6b318ef10e5fe64f4f49be62ad5fab6b649d020b9247ca5ef3e4755",
     "research/vlm_runtime.py": "aeffa994a393ae16de5c541237c7fff89eb46ecf725fc8b3a642d5e95ecc8b7b",
-    "research/vlm_train.py": "b81764d26e9ad75a599ae78f0f3941df3ea7be36e8340cb3a91019775a87ef74",
+    "research/vlm_train.py": "f115d2840ccec432a46dc67fa29711cf2280188ac2125c1618ac9f455807ac42",
     "research/vlm_baseline.py": "922d91bb961e5766cc649346ac17f15f0c41ee23f4bf84fa4b5adff03e15989d",
     "research/vlm_workflow.py": "c012650eb7360c00a9eeca49fb09451d51abc80b4a2f5d524821ce90a9d58436",
     "research/vlm_config.json": "f17bcfa16dc10a47fac6d2cd8db49811147c2a1afb13a9df1b371c0da073751d",
     "research/VLM_LORA_PROTOCOL.md": "19e5dbaee9680a483929450fe3fc52cee8c3c608e6849742f87f3b4c9f7ee159"
   },
   "contract_tests_passed": 18,
-  "tiny_cpu_training_tests_passed": 3,
+  "tiny_cpu_training_tests_passed": 4,
   "powershell_launcher_parses": true
 }

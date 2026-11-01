@@ -95,10 +95,11 @@ def parallel_tail(row,part):
         if response.status!=206 or not response.headers.get('Content-Range'): return False
         total=int(response.headers['Content-Range'].split('/')[-1]);response.read(1)
     start=part.stat().st_size if part.exists() else 0
-    if total<64*2**20 or start>=total: return False
+    if total<2**20 or start>=total: return False
     directory=CACHE/'download_segments'/hashlib.sha256(row['url'].encode()).hexdigest()
     directory.mkdir(parents=True,exist_ok=True)
-    ranges=[(a,min(a+64*2**20,total)-1) for a in range(start,total,64*2**20)]
+    chunk_size=(64 if total>=64*2**20 else 1)*2**20
+    ranges=[(a,min(a+chunk_size,total)-1) for a in range(start,total,chunk_size)]
     def fetch(bounds):
         a,b=bounds;path=directory/f'{a}_{b}.part'
         for attempt in range(6):
@@ -141,7 +142,7 @@ def download(row, target):
         if not valid(target): raise ValueError(f'Cached hash mismatch: {target.name}')
         return
     part = target.with_suffix(target.suffix + '.part')
-    if (row.get('bytes',0)>64*2**20 or row['file'].startswith('torch-')):
+    if (row.get('bytes',0)>64*2**20 or row['file'].startswith(('torch-','torchvision-'))):
         if parallel_tail(row,part):
             if not valid(part): raise ValueError('Parallel download checksum mismatch')
             part.replace(target);print('VERIFIED',target.name,target.stat().st_size,flush=True);return

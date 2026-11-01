@@ -1,0 +1,10 @@
+{
+  "torch": "2.7.1+cu126",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "bf16_supported": true,
+  "backward_finite": true,
+  "seconds": 0.42256199999246746,
+  "peak_allocated_bytes": 71304192,
+  "scope": "GPU matrix backward smoke, not Vintern fine-tuning"
+}

@@ -31,7 +31,9 @@ def process_lock():
 
 
 def progress(**items):
-    save(CACHE/'progress.json',dict(pid=os.getpid(),time_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),**items))
+    value=dict(pid=os.getpid(),time_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
+    value.update(items)
+    save(CACHE/'progress.json',value)
     print(json.dumps(items,ensure_ascii=True),flush=True)
 
 

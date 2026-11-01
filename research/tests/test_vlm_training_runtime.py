@@ -62,5 +62,17 @@ class TrainingRuntimeTests(unittest.TestCase):
             self.update(model,optimizer)
             self.assertTrue(all(torch.equal(expected[n],p) for n,p in model.named_parameters()))
 
+    def test_progress_accepts_existing_event_timestamp(self):
+        import json
+        from research import vlm_train
+        with tempfile.TemporaryDirectory(dir=Path('research/cache/vlm_lora_v1')) as directory:
+            path=Path(directory)
+            self.assertTrue(path.resolve().is_relative_to(Path('research/cache/vlm_lora_v1').resolve()))
+            with patch.object(vlm_train,'CACHE',path):
+                vlm_train.progress(stage='unit_test',time_utc='2026-11-01T00:00:00Z',step=4)
+            result=json.loads((path/'progress.json').read_text(encoding='utf-8'))
+            self.assertEqual(result['time_utc'],'2026-11-01T00:00:00Z')
+            self.assertEqual(result['step'],4)
+
 
 if __name__=='__main__':unittest.main()
