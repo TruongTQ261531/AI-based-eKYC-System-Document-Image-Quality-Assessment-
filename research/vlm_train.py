@@ -80,6 +80,8 @@ def development_loss(model,rows):
 
 
 def train_steps(model,rows,dev,seed,total,accum,folder,start_state=None,stop=None,save_every=48):
+    import psutil
+    process=psutil.Process()
     sig=signature();params=[p for p in model.model.language_model.parameters() if p.requires_grad]
     names=[n for n,p in model.model.language_model.named_parameters() if p.requires_grad]
     if not names or any('lora_' not in n for n in names): raise ValueError('Unintended base-model training')
@@ -102,9 +104,12 @@ def train_steps(model,rows,dev,seed,total,accum,folder,start_state=None,stop=Non
         norm=torch.nn.utils.clip_grad_norm_(params,1.)
         if not torch.isfinite(norm): raise FloatingPointError('Non-finite gradient norm')
         optimizer.step();last=step
+        memory=process.memory_info()
         event=dict(step=step,time_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),loss=loss_sum/accum,gradient_norm=float(norm),learning_rate=lr,
                    max_tokens=max_tokens,cursor=cursor,wall_seconds=time.perf_counter()-start,
-                   peak_allocated_bytes=torch.cuda.max_memory_allocated(),peak_reserved_bytes=torch.cuda.max_memory_reserved())
+                   peak_allocated_bytes=torch.cuda.max_memory_allocated(),peak_reserved_bytes=torch.cuda.max_memory_reserved(),
+                   process_rss_bytes=memory.rss,process_peak_rss_bytes=getattr(memory,'peak_wset',memory.rss),
+                   ram_available_bytes=psutil.virtual_memory().available)
         if step%save_every==0 or step==(stop or total):
             if dev: event['development_loss']=development_loss(model,dev)
             checkpoint(model,optimizer,step,cursor,seed,total,folder/f'step_{step:04}',sig)
@@ -151,6 +156,7 @@ def smoke():
         adapter_tensors_changed=changed,resume_max_abs_difference=maximum,native_generation_parity=parity,
         training_peak_allocated_bytes=max(x['peak_allocated_bytes'] for x in events),
         training_peak_reserved_bytes=max(x['peak_reserved_bytes'] for x in events),
+        process_peak_rss_bytes=max(x['process_peak_rss_bytes'] for x in events),
         start_loss=events[0]['loss'],end_loss=events[-1]['loss'],original_generation_tokens=base['generated_tokens'],
         gpu=torch.cuda.get_device_name(),dtype=str(model.dtype),new_venv=False,existing_runtime_changed=False)
     save(OUT/'smoke.json',result);print(json.dumps(result),flush=True)

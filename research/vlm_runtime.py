@@ -153,13 +153,16 @@ class VLM:
         return self.tokenizer.decode(output[0],skip_special_tokens=True).strip(),int(output.shape[1])
 
     def infer(self,sample):
+        import psutil
         torch.cuda.reset_peak_memory_stats();torch.cuda.synchronize();start=time.perf_counter()
         feature=self.features(sample);after_feature=time.perf_counter()
         text,count=self.infer_features(feature)
         torch.cuda.synchronize()
+        memory=psutil.Process().memory_info()
         return dict(text=text,generated_tokens=count,wall_seconds=time.perf_counter()-start,
                     feature_access_seconds=after_feature-start,
                     peak_allocated_bytes=torch.cuda.max_memory_allocated(),peak_reserved_bytes=torch.cuda.max_memory_reserved(),
+                    process_rss_bytes=memory.rss,process_peak_rss_bytes=getattr(memory,'peak_wset',memory.rss),
                     visual_features_cached=True)
 
     def lora(self, config):
