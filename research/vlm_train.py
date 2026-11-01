@@ -157,6 +157,7 @@ def smoke():
 
 
 def train(seed):
+    if (OUT/'test_lock.json').exists(): raise ValueError('Study already sealed; do not retrain against the same test')
     folder=CACHE/f'seed_{seed}';sig=signature()
     model=VLM(seed);rows=load('train');dev=load('development')
     feature_seconds=feature_all(model,rows+dev);model.offload_vision();model.lora(CONFIG)
@@ -179,6 +180,8 @@ def train(seed):
 
 def evaluate(role,model_key,repeat=1):
     sig=signature();adapter=None
+    weights=json.loads((OUT/'assets.json').read_text(encoding='utf-8'))
+    model_digest=next(x['sha256'] for x in weights['model'] if x['file']=='model.safetensors')
     if role=='test':
         seal=json.loads((OUT/'test_lock.json').read_text(encoding='utf-8'))
         if seal['signature']!=sig: raise ValueError('Test source lock changed')
@@ -187,6 +190,9 @@ def evaluate(role,model_key,repeat=1):
         if choice['signature']!=sig: raise ValueError('Training source changed')
         adapter=ROOT/choice['selected_checkpoint']
         if sha(adapter/'adapter_model.safetensors')!=choice['selected_adapter_sha256']: raise ValueError('Adapter changed')
+        model_digest=choice['selected_adapter_sha256']
+        if role=='test' and seal['adapters'][str(seed)]['selected_adapter_sha256']!=model_digest:
+            raise ValueError('Adapter differs from the pre-test seal')
     model=VLM();rows=load(role)
     if repeat>1:
         identities=sorted({r['physical_id'] for r in rows},key=lambda x:hashlib.sha256(('vlm-repeat-v1/'+x).encode()).digest())[:6]
@@ -200,11 +206,13 @@ def evaluate(role,model_key,repeat=1):
         path=CACHE/'predictions'/f'{role}_{model_key}_{repeat}'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')
         if path.exists():
             record=json.loads(path.read_text(encoding='utf-8'))
-            if record['signature']!=sig or record['input_sha256']!=row['input_sha256']: raise ValueError('Prediction cache changed')
+            if record['signature']!=sig or record['input_sha256']!=row['input_sha256'] or record['model_sha256']!=model_digest:
+                raise ValueError('Prediction cache changed')
         else:
             prediction=model.infer(row);fields,valid=parsed(prediction['text'])
             record=dict(signature=sig,uid=row['uid'],physical_id=row['physical_id'],role=role,capture=row['capture'],
                 input_sha256=row['input_sha256'],model=model_key,repeat=repeat,
+                model_sha256=model_digest,
                 **{k:v for k,v in prediction.items() if k!='text'},**score(row['target'],fields,valid),
                 _private_text=prediction['text'],_private_fields=fields,
                 prediction_sha256=hashlib.sha256(prediction['text'].encode()).hexdigest())
@@ -213,7 +221,7 @@ def evaluate(role,model_key,repeat=1):
             save(path,record)
         outputs.append({k:v for k,v in record.items() if not k.startswith('_private')})
         if i%4==0 or i==len(rows): progress(stage='evaluation',role=role,model=model_key,complete=i,total=len(rows))
-    save(OUT/f'{role}_{model_key}_{repeat}.json',dict(signature=sig,rows=outputs,summary=aggregate(outputs),
+    save(OUT/f'{role}_{model_key}_{repeat}.json',dict(signature=sig,model_sha256=model_digest,rows=outputs,summary=aggregate(outputs),
         feature_cache_setup_seconds=setup,latency_is_cached_visual_feature_inference=True,
         mean_wall_seconds=sum(x['wall_seconds'] for x in outputs)/len(outputs)))
 

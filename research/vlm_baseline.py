@@ -20,7 +20,7 @@ def run(role):
     locked=json.loads((ROOT/'research/results/recovery_v4/selector_models.json').read_text(encoding='utf-8'))
     engine=LayoutKIEEngine();rows=[]
     for i,sample in enumerate(load(role),1):
-        path=CACHE/'cpu_baseline'/role/(hashlib.sha256(sample['uid'].encode()).hexdigest()+'.json')
+        path=CACHE/'cpu_baseline'/sig/role/(hashlib.sha256(sample['uid'].encode()).hexdigest()+'.json')
         if path.exists():
             record=json.loads(path.read_text(encoding='utf-8'))
             if record['signature']!=sig: raise ValueError('Baseline checkpoint changed')
