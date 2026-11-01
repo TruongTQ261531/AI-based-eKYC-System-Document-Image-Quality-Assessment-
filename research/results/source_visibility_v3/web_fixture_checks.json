@@ -1,0 +1,9 @@
+{
+  "source_HTTP_tests": 12,
+  "source_frontend_behavior_tests": 8,
+  "combined_unique_python_tests": 52,
+  "fresh_fictional_fixture_tested": true,
+  "fixture_in_train": false,
+  "actual_camera_tested": false,
+  "core_signature_unchanged": true
+}

@@ -21,8 +21,9 @@ def run():
     for model in MODELS:
         cache=R2CACHE if model in BASES else CACHE;old_rows=[];new_rows=[];transitions=Counter()
         for uid,row in source.items():
-            raw=read(cache/'predictions'/f'test_{model}'/(hashlib.sha256(uid.encode()).hexdigest()+'.json'))['_private_text']
-            old,fields=body_score(body[uid],raw);new,_=source_score(row,raw);old_rows.append(old);new_rows.append(new)
+            private=read(cache/'predictions'/f'test_{model}'/(hashlib.sha256(uid.encode()).hexdigest()+'.json'));raw=private['_private_text']
+            old,fields=body_score(body[uid],raw);old['hit_token_limit']=private['hit_token_limit']
+            new,_=source_score(row,raw);old_rows.append(old);new_rows.append(new)
             for key in set(body[uid]['target'])|set(row['target'])|set(fields):
                 def status(refs,match):
                     if key not in refs:return 'outside_contract' if key in fields else 'not_requested'

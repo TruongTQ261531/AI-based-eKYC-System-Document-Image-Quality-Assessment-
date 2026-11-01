@@ -41,8 +41,29 @@ def report():
         text.append(f"| {names[key]} | {s['f1']:.4f} | {s['max_precision_f1']:.4f} | {a['f1']:.4f} | {p['f1']:.4f} | {s['visible_omissions']} | {s['wrong_visible_values']} | {s['unsupported_nonempty']} |")
     text+=['','Cột độ chính xác ngày chỉ chấp nhận mức năm đầy đủ nhất còn được thể hiện trong các nguồn khai báo. '
         'Ngày hai chữ số năm vẫn là một quan sát hợp lệ, nhưng không được đánh đồng với ngày có năm bốn chữ số. '
-        '“Ngoài nhãn” luôn tương đối với tập nguồn khai báo, không chứng minh mọi giá trị là bịa hoặc mọi nguồn ngoài hợp đồng đều không tồn tại.','',
-        '## So sánh đúng cặp và khoảng tin cậy','',
+        '“Ngoài nhãn” luôn tương đối với tập nguồn khai báo, không chứng minh mọi giá trị là bịa hoặc mọi nguồn ngoài hợp đồng đều không tồn tại.',
+        '','## Ngân sách và chi phí huấn luyện','',
+        '| Nhánh | Seed | Bước | Lượt ảnh | Token tính loss | Token đầu vào + đáp án | Giây vòng tối ưu | GPU allocated tối đa (GiB) |',
+        '|---|---:|---:|---:|---:|---:|---:|---:|']
+    for seed0 in CONFIG['seeds']:
+        for arm in ('control','partial','source'):
+            folder=OUT if arm=='source' else R2OUT;r=read(folder/f'train_{arm}_{seed0}.json');events=r['events'];tokens=r['token_exposure']
+            text.append(f"| {arm} | {seed0} | {r['steps']} | {r['presentations']} | {tokens['answer_loss_tokens']} | {tokens['input_and_answer_tokens']} | {events[-1]['wall_seconds']:.1f} | {max(e['peak_allocated_bytes'] for e in events)/2**30:.3f} |")
+    text+=['','Ngân sách được khớp theo bước và lượt ảnh; số token giám sát thay đổi theo target và được công khai ở trên. '
+        'Thời gian vòng tối ưu không bao gồm mọi bước nạp model/chuẩn bị dữ liệu. GPU allocated là bộ đếm PyTorch, '
+        'không phải toàn bộ VRAM của hệ thống. Bộ đếm reserved trên Windows/WDDM không được gọi là lượng VRAM vật lý đã dùng.']
+    text+=['','## Thời gian và proxy yêu cầu chụp lại','',
+        '| Phương án | Đường đo | p50 (s) | p95 (s) | Output rỗng hoặc JSON lỗi |',
+        '|---|---|---:|---:|---:|']
+    for key,value in rows.items():
+        times=[r['wall_seconds'] for r in value];s=summary(value)
+        mode='VLM GPU, đọc feature cache' if key in MODELS else 'OCR CPU, xử lý ảnh + hậu xử lý'
+        text.append(f"| {names[key]} | {mode} | {np.percentile(times,50):.2f} | {np.percentile(times,95):.2f} | {s['retake_proxy_rate']:.1%} |")
+    text+=['','Các dòng GPU dùng cache chưa phải độ trễ camera đầu cuối. Phép lặp ảnh mới của model được chọn được báo bên dưới; '
+        'nạp model nguội được đo riêng với thời gian suy luận khi chạy web. CPU và GPU không phải đối chiếu tốc độ trên phần cứng tương đương. '
+        'Các lần CPU development có thể chạy song song công việc GPU; không dùng bảng này để tuyên bố thắng tuyệt đối về tốc độ. '
+        'Output rỗng/JSON lỗi chỉ là proxy, không phải tỷ lệ khách hàng chụp lại được quan sát, cũng không phải quyết định eKYC.']
+    text+=['','## So sánh đúng cặp và khoảng tin cậy','',
         '| So sánh | ΔF1 | CI95% theo ID |','|---|---:|---:|']
     for p in ci['comparisons']:text.append(f"| {p['a']} − {p['b']} | {p['delta']:+.4f} | [{p['ci95_low']:+.4f}, {p['ci95_high']:+.4f}] |")
     text+=['','Bootstrap10000 lần theo48 cụm ID, phân tầng24+24 nguồn; hai seed được báo riêng. '

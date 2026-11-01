@@ -1,0 +1,23 @@
+{
+  "cpu": {
+    "Name": "AMD Ryzen 5 7235HS                             ",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "ram_bytes": 16849264640,
+  "gpu_csv": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 591.66, 6144",
+  "python": "3.11.4",
+  "os": "Windows-10-10.0.26200-SP0",
+  "training_overlay_packages": {
+    "accelerate": "1.2.1",
+    "peft": "0.14.0",
+    "safetensors": "0.5.3",
+    "timm": "1.0.12",
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "transformers": "4.46.3"
+  },
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "new_environment_created": false,
+  "CUDA_overlay_changes_global_python": false
+}

@@ -92,7 +92,11 @@ def health():
 
 @app.get('/api/specimen/{kind}')
 def specimen(kind:str):
-    # Training SPECIMENs only; shared endpoint never returns reference fields.
+    # Training and fresh fictional fixtures; never return reference fields.
+    if kind=='new':
+        path=OUT/'ui/new_specimen.png'
+        if not path.exists():raise HTTPException(404)
+        return FileResponse(path,media_type='image/png')
     from research.v2_web import specimen as training_specimen
     return training_specimen(kind)
 

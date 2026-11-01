@@ -35,7 +35,9 @@ def audit():
     for seed0 in CONFIG['seeds']:
         r=read(OUT/f'train_source_{seed0}.json');paired=read(R2OUT/f'train_partial_{seed0}.json')
         if r['signature']!=sig or r['identity_slot_sequence_sha256']!=paired['identity_slot_sequence_sha256'] or r['steps']!=320 or r['presentations']!=1280:raise ValueError('Unmatched source supervision experiment')
+        if {e['step'] for e in r['events']}!=set(range(1,321)):raise ValueError('Source optimizer event continuity differs')
         p=ROOT/r['selected_checkpoint'];complete=read(p/'complete.json')
+        if sha(p/'adapter_model.safetensors')!=r['selected_adapter_sha256'] or r['selected_adapter_sha256']!=lock['models'][f'source_{seed0}']['sha256']:raise ValueError('Source adapter differs from published seal')
         if complete['signature']!=sig or complete['step']!=320 or complete['cursor']!=1280:raise ValueError('Source checkpoint budget differs')
         for f,d in complete['sha256'].items():
             if sha(p/f)!=d:raise ValueError('Source checkpoint bytes changed')

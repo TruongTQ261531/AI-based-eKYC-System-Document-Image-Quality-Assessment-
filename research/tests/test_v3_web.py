@@ -20,3 +20,12 @@ class SourceHTTP(test_v2_web.LocalHTTP):
             self.assertEqual(r.status_code,200);self.assertFalse(r.json()['ready'])
             self.assertIn('progress',r.json())
 
+    def test_fresh_demo_is_only_image_bytes_not_reference_JSON(self):
+        import hashlib
+        from research.v3_common import OUT,read
+        r=self.client.get('/api/specimen/new')
+        self.assertEqual(r.status_code,200);self.assertEqual(r.headers['content-type'],'image/png')
+        provenance=read(OUT/'new_demo_provenance.json')
+        self.assertEqual(hashlib.sha256(r.content).hexdigest(),provenance['image_sha256'])
+        self.assertFalse(provenance['used_for_training']);self.assertFalse(provenance['expected_output_served_by_API'])
+

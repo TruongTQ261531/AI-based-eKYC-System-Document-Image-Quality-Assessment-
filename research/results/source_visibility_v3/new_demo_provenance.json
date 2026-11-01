@@ -1,0 +1,9 @@
+{
+  "image_sha256": "4f1cbede177a16bcaabc41ccc280eafd3af6634943dfbd8af5c7763cc9c1f7f0",
+  "authored_fictional_input": true,
+  "used_for_training": false,
+  "used_for_model_selection": false,
+  "used_for_test_accuracy": false,
+  "expected_output_served_by_API": false,
+  "training_ID_occurrences": 0
+}
