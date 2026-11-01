@@ -68,6 +68,9 @@ leave the new model opt-in. New test is sealed with source hashes, adapter hashe
 preprocessing and selection BEFORE scoring. Publish the lock to git before test.
 Primary comparisons: original Vintern, V1 adapter42, V2 control42 and partial42.
 Both second seeds are evaluated on all cases too, rather than chosen by test.
+The recommended web gate requires higher dev F1 than both VLM transfer baselines,
+at least the best CPU dev F1, and no more nonempty unsupported outputs than each
+of those baselines. This conservative gate can legitimately reject deployment.
 
 ## Metrics, repeated checks and privacy
 
@@ -78,6 +81,11 @@ spelling correction, field recovery or GT-dependent repair. Strict is secondary.
 Report semantic KV precision/recall/F1, literal accuracy, visible omissions,
 wrong visible values, nonempty unsupported outputs, exact-document rate, token
 limit hits, source/view/device/held-layout slices and ID-cluster bootstrap CIs.
+V2 corrects a scoring limitation discovered during source annotation inspection:
+verbatim printed dates always count as correct, including short-year or
+space-separated formats. Valid unambiguous numeric four-digit-year dates are
+canonicalized; short-year dates do not receive an inferred century. V1 results
+remain frozen; all V2 comparators use the same new scoring function.
 Independent OCR V4/LatinV5 baselines remain CPU and use the identical inputs.
 They are task baselines, not a claim of beating every current commercial service.
 Cached-feature timing is separated from fresh preprocessing+vision+generation.

@@ -1,0 +1,134 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      31415
+    ],
+    "steps": 320,
+    "gradient_accumulation": 4,
+    "checkpoint_every": 80,
+    "rank": 8,
+    "alpha": 16,
+    "learning_rate": 0.0002,
+    "generation_max_new_tokens": 384,
+    "train_mock_ids": 96,
+    "train_photo_ids": 32,
+    "development_mock_ids": 16,
+    "development_photo_ids": 8,
+    "test_mock_ids": 24,
+    "test_photo_ids": 24
+  },
+  "samples_sha256": "0753015693f13bda5796cba411f7357571aeead7a9b43af51ab0771c8abdad16",
+  "images": 1496,
+  "roles": {
+    "train": {
+      "identities": 128,
+      "images": 1280
+    },
+    "development": {
+      "identities": 24,
+      "images": 72
+    },
+    "test": {
+      "identities": 48,
+      "images": 144
+    }
+  },
+  "train_images_per_arm": 640,
+  "train_presentations_per_arm": 1280,
+  "exposure_epochs": 2,
+  "train_photos_previously_evaluated": true,
+  "development_test_prior_id_overlap": 0,
+  "role_raster_overlap": 0,
+  "held_layouts": [
+    "fin_id",
+    "lva_passport"
+  ],
+  "held_mock_layouts": [
+    6,
+    7
+  ],
+  "mock_test_font_heldout": true,
+  "original_annotation_inventory": [
+    {
+      "source": "midv500",
+      "annotation_files": 50,
+      "author_text_fields": 546,
+      "semantic_key_names_available": false,
+      "used_as_semantic_kie_labels": false
+    },
+    {
+      "source": "midv2019",
+      "annotation_files": 50,
+      "author_text_fields": 546,
+      "semantic_key_names_available": false,
+      "used_as_semantic_kie_labels": false
+    }
+  ],
+  "author_field_counts": {
+    "surname_second": 7,
+    "number": 64,
+    "issue_date": 50,
+    "name_code": 7,
+    "expiry_date": 58,
+    "name": 64,
+    "nationality": 50,
+    "gender": 64,
+    "id_number": 47,
+    "birth_date": 64,
+    "surname": 64,
+    "number2": 8,
+    "number3": 8,
+    "mrz_line0": 27,
+    "type": 27,
+    "authority": 29,
+    "residence_line0": 8,
+    "residence_line1": 8,
+    "expiry_date2": 8,
+    "code": 31,
+    "mrz_line1": 27,
+    "birth_place": 33,
+    "height": 11,
+    "surname_eng": 15,
+    "name_eng": 15,
+    "birth_place_eng": 7,
+    "birth_country": 7,
+    "nationality/nationality_eng": 8,
+    "authority_eng": 8,
+    "expiry_date_2": 8,
+    "birth_place_line0": 6,
+    "birth_place_line1": 5,
+    "patronymic": 6,
+    "issue_place": 6,
+    "birth_place_line2": 2,
+    "birth_date_2": 4,
+    "birth_date_22": 4,
+    "authority_line0": 4,
+    "authority_line1": 4
+  },
+  "field_mapping": {
+    "name": "first_name",
+    "surname": "last_name",
+    "number": "id_number",
+    "id_number": "personal_number",
+    "birth_date": "dob",
+    "gender": "gender",
+    "nationality": "nationality",
+    "birth_place": "birth_place",
+    "issue_date": "issue_date",
+    "expiry_date": "expiry_date",
+    "authority": "authority"
+  },
+  "visibility": "Whole value polygon inside frame, no mask intersection; mock labels also whole",
+  "human_legibility_annotation": false,
+  "independent_camera_collection": false,
+  "source_counts": {
+    "train/authored": 960,
+    "train/midv2020": 320,
+    "development/authored": 48,
+    "development/midv2020": 24,
+    "test/authored": 72,
+    "test/midv2020": 72
+  },
+  "license": "MIDV derivatives retain CC BY-SA 2.5; authored specimens CC BY 4.0; no font files redistributed"
+}

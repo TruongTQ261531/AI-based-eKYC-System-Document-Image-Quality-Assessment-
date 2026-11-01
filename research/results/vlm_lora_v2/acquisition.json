@@ -1,0 +1,526 @@
+{
+  "frozen_v1_files_verified": 101,
+  "downloaded_new_ids": 40,
+  "selected_ids": 64,
+  "prior_ids_allowed_only_in_training": true,
+  "author": "MIDV-2020, Bulatov et al.",
+  "source": "ftp://smartengines.com/midv-2020/dataset/photo.tar",
+  "integrity": "Previously verified TAR header checksums/sizes; selected image SHA256; not full archive MD5",
+  "license": "MIDV-2020 CC BY-SA 2.5; retain original portrait/dataset attribution",
+  "independent_camera_collection": false,
+  "pretraining_overlap_unknown": true,
+  "sources": [
+    {
+      "physical_id": "midv2020/esp_id/44",
+      "code": "esp_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "9db1455002763f9debfcf23226aa8c34904f174d39e65aa307806667d486235c",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/est_id/44",
+      "code": "est_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "458116148469fee7435db634e8bb23d5946cd4b1e7ff003ff767fa5449e65b22",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/srb_passport/33",
+      "code": "srb_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "d69eda3b1e94aa351a047dc2aa1b483e8ce327762974a7e0440742dd308c7bfe",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/grc_passport/44",
+      "code": "grc_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "06dcea7df05c75452926a1bd253c35ae7115fb449527053fa2a2bb58188ff601",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/srb_passport/05",
+      "code": "srb_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "49e7474328637eb478f9cb02ba23547f14476bafdcfee73715d109db8d343fc5",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/aze_passport/70",
+      "code": "aze_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "7a6279309f444c8ba1b09f1cf38da663611fd54dc074a97ef790cc6a8e1f8391",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/aze_passport/94",
+      "code": "aze_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "b816a570672d09eda2c941a658c31849a5a74550529104fb6e346cd7ed5ea339",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/esp_id/05",
+      "code": "esp_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "acd083ce5b9d20d3cd004a53c347b00281f18b09fab6e3f5cd732ec413f48613",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/05",
+      "code": "rus_internalpassport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "e7a79270224cabeb129b1b81144f65f91378c49f976e882a617622a8273c3d2c",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/srb_passport/44",
+      "code": "srb_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "96177810888969637e8505e2dad713229c3546a5a9fddc7655d6568dad39414a",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/svk_id/33",
+      "code": "svk_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "34dc014d8b51dbd3753d8ed5ac1b8bcdf134afbafa1e8cb17561590c1d44ae56",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/aze_passport/63",
+      "code": "aze_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "16fc47e2edc80dd5818d150435b95124d946ccb5104ca96375eb10aa054be4d3",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/grc_passport/05",
+      "code": "grc_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "ab99707aa92cf079a45b9240e0489f8ae4a70b274369233f727c38d74ff4d745",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "code": "rus_internalpassport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "d2f7188795d79fa87f99e456d8ac2d676f8ad8247f2ccf746131ede3fd7e404a",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/esp_id/70",
+      "code": "esp_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "8a50c5c2ef9132cd717ba6bd9b78f5277fef55c4b121d27eb41340b1cb33dcc7",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/grc_passport/94",
+      "code": "grc_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "0fec56f1bcc3d83dfeb71c63f1fb3cbcbee38ef3911960c03cb921f352858325",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/aze_passport/05",
+      "code": "aze_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "7d1cdbc9d76a8e45cedfd480c559628c51fef054b69a3c85331c60716d5b0fb1",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/svk_id/44",
+      "code": "svk_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "42b3ab14365ebfe488622adb8c9b5426a114f7682314e6e1fd419ac67c030448",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/alb_id/94",
+      "code": "alb_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "19baaad90831efcf8a8fd06d86e3d19fd24e3289797b0b799c8b213cc9efdeaf",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/est_id/94",
+      "code": "est_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "d524fa687a386b5de7f454fea10abf0e9d74a4e60ea0a95d719deb769df0aae7",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/est_id/05",
+      "code": "est_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "2eedb0128d7b118add2f74c100d068982bfbbccbf976d05e38541f2e54246134",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/srb_passport/70",
+      "code": "srb_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "58fb0a0b7b94a9d9e0454a3d9fbb20c9f49ba0510cd962d230470c9a4de6db95",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/grc_passport/63",
+      "code": "grc_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "46a52f12bbaae35d15a47fcb532619098d4e05f00e72f394dc8abb862befe5a0",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/alb_id/63",
+      "code": "alb_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "90af138eb936748ada537a9adb18395e6a2313461eb4b11706868f5b8097fee2",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/aze_passport/90",
+      "code": "aze_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "0286eba88b533aafc43f165fd0e3f9c8d06fa32cb178fab885a6d247055d4201",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/alb_id/05",
+      "code": "alb_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "c655bdda8136d573637aa3e626d86736d495e9226e1cd51a6b1316db2db852f5",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/esp_id/90",
+      "code": "esp_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "4446dee41448b05903f4c9a8cf0aeede8abdaf525276051c0a2324fecbcd3c95",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "code": "rus_internalpassport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "532e6864a41de2bd7295b033fa55217055980b2468c2de2bcea951e16dbea6b7",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/srb_passport/90",
+      "code": "srb_passport",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "ccb36b0bc2d5219c2f14e6e836c9e82554289fd5946fc37f6e1b650050314347",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/est_id/33",
+      "code": "est_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "f4b67f0166a72588f4b0a124409d389e8a3ce864571d9b3af7968a312d953d16",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/est_id/63",
+      "code": "est_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "7693ec3cf732aa90cbfac69664dd1711ae95dd5b7aa3d09950f52a0ff3c3d3c5",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/svk_id/05",
+      "code": "svk_id",
+      "role": "train",
+      "device": "iPhone XS Max",
+      "source_sha256": "ff8c846b3dcd1ee0ce93349fb669e9f3b30d3f642dc4514bdcaa43c34e582417",
+      "prior_study_used": true
+    },
+    {
+      "physical_id": "midv2020/alb_id/44",
+      "code": "alb_id",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "387403843c21d87df2eecaab785820dedf9bf057bc86f5ba49d465cbac1d8a55",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/alb_id/82",
+      "code": "alb_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "23ada0bb044d46f2ae0de71d5d112765a310c6bf6841333a622d94f2da22eff4",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/alb_id/70",
+      "code": "alb_id",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "dee49c94dabf0f2e03e63c214b7a134b9a12de3a63080623699001443047cd24",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/aze_passport/33",
+      "code": "aze_passport",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "6d7ee7e2a74b1481fe58523dfdd241f174181f7562bcc57ec88fc7e386db534e",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/aze_passport/67",
+      "code": "aze_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "775151abeb420b0c0b39b8acf160a8577abea15a85a916642dca604cd261f480",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/aze_passport/82",
+      "code": "aze_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "1520c92f9e4e46b6489adb5901efe25a20b4a93416ceac13eaf704fa405a001a",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/esp_id/33",
+      "code": "esp_id",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "3291ab1dc3c10900f18ea6aa1a029ff4882d34d2e3e053fb818afb4fddf80eed",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/esp_id/47",
+      "code": "esp_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "76218c20aa27f615a243bfd310ab80d93ec2073d08e2a6afd150187707e8e967",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/esp_id/63",
+      "code": "esp_id",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "26cc296a20a04e57ea4ce7fb9eda54bfdd5251f64839b35bfd6571542903baa6",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/est_id/70",
+      "code": "est_id",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "12faa58ad737bfbc3d3d62dbe0a0ab8fe01bdbcb1364a61b45f7542a1b13f986",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/est_id/47",
+      "code": "est_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "8cc1bccccca47cbcb299bfe60cfcddfb8988911f24ee419456df4876afb99d8b",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/est_id/67",
+      "code": "est_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "0784bcf964e4500b74832acdf529212e2a228fd8f59618ede712f6672feccf9a",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/fin_id/33",
+      "code": "fin_id",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "46d695520c01b839ce042af61744048adf288beb2332f0ea9fc7c117fe6e66ce",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/fin_id/63",
+      "code": "fin_id",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "b3a655711a7ddcf257070f88753120b9fbdb0ef006290fdbfc76239f4969f8f7",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/fin_id/69",
+      "code": "fin_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "8448d65f0d5954d3abf140a7ff16d5b6f1d9a4812f105d2eaf84b8b6d4a3a732",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/fin_id/82",
+      "code": "fin_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "2fd30a9d237101b58cd33d1d51cd5719e1b65240a8662f6f42f56d9af2ccf43d",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/grc_passport/33",
+      "code": "grc_passport",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "a0cf27721f9f92c4b25d5c9cda1ab81fc446e2adedabbe701db5309f5e832e06",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/grc_passport/67",
+      "code": "grc_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "97044f129e2d9a24a920a038e26ce19b5d09f0172c79977536150d3edb8f2a36",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/grc_passport/70",
+      "code": "grc_passport",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "a2bfcf3933b37dc72ce0e34fe177d9941af7a37762cd26a5bb5fe6887e1f2e20",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/lva_passport/33",
+      "code": "lva_passport",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "7c13125cff21bbd45396daa24d6aa32357e31202d0c5cab3d9a1cc085cd4b4ef",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/lva_passport/47",
+      "code": "lva_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "a280158bec5312056ab475d0e07b3f134ff5b8b76d28751273ec7b8d275f85de",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/lva_passport/63",
+      "code": "lva_passport",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "25a40f9fb06660365edae77979001bbf552853f1e8cf41f4605d3475b73011cb",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/lva_passport/82",
+      "code": "lva_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "fe5baed9ee70efe968518b3f2b13bc2956fd23bee619dda723f62c9b53149201",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/44",
+      "code": "rus_internalpassport",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "4c51a2a30c6edbfaf4f8a1969c8a73a22df72ccbddd7c79161a4e25de3edf926",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/63",
+      "code": "rus_internalpassport",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "884ff7609c503aa2322b256a31a42d83b121d2d3346ac4d052613dbb4ea43ea7",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/90",
+      "code": "rus_internalpassport",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "1fe8beba4b7096c46c794618488a24fde606b498f814511224efaa9b79b53230",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/srb_passport/63",
+      "code": "srb_passport",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "65b6f77b6f22e7c8ff0ac6f9b05000cc6db982e2ee464ef8a1e64193a0ee9aa5",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/srb_passport/69",
+      "code": "srb_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "985fce5a0f5ee7a3ad84461c92b687215951eba5ee206092a650d27f7186a1d0",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/srb_passport/82",
+      "code": "srb_passport",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "8fa0f8e678e0fa6b4e65dbedc26d1da3024c648c076b444a13c1dac241678b4b",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/svk_id/63",
+      "code": "svk_id",
+      "role": "development",
+      "device": "iPhone XS Max",
+      "source_sha256": "96202109ddba4657760f48d28d75705f27034208309fd5d373077cd6fb127531",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/svk_id/67",
+      "code": "svk_id",
+      "role": "test",
+      "device": "SM-G973F",
+      "source_sha256": "910d0c6eaafeb780fc7c72c7274a707a82fe53e431fb648d98554caf4c6cc018",
+      "prior_study_used": false
+    },
+    {
+      "physical_id": "midv2020/svk_id/70",
+      "code": "svk_id",
+      "role": "test",
+      "device": "iPhone XS Max",
+      "source_sha256": "2db10cce154dd2302d19b4c2fcd958c705611062e1339634a768d7edf4703685",
+      "prior_study_used": false
+    }
+  ]
+}

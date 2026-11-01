@@ -1,0 +1,13 @@
+{
+  "context": "Before any V2 training/input comparison/test",
+  "png_compression_changed_without_pixel_changes": true,
+  "shared_slots_with_different_encodings": 2,
+  "common_slots_canonicalized": 384,
+  "previous_samples_sha256": "88629beda9d7140b572d2ff14760034c5cef59a3b4b3055a5d434fdff525142a",
+  "current_samples_sha256": "0753015693f13bda5796cba411f7357571aeead7a9b43af51ab0771c8abdad16",
+  "image_pixels_changed": false,
+  "initial_test_failure": "Byte-hash common-slot test caught mixed PNG compression after interrupted preparation",
+  "other_preparation_failures": [
+    "A diagnostic attempted psutil in the original environment where it is not installed; GPU overlay already contains psutil; no global install performed"
+  ]
+}
