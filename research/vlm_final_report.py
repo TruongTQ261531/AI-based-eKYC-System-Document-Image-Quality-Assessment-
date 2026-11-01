@@ -220,4 +220,11 @@ def report():
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('action',choices=['audit','report']);args=p.parse_args()
+    if args.action=='audit':
+        import importlib.util
+        if importlib.util.find_spec('safetensors') is None:
+            import subprocess,sys
+            from research.vlm_setup import environment
+            if not (CACHE/'site/safetensors/__init__.py').exists():raise RuntimeError('Prepare optional training runtime before checkpoint audit')
+            raise SystemExit(subprocess.call([sys.executable,'-m','research.vlm_final_report','audit'],cwd=ROOT,env=environment()))
     audit() if args.action=='audit' else report()

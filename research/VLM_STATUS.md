@@ -1,92 +1,62 @@
-# Local VLM LoRA checkpoint, 2026-11-01
+# LoRA V1: checkpoint vận hành
 
-## Live update,05:38UTC: actual GPU smoke passed, main training active
+Cập nhật2026-11-01,07:51UTC. Benchmark đang chạy; đọc các JSON trạng thái
+trong cache để xem tiến độ hiện tại thay vì coi số ở chat là live.
 
-20 actual Vintern optimizer steps completed, then resume from step10 and run
-steps11..20 again. All192adapter tensors changed from initialization; resumed
-vs continuous final tensors have max absolute difference0. Native generation
-matches the feature-cache wrapper; cached visual features equal fresh vision
-features on the smoke image. Smoke is a hardware/implementation check on12
-training images, not a test accuracy claim. Result:results/vlm_lora_v1/smoke.json.
+## Đã hoàn tất
 
-Peak training tensor allocation2.553GiB;reservation5.324GiB;process peakRSS
-5.886GiB including load. No new venv or baseline environment modification.
-Workflow67822 is now preparing480train+80development visual features, then
-trains seed42 and31415,192steps each. Source signature is
-26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c.
-Do not change signature-bound code/config/data while these runs are active.
-No main accuracy result yet. Watch cache/vlm_lora_v1/workflow.json/progress.json.
+- Vintern revision b98f263eab246eb5269ade64edbdca8a887dc44d; weights/runtime
+  checksum đúng; dùng Python có sẵn, CUDA overlay riêng, không sửa venv gốc.
+- GPU smoke20bước +resume10bước byte-identical,192tensor LoRA thay đổi.
+  Hai seed chính42/31415 và đối chứng42 đều train192optimizer steps.
+- Dev80ảnh mỗi phương án, CPU OCR cũng80ảnh. Main chọn seed42/step192;
+  đối chứng chọn step48 bằng quy tắc devloss đã định trước.
+- Cả hai test locks công bố ở10268e47bbb25a536f51d2aa7ac71753762f0d8b;
+  xác nhận remote trước test ghi ở pretest_publication.json (commit464a34e).
+- VLM gốc test120ảnh +panel12ảnh ×2 đã xong, công bố ởdd589e8.
+-44Python +6frontend tests đã qua; API tests dùng mock model, camera tests
+  dùng mock media/DOM. Chưa kiểm thử camera vật lý.
+-63artifact V4 không đổi; mentor runtime diff rỗng. Python gốc2.14.1+cpu.
 
-## Live update,05:37UTC
+## Tiến trình đang hoạt động
 
-All model/runtime assets finished and passed their upstream hashes. CUDA12.6
-works onRTX3050 through optional torch2.7.1+cu126; original torchCPU2.14.1 is
-unchanged. The first real Vintern smoke performed4optimizer steps, then a
-progress-logging duplicate timestamp raisedTypeError. Its log/events are
-preserved at cache/vlm_lora_v1/smoke_attempt1_logging_error and failure_*.json.
-No OOM occurred. Observed peak tensor allocation2.546GiB,reservation4.064GiB,
-process peakRSS5.891GiB (includes loading; not entire machine memory).
+Supervisor `python -m research.vlm_final_workflow`, PID10060, unified exec
+session52449. Trạng thái/log:
 
-Fixed logger with a regression test:18contracts+4training-stack tests pass.
-Fix and hardware evidence pushed in1209168. Workflow restarted in owned exec
-session67822(PID21304),currently real GPU smoke; it automatically proceeds to
-seeds42/31415 and development, then stops before test scoring. Read
-research/cache/vlm_lora_v1/workflow.json and progress.json for current stage.
-Do not start a second GPU workflow. No actual1B accuracy result exists yet.
+- research/cache/vlm_lora_v1/final_workflow.json
+- research/cache/vlm_lora_v1/progress.json (main)
+- research/cache/vlm_lora_v1/control/progress.json (control)
+- research/cache/vlm_lora_v1/logs/final_*.txt
 
-The sections below record the earlier preparation checkpoint and are archived,
-including its obsolete download session IDs/status.
+Supervisor tiếp tục main tests42/31415,control test, hai panel12case lặp cho
+mỗi model,CPU baseline,fresh-online72calls,secondary parser,error taxonomy,
+audit,report và adapter export. Mọi task GPU chạy nối tiếp bằng mutex.
+Không khởi động train lại hoặc chạy hai supervisor cùng lúc. Cache lưu từng
+ảnh; khi process thực sự đã dừng, đọc lỗi rồi có thể chạy lại supervisor để
+tiếp tục phần chưa hoàn tất. Test đã công bố không còn là test mới chưa thấy.
 
-Research branch: research/document-recovery-core-b. Mentor and all locked V4
-sources/results are unchanged. This is an additional exploratory experiment.
+Các source/signature chính đã frozen: vlm_data.py,vlm_runtime.py,
+vlm_train.py,vlm_config.json,VLM_LORA_PROTOCOL.md,assets.json,dataset_card.json.
+Signature26dd9dd72db10e24413195c20541b45290f45e8835b52d553f8dfbe64cbd6f5c.
+Control source/protocol cũng frozen theo control/test_lock.json. Không đổi
+scorer hoặc model sau khi đã thấy test. Các bổ sung sau khóa chỉ kiểm kê
+exposure/integrity, tài liệu prior art và biểu đồ từ số đã công bố.
 
-## Completed before weight updates
+## Còn phải hoàn tất trước khi kết luận
 
-- Reviewed pinned Vintern custom model/config/conversation source. No network
-  or process execution in those files; model loading will be local-only.
-- Optional training libraries extracted from checksum-pinned wheels to ignored
-  cache. Original Python environment is not modified; no new venv.
-- New SPECIMEN corpus720rasters/144mockIDs:96train,16dev,8calibration,24test,
-  fiveviews each. Generator uses two spatial arrangements/twofonts; not a new
-  camera collection. Exact regeneration of all artifacts passed.
--18data/scoring tests pass. Three tinyCPU training-stack tests pass: real
-  adapter-only updates, answer-only causal loss and exact optimizer resume.
-  These tiny tests ARE NOT fine-tuning the actual Vintern checkpoint.
-- Architecture/tokenizer probe:938193024parameters,629697920language parameters,
-  256visual tokens per tile. Prefix masking checked. No checkpoint loaded there.
-- Existing CPU OCR+KIE baseline completed80development images: canonical
-  fieldF1=.809677,251/306correct references,7opaque-masked field outputs.
-  Test scores have not been opened. No VLM accuracy is available yet.
+1. Supervisor phải báo completed, đủ tất cả kết quả và replay audit.
+2. `python -m research.vlm_figures`, xem ảnh biểu đồ thực tế.
+3. Final44Python/6frontend checks sau sửa web/audit; lưu log/XML hiện hành.
+4. Restart đúng server LoRA do phiên này mở (uvicorn PID24836,session81482,
+   kiểm tra command trước khi dừng); chạy start-vlm-web.ps1 ở8002.
+5. Browser chạy model thật trên SPECIMEN train full/field_clip/value_mask;
+   kiểm tra sửa/xác nhận/xóa và viewport390px; lưu screenshot và
+   results/vlm_lora_v1/browser_validation.json chỉ có số/checksum.
+6. `python -m research.vlm_release`, kiểm toàn vẹn/public data và tạo index.
+   Commit/push artifact công khai; cache/data/weights/raw output giữ private.
 
-## Active preparation
-
-Weights3,752,849,256bytes and CUDA wheel2,716,982,502bytes are downloading in
-resumable HTTP ranges. Network throughput is the current delay. Download
-segments are retained across restarts, then merged and validated with upstream
-SHA256. Do not call a model download an optimizer/training step.
-
-Owned exec sessions at this checkpoint:model5388,runtime70816. Inspect their
-status before restarting downloads. No actual1B GPU training has started yet.
-Current code/config:VLM_LORA_PROTOCOL.md,vlm_config.json,vlm_data.py,
-vlm_runtime.py,vlm_train.py,vlm_setup.py,vlm_baseline.py.
-
-## Next actions
-
-1. Finish model/runtime download and verifyCUDA torch works from cache.
-2. Run real20-step smoke + exact10-step disk-resume comparison and measure
-   memory. Native generation/cache parity is included. Preserve failures.
-3. Fix only engineering issues before main training; record any amendment.
-   CPU baseline checkpoints from earlier code signatures remain private and
-   must be rerun/revalidated after the final training source is frozen.
-4. Train seeds42/31415 for192optimizer steps; choose checkpoints by dev loss.
-   Generate on development for original and both adapters. Save test lock,
-   commit/push it BEFORE any test scoring.
-5. Test all three models and two fresh repeat panels; replay public metrics
-   from private predictions; add fresh-online timings, an honest report and
-   an opt-in local demo only if development results support deployment.
-
-Launch with existing interpreter through `python -m research.vlm_setup run --
--m research.vlm_train ...`; use absolute existing .venv interpreter if Python
-on PATH differs. `research/start-vlm-training.ps1` hasPrepare/Smoke/Train/
-Development/Seal/Test stages. Do not runSeal thenTest without saving the
-pre-test choice inGit. Cache/weights/data must not be staged or pushed.
+Lưu ý khoảng2708s giữa control steps140/141 được giữ nguyên trong log và
+thời gian wall. Chưa biết nguyên nhân, không gọi đó là thời gian compute GPU.
+Train LoRA này chỉ dùng720SPECIMEN, không phải toàn bộ MIDV/full_original.
+Không có ảnh camera mới, không có GT legibility độc lập, không có bảo đảm
+novelty/CORE B hoặc liveness. Đọc VLM_PRIOR_ART_VI.md và báo cáo V1 khi xong.
