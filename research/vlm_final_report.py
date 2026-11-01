@@ -10,7 +10,7 @@ from research.vlm_control import signature as control_signature
 
 MODELS=['original','seed_42','seed_31415']
 CONTROL='control_seed_42'
-LABELS={'ocr_raw_layout':'OCR CPU + layout','ocr_existing_web':'OCR web cũ (CPU)',
+LABELS={'ocr_raw_layout':'OCR raw + layout (CPU)','ocr_existing_web':'OCR web V4 nghiên cứu (CPU)',
     'original':'Vintern gốc','seed_42':'LoRA seed42','seed_31415':'LoRA seed31415',CONTROL:'LoRA đủ nội dung (đối chứng)'}
 
 
@@ -170,6 +170,8 @@ def report():
         '720 ảnh/144 mock physical IDs: train480/96IDs, development80/16, calibration40/8, test120/24. Calibration chưa dùng. Tách theo ID và checksum ảnh; cùng generator, hai bố cục/hai font giữa các tập. GT giữ cặp nhãn–giá trị còn đủ trong raster và bỏ trường che kín. Đây là proxy hình học tổng hợp, không phải nhãn legibility từ người chấm. Chưa có ảnh camera mới hoặc held-out-layout.',
         'Đợt LoRA này không train trên ảnh full_dataset_original. Manifest local có21,050 dòng với nhãn chất lượng; thư mục gốc có21,100 TIF và không có annotation JSON/XML. Nhãn Clean/Blur không thay thế bản chép từng trường cho OCR. Kiểm kê: input_scope.json.',
         'Mọi VLM dùng cùng preprocessing: giữ tỷ lệ, pad896×448 và chia2tile448; không dùng dynamic thumbnail mặc định của tác giả. Đây là cấu hình đầu vào giới hạn của đợt thử, không phải kết luận về toàn bộ năng lực model gốc. OCR CPU giữ cấu hình triển khai sẵn có.',
+        'Baseline OCR là RapidOCR/recognizer Latin PP-OCRv5 và spatial KIE của web nghiên cứu V4 ở8001; không phải mọi hệ OCR trên thị trường hoặc model ScanOCR của bản mentor. Giữ cả raw-layout và policy web đã frozen.',
+        'Corpus dùng10 nhóm trường canonical trên ba họ giấy tờ giả lập. Đây là adaptation KIE, không phải kiểm chứng OCR toàn văn hoặc mọi nhãn/trường mới ngoài schema. Một phần lợi ích có thể đến từ định dạng, nhãn và bố cục đã gặp trong generator.',
         f"Commit khóa trước test: `{audit['pretest_publication']['lock_commit']}`. Hai seed chính và một đối chứng:192 optimizer steps,768 presentations/lượt. Đối chứng chỉ full/corner_clip/blur_glare:288ảnh, cùng96IDs; chính480ảnh. Khớp compute và identities, không khớp số raster/epoch. Đối chứng phát sinh từ development, đã khai báo trước test.",'',
         '## Test chính','',
         '| Phương án | Đúng/reference | Precision | Recall | F1 strict | F1 bỏ fence/null | Đúng định dạng | Xuất trường che kín |',

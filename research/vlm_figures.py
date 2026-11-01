@@ -10,7 +10,7 @@ from research.vlm_setup import OUT,sha,save
 def main():
     def read(name):return json.loads((OUT/name).read_text(encoding='utf-8'))
     models=['ocr_existing_web','original','control_seed_42','seed_42','seed_31415']
-    labels=['Existing OCR\nCPU','Base VLM\nGPU','Intact-content LoRA\nseed42, GPU','Partial-content LoRA\nseed42, GPU','Partial-content LoRA\nseed31415, GPU']
+    labels=['V4 research OCR\nCPU','Base VLM\nGPU','Intact-content LoRA\nseed42, GPU','Partial-content LoRA\nseed42, GPU','Partial-content LoRA\nseed31415, GPU']
     tolerant={r['model']:r for r in read('format_analysis.json')['results'] if r['role']=='test'}
     strict={m:tolerant[m]['strict_summary'] for m in models if m!='ocr_existing_web'}
     strict['ocr_existing_web']=read('test_ocr.json')['summaries']['ocr_existing_web']

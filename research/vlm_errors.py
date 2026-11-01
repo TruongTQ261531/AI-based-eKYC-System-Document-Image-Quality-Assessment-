@@ -40,7 +40,18 @@ def main():
                 counts=classify(samples[row['uid']],fields,valid);totals.update(counts)
                 rows.append(dict(uid=row['uid'],**counts))
             out.append(dict(model=label,parser=parser,totals=dict(totals),rows=rows))
+    cpu=json.loads((OUT/'test_ocr.json').read_text(encoding='utf-8'))
+    for model in cpu['summaries']:
+        rows=[];totals=Counter()
+        for row in (r for r in cpu['rows'] if r['model']==model):
+            path=CACHE/'cpu_baseline'/signature()/'test'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')
+            private=json.loads(path.read_text(encoding='utf-8'))
+            fields=next(r['_private_fields'] for r in private['rows'] if r['model']==model)
+            counts=classify(samples[row['uid']],fields,True);totals.update(counts)
+            rows.append(dict(uid=row['uid'],**counts))
+        out.append(dict(model=model,parser='python_dict',totals=dict(totals),rows=rows))
     save(OUT/'error_taxonomy.json',dict(signature=signature(),code_sha256=sha(__file__),results=out,
+        cpu_taxonomy_added_after_baseline_scores=True,primary_scoring_and_model_choice_unchanged=True,
         geometry_proxy_only=True,clipped_output_not_automatically_factual_hallucination=True,
         zero_mask_outputs_is_not_a_calibrated_safety_claim=True))
 
