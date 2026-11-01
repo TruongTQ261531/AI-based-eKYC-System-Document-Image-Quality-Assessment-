@@ -6,7 +6,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 from PIL import Image
-from research.v2_common import ROOT,DATA,OUT,HELD_LAYOUTS,read,save,sha
+from research.v2_common import ROOT,DATA,OUT,PILOT_DATA,HELD_LAYOUTS,read,save,sha
 from research.external_midv2020 import metadata,displayed_geometry
 from research.recovery_acquire import read_retry
 
@@ -78,6 +78,16 @@ def acquire_code(job):
 
 def main():
     preserve=__import__('research.v2_common',fromlist=['preserve_v1']).preserve_v1()
+    if (PILOT_DATA/'sources.json').exists():
+        selected=read(PILOT_DATA/'sources.json')
+        for r in selected:
+            if sha(ROOT/r['path'])!=r['source_sha256']:raise ValueError('Pilot acquisition source changed')
+        save(DATA/'sources.json',selected)
+        acquisition=read(ROOT/'research/results/vlm_lora_v2/acquisition.json')
+        acquisition.update(revision='r2 author-label coverage correction; exact same source selection, no test outputs seen',
+            acquisition_reused_without_redownload=True)
+        save(OUT/'acquisition.json',acquisition)
+        print('V2_R2_SOURCES_VERIFIED',len(selected),flush=True);return
     photos,_=metadata('photo');templates,_=metadata('templates');old=cached_old(templates)
     old_ids={r['physical_id'] for r in old}
     jobs=[(c,photos[c],templates[c],old_ids) for c in sorted(photos)]

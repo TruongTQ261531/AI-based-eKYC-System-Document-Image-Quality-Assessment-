@@ -21,9 +21,10 @@ def canonical(key,value):
         return {'M':'NAM','MALE':'NAM','NAM':'NAM','F':'NỮ','FEMALE':'NỮ','NỮ':'NỮ','NU':'NỮ'}.get(text,text)
     return text
 
-def score(target,prediction,valid):
-    correct=sum(k in prediction and canonical(k,v)==canonical(k,prediction[k]) for k,v in target.items())
+def score(target,prediction,valid,accepted_values=None):
+    alternatives=accepted_values or {k:[v] for k,v in target.items()}
+    correct=sum(k in prediction and any(canonical(k,v)==canonical(k,prediction[k]) for v in alternatives[k]) for k in target)
     return dict(correct=correct,reference=len(target),predicted=len(prediction),valid_json=bool(valid),
-        literal_correct=sum(k in prediction and normalized(v)==normalized(prediction[k]) for k,v in target.items()),
+        literal_correct=sum(k in prediction and any(normalized(v)==normalized(prediction[k]) for v in alternatives[k]) for k in target),
         extra_keys=sum(k not in target for k in prediction),missing_keys=sum(k not in prediction for k in target),
         exact_document=bool(valid and len(prediction)==len(target) and correct==len(target)))

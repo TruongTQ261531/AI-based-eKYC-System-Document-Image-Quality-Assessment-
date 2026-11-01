@@ -1,6 +1,6 @@
-# V2 training in progress
+# V2 R2 preparation in progress
 
-Input comparison completed: selected rect2 on development only. Four matched-budget training runs are now supervised.
-New test is still unopened. The durable completion supervisor will publish/verify the seal before test scoring, then run raw-output replay and fresh repeats.
-Process status: research/cache/vlm_lora_v2/workflow.json and completion.json. These are local files, not model results.
-21 Python +8 frontend behavior tests passed; actual camera remains untested.
+R1 control pilot stopped at step284 before adapted-model development/test evaluation due to incomplete author-field mapping.
+R1 preserved at commit5a325f2, original vlm_lora_v2 data/cache/results. R2 uses separate vlm_lora_v2_r2 directories.
+Author multiline components and visible bilingual variants fixed; same IDs, seeds and optimizer budgets.
+Final test remains unopened. See V2_PROTOCOL.md and V2_REPRODUCE.md.

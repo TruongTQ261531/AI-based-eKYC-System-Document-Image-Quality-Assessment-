@@ -26,7 +26,7 @@ def publish(stage):
     # This allowlist cannot reach research/data, cache, other branches or V1.
     for path in list(OUT.glob('*.json')):
         text=path.read_text(encoding='utf-8')
-        if any('"'+bad+'"' in text for bad in ('_private_text','_private_fields','target')):
+        if any('"'+bad+'"' in text for bad in ('_private_text','_private_fields','target','accepted_values')):
             raise ValueError('Private label/prediction text in public artifact: '+path.name)
     paths=[str(p.relative_to(ROOT)).replace('\\','/') for p in paths if p.is_file()]
     git('add','--',*paths)
@@ -39,7 +39,7 @@ def publish(stage):
     commit=git('rev-parse','HEAD').decode().strip();remote=git('ls-remote','origin','refs/heads/'+BRANCH).decode().split()[0]
     if commit!=remote:raise ValueError('Remote tip differs from local commit')
     if stage=='lock':
-        blob=git('show',commit+':research/results/vlm_lora_v2/test_lock.json')
+        blob=git('show',commit+':'+(OUT/'test_lock.json').relative_to(ROOT).as_posix())
         if hashlib.sha256(blob).hexdigest()!=sha(OUT/'test_lock.json'):raise ValueError('Remote lock bytes differ')
         save(OUT/'lock_publication.json',dict(commit=commit,remote_commit=remote,lock_sha256=sha(OUT/'test_lock.json'),
             signature=signature(),test_scoring_started=False,source='git remote verified before any V2 test inference'))

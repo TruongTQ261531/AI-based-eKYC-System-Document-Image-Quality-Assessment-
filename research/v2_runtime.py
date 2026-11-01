@@ -7,7 +7,7 @@ from PIL import Image
 from research.vlm_runtime import VLM as FrozenVLM,aggregate
 from research.v2_metrics import score
 from research.vlm_analysis import tolerant
-from research.v2_common import ROOT,CACHE,DATA,OUT,PROMPT,CONFIG,sha,save
+from research.v2_common import ROOT,CACHE,DATA,OUT,PILOT_CACHE,PROMPT,CONFIG,sha,save
 from research.v2_inputs import Views,pixels
 
 class VLM(FrozenVLM):
@@ -26,6 +26,11 @@ class VLM(FrozenVLM):
         from safetensors.torch import load_file,save_file
         key=hashlib.sha256((self.input_version+sample['input_sha256']).encode()).hexdigest()
         path=CACHE/'features'/self.profile/(key+'.safetensors')
+        prior=PILOT_CACHE/'features'/self.profile/(key+'.safetensors')
+        if not path.exists() and prior.exists():
+            import shutil
+            path.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(prior,path)
+            if prior.with_suffix('.json').exists():shutil.copyfile(prior.with_suffix('.json'),path.with_suffix('.json'))
         n=4 if self.profile.endswith('4') else 2
         if path.exists():
             value=load_file(str(path))['features']
@@ -63,15 +68,16 @@ class VLM(FrozenVLM):
                     fresh_visual_seconds=visual,visual_features_cached=False,**meta)
 
 def scoring(sample,text):
-    fields,parser=tolerant(text);result=score(sample['target'],fields,parser['syntax_object_success'])
+    fields,parser=tolerant(text);result=score(sample['target'],fields,parser['syntax_object_success'],sample.get('accepted_values'))
     result['unsupported_nonempty']=sum(k not in sample['target'] for k in fields)
     result['wrong_visible_values']=sum(k in fields for k in sample['target'])-result['correct']
     result['visible_omissions']=sum(k not in fields for k in sample['target'])
-    result['masked_field_outputs']=sum(f.get('occluded',False) and f['key'] in fields for f in sample['fields'])
+    masked_keys={f['key'] for f in sample['fields'] if f.get('occluded',False)}
+    result['masked_field_outputs']=sum(k not in sample['target'] and k in fields for k in masked_keys)
     result['empty_reference']=not sample['target']
     result['correct_empty_abstention']=not sample['target'] and not fields and parser['syntax_object_success']
     from research.vlm_runtime import parsed
-    strict,valid=parsed(text);result['strict']=score(sample['target'],strict,valid)
+    strict,valid=parsed(text);result['strict']=score(sample['target'],strict,valid,sample.get('accepted_values'))
     return dict(result,**parser),fields
 
 def summary(rows):

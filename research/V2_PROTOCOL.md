@@ -3,6 +3,24 @@
 Registered before V2 training or scoring the new test. V1 and mentor artifacts
 are frozen. V2 has a separate branch, cache, labels, adapters, results and web.
 
+## R2 amendment before any adapted-model development or test score
+
+The first control42 pilot was stopped at step284 during annotation inspection,
+not after model evaluation. Author line components (birth_place_line*,
+authority_line*, residence_line*) and bilingual/transliterated variants were
+underrepresented by the first direct-key map. Keep that pilot's code/results
+at commit5a325f2 and its original data/cache unchanged; it is not a primary run.
+R2 uses separate vlm_lora_v2_r2 data/cache/results and restarts all four runs.
+Group only explicitly author-named line components, joining their text and
+convex hull. All fully visible author variants of a canonical key are acceptable
+references; deterministic training prefers native spelling, then visible
+alternatives. A masked variant does not invalidate another visible variant.
+The optional17-key task, IDs, seeds, step budget and selection rule remain fixed.
+Original-base panel predictions may be reused only when exact encoded image
+hash, unchanged prompt and preprocessing contract match; re-score every output
+against corrected author-derived references. Pilot LoRA weights are never reused.
+No V2 adapted-model development score or test score was observed before this fix.
+
 ## Hypotheses and bounded design
 
 H1: adding author-transcribed photographs and broader mock layouts improves

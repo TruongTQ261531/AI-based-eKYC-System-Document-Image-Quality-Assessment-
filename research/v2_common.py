@@ -4,9 +4,11 @@ import json
 from pathlib import Path
 from research.vlm_setup import ROOT, sha, save
 
-CACHE = ROOT/'research/cache/vlm_lora_v2'
-DATA = ROOT/'research/data/vlm_lora_v2'
-OUT = ROOT/'research/results/vlm_lora_v2'
+PILOT_CACHE = ROOT/'research/cache/vlm_lora_v2'
+PILOT_DATA = ROOT/'research/data/vlm_lora_v2'
+CACHE = ROOT/'research/cache/vlm_lora_v2_r2'
+DATA = ROOT/'research/data/vlm_lora_v2_r2'
+OUT = ROOT/'research/results/vlm_lora_v2_r2'
 HELD_LAYOUTS = ('fin_id', 'lva_passport')
 CONFIG = dict(seeds=[42,31415], steps=320, gradient_accumulation=4,
               checkpoint_every=80, rank=8, alpha=16, learning_rate=0.0002,
@@ -26,6 +28,10 @@ FIELD_MAP = dict(name='first_name', surname='last_name', number='id_number',
                  id_number='personal_number', birth_date='dob', gender='gender',
                  nationality='nationality', birth_place='birth_place',
                  issue_date='issue_date', expiry_date='expiry_date', authority='authority')
+FIELD_MAP.update(name_eng='first_name',surname_eng='last_name',birth_place_eng='birth_place',
+    authority_eng='authority',nationality_eng='nationality',birth_date_2='dob',birth_date_22='dob',
+    expiry_date2='expiry_date',expiry_date_2='expiry_date')
+FIELD_MAP['nationality/nationality_eng']='nationality'
 
 def read(path): return json.loads(Path(path).read_text(encoding='utf-8'))
 def seed(text): return int.from_bytes(hashlib.sha256(text.encode()).digest()[:8],'big')

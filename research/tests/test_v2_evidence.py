@@ -3,7 +3,7 @@ import collections
 import unittest
 import numpy as np
 from research.v2_common import DATA,read,load,FIELD_MAP
-from research.v2_data import augment,target,mapped_fields,mock
+from research.v2_data import augment,target,accepted_values,mapped_fields,mock
 from research.v2_metrics import score,canonical
 
 class PrintedDates(unittest.TestCase):
@@ -39,6 +39,19 @@ class Targets(unittest.TestCase):
                             dict(author_key='mrz_line0',value='SECRET',quad=self.fields[0]['quad'])])
         ff=mapped_fields(source);self.assertEqual({f['key'] for f in ff},{'first_name','last_name'})
     def test_no_semantic_mapping_for_positional_field01(self):self.assertNotIn('field01',FIELD_MAP)
+    def test_author_multiline_value_is_not_missing_from_reference(self):
+        source=dict(fields=[dict(author_key='birth_place_line0',value='CITY',quad=self.fields[0]['quad']),
+                            dict(author_key='birth_place_line1',value='COUNTRY',quad=self.fields[1]['quad'])])
+        ff=mapped_fields(source);self.assertEqual(target(ff,200,100),{'birth_place':'CITY COUNTRY'})
+        self.assertEqual(target(ff,200,50),{})
+    def test_visible_transliteration_survives_masked_native_variant(self):
+        source=dict(fields=[dict(author_key='name',value='NATIVE',quad=self.fields[0]['quad']),
+                            dict(author_key='name_eng',value='LATIN',quad=self.fields[1]['quad'])])
+        ff=mapped_fields(source);self.assertEqual(target(ff,200,100),{'first_name':'NATIVE'})
+        alternatives=accepted_values(ff,200,100)
+        self.assertEqual(score({'first_name':'NATIVE'},{'first_name':'LATIN'},True,alternatives)['correct'],1)
+        ff[0]['occluded']=True;self.assertEqual(target(ff,200,100),{'first_name':'LATIN'})
+        self.assertEqual(accepted_values(ff,200,100),{'first_name':['LATIN']})
     def test_test_renderer_layouts_differ_from_training(self):
         _,_,a,_=mock('v2-unit/train',0,'train');_,_,b,_=mock('v2-unit/test',0,'test')
         self.assertLess(a,6);self.assertGreaterEqual(b,6)
@@ -46,7 +59,7 @@ class Targets(unittest.TestCase):
 @unittest.skipUnless((DATA/'samples.json').exists(),'Dataset still being acquired')
 class Dataset(unittest.TestCase):
     def test_roles_have_disjoint_ids_and_rasters(self):
-        rows=load();roles=['train','development','test']
+        rows=read(DATA/'samples.json');roles=['train','development','test']
         for a in roles:
             for b in roles:
                 if a==b:continue

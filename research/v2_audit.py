@@ -68,7 +68,7 @@ def audit():
     sig=signature();lock=read(OUT/'test_lock.json');publication=read(OUT/'lock_publication.json')
     if lock['signature']!=sig or publication['lock_sha256']!=sha(OUT/'test_lock.json'):raise ValueError('Published source lock mismatch')
     if lock['cpu_source_sha256']!=sha(ROOT/'research/v2_cpu.py'):raise ValueError('CPU baseline source changed after lock')
-    frozen=preserve_v1();samples={r['uid']:r for r in load()};checked_images=set()
+    frozen=preserve_v1();samples={r['uid']:r for r in read(DATA/'samples.json')};checked_images=set()
     old_index=read(ROOT/'research/results/recovery_v4/artifact_index.json')
     for item in old_index['files']:
         if sha(ROOT/item['path'])!=item['sha256']:raise ValueError('Frozen V4 artifact changed')

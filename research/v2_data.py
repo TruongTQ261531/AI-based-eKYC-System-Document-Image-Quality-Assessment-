@@ -2,6 +2,7 @@
 import collections
 import hashlib
 import random
+import shutil
 from pathlib import Path
 import cv2
 import numpy as np
@@ -13,8 +14,18 @@ def mapped_fields(source):
     result=[]
     for f in source['fields']:
         if f['author_key'] in FIELD_MAP:
-            result.append(dict(key=FIELD_MAP[f['author_key']],value=f['value'],quad=f['quad']))
-    if len({f['key'] for f in result})!=len(result): raise ValueError('Ambiguous author field mapping')
+            result.append(dict(key=FIELD_MAP[f['author_key']],value=f['value'],quad=f['quad'],author_key=f['author_key']))
+    # Join only author-declared line components; do not infer semantic labels
+    # from positional field01 keys or from model predictions.
+    for prefix,key in [('birth_place_line','birth_place'),('authority_line','authority'),('residence_line','address')]:
+        parts=sorted([f for f in source['fields'] if f['author_key'].startswith(prefix) and f['author_key'][len(prefix):].isdigit()],key=lambda f:int(f['author_key'][len(prefix):]))
+        if parts:
+            q=cv2.convexHull(np.concatenate([np.float32(f['quad']) for f in parts])).reshape(-1,2)
+            result.append(dict(key=key,value=' '.join(f['value'].strip() for f in parts),quad=q.tolist(),
+                               author_key='+'.join(f['author_key'] for f in parts)))
+    # Native spelling is the deterministic training target when both variants
+    # are visible. Every independently visible author variant is accepted at scoring.
+    result.sort(key=lambda f:('_eng' in f['author_key'] or f['author_key'].endswith(('_2','_22','date2')),f['author_key']))
     return result
 
 def mock(identity,index,role):
@@ -70,14 +81,18 @@ def shifted(fields,dx,dy):
         result.append(row)
     return result
 
-def target(fields,w,h):
+def accepted_values(fields,w,h):
     out={}
     for f in fields:
         q=np.asarray(f['quad']);whole=(q[:,0]>=0).all() and (q[:,1]>=0).all() and (q[:,0]<=w).all() and (q[:,1]<=h).all()
         if 'label_box' in f:
             a,b,c,d=f['label_box'];whole=whole and a>=0 and b>=0 and c<=w and d<=h
-        if whole and not f.get('occluded',False):out[f['key']]=f['value']
+        if whole and not f.get('occluded',False):
+            values=out.setdefault(f['key'],[])
+            if f['value'] not in values:values.append(f['value'])
     return out
+
+def target(fields,w,h):return {k:v[0] for k,v in accepted_values(fields,w,h).items()}
 
 def augment(image,fields,pid,kind):
     rng=random.Random(seed(pid+'/'+kind));image=image.copy();ff=[dict(f) for f in fields]
@@ -157,10 +172,16 @@ def build():
                     except OSError as exc:
                         save(DATA/'build_repair.json',dict(path=path.relative_to(ROOT).as_posix(),reason=str(exc),
                              context='Interrupted pre-training PNG encoding; source pixels regenerated deterministically'))
-                if not reusable:Image.fromarray(result).save(path,compress_level=1)
+                if not reusable:
+                    prior_path=PILOT_DATA/'images'/path.name
+                    if prior_path.exists():
+                        with Image.open(prior_path) as prior:reusable=np.array_equal(np.asarray(prior.convert('RGB')),result)
+                        if reusable:shutil.copyfile(prior_path,path)
+                    if not reusable:Image.fromarray(result).save(path,compress_level=1)
                 rows.append(dict(info,variant=variant,slot=slot,capture=kind,uid=uid,path=path.relative_to(ROOT).as_posix(),
                     input_sha256=sha(path),width=result.shape[1],height=result.shape[0],fields=fields,
-                    target=target(fields,result.shape[1],result.shape[0])))
+                    target=target(fields,result.shape[1],result.shape[0]),
+                    accepted_values=accepted_values(fields,result.shape[1],result.shape[0])))
     canonicalize_shared(rows)
     save(DATA/'samples.json',rows)
     ids={role:{r['physical_id'] for r in rows if r['role']==role} for role in ('train','development','test')}
@@ -183,7 +204,7 @@ def build():
             for entry in read(file).values():count+=sum(isinstance(v,dict) and isinstance(v.get('value'),str) for v in entry.values())
         inventory.append(dict(source=source,annotation_files=len(files),author_text_fields=count,
                               semantic_key_names_available=False,used_as_semantic_kie_labels=False))
-    manifest=[{k:v for k,v in r.items() if k not in ('fields','target','path')} for r in rows]
+    manifest=[{k:v for k,v in r.items() if k not in ('fields','target','path','accepted_values')} for r in rows]
     save(OUT/'dataset_manifest.json',manifest)
     save(OUT/'dataset_card.json',dict(config=CONFIG,samples_sha256=sha(DATA/'samples.json'),images=len(rows),
         roles={r:dict(identities=len(ids[r]),images=sum(x['role']==r for x in rows)) for r in ids},
@@ -193,6 +214,8 @@ def build():
         original_annotation_inventory=inventory,author_field_counts=dict(coverage),field_mapping=FIELD_MAP,
         visibility='Whole value polygon inside frame, no mask intersection; mock labels also whole',
         human_legibility_annotation=False,independent_camera_collection=False,
+        revision='r2',multiline_author_components_joined=True,visible_bilingual_variants_accepted=True,
+        previous_pilot_excluded='research/results/vlm_lora_v2/pilot_mapping_issue.json',
         source_counts=dict(collections.Counter((r['role']+'/'+r['source']) for r in manifest)),
         license='MIDV derivatives retain CC BY-SA 2.5; authored specimens CC BY 4.0; no font files redistributed'))
     print('V2_DATA_READY',len(rows),flush=True)

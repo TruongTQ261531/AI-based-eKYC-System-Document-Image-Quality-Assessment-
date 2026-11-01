@@ -58,6 +58,9 @@ def compare_inputs(profile):
     for i,r in enumerate(rows,1):
         path=folder/(hashlib.sha256(r['uid'].encode()).hexdigest()+'.json')
         contract=stable_hash(dict(input_sha256=r['input_sha256'],prompt=PROMPT,input_code=model.input_version))
+        prior=PILOT_CACHE/'input_panel'/profile/path.name
+        if not path.exists() and prior.exists() and read(prior)['contract']==contract:
+            save(path,dict(read(prior),reused_original_prediction_from_pilot=True))
         if path.exists():
             pred=read(path)
             if pred['contract']!=contract:raise ValueError('Input comparison source changed')
@@ -67,7 +70,8 @@ def compare_inputs(profile):
             save(path,dict(pred,contract=contract))
         metrics,_=scoring(r,pred['text'])
         records.append(dict(uid=r['uid'],physical_id=r['physical_id'],source=r['source'],capture=r['capture'],
-            **metrics,wall_seconds=pred['wall_seconds'],view_mode=pred['view_mode'],hit_token_limit=pred['generated_tokens']>=384))
+            **metrics,wall_seconds=pred['wall_seconds'],view_mode=pred['view_mode'],hit_token_limit=pred['generated_tokens']>=384,
+            reused_original_prediction_from_pilot=pred.get('reused_original_prediction_from_pilot',False)))
         trainer.progress(stage='input_panel',profile=profile,complete=i,total=len(rows))
     save(OUT/f'input_panel_{profile}.json',dict(profile=profile,summary=summary(records),rows=records,
          mean_fresh_seconds=sum(r['wall_seconds'] for r in records)/len(records)))

@@ -1,0 +1,14 @@
+{
+  "revision": "r2",
+  "name_dob_role_overlap": 0,
+  "reference_self_score_passed": true,
+  "private_labels_absent_from_public_manifest": true,
+  "python_tests": 23,
+  "python_failed": 0,
+  "frontend_tests": 8,
+  "frontend_failed": 0,
+  "live_camera_tested": false,
+  "scope": "Behavior tests use fake camera/predictor, not accuracy evidence; author multiline and transliteration references now tested",
+  "visible_reference_keys": 599,
+  "test_cases_with_multiple_accepted_values": 16
+}

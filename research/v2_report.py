@@ -61,7 +61,7 @@ def report():
            f"- {fresh['additional_fresh_calls']} lần đọc ảnh mới thêm trên 8 ảnh/4 ID; sai khác so với output đã chấm: "
            f"{fresh['mismatch_count']}. p50={fresh['fresh_seconds_p50']:.2f}s, p95={fresh['fresh_seconds_p95']:.2f}s. "
            'Đây là suy luận có xử lý ảnh + vision + sinh văn bản, khác thời gian đọc feature cache.',
-           '- 21 kiểm tra Python và 8 kiểm tra frontend đã chạy. Predictor/camera giả chỉ dùng cho test hành vi HTTP/UI; '
+           '- 23 kiểm tra Python và 8 kiểm tra frontend đã chạy. Predictor/camera giả chỉ dùng cho test hành vi HTTP/UI; '
            'không dùng chúng làm kết quả OCR. Việc bấm thử SPECIMEN qua web cũng không thay benchmark test.',
            '- Chưa xác nhận khả năng đọc trên camera thật của người dùng. Không có dịch vụ LLM bên ngoài, không ghi ảnh camera ra đĩa, '
            'không kiểm tra liveness hay tự duyệt danh tính tại trang nghiên cứu OCR.', '',
@@ -78,7 +78,7 @@ def report():
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(path),audit_sha256=sha(OUT/'audit.json'),
         lock_sha256=sha(OUT/'test_lock.json'),generated_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())))
     (ROOT/'research/V2_STATUS.md').write_text('# V2 completed\n\nFour matched-budget LoRA runs, six VLM models, two CPU readers, new sealed test and fresh-repeat audit completed.\n'
-        'See V2_RESULTS_VI.md and results/vlm_lora_v2/audit.json for measured results and limits.\n'
+        'See V2_RESULTS_VI.md and results/vlm_lora_v2_r2/audit.json for measured results and limits.\n'
         'Browser SPECIMEN checks and actual-user camera validation are separate from benchmark completion.\n',encoding='utf-8',newline='\n')
     from research.v2_export import export
     export()
