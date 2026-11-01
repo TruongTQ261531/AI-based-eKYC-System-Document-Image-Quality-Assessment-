@@ -169,6 +169,7 @@ def report():
         '## Dữ liệu và khóa trước test','',
         '720 ảnh/144 mock physical IDs: train480/96IDs, development80/16, calibration40/8, test120/24. Calibration chưa dùng. Tách theo ID và checksum ảnh; cùng generator, hai bố cục/hai font giữa các tập. GT giữ cặp nhãn–giá trị còn đủ trong raster và bỏ trường che kín. Đây là proxy hình học tổng hợp, không phải nhãn legibility từ người chấm. Chưa có ảnh camera mới hoặc held-out-layout.',
         'Đợt LoRA này không train trên ảnh full_dataset_original. Manifest local có21,050 dòng với nhãn chất lượng; thư mục gốc có21,100 TIF và không có annotation JSON/XML. Nhãn Clean/Blur không thay thế bản chép từng trường cho OCR. Kiểm kê: input_scope.json.',
+        'Mọi VLM dùng cùng preprocessing: giữ tỷ lệ, pad896×448 và chia2tile448; không dùng dynamic thumbnail mặc định của tác giả. Đây là cấu hình đầu vào giới hạn của đợt thử, không phải kết luận về toàn bộ năng lực model gốc. OCR CPU giữ cấu hình triển khai sẵn có.',
         f"Commit khóa trước test: `{audit['pretest_publication']['lock_commit']}`. Hai seed chính và một đối chứng:192 optimizer steps,768 presentations/lượt. Đối chứng chỉ full/corner_clip/blur_glare:288ảnh, cùng96IDs; chính480ảnh. Khớp compute và identities, không khớp số raster/epoch. Đối chứng phát sinh từ development, đã khai báo trước test.",'',
         '## Test chính','',
         '| Phương án | Đúng/reference | Precision | Recall | F1 strict | F1 bỏ fence/null | Đúng định dạng | Xuất trường che kín |',
@@ -195,8 +196,8 @@ def report():
         '## Thời gian, bộ nhớ','', '| Phương án | p50/p95 giây (cached vision) | p50/p95 giây (fresh ảnh+vision+sinh) |','|---|---:|---:|']
     for k,r in records.items():
         fresh=[x for x in online['rows'] if x['model']==k];text.append(f"|{LABELS[k]}|{timing(r['rows'])}|{timing(fresh) if fresh else 'chưa đo fresh riêng'}|")
-    for k in cpu['summaries']:text.append(f"|{LABELS[k]}|—|{timing([r for r in cpu['rows'] if r['model']==k])} CPU|")
-    text+=[f"Fresh-online:{online['calls']} lần (12ảnh ×3mô hình ×2thứ tự), luôn tính mới vision; {online['cached_output_mismatches']} khác output cache. Gồm hash/decode/preprocess/vision/generation, model resident; loại HTTP/camera/cold-load. CPU OCR và GPU VLM là cấu hình triển khai khác nhau, không phải benchmark cùng backend.",'',
+    for k in cpu['summaries']:text.append(f"|{LABELS[k]}|—|{timing([r for r in cpu['rows'] if r['model']==k])} CPU, decode ngoài timer|")
+    text+=[f"Fresh-online:{online['calls']} lần (12ảnh ×3mô hình ×2thứ tự), luôn tính mới vision; {online['cached_output_mismatches']} khác output cache. Gồm hash/decode/preprocess/vision/generation, model resident; loại HTTP/camera/cold-load. CPU OCR và GPU VLM là cấu hình triển khai khác nhau, không phải benchmark cùng backend. Số token sinh khác nhau giữa các phương án; chênh thời gian không chứng minh kernel hay tốc độ mỗi token được cải tiến.",'',
         '| Train | Step chọn | Dev token loss | Optimizer invocation(s) | Feature setup(s) | Peak allocated VRAM(GiB) | Peak process RSS(GiB) |','|---|---:|---:|---:|---:|---:|---:|']
     for k,f in [('seed_42','train_seed_42.json'),('seed_31415','train_seed_31415.json'),(CONTROL,'control/train_seed_42.json')]:
         r=read(f);e=r['events'];text.append(f"|{LABELS[k]}|{r['selected_checkpoint'].rsplit('_',1)[-1]}|{r['development_loss']:.6f}|{r['invocation_train_seconds']:.2f}|{r['feature_cache_setup_seconds']:.2f}|{max(x['peak_allocated_bytes'] for x in e)/2**30:.3f}|{max(x['process_peak_rss_bytes'] for x in e)/2**30:.3f}|")
