@@ -5,7 +5,8 @@ are frozen. V2 has a separate branch, cache, labels, adapters, results and web.
 
 ## R2 amendment before any adapted-model development or test score
 
-The first control42 pilot was stopped at step284 during annotation inspection,
+The first control42 pilot was stopped during annotation inspection (last periodic
+progress284; last completed optimizer event286),
 not after model evaluation. Author line components (birth_place_line*,
 authority_line*, residence_line*) and bilingual/transliterated variants were
 underrepresented by the first direct-key map. Keep that pilot's code/results

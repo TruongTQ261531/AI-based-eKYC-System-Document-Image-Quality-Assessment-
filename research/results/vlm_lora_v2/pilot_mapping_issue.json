@@ -58,5 +58,7 @@
     "v2_study.py": "02113d05c768bbed4249fc8b9b206d18d31864a4688bebf207c6ef765bdc00ca",
     "v2_web.py": "82bab47a12b1ca2db94fe795fe5286ea90141549f1b5474bc09980800526c4d8",
     "v2_workflow.py": "d38f58d39d3af29a1e0c82735654641859a7008c12fa1f919415740fb1f0dd87"
-  }
+  },
+  "last_completed_optimizer_event": 286,
+  "last_periodic_progress_report": 284
 }

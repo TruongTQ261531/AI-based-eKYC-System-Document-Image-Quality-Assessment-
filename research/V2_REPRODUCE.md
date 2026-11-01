@@ -13,7 +13,7 @@ Set-Location -LiteralPath 'D:\laptrinhcuatao\Ekyc\versions\research-document-rec
 ```
 
 `workflow.json`, `completion.json`, `progress.json`, log và checkpoint nằm trong
-`research/cache/vlm_lora_v2/`. Đây là tiến trình Python riêng, không phải suy nghĩ
+`research/cache/vlm_lora_v2_r2/`. Đây là tiến trình Python riêng, không phải suy nghĩ
 ẩn được duy trì trong chat. Trạng thái tồn tại trên đĩa; máy ngủ/tắt hoặc tiến
 trình bị dừng vẫn có thể làm gián đoạn công việc. Tiến trình completion yêu cầu
 Windows tạm ngăn sleep trong thời gian chạy, không đổi cấu hình nguồn điện.
@@ -74,7 +74,7 @@ Kiểm tra hành vi API/camera giả (không phải đo accuracy):
 node --test research/tests/v2_frontend.test.cjs
 ```
 
-Kết quả chính nằm ở `research/results/vlm_lora_v2/`, báo cáo đo thực tế được tạo
+Kết quả chính nằm ở `research/results/vlm_lora_v2_r2/`, báo cáo đo thực tế được tạo
 ở `research/V2_RESULTS_VI.md` chỉ sau audit. Output OCR nguyên văn và nhãn được
 giữ trong cache/data riêng để có thể phát lại tại máy. V1/V4 được kiểm tra hash,
 không sửa lại để làm đẹp phép so sánh. Chưa có tập ảnh người thật mới có phép
