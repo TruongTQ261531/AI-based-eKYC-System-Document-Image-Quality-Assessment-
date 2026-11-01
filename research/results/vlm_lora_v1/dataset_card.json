@@ -1,0 +1,19 @@
+{
+  "images": 720,
+  "identities": 144,
+  "roles": {
+    "train": 96,
+    "development": 16,
+    "calibration": 8,
+    "test": 24
+  },
+  "data_sha256": "722646bfdfa1600c28fb09e8b6aac41626abc51795db6a038f00c0e4603e5604",
+  "generator_sha256": "d1d595e9d6b318ef10e5fe64f4f49be62ad5fab6b649d020b9247ca5ef3e4755",
+  "prior_image_hash_overlap": 0,
+  "independent_camera_collection": false,
+  "human_legibility_labels": false,
+  "synthetic_only": true,
+  "layout_roles_disjoint": false,
+  "role_split": "mock identity disjoint; same generator/styles",
+  "license": "Authored specimen rasters CC BY 4.0; code MIT; Noto fonts OFL"
+}

@@ -1,0 +1,16 @@
+{
+  "signature": "90519ae7acb72c1d5d597caf177ad8ec86bd97f138e86914d93ff8a0ed670541",
+  "actual_vintern_training_started": false,
+  "code_sha256": {
+    "research/vlm_setup.py": "742868784628cc854b222ba40fa3435d5a194500e80112c24dfbc0e5a1a6d9ff",
+    "research/vlm_data.py": "d1d595e9d6b318ef10e5fe64f4f49be62ad5fab6b649d020b9247ca5ef3e4755",
+    "research/vlm_runtime.py": "e21d8ece15f0c28f63faf14317a1c73ec362aae32d2bbdc6344945d2fd386e6a",
+    "research/vlm_train.py": "951b3a409778bb563b2ac54dc9a048a5b5afa46a9afaade0c2ed0b582156f020",
+    "research/vlm_baseline.py": "e6e873be856e404217244bc070b38e384f5d617b395f8dd8278980ebc439b4fc",
+    "research/vlm_config.json": "f17bcfa16dc10a47fac6d2cd8db49811147c2a1afb13a9df1b371c0da073751d",
+    "research/VLM_LORA_PROTOCOL.md": "19e5dbaee9680a483929450fe3fc52cee8c3c608e6849742f87f3b4c9f7ee159"
+  },
+  "contract_tests_passed": 18,
+  "tiny_cpu_training_tests_passed": 3,
+  "powershell_launcher_parses": true
+}

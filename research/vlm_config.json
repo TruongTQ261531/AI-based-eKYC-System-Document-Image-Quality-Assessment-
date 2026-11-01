@@ -1,0 +1,17 @@
+{
+  "model": "5CD-AI/Vintern-1B-v3_5",
+  "revision": "b98f263eab246eb5269ade64edbdca8a887dc44d",
+  "method": "LoRA, original model weights and vision/projector frozen",
+  "rank": 8,
+  "alpha": 16,
+  "learning_rate": 0.0002,
+  "steps": 192,
+  "gradient_accumulation": 4,
+  "checkpoint_every": 48,
+  "seeds": [42, 31415],
+  "generation_max_new_tokens": 320,
+  "preprocessing": "fit_896x448_white_split2_imagenet_v1",
+  "development_selection": "minimum answer-token-weighted development loss; tie earlier checkpoint",
+  "test_selection": "none; freeze checkpoints before test evaluation",
+  "new_real_camera_data": false
+}

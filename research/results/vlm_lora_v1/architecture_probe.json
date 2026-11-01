@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "params": 938193024,
+  "language_params": 629697920,
+  "vision_tokens_per_patch": 256,
+  "input_tokens": 697,
+  "supervised_tokens": 19,
+  "prefix_masked_tokens": 678,
+  "torch": "2.14.1+cpu",
+  "weights_loaded": false,
+  "training_executed": false
+}

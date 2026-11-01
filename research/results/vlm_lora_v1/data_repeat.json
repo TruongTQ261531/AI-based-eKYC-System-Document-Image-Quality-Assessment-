@@ -1,0 +1,9 @@
+{
+  "identical": true,
+  "files_sha256": {
+    "research\\data\\vlm_lora_v1\\samples.json": "722646bfdfa1600c28fb09e8b6aac41626abc51795db6a038f00c0e4603e5604",
+    "research\\results\\vlm_lora_v1\\dataset_manifest.json": "f7abaaad37f4803b6265b98b6f6adc0d787a245db4930b3822fd07dea5426800",
+    "research\\results\\vlm_lora_v1\\dataset_card.json": "c0cc226d1ccadba5182303b7a2da9acc84dbb8661ec1b883570cc7b155e7a615"
+  },
+  "scope": "exact regeneration, not independent new photographs"
+}
