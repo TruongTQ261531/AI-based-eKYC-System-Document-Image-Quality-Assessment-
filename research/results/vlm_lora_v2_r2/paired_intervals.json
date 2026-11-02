@@ -1,0 +1,36 @@
+{
+  "method": "Paired identity-cluster percentile bootstrap; source-stratified 24 authored+24 photo IDs",
+  "resamples": 10000,
+  "seed": 20261101,
+  "comparisons": [
+    {
+      "a": "partial_42",
+      "b": "control_42",
+      "delta_f1": 0.021158361699445294,
+      "ci95_low": -0.003896768162681291,
+      "ci95_high": 0.04774615471144127
+    },
+    {
+      "a": "partial_31415",
+      "b": "control_31415",
+      "delta_f1": 0.029092923637011214,
+      "ci95_low": -0.004798730489195685,
+      "ci95_high": 0.06449642947844297
+    },
+    {
+      "a": "partial_42",
+      "b": "v1",
+      "delta_f1": 0.02632625766217822,
+      "ci95_low": -0.024402350456259946,
+      "ci95_high": 0.08027033853677149
+    },
+    {
+      "a": "partial_42",
+      "b": "original",
+      "delta_f1": 0.22530488309942176,
+      "ci95_low": 0.18435861851254537,
+      "ci95_high": 0.2680988848118328
+    }
+  ],
+  "independent_units": 48
+}

@@ -87,6 +87,8 @@ def report():
            'Thiếu sót còn lại: chưa có bộ ảnh Việt Nam mới tự thu thập có phép; chưa có nhãn legibility độc lập; '
            'chỉ một backbone nhỏ, hai seed và ít ID/type. Font test Arial phụ thuộc font Windows đúng checksum trong manifest. '
            'Cần căn cứ riêng kết quả ảnh chụp và CI khi quyết định có mở rộng thí nghiệm hoặc viết claim.', '']
+    from research.v2_interruptions import appendix
+    text+=appendix(allrows,names,OUT)
     path=ROOT/'research/V2_RESULTS_VI.md';path.write_text('\n'.join(text),encoding='utf-8',newline='\n')
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(path),audit_sha256=sha(OUT/'audit.json'),
         lock_sha256=sha(OUT/'test_lock.json'),generated_utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())))

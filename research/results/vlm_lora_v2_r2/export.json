@@ -1,0 +1,20 @@
+{
+  "directory": "research/cache/vlm_lora_v2_r2/export/partial_42",
+  "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "selected_model": "partial_42",
+  "profile": "rect2",
+  "adapter_sha256": {
+    "adapter_config.json": "9a0bad222ec08c150cd75f08f2afbbb370d97bf2b6900492787496b5ee7599c7",
+    "adapter_model.safetensors": "98835d5922f968ce29681e2ec9a2b85f26e87d7ea9538fbfb701cc37cc8a6b27"
+  },
+  "base_model": "5CD-AI/Vintern-1B-v3_5",
+  "base_revision": "b98f263eab246eb5269ade64edbdca8a887dc44d",
+  "base_weights_sha256": "296a16a6bf28e6d3f0fb9298deba70b3cfa1d7519f4aa326e2f862bf2e63be05",
+  "apply_adapter_to": "Vintern.model.language_model; full Vintern vision/projector required",
+  "tokenizer": "Use the pinned full Vintern tokenizer and V2 image-token prompt",
+  "peft_base_name_is_not_a_standalone_multimodal_model": true,
+  "merged_full_model": false,
+  "weights_uploaded": false,
+  "private_labels_copied": false,
+  "new_virtualenv": false
+}

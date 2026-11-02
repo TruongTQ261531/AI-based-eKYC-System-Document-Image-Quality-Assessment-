@@ -1,0 +1,22 @@
+{
+  "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "source": "Audited numeric test/train JSON only; no document images or personal text",
+  "files": [
+    {
+      "path": "research/results/vlm_lora_v2_r2/figures/source_f1.png",
+      "sha256": "45d151091ca7745f1b27def769bb2df7390e03e9aa523fbf2f126955410fcb6a"
+    },
+    {
+      "path": "research/results/vlm_lora_v2_r2/figures/source_f1.svg",
+      "sha256": "3f28dc6e6fb5e7fa1d6bbb9e50bd0108b744ec8b6f6287e825ada55e6847f578"
+    },
+    {
+      "path": "research/results/vlm_lora_v2_r2/figures/training_curves.png",
+      "sha256": "d85688a9f4f5c46b4a16e803982791fdfc6297ea17db469230327633c4f1cced"
+    },
+    {
+      "path": "research/results/vlm_lora_v2_r2/figures/training_curves.svg",
+      "sha256": "d277b349f2b3640162fad8fe461da46f37f4766615642920958686b2947b16a9"
+    }
+  ]
+}

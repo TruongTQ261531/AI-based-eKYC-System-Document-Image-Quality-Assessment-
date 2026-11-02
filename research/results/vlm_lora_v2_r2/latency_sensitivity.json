@@ -1,0 +1,81 @@
+{
+  "post_hoc_descriptive": true,
+  "all_accuracy_rows_retained": true,
+  "raw_timers_retained": true,
+  "criterion": "Only the generation overlapping the documented Windows battery sleep",
+  "incident_sha256": "f178b072887d7d903e56bf15b47fd68cfa2493e95a72e0363e1071ec6ff6adb3",
+  "models": {
+    "original": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 21.52790680003818,
+      "raw_p95": 30.46104252504301,
+      "raw_max": 41.97880060004536,
+      "sensitivity_p50": 21.52790680003818,
+      "sensitivity_p95": 30.46104252504301
+    },
+    "v1": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 1,
+      "raw_p50": 5.226523649995215,
+      "raw_p95": 17.698488250043006,
+      "raw_max": 19220.437117499998,
+      "sensitivity_p50": 5.205191100016236,
+      "sensitivity_p95": 17.090695919992868
+    },
+    "control_42": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 14.030369200045243,
+      "raw_p95": 30.20319572504377,
+      "raw_max": 81.62528709997423,
+      "sensitivity_p50": 14.030369200045243,
+      "sensitivity_p95": 30.20319572504377
+    },
+    "partial_42": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 13.7522724000155,
+      "raw_p95": 27.201237575005496,
+      "raw_max": 50.32251769991126,
+      "sensitivity_p50": 13.7522724000155,
+      "sensitivity_p95": 27.201237575005496
+    },
+    "control_31415": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 14.78982625005301,
+      "raw_p95": 30.388960529956968,
+      "raw_max": 85.21548499993514,
+      "sensitivity_p50": 14.78982625005301,
+      "sensitivity_p95": 30.388960529956968
+    },
+    "partial_31415": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 13.361513299983926,
+      "raw_p95": 20.00135384001769,
+      "raw_max": 59.083011199953035,
+      "sensitivity_p50": 13.361513299983926,
+      "sensitivity_p95": 20.00135384001769
+    },
+    "rapid_v4": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 2.250379749981221,
+      "raw_p95": 5.65017449001316,
+      "raw_max": 7.291332999942824,
+      "sensitivity_p50": 2.250379749981221,
+      "sensitivity_p95": 5.65017449001316
+    },
+    "rapid_latin_v5": {
+      "total": 144,
+      "excluded_from_latency_sensitivity_only": 0,
+      "raw_p50": 1.7805344500229694,
+      "raw_p95": 4.241483749990583,
+      "raw_max": 5.332103599910624,
+      "sensitivity_p50": 1.7805344500229694,
+      "sensitivity_p95": 4.241483749990583
+    }
+  }
+}

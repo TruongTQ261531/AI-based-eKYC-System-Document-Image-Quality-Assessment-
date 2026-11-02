@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "frozen_v1_files_unchanged": 101,
+  "unique_rasters_hashed": 1112,
+  "frozen_v4_files_unchanged": 63,
+  "original_photo_sources_hashed": 64,
+  "raw_output_rows_replayed": 1728,
+  "training": [
+    {
+      "arm": "control",
+      "seed": 42,
+      "presentations": 1280,
+      "identity_slot_sequence_sha256": "b846c24a0ef993fd68070fc9bbac2166593be07b1e6ec4b0248a9ca1c4fc1a40",
+      "train_seconds": 901.1552014000481,
+      "max_allocated_bytes": 3008856064,
+      "max_reserved_bytes": 7843348480,
+      "token_exposure": {
+        "input_and_answer_tokens": 1016240,
+        "answer_loss_tokens": 95920,
+        "scope": "Exactly two epochs of the paired 640 slots; answer lengths can differ between arms"
+      },
+      "adapter_tensors": 192,
+      "nonzero_lora_B_tensors": 96,
+      "optimizer_steps_verified": 320,
+      "attempted_optimizer_events": 320,
+      "rollback_replayed_events": 0,
+      "event_policy": "Retain all attempts; latest event per global step belongs to the restored/final optimizer trajectory"
+    },
+    {
+      "arm": "partial",
+      "seed": 42,
+      "presentations": 1280,
+      "identity_slot_sequence_sha256": "b846c24a0ef993fd68070fc9bbac2166593be07b1e6ec4b0248a9ca1c4fc1a40",
+      "train_seconds": 901.7985582998954,
+      "max_allocated_bytes": 3007876608,
+      "max_reserved_bytes": 8373927936,
+      "token_exposure": {
+        "input_and_answer_tokens": 993884,
+        "answer_loss_tokens": 73564,
+        "scope": "Exactly two epochs of the paired 640 slots; answer lengths can differ between arms"
+      },
+      "adapter_tensors": 192,
+      "nonzero_lora_B_tensors": 96,
+      "optimizer_steps_verified": 320,
+      "attempted_optimizer_events": 320,
+      "rollback_replayed_events": 0,
+      "event_policy": "Retain all attempts; latest event per global step belongs to the restored/final optimizer trajectory"
+    },
+    {
+      "arm": "control",
+      "seed": 31415,
+      "presentations": 1280,
+      "identity_slot_sequence_sha256": "de6cd54a4c48b33cb769d73b367e26feacbf109357f86fec2da0aed379a237cf",
+      "train_seconds": 905.8797750000376,
+      "max_allocated_bytes": 3008859136,
+      "max_reserved_bytes": 7832862720,
+      "token_exposure": {
+        "input_and_answer_tokens": 1016240,
+        "answer_loss_tokens": 95920,
+        "scope": "Exactly two epochs of the paired 640 slots; answer lengths can differ between arms"
+      },
+      "adapter_tensors": 192,
+      "nonzero_lora_B_tensors": 96,
+      "optimizer_steps_verified": 320,
+      "attempted_optimizer_events": 320,
+      "rollback_replayed_events": 0,
+      "event_policy": "Retain all attempts; latest event per global step belongs to the restored/final optimizer trajectory"
+    },
+    {
+      "arm": "partial",
+      "seed": 31415,
+      "presentations": 1280,
+      "identity_slot_sequence_sha256": "de6cd54a4c48b33cb769d73b367e26feacbf109357f86fec2da0aed379a237cf",
+      "train_seconds": 1070.5957059999928,
+      "max_allocated_bytes": 3008859136,
+      "max_reserved_bytes": 11366563840,
+      "token_exposure": {
+        "input_and_answer_tokens": 993884,
+        "answer_loss_tokens": 73564,
+        "scope": "Exactly two epochs of the paired 640 slots; answer lengths can differ between arms"
+      },
+      "adapter_tensors": 192,
+      "nonzero_lora_B_tensors": 96,
+      "optimizer_steps_verified": 320,
+      "attempted_optimizer_events": 320,
+      "rollback_replayed_events": 0,
+      "event_policy": "Retain all attempts; latest event per global step belongs to the restored/final optimizer trajectory"
+    }
+  ],
+  "fresh_repeat_groups": 8,
+  "fresh_repeat_mismatches": 0,
+  "model_count": 6,
+  "test_inputs": 144,
+  "test_identities": 48,
+  "fresh_raw_rows_replayed": 16,
+  "all_visual_caches_replayed": 1112,
+  "visual_cache_mismatches": 0,
+  "audit_implementation_sha256": "3f25427274fbd61a201129ac36a7e469714f09ed3f0e7ecc528377c72f2d8a99",
+  "test_lock_publication_commit": "447e15b9a3a8d8fd3e9677356bf6b70a2427dc03",
+  "human_annotation_replaced_by_audit": false,
+  "limitations": [
+    "Geometric visibility proxy, not human legibility GT",
+    "Only mock documents; no new real-person collection",
+    "Two seeds and 48 test identities are limited evidence",
+    "Model pretraining overlap with MIDV is unknown"
+  ]
+}

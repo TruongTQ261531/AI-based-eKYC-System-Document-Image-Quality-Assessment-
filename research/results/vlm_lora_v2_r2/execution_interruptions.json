@@ -1,0 +1,23 @@
+{
+  "recorded_after_incident": true,
+  "reason": "Windows Kernel-Power event 42: Battery; Power-Troubleshooter event 1 confirms resume",
+  "sleep_start_utc": "2026-11-02T09:25:46.7517607Z",
+  "wake_utc": "2026-11-02T14:45:48.9430006Z",
+  "observed_tool_wait_seconds": 19220.8444278,
+  "affected_generations": [
+    {
+      "uid": "vlm_v2/test/000/evaluation/0",
+      "input_sha256": "f9ba06f56f4692d9ad9f39a5bfe2e2d28c17fdb7544f6bddedb7475043d3db79",
+      "prediction_sha256": "9b4a5882b3ddd8db1f58807e8e93f4291a453b076a8c6cbfc3b2873f204ee11e",
+      "wall_seconds": 19220.437117499998,
+      "model": "v1"
+    }
+  ],
+  "primary_accuracy_and_raw_timers_retained": true,
+  "sensitivity_exclusion_rule": "Only the generation overlapping the documented battery sleep",
+  "source_repeat_is_same_generation_not_second_incident": true,
+  "after_wake_external_power_observed": true,
+  "private_Windows_events_evidence_sha256": "ded675120865ac7825b20d479127e52dd9a6f6c1bd698138dbb28440164a4453",
+  "private_evidence_file": "research/cache/source_visibility_v3/power_events_20261102.xml",
+  "additional_generation_replay_status_at_incident_recording": "pending"
+}
