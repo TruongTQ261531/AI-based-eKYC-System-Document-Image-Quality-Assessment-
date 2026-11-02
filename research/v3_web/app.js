@@ -6,9 +6,9 @@ function stop(){stream?.getTracks().forEach(t=>t.stop());stream=null;$('video').
 function clearResult(){$('fields').replaceChildren();$('confirmed').hidden=true;$('confirm').hidden=true;$('empty-result').hidden=false;$('warnings').textContent='';$('timing').textContent='';$('manual-key').value='';$('manual-value').value='';}
 function reset(){generation++;pending?.abort();pending=null;busy=false;stop();photo=null;if(url)URL.revokeObjectURL(url);url=null;$('capture-preview').removeAttribute('src');$('capture-preview').hidden=true;$('empty-camera').hidden=false;clearResult();$('capture').hidden=true;$('submit').hidden=true;$('open-camera').hidden=false;$('resolution').textContent='Ảnh và thông tin đã được bỏ khỏi trang.';document.querySelectorAll('button').forEach(b=>b.disabled=false);}
 function usePhoto(blob){photo=blob;if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(blob);$('capture-preview').src=url;$('capture-preview').hidden=false;$('empty-camera').hidden=true;$('open-camera').hidden=true;$('capture').hidden=true;$('submit').hidden=false;}
-function addField(key,value,manual=false){
- const label=document.createElement('label'),title=document.createElement('span');title.textContent=(labels[key]||key)+(manual?' · Bạn nhập':' · OCR');
- const input=document.createElement('input');input.type='text';input.value=String(value);input.name=key;input.autocomplete='off';input.dataset.source=manual?'manual':'model';
+function addField(key,value,manual=false,origin="model"){
+ const label=document.createElement('label'),title=document.createElement('span');title.textContent=(labels[key]||key)+(manual?' · Bạn nhập':origin==='mrz'?' · OCR/MRZ':' · OCR');
+ const input=document.createElement('input');input.type='text';input.value=String(value);input.name=key;input.autocomplete='off';input.dataset.source=manual?'manual':origin;
  input.addEventListener('input',()=>{input.dataset.source='manual';title.textContent=(labels[key]||key)+' · Bạn đã sửa';$('confirmed').hidden=true;status('Đã sửa thông tin; cần đối chiếu lại.');});
  label.append(title,input);$('fields').append(label);$('empty-result').hidden=true;$('confirm').hidden=false;
 }
@@ -25,7 +25,7 @@ $('submit').addEventListener('click',async()=>{
  clearResult();busy=true;const current=generation,controller=new AbortController();pending=controller;
  document.querySelectorAll('button:not(#clear)').forEach(b=>b.disabled=true);status('Đang đọc ảnh trên máy…');
  try{const r=await fetch('/api/scan',{method:'POST',headers:{'Content-Type':photo.type,'X-Research-Opt-In':$('opt-in').checked?'yes':'no'},body:photo,cache:'no-store',signal:controller.signal});const result=await r.json();if(current!==generation)return;if(!r.ok)throw Error(result.detail||'Không đọc được ảnh.');
- for(const [key,value] of Object.entries(result.fields))addField(key,value);
+ for(const [key,value] of Object.entries(result.fields))addField(key,value,false,result.field_sources?.[key]||"model");
  $('warnings').textContent=result.warnings.join(' ');$('timing').textContent=`${result.model} · ${result.profile} · Đọc ảnh ${result.inference_seconds.toFixed(2)}s · Tổng xử lý ${(result.request_processing_wall_seconds??result.inference_seconds).toFixed(2)}s · ${result.source_dimensions.join(' × ')} pixel`;
  status(Object.keys(result.fields).length?'Đọc xong. Đối chiếu từng trường trước khi xác nhận.':'Chưa đọc được trường nào. Chụp gần hơn, tránh lóa hoặc tự nhập thông tin đã đối chiếu.',!Object.keys(result.fields).length);
  }catch(e){if(current===generation&&e.name!=='AbortError')status(e.message,true);}

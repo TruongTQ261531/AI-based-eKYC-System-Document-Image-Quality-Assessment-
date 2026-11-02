@@ -1,0 +1,15 @@
+{
+  "primary_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "secondary_signature": "1ef0d5d9225cb8aec0427c28f961bdc1966b5d7df66534c89f3d26f7d4b855d1",
+  "test_prediction_directories": 0,
+  "completed_training_runs": 6,
+  "optimizer_steps_per_run": 320,
+  "new_merge_unit_tests_passed": 3,
+  "source_HTTP_tests_passed": 15,
+  "rerun_frontend_behavior_tests_passed": 21,
+  "human_annotations_available": false,
+  "actual_camera_test_performed": false,
+  "dependency_installations": 0,
+  "pretest_dependency_fix": "Use existing overlay for safetensors-dependent rescore; CPU-only test authorization no longer imports GPU training code",
+  "created_utc": "2026-11-02T08:29:12Z"
+}

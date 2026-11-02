@@ -1,0 +1,8 @@
+{
+  "commit": "447e15b9a3a8d8fd3e9677356bf6b70a2427dc03",
+  "remote_commit": "447e15b9a3a8d8fd3e9677356bf6b70a2427dc03",
+  "lock_sha256": "7f37bf82190522d72659d54b58dc93c93f1d495b242eb155cef563b663b65ee3",
+  "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "test_scoring_started": false,
+  "source": "git remote verified before any V2 test inference"
+}

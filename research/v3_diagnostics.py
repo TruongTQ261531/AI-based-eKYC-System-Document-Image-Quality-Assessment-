@@ -5,7 +5,7 @@ from research.v3_common import *
 from research.v3_metrics import scoring as source_score,summary as source_summary,canonical
 from research.v2_runtime import scoring as body_score,summary as body_summary
 from research.v2_metrics import canonical as body_canonical
-from research.v3_study import MODELS,BASES
+from research.v3_fusion import MODELS,BASES
 
 def run():
     if read(OUT/'audit.json')['status']!='passed':raise ValueError('Audited test outputs required')

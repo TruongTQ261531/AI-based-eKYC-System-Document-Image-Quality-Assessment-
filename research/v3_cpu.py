@@ -40,8 +40,8 @@ def fallback(body,predictions,strict=False):
 def run(role):
     sig=signature();profile=read(R2OUT/'input_choice.json')['profile']
     if role=='test':
-        from research.v3_study import verify_test
-        verify_test()
+        seal0=read(OUT/'test_lock.json');pub=read(OUT/'lock_publication.json')
+        if seal0['signature']!=sig or pub['lock_sha256']!=sha(OUT/'test_lock.json'):raise ValueError('Source seal not published')
     from research.recovery_runtime import RecoveryEngine
     engine=RecoveryEngine();views=Views();rows=[]
     for i,r in enumerate(load(role),1):

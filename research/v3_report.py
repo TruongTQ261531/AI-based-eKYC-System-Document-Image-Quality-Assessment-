@@ -8,7 +8,9 @@ def report():
     if audit['status']!='passed' or audit['signature']!=signature():raise ValueError('Source audit required')
     comp=read(OUT/'test_comparison.json');cpu=read(OUT/'test_cpu.json');lock=read(OUT/'test_lock.json')
     pub=read(OUT/'lock_publication.json');card=read(OUT/'dataset_card.json');ci=read(OUT/'paired_intervals.json');fresh=read(OUT/'fresh_repeats.json')
-    from research.v3_study import MODELS,adapter_for
+    from research.v3_fusion import MODELS,fusion_signature
+    fusion_audit=read(OUT/'fusion_audit.json');fusion_lock=read(OUT/'fusion_lock.json')
+    if fusion_audit['status']!='passed' or fusion_audit['signature']!=fusion_signature():raise ValueError('Secondary audit required')
     from research.v3_metrics import summary
     records={k:read(OUT/f'test_{k}.json') for k in MODELS};rows={k:r['rows'] for k,r in records.items()}
     from research.v3_diagnostics import run
@@ -61,7 +63,7 @@ def report():
         text.append(f"| {names[key]} | {mode} | {np.percentile(times,50):.2f} | {np.percentile(times,95):.2f} | {s['retake_proxy_rate']:.1%} |")
     text+=['','Các dòng GPU dùng cache chưa phải độ trễ camera đầu cuối. Phép lặp ảnh mới của model được chọn được báo bên dưới; '
         'nạp model nguội được đo riêng với thời gian suy luận khi chạy web. CPU và GPU không phải đối chiếu tốc độ trên phần cứng tương đương. '
-        'Các lần CPU development có thể chạy song song công việc GPU; không dùng bảng này để tuyên bố thắng tuyệt đối về tốc độ. '
+        'Một số lượt CPU chạy song song công việc GPU; không dùng bảng này để tuyên bố thắng tuyệt đối về tốc độ. '
         'Output rỗng/JSON lỗi chỉ là proxy, không phải tỷ lệ khách hàng chụp lại được quan sát, cũng không phải quyết định eKYC.']
     text+=['','## So sánh đúng cặp và khoảng tin cậy','',
         '| So sánh | ΔF1 | CI95% theo ID |','|---|---:|---:|']
@@ -102,6 +104,20 @@ def report():
         'CORE B chưa thể khẳng định chỉ nhờ fine-tune/đổi nhãn. Còn thiếu tập ảnh Việt Nam mới tự chụp có phép, '
         'nhãn legibility độc lập, nhiều camera/ID và backbone hơn. Hợp đồng nguồn chỉ gồm các vùng tác giả và TD3 đã khai báo, '
         'không bao phủ mọi thông tin suy ra từ mã quốc gia/QR/đặc điểm khuôn mặt. Chưa có kiểm chứng người thật hoặc chống giả.','']
+    fused=read(OUT/'test_fusion.json')['models']
+    text+=['','## Baseline bổ sung: điền trường thiếu từ MRZ hợp lệ','',
+        'Đăng ký sau khi xem development, trước mọi suy luận test. Tám phép ghép dùng output VLM đã có và cùng OCR CPU rapid_v4; '
+        'không phải tám model mới hay tám lượt suy luận VLM độc lập. Không ghi đè giá trị, sửa ký tự hoặc suy đoán thế kỷ. '
+        'Checksum không chứng minh giấy tờ thật. Thời gian ghép cache là tổng bộ đếm thành phần, chưa phải độ trễ một request đầu cuối.','',
+        '| VLM thành phần | F1 gốc | F1 ghép | Bỏ sót gốc → ghép | Ngoài nhãn gốc → ghép |',
+        '|---|---:|---:|---:|---:|']
+    for key in MODELS:
+        a=summary(rows[key]);b=fused[key]['summary']
+        text.append(f"| {names[key]} | {a['f1']:.4f} | {b['f1']:.4f} | {a['visible_omissions']} → {b['visible_omissions']} | {a['unsupported_nonempty']} → {b['unsupported_nonempty']} |")
+    text+=['',f"Chọn thành phần từ development: {fusion_lock['component']}; bật ghép trên web: **{fusion_lock['use_fusion_on_development']}**. "
+        'Chỉ bật khi F1 development tăng và số key ngoài nhãn không tăng; không dùng test để đổi quyết định. '
+        f"Đã phát lại {fusion_audit['rows_replayed']} phép ghép; thêm {fusion_audit['fresh_calls']} lần gọi ảnh mới cho hybrid. "
+        'Nếu development không có lợi ích, web giữ VLM đơn và không chạy thêm hybrid chỉ để tăng số lần kiểm thử.','']
     path=ROOT/'research/V3_RESULTS_VI.md';path.write_text('\n'.join(text),encoding='utf-8',newline='\n')
     from research.v3_artifacts import make
     make()

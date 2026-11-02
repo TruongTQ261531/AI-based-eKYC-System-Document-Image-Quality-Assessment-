@@ -10,6 +10,8 @@ def publish(stage):
     if stage=='lock':
         if (R2OUT/'test_original.json').exists() or (OUT/'test_source_42.json').exists():raise ValueError('Test prediction exists before joint publication')
         if read(OUT/'test_lock.json')['signature']!=signature():raise ValueError('Source lock/code changed')
+        from research.v3_fusion import fusion_signature
+        if read(OUT/'fusion_lock.json')['signature']!=fusion_signature():raise ValueError('Secondary method lock differs')
         publish_r2('lock')
     else:publish_r2('final')
     if git('branch','--show-current').decode().strip()!=BRANCH:raise ValueError('Wrong research branch')
@@ -35,8 +37,11 @@ def publish(stage):
         for folder in (OUT,R2OUT):
             blob=git('show',commit+':'+(folder/'test_lock.json').relative_to(ROOT).as_posix())
             if hashlib.sha256(blob).hexdigest()!=sha(folder/'test_lock.json'):raise ValueError('Remote seal bytes differ')
+        blob=git('show',commit+':'+(OUT/'fusion_lock.json').relative_to(ROOT).as_posix())
+        if hashlib.sha256(blob).hexdigest()!=sha(OUT/'fusion_lock.json'):raise ValueError('Remote secondary seal differs')
         save(OUT/'lock_publication.json',dict(commit=commit,remote_commit=commit,signature=signature(),
              lock_sha256=sha(OUT/'test_lock.json'),R2_lock_sha256=sha(R2OUT/'test_lock.json'),test_scoring_started=False,
+             fusion_lock_sha256=sha(OUT/'fusion_lock.json'),
              both_seals_verified_before_any_test_inference=True))
     print('JOINT_PUBLISHED',stage,commit,flush=True)
 

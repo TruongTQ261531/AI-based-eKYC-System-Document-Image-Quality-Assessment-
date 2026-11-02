@@ -1,0 +1,9 @@
+{
+  "reason": "Add fixed VLM plus existing checksum-MRZ missing-field fallback after development observation, before any test inference",
+  "source_primary_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "completed_training_runs": 6,
+  "training_weights_changed": false,
+  "completed_predictions_discarded": false,
+  "time_utc": "2026-11-01T15:30:46Z",
+  "test_prediction_directories": 0
+}

@@ -32,6 +32,11 @@ def deployment():
     lock=read(OUT/'test_lock.json');audit=read(OUT/'audit.json');pub=read(OUT/'lock_publication.json')
     if lock['signature']!=signature() or audit['signature']!=lock['signature'] or audit['status']!='passed':raise ValueError('Source study audit/source mismatch')
     if pub['lock_sha256']!=sha(OUT/'test_lock.json'):raise ValueError('Source seal changed')
+    if (OUT/'fusion_lock.json').exists():
+        from research.v3_fusion import fusion_signature
+        fusion=read(OUT/'fusion_lock.json');fusion_audit=read(OUT/'fusion_audit.json')
+        if fusion['signature']!=fusion_signature() or fusion_audit['status']!='passed' or fusion_audit['signature']!=fusion['signature'] or pub['fusion_lock_sha256']!=sha(OUT/'fusion_lock.json'):raise ValueError('Secondary method audit/seal differs')
+        lock=dict(lock,use_fusion=fusion['use_fusion_on_development'],deployment_approved=fusion['deployment_approved'])
     record=lock['models'][lock['selected_model']]
     path=(ROOT/record['path']).resolve() if record['path'] else None
     if path:
@@ -58,15 +63,24 @@ def predict(image):
         if loaded!=sha(OUT/'test_lock.json'):raise ValueError('Restart after changing selected adapter')
         result=model.fresh(Image.fromarray(cv2.cvtColor(image,cv2.COLOR_BGR2RGB)))
         fields,parser=tolerant(result['text'])
+        origins={k:'model' for k in fields};cpu_seconds=0.
+        if lock.get('use_fusion'):
+            from research.v3_fusion import online
+            fields,origins,info=online(image,fields,lock['profile'],cpu_engine(),model.views);cpu_seconds=info['cpu_seconds']
         warnings=['Đối chiếu từng trường với giấy tờ. Trường thêm hoặc sửa được đánh dấu do bạn nhập.']
         if any((date_value(v) or ('',))[0]=='year2' for k,v in fields.items() if k in ('dob','expiry_date','issue_date')):
             warnings.append('Có ngày chỉ đọc được năm hai chữ số. Hệ thống giữ nguyên, không tự suy đoán thế kỷ.')
         if not lock['deployment_approved']:warnings.append('Chưa vượt cổng đánh giá trên tập phát triển; chỉ dùng khảo sát.')
-        return dict(fields=fields,model=lock['selected_model'],profile=lock['profile'],
+        return dict(fields=fields,field_sources=origins,hybrid_used=lock.get('use_fusion',False),model=lock['selected_model'],profile=lock['profile'],
             recommended_on_development=lock['deployment_approved'],valid_extraction_format=parser['syntax_object_success'],
-            inference_seconds=result['wall_seconds'],generated_tokens=result['generated_tokens'],
+            inference_seconds=result['wall_seconds']+cpu_seconds,generated_tokens=result['generated_tokens'],
             view_mode=result['view_mode'],preprocessing_seconds=result['preprocessing_seconds'],
             source_dimensions=[image.shape[1],image.shape[0]],identity_approved=False,liveness_evaluated=False,warnings=warnings)
+
+@lru_cache(1)
+def cpu_engine():
+    from research.recovery_runtime import RecoveryEngine
+    return RecoveryEngine()
 
 @app.get('/')
 def index():return FileResponse(WEB/'index.html')

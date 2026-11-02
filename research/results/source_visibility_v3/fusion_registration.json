@@ -1,0 +1,10 @@
+{
+  "signature": "1ef0d5d9225cb8aec0427c28f961bdc1966b5d7df66534c89f3d26f7d4b855d1",
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "reader": "rapid_v4",
+  "policy": "Checksum-validated missing-field fallback; no overwrites or century inference",
+  "selected_component_rule": "Original V3 development-selected VLM only",
+  "test_inference_started": false,
+  "created_utc": "2026-11-02T08:28:04Z",
+  "human_validation_available": false
+}
