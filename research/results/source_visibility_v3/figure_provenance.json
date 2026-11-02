@@ -1,0 +1,14 @@
+{
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "source": "Audited numeric result files; no document images",
+  "files": [
+    {
+      "path": "research/results/source_visibility_v3/figures/source_f1.png",
+      "sha256": "8ce3f20cb601f8df10804279bfed15a02832d2672abd1d22016ea0ae91068fb5"
+    },
+    {
+      "path": "research/results/source_visibility_v3/figures/source_f1.svg",
+      "sha256": "2f216f2e10fc58e46701312ca4d4f90fffdb1678cf70ee99ad12bc27a72b1876"
+    }
+  ]
+}

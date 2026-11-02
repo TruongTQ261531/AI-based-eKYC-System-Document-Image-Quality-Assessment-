@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "replayed_prediction_rows": 3024,
+  "same_R2_image_bytes_and_order": true,
+  "effective_training_steps_per_run": 320,
+  "train_presentations_per_run": 1280,
+  "source_reference_rows_regenerated": 1496,
+  "source_derivation_replay_is_not_independent_human_annotation": true,
+  "independently_repeated_CPU_outputs_verified": 432,
+  "fresh_raw_rows_replayed": 16,
+  "two_additional_source_seeds": [
+    42,
+    31415
+  ],
+  "fresh_repeat_groups": 8,
+  "fresh_repeat_mismatches": 0,
+  "source_GT_is_geometric_not_human_legibility": true,
+  "both_model_locks_published_before_test": true,
+  "R2_audit_sha256": "a8a8c366614795325b8896884adde932544b9b19a18dadc1e9b94dcb161de295",
+  "publication_commit": "ca31e894a7945c02d0eea17a9614c1e0587562a4",
+  "audit_code_sha256": "0e8ab1768bf42273c2899dff7657970ffbe944b98a0d3783ca32123f92642d12"
+}

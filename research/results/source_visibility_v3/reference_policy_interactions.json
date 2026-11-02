@@ -1,0 +1,29 @@
+{
+  "post_hoc_exploratory": true,
+  "used_for_model_selection": false,
+  "new_generation_calls": 0,
+  "seed": 20261103,
+  "resamples": 10000,
+  "independent_document_instances": 48,
+  "source_stratified": true,
+  "intervals_are_not_multiplicity_adjusted": true,
+  "definition": "(partial-control F1 under source) minus (partial-control F1 under body)",
+  "rows": [
+    {
+      "seed": 42,
+      "body_contract_gain": 0.021158361699445294,
+      "source_contract_gain": 0.014225203818533871,
+      "gain_change": -0.0069331578809114225,
+      "ci95_low": -0.014497099288274454,
+      "ci95_high": -0.0002920826106160424
+    },
+    {
+      "seed": 31415,
+      "body_contract_gain": 0.029092923637011214,
+      "source_contract_gain": 0.03079056008124159,
+      "gain_change": 0.001697636444230377,
+      "ci95_low": -0.005499384814985177,
+      "ci95_high": 0.010156346384569833
+    }
+  ]
+}

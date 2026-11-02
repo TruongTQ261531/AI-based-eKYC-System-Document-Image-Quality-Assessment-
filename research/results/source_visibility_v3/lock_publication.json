@@ -1,0 +1,10 @@
+{
+  "commit": "ca31e894a7945c02d0eea17a9614c1e0587562a4",
+  "remote_commit": "ca31e894a7945c02d0eea17a9614c1e0587562a4",
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "lock_sha256": "bbe06b30bf0b6761e1a6b3a34262c209894bc799c2ec8a185182be05817aa10d",
+  "R2_lock_sha256": "7f37bf82190522d72659d54b58dc93c93f1d495b242eb155cef563b663b65ee3",
+  "test_scoring_started": false,
+  "fusion_lock_sha256": "019adb03099b0f637807364e7c6cce2be0d8633a081b88f93b866cbfca83538d",
+  "both_seals_verified_before_any_test_inference": true
+}

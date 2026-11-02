@@ -1,0 +1,9 @@
+{
+  "signature": "1ef0d5d9225cb8aec0427c28f961bdc1966b5d7df66534c89f3d26f7d4b855d1",
+  "component": "partial_42",
+  "additional_VLM_and_CPU_calls": 0,
+  "groups": 0,
+  "mismatches": 0,
+  "rows": [],
+  "skipped_because_not_promoted_on_development": true
+}

@@ -1,0 +1,25 @@
+{
+  "initial_full_suite": {
+    "passed": 264,
+    "failed": 1,
+    "reason": "All full_dataset_original paths absent in isolated worktree; all 21050 original files exist"
+  },
+  "environment_repair": "Local ignored junction to existing dataset, no pixel/label/code modification",
+  "final_suites": [
+    {
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "1761",
+      "time": "35.984"
+    }
+  ],
+  "subtests_passed": 1496,
+  "report_sha256": "04ae34659f284584cd01a83c7cb6ae4c9dc86f9b9315b3023a81fd90868002ff",
+  "data_uploaded": false,
+  "actual_human_annotations": 0,
+  "physical_camera_validation": false,
+  "first_junction_attempt_denied_by_file_permissions": true,
+  "repair_recheck_passed": true,
+  "Windows_PowerShell_5_1_scripts_syntax_passed": 5
+}

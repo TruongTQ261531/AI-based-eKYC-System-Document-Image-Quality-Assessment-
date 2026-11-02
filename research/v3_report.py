@@ -118,6 +118,35 @@ def report():
         'Chỉ bật khi F1 development tăng và số key ngoài nhãn không tăng; không dùng test để đổi quyết định. '
         f"Đã phát lại {fusion_audit['rows_replayed']} phép ghép; thêm {fusion_audit['fresh_calls']} lần gọi ảnh mới cho hybrid. "
         'Nếu development không có lợi ích, web giữ VLM đơn và không chạy thêm hybrid chỉ để tăng số lần kiểm thử.','']
+    text+=['','## Chẩn đoán riêng các trường có thêm nguồn hỗ trợ','',
+        'Đây là phân tích mô tả bổ sung, không dùng chọn model hoặc thay kết quả tổng thể. '
+        'Chỉ xét key vắng trong hợp đồng thân thẻ nhưng có nguồn khai báo còn hiện trong V3. '
+        'Các key/ảnh cùng giấy tờ không phải các mẫu độc lập; không coi số trường là số người hoặc ID.','',
+        '| Model | Trường bổ sung | Đúng | Sai giá trị | Bỏ sót | Recall tập con |',
+        '|---|---:|---:|---:|---:|---:|']
+    for key,d in diagnostics['models'].items():
+        text.append(f"| {names[key]} | {d['newly_supported_reference_fields']} | {d['formerly_outside_now_correct']} | {d['newly_supported_wrong_values']} | {d['newly_supported_but_omitted']} | {d['newly_supported_recall']:.4f} |")
+    text+=['','Can thiệp target chỉ thay đổi 22/640 slot train của nhánh partial; '
+        'phải xem cả hiệu quả ở trường bổ sung lẫn đánh đổi trên các trường khác. '
+        'Kết quả tốt ở tập con không tự chứng minh model tốt hơn trên toàn bộ test.']
+    text+=['','## Ngân sách sinh văn bản','',
+        'Tất cả model VLM dùng cùng giới hạn 384 token mới. Cờ chạm giới hạn cho biết đã dùng hết ngân sách; '
+        'không tự chứng minh model bịa thông tin hoặc biết nguyên nhân output sai. Không đổi giới hạn sau khi mở test.','',
+        '| Model | Lượt test | Chạm giới hạn | Trung vị token sinh |','|---|---:|---:|---:|']
+    for key,d in diagnostics['models'].items():
+        text.append(f"| {names[key]} | {d['test_generations']} | {d['token_limit_hits']} | {d['median_generated_tokens']} |")
+    text+=['','## Tương tác giữa hợp đồng nhãn và mức cải thiện được đo','',
+        'Phân tích thăm dò bổ sung trên đúng output đã có: so chênh lệch F1 partial − control '
+        'dưới hai hợp đồng. Giá trị thay đổi = chênh lệch theo nguồn − chênh lệch theo thân thẻ. '
+        'Không dùng kết quả này để chọn model hay thay giả thuyết chính. Bootstrap ghép cặp 10000 lần '
+        'theo 48 cụm giấy tờ, phân tầng nguồn, seed 20261103; CI thăm dò chưa chỉnh đa so sánh. '
+        'Đây là khác biệt hợp đồng tác vụ, không phải chứng minh mọi bộ nhãn trước đó sai.','',
+        '| Seed | Gain theo thân thẻ | Gain theo nguồn | Thay đổi gain | CI95% thay đổi |',
+        '|---|---:|---:|---:|---:|']
+    for d in diagnostics['training_gain_contract_interactions']['rows']:
+        text.append(f"| {d['seed']} | {d['body_contract_gain']:+.4f} | {d['source_contract_gain']:+.4f} | {d['gain_change']:+.4f} | [{d['ci95_low']:+.4f}, {d['ci95_high']:+.4f}] |")
+    from research.v2_interruptions import appendix
+    text+=appendix(rows,names,OUT)
     path=ROOT/'research/V3_RESULTS_VI.md';path.write_text('\n'.join(text),encoding='utf-8',newline='\n')
     from research.v3_artifacts import make
     make()

@@ -1,6 +1,4 @@
-# V3 preparation in progress
+# V3 completed
 
-R2 train/development continues. The R2 test finisher was deliberately stopped
-before publication/scoring to register a source-aware reference-policy study.
-No R2/V3 test result exists yet. V3 uses identical R2 pixels and two additional
-matched-budget LoRA runs; see V3_PROTOCOL.md. Keep all R2 artifacts unchanged.
+Joint locks published before test, eight VLM comparators and six CPU configurations scored, raw outputs replayed.
+See V3_RESULTS_VI.md. Actual-user camera and independent human legibility evaluation remain unperformed.

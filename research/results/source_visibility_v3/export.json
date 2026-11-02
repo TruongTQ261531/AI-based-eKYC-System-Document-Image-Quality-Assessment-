@@ -1,0 +1,18 @@
+{
+  "directory": "research/cache/source_visibility_v3/export/partial_42",
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "selected_model": "partial_42",
+  "profile": "rect2",
+  "adapter_sha256": {
+    "adapter_config.json": "9a0bad222ec08c150cd75f08f2afbbb370d97bf2b6900492787496b5ee7599c7",
+    "adapter_model.safetensors": "98835d5922f968ce29681e2ec9a2b85f26e87d7ea9538fbfb701cc37cc8a6b27"
+  },
+  "base_model": "5CD-AI/Vintern-1B-v3_5",
+  "base_revision": "b98f263eab246eb5269ade64edbdca8a887dc44d",
+  "base_weights_sha256": "296a16a6bf28e6d3f0fb9298deba70b3cfa1d7519f4aa326e2f862bf2e63be05",
+  "full_Vintern_vision_projector_and_tokenizer_required": true,
+  "apply_adapter_to": "model.language_model",
+  "merged_full_model": false,
+  "weights_uploaded": false,
+  "private_labels_copied": false
+}

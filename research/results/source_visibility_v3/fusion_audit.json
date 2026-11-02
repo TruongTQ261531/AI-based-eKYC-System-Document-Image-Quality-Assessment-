@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "signature": "1ef0d5d9225cb8aec0427c28f961bdc1966b5d7df66534c89f3d26f7d4b855d1",
+  "rows_replayed": 1728,
+  "fresh_calls": 0,
+  "primary_training_policy_hypothesis_unchanged": true,
+  "human_annotations_used": false
+}
