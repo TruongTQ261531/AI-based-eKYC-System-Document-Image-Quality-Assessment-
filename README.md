@@ -9,7 +9,8 @@ và [hướng dẫn chạy nghiên cứu](research/V3_RUNBOOK.md).
 
 Các nhánh `mentor/ekyc-v3.2.0`, `research/document-recovery-core-b` và
 `research/vlm-v2-evidence` được giữ để đối chiếu lịch sử. Kết quả V1/V4 được
-bảo toàn; weights và dữ liệu ảnh vẫn ở máy, không đưa lên Git.
+bảo toàn; weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
+Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Trên máy hiện tại, chạy OCR nghiên cứu bằng:
 
