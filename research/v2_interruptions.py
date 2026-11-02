@@ -45,6 +45,16 @@ def replay():
     from research.v2_runtime import VLM
     from research.v2_study import adapter_for
     incident=read(OUT/'execution_interruptions.json');seal0=read(OUT/'test_lock.json');samples={r['uid']:r for r in load('test')}
+    completed=OUT/'interrupted_generation_replay.json'
+    if completed.exists():
+        previous=read(completed)
+        if previous.get('signature')!=signature() or previous['incident_sha256']!=sha(OUT/'execution_interruptions.json') or previous['mismatches']:
+            raise ValueError('Existing incident replay differs; preserve it for review')
+        for row in previous['rows']:
+            raw=read(CACHE/'interruption_replay'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json'))
+            if hashlib.sha256(raw['_private_text'].encode()).hexdigest()!=row['prediction_sha256'] or row['model_sha256']!=seal0['models'][row['model']]['sha256']:
+                raise ValueError('Existing incident replay bytes/model differ')
+        print('INTERRUPTED_GENERATION_ALREADY_VERIFIED_NO_NEW_CALLS',flush=True);return
     results=[]
     with process_lock():
         for entry in incident['affected_generations']:
@@ -55,14 +65,14 @@ def replay():
             model=VLM(42,seal0['profile']);model.offload_vision()
             if adapter:model.model.language_model=PeftModel.from_pretrained(model.model.language_model,str(adapter),is_trainable=False)
             prediction=model.infer(row);new_digest=hashlib.sha256(prediction['text'].encode()).hexdigest()
-            record=dict(model=key,uid=row['uid'],input_sha256=row['input_sha256'],model_sha256=digest,
+            record=dict(signature=signature(),model=key,uid=row['uid'],input_sha256=row['input_sha256'],model_sha256=digest,
                 original_prediction_sha256=original['prediction_sha256'],prediction_sha256=new_digest,
                 identical=new_digest==original['prediction_sha256'],wall_seconds=prediction['wall_seconds'],
                 visual_features_cached=True,_private_text=prediction['text'])
             save(CACHE/'interruption_replay'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json'),record)
             results.append({k:v for k,v in record.items() if not k.startswith('_private')})
             del model
-    save(OUT/'interrupted_generation_replay.json',dict(post_hoc_availability_check=True,primary_accuracy_rows_unchanged=True,
+    save(OUT/'interrupted_generation_replay.json',dict(signature=signature(),post_hoc_availability_check=True,primary_accuracy_rows_unchanged=True,
         additional_cached_feature_generation_calls=len(results),new_unique_test_inputs=0,
         mismatches=sum(not r['identical'] for r in results),incident_sha256=sha(OUT/'execution_interruptions.json'),rows=results))
     if any(not r['identical'] for r in results):raise ValueError('Interrupted generation differs on replay; preserve both for review')

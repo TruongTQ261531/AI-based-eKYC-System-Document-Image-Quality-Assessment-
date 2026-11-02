@@ -85,4 +85,4 @@ Windows ghi nhận sleep do pin lúc 09:25:46 UTC và thức lại 14:45:48 UTC 
 | rapid_v4 + ghép nhãn/vị trí | 144 | 0 | 2.25/5.65 | 2.25/5.65 |
 | rapid_latin_v5 + ghép nhãn/vị trí | 144 | 0 | 1.78/4.24 | 1.78/4.24 |
 
-Kiểm tra gọi lại riêng lượt bị gián đoạn còn chờ; chưa được coi là đã qua.
+Kiểm tra bổ sung: gọi lại 1 lượt bị gián đoạn với cùng model/ảnh/profile, từ feature cache; số output khác hash: 0. Đây là kiểm tra sau sự cố, tách riêng với 16 phép lặp ảnh mới và không thay kết quả gốc.

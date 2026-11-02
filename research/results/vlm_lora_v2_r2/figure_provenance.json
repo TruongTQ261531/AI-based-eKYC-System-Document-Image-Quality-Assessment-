@@ -8,7 +8,7 @@
     },
     {
       "path": "research/results/vlm_lora_v2_r2/figures/source_f1.svg",
-      "sha256": "3f28dc6e6fb5e7fa1d6bbb9e50bd0108b744ec8b6f6287e825ada55e6847f578"
+      "sha256": "33e38b5eb97f5ab52a271bb6ebc3f3634b66a1b756c8001c561fd19279d1f8a8"
     },
     {
       "path": "research/results/vlm_lora_v2_r2/figures/training_curves.png",
@@ -16,7 +16,7 @@
     },
     {
       "path": "research/results/vlm_lora_v2_r2/figures/training_curves.svg",
-      "sha256": "d277b349f2b3640162fad8fe461da46f37f4766615642920958686b2947b16a9"
+      "sha256": "de39276d174e7467abf74706f36b8c14583c8c01456363ca53689b5b43ff8dbc"
     }
   ]
 }

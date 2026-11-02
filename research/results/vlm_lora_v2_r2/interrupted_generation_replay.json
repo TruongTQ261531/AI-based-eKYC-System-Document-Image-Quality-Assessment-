@@ -1,0 +1,23 @@
+{
+  "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "post_hoc_availability_check": true,
+  "primary_accuracy_rows_unchanged": true,
+  "additional_cached_feature_generation_calls": 1,
+  "new_unique_test_inputs": 0,
+  "mismatches": 0,
+  "incident_sha256": "f178b072887d7d903e56bf15b47fd68cfa2493e95a72e0363e1071ec6ff6adb3",
+  "rows": [
+    {
+      "signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+      "model": "v1",
+      "uid": "vlm_v2/test/000/evaluation/0",
+      "input_sha256": "f9ba06f56f4692d9ad9f39a5bfe2e2d28c17fdb7544f6bddedb7475043d3db79",
+      "model_sha256": "4043a81c444c5efd6f602bc15ce85c479b3a0e6c9f1659461db2dae93bf5320b",
+      "original_prediction_sha256": "9b4a5882b3ddd8db1f58807e8e93f4291a453b076a8c6cbfc3b2873f204ee11e",
+      "prediction_sha256": "9b4a5882b3ddd8db1f58807e8e93f4291a453b076a8c6cbfc3b2873f204ee11e",
+      "identical": true,
+      "wall_seconds": 10.978670400101691,
+      "visual_features_cached": true
+    }
+  ]
+}

@@ -2,6 +2,15 @@
 import numpy as np
 from research.v2_common import *
 
+def save_svg(fig, path):
+    """Keep generated XML stable across Windows checkouts and repeated renders."""
+    import matplotlib
+    with matplotlib.rc_context({'svg.hashsalt': 'ekyc-audited-numeric-v1'}):
+        fig.savefig(path, metadata={'Date': None})
+    text = path.read_text(encoding='utf-8')
+    path.write_text('\n'.join(line.rstrip() for line in text.splitlines())+'\n',
+                    encoding='utf-8', newline='\n')
+
 def make():
     import matplotlib
     matplotlib.use('Agg')
@@ -21,7 +30,7 @@ def make():
         ax.bar_label(bars,labels=[f'{v:.3f}' for v in values],padding=3,fontsize=8)
     ax.set(yticks=y,yticklabels=labels,xlim=(0,1.13),xlabel='Key-value micro F1 (17 optional keys)',title='V2 R2: separate synthetic and photographed-source performance')
     ax.invert_yaxis();ax.set_xticks(np.arange(0,1.01,.2));ax.grid(axis='x',alpha=.15);ax.set_axisbelow(True);ax.legend(loc='lower right',fontsize=8)
-    fig.savefig(dest/'source_f1.png');fig.savefig(dest/'source_f1.svg');plt.close(fig)
+    fig.savefig(dest/'source_f1.png');save_svg(fig,dest/'source_f1.svg');plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(10,3.8),layout='constrained')
     for seed0,ax in zip(CONFIG['seeds'],axes):
         for arm,color in [('control','#66758a'),('partial','#198882')]:
@@ -29,7 +38,7 @@ def make():
             smooth=np.convolve(loss,np.ones(16)/16,mode='valid')
             ax.plot(x[15:],smooth,color=color,label=arm)
         ax.set(title=f'Seed {seed0}',xlabel='Optimizer step',ylabel='Training loss (16-step mean)');ax.grid(alpha=.15);ax.legend()
-    fig.savefig(dest/'training_curves.png');fig.savefig(dest/'training_curves.svg');plt.close(fig)
+    fig.savefig(dest/'training_curves.png');save_svg(fig,dest/'training_curves.svg');plt.close(fig)
     save(OUT/'figure_provenance.json',dict(signature=signature(),source='Audited numeric test/train JSON only; no document images or personal text',
         files=[dict(path=p.relative_to(ROOT).as_posix(),sha256=sha(p)) for p in sorted(dest.glob('*'))]))
     print('V2_FIGURES_READY',flush=True)
