@@ -1,9 +1,27 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
-Nhánh này chứa phần **nghiên cứu riêng**, không thay runtime mentor. Xem
-[báo cáo kết quả thực nghiệm](research/REPORT_VI.md) và
-[trạng thái để tiếp tục công việc](research/STATUS.md).
-Bản mentor được giữ tại nhánh `mentor/ekyc-v3.2.0`.
+Repository chứa luồng eKYC mentor và các nghiên cứu OCR trong namespace riêng.
+Luồng camera → thông tin → kiểm tra cử động → đối chiếu vẫn chạy ở **8000**.
+Web OCR nghiên cứu hiện tại chạy ở **8003**, có chế độ thử được xác nhận rõ và
+không phê duyệt danh tính. Xem [rà soát tích hợp branch](BRANCH_INTEGRATION_REVIEW.md),
+[kết quả đã audit](research/V3_RESULTS_VI.md), [bản thảo tiếng Anh](research/V3_PAPER_DRAFT.md)
+và [hướng dẫn chạy nghiên cứu](research/V3_RUNBOOK.md).
+
+Các nhánh `mentor/ekyc-v3.2.0`, `research/document-recovery-core-b` và
+`research/vlm-v2-evidence` được giữ để đối chiếu lịch sử. Kết quả V1/V4 được
+bảo toàn; weights và dữ liệu ảnh vẫn ở máy, không đưa lên Git.
+
+Trên máy hiện tại, chạy OCR nghiên cứu bằng:
+
+```powershell
+.\start-source-v3.ps1
+```
+
+Nếu server đúng app đã chạy, launcher chỉ báo URL. V2 là chế độ nghiên cứu
+trước; để mở giao diện riêng có thể dùng `.\start-vlm-v2.ps1 -Port 8004`.
+Các benchmark GPU được đo tuần tự, không phải phép đo nhiều model chạy đồng thời.
+F1 test V3 đạt 0,3947/0,4063 theo hai seed; CI của cải tiến so với partial cùng
+seed vẫn chứa 0. Đây là kết quả pilot minh bạch, chưa xác nhận đóng góp đủ CORE B.
 
 API **3.2.0** cải thiện chọn toàn vùng thẻ/góc bo tròn và đọc thông tin theo nội dung từng giấy tờ. Form chỉ hiện các mục đã đọc, có cả mã/lớp học sinh hoặc hạng bằng lái, cùng phần văn bản chưa phân loại. [Cách sửa và kiểm thử](docs/document_recovery_and_fields.md). Giữ FastAPI, `.venv`, 4 động tác/180 giây và PAD MiniFASNet; hệ thống không tự phê duyệt eKYC.
 
