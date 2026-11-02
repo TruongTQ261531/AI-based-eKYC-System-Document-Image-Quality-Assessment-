@@ -1,0 +1,82 @@
+{
+  "actual_browser_tests": true,
+  "mocked_inference": false,
+  "completed_model_calls": 4,
+  "unique_fixtures": 4,
+  "cases": [
+    {
+      "case": "training_full",
+      "field_count": 5,
+      "keys": [
+        "course",
+        "dob",
+        "full_name",
+        "school",
+        "student_id"
+      ],
+      "sources": [
+        "model",
+        "model",
+        "model",
+        "model",
+        "model"
+      ],
+      "fields_sha256": "fde7e263a9c4d0b4b499cb81a015e5388b71d5caf8aef906abea2cd253c7c50a",
+      "timing": "partial_42 · rect2 · Đọc ảnh 12.87s · Tổng xử lý 29.14s · 1200 × 800 pixel"
+    },
+    {
+      "case": "training_field_clip",
+      "field_count": 1,
+      "keys": [
+        "school"
+      ],
+      "sources": [
+        "model"
+      ],
+      "fields_sha256": "038b9d0774d7c60458f019a854cf6ca4e3b3c6da91d74e0e7f3e3716a1aa59df",
+      "timing": "partial_42 · rect2 · Đọc ảnh 3.14s · Tổng xử lý 3.17s · 1200 × 410 pixel"
+    },
+    {
+      "case": "training_value_mask",
+      "field_count": 1,
+      "keys": [
+        "school"
+      ],
+      "sources": [
+        "model"
+      ],
+      "fields_sha256": "038b9d0774d7c60458f019a854cf6ca4e3b3c6da91d74e0e7f3e3716a1aa59df",
+      "timing": "partial_42 · rect2 · Đọc ảnh 2.91s · Tổng xử lý 2.93s · 1200 × 800 pixel"
+    },
+    {
+      "case": "new_fictional_fixture_not_trained",
+      "field_count": 5,
+      "keys": [
+        "course",
+        "dob",
+        "full_name",
+        "school",
+        "student_id"
+      ],
+      "sources": [
+        "model",
+        "model",
+        "model",
+        "model",
+        "model"
+      ],
+      "fields_sha256": "f88401e9bfd3cae32a018241d4ba07691dc2655f3c8e03714c054da8eac81647",
+      "timing": "partial_42 · rect2 · Đọc ảnh 11.69s · Tổng xử lý 11.72s · 1280 × 800 pixel"
+    }
+  ],
+  "manual_edit_provenance_verified": true,
+  "manual_addition_provenance_verified": true,
+  "clear_removed_photo_and_fields": true,
+  "new_fixture_used_in_training": false,
+  "fixture_checks_are_not_benchmark_accuracy": true,
+  "physical_camera_validation_performed": false,
+  "human_annotations_received": 0,
+  "identity_approval_performed": false,
+  "private_camera_data_saved": false,
+  "screenshots_remain_local": true
+}

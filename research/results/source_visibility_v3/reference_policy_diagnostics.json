@@ -60,8 +60,8 @@
       "formerly_outside_now_correct": 9,
       "newly_supported_but_omitted": 15,
       "transitions": {
-        "outside_contract -> outside_contract": 1602,
         "correct -> correct": 240,
+        "outside_contract -> outside_contract": 1602,
         "wrong_value -> wrong_value": 315,
         "omitted -> omitted": 37,
         "outside_contract -> wrong_value": 59,
@@ -221,8 +221,8 @@
         "wrong_value -> wrong_value": 182,
         "not_requested -> omitted": 20,
         "outside_contract -> wrong_value": 56,
-        "outside_contract -> correct": 7,
-        "wrong_value -> correct": 5
+        "wrong_value -> correct": 5,
+        "outside_contract -> correct": 7
       }
     },
     "source_31415": {

@@ -1,0 +1,21 @@
+{
+  "suites": [
+    {
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "1765",
+      "time": "28.792"
+    }
+  ],
+  "python_checks": 269,
+  "python_passed": 269,
+  "subtests_passed": 1496,
+  "frontend_behavior_checks": 33,
+  "frontend_passed": 33,
+  "real_web_model_calls": 4,
+  "real_web_is_separate_from_mock_tests": true,
+  "physical_camera_validation": false,
+  "human_annotations": 0,
+  "private_junit_sha256": "96ea9efe596f3957e5d58a4f008f2a280010bb5bcd250d0ec8efeb974feddfd0"
+}

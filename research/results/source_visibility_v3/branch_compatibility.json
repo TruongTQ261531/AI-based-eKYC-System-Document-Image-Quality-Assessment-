@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-11-03",
+  "reviewed_local_refs_before_final_publication": {
+    "main": "11ddb8f0cb57e0e12d746aa67869a211f75c0d30",
+    "mentor/ekyc-v3.2.0": "4110f22b94699d30950cd1c0b23532ee9ccaaa59",
+    "research/document-recovery-core-b": "c326328b8a36d0836650841c96de2751189158f1",
+    "research/vlm-v2-evidence": "3a02488df5599e63ee957f8a1a66fa0a6fe0e7fe"
+  },
+  "ancestry": [
+    {
+      "older": "main",
+      "newer": "mentor/ekyc-v3.2.0",
+      "is_ancestor": true
+    },
+    {
+      "older": "mentor/ekyc-v3.2.0",
+      "newer": "research/document-recovery-core-b",
+      "is_ancestor": true
+    },
+    {
+      "older": "research/document-recovery-core-b",
+      "newer": "research/vlm-v2-evidence",
+      "is_ancestor": true
+    }
+  ],
+  "mentor_runtime_diff_paths": [],
+  "frozen_V1_files": 101,
+  "frozen_V4_files": 63,
+  "R2_signature": "86fc93b8fda39238e741621de9001a0add7c20eda4f9551fb899572897a7978d",
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "fusion_signature": "1ef0d5d9225cb8aec0427c28f961bdc1966b5d7df66534c89f3d26f7d4b855d1",
+  "generated_svg_XML_valid": 3,
+  "generated_svg_second_render_identical": true,
+  "actual_branch_conflicts_detected": [],
+  "integration_method": "fast-forward only; recheck remote main and ancestors before update",
+  "research_modes_have_separate_apps": true,
+  "research_output_is_not_a_Module5_session": true,
+  "existing_virtualenv_reused": true,
+  "global_dependencies_changed": false,
+  "real_user_camera_validation": false,
+  "CORE_B_acceptance_claimed": false,
+  "keep_all_branch_refs": true,
+  "force_push_allowed": false
+}

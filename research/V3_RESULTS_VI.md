@@ -72,10 +72,10 @@ Các dòng GPU dùng cache chưa phải độ trễ camera đầu cuối. Phép 
 
 | So sánh | ΔF1 | CI95% theo ID |
 |---|---:|---:|
-| source_42 − partial_42 | +0.0160 | [-0.0000, +0.0322] |
-| source_31415 − partial_31415 | +0.0085 | [-0.0168, +0.0339] |
-| source_42 − control_42 | +0.0303 | [+0.0029, +0.0589] |
-| source_42 − v1 | +0.0534 | [+0.0125, +0.0985] |
+| source_42 − partial_42 | +0.0160 | [-0.000010, +0.032228] |
+| source_31415 − partial_31415 | +0.0085 | [-0.016845, +0.033900] |
+| source_42 − control_42 | +0.0303 | [+0.002887, +0.058913] |
+| source_42 − v1 | +0.0534 | [+0.012476, +0.098482] |
 
 Bootstrap10000 lần theo48 cụm ID, phân tầng24+24 nguồn; hai seed được báo riêng. Đây không phải CI bao phủ mọi biến động training hay camera ngoài mẫu.
 
@@ -170,8 +170,27 @@ Phân tích thăm dò bổ sung trên đúng output đã có: so chênh lệch F
 
 | Seed | Gain theo thân thẻ | Gain theo nguồn | Thay đổi gain | CI95% thay đổi |
 |---|---:|---:|---:|---:|
-| 42 | +0.0212 | +0.0142 | -0.0069 | [-0.0145, -0.0003] |
-| 31415 | +0.0291 | +0.0308 | +0.0017 | [-0.0055, +0.0102] |
+| 42 | +0.0212 | +0.0142 | -0.0069 | [-0.014497, -0.000292] |
+| 31415 | +0.0291 | +0.0308 | +0.0017 | [-0.005499, +0.010156] |
+
+Hai pipeline CPU body-only đạt F1=0 ở tập con ảnh chụp. Đây là phép đo cả OCR và bộ ghép nhãn có alias tiếng Anh/Việt hạn chế, không phải độ chính xác nhận chữ độc lập. Không dùng kết quả này để tuyên bố VLM vượt mọi OCR hiện đại hoặc bộ trích xuất chuyên cho từng ngôn ngữ/giấy tờ.
+
+## Kiểm tra hậu nghiệm vị trí nhãn trong pipeline CPU
+
+Thiết kế sau khi đã thấy kết quả test gốc, không phải test xác nhận độc lập. Hai cách chuẩn hóa tiền tố/song ngữ dùng cùng alias và ghép hình học, mỗi cách có/không fallback MRZ, cho hai reader. Tái dùng output OCR đã có, không phát sinh lượt OCR hay VLM mới. Giữ đủ tám cấu hình và kết quả gốc. Thời gian chỉ là tổng timer OCR cũ với timer parsing mới; không phải đo đầu cuối mới.
+
+| Cấu hình bổ sung | F1 dev | F1 test | F1 test ảnh chụp | Key ngoài nhãn |
+|---|---:|---:|---:|---:|
+| rapid_v4/search/body | 0.2537 | 0.1990 | 0.0122 | 1 |
+| rapid_v4/search/mrz_checks | 0.3125 | 0.2874 | 0.1682 | 1 |
+| rapid_v4/bilingual/body | 0.2537 | 0.2039 | 0.0203 | 1 |
+| rapid_v4/bilingual/mrz_checks | 0.3125 | 0.2921 | 0.1757 | 1 |
+| rapid_latin_v5/search/body | 0.2537 | 0.2047 | 0.0313 | 5 |
+| rapid_latin_v5/search/mrz_checks | 0.2537 | 0.2373 | 0.0875 | 5 |
+| rapid_latin_v5/bilingual/body | 0.2537 | 0.2047 | 0.0313 | 5 |
+| rapid_latin_v5/bilingual/mrz_checks | 0.2537 | 0.2373 | 0.0875 | 5 |
+
+Chọn trong phần bổ sung bằng dev: rapid_v4/search/mrz_checks. Đã phát lại 1728 hàng chấm; số suy luận neural thêm: 0. Đây là chẩn đoán độ nhạy của một bộ ghép nhãn đơn giản, không phải baseline SOTA hoặc căn cứ đổi model web. Benchmark và cổng triển khai chính không thay đổi.
 
 ## Gián đoạn nguồn điện và độ nhạy thời gian
 
@@ -194,4 +213,4 @@ Windows ghi nhận sleep do pin lúc 09:25:46 UTC và thức lại 14:45:48 UTC 
 | rapid_v4/mrz_checks | 144 | 0 | 2.14/5.45 | 2.14/5.45 |
 | rapid_v4/mrz_format | 144 | 0 | 2.14/5.45 | 2.14/5.45 |
 
-Kiểm tra gọi lại riêng lượt bị gián đoạn còn chờ; chưa được coi là đã qua.
+Kiểm tra bổ sung: gọi lại 1 lượt bị gián đoạn với cùng model/ảnh/profile, từ feature cache; số output khác hash: 0. Đây là kiểm tra sau sự cố, tách riêng với 16 phép lặp ảnh mới và không thay kết quả gốc.

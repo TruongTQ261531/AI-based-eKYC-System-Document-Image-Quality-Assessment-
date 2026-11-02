@@ -1,0 +1,9 @@
+{
+  "signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "paper_sha256": "ecf15a837fb5fcf9e5636b3a73d3e32184c9a3e15e5653600d4d84111bd093fd",
+  "audit_sha256": "3002851eb5da0ac9cb697d7a23c767a60cea9ce51693cbf417f7e63ed24804a4",
+  "intervals_sha256": "05dec215d3bca4a09b7190a85791c5fc77ec5af55194929522d9dfb7df19e987",
+  "acceptance_claimed": false,
+  "human_annotations_available": false,
+  "working_draft": true
+}

@@ -67,7 +67,7 @@ def report():
         'Output rỗng/JSON lỗi chỉ là proxy, không phải tỷ lệ khách hàng chụp lại được quan sát, cũng không phải quyết định eKYC.']
     text+=['','## So sánh đúng cặp và khoảng tin cậy','',
         '| So sánh | ΔF1 | CI95% theo ID |','|---|---:|---:|']
-    for p in ci['comparisons']:text.append(f"| {p['a']} − {p['b']} | {p['delta']:+.4f} | [{p['ci95_low']:+.4f}, {p['ci95_high']:+.4f}] |")
+    for p in ci['comparisons']:text.append(f"| {p['a']} − {p['b']} | {p['delta']:+.4f} | [{p['ci95_low']:+.6f}, {p['ci95_high']:+.6f}] |")
     text+=['','Bootstrap10000 lần theo48 cụm ID, phân tầng24+24 nguồn; hai seed được báo riêng. '
         'Đây không phải CI bao phủ mọi biến động training hay camera ngoài mẫu.','',
         '## Phân tích mô tả ảnh hưởng của hợp đồng nhãn','',
@@ -144,7 +144,29 @@ def report():
         '| Seed | Gain theo thân thẻ | Gain theo nguồn | Thay đổi gain | CI95% thay đổi |',
         '|---|---:|---:|---:|---:|']
     for d in diagnostics['training_gain_contract_interactions']['rows']:
-        text.append(f"| {d['seed']} | {d['body_contract_gain']:+.4f} | {d['source_contract_gain']:+.4f} | {d['gain_change']:+.4f} | [{d['ci95_low']:+.4f}, {d['ci95_high']:+.4f}] |")
+        text.append(f"| {d['seed']} | {d['body_contract_gain']:+.4f} | {d['source_contract_gain']:+.4f} | {d['gain_change']:+.4f} | [{d['ci95_low']:+.6f}, {d['ci95_high']:+.6f}] |")
+    text+=['','Hai pipeline CPU body-only đạt F1=0 ở tập con ảnh chụp. Đây là phép đo cả OCR '
+        'và bộ ghép nhãn có alias tiếng Anh/Việt hạn chế, không phải độ chính xác nhận chữ độc lập. '
+        'Không dùng kết quả này để tuyên bố VLM vượt mọi OCR hiện đại hoặc bộ trích xuất chuyên cho từng ngôn ngữ/giấy tờ.']
+    if (OUT/'cpu_label_supplement_test.json').exists():
+        extra=read(OUT/'cpu_label_supplement_test.json');dev_extra=read(OUT/'cpu_label_supplement_development.json')
+        extra_audit=read(OUT/'cpu_label_supplement_audit.json');choice_extra=read(OUT/'cpu_label_supplement_choice.json')
+        from research.v3_cpu_supplement import supplement_signature
+        if extra_audit['status']!='passed' or extra_audit['signature']!=supplement_signature():raise ValueError('CPU label supplement audit required')
+        text+=['','## Kiểm tra hậu nghiệm vị trí nhãn trong pipeline CPU','',
+            'Thiết kế sau khi đã thấy kết quả test gốc, không phải test xác nhận độc lập. Hai cách chuẩn hóa '
+            'tiền tố/song ngữ dùng cùng alias và ghép hình học, mỗi cách có/không fallback MRZ, cho hai reader. '
+            'Tái dùng output OCR đã có, không phát sinh lượt OCR hay VLM mới. Giữ đủ tám cấu hình và kết quả gốc. '
+            'Thời gian chỉ là tổng timer OCR cũ với timer parsing mới; không phải đo đầu cuối mới.','',
+            '| Cấu hình bổ sung | F1 dev | F1 test | F1 test ảnh chụp | Key ngoài nhãn |',
+            '|---|---:|---:|---:|---:|']
+        for key,value in extra['models'].items():
+            s=value['summary'];photo=summary([r for r in value['rows'] if r['source']=='midv2020'])
+            text.append(f"| {key} | {dev_extra['models'][key]['summary']['f1']:.4f} | {s['f1']:.4f} | {photo['f1']:.4f} | {s['unsupported_nonempty']} |")
+        text+=['',f"Chọn trong phần bổ sung bằng dev: {choice_extra['selected']}. "
+            f"Đã phát lại {extra_audit['derived_rows_replayed']} hàng chấm; số suy luận neural thêm: 0. "
+            'Đây là chẩn đoán độ nhạy của một bộ ghép nhãn đơn giản, không phải baseline SOTA hoặc căn cứ đổi model web. '
+            'Benchmark và cổng triển khai chính không thay đổi.']
     from research.v2_interruptions import appendix
     text+=appendix(rows,names,OUT)
     path=ROOT/'research/V3_RESULTS_VI.md';path.write_text('\n'.join(text),encoding='utf-8',newline='\n')

@@ -1,0 +1,13 @@
+{
+  "primary_R2_audit": "passed",
+  "primary_source_audit": "passed",
+  "fusion_audit": "passed",
+  "CPU_label_supplement_audit": "passed",
+  "interruption_generation_replay_mismatches": 0,
+  "real_browser_calls": 4,
+  "physical_camera_validation": false,
+  "human_annotations": 0,
+  "new_dependencies": 0,
+  "model_weights_uploaded": false,
+  "CORE_B_acceptance_claimed": false
+}

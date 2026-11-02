@@ -2,6 +2,7 @@
 import shutil
 import numpy as np
 from research.v3_common import *
+from research.v2_figures import save_svg
 
 def make():
     if read(OUT/'audit.json')['status']!='passed':raise ValueError('Audit required')
@@ -40,7 +41,7 @@ def make():
         ax.bar_label(bars,labels=[f'{v:.3f}' for v in values],padding=3,fontsize=8)
     ax.set(yticks=y,yticklabels=keys,xlim=(0,1.1),xlabel='Micro F1 under source-aware references',title='Matched pixels; body-target vs source-target supervision')
     ax.invert_yaxis();ax.grid(axis='x',alpha=.15);ax.set_axisbelow(True);ax.legend(loc='lower right',fontsize=8)
-    fig.savefig(dest/'source_f1.png',dpi=160);fig.savefig(dest/'source_f1.svg',metadata={'Date':None});plt.close(fig)
+    fig.savefig(dest/'source_f1.png',dpi=160);save_svg(fig,dest/'source_f1.svg');plt.close(fig)
     save(OUT/'figure_provenance.json',dict(signature=signature(),source='Audited numeric result files; no document images',
         files=[dict(path=p.relative_to(ROOT).as_posix(),sha256=sha(p)) for p in sorted(dest.glob('*'))]))
 

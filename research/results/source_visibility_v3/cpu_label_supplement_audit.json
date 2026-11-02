@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "signature": "691f9df39101426eaf6a9cc01a7848c8d0a32dd8ce34658b5b07db2df70d227b",
+  "derived_rows_replayed": 1728,
+  "new_neural_calls": 0,
+  "original_primary_results_unchanged": true,
+  "post_hoc": true
+}

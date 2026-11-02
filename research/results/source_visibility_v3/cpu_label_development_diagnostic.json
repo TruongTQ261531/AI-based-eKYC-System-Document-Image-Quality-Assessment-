@@ -1,0 +1,24 @@
+{
+  "role": "development",
+  "counts": {
+    "images": 48,
+    "boxes": 775,
+    "extracted_fields": 1,
+    "prefix_label_boxes": 3,
+    "embedded_only_label_boxes": 33
+  },
+  "embedded_alias_key_counts": {
+    "first_name": 8,
+    "dob": 5,
+    "gender": 3,
+    "authority": 3,
+    "issue_date": 2,
+    "id_number": 4,
+    "last_name": 1,
+    "nationality": 4,
+    "expiry_date": 3
+  },
+  "pattern_hits_are_not_verified_human_label_annotations": true,
+  "new_OCR_calls": 0,
+  "code_sha256": "5ffd6ba3e69b24a7c7bad1f80b7deea24d2e09a9b73d12c7eec61710ce5e976a"
+}

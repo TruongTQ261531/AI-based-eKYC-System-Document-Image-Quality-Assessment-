@@ -1,0 +1,15 @@
+{
+  "Windows_PowerShell_5_1_scripts_syntax_passed": 5,
+  "mentor_existing_service_reused": true,
+  "source_existing_service_reused": true,
+  "different_app_on_same_port_rejected": true,
+  "v2_custom_port_8004_app_identity_verified": true,
+  "temporary_probe_stopped": true,
+  "source_service_not_stopped": true,
+  "new_virtualenv_created": false,
+  "new_dependencies_installed": false,
+  "existing_venv_and_weights_linked_locally": true,
+  "original_workspace_runtime_text_files_compared": 46,
+  "normalized_runtime_text_differences": 0,
+  "line_endings_can_differ": true
+}

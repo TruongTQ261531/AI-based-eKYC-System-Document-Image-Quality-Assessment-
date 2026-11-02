@@ -11,7 +11,7 @@ def make():
     records=read(OUT/'test_comparison.json')['summaries'];cpu=read(OUT/'test_cpu.json')
     development=read(OUT/'test_lock.json');fusion=read(OUT/'fusion_lock.json')
     diagnostic=read(OUT/'reference_policy_diagnostics.json');fresh=read(OUT/'fresh_repeats.json')
-    def interval(p):return f"{p['delta']:+.4f} [{p['ci95_low']:+.4f}, {p['ci95_high']:+.4f}]"
+    def interval(p):return f"{p['delta']:+.4f} [{p['ci95_low']:+.6f}, {p['ci95_high']:+.6f}]"
     evidence=all(p['ci95_low']>0 for p in ci['comparisons'][:2])
     claim=('Both matched source-versus-body comparisons have positive identity-bootstrap lower bounds in this test sample.' if evidence else
            'The two-seed comparisons do not jointly establish a positive source-supervision effect; no general superiority claim is supported.')
@@ -108,7 +108,7 @@ def make():
     for p in ci['comparisons']:text.append(f"| {p['a']} minus {p['b']} | {interval(p)} |")
     text+=['','For the original body-reference R2 intervention, the independently retained paired results are:',
         '','| Partial minus complete, seed | Delta F1 [95% interval] |','|---|---:|']
-    for p in r2ci['comparisons'][:2]:text.append(f"| {p['a']} minus {p['b']} | {p['delta_f1']:+.4f} [{p['ci95_low']:+.4f}, {p['ci95_high']:+.4f}] |")
+    for p in r2ci['comparisons'][:2]:text.append(f"| {p['a']} minus {p['b']} | {p['delta_f1']:+.4f} [{p['ci95_low']:+.6f}, {p['ci95_high']:+.6f}] |")
     text+=['',claim,
         'The descriptive reference-policy transition matrix keeps each predicted string fixed and separately records '
         'formerly outside-contract answers that become supported and newly counted fields that remain omitted. '
@@ -174,7 +174,11 @@ def make():
         '| Seed | Body-reference gain | Source-reference gain | Gain change | Exploratory 95% interval |',
         '|---|---:|---:|---:|---:|']
     for d in diagnostic['training_gain_contract_interactions']['rows']:
-        text.append(f"| {d['seed']} | {d['body_contract_gain']:+.4f} | {d['source_contract_gain']:+.4f} | {d['gain_change']:+.4f} | [{d['ci95_low']:+.4f}, {d['ci95_high']:+.4f}] |")
+        text.append(f"| {d['seed']} | {d['body_contract_gain']:+.4f} | {d['source_contract_gain']:+.4f} | {d['gain_change']:+.4f} | [{d['ci95_low']:+.6f}, {d['ci95_high']:+.6f}] |")
+    text+=['','Both configured CPU body-only pipelines have zero photographed-subset KIE F1. '
+        'They measure OCR plus a limited English/Vietnamese printed-alias matcher, not standalone character '
+        'recognition accuracy. These outcomes do not establish superiority over all modern OCR or '
+        'language/document-specific information extractors.']
     text+=['']
     incident=R2OUT/'execution_interruptions.json'
     if incident.exists():
@@ -193,6 +197,25 @@ def make():
                      'This incident check is separate from pixel-level fresh repeats and never replaces the primary output.']
         else:text+=['The separate interrupted-case generation replay remains pending.']
         text+=['']
+    if (OUT/'cpu_label_supplement_test.json').exists():
+        extra=read(OUT/'cpu_label_supplement_test.json');extra_dev=read(OUT/'cpu_label_supplement_development.json')
+        extra_audit=read(OUT/'cpu_label_supplement_audit.json');extra_choice=read(OUT/'cpu_label_supplement_choice.json')
+        from research.v3_cpu_supplement import supplement_signature
+        if extra_audit['status']!='passed' or extra_audit['signature']!=supplement_signature():raise ValueError('Supplement audit required')
+        text+=['','## Post-hoc CPU label-position sensitivity','',
+            'The original test summaries were already observed before this diagnostic was designed. Two alias-prefix '
+            'normalization variants reuse the original aliases and spatial assignment, each with/without the existing '
+            'strict MRZ fallback, for both readers. No new neural calls are made. This is a simple-head sensitivity '
+            'diagnostic, not an independent confirmatory test or SOTA KIE baseline. Original primary results and '
+            'deployment selection are unchanged. Timers sum the existing OCR cost and new parsing cost rather '
+            'than measuring a fresh end-to-end request. All eight outcomes are retained.','',
+            '| Supplemental configuration | Development F1 | Test F1 | Outside-contract keys |',
+            '|---|---:|---:|---:|']
+        for key,value in extra['models'].items():
+            s=value['summary'];text.append(f"| {key} | {extra_dev['models'][key]['summary']['f1']:.4f} | {s['f1']:.4f} | {s['unsupported_nonempty']} |")
+        text+=['',f"The supplemental development choice is `{extra_choice['selected']}`. "
+            f"{extra_audit['derived_rows_replayed']} derived rows were replayed, with zero new neural calls. "
+            'The [supplement protocol](V3_CPU_LABEL_SUPPLEMENT.md) states the post-hoc boundary explicitly.','']
     path=ROOT/'research/V3_PAPER_DRAFT.md';path.write_text('\n'.join(text),encoding='utf-8',newline='\n')
     save(OUT/'manuscript_provenance.json',dict(signature=signature(),paper_sha256=sha(path),
         audit_sha256=sha(OUT/'audit.json'),intervals_sha256=sha(OUT/'paired_intervals.json'),
