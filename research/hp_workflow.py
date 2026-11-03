@@ -16,8 +16,10 @@ def state(stage,**items):
 def command(label,args,expected=None):
     if expected and expected.exists():return
     folder=CACHE/'logs';folder.mkdir(parents=True,exist_ok=True);path=folder/(label+'_'+str(time.time_ns())+'.log')
+    env=os.environ.copy()
+    env['PYTORCH_CUDA_ALLOC_CONF']='garbage_collection_threshold:0.6'
     with path.open('w',encoding='utf-8',newline='\n') as stream:
-        p=subprocess.Popen([sys.executable,*args],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT)
+        p=subprocess.Popen([sys.executable,*args],cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,env=env)
         state(label,child_pid=p.pid,log=path.relative_to(ROOT).as_posix())
         code=p.wait()
     if code:raise RuntimeError(label+' exited '+str(code)+'; '+path.relative_to(ROOT).as_posix())
@@ -52,6 +54,9 @@ def main():
         try:
             if read(OUT/'preflight.json')['signature']!=signature():raise ValueError('Prepared method changed')
             if read(OUT/'prepare_publication.json')['signature']!=signature():raise ValueError('Pretraining code was not published')
+            runtime=read(OUT/'runtime_amendment.json');published=read(OUT/'runtime_publication.json')
+            if runtime['signature']!=signature() or runtime['status']!='passed' or published['runtime_amendment_sha256']!=sha(OUT/'runtime_amendment.json'):
+                raise ValueError('Runtime policy must be verified and published before continuing')
             gpu=['-m','research.vlm_setup','run','--','-m','research.hp_study']
             for seed in (42,31415):
                 command('train_hard_'+str(seed),gpu+['train','--seed',str(seed)],OUT/f'train_hard_{seed}.json')

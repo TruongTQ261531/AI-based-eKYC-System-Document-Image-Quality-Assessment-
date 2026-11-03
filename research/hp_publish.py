@@ -16,6 +16,10 @@ def publish(stage):
     if stage=='seal':
         if any((CACHE/'predictions').glob('test_*/*.json')):raise ValueError('Cannot register test after inference')
         if read(OUT/'test_lock.json')['signature']!=sig:raise ValueError('Test contract differs')
+    if stage=='runtime':
+        record=read(OUT/'runtime_amendment.json')
+        if record['signature']!=sig or record['status']!='passed' or record['adapter_max_abs_difference']!=0 or record['optimizer_max_abs_difference']!=0 or not record['RNG_equal']:
+            raise ValueError('Matching runtime parity proof required')
     paths=list((ROOT/'research').glob('hp_*.py'))+list((ROOT/'research').glob('HARD_PAIR*.md'))
     paths+=list((ROOT/'research/tests').glob('test_hp*.py'))+list(OUT.glob('*.json'))
     names=[p.relative_to(ROOT).as_posix() for p in paths if p.is_file()]
@@ -42,8 +46,14 @@ def publish(stage):
         if __import__('hashlib').sha256(blob).hexdigest()!=sha(OUT/'test_lock.json'):raise ValueError('Remote test seal bytes differ')
         save(OUT/'test_publication.json',dict(signature=sig,commit=tip,remote_commit=tip,lock_sha256=sha(OUT/'test_lock.json'),
             test_inference_started=False))
+    if stage=='runtime':
+        rel=(OUT/'runtime_amendment.json').relative_to(ROOT).as_posix()
+        blob=subprocess.check_output(['git','show',tip+':'+rel],cwd=ROOT)
+        if __import__('hashlib').sha256(blob).hexdigest()!=sha(OUT/'runtime_amendment.json'):raise ValueError('Remote runtime note differs')
+        save(OUT/'runtime_publication.json',dict(signature=sig,commit=tip,remote_commit=tip,
+            runtime_amendment_sha256=sha(OUT/'runtime_amendment.json'),before_primary_resume=True))
     print('HP_PUBLISHED',stage,tip,flush=True)
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','seal','final']);publish(p.parse_args().stage)
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','runtime','seal','final']);publish(p.parse_args().stage)

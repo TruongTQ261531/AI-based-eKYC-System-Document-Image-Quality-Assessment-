@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "action": "resume80 with child-only cache reclamation",
+  "allocator_env": "PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6",
+  "adapter_tensors_compared": 192,
+  "adapter_max_abs_difference": 0.0,
+  "optimizer_max_abs_difference": 0.0,
+  "RNG_equal": true,
+  "diagnostic_updates_not_in_primary": 2,
+  "diagnostic_scope": "same checkpoint80 to81, one accumulation4 update per policy; not all future updates",
+  "checkpoint80_sha256": "dd59e32b9c398ff6c40c03db090df1c7fc97f1459c4fae9a6c1282f328a97277",
+  "primary_effective_updates_per_seed": 320,
+  "primary_effective_presentations_per_seed": 1280,
+  "recorded_updates_before_pause": 123,
+  "recorded_updates_to_replay": 43,
+  "no_new_test_inference": true,
+  "interruption_record_sha256": "93211ab165ac26400b3cafd8720aefafdb3bf333c064ef607a2f8c2eb8f6d0d7",
+  "runtime_policy_source_sha256": "5c7e8025e8b6c505274af2b02873dfa436dd258634558ce7326dd9ad24bb47ff",
+  "diagnostic_logs_sha256": {
+    "default": "fccf24b6f2c011eced5e6b01245c3f636f061ea0045a2e29f6ad466017fe5c0e",
+    "gc": "c96f90244d856802312f3053eabfcc095469ea1523148878ba95baeb08c52d61"
+  },
+  "parity_diagnostic_source_sha256": "47870da562350cb67446c6e490670b115d3a774d0a0a01ee0e25b57b6ac3e2a4"
+}
