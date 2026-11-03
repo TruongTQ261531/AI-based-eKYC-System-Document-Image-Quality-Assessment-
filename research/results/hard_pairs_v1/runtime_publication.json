@@ -1,0 +1,7 @@
+{
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "commit": "8f0fd23651c4d91600cf5c34aa3a5edcf8250ef0",
+  "remote_commit": "8f0fd23651c4d91600cf5c34aa3a5edcf8250ef0",
+  "runtime_amendment_sha256": "fce679b7f6e8c0ecf79b228d4165d926596d71180f92a498d1351c8f8c80ffcc",
+  "before_primary_resume": true
+}

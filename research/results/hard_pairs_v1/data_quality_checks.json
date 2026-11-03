@@ -1,0 +1,18 @@
+{
+  "identical_test_rasters_have_consistent_targets": true,
+  "AI_visual_QA_training_examples": [
+    {
+      "source": "authored",
+      "input_sha256": "0c88c3dde9166a44b22bd491bed0e3fea666163b51b39552ae472351bf8048a2",
+      "image_inspected": true
+    },
+    {
+      "source": "midv2020",
+      "input_sha256": "cc71afda6dbd00a5b776ec252c06b2e5d6bd3300b45ea1fae2748eb6776a2e37",
+      "image_inspected": true
+    }
+  ],
+  "independent_human_annotations": 0,
+  "test_model_outputs_opened": false,
+  "source_images_or_transcripts_published": false
+}

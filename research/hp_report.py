@@ -9,6 +9,7 @@ def make():
     lock=read(OUT/'test_lock.json');card=read(OUT/'dataset_card.json');pre=read(OUT/'preflight.json')
     records={k:read(OUT/f'test_{k}.json') for k in KEYS};dev={k:read(OUT/f'development_{k}.json') for k in KEYS}
     intervals=read(OUT/'paired_intervals.json');sensitivity=read(OUT/'duplicate_cluster_sensitivity.json');fresh=read(OUT/'fresh_repeats.json')
+    coverage=read(OUT/'source_coverage_sensitivity.json')
     lines=['# Kết quả cải thiện hai nhóm lỗi bằng cặp che/giữ', '',
         'Thực nghiệm mới sau R2/V3. Hai LoRA mới bắt đầu từ cùng Vintern gốc, đối chiếu hai '
         'checkpoint source-supervised có cùng seed/ngân sách. Không so F1 tuyệt đối giữa hai test khác nhau '
@@ -30,11 +31,11 @@ def make():
         'không quy tác động riêng cho font. Transcript/vị trí lấy từ tác giả/generator; '
         'khả năng đọc được vẫn là proxy hình học, chưa có nhãn người độc lập.', '',
         '## Kết quả trên cùng test mới', '',
-        '| Model | F1 dev | F1 test | Key mất nguồn vẫn xuất | Bỏ sót vùng lân cận | Recall lân cận | Thành công cặp |',
-        '|---|---:|---:|---:|---:|---:|---:|']
+        '| Model | F1 dev | F1 test | Key mất nguồn vẫn xuất | Bỏ sót lân cận | Sai lân cận | Recall lân cận | Thành công cặp |',
+        '|---|---:|---:|---:|---:|---:|---:|---:|']
     for key in KEYS:
         s=records[key]['summary'];d=dev[key]['summary']
-        lines.append(f'| {key} | {d["f1"]:.4f} | {s["f1"]:.4f} | {s["declared_hidden_outputs"]} | {s["neighbor_omissions"]} | {s["neighbor_recall"]:.4f} | {s["pair_success"]}/{s["pair_eligible"]} |')
+        lines.append(f'| {key} | {d["f1"]:.4f} | {s["f1"]:.4f} | {s["declared_hidden_outputs"]} | {s["neighbor_omissions"]} | {s["neighbor_wrong"]} | {s["neighbor_recall"]:.4f} | {s["pair_success"]}/{s["pair_eligible"]} |')
     lines+=['', '## So sánh ghép cặp theo seed', '',
         '| So sánh | ΔF1 test | CI95% theo ID | CI95% nối ID trùng raster |',
         '|---|---:|---|---|']
@@ -43,7 +44,18 @@ def make():
         lines.append(f'| {a["a"]} − {a["b"]} | {v["delta"]:+.4f} | [{v["ci95_low"]:+.6f}, {v["ci95_high"]:+.6f}] | [{w["ci95_low"]:+.6f}, {w["ci95_high"]:+.6f}] |')
     lines+=['', 'Bootstrap10000 lần, seed20261104, phân tầng nguồn. Phân tích chính dùng48 cụm ID; '
         f'phân tích độ nhạy dùng{sensitivity["resampling_clusters"]} cụm nối ID có raster trùng. '
-        'Các trường và nhiều view của một giấy tờ không được coi là các ID độc lập.', '',
+        'Các trường và nhiều view của một giấy tờ không được coi là các ID độc lập. '
+        'Trong36 cặp test hợp lệ có24 ảnh chụp và12 ảnh giả lập bố cục hàng.12 ảnh giả lập '
+        'bố cục cột thưa dùng fallback; không kết luận hiệu quả cặp riêng trên bố cục/font đó.', '',
+        '## Độ nhạy với một nguồn MRZ chưa nhận được', '',
+        'Một mẫu ảnh mới có transcript MRZ tác giả dài43/44 ký tự. Parser TD3 không nhận nó; '
+        'ngoài hợp đồng không đồng nghĩa thông tin thật sự vắng. Phân tích phụ đã đăng ký trước test '
+        'giữ nguyên output và chỉ loại ID này, còn47 ID/188 ca. Kết quả chính vẫn giữ đủ192 ca; '
+        'không có lượt model mới hoặc sửa transcript dựa trên dự đoán.', '',
+        '| So sánh | ΔF1 trên47 ID | CI95% |','|---|---:|---|']
+    for value in coverage['intervals']['comparisons']:
+        s=value['f1'];lines.append(f'| {value["a"]} − {value["b"]} | {s["delta"]:+.4f} | [{s["ci95_low"]:+.6f}, {s["ci95_high"]:+.6f}] |')
+    lines+=['', 'Xem [ghi chú độ bao phủ](HARD_PAIR_COVERAGE_NOTE.md). Không thay kết luận chính bằng một tập con tốt hơn.', '',
         '## Các nguồn và kiểu ảnh', '', '| Model | Nguồn | View | F1 | Bỏ sót lân cận | Key mất nguồn vẫn xuất |',
         '|---|---|---|---:|---:|---:|']
     for key in KEYS:
@@ -72,6 +84,8 @@ def make():
         'mọi192 tensor LoRA, optimizer và RNG khớp, sai khác tối đa0. '
         'Cấu hình cache đã được công bố trước resume; không đổi input/loss/seed/ngân sách. '
         'Parity một bước không chứng minh mọi chuỗi cập nhật tương đương. '
+        f'Đối chiếu thêm {audit["scalar_replayed_updates_exact"]} event scalar được phát lại cũng khớp; '
+        'đây không phải so mọi tensor sau từng bước. '
         'Peak/timer trước thay đổi vẫn giữ nguyên. Xem [ghi chú runtime](HARD_PAIR_RUNTIME_NOTE.md).', '',
         '## Quyết định và giới hạn', '',
         f'Ứng viên hard chọn bằng development: **{lock["selected_hard_candidate"]}**; '

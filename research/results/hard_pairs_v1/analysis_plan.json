@@ -1,0 +1,23 @@
+{
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "registered_before_test_predictions": true,
+  "primary_all_cases_retained": true,
+  "supplementary_excluded_document_instances": [
+    "midv2020/aze_passport/53"
+  ],
+  "exclusion_reason": "author MRZ length43/44 is not recognized by declared TD3 parser; no model output used",
+  "details": [
+    {
+      "physical_id": "midv2020/aze_passport/53",
+      "author_MRZ_line_lengths": [
+        43,
+        44
+      ]
+    }
+  ],
+  "supplementary_expected_ids": 47,
+  "supplementary_expected_cases": 188,
+  "bootstrap": "paired source-stratified document bootstrap; same seed20261104,10000 resamples",
+  "new_model_calls_from_analysis": 0,
+  "training_or_primary_evaluation_changed": false
+}

@@ -79,6 +79,11 @@ def audit():
     if runtime['signature']!=sig or runtime['status']!='passed' or runtime_pub['runtime_amendment_sha256']!=sha(OUT/'runtime_amendment.json'):
         raise ValueError('Runtime parity/publication proof differs')
     subprocess.run(['git','merge-base','--is-ancestor',runtime_pub['commit'],pub['commit']],cwd=ROOT,check=True)
+    runtime_blob=subprocess.check_output(['git','show',runtime_pub['commit']+':research/hp_workflow.py'],cwd=ROOT)
+    if hashlib.sha256(runtime_blob).hexdigest()!=runtime['runtime_policy_source_sha256']:raise ValueError('Published runtime script differs')
+    analysis=read(OUT/'analysis_plan.json');analysis_pub=read(OUT/'analysis_publication.json')
+    if analysis['signature']!=sig or analysis_pub['analysis_plan_sha256']!=sha(OUT/'analysis_plan.json'):raise ValueError('Coverage analysis registration differs')
+    subprocess.run(['git','merge-base','--is-ancestor',analysis_pub['commit'],pub['commit']],cwd=ROOT,check=True)
     subprocess.run(['git','merge-base','--is-ancestor',prepare['commit'],pub['commit']],cwd=ROOT,check=True)
     for name in ('hp_common.py','hp_acquire.py','hp_data.py','hp_metrics.py','hp_study.py','HARD_PAIR_PROTOCOL.md'):
         blob=subprocess.check_output(['git','show',prepare['commit']+':research/'+name],cwd=ROOT)
@@ -87,6 +92,12 @@ def audit():
         raise ValueError('Fresh feature audit required')
     data=read(DATA/'samples.json');samples={r['uid']:r for r in data}
     if sha(DATA/'samples.json')!=read(OUT/'dataset_card.json')['samples_sha256']:raise ValueError('Data changed')
+    seen_targets={}
+    for row in data:
+        if row['role']!='test':continue
+        target_hash=stable_hash(row['target'])
+        if row['input_sha256'] in seen_targets and seen_targets[row['input_sha256']]!=target_hash:raise ValueError('Duplicate pixels have incompatible answers')
+        seen_targets[row['input_sha256']]=target_hash
     graphs={r['base']['physical_id']:r for r in read(DATA/'base_graphs.json')}
     old={r['uid']:r for r in read(OLD_DATA/'samples.json')}
     rebuilt=0
@@ -118,6 +129,15 @@ def audit():
         if len(tensors)!=192 or len(b)!=96 or not all(bool(t.ne(0).any()) for t in b) or any(not bool(torch.isfinite(t).all()) for t in tensors.values()):raise ValueError('LoRA update proof failed')
         training_proof.append(dict(seed=seed,optimizer_updates=320,presentations=1280,adapter_sha256=digest,nonzero_B_tensors=96,identity_slot_order_matched=True))
         del state,tensors,b
+    replay=read(OUT/'resume_replay_diagnostic.json')
+    if replay['signature']!=sig or replay['status']!='passed':raise ValueError('Resume scalar replay diagnostic differs')
+    primary={e['step']:e for e in read(OUT/'train_hard_42.json')['events']}
+    backup=next((CACHE/'training/hard_42').glob('interrupted_events_after_0080_*.json'))
+    if sha(backup)!=replay['original_events_backup_sha256']:raise ValueError('Interrupted events backup changed')
+    for old_event in read(backup):
+        if old_event['step']<=80:continue
+        if any(primary[old_event['step']][k]!=old_event[k] for k in ('loss','gradient_norm','learning_rate','max_tokens','cursor')):
+            raise ValueError('Recorded replayed update differs')
     replayed=0;new_calls=0;reused=0;records={}
     for role in ('development','test'):
         expected={r['uid'] for r in data if r['role']==role}
@@ -152,6 +172,15 @@ def audit():
     if fresh['mismatches']!=sum(not r['identical_to_test'] for r in fresh['rows']):raise ValueError('Fresh mismatch count differs')
     save(OUT/'paired_intervals.json',intervals(records))
     save(OUT/'duplicate_cluster_sensitivity.json',intervals(records,True))
+    excluded=set(analysis['supplementary_excluded_document_instances'])
+    subset={}
+    for key,record in records.items():
+        selected=[r for r in record['rows'] if r['physical_id'] not in excluded]
+        if len(selected)!=188:raise ValueError('Unparsed-source sensitivity subset differs')
+        subset[key]=dict(rows=selected,summary=summary(selected))
+    save(OUT/'source_coverage_sensitivity.json',dict(signature=sig,pretest_analysis_publication=analysis_pub['commit'],
+        primary_results_unchanged=True,excluded_document_instances=sorted(excluded),new_model_calls=0,
+        summaries={k:r['summary'] for k,r in subset.items()},intervals=intervals(subset)))
     save(OUT/'audit.json',dict(status='passed',signature=sig,replayed_prediction_rows=replayed,
         recorded_new_cached_generation_calls=new_calls,reused_old_development_outputs=reused,
         additional_pixel_level_calls=16,fresh_output_hash_mismatches=fresh['mismatches'],
@@ -161,6 +190,8 @@ def audit():
         feature_audit_sha256=sha(OUT/'feature_audit.json'),audit_code_sha256=sha(Path(__file__)),
         runtime_amendment_sha256=sha(OUT/'runtime_amendment.json'),runtime_publication=runtime_pub['commit'],
         recorded_discarded_updates_replayed=runtime['recorded_updates_to_replay'],runtime_diagnostic_updates=2,
+        scalar_replayed_updates_exact=replay['recorded_replayed_updates'],duplicate_raster_target_conflicts=0,
+        coverage_sensitivity_publication=analysis_pub['commit'],coverage_sensitivity_cases=188,
         human_legibility_labels=False,physical_camera_validation=False))
     print('HP_AUDIT_PASSED',replayed,'new cached calls',new_calls,'reused',reused,flush=True)
 

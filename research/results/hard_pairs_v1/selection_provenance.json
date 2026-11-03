@@ -1,0 +1,606 @@
+{
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "selected_document_instances": 32,
+  "source_counts": {
+    "authored": 6,
+    "midv2020": 58
+  },
+  "development_error_semantic_key_frequencies": {
+    "id_number": 12,
+    "gender": 4,
+    "birth_place": 4,
+    "first_name": 9,
+    "last_name": 5,
+    "dob": 15,
+    "address": 3,
+    "authority": 4,
+    "issue_date": 6,
+    "expiry_date": 8,
+    "personal_number": 10,
+    "nationality": 5,
+    "course": 2,
+    "full_name": 9,
+    "license_class": 3
+  },
+  "selection_source": "Fixed inventory selected before this experiment from train geometry and development errors",
+  "test_model_outputs_used": false,
+  "raw_values_or_positions_published": false,
+  "rows": [
+    {
+      "uid": "vlm_v2/train/002/partial/3",
+      "physical_id": "vlm_v2/train/002",
+      "source": "authored",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "expiry_date",
+      "input_sha256": "0c88c3dde9166a44b22bd491bed0e3fea666163b51b39552ae472351bf8048a2"
+    },
+    {
+      "uid": "vlm_v2/train/002/partial/4",
+      "physical_id": "vlm_v2/train/002",
+      "source": "authored",
+      "slot": 4,
+      "hidden_semantic_key": "expiry_date",
+      "retained_semantic_key": "dob",
+      "input_sha256": "e894b484b3c7cf7984ef9f59b7ff4066f535a1bb992a9427c998778d23fc059a"
+    },
+    {
+      "uid": "vlm_v2/train/014/partial/3",
+      "physical_id": "vlm_v2/train/014",
+      "source": "authored",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "a210147c7681b6868c3ea1343642d279965d359229f349244aaf32fd3f644ddb"
+    },
+    {
+      "uid": "vlm_v2/train/014/partial/4",
+      "physical_id": "vlm_v2/train/014",
+      "source": "authored",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "cd83acac42f30024a8b889393f3a76a1a360dfec53343056119253fc1c097770"
+    },
+    {
+      "uid": "vlm_v2/train/026/partial/3",
+      "physical_id": "vlm_v2/train/026",
+      "source": "authored",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "e309aa9a54d119e7df1c822d5983da401045b8b71cbe520ba234084cdfc7d635"
+    },
+    {
+      "uid": "vlm_v2/train/026/partial/4",
+      "physical_id": "vlm_v2/train/026",
+      "source": "authored",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "f8540cee8079e46ea658338d9e8aac0b041f8eb9b1363ecd1cc2958368d9f637"
+    },
+    {
+      "uid": "midv2020/esp_id/44/partial/3",
+      "physical_id": "midv2020/esp_id/44",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "cc71afda6dbd00a5b776ec252c06b2e5d6bd3300b45ea1fae2748eb6776a2e37"
+    },
+    {
+      "uid": "midv2020/esp_id/44/partial/4",
+      "physical_id": "midv2020/esp_id/44",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "f5f7578e4806b88432ab21e762e18be2403d195cebb8e57be9ae3a5c2108dd40"
+    },
+    {
+      "uid": "midv2020/est_id/44/partial/3",
+      "physical_id": "midv2020/est_id/44",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "7db9ef21e7533699b992ed32ec77ea0327c3ef521123a698dbeee4425443fec9"
+    },
+    {
+      "uid": "midv2020/est_id/44/partial/4",
+      "physical_id": "midv2020/est_id/44",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "ab456a9661cc9339803be48fd6e66e106930d3f3018b759d09b258e6d6e2fd27"
+    },
+    {
+      "uid": "midv2020/srb_passport/33/partial/3",
+      "physical_id": "midv2020/srb_passport/33",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "first_name",
+      "input_sha256": "d185aad5d0f161a37d0dff93a2120ae888fe3b19f5d4050aa3c1bfcb5728d548"
+    },
+    {
+      "uid": "midv2020/srb_passport/33/partial/4",
+      "physical_id": "midv2020/srb_passport/33",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "first_name",
+      "retained_semantic_key": "dob",
+      "input_sha256": "145cc1eea892f9f6debbf2c8e85aa35084610bb0a3e83ebaafcad27a387f9218"
+    },
+    {
+      "uid": "midv2020/grc_passport/44/partial/3",
+      "physical_id": "midv2020/grc_passport/44",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "256c3e5248c53a5cc45b1b50fa447c4531aefca77af6ea7696bb2b41ec4aadb2"
+    },
+    {
+      "uid": "midv2020/grc_passport/44/partial/4",
+      "physical_id": "midv2020/grc_passport/44",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "c15b85adbfdf54e1e4136e87651ca02b9324c94bc890293cb53a1aa2ddc2e654"
+    },
+    {
+      "uid": "midv2020/srb_passport/05/partial/3",
+      "physical_id": "midv2020/srb_passport/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "93f01835c2905e6291a10743552d35e096ea0df146de85a0e7f7b0ce72145707"
+    },
+    {
+      "uid": "midv2020/srb_passport/05/partial/4",
+      "physical_id": "midv2020/srb_passport/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "fb7042d75c2eddf4285306891db5d7da3f717db0d2a9df4584b8ea0b237f0188"
+    },
+    {
+      "uid": "midv2020/aze_passport/70/partial/3",
+      "physical_id": "midv2020/aze_passport/70",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "82718d93c1c425e08fe499221de4252d277b1a65442e3d078a2986a6824a11fc"
+    },
+    {
+      "uid": "midv2020/aze_passport/70/partial/4",
+      "physical_id": "midv2020/aze_passport/70",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "b25ff23650d085caf410788bf71d49f2090fb2d743395ec8affac8e8c9602fd1"
+    },
+    {
+      "uid": "midv2020/aze_passport/94/partial/3",
+      "physical_id": "midv2020/aze_passport/94",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "1769cb7682e6bb20aa85ed56be1bd0a64374728a7429322016215098421f84b7"
+    },
+    {
+      "uid": "midv2020/aze_passport/94/partial/4",
+      "physical_id": "midv2020/aze_passport/94",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "6ae89f6918ee6e762a5cd929b390d762cb4aaef672457bf05c72a5e1ca9f69d7"
+    },
+    {
+      "uid": "midv2020/esp_id/05/partial/3",
+      "physical_id": "midv2020/esp_id/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "847a391b0926b774e9b6e35f36aa18193992813a96349589fed1162554ea6e53"
+    },
+    {
+      "uid": "midv2020/esp_id/05/partial/4",
+      "physical_id": "midv2020/esp_id/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "675b6787ee8a9c335badb6046439e7707266b7ff4044bda51f790a6e36deac58"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/05/partial/3",
+      "physical_id": "midv2020/rus_internalpassport/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "9b5dc7e0f4c3b55444a2ba74e1366ae7b73efb45187c08de47341ae435ea1e9b"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/05/partial/4",
+      "physical_id": "midv2020/rus_internalpassport/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "99aa906498a85c944958422ba099378a759b49224e2f510ca8af543257c564c8"
+    },
+    {
+      "uid": "midv2020/srb_passport/44/partial/3",
+      "physical_id": "midv2020/srb_passport/44",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "d72e4fea12639aef6685889204886619cae1b46ad7a9149389f717d3909e5375"
+    },
+    {
+      "uid": "midv2020/srb_passport/44/partial/4",
+      "physical_id": "midv2020/srb_passport/44",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "8d0267aa36f1be884a102a04b22c05711e67b315e96881c6a4cc60f1e8d1356a"
+    },
+    {
+      "uid": "midv2020/svk_id/33/partial/3",
+      "physical_id": "midv2020/svk_id/33",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "1d566fc90cd1ee5f7b16d80c8cef491cde8821054f60eea374181b02faf705ad"
+    },
+    {
+      "uid": "midv2020/svk_id/33/partial/4",
+      "physical_id": "midv2020/svk_id/33",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "b5970c36feb1396b8ad64eee29261277c4df7684d4e38c24fc76998584611038"
+    },
+    {
+      "uid": "midv2020/aze_passport/63/partial/3",
+      "physical_id": "midv2020/aze_passport/63",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "5ef025bbba7c704a97b899bfefb379fc65ed3fe6020c2a5df447c88726469def"
+    },
+    {
+      "uid": "midv2020/aze_passport/63/partial/4",
+      "physical_id": "midv2020/aze_passport/63",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "8e27102fc815efddcbe0ed0a261d12fa7d44c6a2b3f5bb20ba8b60ed76849dcf"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/33/partial/3",
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "464ef58f386e4b3719ef4a722e23ab1d17d6315720a2118105fa642bd1e9d45c"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/33/partial/4",
+      "physical_id": "midv2020/rus_internalpassport/33",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "4e4cdca14b67def80400f899b230797c4b8afaa7da0f3c16fbe490b20500c177"
+    },
+    {
+      "uid": "midv2020/esp_id/70/partial/3",
+      "physical_id": "midv2020/esp_id/70",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "8dc34f811e68d3a9dfc144a09871f436bd60e313a81795e3f4b5152c24ba23b5"
+    },
+    {
+      "uid": "midv2020/esp_id/70/partial/4",
+      "physical_id": "midv2020/esp_id/70",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "d4cc19d8f9ea3a95d3172d9dc36fba237d215c01a9c0c6ae47301781195eda4e"
+    },
+    {
+      "uid": "midv2020/grc_passport/94/partial/3",
+      "physical_id": "midv2020/grc_passport/94",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "625851c60f54f6255bd0f08e6db968ddc5f43fa8fca290c9bf05c88b948e2e3f"
+    },
+    {
+      "uid": "midv2020/grc_passport/94/partial/4",
+      "physical_id": "midv2020/grc_passport/94",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "ee025fe93bec5a29ede1ff5dca0430f00577e66ce29fc1b70e17dbbedb9db313"
+    },
+    {
+      "uid": "midv2020/svk_id/44/partial/3",
+      "physical_id": "midv2020/svk_id/44",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "ca98158dcfe3e85c3b133242d5a3fdf27978a9c8e46d08e011fd1b6d314b14e9"
+    },
+    {
+      "uid": "midv2020/svk_id/44/partial/4",
+      "physical_id": "midv2020/svk_id/44",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "cb7b8eb566d6b2d0591041ec8f894cb8a0b75b7fbdada68117096554f0affc7d"
+    },
+    {
+      "uid": "midv2020/alb_id/94/partial/3",
+      "physical_id": "midv2020/alb_id/94",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "ac71dafab5a590296f00f94f360a7291ec2b5df3754a53fb109b8daf61d9625e"
+    },
+    {
+      "uid": "midv2020/alb_id/94/partial/4",
+      "physical_id": "midv2020/alb_id/94",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "18e7d41142e7cbdd0a0ddd1ae4adea40e64031cc9b2209daf30e57ca4c0ef812"
+    },
+    {
+      "uid": "midv2020/est_id/94/partial/3",
+      "physical_id": "midv2020/est_id/94",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "e4b5ecadb366475916ac3438f018d22ae4c423f80522b75f8340afb34a5baf7d"
+    },
+    {
+      "uid": "midv2020/est_id/94/partial/4",
+      "physical_id": "midv2020/est_id/94",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "27d6abc922c22f7d6e072da5c58e84ddc4eef64fd54d497f4c9ac1e2cab1731d"
+    },
+    {
+      "uid": "midv2020/est_id/05/partial/3",
+      "physical_id": "midv2020/est_id/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "c6ae3c4d81a25cba0a3bf555a2c4085d870cfa13a9c89f25fc1ffb3b2249346c"
+    },
+    {
+      "uid": "midv2020/est_id/05/partial/4",
+      "physical_id": "midv2020/est_id/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "270a99a8f9394843966d40e8d7caa34d82015720192b4c8908b74bb9460b2a52"
+    },
+    {
+      "uid": "midv2020/srb_passport/70/partial/3",
+      "physical_id": "midv2020/srb_passport/70",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "3d7bb8a917f52233ea2261f72be8d8f5129da8f856fc11ea500d7b6caa0be3ae"
+    },
+    {
+      "uid": "midv2020/srb_passport/70/partial/4",
+      "physical_id": "midv2020/srb_passport/70",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "e92d152dbc67224bdd03df3e7c273a114577d7fd70c0d76e385d110bbbead933"
+    },
+    {
+      "uid": "midv2020/alb_id/63/partial/3",
+      "physical_id": "midv2020/alb_id/63",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "a26cbd05c5e1baa7d5446cb6aa21ce4d379388458f73e9fbd57242a5f7779725"
+    },
+    {
+      "uid": "midv2020/alb_id/63/partial/4",
+      "physical_id": "midv2020/alb_id/63",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "8c349cf1f0b3f1f1276b849908104e3dae22a10b07542c93da11f7ac6fa3acab"
+    },
+    {
+      "uid": "midv2020/aze_passport/90/partial/3",
+      "physical_id": "midv2020/aze_passport/90",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "e69b75fc62bd1cc70448fcba87f69d7043bad2eb51e05e36077f1cba60f7132c"
+    },
+    {
+      "uid": "midv2020/aze_passport/90/partial/4",
+      "physical_id": "midv2020/aze_passport/90",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "44920dd0d13f6ded443a8d9878a5111134061d3996641a15bae5d01b8e5139bb"
+    },
+    {
+      "uid": "midv2020/alb_id/05/partial/3",
+      "physical_id": "midv2020/alb_id/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "1c17986c6b0510c4f9bbc15aafdde769848d1dee293c8b432c811a6e0ff92b04"
+    },
+    {
+      "uid": "midv2020/alb_id/05/partial/4",
+      "physical_id": "midv2020/alb_id/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "63cc8bf85a0c36e987f19f229ce1dede3530840b4a20b6dc9f3b005edfa3e184"
+    },
+    {
+      "uid": "midv2020/esp_id/90/partial/3",
+      "physical_id": "midv2020/esp_id/90",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "personal_number",
+      "input_sha256": "593b598ac5a35dba1580a8ee5d310b70f12145faf3d4b088aa0913bf371013ca"
+    },
+    {
+      "uid": "midv2020/esp_id/90/partial/4",
+      "physical_id": "midv2020/esp_id/90",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "personal_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "a43e296fbeef9822211637a81b06661039b87ecd7eb909f8319cc45949eefa39"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/70/partial/3",
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "510d99d745763c1d5a46af79d07f7e52103b8f226917d031e1b96ece9f5cca3a"
+    },
+    {
+      "uid": "midv2020/rus_internalpassport/70/partial/4",
+      "physical_id": "midv2020/rus_internalpassport/70",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "821fe7681f436e1cef0ce9ef81ba06d046dbb5e786fcecf71b21e6bd44af35b4"
+    },
+    {
+      "uid": "midv2020/srb_passport/90/partial/3",
+      "physical_id": "midv2020/srb_passport/90",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "first_name",
+      "input_sha256": "1191a067a61dc8648a5d23f384f361da2829b2bb2c2601282272bd70c3438ea1"
+    },
+    {
+      "uid": "midv2020/srb_passport/90/partial/4",
+      "physical_id": "midv2020/srb_passport/90",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "first_name",
+      "retained_semantic_key": "dob",
+      "input_sha256": "09112c37b43cd8879eac94572165a026c6ab73f903daf915ce0ef902a979ca21"
+    },
+    {
+      "uid": "midv2020/est_id/33/partial/3",
+      "physical_id": "midv2020/est_id/33",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "60ac967a22372766e5a6832951bc5b5bb53d9e28c6ed0cb827c95eb3b8b14e98"
+    },
+    {
+      "uid": "midv2020/est_id/33/partial/4",
+      "physical_id": "midv2020/est_id/33",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "08b71dcc05e1b7166158c01f9388d96cd82120bea95c1a722270f0f10ece069e"
+    },
+    {
+      "uid": "midv2020/est_id/63/partial/3",
+      "physical_id": "midv2020/est_id/63",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "d4a2b4a8604acab54062cd727a2a8d163f77f3e1314e162b821f54608d99960b"
+    },
+    {
+      "uid": "midv2020/est_id/63/partial/4",
+      "physical_id": "midv2020/est_id/63",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "ab5d257fabdbe62c20240148b99817eb17941b8fcb400f5c5c82b7f2f7c7199a"
+    },
+    {
+      "uid": "midv2020/svk_id/05/partial/3",
+      "physical_id": "midv2020/svk_id/05",
+      "source": "midv2020",
+      "slot": 3,
+      "hidden_semantic_key": "dob",
+      "retained_semantic_key": "id_number",
+      "input_sha256": "6794982f2d6a4c18bdc7ec3dee2eddd1982c7260f914705e991c49a400a2bae4"
+    },
+    {
+      "uid": "midv2020/svk_id/05/partial/4",
+      "physical_id": "midv2020/svk_id/05",
+      "source": "midv2020",
+      "slot": 4,
+      "hidden_semantic_key": "id_number",
+      "retained_semantic_key": "dob",
+      "input_sha256": "935c5c9472500fba10a4408e5e05b61b0859bbb0e835cc61e17d7a9a6530e3b6"
+    }
+  ]
+}

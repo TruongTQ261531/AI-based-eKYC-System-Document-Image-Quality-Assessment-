@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "recorded_replayed_updates": 43,
+  "first_step": 81,
+  "last_step": 123,
+  "max_abs_differences": {
+    "loss": 0.0,
+    "gradient_norm": 0.0,
+    "learning_rate": 0.0,
+    "max_tokens": 0,
+    "cursor": 0
+  },
+  "comparison_scope": "logged scalar events, not every model tensor after every update",
+  "original_events_backup_sha256": "5076bc0148aa9eb7e4f77e961c6e5127b1f149ec3449a16da17aaa8d5b308b0b"
+}

@@ -62,6 +62,9 @@ def main():
                 command('train_hard_'+str(seed),gpu+['train','--seed',str(seed)],OUT/f'train_hard_{seed}.json')
             for key in KEYS:
                 command('development_'+key,gpu+['evaluate','--role','development','--model',key],OUT/f'development_{key}.json')
+            analysis=read(OUT/'analysis_publication.json')
+            if analysis['signature']!=signature() or analysis['analysis_plan_sha256']!=sha(OUT/'analysis_plan.json'):
+                raise ValueError('Coverage sensitivity must be registered before test')
             command('test_seal',gpu+['seal'],OUT/'test_lock.json')
             command('publish_test_seal',['-m','research.hp_publish','seal'],OUT/'test_publication.json')
             for key in KEYS:

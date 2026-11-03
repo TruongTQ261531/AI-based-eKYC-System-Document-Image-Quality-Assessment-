@@ -1,0 +1,12 @@
+{
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "counts": {
+    "sources": 24,
+    "with_author_MRZ": 11,
+    "TD3_parsed": 10,
+    "MRZ_present_unparsed": 1,
+    "extra_MRZ_lines": 0
+  },
+  "coverage": "Explicit author body/duplicate realizations and declared recognized TD3 only; not arbitrary encoded facts",
+  "independent_human_labels": 0
+}
