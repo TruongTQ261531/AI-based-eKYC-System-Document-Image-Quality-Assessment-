@@ -18,7 +18,17 @@ def report():
     records={k:read(OUT/f'test_{k}.json') for k in KEYS}
     dev={k:read(OUT/f'development_{k}.json') for k in KEYS}
     proof=design['random_selection_proof']
-    lines=['# Mục4: đối chứng khớp ngân sách và test mới', '',
+    primary=[r for r in stats['comparisons'] if r['primary']]
+    higher=sum(r['p_holm']<.05 and r['f1']['ci9875_low']>0 for r in primary)
+    lower=sum(r['p_holm']<.05 and r['f1']['ci9875_high']<0 for r in primary)
+    verdict=(f'Trong bốn so sánh chính, {higher}/4 ủng hộ hard cao hơn và {lower}/4 ủng hộ hard thấp hơn '
+        'theo cả p Holm < 0,05 và CI 98,75% đã đăng ký. ')
+    if not higher and not lower:
+        verdict+='Chưa đủ bằng chứng phân biệt hard với random/repeat trên bộ test này. '
+    secondary=[r for r in stats['comparisons'] if not r['primary']]
+    verdict+='So với uniform (đối chứng phụ), ΔF1 theo hai seed là '+', '.join(
+        f'{r["a"].split("_")[-1]}: {r["f1"]["delta"]:+.5f}' for r in secondary)+'.'
+    lines=['# Mục 4: đối chứng khớp ngân sách và test mới', '', verdict, '',
         'Đã hoàn tất vòng đối chứng và audit. Đây là kiểm chứng một giả thuyết về cách chọn/che dữ liệu; '
         'hoàn tất mục4 không đồng nghĩa đã cải thiện model hoặc đạt CORE B. '
         'Các phương án và checkpoint cuối được khóa trước test; không chọn model triển khai bằng kết quả test.', '',
@@ -113,7 +123,12 @@ def report():
         f'{audit["new_cached_generation_calls"]} lượt sinh mới và{audit["reused_development_outputs"]} output development cũ được tái chấm; '
         f'thêm{audit["additional_pixel_level_calls"]} lượt từ pixel và{audit["probe_calls"]} lượt probe development. '
         f'Có{audit["fresh_output_hash_mismatches"]} fresh hash khác test. '
-        'Rescoring, feature replay, tổ hợp dữ liệu, bootstrap và hoán vị không được đếm là lượt gọi model.', '',
+        'Các số lượt sinh văn bản không gộp với lượt chạy encoder ảnh. '
+        f'Đã chạy lại encoder trên {read(OUT/"feature_audit.json")["freshly_reextracted_features"]} đầu vào để đối chiếu đặc trưng; '
+        f'nguồn đặc trưng tham chiếu: {read(OUT/"feature_audit.json")["reference_feature_origins"]}. '
+        f'Có thêm {read(OUT/"feature_audit.json")["additional_reference_encoder_calls"]} lượt encoder để tạo tham chiếu còn thiếu cache. '
+        'Rescoring, tổ hợp dữ liệu, bootstrap và hoán vị chỉ là tính toán lại, không sinh thêm output OCR. '
+        'Xem [audit encoder và cache](results/fair_controls_v1/feature_audit.json).', '',
         f'Bảo toàn{audit["frozen_V1_files"]} file V1, {audit["frozen_V4_files"]} file V4, '
         f'{audit["frozen_HP_files"]} file HP và hợp đồng R2/V3. '
         f'Khóa trước train: `{audit["pretraining_publication"]}`; trước test: `{audit["pretest_publication"]}`. '

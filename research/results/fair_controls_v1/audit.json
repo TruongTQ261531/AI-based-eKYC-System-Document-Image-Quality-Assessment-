@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "replayed_score_rows": 2304,
+  "new_cached_generation_calls": 1920,
+  "reused_development_outputs": 384,
+  "additional_pixel_level_calls": 64,
+  "fresh_output_hash_mismatches": 0,
+  "exact_repeat_consistency": true,
+  "probe_calls": 10,
+  "new_training_runs": 4,
+  "reused_training_runs": 4,
+  "pretraining_publication": "bfd017688f09c6c1c544a8b3d667e7433fe66937",
+  "pretest_publication": "167d8560a920b6fc500d7310dcd8e453c91f12ce",
+  "primary_family_size": 4,
+  "bootstrap_resamples": 10000,
+  "permutation_resamples": 10000,
+  "statistical_code_sha256": "18f4e62cae843bca7aee27d30eb3f7d0517fc626e96a879cb5d688002b6aef4f",
+  "audit_code_sha256": "09fcba133fc373f04b8ecc05c5d454b8436e229063679c4443b05b95eb763a03",
+  "frozen_V1_files": 101,
+  "frozen_V4_files": 63,
+  "frozen_HP_files": 53,
+  "discarded_update_records": [],
+  "io_recoveries": [
+    {
+      "publication": "eec9aa753c33911d7dd963942d8106eed4135c57",
+      "retained_outputs": 56,
+      "weights_or_data_changed": false,
+      "retrained_runs": 0,
+      "scope": "Metadata file locking, not failed OCR/model inference"
+    }
+  ],
+  "recorded_worker_failures": [
+    {
+      "file": "failure_1793704812288985900.json",
+      "sha256": "09a3a106a431e71f16b1108f19300eeefe51c2b7c1db4875c70bab9835d30bfe",
+      "action": "evaluate",
+      "error_type": "PermissionError"
+    }
+  ],
+  "human_legibility_annotations": 0,
+  "physical_camera_validation": false,
+  "model_promoted": false
+}

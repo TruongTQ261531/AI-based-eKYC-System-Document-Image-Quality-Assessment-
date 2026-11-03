@@ -1,0 +1,8 @@
+{
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "commit": "167d8560a920b6fc500d7310dcd8e453c91f12ce",
+  "remote_commit": "167d8560a920b6fc500d7310dcd8e453c91f12ce",
+  "protocol_sha256": "768c34783cad9faf9feebdb185aa31cb35f9425e910b69f7127b32068ac5c943",
+  "test_generation_started": false,
+  "lock_sha256": "41672153f0f619f5634b0da273571867083f7aac747a8f7ac68e2e27296bc678"
+}

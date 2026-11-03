@@ -111,16 +111,22 @@ def features():
     unique={r['input_sha256']:r for r in rows};proof=[]
     for i,row in enumerate(unique.values(),1):
         if sha(ROOT/row['path'])!=row['input_sha256']:raise ValueError('Feature input bytes changed')
+        token=hashlib.sha256((model.input_version+row['input_sha256']).encode()).hexdigest()
+        path=CACHE/'features/rect2'/(token+'.safetensors')
+        prior=HP_CACHE/'features/rect2'/(token+'.safetensors')
+        origin='current_cache' if path.exists() else 'historical_cache' if prior.exists() else 'computed_during_audit'
         cached=model.features(row)
         with Image.open(ROOT/row['path']) as image:view,_=model.views.prepare(image,'rect2')
         tensor=pixels(view,'rect2').to(device='cuda',dtype=model.dtype)
         with torch.no_grad():fresh=model.model.extract_feature(tensor).detach().cpu().contiguous()
         if not torch.equal(cached,fresh):raise ValueError('Fresh visual features differ from cache')
-        token=hashlib.sha256((model.input_version+row['input_sha256']).encode()).hexdigest()
-        path=CACHE/'features/rect2'/(token+'.safetensors')
-        proof.append(dict(input_sha256=row['input_sha256'],feature_sha256=sha(path)))
+        proof.append(dict(input_sha256=row['input_sha256'],feature_sha256=sha(path),reference_feature_origin=origin))
         if i%32==0 or i==len(unique):trainer.progress(stage='fair_control_feature_audit',complete=i,total=len(unique))
-    save(OUT/'feature_audit.json',dict(status='passed',signature=signature(),freshly_reextracted_features=len(proof),mismatches=0,rows=proof))
+    origins={name:sum(r['reference_feature_origin']==name for r in proof)
+             for name in ('current_cache','historical_cache','computed_during_audit')}
+    save(OUT/'feature_audit.json',dict(status='passed',signature=signature(),freshly_reextracted_features=len(proof),
+        reference_feature_origins=origins,additional_reference_encoder_calls=origins['computed_during_audit'],
+        mismatches=0,rows=proof))
 
 
 def audit():
