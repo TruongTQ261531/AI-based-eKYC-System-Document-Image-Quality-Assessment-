@@ -1,0 +1,94 @@
+{
+  "document_instances": 128,
+  "ordered_slots_per_arm": 640,
+  "steps_per_seed": 320,
+  "presentations_per_seed": 1280,
+  "new_training_runs": 4,
+  "reused_training_runs": 4,
+  "seeds": [
+    42,
+    31415
+  ],
+  "selected_document_instances": 32,
+  "replaced_slots": 64,
+  "answer_loss_tokens_per_seed": {
+    "uniform": 75088,
+    "hard": 79974,
+    "random": 79974,
+    "repeat": 79974
+  },
+  "random_selection_proof": {
+    "enumerated_subsets": 16800,
+    "token_matched_subsets": 45,
+    "maximum_new_ids_after_token_match": 5,
+    "maximally_separated_subsets": 10
+  },
+  "random_selection_seed": 20261105,
+  "random_overlap_hard_ids": 27,
+  "random_new_ids": 5,
+  "maximum_new_ids_under_matched_strata": 6,
+  "maximum_new_ids_under_matched_strata_and_tokens": 5,
+  "strata": [
+    {
+      "source": "authored",
+      "layout": "2",
+      "selected": 3,
+      "eligible": 16
+    },
+    {
+      "source": "midv2020",
+      "layout": "alb_id",
+      "selected": 3,
+      "eligible": 3
+    },
+    {
+      "source": "midv2020",
+      "layout": "aze_passport",
+      "selected": 4,
+      "eligible": 5
+    },
+    {
+      "source": "midv2020",
+      "layout": "esp_id",
+      "selected": 4,
+      "eligible": 4
+    },
+    {
+      "source": "midv2020",
+      "layout": "est_id",
+      "selected": 5,
+      "eligible": 5
+    },
+    {
+      "source": "midv2020",
+      "layout": "grc_passport",
+      "selected": 2,
+      "eligible": 4
+    },
+    {
+      "source": "midv2020",
+      "layout": "rus_internalpassport",
+      "selected": 3,
+      "eligible": 3
+    },
+    {
+      "source": "midv2020",
+      "layout": "srb_passport",
+      "selected": 5,
+      "eligible": 5
+    },
+    {
+      "source": "midv2020",
+      "layout": "svk_id",
+      "selected": 3,
+      "eligible": 3
+    }
+  ],
+  "repeat_a_count": 16,
+  "repeat_b_count": 16,
+  "primary_global_answer_token_budget_matched": true,
+  "exact_FLOPs_or_per_step_token_match": false,
+  "uniform_is_secondary_whole_intervention_control": true,
+  "selection_sha256": "2abe25845c05dffb08bd784d15ea37bf8cb600ba6bd14137751caa9f2f4254df",
+  "selection_used_model_test_outputs": false
+}

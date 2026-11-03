@@ -1,0 +1,2882 @@
+[
+  {
+    "uid": "vlm_v2/development/000/evaluation/0",
+    "physical_id": "vlm_v2/development/000",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "full",
+    "input_sha256": "5285bcce46ca2422d6fd791ac75824aa8856909d3c3604b7002c9236a599c1d1"
+  },
+  {
+    "uid": "vlm_v2/development/000/evaluation/1",
+    "physical_id": "vlm_v2/development/000",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "field_clip",
+    "input_sha256": "d9bb6b77d65907eb81cfa61055272290f467a7369573948c2dfc5f2aac706f0e"
+  },
+  {
+    "uid": "vlm_v2/development/000/evaluation/2",
+    "physical_id": "vlm_v2/development/000",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "value_mask",
+    "input_sha256": "4b29fed201221311f99f2fa98c66ff7c94dbfb85cfb42561d14fa6dde70cf9d0"
+  },
+  {
+    "uid": "vlm_v2/development/001/evaluation/0",
+    "physical_id": "vlm_v2/development/001",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "full",
+    "input_sha256": "7b785e6ecfde3d17206dc3ac9934fb36276e3cdf1b313509e856fb435ccd7466"
+  },
+  {
+    "uid": "vlm_v2/development/001/evaluation/1",
+    "physical_id": "vlm_v2/development/001",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "field_clip",
+    "input_sha256": "ee88d51e203fcab6873a56500408fc27d0f13579a5c7f3bd43b4de1af7e4c49a"
+  },
+  {
+    "uid": "vlm_v2/development/001/evaluation/2",
+    "physical_id": "vlm_v2/development/001",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "value_mask",
+    "input_sha256": "a6410812c8ca647043545e05f34228e2c91f33fd34f6364a97420932d931c110"
+  },
+  {
+    "uid": "vlm_v2/development/002/evaluation/0",
+    "physical_id": "vlm_v2/development/002",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "full",
+    "input_sha256": "78c89ed548e297e682fc3e88ab0d5bb5a3f5547ce2f440f5fdeb8dabb6f45746"
+  },
+  {
+    "uid": "vlm_v2/development/002/evaluation/1",
+    "physical_id": "vlm_v2/development/002",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "field_clip",
+    "input_sha256": "6b8040feeac1abbf97d68708c7e80f5cf46159281515877d2bfe61e79ffd22f7"
+  },
+  {
+    "uid": "vlm_v2/development/002/evaluation/2",
+    "physical_id": "vlm_v2/development/002",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "value_mask",
+    "input_sha256": "d6f8f531dc6028d918c113c9af6618786cfb529696f0cdfac36608d87473dcc5"
+  },
+  {
+    "uid": "vlm_v2/development/003/evaluation/0",
+    "physical_id": "vlm_v2/development/003",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "full",
+    "input_sha256": "3396ecd845d59c0bdd01cf90bd1f0ec55420ae4d739c72b59770d9c34c17acdc"
+  },
+  {
+    "uid": "vlm_v2/development/003/evaluation/1",
+    "physical_id": "vlm_v2/development/003",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "field_clip",
+    "input_sha256": "79d41ab06b8296d54cb6a377211aacb1195bb9338adb134968fa63f0b8a22d88"
+  },
+  {
+    "uid": "vlm_v2/development/003/evaluation/2",
+    "physical_id": "vlm_v2/development/003",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "value_mask",
+    "input_sha256": "8634625a633a7c18243bab9068093a4446d1f39b45a06ba2071ef8861060f170"
+  },
+  {
+    "uid": "vlm_v2/development/004/evaluation/0",
+    "physical_id": "vlm_v2/development/004",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "full",
+    "input_sha256": "168b080336ef6667bec970a1125fc020b6286f86d08ae77b12fb82f5131ff625"
+  },
+  {
+    "uid": "vlm_v2/development/004/evaluation/1",
+    "physical_id": "vlm_v2/development/004",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "field_clip",
+    "input_sha256": "15606e8f79c203e14b8a693d3d1f5cbe4ee54b1d58935f5cae94057be9db4ff3"
+  },
+  {
+    "uid": "vlm_v2/development/004/evaluation/2",
+    "physical_id": "vlm_v2/development/004",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "value_mask",
+    "input_sha256": "4011ac82b17353947c93acf3c122613b96cce47b1d5c1c3f736b1f9466adfdba"
+  },
+  {
+    "uid": "vlm_v2/development/005/evaluation/0",
+    "physical_id": "vlm_v2/development/005",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "full",
+    "input_sha256": "e2a3e88f29a28ebe47202b7fc6b9b8debd0cd53db25b5b7ab1e88d92a73e2a1b"
+  },
+  {
+    "uid": "vlm_v2/development/005/evaluation/1",
+    "physical_id": "vlm_v2/development/005",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "field_clip",
+    "input_sha256": "74eb1706557c26445fd6429f3488ab72354e40e1508468b5200089e5e8408ebc"
+  },
+  {
+    "uid": "vlm_v2/development/005/evaluation/2",
+    "physical_id": "vlm_v2/development/005",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "value_mask",
+    "input_sha256": "08e46c43904fe7c0eb60d5edc77585c3425c8ed9a0c7e12025558e09cf373090"
+  },
+  {
+    "uid": "vlm_v2/development/006/evaluation/0",
+    "physical_id": "vlm_v2/development/006",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "full",
+    "input_sha256": "6097822b583082793d6e99e20df572ea16244ba62e1457801e67a5377dd097fa"
+  },
+  {
+    "uid": "vlm_v2/development/006/evaluation/1",
+    "physical_id": "vlm_v2/development/006",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "field_clip",
+    "input_sha256": "7237e0148ac35c97ac2eae5a1c01e16cf2033b9a9874c7e1f2a4a44c1e08685a"
+  },
+  {
+    "uid": "vlm_v2/development/006/evaluation/2",
+    "physical_id": "vlm_v2/development/006",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "value_mask",
+    "input_sha256": "01d97fe56a9e1080d99f1ac047de5dff2489c05ecae7287cfe14546c78f7165a"
+  },
+  {
+    "uid": "vlm_v2/development/007/evaluation/0",
+    "physical_id": "vlm_v2/development/007",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "full",
+    "input_sha256": "8655923bbf98592886e10fe38863ee9b9bcc3e7aee44a74882fadfa4abf47856"
+  },
+  {
+    "uid": "vlm_v2/development/007/evaluation/1",
+    "physical_id": "vlm_v2/development/007",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "field_clip",
+    "input_sha256": "6367e5f2ed2b73623620cf3abccede2ad190c028948d005bca807ea7b91e2a7a"
+  },
+  {
+    "uid": "vlm_v2/development/007/evaluation/2",
+    "physical_id": "vlm_v2/development/007",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "value_mask",
+    "input_sha256": "e7ddca16dc179ba4edf2510b75af65104acf790b4fc9064bdb03103e3cb41826"
+  },
+  {
+    "uid": "vlm_v2/development/008/evaluation/0",
+    "physical_id": "vlm_v2/development/008",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "full",
+    "input_sha256": "df6451415856c7844a37459b7bca0b7260bef78a340174a3881dab10f05cf1fd"
+  },
+  {
+    "uid": "vlm_v2/development/008/evaluation/1",
+    "physical_id": "vlm_v2/development/008",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "field_clip",
+    "input_sha256": "1d9a15cd90116c5ba098279e52e0982e425249f77d2cb7fafd68ce90fee56136"
+  },
+  {
+    "uid": "vlm_v2/development/008/evaluation/2",
+    "physical_id": "vlm_v2/development/008",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "value_mask",
+    "input_sha256": "8cc05cf480a6115ef7d5f71d0321c4593de5e8a19ab9c5c8381a34b3a4091473"
+  },
+  {
+    "uid": "vlm_v2/development/009/evaluation/0",
+    "physical_id": "vlm_v2/development/009",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "full",
+    "input_sha256": "a13e954063d09ce4b185183ff0685ee87737e6613ac2e5b7790cc99718eda5e2"
+  },
+  {
+    "uid": "vlm_v2/development/009/evaluation/1",
+    "physical_id": "vlm_v2/development/009",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "field_clip",
+    "input_sha256": "e31227e7ab43aceb9ba15e757d4229e472c88a59d81ae439f2c1268a9b0d8b75"
+  },
+  {
+    "uid": "vlm_v2/development/009/evaluation/2",
+    "physical_id": "vlm_v2/development/009",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "value_mask",
+    "input_sha256": "45f88855617d6ab01755b8602175565cc2370017c7c009c31312991383a57905"
+  },
+  {
+    "uid": "vlm_v2/development/010/evaluation/0",
+    "physical_id": "vlm_v2/development/010",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "full",
+    "input_sha256": "f17c7b30ba0d51b79fd9bf1e693abddf3e0cd2c98b74ee3273b68b3cda28d6db"
+  },
+  {
+    "uid": "vlm_v2/development/010/evaluation/1",
+    "physical_id": "vlm_v2/development/010",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "field_clip",
+    "input_sha256": "8000b3ab2b541eee047761d86bdda0953fd38fbd4ef06f98e3c47fda8aeaff4c"
+  },
+  {
+    "uid": "vlm_v2/development/010/evaluation/2",
+    "physical_id": "vlm_v2/development/010",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "value_mask",
+    "input_sha256": "51ebbfa577427c293230100243b92031b7d2d57bf89af9e16161a8fe727a943f"
+  },
+  {
+    "uid": "vlm_v2/development/011/evaluation/0",
+    "physical_id": "vlm_v2/development/011",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "full",
+    "input_sha256": "8af0a1cc3ba63b56c6032ec6e12f2a71a0359a4298283a894b68c02df17733d7"
+  },
+  {
+    "uid": "vlm_v2/development/011/evaluation/1",
+    "physical_id": "vlm_v2/development/011",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "field_clip",
+    "input_sha256": "90327fe0fce471bfd80c0f1e41c0a73028ab334e7e082a0c053d98fc867b0198"
+  },
+  {
+    "uid": "vlm_v2/development/011/evaluation/2",
+    "physical_id": "vlm_v2/development/011",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "value_mask",
+    "input_sha256": "f657bbdca50c5ffb493228e69dc11d74973a77dffbfae44e5a55da11acd87be7"
+  },
+  {
+    "uid": "vlm_v2/development/012/evaluation/0",
+    "physical_id": "vlm_v2/development/012",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "full",
+    "input_sha256": "679cf7291aaac3b390a250f0aa4f2ae4b9327d53116dee6f39e3cdacfb1ad9b8"
+  },
+  {
+    "uid": "vlm_v2/development/012/evaluation/1",
+    "physical_id": "vlm_v2/development/012",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "field_clip",
+    "input_sha256": "9160502ca7dd4a67945e0eaf1a8b42f0ce7f3b56543f551e5d41afa639c089e0"
+  },
+  {
+    "uid": "vlm_v2/development/012/evaluation/2",
+    "physical_id": "vlm_v2/development/012",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "value_mask",
+    "input_sha256": "f790666ee935270c16c78567c16e2c20e7b573ff7d154c5046e463dca5326572"
+  },
+  {
+    "uid": "vlm_v2/development/013/evaluation/0",
+    "physical_id": "vlm_v2/development/013",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "full",
+    "input_sha256": "944e6a1c4f5cf7ebb82606a509c5274fb8b00aa4fc8a63f055fee334f2e6f1de"
+  },
+  {
+    "uid": "vlm_v2/development/013/evaluation/1",
+    "physical_id": "vlm_v2/development/013",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "field_clip",
+    "input_sha256": "6365900af68fd35beb61190d29787997500c8d5a1a656ab7327e6106772db115"
+  },
+  {
+    "uid": "vlm_v2/development/013/evaluation/2",
+    "physical_id": "vlm_v2/development/013",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "value_mask",
+    "input_sha256": "9c404ebfabb8213932d8f29a8ab15a4aafe08d3afe804e9dbca20adbf93a2fcd"
+  },
+  {
+    "uid": "vlm_v2/development/014/evaluation/0",
+    "physical_id": "vlm_v2/development/014",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "full",
+    "input_sha256": "3e372b08d26fb64057f7dc178b9c6c0cc19c34664c72bdcd314df5d37b630767"
+  },
+  {
+    "uid": "vlm_v2/development/014/evaluation/1",
+    "physical_id": "vlm_v2/development/014",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "field_clip",
+    "input_sha256": "4af3a60a3c194153dc903fa71ccc3fa3618ba86f87179afc4639d92c84baa5d1"
+  },
+  {
+    "uid": "vlm_v2/development/014/evaluation/2",
+    "physical_id": "vlm_v2/development/014",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "value_mask",
+    "input_sha256": "e8948bbc59762f509b201b5c56109785de53195c98c6017be129f5a7e03f4caf"
+  },
+  {
+    "uid": "vlm_v2/development/015/evaluation/0",
+    "physical_id": "vlm_v2/development/015",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "full",
+    "input_sha256": "2ed6ba9789bd1c296a826ab609ecc5f53aaca93eca64134c782f7221a6de8db3"
+  },
+  {
+    "uid": "vlm_v2/development/015/evaluation/1",
+    "physical_id": "vlm_v2/development/015",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "field_clip",
+    "input_sha256": "a6c3f0848156ae5996946dd389467513e3e5109728a3b00a595dc38fcb768f19"
+  },
+  {
+    "uid": "vlm_v2/development/015/evaluation/2",
+    "physical_id": "vlm_v2/development/015",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "value_mask",
+    "input_sha256": "e54cec2001973135bbf1c6601c771be571bf4598d3cf1a80c40aaefe7ad88672"
+  },
+  {
+    "uid": "midv2020/alb_id/44/evaluation/0",
+    "physical_id": "midv2020/alb_id/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "full",
+    "input_sha256": "fb5e159917588f0331c4e9bb3b2f45966c497d4f59601c3e03b3adda677c9a3f"
+  },
+  {
+    "uid": "midv2020/alb_id/44/evaluation/1",
+    "physical_id": "midv2020/alb_id/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "field_clip",
+    "input_sha256": "cb83f3fe4ab13906ec1a835d6068e9f29e221f2f8452c3e4e22b876dd1bfe043"
+  },
+  {
+    "uid": "midv2020/alb_id/44/evaluation/2",
+    "physical_id": "midv2020/alb_id/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "value_mask",
+    "input_sha256": "dbeb866a68bbe68bd6857fa0a6875525b9f76c09ac2c6a13e1f7871a7f630cd1"
+  },
+  {
+    "uid": "midv2020/aze_passport/33/evaluation/0",
+    "physical_id": "midv2020/aze_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "full",
+    "input_sha256": "55cbf8b6b74fd636a4a74a38cc124ccd3b26181fbc7895c28276999d84fbd7c0"
+  },
+  {
+    "uid": "midv2020/aze_passport/33/evaluation/1",
+    "physical_id": "midv2020/aze_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "field_clip",
+    "input_sha256": "664c80537586215094ac7b8f4f9da0cd5ea2800543cd556835beda26f4292129"
+  },
+  {
+    "uid": "midv2020/aze_passport/33/evaluation/2",
+    "physical_id": "midv2020/aze_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "value_mask",
+    "input_sha256": "f105bb13c964aa66a8808094695769d70bd538b141914301d8ff3698ad7e4368"
+  },
+  {
+    "uid": "midv2020/esp_id/33/evaluation/0",
+    "physical_id": "midv2020/esp_id/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "full",
+    "input_sha256": "31fee8eb46ae289b5a06effdbe9995ce22ca1ec551852130d378faa721fe0740"
+  },
+  {
+    "uid": "midv2020/esp_id/33/evaluation/1",
+    "physical_id": "midv2020/esp_id/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "field_clip",
+    "input_sha256": "86ab1e967a82bb3a31ee0e546f59d56197cea7b16f063d5f05e5159f4d8b7727"
+  },
+  {
+    "uid": "midv2020/esp_id/33/evaluation/2",
+    "physical_id": "midv2020/esp_id/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "value_mask",
+    "input_sha256": "cd8fe389f16e8fb75fa45c1696f06c598e877a3be789cf9c3ff119ce012a9b9f"
+  },
+  {
+    "uid": "midv2020/est_id/70/evaluation/0",
+    "physical_id": "midv2020/est_id/70",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "full",
+    "input_sha256": "2c63a8a0b52ba31783d601ba1e1d7866943b2b9f456aadf05dc5288b24380bcc"
+  },
+  {
+    "uid": "midv2020/est_id/70/evaluation/1",
+    "physical_id": "midv2020/est_id/70",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "field_clip",
+    "input_sha256": "f6fc14c97716ecc47c2956c5447fe702d501740150a24cbac05e633d9c00e8a3"
+  },
+  {
+    "uid": "midv2020/est_id/70/evaluation/2",
+    "physical_id": "midv2020/est_id/70",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "value_mask",
+    "input_sha256": "940c1227158028a374623108916154430e80d3c2daae77e2315b73e9aaa8fb72"
+  },
+  {
+    "uid": "midv2020/grc_passport/33/evaluation/0",
+    "physical_id": "midv2020/grc_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "full",
+    "input_sha256": "6077819c7f744c175d6ce0294420f5281ffe6a75d77fd896bc1360733868d7c4"
+  },
+  {
+    "uid": "midv2020/grc_passport/33/evaluation/1",
+    "physical_id": "midv2020/grc_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "field_clip",
+    "input_sha256": "ae1e56cba07224ade9be609b1484555839e2139e071dfd7f464a6ab5c645af56"
+  },
+  {
+    "uid": "midv2020/grc_passport/33/evaluation/2",
+    "physical_id": "midv2020/grc_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "value_mask",
+    "input_sha256": "d14f928427219284f2b05eb0b86b2fb68e2d93b78f2deadf7868bfaa45a08802"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/44/evaluation/0",
+    "physical_id": "midv2020/rus_internalpassport/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "full",
+    "input_sha256": "3fa748d1c2e64a3b43a59e9b5cb36590fcf786ab4de974216a1005ad3c00feff"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/44/evaluation/1",
+    "physical_id": "midv2020/rus_internalpassport/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "field_clip",
+    "input_sha256": "7388d61662678eecd02aaacc3c74772697a5cea8c64fccc49327509c2d037e48"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/44/evaluation/2",
+    "physical_id": "midv2020/rus_internalpassport/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "value_mask",
+    "input_sha256": "5c2decf461247d07e05f95351188f02c08f3b7a46cc48d54de24627580d2ef8d"
+  },
+  {
+    "uid": "midv2020/srb_passport/63/evaluation/0",
+    "physical_id": "midv2020/srb_passport/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "full",
+    "input_sha256": "ec52ffa6a3529c14ff1228920c20937c54bad3ca74e262bab6c54aa4e75adc1c"
+  },
+  {
+    "uid": "midv2020/srb_passport/63/evaluation/1",
+    "physical_id": "midv2020/srb_passport/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "field_clip",
+    "input_sha256": "fa39239b742c6abf4eb7450ae94fd47a336e2651369138433dd5047aeb5625c8"
+  },
+  {
+    "uid": "midv2020/srb_passport/63/evaluation/2",
+    "physical_id": "midv2020/srb_passport/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "value_mask",
+    "input_sha256": "1575bca83bd8d8420df2a7ff417bf59428fe93d752c37448f78c9909e01d20f8"
+  },
+  {
+    "uid": "midv2020/svk_id/63/evaluation/0",
+    "physical_id": "midv2020/svk_id/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "full",
+    "input_sha256": "61ed4346c5ad88851913db0182141a9934ab164817d9e9dd4ec8f7d2c262d41a"
+  },
+  {
+    "uid": "midv2020/svk_id/63/evaluation/1",
+    "physical_id": "midv2020/svk_id/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "field_clip",
+    "input_sha256": "4559cdc3eec20574bfe2f2e97b6e8e91d3ad97e067055e687e846ac32a26339e"
+  },
+  {
+    "uid": "midv2020/svk_id/63/evaluation/2",
+    "physical_id": "midv2020/svk_id/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "value_mask",
+    "input_sha256": "5c5698117d753fd052fe55cdf38c8cd621441525904c5b8f7b9901c02fdf5518"
+  },
+  {
+    "uid": "vlm_v2/development/000/hp/pair_mask",
+    "physical_id": "vlm_v2/development/000",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "pair_mask",
+    "input_sha256": "914f78cd0a3492b2b5d2a618240a5cc1406e5069ad0e19e30aff9b31aa3a1964"
+  },
+  {
+    "uid": "vlm_v2/development/001/hp/pair_mask",
+    "physical_id": "vlm_v2/development/001",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "pair_mask",
+    "input_sha256": "a6410812c8ca647043545e05f34228e2c91f33fd34f6364a97420932d931c110"
+  },
+  {
+    "uid": "vlm_v2/development/002/hp/pair_mask",
+    "physical_id": "vlm_v2/development/002",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "pair_mask",
+    "input_sha256": "5c55f5cc336e3643e0be407fa57791d35ebc365639ef088ddd148b911fb7ac5f"
+  },
+  {
+    "uid": "vlm_v2/development/003/hp/pair_mask",
+    "physical_id": "vlm_v2/development/003",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "pair_mask",
+    "input_sha256": "8634625a633a7c18243bab9068093a4446d1f39b45a06ba2071ef8861060f170"
+  },
+  {
+    "uid": "vlm_v2/development/004/hp/pair_mask",
+    "physical_id": "vlm_v2/development/004",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "pair_mask",
+    "input_sha256": "b4dd98ba0027d10d8c0ceae48d300ed1a26031376f054a22017ffb659f6d2667"
+  },
+  {
+    "uid": "vlm_v2/development/005/hp/pair_mask",
+    "physical_id": "vlm_v2/development/005",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "pair_mask",
+    "input_sha256": "1e9b528f916666c171d7a0101f2e35eb4ab9d4c5f26387bb8bc19baba54d96d4"
+  },
+  {
+    "uid": "vlm_v2/development/006/hp/pair_mask",
+    "physical_id": "vlm_v2/development/006",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "pair_mask",
+    "input_sha256": "705986594870b0782a772f3fc23c3c37232398cec6cc7575f9777e2045548742"
+  },
+  {
+    "uid": "vlm_v2/development/007/hp/pair_mask",
+    "physical_id": "vlm_v2/development/007",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "pair_mask",
+    "input_sha256": "e7ddca16dc179ba4edf2510b75af65104acf790b4fc9064bdb03103e3cb41826"
+  },
+  {
+    "uid": "vlm_v2/development/008/hp/pair_mask",
+    "physical_id": "vlm_v2/development/008",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "pair_mask",
+    "input_sha256": "6b88d8bd4c4f0b15114bfc9a07f7a75beb11158227f3d22324ff456a541482c6"
+  },
+  {
+    "uid": "vlm_v2/development/009/hp/pair_mask",
+    "physical_id": "vlm_v2/development/009",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "pair_mask",
+    "input_sha256": "45f88855617d6ab01755b8602175565cc2370017c7c009c31312991383a57905"
+  },
+  {
+    "uid": "vlm_v2/development/010/hp/pair_mask",
+    "physical_id": "vlm_v2/development/010",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "4",
+    "capture": "pair_mask",
+    "input_sha256": "efcfbcf33d02636f0b3de62a4d30d8ac50a6b07f63e4ce6f78fd4872784b9487"
+  },
+  {
+    "uid": "vlm_v2/development/011/hp/pair_mask",
+    "physical_id": "vlm_v2/development/011",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "5",
+    "capture": "pair_mask",
+    "input_sha256": "bf157e0254583fdcd128f35f7792bf64d3f9e44a857e81d9378e3e2c73f8e45f"
+  },
+  {
+    "uid": "vlm_v2/development/012/hp/pair_mask",
+    "physical_id": "vlm_v2/development/012",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "0",
+    "capture": "pair_mask",
+    "input_sha256": "48a49a7458a5388fbb7247c28bedea80cc18da56f32f2f0357ccdff0a6d14c08"
+  },
+  {
+    "uid": "vlm_v2/development/013/hp/pair_mask",
+    "physical_id": "vlm_v2/development/013",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "1",
+    "capture": "pair_mask",
+    "input_sha256": "9c404ebfabb8213932d8f29a8ab15a4aafe08d3afe804e9dbca20adbf93a2fcd"
+  },
+  {
+    "uid": "vlm_v2/development/014/hp/pair_mask",
+    "physical_id": "vlm_v2/development/014",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "2",
+    "capture": "pair_mask",
+    "input_sha256": "37947b11f7141f8ee9fdbf67b8e8c89c592191fb8468687d960fc7c992104291"
+  },
+  {
+    "uid": "vlm_v2/development/015/hp/pair_mask",
+    "physical_id": "vlm_v2/development/015",
+    "role": "development",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "3",
+    "capture": "pair_mask",
+    "input_sha256": "e54cec2001973135bbf1c6601c771be571bf4598d3cf1a80c40aaefe7ad88672"
+  },
+  {
+    "uid": "midv2020/alb_id/44/hp/pair_mask",
+    "physical_id": "midv2020/alb_id/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "pair_mask",
+    "input_sha256": "fcddc48c2ec6995b77f3aa54f591282eca5a42e60074a1d80b36ef80c5b9b893"
+  },
+  {
+    "uid": "midv2020/aze_passport/33/hp/pair_mask",
+    "physical_id": "midv2020/aze_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "pair_mask",
+    "input_sha256": "d323891928db65c74c9261cecf1cfc291d34b4a5be5be356d86c7b43ac6fec1d"
+  },
+  {
+    "uid": "midv2020/esp_id/33/hp/pair_mask",
+    "physical_id": "midv2020/esp_id/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "pair_mask",
+    "input_sha256": "6a6d6fcc33eebca89f7aacb0e7ab2bcb99221787600ce591e08ee5b5b57392b2"
+  },
+  {
+    "uid": "midv2020/est_id/70/hp/pair_mask",
+    "physical_id": "midv2020/est_id/70",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "pair_mask",
+    "input_sha256": "a423225bfc21ed30875e8ce26c54b4b453baa5b8d7088d7bd514df65160ff8b2"
+  },
+  {
+    "uid": "midv2020/grc_passport/33/hp/pair_mask",
+    "physical_id": "midv2020/grc_passport/33",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "pair_mask",
+    "input_sha256": "5c3bd702cfb506b8466e449f9117d5aca145f531147f1504b132c256d85f47e7"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/44/hp/pair_mask",
+    "physical_id": "midv2020/rus_internalpassport/44",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "pair_mask",
+    "input_sha256": "f0c30e8ef6fc0cee2290196c73dfc57cd2dbcb38aa4a66677f1011c5c453d494"
+  },
+  {
+    "uid": "midv2020/srb_passport/63/hp/pair_mask",
+    "physical_id": "midv2020/srb_passport/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "pair_mask",
+    "input_sha256": "b705c3495906c520aa3f6225f4be5250460fc355bd6832d9977085d1ab607033"
+  },
+  {
+    "uid": "midv2020/svk_id/63/hp/pair_mask",
+    "physical_id": "midv2020/svk_id/63",
+    "role": "development",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "pair_mask",
+    "input_sha256": "c29bfe0d057bf72c17eeaffc035317174216943275355c544739f208b7d50d9e"
+  },
+  {
+    "uid": "midv2020/alb_id/72/fc/full",
+    "physical_id": "midv2020/alb_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "full",
+    "input_sha256": "28cd591402bf7af2660fc868555bcd7b1f2a749948168bdfc237648e2b0b70bd"
+  },
+  {
+    "uid": "midv2020/alb_id/72/fc/field_clip",
+    "physical_id": "midv2020/alb_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "field_clip",
+    "input_sha256": "70583d8af987c81e789bed119138d623f581288f511d7e49f4650a20b982029c"
+  },
+  {
+    "uid": "midv2020/alb_id/72/fc/value_mask",
+    "physical_id": "midv2020/alb_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "value_mask",
+    "input_sha256": "b146382fbe35dfe4f6781cb58cbbed17caf6e866ce2eb23e568c299c71b438f4"
+  },
+  {
+    "uid": "midv2020/alb_id/72/fc/pair_mask",
+    "physical_id": "midv2020/alb_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "alb_id",
+    "capture": "pair_mask",
+    "input_sha256": "7a9d3c27f24a18bbb0d5e2e0b06c8d1414dd8f4c883bd62b75d07f56532a6f02"
+  },
+  {
+    "uid": "midv2020/alb_id/85/fc/full",
+    "physical_id": "midv2020/alb_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "full",
+    "input_sha256": "948a1326deb08b57f25f0bcd0af2e7883a19a5b5d769b44721ae65d984de50c8"
+  },
+  {
+    "uid": "midv2020/alb_id/85/fc/field_clip",
+    "physical_id": "midv2020/alb_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "field_clip",
+    "input_sha256": "724c3d5b964b35328368cd79fc96587bfec9e13ce6b454da95e4471d5d1a6b36"
+  },
+  {
+    "uid": "midv2020/alb_id/85/fc/value_mask",
+    "physical_id": "midv2020/alb_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "value_mask",
+    "input_sha256": "9e9a090c87d3556cf497d8126bca13ba34b8d874e14cb0393578852ff86e4e72"
+  },
+  {
+    "uid": "midv2020/alb_id/85/fc/pair_mask",
+    "physical_id": "midv2020/alb_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "pair_mask",
+    "input_sha256": "0e36a587c3e21cb75f6b263e7a9c94b7e71eadd50cb3eff918c4bc8cded75fe5"
+  },
+  {
+    "uid": "midv2020/alb_id/83/fc/full",
+    "physical_id": "midv2020/alb_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "full",
+    "input_sha256": "818a17551c360874ef3fd4c68cffd20f94b6e95becceabe9bdc721d9961ba05b"
+  },
+  {
+    "uid": "midv2020/alb_id/83/fc/field_clip",
+    "physical_id": "midv2020/alb_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "field_clip",
+    "input_sha256": "9fe919491dd14eaca651a8b7bd6125af75c146ab3383f50f3a99f4ab3a8816f4"
+  },
+  {
+    "uid": "midv2020/alb_id/83/fc/value_mask",
+    "physical_id": "midv2020/alb_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "value_mask",
+    "input_sha256": "b3739f683e69e26ef53ccda5c9d4b2737da3fcf870ca1193c0cda022a33e77fe"
+  },
+  {
+    "uid": "midv2020/alb_id/83/fc/pair_mask",
+    "physical_id": "midv2020/alb_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "alb_id",
+    "capture": "pair_mask",
+    "input_sha256": "6cfd7fde744269753b4977735a7a4721d898e3e198fdcb8c5fea20011744557d"
+  },
+  {
+    "uid": "midv2020/aze_passport/72/fc/full",
+    "physical_id": "midv2020/aze_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "full",
+    "input_sha256": "359b2ef867e55a0c41e8fb731086fb912092d71c1bddf8c39e05c99ca15d66f4"
+  },
+  {
+    "uid": "midv2020/aze_passport/72/fc/field_clip",
+    "physical_id": "midv2020/aze_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "field_clip",
+    "input_sha256": "07a71131275721fe2ff130adb607d72a74c755ca4e767a706193bf0208b28cfd"
+  },
+  {
+    "uid": "midv2020/aze_passport/72/fc/value_mask",
+    "physical_id": "midv2020/aze_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "value_mask",
+    "input_sha256": "9a76c92fae6c4a198a63486eb0b974d2b5741ef695e88d2be79a3b54d2e0c386"
+  },
+  {
+    "uid": "midv2020/aze_passport/72/fc/pair_mask",
+    "physical_id": "midv2020/aze_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "aze_passport",
+    "capture": "pair_mask",
+    "input_sha256": "9fca4b1ed42c26fd2419f6bc7df0e3f12e053d4f8a69159b2c91d3706d142a5a"
+  },
+  {
+    "uid": "midv2020/aze_passport/85/fc/full",
+    "physical_id": "midv2020/aze_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "aze_passport",
+    "capture": "full",
+    "input_sha256": "67fcf7e74d80a77bf48848540b64d28d17f442f982d38cbf667efed1587cb7ab"
+  },
+  {
+    "uid": "midv2020/aze_passport/85/fc/field_clip",
+    "physical_id": "midv2020/aze_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "aze_passport",
+    "capture": "field_clip",
+    "input_sha256": "7bd3920df87b7228280e9c386b5f5ed1c34dfb3caa4954fe1a9800e445a1e625"
+  },
+  {
+    "uid": "midv2020/aze_passport/85/fc/value_mask",
+    "physical_id": "midv2020/aze_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "aze_passport",
+    "capture": "value_mask",
+    "input_sha256": "53e86385cb9a89eb670d9e5ba32f29007250bbc6a37fdadfa65d7fdea95d9e7c"
+  },
+  {
+    "uid": "midv2020/aze_passport/85/fc/pair_mask",
+    "physical_id": "midv2020/aze_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "aze_passport",
+    "capture": "pair_mask",
+    "input_sha256": "10138529777b8fec569ef33c448c02f3461cd8c3d2dcd7084b163efaad90c720"
+  },
+  {
+    "uid": "midv2020/esp_id/72/fc/full",
+    "physical_id": "midv2020/esp_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "full",
+    "input_sha256": "f8725dc6330e7f25224c648fd59e38db0feae23a5ab45a074d893f76b017572b"
+  },
+  {
+    "uid": "midv2020/esp_id/72/fc/field_clip",
+    "physical_id": "midv2020/esp_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "field_clip",
+    "input_sha256": "4f437e8e1c58c0b7225e7584ca3218b9baaf9bebc60ef5de839b1e179f03a7e5"
+  },
+  {
+    "uid": "midv2020/esp_id/72/fc/value_mask",
+    "physical_id": "midv2020/esp_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "value_mask",
+    "input_sha256": "7d45c222257b434d499529b6830000d2a1daeabb9dbc34db85a2e947cf75d9eb"
+  },
+  {
+    "uid": "midv2020/esp_id/72/fc/pair_mask",
+    "physical_id": "midv2020/esp_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "esp_id",
+    "capture": "pair_mask",
+    "input_sha256": "aba52062c6760f063469222d2fadb38db16209ed333c33293dc4c4f151778684"
+  },
+  {
+    "uid": "midv2020/esp_id/85/fc/full",
+    "physical_id": "midv2020/esp_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "full",
+    "input_sha256": "78631b9fc85c6927d8287ecaf33b7b60a9bba257eb37c3d81f356b8d67eb3f5e"
+  },
+  {
+    "uid": "midv2020/esp_id/85/fc/field_clip",
+    "physical_id": "midv2020/esp_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "field_clip",
+    "input_sha256": "bb6365cf1c301c1ce315773f8de8f378d7dcb7d5a120c0b081b4335ead5f3391"
+  },
+  {
+    "uid": "midv2020/esp_id/85/fc/value_mask",
+    "physical_id": "midv2020/esp_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "value_mask",
+    "input_sha256": "7f1a3bf5f609c25d74c11a73d7767cf7d246626e3c42103f55a688c17e3d615b"
+  },
+  {
+    "uid": "midv2020/esp_id/85/fc/pair_mask",
+    "physical_id": "midv2020/esp_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "pair_mask",
+    "input_sha256": "5f864e3613a5883bd22f3f5d3a8b29e918264c6d6b6fdefaf905a1f13cd33127"
+  },
+  {
+    "uid": "midv2020/esp_id/83/fc/full",
+    "physical_id": "midv2020/esp_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "full",
+    "input_sha256": "0a3301d699a5a65369fb15bf60ff0d1f9cab143b9587bd6287de758325eec0eb"
+  },
+  {
+    "uid": "midv2020/esp_id/83/fc/field_clip",
+    "physical_id": "midv2020/esp_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "field_clip",
+    "input_sha256": "d3b53d2b7dc71114171f302a8f1060394aa21dfbfb65e2a205c969ccc4c1d201"
+  },
+  {
+    "uid": "midv2020/esp_id/83/fc/value_mask",
+    "physical_id": "midv2020/esp_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "value_mask",
+    "input_sha256": "5b49b224c23a9852890875c28c3864aaadae2c42d662273825062b98ae9e828f"
+  },
+  {
+    "uid": "midv2020/esp_id/83/fc/pair_mask",
+    "physical_id": "midv2020/esp_id/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "esp_id",
+    "capture": "pair_mask",
+    "input_sha256": "67ad858a9669336d363d381412ce069411a39f8cb8826d2791880c50786f5b60"
+  },
+  {
+    "uid": "midv2020/est_id/72/fc/full",
+    "physical_id": "midv2020/est_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "full",
+    "input_sha256": "51a22ce14d475fca17a365f0af342357a667e7cc771e0a69a4be0dd3ddf53937"
+  },
+  {
+    "uid": "midv2020/est_id/72/fc/field_clip",
+    "physical_id": "midv2020/est_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "field_clip",
+    "input_sha256": "c6fde337bf90b4758736c734f3630c87c9bf3ce18455afa2edcb881590622991"
+  },
+  {
+    "uid": "midv2020/est_id/72/fc/value_mask",
+    "physical_id": "midv2020/est_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "value_mask",
+    "input_sha256": "5141128375755e941ec15ca3ef98ce4f526dbf845efaf92f82ff3b010bfb4c6d"
+  },
+  {
+    "uid": "midv2020/est_id/72/fc/pair_mask",
+    "physical_id": "midv2020/est_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "est_id",
+    "capture": "pair_mask",
+    "input_sha256": "b536398b4f1e56c8d5965ae8732abd031c2bcad6d55242eded31c803ccafd7b5"
+  },
+  {
+    "uid": "midv2020/est_id/85/fc/full",
+    "physical_id": "midv2020/est_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "est_id",
+    "capture": "full",
+    "input_sha256": "208a057d9a90bdcab448fe991af7833e3317e998f4a62c58c724bacccb5b4130"
+  },
+  {
+    "uid": "midv2020/est_id/85/fc/field_clip",
+    "physical_id": "midv2020/est_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "est_id",
+    "capture": "field_clip",
+    "input_sha256": "4614bdf6be80e531e25d5ce8be9a63333076430638a34e5c0b2db540e21d36a1"
+  },
+  {
+    "uid": "midv2020/est_id/85/fc/value_mask",
+    "physical_id": "midv2020/est_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "est_id",
+    "capture": "value_mask",
+    "input_sha256": "c3627d5cd8d9f13d4e4dedae5b08462a557cbc853e0deba9f3c3842c5f6a9ba3"
+  },
+  {
+    "uid": "midv2020/est_id/85/fc/pair_mask",
+    "physical_id": "midv2020/est_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "est_id",
+    "capture": "pair_mask",
+    "input_sha256": "2567cf38630ba0faf076d339f5f222eaa6cc39bbf8b6f57c6640479a5f6703ba"
+  },
+  {
+    "uid": "midv2020/fin_id/72/fc/full",
+    "physical_id": "midv2020/fin_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "fin_id",
+    "capture": "full",
+    "input_sha256": "8cf35a37e7274284eb5b45ad58ffa503b2b50e02fa28c3ada3226e463a51a577"
+  },
+  {
+    "uid": "midv2020/fin_id/72/fc/field_clip",
+    "physical_id": "midv2020/fin_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "fin_id",
+    "capture": "field_clip",
+    "input_sha256": "93cda1bdb3bea80d84419a4b0d096e360ff15128af2df136eafcbd34a3b857c1"
+  },
+  {
+    "uid": "midv2020/fin_id/72/fc/value_mask",
+    "physical_id": "midv2020/fin_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "fin_id",
+    "capture": "value_mask",
+    "input_sha256": "d6b85959d340c58f410f7f6b8e70d4ab35edd0732d0a707fccfe4a2b65fd5936"
+  },
+  {
+    "uid": "midv2020/fin_id/72/fc/pair_mask",
+    "physical_id": "midv2020/fin_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "fin_id",
+    "capture": "pair_mask",
+    "input_sha256": "e1c0e819b0f2840a988319110da16ddbc7b4b8e0ddc431f6da2d966ab4c3ffcb"
+  },
+  {
+    "uid": "midv2020/fin_id/85/fc/full",
+    "physical_id": "midv2020/fin_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "fin_id",
+    "capture": "full",
+    "input_sha256": "94c4a7bf429a698637ffc1e7a05b758b527c30a2605b794d8992951d3ba30030"
+  },
+  {
+    "uid": "midv2020/fin_id/85/fc/field_clip",
+    "physical_id": "midv2020/fin_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "fin_id",
+    "capture": "field_clip",
+    "input_sha256": "e80b3461f0a32fd96c102c4ff2922c5d13c43365356be64e3631ac30527f7dbc"
+  },
+  {
+    "uid": "midv2020/fin_id/85/fc/value_mask",
+    "physical_id": "midv2020/fin_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "fin_id",
+    "capture": "value_mask",
+    "input_sha256": "d932b7bc932a11c6ecf01e48970177cbe76f783177e4131a821bc9c20f04fc10"
+  },
+  {
+    "uid": "midv2020/fin_id/85/fc/pair_mask",
+    "physical_id": "midv2020/fin_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "fin_id",
+    "capture": "pair_mask",
+    "input_sha256": "8236f955d595e90b576fa9a9eaa19d2a95c0d264983d67764106632e86347ad1"
+  },
+  {
+    "uid": "midv2020/grc_passport/72/fc/full",
+    "physical_id": "midv2020/grc_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "full",
+    "input_sha256": "fcb60e9f20cf02397c285ccce59f096a812e298d08a16ca4ebff7cab4b8399a5"
+  },
+  {
+    "uid": "midv2020/grc_passport/72/fc/field_clip",
+    "physical_id": "midv2020/grc_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "field_clip",
+    "input_sha256": "62aa8e266fe9de0e7a4d819fef163150b91042420dc6aad501c734e927fc63c3"
+  },
+  {
+    "uid": "midv2020/grc_passport/72/fc/value_mask",
+    "physical_id": "midv2020/grc_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "value_mask",
+    "input_sha256": "5d13dc9a2a9dd8d9bd0fe2bbe18b6a5df063e3696cf53c01f6617c49a9a58326"
+  },
+  {
+    "uid": "midv2020/grc_passport/72/fc/pair_mask",
+    "physical_id": "midv2020/grc_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "grc_passport",
+    "capture": "pair_mask",
+    "input_sha256": "0a2d9d35f104c20dcdc58b8be02bce5bc2d0b822ec4c29efc897d1203f6ac504"
+  },
+  {
+    "uid": "midv2020/grc_passport/85/fc/full",
+    "physical_id": "midv2020/grc_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "full",
+    "input_sha256": "dec1ec2b8c84d9113d5f2b117595800722c8cfed3656d9fcafdd4b00a21502a1"
+  },
+  {
+    "uid": "midv2020/grc_passport/85/fc/field_clip",
+    "physical_id": "midv2020/grc_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "field_clip",
+    "input_sha256": "c143c5ead07b9f484c0cdcaa885eaba3282b9eb2269a019c2138aed85d1fe1bc"
+  },
+  {
+    "uid": "midv2020/grc_passport/85/fc/value_mask",
+    "physical_id": "midv2020/grc_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "value_mask",
+    "input_sha256": "1352d08c4f61d7d1baa81b9b1f0f1a539d9f3fb6f68b0f4b79051266aa5d8c89"
+  },
+  {
+    "uid": "midv2020/grc_passport/85/fc/pair_mask",
+    "physical_id": "midv2020/grc_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "pair_mask",
+    "input_sha256": "7aed0ac7b1ef845fee342722548ecd248ad4848464d8728b2d82d653998d7dc8"
+  },
+  {
+    "uid": "midv2020/grc_passport/83/fc/full",
+    "physical_id": "midv2020/grc_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "full",
+    "input_sha256": "8bd633b874b8b7494793453f0ed1b4f62b02a8ec3ec9db2801054196075c8d9f"
+  },
+  {
+    "uid": "midv2020/grc_passport/83/fc/field_clip",
+    "physical_id": "midv2020/grc_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "field_clip",
+    "input_sha256": "a1dd34af7f14f53a1267cc19ebd769dce7b3de34258f654664674b9adb64a7db"
+  },
+  {
+    "uid": "midv2020/grc_passport/83/fc/value_mask",
+    "physical_id": "midv2020/grc_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "value_mask",
+    "input_sha256": "ad838c35f42ade8d0787bdce5e8dab059ecd41e52d47b23a7835c3e7f70226c5"
+  },
+  {
+    "uid": "midv2020/grc_passport/83/fc/pair_mask",
+    "physical_id": "midv2020/grc_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "grc_passport",
+    "capture": "pair_mask",
+    "input_sha256": "a38117e1a140d66b59a54d67bfe428f57ccda6a0ec43a1cf8a11d4418c502625"
+  },
+  {
+    "uid": "midv2020/lva_passport/72/fc/full",
+    "physical_id": "midv2020/lva_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "lva_passport",
+    "capture": "full",
+    "input_sha256": "b545913bb4e720e726d2dc154f38e1bd64ec7b1f81dafcee6fffb8f804603ea7"
+  },
+  {
+    "uid": "midv2020/lva_passport/72/fc/field_clip",
+    "physical_id": "midv2020/lva_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "lva_passport",
+    "capture": "field_clip",
+    "input_sha256": "9b913153c203dab2a570b737a5de8c3cb49c1bde3874d8192005d078cfe07eb8"
+  },
+  {
+    "uid": "midv2020/lva_passport/72/fc/value_mask",
+    "physical_id": "midv2020/lva_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "lva_passport",
+    "capture": "value_mask",
+    "input_sha256": "5a4ca095082c6860884eeaff856282458d522aff0c3668569bb7279e8d1b612d"
+  },
+  {
+    "uid": "midv2020/lva_passport/72/fc/pair_mask",
+    "physical_id": "midv2020/lva_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "lva_passport",
+    "capture": "pair_mask",
+    "input_sha256": "a6376c6bda129c0776621f13225f8955986db3ce9643ab6967cca2125481bd4e"
+  },
+  {
+    "uid": "midv2020/lva_passport/85/fc/full",
+    "physical_id": "midv2020/lva_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "full",
+    "input_sha256": "71a325606ada1bf1cdfee497daa694ebd299f8e6b23755fbf86cc266c2e186e1"
+  },
+  {
+    "uid": "midv2020/lva_passport/85/fc/field_clip",
+    "physical_id": "midv2020/lva_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "field_clip",
+    "input_sha256": "cc8195533973bcc92b5cb47dbbd9b1eb50ac0f7d2ea4856f5ed10126ae401ef3"
+  },
+  {
+    "uid": "midv2020/lva_passport/85/fc/value_mask",
+    "physical_id": "midv2020/lva_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "value_mask",
+    "input_sha256": "7c0437e581f7a2da489c89fb5ee4908fc58ee473bc4cfd0695294cdb349b6260"
+  },
+  {
+    "uid": "midv2020/lva_passport/85/fc/pair_mask",
+    "physical_id": "midv2020/lva_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "pair_mask",
+    "input_sha256": "8d89cdf929ca2a54f7dec7c0f573f548ea3260ccd986a5f7c7e74be1a7915df9"
+  },
+  {
+    "uid": "midv2020/lva_passport/83/fc/full",
+    "physical_id": "midv2020/lva_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "full",
+    "input_sha256": "6fbed405176ca003f0a2253dc05a4893e24cb21468c449c4799253110a58610f"
+  },
+  {
+    "uid": "midv2020/lva_passport/83/fc/field_clip",
+    "physical_id": "midv2020/lva_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "field_clip",
+    "input_sha256": "d8a94c140fda049aa69b6921ba2b41b6c836f6d82551f5ba02c0e99709c76856"
+  },
+  {
+    "uid": "midv2020/lva_passport/83/fc/value_mask",
+    "physical_id": "midv2020/lva_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "value_mask",
+    "input_sha256": "394725d02a9da77d64a85b27e89b3e76a2127ecbe6cd7de1a000cd2049e96576"
+  },
+  {
+    "uid": "midv2020/lva_passport/83/fc/pair_mask",
+    "physical_id": "midv2020/lva_passport/83",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "lva_passport",
+    "capture": "pair_mask",
+    "input_sha256": "280b03882b1bab886440732fcd358e701760a19bead668f0ae8552b7ffb0a561"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/72/fc/full",
+    "physical_id": "midv2020/rus_internalpassport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "full",
+    "input_sha256": "c53e001d3fc04e12406f44d03621888153fe0180e23c5db19f1be7bf4f20ae6d"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/72/fc/field_clip",
+    "physical_id": "midv2020/rus_internalpassport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "field_clip",
+    "input_sha256": "ab833f1c3a3158e38acb6c58df9cc72afa3bc851a6fcd1bf079109bade4e5c5e"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/72/fc/value_mask",
+    "physical_id": "midv2020/rus_internalpassport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "value_mask",
+    "input_sha256": "37b2306bf6a92ad8ae8848a4d1abc0bc4deec3219ea18aa8d36139760669a0ed"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/72/fc/pair_mask",
+    "physical_id": "midv2020/rus_internalpassport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "rus_internalpassport",
+    "capture": "pair_mask",
+    "input_sha256": "3e2551174e058703029ab5ec3556cd3e6cb2cde238d294ac48c880ab3f6fdaef"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/85/fc/full",
+    "physical_id": "midv2020/rus_internalpassport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "rus_internalpassport",
+    "capture": "full",
+    "input_sha256": "4f4bac695b2ac258e017c36b6ddb5eb13a0c8276d4d1943beffdd8a4f1efa46a"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/85/fc/field_clip",
+    "physical_id": "midv2020/rus_internalpassport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "rus_internalpassport",
+    "capture": "field_clip",
+    "input_sha256": "ba740da1d9287f95ef5a3cc7ae46a0e686904d1b9403940e5b1840f159082685"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/85/fc/value_mask",
+    "physical_id": "midv2020/rus_internalpassport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "rus_internalpassport",
+    "capture": "value_mask",
+    "input_sha256": "4cb9d857b6ffebac5c8f9e71150552116b4bf86ab7f480d6bdddd3ddf9030b91"
+  },
+  {
+    "uid": "midv2020/rus_internalpassport/85/fc/pair_mask",
+    "physical_id": "midv2020/rus_internalpassport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "rus_internalpassport",
+    "capture": "pair_mask",
+    "input_sha256": "dc86f911fd8765893b3aaca08fb19a5dc3fddf96d26463136352b1040cec7f23"
+  },
+  {
+    "uid": "midv2020/srb_passport/72/fc/full",
+    "physical_id": "midv2020/srb_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "full",
+    "input_sha256": "87d730fb08615687fb73c8696d1bfc981dcff9dcaaea0fa8daca5ff2df4af17f"
+  },
+  {
+    "uid": "midv2020/srb_passport/72/fc/field_clip",
+    "physical_id": "midv2020/srb_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "field_clip",
+    "input_sha256": "d9e3d7453e970b99ce5961f911685fa80285f5e8f19e040a1e540a348de86770"
+  },
+  {
+    "uid": "midv2020/srb_passport/72/fc/value_mask",
+    "physical_id": "midv2020/srb_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "value_mask",
+    "input_sha256": "a63f9840dd5c355ac80daa88c4ca4c4b42f633ff9046ed57adfd85fd910dddea"
+  },
+  {
+    "uid": "midv2020/srb_passport/72/fc/pair_mask",
+    "physical_id": "midv2020/srb_passport/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "srb_passport",
+    "capture": "pair_mask",
+    "input_sha256": "f3c3723168ae8f1ce22806d2db69ff7c3890b6dbd50b5d835a75d10552a7d7b1"
+  },
+  {
+    "uid": "midv2020/srb_passport/85/fc/full",
+    "physical_id": "midv2020/srb_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "srb_passport",
+    "capture": "full",
+    "input_sha256": "94291512b17e3a18f99e42de9bb4cbcbbb2114b57d7e5da54c503b8e746d604d"
+  },
+  {
+    "uid": "midv2020/srb_passport/85/fc/field_clip",
+    "physical_id": "midv2020/srb_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "srb_passport",
+    "capture": "field_clip",
+    "input_sha256": "be94d7491137ac15f90528487ca7ed6c59e6fc6274aeac60757c2f02e7399466"
+  },
+  {
+    "uid": "midv2020/srb_passport/85/fc/value_mask",
+    "physical_id": "midv2020/srb_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "srb_passport",
+    "capture": "value_mask",
+    "input_sha256": "07bfc2ab78f6dee2b8c4ec89e1e341feb52e13675e74cbe25851704e2bc68f8b"
+  },
+  {
+    "uid": "midv2020/srb_passport/85/fc/pair_mask",
+    "physical_id": "midv2020/srb_passport/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "srb_passport",
+    "capture": "pair_mask",
+    "input_sha256": "36ff9ace476d9512d2d9ab402cf4ee0f79faa4414c5598525ca21512fa5bb791"
+  },
+  {
+    "uid": "midv2020/svk_id/72/fc/full",
+    "physical_id": "midv2020/svk_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "full",
+    "input_sha256": "e47960adc088da999563e21f2e93c80b7be3dd8271fff02d5a8c8a67c1f1d148"
+  },
+  {
+    "uid": "midv2020/svk_id/72/fc/field_clip",
+    "physical_id": "midv2020/svk_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "field_clip",
+    "input_sha256": "08b57efd87d1734f55cde92ff9dddc499648a3b1b381bbaec1d702b8be578d44"
+  },
+  {
+    "uid": "midv2020/svk_id/72/fc/value_mask",
+    "physical_id": "midv2020/svk_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "value_mask",
+    "input_sha256": "277a6df785bca95f4a66d28646089ecb30b8e4aa8a1b346769c97894f605405b"
+  },
+  {
+    "uid": "midv2020/svk_id/72/fc/pair_mask",
+    "physical_id": "midv2020/svk_id/72",
+    "role": "test",
+    "source": "midv2020",
+    "device": "iPhone XS Max",
+    "layout": "svk_id",
+    "capture": "pair_mask",
+    "input_sha256": "4ca6305bbad2149c7af075e5d3dd1a71b4fb967eb404fb9200642597fa196dd1"
+  },
+  {
+    "uid": "midv2020/svk_id/85/fc/full",
+    "physical_id": "midv2020/svk_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "svk_id",
+    "capture": "full",
+    "input_sha256": "bb47f22a7c654177844dfe5586ae92cd23f4525343aef0b2e69911d24f1933ed"
+  },
+  {
+    "uid": "midv2020/svk_id/85/fc/field_clip",
+    "physical_id": "midv2020/svk_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "svk_id",
+    "capture": "field_clip",
+    "input_sha256": "22096a1b0bf4d3e142e5d09feb164d51155bd4563e0b70d2017e36a6988a3d3a"
+  },
+  {
+    "uid": "midv2020/svk_id/85/fc/value_mask",
+    "physical_id": "midv2020/svk_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "svk_id",
+    "capture": "value_mask",
+    "input_sha256": "dbae324ddf5376ce06a0b1d5286ea71b46d4e0fe59015ae3844f222c4c8e8ac1"
+  },
+  {
+    "uid": "midv2020/svk_id/85/fc/pair_mask",
+    "physical_id": "midv2020/svk_id/85",
+    "role": "test",
+    "source": "midv2020",
+    "device": "SM-G973F",
+    "layout": "svk_id",
+    "capture": "pair_mask",
+    "input_sha256": "06fbc04079d2635f0a5c779e1b8391d137d7934ff60857c091e195f2efa1c472"
+  },
+  {
+    "uid": "fair_controls_v1/test/000/fc/full",
+    "physical_id": "fair_controls_v1/test/000",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "886a9a75881eed3a4f68816c98954c37cd13f3329bd433c0f0b5d88bef86ec1e"
+  },
+  {
+    "uid": "fair_controls_v1/test/000/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/000",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "dc525f68c61c90426aeb7f65c82a51e7a2312af37f22f65c1d08eb91eae3ca4e"
+  },
+  {
+    "uid": "fair_controls_v1/test/000/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/000",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "7a700f401a7497892849f95b94297f674984c77e7d368e500a5139c0afbe25e5"
+  },
+  {
+    "uid": "fair_controls_v1/test/000/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/000",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "7a700f401a7497892849f95b94297f674984c77e7d368e500a5139c0afbe25e5"
+  },
+  {
+    "uid": "fair_controls_v1/test/001/fc/full",
+    "physical_id": "fair_controls_v1/test/001",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "61100916dc69e19842a5b6ba440b535c9bf90e7a3871f13343233592935d1f98"
+  },
+  {
+    "uid": "fair_controls_v1/test/001/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/001",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "38f2877729df0574062a3aebb6ee424894ba5b426754af1e8e37561f62b65bdf"
+  },
+  {
+    "uid": "fair_controls_v1/test/001/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/001",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "c702dc67b9bcc071cc3d6834e932dc9d2ed3648a970eaab0802a452566b468ac"
+  },
+  {
+    "uid": "fair_controls_v1/test/001/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/001",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "c441cddd5471be505519b1ad18151b6b00de2b7b6ea87fb9d35371175942362d"
+  },
+  {
+    "uid": "fair_controls_v1/test/002/fc/full",
+    "physical_id": "fair_controls_v1/test/002",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "1334939ac5b38ca8cb870fb4511c79a3a691b7984e5c758300c9a372945daad3"
+  },
+  {
+    "uid": "fair_controls_v1/test/002/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/002",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "711bc8bdcfff15f3c66841252502c7c1a63bfbbc24ec7b48208d8565cbd60a9a"
+  },
+  {
+    "uid": "fair_controls_v1/test/002/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/002",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "ab1d1cc621009d31c01ff36019964f6d0ffc3d3eb731435b18c3b353087f00f4"
+  },
+  {
+    "uid": "fair_controls_v1/test/002/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/002",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "ab1d1cc621009d31c01ff36019964f6d0ffc3d3eb731435b18c3b353087f00f4"
+  },
+  {
+    "uid": "fair_controls_v1/test/003/fc/full",
+    "physical_id": "fair_controls_v1/test/003",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "d51fd931e98b722a6ed90060db832496fc2cc138be3c6a401a675c0ac6e05e2d"
+  },
+  {
+    "uid": "fair_controls_v1/test/003/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/003",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "b5bf299345a0fda4e41b949074a18406fdea86363306cebd9409358a50776956"
+  },
+  {
+    "uid": "fair_controls_v1/test/003/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/003",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "bf2f725b48d011ed127e92a5c7aa6dc8cef90c1647103e1f263e030955400b9c"
+  },
+  {
+    "uid": "fair_controls_v1/test/003/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/003",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "1446c69a9f3485799a2978ea0be401a560bedc11c26c60fcbf95ae9fbe11facc"
+  },
+  {
+    "uid": "fair_controls_v1/test/004/fc/full",
+    "physical_id": "fair_controls_v1/test/004",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "2f6744d9e8e2b51b3506645612f63f113aeb0e7b4b6349b1c93c3586a918ea97"
+  },
+  {
+    "uid": "fair_controls_v1/test/004/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/004",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "8b0fc746b27d3f01a7403717ca04add20c2dbbfe3fc471eab34f6d77f2d235a8"
+  },
+  {
+    "uid": "fair_controls_v1/test/004/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/004",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "9593a5ef407c7b1e6abace16d1fb127372487bdcc41ca68d84cc7c5ee65c9030"
+  },
+  {
+    "uid": "fair_controls_v1/test/004/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/004",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "9593a5ef407c7b1e6abace16d1fb127372487bdcc41ca68d84cc7c5ee65c9030"
+  },
+  {
+    "uid": "fair_controls_v1/test/005/fc/full",
+    "physical_id": "fair_controls_v1/test/005",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "89d368e291217438f05a0812daf9c43bef9e418c93ca46a4ccc94748cdc6d2d1"
+  },
+  {
+    "uid": "fair_controls_v1/test/005/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/005",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "3858c4de3ec31b74c1be685d21efcb2b88111b504821c92b637dc66b41b42bab"
+  },
+  {
+    "uid": "fair_controls_v1/test/005/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/005",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "338b245f15d0389fd96bd6bc15f7193f6cca8e1e2fbba5b6613585b497e435e4"
+  },
+  {
+    "uid": "fair_controls_v1/test/005/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/005",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "68b3474049bf446a8e230f6c509e4b1a1a763044c6673911f9265173c094de8c"
+  },
+  {
+    "uid": "fair_controls_v1/test/006/fc/full",
+    "physical_id": "fair_controls_v1/test/006",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "57080247bdd3364fb1da81f31bb6135b75662554f21a766560d380053abab17e"
+  },
+  {
+    "uid": "fair_controls_v1/test/006/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/006",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "8c0d7ff8b5c57a1b31d765921a83a6963371493fd61bdde1b8f3e1726245e770"
+  },
+  {
+    "uid": "fair_controls_v1/test/006/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/006",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "8bded85c0a799b178c56661ec3f39ec0981e6e958183bfd2d471578063a6f365"
+  },
+  {
+    "uid": "fair_controls_v1/test/006/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/006",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "8bded85c0a799b178c56661ec3f39ec0981e6e958183bfd2d471578063a6f365"
+  },
+  {
+    "uid": "fair_controls_v1/test/007/fc/full",
+    "physical_id": "fair_controls_v1/test/007",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "6e1cb17252e2c5ba99f8b4c7241947c6f7e3e311b4190bc2c508cfd1d07f0207"
+  },
+  {
+    "uid": "fair_controls_v1/test/007/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/007",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "ea7b14200e7e79926cf373816a9a07ed2a954a7156bf3a2dd847e8da566a8c3b"
+  },
+  {
+    "uid": "fair_controls_v1/test/007/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/007",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "9f90b3b032b6ff5ae72ffbfe8cd64821f83d3f0dec5419a2a6eab6e25299cc17"
+  },
+  {
+    "uid": "fair_controls_v1/test/007/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/007",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "2859312e7c15531ec91e6f8f626df45438c3dcf81e5b8074c84b31b1e6de2a30"
+  },
+  {
+    "uid": "fair_controls_v1/test/008/fc/full",
+    "physical_id": "fair_controls_v1/test/008",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "20f5d4200107a124e4dc0c61b85636f4df9a7754776e27ec8f47bd3c5384c096"
+  },
+  {
+    "uid": "fair_controls_v1/test/008/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/008",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "327259919db6cb8030cd944e3acfb18f32451021aab5793cef5cb894a1b9b26f"
+  },
+  {
+    "uid": "fair_controls_v1/test/008/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/008",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "1d1fe4a8234b478d5525b725eb0e05dc781780c1551b03f3316d508dc3b23670"
+  },
+  {
+    "uid": "fair_controls_v1/test/008/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/008",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "1d1fe4a8234b478d5525b725eb0e05dc781780c1551b03f3316d508dc3b23670"
+  },
+  {
+    "uid": "fair_controls_v1/test/009/fc/full",
+    "physical_id": "fair_controls_v1/test/009",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "ae99e7cb45622a7f7a3f77820587ac9ca320c4d1cae5daf91692dff6ef321e12"
+  },
+  {
+    "uid": "fair_controls_v1/test/009/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/009",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "0832eb163bd654706d69d7eb545756c110f1ed65da1bdbfcc415b9c5171eb057"
+  },
+  {
+    "uid": "fair_controls_v1/test/009/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/009",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "9073ffa9afd97f989df0dfc8658536a5b10b4f9789cfa4f4b602b5935596d35b"
+  },
+  {
+    "uid": "fair_controls_v1/test/009/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/009",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "e8af56f0b44959afd5ab60a70c355c8c98a95d5c2691c66efb4ac28b85ccd621"
+  },
+  {
+    "uid": "fair_controls_v1/test/010/fc/full",
+    "physical_id": "fair_controls_v1/test/010",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "523af388863aec94a91669c44eb2f98a7bc703421efb02493fd68dbbe9655c50"
+  },
+  {
+    "uid": "fair_controls_v1/test/010/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/010",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "4f4ab56a624c575bad0763d49e09f0a2427a129ff6dfefe4bc05bea1bd549046"
+  },
+  {
+    "uid": "fair_controls_v1/test/010/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/010",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "af2a85bc240a6e80ae6e5e3396589d9cef704c9d3f8862804f693e02f9dc2189"
+  },
+  {
+    "uid": "fair_controls_v1/test/010/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/010",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "af2a85bc240a6e80ae6e5e3396589d9cef704c9d3f8862804f693e02f9dc2189"
+  },
+  {
+    "uid": "fair_controls_v1/test/011/fc/full",
+    "physical_id": "fair_controls_v1/test/011",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "110e426339cdbe01318c55b5f50810b7c492c4ac78989d67292cde173c2469d0"
+  },
+  {
+    "uid": "fair_controls_v1/test/011/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/011",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "d56d99b10aa6786e4d6ab4998c768a0d39e38853c21984c3da0a334082263401"
+  },
+  {
+    "uid": "fair_controls_v1/test/011/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/011",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "a49615b75c51cbbe6f502ea739e87971e7ac7c496ae5e3dfc314cc2473708810"
+  },
+  {
+    "uid": "fair_controls_v1/test/011/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/011",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "6d47329769b115864f571e9eac75728e85a1f8c95a57ed76800f2db3e971c452"
+  },
+  {
+    "uid": "fair_controls_v1/test/012/fc/full",
+    "physical_id": "fair_controls_v1/test/012",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "73e325af9e7aba930e6778039358549380f1d57177795a5b825d7369f2ee2af5"
+  },
+  {
+    "uid": "fair_controls_v1/test/012/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/012",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "e966ec3e9130ec2aa21c7c3fae5a57a3b824d1122915f4769c87f8c56375a38d"
+  },
+  {
+    "uid": "fair_controls_v1/test/012/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/012",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "d03ba5e8c4073adde75182cd6b46575c79cf9c3e6df43857af2f4ac719a63f8f"
+  },
+  {
+    "uid": "fair_controls_v1/test/012/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/012",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "d03ba5e8c4073adde75182cd6b46575c79cf9c3e6df43857af2f4ac719a63f8f"
+  },
+  {
+    "uid": "fair_controls_v1/test/013/fc/full",
+    "physical_id": "fair_controls_v1/test/013",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "ecaf52458ff4985daab039604b77e4f17dd15e44882f8bc8d71b2ce69e0ca48e"
+  },
+  {
+    "uid": "fair_controls_v1/test/013/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/013",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "a2407582f37b2182405e32c0ddf04c03c873547a43a695b6c3e000797697608a"
+  },
+  {
+    "uid": "fair_controls_v1/test/013/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/013",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "649c148cbd94ec51d35a193e3e3e0923c434fa2d691af33240a011c37b233d2b"
+  },
+  {
+    "uid": "fair_controls_v1/test/013/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/013",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "0e575031d3915eb0cd739b37cc5e0c4eea8c3c41f0019f851c2c3e762a9c16ad"
+  },
+  {
+    "uid": "fair_controls_v1/test/014/fc/full",
+    "physical_id": "fair_controls_v1/test/014",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "0827e34e17669379f0ea3ea170e9cb43e1d67c4adeb2f06b2c43e2e69d622bf4"
+  },
+  {
+    "uid": "fair_controls_v1/test/014/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/014",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "22287d6e5930dd065819004dd952dfdbf2a592e8b97e1d2c99398946932d38ed"
+  },
+  {
+    "uid": "fair_controls_v1/test/014/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/014",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "7a912444a8c1493e99a7eddc472f57f962ba42ac8f6789eda2db3bfafac686ef"
+  },
+  {
+    "uid": "fair_controls_v1/test/014/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/014",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "7a912444a8c1493e99a7eddc472f57f962ba42ac8f6789eda2db3bfafac686ef"
+  },
+  {
+    "uid": "fair_controls_v1/test/015/fc/full",
+    "physical_id": "fair_controls_v1/test/015",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "1df95ae95cacadd1740ff70790feec9ecfecff09f97bab9959a77a2e5db9961a"
+  },
+  {
+    "uid": "fair_controls_v1/test/015/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/015",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "59228d3dcb33ce77ad2d8a362428700c0a996dca2c4dc64e78d8d74dee9ff6e4"
+  },
+  {
+    "uid": "fair_controls_v1/test/015/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/015",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "9b4a74940004d8ef8f74796eca2cbee2e6b2d4e86a64feaabcb2ed429af145ea"
+  },
+  {
+    "uid": "fair_controls_v1/test/015/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/015",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "e73d5fda0d3cd77435b3b124257babf918fc4c889ff03633e1fbcfb1376e59bd"
+  },
+  {
+    "uid": "fair_controls_v1/test/016/fc/full",
+    "physical_id": "fair_controls_v1/test/016",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "f5f98a7f0a36670f7c8e6402a6441b17cd1216240c352d28018989c27005dcab"
+  },
+  {
+    "uid": "fair_controls_v1/test/016/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/016",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "3a7b5f7bfab1a07d6605b38a4d9b18dad14d08d02caa22584e5366881582d245"
+  },
+  {
+    "uid": "fair_controls_v1/test/016/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/016",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "3a97fb2daf3fe5f3539ecf9f90cc58090ea9416c04cbd8c1d5e9e85d66dbb251"
+  },
+  {
+    "uid": "fair_controls_v1/test/016/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/016",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "3a97fb2daf3fe5f3539ecf9f90cc58090ea9416c04cbd8c1d5e9e85d66dbb251"
+  },
+  {
+    "uid": "fair_controls_v1/test/017/fc/full",
+    "physical_id": "fair_controls_v1/test/017",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "1b5c378b0fdabe04f8f866bc8b3f1d046266388cf99b0b817f2d5885d0fb5fd2"
+  },
+  {
+    "uid": "fair_controls_v1/test/017/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/017",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "8e0ab0258eb3e86948246d451e1a3a8e53e3f7784b0d79ba98217851900fbb25"
+  },
+  {
+    "uid": "fair_controls_v1/test/017/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/017",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "5db5ce7be0e541e1a4d49c5963f337584f0b4076aef3a6bc360f071a8400c10a"
+  },
+  {
+    "uid": "fair_controls_v1/test/017/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/017",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "b08282054b441f8ad6a73691db94e91f657eef2a1a421726bd07e0f4f513f2c2"
+  },
+  {
+    "uid": "fair_controls_v1/test/018/fc/full",
+    "physical_id": "fair_controls_v1/test/018",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "168290f0feb3ad55a66aeeb67400fa82f2d06a588df551435b90cb5770d9713b"
+  },
+  {
+    "uid": "fair_controls_v1/test/018/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/018",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "5785b9d63e62ea68597eee9f0635981d56b8ef23ed83050f94d7b686daeea60e"
+  },
+  {
+    "uid": "fair_controls_v1/test/018/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/018",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "f73c64cebd4ae110de309620f9bbfa1acc5cdd59a01120515cdacba24938575f"
+  },
+  {
+    "uid": "fair_controls_v1/test/018/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/018",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "f73c64cebd4ae110de309620f9bbfa1acc5cdd59a01120515cdacba24938575f"
+  },
+  {
+    "uid": "fair_controls_v1/test/019/fc/full",
+    "physical_id": "fair_controls_v1/test/019",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "ae47ef1014076d9d527ed086b3dd1a1ab42a136c0e28bf04546b3ecdd5fa95f5"
+  },
+  {
+    "uid": "fair_controls_v1/test/019/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/019",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "71465378df0986dd3de881f09bb3446fc2edd21a76cec3bff1a1e4e5edc88584"
+  },
+  {
+    "uid": "fair_controls_v1/test/019/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/019",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "22d4861df60e9beb3c84573def6b4e86b58bd444710219e0df70cf7722817478"
+  },
+  {
+    "uid": "fair_controls_v1/test/019/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/019",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "500b2c93a99c57b6a5c8b0c880c4005e41afb75cce15cf44a13b2c0e11eae923"
+  },
+  {
+    "uid": "fair_controls_v1/test/020/fc/full",
+    "physical_id": "fair_controls_v1/test/020",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "0747daeceb24e0e3ddd5413a0c2f7a1a5aad1530a7cb83467be773b91cbdbfb7"
+  },
+  {
+    "uid": "fair_controls_v1/test/020/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/020",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "0ce42758f468dd2b0d0cbf3dbf46443a72b74d53fc912f944aae1eac1fc7d4fc"
+  },
+  {
+    "uid": "fair_controls_v1/test/020/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/020",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "9f4796b145746b368434e0ced4de5d7f011792c577396992b768234c0b51e617"
+  },
+  {
+    "uid": "fair_controls_v1/test/020/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/020",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "9f4796b145746b368434e0ced4de5d7f011792c577396992b768234c0b51e617"
+  },
+  {
+    "uid": "fair_controls_v1/test/021/fc/full",
+    "physical_id": "fair_controls_v1/test/021",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "d9248afae2d5879e7ba41748e531f88ed36ddc9efb084041e5bbf65c37669981"
+  },
+  {
+    "uid": "fair_controls_v1/test/021/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/021",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "245e4d6ae9d3a54ce4b9abdb171dce6a442af02a6d9cdccac8b123266b027e4e"
+  },
+  {
+    "uid": "fair_controls_v1/test/021/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/021",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "2f8efd02bd13b4621d239aa1a9e84aa0c268c80f4e114acf29d543310ab62c2a"
+  },
+  {
+    "uid": "fair_controls_v1/test/021/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/021",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "14255b406a98dd818bc66276ce7a9b74211e3ef5219e1ff9d84b7cbda6ed8b4f"
+  },
+  {
+    "uid": "fair_controls_v1/test/022/fc/full",
+    "physical_id": "fair_controls_v1/test/022",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "full",
+    "input_sha256": "433f13a09e015a99c4a625ec538491f44cb08afae6599243a82036f413a9084f"
+  },
+  {
+    "uid": "fair_controls_v1/test/022/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/022",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "field_clip",
+    "input_sha256": "1b63ea1a831917e5da4dd17cb8e7d15d167fe3b8920588fccd66a5fc5f8daa39"
+  },
+  {
+    "uid": "fair_controls_v1/test/022/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/022",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "value_mask",
+    "input_sha256": "d84b66bf812c34ebc8f3469764ca602de90de16793e75875889b508d65430fdc"
+  },
+  {
+    "uid": "fair_controls_v1/test/022/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/022",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_columns",
+    "capture": "pair_mask",
+    "input_sha256": "d84b66bf812c34ebc8f3469764ca602de90de16793e75875889b508d65430fdc"
+  },
+  {
+    "uid": "fair_controls_v1/test/023/fc/full",
+    "physical_id": "fair_controls_v1/test/023",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "full",
+    "input_sha256": "e596249376a4b6ea0345777029c57bd35ea776e088514af5130b396ac749017a"
+  },
+  {
+    "uid": "fair_controls_v1/test/023/fc/field_clip",
+    "physical_id": "fair_controls_v1/test/023",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "field_clip",
+    "input_sha256": "ae381b618cf16930daa950d955ac52f3e85bbdb7b57faa3c841fd1ac045f1286"
+  },
+  {
+    "uid": "fair_controls_v1/test/023/fc/value_mask",
+    "physical_id": "fair_controls_v1/test/023",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "value_mask",
+    "input_sha256": "0012d5439bbb6f4fa629c3f261d4afd7a62446d3a6b0a4ae19d27dc4e190cd07"
+  },
+  {
+    "uid": "fair_controls_v1/test/023/fc/pair_mask",
+    "physical_id": "fair_controls_v1/test/023",
+    "role": "test",
+    "source": "authored",
+    "device": "renderer",
+    "layout": "hp_rows",
+    "capture": "pair_mask",
+    "input_sha256": "46f44d14cb9f0da77c29096613c29384fee50f74e9cbe0498c147f3a1eefbc74"
+  }
+]

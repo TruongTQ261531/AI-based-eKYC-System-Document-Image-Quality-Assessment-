@@ -1,0 +1,35 @@
+{
+  "train_sha256": "700004781c344d6fd113913c11647e8cc708b62a252aee3a2d8480dc481b802c",
+  "evaluation_sha256": "1a4a8adb1ad77c3d761471d1597a6784ffd0e67c09c9798e0bf33fac5094ea8a",
+  "graphs_sha256": "2446a30c65b2af3557ce8b05594010823d885e10a5b1ad19751fbcd239dc7fab",
+  "data_code_sha256": "11d222a27bb00116b564718a0c33e0dd448381ec21a9b0e5274ab3acd822ec0a",
+  "development_instances": 24,
+  "development_cases": 96,
+  "test_instances": 48,
+  "test_cases": 192,
+  "test_photo_instances": 24,
+  "test_authored_instances": 24,
+  "photo_device_counts": {
+    "iPhone XS Max": 10,
+    "SM-G973F": 14
+  },
+  "test_layout_counts": {
+    "alb_id": 3,
+    "aze_passport": 2,
+    "esp_id": 3,
+    "est_id": 2,
+    "fin_id": 2,
+    "grc_passport": 3,
+    "lva_passport": 3,
+    "rus_internalpassport": 2,
+    "srb_passport": 2,
+    "svk_id": 2,
+    "hp_columns": 12,
+    "hp_rows": 12
+  },
+  "test_pair_fallbacks": 12,
+  "independent_camera_collection": false,
+  "human_legibility_annotations": 0,
+  "new_layout_or_font_claim": false,
+  "all_old_test_results_retained": true
+}

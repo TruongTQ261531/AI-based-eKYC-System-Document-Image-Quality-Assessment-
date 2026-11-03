@@ -1,0 +1,155 @@
+{
+  "photo_instances": 24,
+  "selection": "Members16/17 per type; member18 in four fixed SHA-ranked types",
+  "source": "ftp://smartengines.com/midv-2020/dataset/photo.tar",
+  "integrity": "TAR header checksum/size plus per-image SHA256; full archive MD5 not reverified",
+  "license": "MIDV-2020 CC BY-SA2.5; original author/portrait attribution retained",
+  "independent_camera_collection": false,
+  "unknown_pretraining_overlap": true,
+  "sources": [
+    {
+      "physical_id": "midv2020/alb_id/72",
+      "code": "alb_id",
+      "device": "iPhone XS Max",
+      "source_sha256": "27fee59530bcb9b7a6a7f4ffcbacb02ed245636ea557c0b8e68bde40a89a1946"
+    },
+    {
+      "physical_id": "midv2020/alb_id/85",
+      "code": "alb_id",
+      "device": "SM-G973F",
+      "source_sha256": "42c30021fa5aca4b3b4eb16ca9eb2585ee423fa923e2a83bb7ae5038993d9f44"
+    },
+    {
+      "physical_id": "midv2020/alb_id/83",
+      "code": "alb_id",
+      "device": "SM-G973F",
+      "source_sha256": "4c01a6ceb07d67844176837019e4e7461d35e753bf10d3ae6b4c985930132a51"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/72",
+      "code": "aze_passport",
+      "device": "iPhone XS Max",
+      "source_sha256": "2f521b9d77b2c9bc001b0b8b3a87130cf6c57dd29462df04925df21e99903535"
+    },
+    {
+      "physical_id": "midv2020/aze_passport/85",
+      "code": "aze_passport",
+      "device": "SM-G973F",
+      "source_sha256": "339da73788db0c242591daa835e4860c033e7c82a9252ffc3e42055aa1796b8a"
+    },
+    {
+      "physical_id": "midv2020/esp_id/72",
+      "code": "esp_id",
+      "device": "iPhone XS Max",
+      "source_sha256": "638ce796129eaea7aedccea8744330cebae09e2d48e10f5cb74e7ae8542f2211"
+    },
+    {
+      "physical_id": "midv2020/esp_id/85",
+      "code": "esp_id",
+      "device": "SM-G973F",
+      "source_sha256": "8e6c43f10cfe49ff0ccec9ecfa5309e6cc13d03c0b74814c95d251bf6a1ce139"
+    },
+    {
+      "physical_id": "midv2020/esp_id/83",
+      "code": "esp_id",
+      "device": "SM-G973F",
+      "source_sha256": "06102bcbe70e469edf170b82229fc4237bb0b881b9dc5318d0ab8100aa82a27f"
+    },
+    {
+      "physical_id": "midv2020/est_id/72",
+      "code": "est_id",
+      "device": "iPhone XS Max",
+      "source_sha256": "3aa2832a8d2e6c05bd034730feb197c0dd6da42958a012e05fd2a04b173f5ba5"
+    },
+    {
+      "physical_id": "midv2020/est_id/85",
+      "code": "est_id",
+      "device": "SM-G973F",
+      "source_sha256": "3cd48697f3187ff7a123efdc8d7c90f54b2cbca0c934b6bb291c6a866b3f21c0"
+    },
+    {
+      "physical_id": "midv2020/fin_id/72",
+      "code": "fin_id",
+      "device": "iPhone XS Max",
+      "source_sha256": "6c1a6a4c6874df91ccb7792c82fa474f763a724a5fb600ee0efe5bac5f660fc9"
+    },
+    {
+      "physical_id": "midv2020/fin_id/85",
+      "code": "fin_id",
+      "device": "SM-G973F",
+      "source_sha256": "394dfd65c2f1da63abb33faf7ff68dcf5664de90c79228951ae293c07c671251"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/72",
+      "code": "grc_passport",
+      "device": "iPhone XS Max",
+      "source_sha256": "070efd8f2b375c05d2166aa99386672e97d84249d87d177ab8d57cc1c1131e9f"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/85",
+      "code": "grc_passport",
+      "device": "SM-G973F",
+      "source_sha256": "adfdf5cb2ff9e6b8af0ff87a0d50c5a3376192f147d8f4bc2c609700630993ea"
+    },
+    {
+      "physical_id": "midv2020/grc_passport/83",
+      "code": "grc_passport",
+      "device": "SM-G973F",
+      "source_sha256": "54016a1777ffaf6759210220ce05e96326151d1216dce07c10951e322c02a733"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/72",
+      "code": "lva_passport",
+      "device": "iPhone XS Max",
+      "source_sha256": "65fca97f0133b09c4ae605151163b81747934742e18cb73af5b87cff4abd603d"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/85",
+      "code": "lva_passport",
+      "device": "SM-G973F",
+      "source_sha256": "dc633d0b1d1268aec27ef481f1476a1280ef60d388f6f0c164222a8e89fb649d"
+    },
+    {
+      "physical_id": "midv2020/lva_passport/83",
+      "code": "lva_passport",
+      "device": "SM-G973F",
+      "source_sha256": "8d4fc5316b77202e95e359ba824438f650eced8ec320aa5b785d08b5b40bd0ed"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/72",
+      "code": "rus_internalpassport",
+      "device": "iPhone XS Max",
+      "source_sha256": "3c85a272dd410ff9cbd4a0df2e682f32c9b7cbaf0fbaf50e63b48c8470c47c9d"
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/85",
+      "code": "rus_internalpassport",
+      "device": "SM-G973F",
+      "source_sha256": "d6438cb838133a7cd4727619fd70fa78406427fa13cec7f0fcb02776a77d7545"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/72",
+      "code": "srb_passport",
+      "device": "iPhone XS Max",
+      "source_sha256": "7319d69aff611cd912d545edd361f47036bba7d5ac48420bdef136d260c88890"
+    },
+    {
+      "physical_id": "midv2020/srb_passport/85",
+      "code": "srb_passport",
+      "device": "SM-G973F",
+      "source_sha256": "717d9e0b7dea7c10dcdb73ad6437329b037976bebf1073dfa1764def7dfbffce"
+    },
+    {
+      "physical_id": "midv2020/svk_id/72",
+      "code": "svk_id",
+      "device": "iPhone XS Max",
+      "source_sha256": "46bac605613663d64fc17c8778bcc2aeb57d93ca04ec66ca68e4c9b0ccc23655"
+    },
+    {
+      "physical_id": "midv2020/svk_id/85",
+      "code": "svk_id",
+      "device": "SM-G973F",
+      "source_sha256": "27d805dfb84cd08acfd3e4fca9f587136ac7de6e4d9fd830432a958d5238c2db"
+    }
+  ]
+}

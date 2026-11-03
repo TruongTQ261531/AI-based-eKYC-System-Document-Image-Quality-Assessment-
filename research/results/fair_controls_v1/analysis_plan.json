@@ -1,0 +1,232 @@
+{
+  "primary_test_cases": 192,
+  "primary_test_instances": 48,
+  "supplementary_excluded_document_instances": [],
+  "coverage_inventory": [
+    {
+      "physical_id": "midv2020/alb_id/72",
+      "code": "alb_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/alb_id/85",
+      "code": "alb_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/alb_id/83",
+      "code": "alb_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/aze_passport/72",
+      "code": "aze_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/aze_passport/85",
+      "code": "aze_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/esp_id/72",
+      "code": "esp_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/esp_id/85",
+      "code": "esp_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/esp_id/83",
+      "code": "esp_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/est_id/72",
+      "code": "est_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/est_id/85",
+      "code": "est_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/fin_id/72",
+      "code": "fin_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/fin_id/85",
+      "code": "fin_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/grc_passport/72",
+      "code": "grc_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/grc_passport/85",
+      "code": "grc_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/grc_passport/83",
+      "code": "grc_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/lva_passport/72",
+      "code": "lva_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/lva_passport/85",
+      "code": "lva_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/lva_passport/83",
+      "code": "lva_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/72",
+      "code": "rus_internalpassport",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/rus_internalpassport/85",
+      "code": "rus_internalpassport",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/srb_passport/72",
+      "code": "srb_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/srb_passport/85",
+      "code": "srb_passport",
+      "mrz_present": true,
+      "mrz_parsed": true,
+      "author_mrz_line_lengths": [
+        44,
+        44
+      ]
+    },
+    {
+      "physical_id": "midv2020/svk_id/72",
+      "code": "svk_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    },
+    {
+      "physical_id": "midv2020/svk_id/85",
+      "code": "svk_id",
+      "mrz_present": false,
+      "mrz_parsed": false,
+      "author_mrz_line_lengths": []
+    }
+  ],
+  "exclusion_basis": "Author MRZ metadata present but no recognized TD3 source; no model outputs used",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261106,
+  "permutations": 10000,
+  "permutation_seed": 20261107,
+  "primary_comparisons": [
+    [
+      "hard_42",
+      "random_42"
+    ],
+    [
+      "hard_42",
+      "repeat_42"
+    ],
+    [
+      "hard_31415",
+      "random_31415"
+    ],
+    [
+      "hard_31415",
+      "repeat_31415"
+    ]
+  ],
+  "primary_family_size": 4,
+  "multiplicity": "Holm p-values and Bonferroni98.75% primary intervals",
+  "primary_cases_retained": true,
+  "test_inference_started": false
+}

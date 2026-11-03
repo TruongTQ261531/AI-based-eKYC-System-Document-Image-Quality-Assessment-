@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-11-03T09:12:45.970064+00:00",
+  "reason": "Maximize available ID contrast under fixed source/layout/token budget before any optimizer update",
+  "before_hashes": {
+    "train.json": "2bd4a85ba6b8acc29f6957b8273ea7d4b4a9b676e31314fb63bb64267bba4646",
+    "selection.json": "bce7566f5e72b9de52c14650917839b64998f9e42f6ad4b339cafeae8ab15535",
+    "training_design.json": "b1bd3beed3c0e8d52e9272d488e8631763e589fcb54ac552d22c86f943cafa09",
+    "dataset_card.json": "2936879865e7a09aca1938e21645526bcd75e22758e6cffbad8e68b94583d882"
+  },
+  "after_hashes": {
+    "train.json": "700004781c344d6fd113913c11647e8cc708b62a252aee3a2d8480dc481b802c",
+    "selection.json": "2abe25845c05dffb08bd784d15ea37bf8cb600ba6bd14137751caa9f2f4254df",
+    "training_design.json": "004300d128972fb69d4f5bd0e4a32c74df828c37dcf0b34ef9e8156891337cbc",
+    "dataset_card.json": "9f73d0a7f6bff00c0a9a7557cac80a473a10435121d1a7f05ef2b59cca9c26ec"
+  },
+  "previous_random_new_ids": 4,
+  "final_random_new_ids": 5,
+  "failed_maximum6_rejection_log_sha256": "2a5fdcb0ff14e77e9effe42281e1d433c778f92d42980df79a8ab0ca1edee849",
+  "training_started": false,
+  "new_test_inference_started": false,
+  "raw_provisional_files_preserved_locally": true
+}

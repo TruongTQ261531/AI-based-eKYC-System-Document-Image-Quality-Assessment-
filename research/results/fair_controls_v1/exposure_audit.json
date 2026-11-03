@@ -1,0 +1,127 @@
+{
+  "uniform": {
+    "answer_loss_tokens": 75088,
+    "per_slot_min": 2,
+    "per_slot_max": 164,
+    "per_slot_median": 62.0,
+    "per_slot_p95": 133.0,
+    "target_key_counts": {
+      "address": 137,
+      "full_name": 360,
+      "gender": 251,
+      "dob": 490,
+      "id_number": 386,
+      "course": 118,
+      "student_id": 116,
+      "school": 122,
+      "license_class": 123,
+      "expiry_date": 248,
+      "personal_number": 100,
+      "issue_date": 88,
+      "first_name": 142,
+      "nationality": 128,
+      "last_name": 140,
+      "authority": 67,
+      "birth_place": 78
+    },
+    "hidden_key_counts": {}
+  },
+  "hard": {
+    "answer_loss_tokens": 79974,
+    "per_slot_min": 2,
+    "per_slot_max": 164,
+    "per_slot_median": 63.0,
+    "per_slot_p95": 136.0,
+    "target_key_counts": {
+      "address": 143,
+      "full_name": 362,
+      "gender": 283,
+      "dob": 493,
+      "id_number": 386,
+      "course": 118,
+      "student_id": 116,
+      "school": 122,
+      "license_class": 127,
+      "expiry_date": 275,
+      "personal_number": 117,
+      "issue_date": 117,
+      "first_name": 158,
+      "nationality": 145,
+      "last_name": 160,
+      "authority": 83,
+      "birth_place": 100
+    },
+    "hidden_key_counts": {
+      "dob": 32,
+      "expiry_date": 1,
+      "id_number": 21,
+      "first_name": 2,
+      "personal_number": 8
+    }
+  },
+  "random": {
+    "answer_loss_tokens": 79974,
+    "per_slot_min": 2,
+    "per_slot_max": 164,
+    "per_slot_median": 63.0,
+    "per_slot_p95": 136.0,
+    "target_key_counts": {
+      "address": 143,
+      "full_name": 362,
+      "gender": 282,
+      "dob": 494,
+      "id_number": 383,
+      "course": 118,
+      "student_id": 116,
+      "school": 122,
+      "license_class": 125,
+      "expiry_date": 276,
+      "personal_number": 118,
+      "issue_date": 117,
+      "first_name": 158,
+      "nationality": 145,
+      "last_name": 160,
+      "authority": 82,
+      "birth_place": 97
+    },
+    "hidden_key_counts": {
+      "dob": 32,
+      "id_number": 22,
+      "full_name": 1,
+      "first_name": 2,
+      "personal_number": 7
+    }
+  },
+  "repeat": {
+    "answer_loss_tokens": 79974,
+    "per_slot_min": 2,
+    "per_slot_max": 164,
+    "per_slot_median": 63.0,
+    "per_slot_p95": 136.0,
+    "target_key_counts": {
+      "address": 143,
+      "full_name": 362,
+      "gender": 283,
+      "dob": 493,
+      "id_number": 387,
+      "course": 118,
+      "student_id": 116,
+      "school": 122,
+      "license_class": 127,
+      "expiry_date": 274,
+      "personal_number": 115,
+      "issue_date": 117,
+      "first_name": 160,
+      "nationality": 145,
+      "last_name": 160,
+      "authority": 83,
+      "birth_place": 100
+    },
+    "hidden_key_counts": {
+      "expiry_date": 2,
+      "dob": 32,
+      "id_number": 20,
+      "personal_number": 10
+    }
+  }
+}

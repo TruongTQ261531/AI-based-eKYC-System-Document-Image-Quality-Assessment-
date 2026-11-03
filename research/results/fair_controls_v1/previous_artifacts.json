@@ -1,0 +1,217 @@
+{
+  "hp_signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "files": [
+    {
+      "path": "research/HARD_PAIR_COVERAGE_NOTE.md",
+      "sha256": "d94ed25d0fc14fa8b861156d43441d1a417d907b6aaa0abf9aa3a3a7ba8eb155"
+    },
+    {
+      "path": "research/HARD_PAIR_METHOD.md",
+      "sha256": "3144f20f1e68084e0e095636a19c867ad9a0bd46709fef59b974e98939cabe38"
+    },
+    {
+      "path": "research/HARD_PAIR_PROTOCOL.md",
+      "sha256": "38239660d88248e91536f956b5f77d6c2409ccabf7db403adf2e941b59374e79"
+    },
+    {
+      "path": "research/HARD_PAIR_RELATED_WORK.md",
+      "sha256": "315ba6efa6101a60087c0a6780047701f2735da83a654e202c85d6a6c113d276"
+    },
+    {
+      "path": "research/HARD_PAIR_RESULTS_VI.md",
+      "sha256": "57b1cfff7320a9c2c1398e17e73564819466d627fd1682072f4597ded61381f0"
+    },
+    {
+      "path": "research/HARD_PAIR_RUNBOOK.md",
+      "sha256": "ddd8cb415e09af73b0390f6d787b3614964ef5727dd65c3e6b68b863d9b1c6a1"
+    },
+    {
+      "path": "research/HARD_PAIR_RUNTIME_NOTE.md",
+      "sha256": "a27f34e7d18569df6c0ad6dce05b23b5836423bbc50ab1eb8d945bb66fd99f3a"
+    },
+    {
+      "path": "research/hp_acquire.py",
+      "sha256": "1263ae6a8e003ff359fcb8a9fc935cad0aa27dad57355b2f1e32d2de293a731f"
+    },
+    {
+      "path": "research/hp_audit.py",
+      "sha256": "498854aa91226f76546340fcc563f93cc29ae688d1f6d720fa827a867e9a045c"
+    },
+    {
+      "path": "research/hp_common.py",
+      "sha256": "f9d69666b66bf05a63005e6779defc0900d9c3dc3ee7ce392788bf9c06c7234f"
+    },
+    {
+      "path": "research/hp_data.py",
+      "sha256": "eb6dcfca8333d0ec4979d541669b7c528a5e5aa7b16f093a98d0e3033d1affc0"
+    },
+    {
+      "path": "research/hp_metrics.py",
+      "sha256": "0b6bcf34e042d0dc9ac9c3694e1679a9aa19e28642ff26f0ada369257a038977"
+    },
+    {
+      "path": "research/hp_preflight.py",
+      "sha256": "55ae84d87f613a8f9a94c5f4a59c38d6af86789f450818c07ac56c3395bbc68a"
+    },
+    {
+      "path": "research/hp_publish.py",
+      "sha256": "2a14105e869f2ab9560ad047b4e44b135b2e9da7c755685ff4b731b3dfa0060c"
+    },
+    {
+      "path": "research/hp_report.py",
+      "sha256": "0a96896baef87033ce0739e1af33b97abff786708dac94eb335293e92d893431"
+    },
+    {
+      "path": "research/hp_runtime_parity.py",
+      "sha256": "47870da562350cb67446c6e490670b115d3a774d0a0a01ee0e25b57b6ac3e2a4"
+    },
+    {
+      "path": "research/hp_software_verify.py",
+      "sha256": "99a2f1cb3f33c075742f9400c732a36204c9ea4062ff9d78584daa94f2d72fec"
+    },
+    {
+      "path": "research/hp_study.py",
+      "sha256": "b9881a063bc00f34b9e1b47a59a88c0f11385f1612aa701b780dc75499739b71"
+    },
+    {
+      "path": "research/hp_workflow.py",
+      "sha256": "6309fa98f1e408176b164cdba134523dcef2950669b46af85ebdbe509e6681f2"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/acquisition.json",
+      "sha256": "db7ff845f2d1bbd1eab86674b5cee8655eb803839c2464eb6851da3911f6f204"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/analysis_plan.json",
+      "sha256": "759f4c119e2f325aea49100907c92569c129dce985204899448f3de1f1079525"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/analysis_publication.json",
+      "sha256": "de01b8632bf5e43d70276563178f306f4b51c535bf3900dbddb25343e942a26b"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/audit.json",
+      "sha256": "730e2fb613ad66758280dacc0eed605c525ce0f6393d1350b0c5aeb9838e4f85"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/data_quality_checks.json",
+      "sha256": "f6911142d4562a7ff3c33c2026a83128211ec7d769e743bff2aee8ca47e74c80"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/dataset_card.json",
+      "sha256": "6a4d5de38bc9461265eca2f47310743a50bdd6427feed7adcad0f24a014886d8"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/dataset_manifest.json",
+      "sha256": "1514a4d357f5f6ec881e084c90e9bdcb0e2b42ff09410615857d9d794945be1b"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/development_hard_31415.json",
+      "sha256": "a3b1aa6be95a8c573f1eb32c94a772a0f4911fdf71e899b52fce7daf7bc3b747"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/development_hard_42.json",
+      "sha256": "9e55b3b7fbb28524dfc15c0bb07dd79f126f7dd7038761eb54db057360dbbf82"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/development_uniform_31415.json",
+      "sha256": "0402b105feb27f75aa44156da36b49f4bdc5b6c4b92e89ae0780d44c3ab53252"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/development_uniform_42.json",
+      "sha256": "a0ca13365d43aaeec8a9ef250e0776f56bba8dfa52d8e5d98330fa2d51c9fcd2"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/duplicate_cluster_sensitivity.json",
+      "sha256": "2dfca58060e6da3b7d6539d097603fd39a4aad2aa84ffb019c505013ce539cdc"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/feature_audit.json",
+      "sha256": "dea4da6979e5a3298032ec495e650e85fb39b0ce94979519de173581b17faa17"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/fresh_repeats.json",
+      "sha256": "8d24f6b6a6e2c393bde1f2a65cd64c99621d7f7b557c1e13e702220fbe42efed"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/paired_intervals.json",
+      "sha256": "199a884cece39dcba04c64636a1705c88d017d8298f6cb8f02032b2878c15f10"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/preflight.json",
+      "sha256": "f075d2b8080e5a443d24e1016eba808ddc9610ba5a3fd2b2ad3c2763069a1238"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/prepare_publication.json",
+      "sha256": "256491339a889a4d2264ca8c48a9dc25b8fdc73e17a8427830a80e80bde22ded"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/report_provenance.json",
+      "sha256": "3c20d89cf5104ae5a254fc6ce826198068ccfb2c20261f83f17b1281c235d299"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/resume_replay_diagnostic.json",
+      "sha256": "e8a6702f8b09d3559277c17a1e682efdcb86623b5c3a3b9d656a1035daa1a982"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/runtime_amendment.json",
+      "sha256": "fce679b7f6e8c0ecf79b228d4165d926596d71180f92a498d1351c8f8c80ffcc"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/runtime_publication.json",
+      "sha256": "547c9247ad8491229304fd323bba5bcbc2cf5a45b7f45151a824fec1b301c3f6"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/selection_provenance.json",
+      "sha256": "1816703102f23305afc48acbc30408274083f5be1b68e8ad597951e93fe3ca77"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/software_verification.json",
+      "sha256": "6ee09860142bc71e308b2db5719a4b0135b8050788d2f1d9b17993dc4cec1377"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/source_coverage.json",
+      "sha256": "18abed11d6277b0521f31bfdcb7d067bc07558b8acd7f3d42e35f87452b14234"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/source_coverage_sensitivity.json",
+      "sha256": "d7519fc02959e98414945c8c787de56cbef7cb43e836f9319db02b94830c2dc2"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_hard_31415.json",
+      "sha256": "789b9507c9fa7c598c8ecba11760439f5afcc246593adab11207baf45ee5134c"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_hard_42.json",
+      "sha256": "fee3f4bcc9696f366440a283296cd53518eb8afbdb82fe24ff2c47b11ca892e2"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_lock.json",
+      "sha256": "cc9df9a646d54346bbf68374680f1985dc6eaa654c284e8fd3cebd7b5765253b"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_publication.json",
+      "sha256": "a7da01f8eefd23fb19324c12ee37b7d75934ee622cc08db3673f1b3482510e4c"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_uniform_31415.json",
+      "sha256": "2453cf4cba9d67db31cf077aa71e2f23bd111214366916131d18d941cde5b4d1"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/test_uniform_42.json",
+      "sha256": "060840668609dae197559d057d03d2ddd62798f97903d42531567017fa951dc2"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/train_hard_31415.json",
+      "sha256": "888ea8ce0eac4f0c4dda131cae42cc892042a06d53b5398047ba94e1b62954b4"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/train_hard_42.json",
+      "sha256": "53b87908a4bccee2db6390325acfbc2e3225d5f68c60acad04e24276bcb99a3c"
+    },
+    {
+      "path": "research/results/hard_pairs_v1/training_changes.json",
+      "sha256": "bf0b708918dd3d88bbd9d04ddd1cbd6446242de97386ecc4f5ed866aa52e1755"
+    }
+  ]
+}
