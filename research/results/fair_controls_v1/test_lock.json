@@ -1,0 +1,164 @@
+{
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "evaluation_sha256": "1a4a8adb1ad77c3d761471d1597a6784ffd0e67c09c9798e0bf33fac5094ea8a",
+  "profile": "rect2",
+  "max_new_tokens": 384,
+  "runtime": {
+    "chosen_inference_host_threads": 2,
+    "training_host_threads": 2,
+    "exact_token_parity_on_panel": true,
+    "median_cached_seconds": {
+      "1": 13.25461019994691,
+      "2": 13.11226035002619
+    },
+    "rows": [
+      {
+        "uid": "vlm_v2/development/005/evaluation/0",
+        "input_sha256": "e2a3e88f29a28ebe47202b7fc6b9b8debd0cd53db25b5b7ab1e88d92a73e2a1b",
+        "threads": 2,
+        "token_ids_sha256": "000db8a594024b89f776de02cfdccab4190f6586364f12b45f360c3f938545a2",
+        "prediction_sha256": "f83ed3dd81bcc62809cb2d71c235f54312d2c2d27f66944fa0c366fc8f2285cc",
+        "generated_tokens": 62,
+        "wall_seconds": 13.508102899999358
+      },
+      {
+        "uid": "vlm_v2/development/005/evaluation/0",
+        "input_sha256": "e2a3e88f29a28ebe47202b7fc6b9b8debd0cd53db25b5b7ab1e88d92a73e2a1b",
+        "threads": 1,
+        "token_ids_sha256": "000db8a594024b89f776de02cfdccab4190f6586364f12b45f360c3f938545a2",
+        "prediction_sha256": "f83ed3dd81bcc62809cb2d71c235f54312d2c2d27f66944fa0c366fc8f2285cc",
+        "generated_tokens": 62,
+        "wall_seconds": 12.462089400039986
+      },
+      {
+        "uid": "vlm_v2/development/005/hp/pair_mask",
+        "input_sha256": "1e9b528f916666c171d7a0101f2e35eb4ab9d4c5f26387bb8bc19baba54d96d4",
+        "threads": 1,
+        "token_ids_sha256": "1f15823556933dbb2d55305af847e17eb09a635cb36f601f088ca1591b44b195",
+        "prediction_sha256": "ddecfc0056ada209ff8adc89d63ac079e34ffab03146126e6b5ac299f576c5d3",
+        "generated_tokens": 63,
+        "wall_seconds": 13.075537399970926
+      },
+      {
+        "uid": "vlm_v2/development/005/hp/pair_mask",
+        "input_sha256": "1e9b528f916666c171d7a0101f2e35eb4ab9d4c5f26387bb8bc19baba54d96d4",
+        "threads": 2,
+        "token_ids_sha256": "1f15823556933dbb2d55305af847e17eb09a635cb36f601f088ca1591b44b195",
+        "prediction_sha256": "ddecfc0056ada209ff8adc89d63ac079e34ffab03146126e6b5ac299f576c5d3",
+        "generated_tokens": 63,
+        "wall_seconds": 12.027979000005871
+      },
+      {
+        "uid": "midv2020/svk_id/63/evaluation/0",
+        "input_sha256": "61ed4346c5ad88851913db0182141a9934ab164817d9e9dd4ec8f7d2c262d41a",
+        "threads": 2,
+        "token_ids_sha256": "57768e5520b9629457373321661b43fe48a1150a2dc954733a91e68d2f0f56e2",
+        "prediction_sha256": "ddeed68ecb91c1a78494503116a458e865878720898c2c0d4fbbc51eed307689",
+        "generated_tokens": 84,
+        "wall_seconds": 16.107120299944654
+      },
+      {
+        "uid": "midv2020/svk_id/63/evaluation/0",
+        "input_sha256": "61ed4346c5ad88851913db0182141a9934ab164817d9e9dd4ec8f7d2c262d41a",
+        "threads": 1,
+        "token_ids_sha256": "57768e5520b9629457373321661b43fe48a1150a2dc954733a91e68d2f0f56e2",
+        "prediction_sha256": "ddeed68ecb91c1a78494503116a458e865878720898c2c0d4fbbc51eed307689",
+        "generated_tokens": 84,
+        "wall_seconds": 17.11997830006294
+      },
+      {
+        "uid": "midv2020/svk_id/63/hp/pair_mask",
+        "input_sha256": "c29bfe0d057bf72c17eeaffc035317174216943275355c544739f208b7d50d9e",
+        "threads": 1,
+        "token_ids_sha256": "4da487d31e8a6049fc4b67c13dae57622855aa325d7f3017a89570821a4fb896",
+        "prediction_sha256": "77b6e5c95bf66c576182ed670008279b7df1e462498e72d8118bccfb1754cee9",
+        "generated_tokens": 67,
+        "wall_seconds": 13.433682999922894
+      },
+      {
+        "uid": "midv2020/svk_id/63/hp/pair_mask",
+        "input_sha256": "c29bfe0d057bf72c17eeaffc035317174216943275355c544739f208b7d50d9e",
+        "threads": 2,
+        "token_ids_sha256": "4da487d31e8a6049fc4b67c13dae57622855aa325d7f3017a89570821a4fb896",
+        "prediction_sha256": "77b6e5c95bf66c576182ed670008279b7df1e462498e72d8118bccfb1754cee9",
+        "generated_tokens": 67,
+        "wall_seconds": 12.716417800053023
+      }
+    ],
+    "warmups": [
+      {
+        "threads": 2,
+        "seconds": 8.023366400040686,
+        "tokens": 24
+      },
+      {
+        "threads": 1,
+        "seconds": 4.9178134999237955,
+        "tokens": 24
+      }
+    ],
+    "rule": "Choose1 only with identical generated token IDs on all four development inputs and lower median latency; otherwise2",
+    "scope": "One frozen adapter, four development inputs, two host-thread settings; not global parity proof",
+    "model_sha256": "73edfbc4aa6cdb34669512bf08fbf2e7c13fd341455d49dc1cca159edc4fa596",
+    "new_model_calls": 10,
+    "probe_source_sha256": "684b898116e166b3a857549f9ec6a07747089486d0d275d2758b920926347a6a",
+    "old_test_used": false,
+    "new_dependencies": false
+  },
+  "models": {
+    "uniform_42": {
+      "path": "research/cache/source_visibility_v3/training/source_42/step_0320",
+      "sha256": "73edfbc4aa6cdb34669512bf08fbf2e7c13fd341455d49dc1cca159edc4fa596"
+    },
+    "hard_42": {
+      "path": "research/cache/hard_pairs_v1/training/hard_42/step_0320",
+      "sha256": "38a430c6a92c3f88d23926eb2133697f9bfc09ad503f3a95b9e3dc7e925c3cb8"
+    },
+    "random_42": {
+      "path": "research/cache/fair_controls_v1/training/random_42/step_0320",
+      "sha256": "30b61eb8d49d5d61f0fd23a1ca4cd2e28ee5e1de8bc1c74c2b59a2abf1728a95"
+    },
+    "repeat_42": {
+      "path": "research/cache/fair_controls_v1/training/repeat_42/step_0320",
+      "sha256": "26d0943475151e57bbf862d1a34153159af8c720f62e89d4cc1c317670324f8c"
+    },
+    "uniform_31415": {
+      "path": "research/cache/source_visibility_v3/training/source_31415/step_0320",
+      "sha256": "1b2ac5d0fa9bb43a56687e867da8f7535e4fd102ab1d5b42846b7ac3bec99026"
+    },
+    "hard_31415": {
+      "path": "research/cache/hard_pairs_v1/training/hard_31415/step_0320",
+      "sha256": "d2e7a24e540972a2d0edbd6b3c147008d9a7cfc95cde732d2d81f219aeae8293"
+    },
+    "random_31415": {
+      "path": "research/cache/fair_controls_v1/training/random_31415/step_0320",
+      "sha256": "49608bfb451b124318315ae2ba0f4cb718c8157940a5cd8dfaf42c451e1c3189"
+    },
+    "repeat_31415": {
+      "path": "research/cache/fair_controls_v1/training/repeat_31415/step_0320",
+      "sha256": "053f7abe329efe9b7d0b78cb2223be5760e0178bc7542ab47a023c1b55452ebe"
+    }
+  },
+  "primary_comparisons": [
+    [
+      "hard_42",
+      "random_42"
+    ],
+    [
+      "hard_42",
+      "repeat_42"
+    ],
+    [
+      "hard_31415",
+      "random_31415"
+    ],
+    [
+      "hard_31415",
+      "repeat_31415"
+    ]
+  ],
+  "analysis_plan_sha256": "318f69ae0d039eec1955fe9b610950e85d85a9590804d9967d2283153fac3bf1",
+  "test_generation_started": false,
+  "model_promotion": false,
+  "selection": "Fixed arms/final320; no test winner or deployment selection"
+}

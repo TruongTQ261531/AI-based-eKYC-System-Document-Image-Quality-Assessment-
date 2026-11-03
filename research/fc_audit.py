@@ -128,6 +128,23 @@ def audit():
     from research.fc_statistics import analyze
     frozen=preserve();sig=signature();lock=verify_test();prepare=read(OUT/'prepare_publication.json');pub=read(OUT/'test_publication.json')
     subprocess.run(['git','merge-base','--is-ancestor',prepare['commit'],pub['commit']],cwd=ROOT,check=True)
+    io_recoveries=[]
+    if (OUT/'io_recovery.json').exists():
+        recovery=read(OUT/'io_recovery.json');publication=read(OUT/'io_publication.json')
+        if recovery['signature']!=sig or publication['signature']!=sig or publication['recovery_sha256']!=sha(OUT/'io_recovery.json'):
+            raise ValueError('I/O recovery publication differs')
+        subprocess.run(['git','merge-base','--is-ancestor',publication['commit'],pub['commit']],cwd=ROOT,check=True)
+        retained=[]
+        for row in eval_rows('development')[:recovery['retained_generation_outputs']]:
+            path=CACHE/'predictions/development_repeat_42'/(hashlib.sha256(row['uid'].encode()).hexdigest()+'.json')
+            retained.append(path)
+        digest=stable_hash([{p.name:sha(p)} for p in sorted(retained)])
+        if digest!=recovery['retained_outputs_digest']:raise ValueError('Retained pre-interruption outputs changed')
+        for name in ('fc_io.py','fc_runner.py'):
+            raw=subprocess.check_output(['git','show',pub['commit']+':research/'+name],cwd=ROOT)
+            if hashlib.sha256(raw).hexdigest()!=sha(ROOT/'research'/name):raise ValueError('Pretest I/O runner differs')
+        io_recoveries.append(dict(publication=publication['commit'],retained_outputs=recovery['retained_generation_outputs'],
+            weights_or_data_changed=False,retrained_runs=0,scope='Metadata file locking, not failed OCR/model inference'))
     names=('fc_common.py','fc_data.py','fc_acquire.py','fc_study.py','fc_statistics.py','fc_preflight.py','FAIR_CONTROLS_PROTOCOL.md')
     for name in names:
         raw=subprocess.check_output(['git','show',prepare['commit']+':research/'+name],cwd=ROOT)
@@ -214,7 +231,9 @@ def audit():
         primary_family_size=4,bootstrap_resamples=10000,permutation_resamples=10000,
         statistical_code_sha256=sha(ROOT/'research/fc_statistics.py'),audit_code_sha256=sha(ROOT/'research/fc_audit.py'),
         frozen_V1_files=frozen[0],frozen_V4_files=frozen[1],frozen_HP_files=len(read(OUT/'previous_artifacts.json')['files']),
-        discarded_update_records=replays,human_legibility_annotations=0,physical_camera_validation=False,model_promoted=False))
+        discarded_update_records=replays,io_recoveries=io_recoveries,
+        recorded_worker_failures=[dict(file=p.name,sha256=sha(p),action=read(p)['action'],error_type=read(p)['error_type']) for p in sorted(CACHE.glob('failure_*.json'))],
+        human_legibility_annotations=0,physical_camera_validation=False,model_promoted=False))
     print('FC_AUDIT_PASSED',replayed,'new_cached',new,'reused',reused,'fresh',fresh_calls,flush=True)
 
 

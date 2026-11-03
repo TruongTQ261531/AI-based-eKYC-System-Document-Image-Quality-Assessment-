@@ -133,6 +133,14 @@ def report():
         '[protocol](FAIR_CONTROLS_PROTOCOL.md), [runbook](FAIR_CONTROLS_RUNBOOK.md).']
     path=ROOT/'research/FAIR_CONTROLS_RESULTS_VI.md'
     verification=read(OUT/'software_verification.json')
+    if audit.get('io_recoveries'):
+        lines+=['', '## Gián đoạn ghi tiến độ', '',
+            'Một stage development dừng vì Windows từ chối atomic replace file progress. '
+            'Bốn model đã huấn luyện và56 output đã lưu được giữ nguyên; chúng được kiểm tra hash sau khi tiếp tục. '
+            'Đổi reader sang delete-sharing và retry metadata với cùng payload, không sửa dữ liệu/model/phép chấm '
+            'hoặc huấn luyện lại.56 output cache không bị tính thành56 lượt OCR mới. '
+            'Log lỗi gốc được giữ; xem [ghi chú I/O](FAIR_CONTROLS_IO_NOTE.md) và '
+            '[record phục hồi](results/fair_controls_v1/io_recovery.json).']
     if verification['status']!='passed' or verification['signature']!=signature():raise ValueError('Matching software checks required')
     lines+=['', '## Kiểm thử phần mềm và localhost', '',
         f'{verification["combined_unique_python_checks"]} kiểm tra Python, '

@@ -1,0 +1,7 @@
+{
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "commit": "eec9aa753c33911d7dd963942d8106eed4135c57",
+  "remote_commit": "eec9aa753c33911d7dd963942d8106eed4135c57",
+  "recovery_sha256": "b68f6fa4ccbd13c785faf113c7258490870fdcbb6bb7b6875681f5484b515c4f",
+  "before_new_test_generation": true
+}
