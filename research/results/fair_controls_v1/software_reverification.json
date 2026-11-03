@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "initial_publication": "0d0983a99fd0feb9c5e5a33d132831f2d9efe5be",
+  "initial_verification_sha256": "07e9ca096666e8052a1dbb9c88d62756628e97cc69ac67b5a5656dee6c409e73",
+  "initial_record": "research/results/fair_controls_v1/software_verification_initial.json",
+  "reason": "Rerun all software checks after adding exact working-tree source hashes; retain first proof and logs.",
+  "scientific_audit_sha256": "c2abcf6178af3d0d3d8716b1e47a86fe64130d749f71c8010646da4b7e8ef960",
+  "scientific_generations_repeated": false,
+  "initial_evidence_archive": [
+    {
+      "original_path": "research/cache/fair_controls_v1/software_main.log",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/software_main.log",
+      "sha256": "312af6f4d2b916f6d4754bacc232049067ee804867598146607b7501a0360f8f"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/software_main.xml",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/software_main.xml",
+      "sha256": "928189f1f7053ec247e316393c85d13531e338c06d6c2a0a526d94166012d1fc"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/software_optional.log",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/software_optional.log",
+      "sha256": "15f17b3c9225697f3ba803cfab3eba358b2c7a17b6fa4e0cf1564f0cd45cfe60"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/software_optional.xml",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/software_optional.xml",
+      "sha256": "963a87bfa6a5e2ad0a49a765015302acecf07df649445e49b93b65c82c1b6c57"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/frontend_primary.log",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/frontend_primary.log",
+      "sha256": "cf9710ebc5a75db0c5dee9964f2857a8ba5d5a59ca38aff7c32a8ef297cd853b"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/frontend_source.log",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/frontend_source.log",
+      "sha256": "61455ddf1e18502d7c46d6dd91b831b9f2327d34301bab2e4009219e702f970c"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/health_8000.json",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/health_8000.json",
+      "sha256": "c970e00e17cd675cc925b0a6735f14165d0cc012f13b51512979fec1496f1c48"
+    },
+    {
+      "original_path": "research/cache/fair_controls_v1/health_8003.json",
+      "retained_path": "research/cache/fair_controls_v1/software_verification_initial/health_8003.json",
+      "sha256": "0403ca7dbcf2b70cc5ff28b2f587a30f9482cac79a6c8a4be72d3d918b4e8ac2"
+    }
+  ],
+  "completed_utc": "2026-11-03T18:32:02.410565+00:00",
+  "final_verification_sha256": "c73669cf5961259d549c9c8f6b1198202a4d7fe21dd131393bc8028485757508",
+  "final_source_snapshot_sha256": "ff29f0d275a1860e52b3029de7d07d3d5ab3483a7f68852a77d2858cdb3e4e2f",
+  "source_files": 251,
+  "unique_python_checks": 304,
+  "subtests": 1496,
+  "frontend_checks": 48
+}

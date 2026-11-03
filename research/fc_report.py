@@ -166,6 +166,17 @@ def report():
         'Health của8003 thuộc nghiên cứu V3 cũ, không dùng để đếm run FC. '
         'Các kiểm thử là mô phỏng/HTTP, không phải kiểm chứng camera người dùng thật. '
         'Xem [bằng chứng/hash log](results/fair_controls_v1/software_verification.json).']
+    if verification.get('tested_working_tree_sources'):
+        lines+=['', f'Bản kiểm tra cuối lưu hash của {len(verification["tested_working_tree_sources"])} file mã nguồn và môi trường; '
+            'đã xác nhận các file này không đổi trong suốt lượt kiểm tra. '
+            'Hash từng file mô tả cả thay đổi chưa commit tại thời điểm test, không chỉ tên commit HEAD.']
+    if (OUT/'software_reverification.json').exists():
+        repeat=read(OUT/'software_reverification.json')
+        if repeat.get('status')!='passed':raise ValueError('Software reverification record incomplete')
+        lines+=['', 'Đã giữ bằng chứng vòng kiểm tra phần mềm đầu và chạy lại toàn bộ sau khi bổ sung snapshot mã nguồn. '
+            '304 là số kiểm tra Python khác nhau, không cộng hai lượt thành608 bài độc lập. '
+            'Không chạy lại huấn luyện, test OCR hoặc chọn model trong bước này. '
+            'Xem [record hai lượt và nơi giữ log cũ](results/fair_controls_v1/software_reverification.json).']
     path.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(path),
         report_code_sha256=sha(ROOT/'research/fc_report.py'),audit_sha256=sha(OUT/'audit.json')))

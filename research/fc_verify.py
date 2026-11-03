@@ -1,5 +1,6 @@
 """Run software regressions, preserve logs, and confirm restored local services."""
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -8,6 +9,7 @@ import sys
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
+from pathlib import Path
 from research.fc_common import *
 from research.fc_io import save_retry as save
 
@@ -39,9 +41,19 @@ def node_counts(text):
     return value
 
 
+def source_snapshot():
+    names=set(subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode('utf-8').split('\0'))
+    names.update(p.relative_to(ROOT).as_posix() for p in (ROOT/'research').glob('fc_*.py'))
+    suffixes={'.py','.js','.cjs','.mjs','.html','.css','.ps1','.bat','.toml','.ini'}
+    paths=[ROOT/n for n in sorted(names) if n and
+           (Path(n).suffix in suffixes or Path(n).name.startswith('requirements'))]
+    return [dict(path=p.relative_to(ROOT).as_posix(),sha256=sha(p)) for p in paths if p.is_file()]
+
+
 def verify():
     preserve();audit=read(OUT/'audit.json')
     if audit['status']!='passed' or audit['signature']!=signature():raise ValueError('Study audit required')
+    tested_sources=source_snapshot()
     py=[sys.executable,'-u','-X','utf8']
     main=run('software_main',py+['-m','pytest','tests','research/tests','-q',
         '--junitxml='+str(CACHE/'software_main.xml')])
@@ -76,6 +88,7 @@ def verify():
         raise ValueError('Research service was not restored to the old model')
     files=['software_main.log','software_main.xml','software_optional.log','software_optional.xml',
            'frontend_primary.log','frontend_source.log','health_8000.json','health_8003.json']
+    if source_snapshot()!=tested_sources:raise ValueError('Source changed during software verification')
     save(OUT/'software_verification.json',dict(status='passed',signature=signature(),
         verified_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         main_passed=passed,main_skipped_optional=skipped,optional_overlay_passed=joptional['tests'],
@@ -85,6 +98,8 @@ def verify():
         research_health_progress_scope='Existing V3, not FC experiment',new_model_promoted=False,
         independent_camera_validation=False,new_dependencies_installed=False,
         tested_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT).decode().strip(),
+        tested_working_tree_sources=tested_sources,sources_unchanged_during_checks=True,
+        tested_source_snapshot_sha256=hashlib.sha256(json.dumps(tested_sources,sort_keys=True,separators=(',',':')).encode()).hexdigest(),
         verifier_sha256=sha(ROOT/'research/fc_verify.py'),study_audit_sha256=sha(OUT/'audit.json'),
         evidence=[dict(path=(CACHE/name).relative_to(ROOT).as_posix(),sha256=sha(CACHE/name)) for name in files]))
     print('FC_SOFTWARE_VERIFIED',passed+joptional['tests'],subtests,n['pass']+v['pass'],flush=True)

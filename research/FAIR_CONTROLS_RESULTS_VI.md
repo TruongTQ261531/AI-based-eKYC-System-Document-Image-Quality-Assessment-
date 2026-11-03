@@ -95,3 +95,7 @@ Một stage development dừng vì Windows từ chối atomic replace file progr
 304 kiểm tra Python, 1496 subtest và48 kiểm tra hành vi giao diện đã qua. Bộ chính có4 bài cần overlay; đã chạy riêng và đều qua. Có1 cảnh báo trong log, không cài dependency mới.
 
 Đã xác nhận eKYC8000 ready/API3.2.0 và web nghiên cứu8003 ready, vẫn dùngpartial_42. Health của8003 thuộc nghiên cứu V3 cũ, không dùng để đếm run FC. Các kiểm thử là mô phỏng/HTTP, không phải kiểm chứng camera người dùng thật. Xem [bằng chứng/hash log](results/fair_controls_v1/software_verification.json).
+
+Bản kiểm tra cuối lưu hash của 251 file mã nguồn và môi trường; đã xác nhận các file này không đổi trong suốt lượt kiểm tra. Hash từng file mô tả cả thay đổi chưa commit tại thời điểm test, không chỉ tên commit HEAD.
+
+Đã giữ bằng chứng vòng kiểm tra phần mềm đầu và chạy lại toàn bộ sau khi bổ sung snapshot mã nguồn. 304 là số kiểm tra Python khác nhau, không cộng hai lượt thành608 bài độc lập. Không chạy lại huấn luyện, test OCR hoặc chọn model trong bước này. Xem [record hai lượt và nơi giữ log cũ](results/fair_controls_v1/software_reverification.json).

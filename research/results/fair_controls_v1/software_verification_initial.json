@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "verified_utc": "2026-11-03T18:26:41.296535+00:00",
+  "main_passed": 300,
+  "main_skipped_optional": 4,
+  "optional_overlay_passed": 4,
+  "combined_unique_python_checks": 304,
+  "subtests_passed": 1496,
+  "warning_count": 1,
+  "frontend_primary": {
+    "tests": 40,
+    "pass": 40,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "frontend_source": {
+    "tests": 8,
+    "pass": 8,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "frontend_total": 48,
+  "mentor_ready": true,
+  "mentor_version": "3.2.0",
+  "research_ready": true,
+  "research_model": "partial_42",
+  "research_health_progress_scope": "Existing V3, not FC experiment",
+  "new_model_promoted": false,
+  "independent_camera_validation": false,
+  "new_dependencies_installed": false,
+  "tested_commit": "167d8560a920b6fc500d7310dcd8e453c91f12ce",
+  "verifier_sha256": "009c057fbb0a797b2947aff75e59920a3ebb0264b1a0167d8b19bab6249d2c99",
+  "study_audit_sha256": "c2abcf6178af3d0d3d8716b1e47a86fe64130d749f71c8010646da4b7e8ef960",
+  "evidence": [
+    {
+      "path": "research/cache/fair_controls_v1/software_main.log",
+      "sha256": "312af6f4d2b916f6d4754bacc232049067ee804867598146607b7501a0360f8f"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/software_main.xml",
+      "sha256": "928189f1f7053ec247e316393c85d13531e338c06d6c2a0a526d94166012d1fc"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/software_optional.log",
+      "sha256": "15f17b3c9225697f3ba803cfab3eba358b2c7a17b6fa4e0cf1564f0cd45cfe60"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/software_optional.xml",
+      "sha256": "963a87bfa6a5e2ad0a49a765015302acecf07df649445e49b93b65c82c1b6c57"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/frontend_primary.log",
+      "sha256": "cf9710ebc5a75db0c5dee9964f2857a8ba5d5a59ca38aff7c32a8ef297cd853b"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/frontend_source.log",
+      "sha256": "61455ddf1e18502d7c46d6dd91b831b9f2327d34301bab2e4009219e702f970c"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/health_8000.json",
+      "sha256": "c970e00e17cd675cc925b0a6735f14165d0cc012f13b51512979fec1496f1c48"
+    },
+    {
+      "path": "research/cache/fair_controls_v1/health_8003.json",
+      "sha256": "0403ca7dbcf2b70cc5ff28b2f587a30f9482cac79a6c8a4be72d3d918b4e8ac2"
+    }
+  ]
+}
