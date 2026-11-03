@@ -1,0 +1,38 @@
+{
+  "main_commit_at_cleanup": "e4d708a24e5eade141e56978be2d3d5e6bde8385",
+  "remote_branches": [
+    "main"
+  ],
+  "local_branches": [
+    "main"
+  ],
+  "deleted_branches": [
+    "mentor/ekyc-v3.2.0",
+    "research/vlm-v2-evidence",
+    "research/document-recovery-core-b"
+  ],
+  "preserved_tag_commits": {
+    "mentor/ekyc-v3.2.0": "4110f22b94699d30950cd1c0b23532ee9ccaaa59",
+    "research/vlm-v2-evidence": "5eb84549f9be463d16c6f9ba030c496fda11a426",
+    "research/document-recovery-core-b": "c326328b8a36d0836650841c96de2751189158f1"
+  },
+  "mentor_worktree_detached": true,
+  "mentor_worktree_directory_preserved": true,
+  "all_deleted_tips_are_ancestors": true,
+  "conflict_detected": false,
+  "historical_results_modified": false,
+  "main_publication_smoke_pending": false,
+  "main_publication_smoke_succeeded": true,
+  "main_publication_smoke_log_sha256": "b9b0f1e09b8442e1948e5c35f981c03746556af07f15be146566b8bc4c62258b",
+  "frozen_V1_files_verified": 101,
+  "frozen_V4_files_verified": 63,
+  "primary_signatures_unchanged": true,
+  "historical_plain_git_refs_resolve_as_tags": true,
+  "mentor_api_ready": true,
+  "source_web_ready": true,
+  "source_selected_model": "partial_42",
+  "source_recommended": false,
+  "publication_main_only_created_new_commit": false,
+  "new_study_training_runs": 0,
+  "new_benchmark_VLM_calls": 0
+}

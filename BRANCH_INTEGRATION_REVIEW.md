@@ -29,6 +29,12 @@ Mọi nhánh phân kỳ hoặc ref không khớp sẽ làm bước dọn dừng,
 Các file kết quả cũ ghi tên branch là lịch sử tại thời điểm thí nghiệm, không phải
 chỉ dẫn tạo lại branch. Các JSON audit/lock và checkpoint không bị sửa.
 
+Đã hoàn tất dọn branch: local và GitHub chỉ còn `main`; cả ba mốc trên vẫn có
+tag đúng SHA. Worktree mentor giữ nguyên file tại detached HEAD. Hai công cụ
+công bố V2/V3 đã chạy thật thành công sau khi xóa branch, không tạo thêm commit
+kết quả hoặc gọi model. Xem [biên bản thực hiện](research/results/current_progress/branch_cleanup.json)
+và [kiểm thử bản cập nhật](research/results/current_progress/verification.json).
+
 ## Ý định và phạm vi từng nhánh
 
 | Branch | Mốc khi rà soát | Mục đích | Cấu trúc và đầu vào/đầu ra |
