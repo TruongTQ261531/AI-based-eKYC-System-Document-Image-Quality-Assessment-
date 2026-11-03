@@ -22,6 +22,17 @@ Xem [kết quả, audit và giới hạn](research/HARD_PAIR_RESULTS_VI.md),
 Cổng thay model không đạt trên development; web8003 tiếp tục dùng model đã
 chọn trước đó. Các lượt ảnh và bước học khớp nhau, số token đáp án khác nhau.
 
+**Mục 4 đã hoàn tất:** thêm bốn LoRA đối chứng random/repeat, so sánh cùng bốn
+checkpoint uniform/hard lịch sử trên test mới 192 view của 48 ID (180 raster
+khác nhau). Hard/random/repeat khớp tổng token, ID, lượt ảnh và update;
+uniform là đối chứng phụ vì khác ngân sách token. Cả bốn so sánh chính đều có
+CI chứa 0 và p Holm = 1: chưa đủ bằng chứng hard vượt random/repeat. Web8003
+tiếp tục dùng `partial_42`. Xem [kết quả mục 4 và giới hạn](research/FAIR_CONTROLS_RESULTS_VI.md),
+[audit](research/results/fair_controls_v1/audit.json),
+[protocol trước huấn luyện](research/FAIR_CONTROLS_PROTOCOL.md),
+[cách chạy/tiếp tục](research/FAIR_CONTROLS_RUNBOOK.md) và
+[kiểm thử mã nguồn cuối](research/results/fair_controls_v1/software_verification.json).
+
 [Tiến độ từng ưu tiên](research/PRIORITY_PROGRESS_VI.md) là snapshot R2/V3
 **trước** vòng cặp che/giữ. `python -m research.priority_progress` chỉ tái tạo
 snapshot lịch sử đó; không gọi model hoặc thay kết quả của vòng mới. Nhãn
