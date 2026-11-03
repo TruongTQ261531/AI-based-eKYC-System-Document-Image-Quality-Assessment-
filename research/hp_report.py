@@ -10,7 +10,11 @@ def make():
     records={k:read(OUT/f'test_{k}.json') for k in KEYS};dev={k:read(OUT/f'development_{k}.json') for k in KEYS}
     intervals=read(OUT/'paired_intervals.json');sensitivity=read(OUT/'duplicate_cluster_sensitivity.json');fresh=read(OUT/'fresh_repeats.json')
     coverage=read(OUT/'source_coverage_sensitivity.json')
+    decision=('đạt' if lock['promotion_approved'] else 'không đạt')
     lines=['# Kết quả cải thiện hai nhóm lỗi bằng cặp che/giữ', '',
+        f'Ứng viên **{lock["selected_hard_candidate"]}** được chọn bằng development và **{decision} cổng thay model**. '
+        'Quyết định này đã khóa trước test. Hai seed và mọi kết quả trái chiều đều có trong bảng dưới; '
+        'kiểm tra tính toàn vẹn đã vượt qua không đồng nghĩa phương pháp mới có hiệu quả tốt hơn.', '',
         'Thực nghiệm mới sau R2/V3. Hai LoRA mới bắt đầu từ cùng Vintern gốc, đối chiếu hai '
         'checkpoint source-supervised có cùng seed/ngân sách. Không so F1 tuyệt đối giữa hai test khác nhau '
         'để gọi là cải thiện. Test mới và mọi kết quả âm được giữ.', '',
@@ -36,6 +40,11 @@ def make():
     for key in KEYS:
         s=records[key]['summary'];d=dev[key]['summary']
         lines.append(f'| {key} | {d["f1"]:.4f} | {s["f1"]:.4f} | {s["declared_hidden_outputs"]} | {s["neighbor_omissions"]} | {s["neighbor_wrong"]} | {s["neighbor_recall"]:.4f} | {s["pair_success"]}/{s["pair_eligible"]} |')
+    denominator=records['uniform_42']['summary']
+    lines+=['', f'Cùng mẫu số cho cả bốn model: {denominator["declared_hidden_reference_keys"]} '
+        f'trường mất tất cả nguồn khai báo và {denominator["neighbor_reference_keys"]} trường lân cận có nguồn nguyên vẹn. '
+        'Các số là lượt trường trên nhiều view của48 giấy tờ, không phải số người. '
+        '“Mất nguồn” được tính theo hợp đồng nhãn hình học; nguồn chưa được parser nhận không được coi là bằng chứng chắc chắn về hallucination.']
     lines+=['', '## So sánh ghép cặp theo seed', '',
         '| So sánh | ΔF1 test | CI95% theo ID | CI95% nối ID trùng raster |',
         '|---|---:|---|---|']
