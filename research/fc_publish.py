@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import subprocess
 from research.fc_common import *
+from research.fc_io import save_retry as save
 
 
 def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,stderr=subprocess.STDOUT).decode().strip()
@@ -18,6 +19,9 @@ def publish(stage):
     elif stage=='seal':
         if any((CACHE/'predictions').glob('test_*/*.json')):raise ValueError('Cannot seal after test generation')
         if read(OUT/'test_lock.json')['signature']!=sig:raise ValueError('Test contract differs')
+    elif stage=='recovery':
+        if read(OUT/'io_recovery.json')['signature']!=sig:raise ValueError('Recovery contract differs')
+        if any((CACHE/'predictions').glob('test_*/*.json')):raise ValueError('This recovery record must precede new test generation')
     else:
         if read(OUT/'audit.json')['status']!='passed':raise ValueError('Passed audit required')
         if read(OUT/'report_provenance.json')['report_sha256']!=sha(ROOT/'research/FAIR_CONTROLS_RESULTS_VI.md'):
@@ -45,8 +49,10 @@ def publish(stage):
         if stage=='prepare':record.update(training_started=False,train_sha256=sha(DATA/'train.json'))
         else:record.update(test_generation_started=False,lock_sha256=sha(OUT/'test_lock.json'))
         save(OUT/('prepare_publication.json' if stage=='prepare' else 'test_publication.json'),record)
+    if stage=='recovery':save(OUT/'io_publication.json',dict(signature=sig,commit=tip,remote_commit=tip,
+        recovery_sha256=sha(OUT/'io_recovery.json'),before_new_test_generation=True))
     print('FC_PUBLISHED',stage,tip,flush=True)
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','seal','final']);publish(p.parse_args().stage)
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','seal','recovery','final']);publish(p.parse_args().stage)

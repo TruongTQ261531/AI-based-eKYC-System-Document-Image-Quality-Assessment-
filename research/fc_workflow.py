@@ -7,6 +7,7 @@ import sys
 import time
 import urllib.request
 from research.fc_common import *
+from research.fc_io import save_retry as save
 
 
 def state(stage,**extra):
@@ -37,7 +38,13 @@ def health():
 
 def pause_source_web():
     if not port_used():return
-    import psutil
+    try:
+        import psutil
+    except ModuleNotFoundError:
+        from research.vlm_setup import CACHE as runtime_cache
+        sys.path.insert(0,str(runtime_cache/'site'))
+        try:import psutil
+        finally:sys.path.pop(0)
     if health().get('app_id')!='source_visibility_v3':raise ValueError('Port8003 belongs to another service')
     owners={c.pid for c in psutil.net_connections(kind='tcp') if c.status=='LISTEN' and c.laddr.port==8003}
     if len(owners)!=1 or None in owners:raise ValueError('Cannot identify the research server owner')
@@ -74,7 +81,7 @@ def main():
             command('publish_prepare',['-m','research.fc_publish','prepare'],OUT/'prepare_publication.json')
             if read(OUT/'prepare_publication.json')['signature']!=signature():raise ValueError('Preparation not published')
             pause_source_web()
-            gpu=['-m','research.vlm_setup','run','--','-m','research.fc_study']
+            gpu=['-m','research.vlm_setup','run','--','-m','research.fc_runner']
             for seed in SEEDS:
                 for arm in NEW_ARMS:
                     command(f'train_{arm}_{seed}',gpu+['train','--arm',arm,'--seed',str(seed)],OUT/f'train_{arm}_{seed}.json')
@@ -89,9 +96,11 @@ def main():
                 command('fresh_'+key,gpu+['fresh','--model',key],OUT/f'fresh_{key}.json')
             command('feature_audit',['-m','research.vlm_setup','run','--','-m','research.fc_audit','features'],OUT/'feature_audit.json')
             command('numeric_audit',['-m','research.vlm_setup','run','--','-m','research.fc_audit','audit'],OUT/'audit.json')
+            restore_source_web()
+            command('software_verification',['-m','research.fc_verify'],OUT/'software_verification.json')
             command('report',['-m','research.fc_report'],ROOT/'research/FAIR_CONTROLS_RESULTS_VI.md')
             command('publish_final',['-m','research.fc_publish','final'])
-            state('complete',audit_passed=True,new_training_runs=4,reused_training_runs=4,model_promoted=False)
+            state('complete',audit_passed=True,software_checks_passed=True,new_training_runs=4,reused_training_runs=4,model_promoted=False)
         except Exception as exc:
             state('failed',error_type=type(exc).__name__,detail=str(exc));raise
         finally:

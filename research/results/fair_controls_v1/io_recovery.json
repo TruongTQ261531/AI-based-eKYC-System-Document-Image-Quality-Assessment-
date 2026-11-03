@@ -1,0 +1,16 @@
+{
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "time_utc": "2026-11-03T11:29:20Z",
+  "failed_stage": "development_repeat_42",
+  "failure_type": "PermissionError",
+  "failure_record_sha256": "09a3a106a431e71f16b1108f19300eeefe51c2b7c1db4875c70bab9835d30bfe",
+  "failure_log_sha256": "f6ce39a068006c9dff1555c48e2e9437434f0c5c1afb63f98dafbde867e082e7",
+  "retained_generation_outputs": 56,
+  "retained_outputs_digest": "54b74683fe549042a672ae9523408587575c1f3d6ed1e54cadc544f719dabcd0",
+  "completed_training_runs": 4,
+  "retrained_runs_required": 0,
+  "primary_data_or_model_changes": false,
+  "correction": "Delete-sharing progress reader; bounded PermissionError retries of identical metadata payload",
+  "new_test_generation_started": false,
+  "retry_unit_checks_passed": 3
+}

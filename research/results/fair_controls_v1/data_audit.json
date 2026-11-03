@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "signature": "80df897cd6d3f60aab774d68e761812ac0ce7ab53bda25f47d3ad1c268e6102e",
+  "unique_input_encodings": 984,
+  "identical_pixel_target_conflicts": 0,
+  "reconstructed_new_rasters": 256,
+  "independent_human_annotation": false,
+  "scope": "Generator and source-label consistency, not human legibility"
+}
