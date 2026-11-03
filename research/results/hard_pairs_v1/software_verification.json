@@ -1,0 +1,96 @@
+{
+  "verified_utc": "2026-11-03T06:23:55.624671+00:00",
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "study_audit_sha256": "730e2fb613ad66758280dacc0eed605c525ce0f6393d1350b0c5aeb9838e4f85",
+  "verifier_source_sha256": "99a2f1cb3f33c075742f9400c732a36204c9ea4062ff9d78584daa94f2d72fec",
+  "tested_base_commit": "231586f32673fddcf817b5c4136d2b1e6ef30fbc",
+  "python_main_passed": 287,
+  "python_main_skipped_optional_training": 4,
+  "optional_training_overlay_passed": 4,
+  "combined_unique_python_checks_passed": 291,
+  "subtests_passed": 1496,
+  "main_junit": {
+    "tests": 1787,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 4
+  },
+  "optional_junit": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "main_warning_count": 1,
+  "existing_warning": "StarletteDeprecationWarning: httpx TestClient integration",
+  "new_dependencies_installed": false,
+  "frontend_primary": {
+    "tests": 40,
+    "pass": 40,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "frontend_source_variant": {
+    "tests": 8,
+    "pass": 8,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "frontend_behavior_checks_passed": 48,
+  "services": {
+    "mentor": {
+      "url": "http://127.0.0.1:8000/",
+      "status": "ready",
+      "api_version": "3.2.0"
+    },
+    "research": {
+      "url": "http://127.0.0.1:8003/",
+      "ready": true,
+      "app_id": "source_visibility_v3",
+      "model": "partial_42",
+      "recommended": false,
+      "health_progress_scope": "Existing V3 study, not new hard-pair runs"
+    }
+  },
+  "new_hard_pair_model_promoted": false,
+  "physical_camera_validation": false,
+  "human_legibility_annotations": 0,
+  "frozen_V1_files": 101,
+  "frozen_V4_files": 63,
+  "evidence": [
+    {
+      "file": "research/cache/hard_pairs_v1/final_regression.xml",
+      "sha256": "6ed6e5467b6a23f2ada939cd82ec234ddf43e4f99ed02f44ebd818bfdf0cfec8"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/final_regression.log",
+      "sha256": "23c12b4b3d6bb1b2ce5205d6a5c1818f72804139dff23178066a88322b94b3fe"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/optional_training_tests.xml",
+      "sha256": "bf0156201b48c9276d524241b678090e427628c09a617b36afbcebfdaa8ff726"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/optional_training_tests.log",
+      "sha256": "f2d4375e2ade888f101f91ec8c3b333c0d93508b12ffef2398c94f25cde78448"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/frontend_primary.log",
+      "sha256": "f5c562bfcdd157c0f38ddd1f40aec34db12c6726dc1315ca5e5f2794837889c7"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/frontend_source_variant.log",
+      "sha256": "976d461b3e32cd21885436b5b3c5e8880e63438aa60e4555d5414e63c6719896"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/final_health_8000.json",
+      "sha256": "c970e00e17cd675cc925b0a6735f14165d0cc012f13b51512979fec1496f1c48"
+    },
+    {
+      "file": "research/cache/hard_pairs_v1/final_health_8003.json",
+      "sha256": "0403ca7dbcf2b70cc5ff28b2f587a30f9482cac79a6c8a4be72d3d918b4e8ac2"
+    }
+  ]
+}

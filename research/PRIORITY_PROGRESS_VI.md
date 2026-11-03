@@ -1,5 +1,12 @@
 # Tiến độ bốn ưu tiên: đối chiếu với bằng chứng
 
+> Snapshot lịch sử **trước** vòng cặp che/giữ. Phần bên dưới giữ nguyên số liệu
+> R2/V3 tại thời điểm mới lập inventory. Vòng tiếp theo đã huấn luyện và kiểm
+> chứng riêng: xem [kết quả mới](HARD_PAIR_RESULTS_VI.md) và
+> [protocol](HARD_PAIR_PROTOCOL.md). Không dùng dòng “chưa huấn luyện” bên dưới
+> để mô tả trạng thái của vòng mới. Chạy lại `research.priority_progress` sẽ
+> tái tạo snapshot cũ này.
+
 Bản cập nhật ngày 2026-11-03. Đây là chẩn đoán hậu nghiệm từ train/development; không huấn luyện lại hoặc sửa các kết quả đã công bố.
 
 | Ưu tiên | Đã thực hiện | Còn thiếu |

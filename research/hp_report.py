@@ -40,6 +40,11 @@ def make():
     for key in KEYS:
         s=records[key]['summary'];d=dev[key]['summary']
         lines.append(f'| {key} | {d["f1"]:.4f} | {s["f1"]:.4f} | {s["declared_hidden_outputs"]} | {s["neighbor_omissions"]} | {s["neighbor_wrong"]} | {s["neighbor_recall"]:.4f} | {s["pair_success"]}/{s["pair_eligible"]} |')
+    if all(v['f1']['ci95_low'] <= 0 <= v['f1']['ci95_high'] for v in intervals['comparisons']):
+        lines+=['', 'Cả hai CI95% của ΔF1 đều chứa0: điểm test cao hơn chưa đủ chứng minh cải thiện ổn định.']
+    if all(v['hidden_outputs']['delta'] > 0 for v in intervals['comparisons']):
+        lines+=['', 'Ở cả hai seed, số output mất nguồn theo nhãn đều tăng. '
+            'Vòng này chưa chứng minh giảm đồng thời hai nhóm lỗi dù có giảm bỏ sót lân cận.']
     denominator=records['uniform_42']['summary']
     lines+=['', f'Cùng mẫu số cho cả bốn model: {denominator["declared_hidden_reference_keys"]} '
         f'trường mất tất cả nguồn khai báo và {denominator["neighbor_reference_keys"]} trường lân cận có nguồn nguyên vẹn. '
@@ -140,6 +145,21 @@ def make():
         '[CI](results/hard_pairs_v1/paired_intervals.json), '
         '[protocol](HARD_PAIR_PROTOCOL.md), [runbook](HARD_PAIR_RUNBOOK.md), '
         '[đối chiếu nghiên cứu và giới hạn novelty](HARD_PAIR_RELATED_WORK.md).']
+    verification_path=OUT/'software_verification.json'
+    if verification_path.exists():
+        v=read(verification_path)
+        if v['signature']!=signature() or v['study_audit_sha256']!=sha(OUT/'audit.json'):
+            raise ValueError('Software verification refers to a different study')
+        lines+=['', '## Kiểm thử phần mềm và dịch vụ', '',
+            f'{v["combined_unique_python_checks_passed"]} kiểm tra Python, '
+            f'{v["subtests_passed"]} subtest và {v["frontend_behavior_checks_passed"]} kiểm tra hành vi giao diện đã qua. '
+            f'Bộ chính qua{v["python_main_passed"]} bài; '
+            f'{v["python_main_skipped_optional_training"]} bài tùy chọn được chạy riêng bằng overlay và đều qua. '
+            f'Có{v["main_warning_count"]} cảnh báo deprecation đã ghi trong log; không cài dependency mới.', '',
+            'Đã xác nhận eKYC8000 ready/API3.2.0 và SourceV3 ở8003 ready, modelpartial_42. '
+            'Health của8003 báo tiến độ nghiên cứu V3 cũ; không dùng nó để đếm run hard-pair mới. '
+            'Đây là kiểm thử mô phỏng/HTTP, chưa phải kiểm chứng camera người dùng. '
+            'Xem [bằng chứng và hash log](results/hard_pairs_v1/software_verification.json).']
     path=ROOT/'research/HARD_PAIR_RESULTS_VI.md';path.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(path),audit_sha256=sha(OUT/'audit.json'),
         report_code_sha256=sha(Path(__file__))))

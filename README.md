@@ -14,10 +14,18 @@ khi kiểm tra tổ tiên và tag đã có trên remote. Kết quả V1/V4 đư�
 weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
-Xem [tiến độ từng ưu tiên](research/PRIORITY_PROGRESS_VI.md) để phân biệt phần đã
-huấn luyện/đánh giá với nhãn người và vòng hard mining còn thiếu. Có thể kiểm
-tra và tái tạo báo cáo này bằng `python -m research.priority_progress` trong
-môi trường Python hiện có; lệnh không gọi model hoặc huấn luyện lại.
+Vòng cải thiện hai nhóm lỗi OCR dùng cặp che/giữ đã có hai LoRA mới, đối chiếu
+hai checkpoint V3 cùng ID/lượt ảnh/số update trên 48 giấy tờ mới (192 view).
+Xem [kết quả, audit và giới hạn](research/HARD_PAIR_RESULTS_VI.md),
+[phương pháp đã khóa](research/HARD_PAIR_PROTOCOL.md) và
+[cách tiếp tục tiến trình](research/HARD_PAIR_RUNBOOK.md).
+Cổng thay model không đạt trên development; web8003 tiếp tục dùng model đã
+chọn trước đó. Các lượt ảnh và bước học khớp nhau, số token đáp án khác nhau.
+
+[Tiến độ từng ưu tiên](research/PRIORITY_PROGRESS_VI.md) là snapshot R2/V3
+**trước** vòng cặp che/giữ. `python -m research.priority_progress` chỉ tái tạo
+snapshot lịch sử đó; không gọi model hoặc thay kết quả của vòng mới. Nhãn
+legibility độc lập của người và bộ camera mới vẫn chưa có.
 
 Trên máy hiện tại, chạy OCR nghiên cứu bằng:
 

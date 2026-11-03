@@ -21,6 +21,10 @@ Camera EXIF test: {'iPhone XS Max': 20, 'SM-G973F': 4}. Đây là ảnh giấy t
 | uniform_31415 | 0.5223 | 0.5839 | 136 | 73 | 101 | 0.5310 | 10/36 |
 | hard_31415 | 0.5034 | 0.5918 | 153 | 71 | 99 | 0.5418 | 7/36 |
 
+Cả hai CI95% của ΔF1 đều chứa0: điểm test cao hơn chưa đủ chứng minh cải thiện ổn định.
+
+Ở cả hai seed, số output mất nguồn theo nhãn đều tăng. Vòng này chưa chứng minh giảm đồng thời hai nhóm lỗi dù có giảm bỏ sót lân cận.
+
 Cùng mẫu số cho cả bốn model: 391 trường mất tất cả nguồn khai báo và 371 trường lân cận có nguồn nguyên vẹn. Các số là lượt trường trên nhiều view của48 giấy tờ, không phải số người. “Mất nguồn” được tính theo hợp đồng nhãn hình học; nguồn chưa được parser nhận không được coi là bằng chứng chắc chắn về hallucination.
 
 ## So sánh ghép cặp theo seed
@@ -124,3 +128,9 @@ Can thiệp này đồng thời thay crop bằng đầy đủ ngữ cảnh và t
 Khóa trước huấn luyện: `1939a90552da758e8cf951aaee3ac22a9fdae506`. Khóa trước test: `f27ecb68b47483279caae29f9ba9894c57326878`. Bảo toàn101 file V1,63 file V4 và hợp đồng R2/V3. Ảnh, nhãn riêng, output OCR nguyên văn và weights mới không đưa lên Git.
 
 Bằng chứng: [audit](results/hard_pairs_v1/audit.json), [CI](results/hard_pairs_v1/paired_intervals.json), [protocol](HARD_PAIR_PROTOCOL.md), [runbook](HARD_PAIR_RUNBOOK.md), [đối chiếu nghiên cứu và giới hạn novelty](HARD_PAIR_RELATED_WORK.md).
+
+## Kiểm thử phần mềm và dịch vụ
+
+291 kiểm tra Python, 1496 subtest và 48 kiểm tra hành vi giao diện đã qua. Bộ chính qua287 bài; 4 bài tùy chọn được chạy riêng bằng overlay và đều qua. Có1 cảnh báo deprecation đã ghi trong log; không cài dependency mới.
+
+Đã xác nhận eKYC8000 ready/API3.2.0 và SourceV3 ở8003 ready, modelpartial_42. Health của8003 báo tiến độ nghiên cứu V3 cũ; không dùng nó để đếm run hard-pair mới. Đây là kiểm thử mô phỏng/HTTP, chưa phải kiểm chứng camera người dùng. Xem [bằng chứng và hash log](results/hard_pairs_v1/software_verification.json).
