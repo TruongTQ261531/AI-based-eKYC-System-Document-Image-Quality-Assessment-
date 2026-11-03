@@ -51,6 +51,16 @@ def make():
     for a,b in zip(intervals['comparisons'],sensitivity['comparisons']):
         v=a['f1'];w=b['f1']
         lines.append(f'| {a["a"]} − {a["b"]} | {v["delta"]:+.4f} | [{v["ci95_low"]:+.6f}, {v["ci95_high"]:+.6f}] | [{w["ci95_low"]:+.6f}, {w["ci95_high"]:+.6f}] |')
+    lines+=['', '| So sánh | ΔRecall lân cận | CI95% | ΔSố output mất nguồn | CI95% |',
+        '|---|---:|---|---:|---|']
+    for value in intervals['comparisons']:
+        n=value['neighbor_recall'];h=value['hidden_outputs']
+        lines.append(f'| {value["a"]} − {value["b"]} | {n["delta"]:+.4f} | '
+            f'[{n["ci95_low"]:+.6f}, {n["ci95_high"]:+.6f}] | {h["delta"]:+.0f} | '
+            f'[{h["ci95_low"]:+.2f}, {h["ci95_high"]:+.2f}] |')
+    lines+=['', 'Recall lân cận tăng là chiều mong muốn; số output mất nguồn giảm là chiều mong muốn. '
+        'CI lấy từ cùng resample ID đã đăng ký, không từ coi từng trường là mẫu độc lập. '
+        'CI theo dữ liệu trong từng seed không thay thế đánh giá biến thiên qua nhiều seed.']
     lines+=['', 'Bootstrap10000 lần, seed20261104, phân tầng nguồn. Phân tích chính dùng48 cụm ID; '
         f'phân tích độ nhạy dùng{sensitivity["resampling_clusters"]} cụm nối ID có raster trùng. '
         'Các trường và nhiều view của một giấy tờ không được coi là các ID độc lập. '
@@ -72,12 +82,28 @@ def make():
             for view in ('full','field_clip','value_mask','pair_mask'):
                 s=summary([r for r in records[key]['rows'] if r['source']==source and r['capture']==view])
                 lines.append(f'| {key} | {source} | {view} | {s["f1"]:.4f} | {s["neighbor_omissions"]} | {s["declared_hidden_outputs"]} |')
-    lines+=['', '## Ngân sách thực tế', '', '| Run mới | Update | Lượt ảnh | Token loss | Max allocated/reserved GiB |',
-        '|---|---:|---:|---:|---|']
-    for seed in (42,31415):
-        r=read(OUT/f'train_hard_{seed}.json');events=r['events']
-        lines.append(f'| hard_{seed} | 320 | 1280 | {r["token_exposure"]["answer_loss_tokens"]} | '
+    lines+=['', '## Định dạng và ngân sách đọc', '',
+        '| Model | JSON hợp lệ | Chạm384 token |', '|---|---:|---:|']
+    for key in KEYS:
+        rows=records[key]['rows']
+        lines.append(f'| {key} | {sum(bool(r["valid_json"]) for r in rows)}/{len(rows)} | '
+            f'{sum(bool(r["hit_token_limit"]) for r in rows)} |')
+    lines+=['', 'Giữ mọi ca lỗi JSON và chạm ngân sách trong kết quả tổng; không bỏ hoặc chạy lại với prompt tốt hơn. '
+        'Chạm384 token là bộ đếm sinh, không tự chứng minh đáp án bị cắt. '
+        'Chỉ số trường phải được đọc cùng chỉ số định dạng và thành công cặp.']
+    lines+=['', '## Ngân sách hiệu dụng và bộ đếm bộ nhớ', '', '| Run | Trạng thái | Update | Lượt ảnh | Token loss | Max allocated/reserved GiB |',
+        '|---|---|---:|---:|---:|---|']
+    for key in KEYS:
+        seed=key.rsplit('_',1)[1];new=key.startswith('hard_')
+        r=read(OUT/f'train_hard_{seed}.json') if new else read(OLD_OUT/f'train_source_{seed}.json')
+        events=r['events'];status='huấn luyện mới' if new else 'đối chứng đã có'
+        lines.append(f'| {key} | {status} | {r["steps"]} | {r["presentations"]} | {r["token_exposure"]["answer_loss_tokens"]} | '
             f'{max(e["peak_allocated_bytes"] for e in events)/2**30:.3f} / {max(e["peak_reserved_bytes"] for e in events)/2**30:.3f} |')
+    lines+=['', 'Khớp ID/lượt ảnh và số update không đồng nghĩa khớp số token, thời gian hoặc FLOPs. '
+        'Đối chứng là các run lịch sử; chính sách cache/tài nguyên đã thay đổi như ghi chú runtime. '
+        'Token và update trong bảng lấy từ log canonical của320 bước hiệu dụng; '
+        'các update phải tính lại và chẩn đoán được kê riêng bên dưới. '
+        'Cột bộ nhớ là max trên các event giữ lại, không chứng minh ưu thế bộ nhớ hoặc tốc độ huấn luyện.']
     lines+=['', f'Đã replay {audit["replayed_prediction_rows"]} hàng điểm từ output nguyên văn; '
         f'{audit["recorded_new_cached_generation_calls"]} lượt sinh mới từ feature cache và '
         f'{audit["reused_old_development_outputs"]} output development cũ được tái chấm. '
@@ -112,7 +138,8 @@ def make():
         'Ảnh, nhãn riêng, output OCR nguyên văn và weights mới không đưa lên Git.', '',
         'Bằng chứng: [audit](results/hard_pairs_v1/audit.json), '
         '[CI](results/hard_pairs_v1/paired_intervals.json), '
-        '[protocol](HARD_PAIR_PROTOCOL.md), [runbook](HARD_PAIR_RUNBOOK.md).']
+        '[protocol](HARD_PAIR_PROTOCOL.md), [runbook](HARD_PAIR_RUNBOOK.md), '
+        '[đối chiếu nghiên cứu và giới hạn novelty](HARD_PAIR_RELATED_WORK.md).']
     path=ROOT/'research/HARD_PAIR_RESULTS_VI.md';path.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     save(OUT/'report_provenance.json',dict(signature=signature(),report_sha256=sha(path),audit_sha256=sha(OUT/'audit.json'),
         report_code_sha256=sha(Path(__file__))))

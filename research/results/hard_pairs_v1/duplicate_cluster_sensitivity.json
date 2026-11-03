@@ -1,0 +1,47 @@
+{
+  "seed": 20261104,
+  "resamples": 10000,
+  "document_instances": 48,
+  "resampling_clusters": 48,
+  "method": "Paired source-stratified connected-raster document bootstrap",
+  "comparisons": [
+    {
+      "a": "hard_42",
+      "b": "uniform_42",
+      "f1": {
+        "delta": 0.011340614211427624,
+        "ci95_low": -0.01502986938833833,
+        "ci95_high": 0.03494475625756533
+      },
+      "neighbor_recall": {
+        "delta": 0.029649595687331498,
+        "ci95_low": -0.018869199388067307,
+        "ci95_high": 0.07387862796833772
+      },
+      "hidden_outputs": {
+        "delta": 16,
+        "ci95_low": -6.0,
+        "ci95_high": 45.0
+      }
+    },
+    {
+      "a": "hard_31415",
+      "b": "uniform_31415",
+      "f1": {
+        "delta": 0.007924122975903392,
+        "ci95_low": -0.023093305658151254,
+        "ci95_high": 0.039599508456935766
+      },
+      "neighbor_recall": {
+        "delta": 0.010781671159029615,
+        "ci95_low": -0.04847248682081525,
+        "ci95_high": 0.07143806990881453
+      },
+      "hidden_outputs": {
+        "delta": 17,
+        "ci95_low": -19.0,
+        "ci95_high": 54.0
+      }
+    }
+  ]
+}

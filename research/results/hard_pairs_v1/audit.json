@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "replayed_prediction_rows": 1152,
+  "recorded_new_cached_generation_calls": 1008,
+  "reused_old_development_outputs": 144,
+  "additional_pixel_level_calls": 16,
+  "fresh_output_hash_mismatches": 0,
+  "repeat_consistency_verified": true,
+  "reference_rows_regenerated": 280,
+  "frozen_V1_files": 101,
+  "frozen_V4_files": 63,
+  "training_proof": [
+    {
+      "seed": 42,
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "adapter_sha256": "38a430c6a92c3f88d23926eb2133697f9bfc09ad503f3a95b9e3dc7e925c3cb8",
+      "nonzero_B_tensors": 96,
+      "identity_slot_order_matched": true
+    },
+    {
+      "seed": 31415,
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "adapter_sha256": "d2e7a24e540972a2d0edbd6b3c147008d9a7cfc95cde732d2d81f219aeae8293",
+      "nonzero_B_tensors": 96,
+      "identity_slot_order_matched": true
+    }
+  ],
+  "pretraining_publication": "1939a90552da758e8cf951aaee3ac22a9fdae506",
+  "test_seal_publication": "f27ecb68b47483279caae29f9ba9894c57326878",
+  "feature_audit_sha256": "dea4da6979e5a3298032ec495e650e85fb39b0ce94979519de173581b17faa17",
+  "audit_code_sha256": "498854aa91226f76546340fcc563f93cc29ae688d1f6d720fa827a867e9a045c",
+  "runtime_amendment_sha256": "fce679b7f6e8c0ecf79b228d4165d926596d71180f92a498d1351c8f8c80ffcc",
+  "runtime_publication": "8f0fd23651c4d91600cf5c34aa3a5edcf8250ef0",
+  "recorded_discarded_updates_replayed": 43,
+  "runtime_diagnostic_updates": 2,
+  "scalar_replayed_updates_exact": 43,
+  "duplicate_raster_target_conflicts": 0,
+  "coverage_sensitivity_publication": "72daddb6a26c5f0b5bad40ca8841bc18eb02a386",
+  "coverage_sensitivity_cases": 188,
+  "human_legibility_labels": false,
+  "physical_camera_validation": false
+}
