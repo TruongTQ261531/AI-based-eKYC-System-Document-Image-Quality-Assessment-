@@ -1,8 +1,10 @@
 # Research extension: support-preserving document crops
 
-This directory is separate from the mentor eKYC runtime. Its branch is
-`research/document-recovery-core-b`; mentor baseline is
-`mentor/ekyc-v3.2.0` at `4110f22`.
+This directory is separate from the mentor eKYC runtime. Code is now consolidated
+on `main`. Historical branch names `research/document-recovery-core-b` and
+`mentor/ekyc-v3.2.0` are preserved as tags; the mentor baseline remains `4110f22`.
+See [current priority progress](PRIORITY_PROGRESS_VI.md) and
+[integration review](../BRANCH_INTEGRATION_REVIEW.md).
 
 Read `PROTOCOL.md` before interpreting any numbers. This is a feasibility
 benchmark with no claim of guaranteed novelty, SOTA or CORE B acceptance.

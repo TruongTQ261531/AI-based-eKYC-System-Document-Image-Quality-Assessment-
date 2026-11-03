@@ -7,10 +7,17 @@ không phê duyệt danh tính. Xem [rà soát tích hợp branch](BRANCH_INTEGR
 [kết quả đã audit](research/V3_RESULTS_VI.md), [bản thảo tiếng Anh](research/V3_PAPER_DRAFT.md)
 và [hướng dẫn chạy nghiên cứu](research/V3_RUNBOOK.md).
 
-Các nhánh `mentor/ekyc-v3.2.0`, `research/document-recovery-core-b` và
-`research/vlm-v2-evidence` được giữ để đối chiếu lịch sử. Kết quả V1/V4 được
-bảo toàn; weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
+Các mốc `mentor/ekyc-v3.2.0`, `research/document-recovery-core-b` và
+`research/vlm-v2-evidence` được lưu bằng tag để đối chiếu sau khi gộp vào main.
+Theo yêu cầu cập nhật, chỉ giữ branch `main`; việc xóa branch chỉ thực hiện sau
+khi kiểm tra tổ tiên và tag đã có trên remote. Kết quả V1/V4 được bảo toàn;
+weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
+
+Xem [tiến độ từng ưu tiên](research/PRIORITY_PROGRESS_VI.md) để phân biệt phần đã
+huấn luyện/đánh giá với nhãn người và vòng hard mining còn thiếu. Có thể kiểm
+tra và tái tạo báo cáo này bằng `python -m research.priority_progress` trong
+môi trường Python hiện có; lệnh không gọi model hoặc huấn luyện lại.
 
 Trên máy hiện tại, chạy OCR nghiên cứu bằng:
 

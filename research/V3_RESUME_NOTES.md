@@ -1,5 +1,12 @@
 # Additional completion work after the running supervisor
 
+Update 2026-11-03: the additional replay, numeric audits, manuscript, browser
+checks and main integration below have completed. The user's newer instruction
+allows deleting merged branches. Preserve their exact tips as tags, use main for
+future publication, and see PRIORITY_PROGRESS_VI.md for work still uncompleted.
+The historical preserve-branches instruction at the end is superseded by this
+newer user request; the frozen scientific artifacts remain protected.
+
 This note supplements the durable workflow state. It does not change either
 primary training/reference signature or the secondary fusion signature.
 

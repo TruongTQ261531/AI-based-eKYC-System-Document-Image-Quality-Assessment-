@@ -1,0 +1,56 @@
+{
+  "python_main_passed": 274,
+  "python_main_skipped_optional_training": 4,
+  "optional_training_overlay_passed": 4,
+  "combined_unique_python_checks_passed": 278,
+  "subtests_passed": 1496,
+  "frontend_primary_files_passed": 40,
+  "frontend_source_variant_passed": 8,
+  "frontend_behavior_checks_passed": 48,
+  "new_study_finetunes": 0,
+  "new_benchmark_VLM_calls": 0,
+  "physical_camera_validation": false,
+  "human_annotations": 0,
+  "initial_restricted_test_interrupted": true,
+  "initial_restricted_test_reason": "Windows local socketpair/event loop waiting",
+  "first_debug_wrapper_collection_error": "repo import path missing, corrected in second wrapper",
+  "production_code_changes_to_make_API_tests_pass": false,
+  "evidence": [
+    {
+      "file": "research/cache/current_progress/final_regression.log",
+      "sha256": "8023b71c455a36b03838e5dcdbb89e31d1bf12018695a0933c02aabb29d9f3a3"
+    },
+    {
+      "file": "research/cache/current_progress/full_regression_local_access.xml",
+      "sha256": "ada3096a7d4d9a1f62a55426e4e65097164fae0dde40436bf580ea749807355f"
+    },
+    {
+      "file": "research/cache/current_progress/full_regression_verbose.xml",
+      "sha256": "4e1c34b634f3ad26e8ae940ed1af1ebfd48378e56af8f2d668b6caf82aa1fa0b"
+    },
+    {
+      "file": "research/cache/current_progress/hard_case_inventory.json",
+      "sha256": "cbcb34e671c17def39de6c96e6380cc02c50449ce3b02e29895fc077d23d9af8"
+    },
+    {
+      "file": "research/cache/current_progress/initial_regression_interruption.json",
+      "sha256": "9ece44dc9487cad7a10ba168421a168f40e12e6841a333432ad8e21d18d5f48e"
+    },
+    {
+      "file": "research/cache/current_progress/optional_training_tests.xml",
+      "sha256": "32d21af5bfa6fccaa46edacb0a89468700747392710a2ad41f3183f0fe91fd8c"
+    },
+    {
+      "file": "research/cache/current_progress/regression_access_diagnosis.json",
+      "sha256": "5a0cf7214d69126b35681642935dd9890e86bc02d85115857eb40129dfe61d0b"
+    },
+    {
+      "file": "research/cache/current_progress/verbose_regression.log",
+      "sha256": "3896bcf0bbdce56a89f3af9526f5692579ff4fc84f2abd5436953e403d015b71"
+    },
+    {
+      "file": "research/cache/current_progress/verbose_regression_fixed.log",
+      "sha256": "441afa9dd1511263e60fc15dd56cb900f2125b21ad8641c36727f81a9b46c7aa"
+    }
+  ]
+}

@@ -1,0 +1,1893 @@
+{
+  "date": "2026-11-03",
+  "source_signature": "a1ea14c12e3076defd946411fed02e9c41da1d2e26d7aa8c2a0e42e758a1923c",
+  "source_data_sha256": "043fa5c91ebe0119861f24b045b0ca9fb83b003f06a28b8d3ede3ce27c785cf6",
+  "completed_training_runs": [
+    {
+      "name": "train_control_31415",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T12:49:56Z",
+      "last_update_utc": "2026-11-01T13:04:58Z",
+      "last_event_wall_seconds": 905.8797750000376,
+      "peak_allocated_GiB": 2.802218437194824,
+      "evidence_sha256": "70199e04099b8ccec3b8b77d149278765c86edfdcc03bf3ff72bdbdf7863b5ed"
+    },
+    {
+      "name": "train_control_42",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T12:16:52Z",
+      "last_update_utc": "2026-11-01T12:31:50Z",
+      "last_event_wall_seconds": 901.1552014000481,
+      "peak_allocated_GiB": 2.802215576171875,
+      "evidence_sha256": "d0753d83e8d2ac2845a1010e5318dbd3cbf8a575563e7a305af8cc16c1b160b7"
+    },
+    {
+      "name": "train_partial_31415",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T13:05:29Z",
+      "last_update_utc": "2026-11-01T13:23:16Z",
+      "last_event_wall_seconds": 1070.5957059999928,
+      "peak_allocated_GiB": 2.802218437194824,
+      "evidence_sha256": "5e7480282fa120752d2e267170c0ba92be6664663a9de31aa58e9bc3a5732d21"
+    },
+    {
+      "name": "train_partial_42",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T12:34:25Z",
+      "last_update_utc": "2026-11-01T12:49:24Z",
+      "last_event_wall_seconds": 901.7985582998954,
+      "peak_allocated_GiB": 2.8013033866882324,
+      "evidence_sha256": "04a8c5f72635c31ed98d2b63a1539dd3174285c7f84e65e8c2f3e305169200f1"
+    },
+    {
+      "name": "train_source_31415",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T14:53:30Z",
+      "last_update_utc": "2026-11-01T15:12:22Z",
+      "last_event_wall_seconds": 1135.2296168999746,
+      "peak_allocated_GiB": 2.802218437194824,
+      "evidence_sha256": "ab44fb07eedc9ed9505340b81a79dcd276d47fa9be64ff217a5caa65f4fbff61"
+    },
+    {
+      "name": "train_source_42",
+      "optimizer_updates": 320,
+      "presentations": 1280,
+      "first_update_utc": "2026-11-01T14:34:46Z",
+      "last_update_utc": "2026-11-01T14:52:57Z",
+      "last_event_wall_seconds": 1094.5082046999596,
+      "peak_allocated_GiB": 2.8013033866882324,
+      "evidence_sha256": "09da9af9e9512e9881b48c17e3816902e83413ec0295db07fc3536a67f38c183"
+    }
+  ],
+  "sum_recorded_training_event_wall_seconds": 6009.167062299908,
+  "training_event_wall_excludes_setup_and_evaluation": true,
+  "new_neural_calls_in_this_diagnostic": 0,
+  "new_finetunes_in_this_diagnostic": 0,
+  "input_profiles": [
+    {
+      "profile": "raw2",
+      "development_f1": 0.16326530612244897,
+      "mean_fresh_seconds": 17.03539816873672
+    },
+    {
+      "profile": "raw4",
+      "development_f1": 0.1951219512195122,
+      "mean_fresh_seconds": 17.903779443753592
+    },
+    {
+      "profile": "rect2",
+      "development_f1": 0.21764705882352942,
+      "mean_fresh_seconds": 16.85235306875984
+    },
+    {
+      "profile": "rect4",
+      "development_f1": 0.18012422360248448,
+      "mean_fresh_seconds": 17.573302331256855
+    }
+  ],
+  "selected_input": "rect2",
+  "development_error_diagnostic": {
+    "control_42": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 119,
+      "neighbor_visible_omissions": 16,
+      "neighbor_visible_wrong_values": 31,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 6
+    },
+    "partial_42": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 53,
+      "neighbor_visible_omissions": 16,
+      "neighbor_visible_wrong_values": 30,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 7
+    },
+    "source_42": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 59,
+      "neighbor_visible_omissions": 16,
+      "neighbor_visible_wrong_values": 30,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 9
+    },
+    "control_31415": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 122,
+      "neighbor_visible_omissions": 13,
+      "neighbor_visible_wrong_values": 41,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 6
+    },
+    "partial_31415": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 54,
+      "neighbor_visible_omissions": 20,
+      "neighbor_visible_wrong_values": 27,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 8
+    },
+    "source_31415": {
+      "cases": 72,
+      "hidden_supported_contract_outputs": 54,
+      "neighbor_visible_omissions": 20,
+      "neighbor_visible_wrong_values": 26,
+      "neighbor_visible_reference_keys": 86,
+      "cases_with_both_errors": 9
+    }
+  },
+  "diagnostic_neighbor_gap_fraction_of_diagonal": 0.08,
+  "independent_human_legibility_annotations": 0,
+  "independent_new_camera_collection": false,
+  "hard_case_training_inventory_size": 32,
+  "hard_case_training_identities": 32,
+  "hard_case_selection_source": "train geometry plus development-only error types",
+  "hard_case_inventory_sha256": "cbcb34e671c17def39de6c96e6380cc02c50449ce3b02e29895fc077d23d9af8",
+  "test_outputs_opened_for_mining": 0,
+  "next_hard_case_training_started": false,
+  "old_test_is_now_open": true,
+  "next_changed_method_requires_new_test": true,
+  "V1_used_as_unmatched_transfer_baseline": true,
+  "matched_R2_source_steps": 320,
+  "priorities": {
+    "labels": "partial: author/synthetic text+geometry; no independent legibility",
+    "input": "completed bounded 4-profile development experiment; not all camera populations",
+    "errors": "partial: uniform partial training complete; hard-case inventory now prepared, not trained",
+    "comparison": "matched R2/V3 and test fresh relative to V1 complete; no fresh test for a future intervention"
+  },
+  "development_prediction_hashes": [
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "b393f81877ce668e81d7984e4a8c27baeb2122622a4fa37b8bc8338168f004ba"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "d7958c51ff225cabc147af67b54ae4e8ac5b9ddde1e4356a6c23f32d3eae249e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "c431a7b0fc6f6b4c964c49ccb34b3e3bb7df2232c1f600e70c54887408ca55af"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "5dd34dc7eb4449eb6d39a29a36a0f48081ca61083ea24f2916fa704c7eb4e1fe"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "c8cf244e0c8ffc0d14efa705f41858c2c12663bf14e24228edb2361063afa329"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "adb9de92d6fae74e27aa21a6e09decb42eab8e6577f61dc4563771b5e84ed327"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "a962a5a549e318dabc0f40ad1b64770f34ac03cc2ffa61c2971563ac0cf1a683"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "c3a116235105307f3d18eda754226e8f77d037f959953062040585ad9c6dcfcb"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "1ee59d6009b3ef5f4907413d9567442cce4a9a3f6b399d98159d20be63b6083d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "49da438686e8ed4e5ffbe85ac9553d3c053fd210753364507d223db869f2abd3"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "415eec45d6ec07332cb9bdc89a8d7d4a148a5ead8060edb34a9f4325a2569ecf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "e8b5bca6ba6f66483f623ff78f7d815aa595c62df4738a3ace6c2e59ef1dd147"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "d9159d516e4cf907a983cffd0b1f5c5e303ac6a76a2680a91dcd02e41c61e349"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "39be66a26a2b2ed64473bcb56f040ad0312ba10cb28c633153d2b4018e7a77c8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "e1fd151c527e2b6015401486ba1f6a9ca296a5b43ae52ab945766b263bb71614"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "bd3dd61e610146aeaa1ecb1b38937588603f3f63957f540ab356d4546332b116"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "ce06ca314b22e5a6eead22b3547938f6ef8d698ad739f1192abe4d70d85b2ff1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "35986d48b1348f0343d4a2a389166ca08df902db1dd966c2270fa9d035fc0163"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "d4236e2bb85daf28f6409c1a2064af746a2781f429a651cf44f13b53dfa58884"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "112646b6beda7424b69d23d475b8ea544128bbea2b11d8a823231ca6956f428e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "358a84bab464e85f0c8868d844a38977fa24653ec1942b5ea97f8ecd72c67616"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "7adc7a0d529487763ea46accad91ccc264e23cc8b4e4b058b35d27ea19676315"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "c7520326936a60fccc6394b1b9cebec0fb2815d39d6d74808fb5a59c58195111"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "49105605cb64c49c8661cfa899b5cf224939efc2411895df0fc0e57f40315dec"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "ca4f2e659eda880f3028b76b4b1bb3023cda53d0ae9f6a8cf909d4be57b59c1e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "f7947a081cee26a80e69a58829b057955736d58b3192cae5bbb222cebab545f8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "4dc438fc6419fb477b8a9111464dfe96a17f74f8198428a1c612d082aaaadb87"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "233a5ce83a7369f129c05ade15ce1ffa9605face4928a0e26e13624e7472724e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "0ce0719342545e2619b683dec8543a912b4491274b53770d07b3f541c11d9600"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "15feea072bafdc5956be30575f6e5c10d2add330993f1364a991b51ee27d1554"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "08e926dcfd5ba42af7167da6bb6af4efea8a7455adc16f23300e6c38131f6a80"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "2909133d0149f6feaec1dc02c7ba249a0af58e0191d40e0001d3c221618bf242"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "15e0c6a2a070733303d9486b63d04af3fe6e1ceb122be1b6649d14656a8b6a79"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "e656a9caf5ea3a0d2d116a3fe36b9f3758385beec766b17fc933a8c0f530360b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "014056ebbe532f10032fa1aa6c9fc986d8ffd64c2e3afe4a49466e5477e1a30e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "b2b579f2a6c37e0e3ee1d515e708452dcf34a2b55d3d5f55d4502c41575ac236"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "1c3677d44decbcf21d4bb8d8bc60e923288c5bcb26c55b344645dd2048badb42"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "c6fef041792a1df56f1a967fcfe3ac8892c3304a30dea260df124b2c107865cc"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "7c0f45947780b4f28367c70206cf38ae812ae28c7d5f81c0221f645103bf1151"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "de4fbd341f1935de8d4231477e3999c4507a0d584d91c76bdde5194d4070d672"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "ad71e6120a9508c05406fae5e50379fc6e23989c1c79c661edfd094e07ec70c4"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "d23674e3b9f59269aa8d60d2c0653d3bf74c815ee468413b8dc1978c1c98fd94"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "46e2ecf1ba492d76800a67eb9b036393123214b5bddea7bcdc320bc39f771e2f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "3e8cd690209584b7dcfaa331e642c32b545f9775d2129236a8e40f354d63e89e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "3a0b85a8ce29a537bffadfcaf932e539146f0bd0764b23b75773f197c34f8a56"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "54280dd3d2867ec79978a06fe33eeb5b7e0624a8c6e06a93680e3890dce382fb"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "b32f53066298edb05bc2c8c8a9dcb5e401e70611890f6756a33c63125ddb8044"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "9ac8e362501451fea46ff444a4f65e3cb6f28b5166a3f7dbf741f93e1495986e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "4cda2dc028773adbc75a6866d80051a12846a8987e0f0538ba7a058fec8b356e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "6cf014eebf611f90fb28000ca93e2ac63743233a33fb6a16f41e4abc3970992b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "40bd921bac2d5988c6a5ae087ba0d028993589fc76861114fcff35cde6512791"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "1ffb72494a2a0f15c576f2b9d77b9423126ebf4f5ab361b7a48b6fa2b5076ee7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "590691fef878c31de0348fde04e38dfe6671db73b3235c3adab836c61d4e254f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "51b778fbfb6108c208b4db55b7c211e94584da7f7722834d24b8b4a2fddc5dc2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "8809fce4f510651de6fc9ac10b4f7632db49a5ae4fcd304393e4623624065e45"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "52375037dbae397a1b9a15361fdac8c023cac59a5b5e23deacd2dce82ce9f6ce"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "09d483e96533e7a0cd057b771cf8a3db85cce167f75b5c792017fd221a90a607"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "b7d31ac44b02f31b5b8892e1442f3726be69a4e241b4ad910c6773800439d48e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "667db5fab21418ff9e71ef23925f9629de5aeaa5cfbc2f3313a80ad91e72600d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "43c7bc5a0ff52bc6549c96d0296c7355e455b9867326c6fc49985c6cb9217ed9"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "086b7e9193abdf858f4bb479ca945d996c95965896736c78a64fed99e15d6014"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "6a752272ec45e69aca04385feed76cc4c66ef2b1caab78d2a056411ae9295562"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "1f8ed173dafca9e1c2efc9b4e6130cdac65135ca8f7d09b4ace4f694eaa89240"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "84930b474f29f5f2e64792a939ac76c81f1ff870d45b009724f73c8907afd685"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "4bdb8e70b50c191240a16e2b8afa437009a6037fc8376ca3b3989bdbf761e7bf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "bc466f2dc39d0f3024d33fd7cc23f17aa1fc8c106dbb5e3a3291550f20e9858c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "f3153aa0e7da7c1770042a0fdd9f9724fd256065a44cd6e3903b84e30e431f1c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "b125c8e5215f4d6258f2767b4fecfd0dcb9569a1185b3852d29846c4ecbae152"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "5e5cbe708298f5a3c834273c21c89a1e5b5b4669cacfc5618c1618ce303da55d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "12c42395a5569e16f9b5ca17cdb95d1c14b51db2316eb70b6cb0ede72e03d2cb"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "7f13744f9e629661bc8857aa0b40a2c951cb84b02ce4f0e040c2fa4e898436e2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_42/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "fff1b09ef2a72e50f978042b6086a018a0ee3464e2048f66f17a6aa171a57f75"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "60837286efc9f87b6ca407804b444a2bfab4140ce44dcd74c69b380e20b97e62"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "5c0a984714ed894723fdc2e5d1e84f42ac337c3e1d1b9d77bc2f8be14d82c4b5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "0ad51935e29a48c9e78cbeebf4a02e9f0b7924a38b7a52e6ae32c5464c8c1168"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "a900d585de0fefd49a763a407373c51c8704fe2e027f4ed01cfdd290afc20b23"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "b8599d90c8a0e27e8ebf7a593cd88f0ba81dbf6b6f1f55a87ee157020a3908db"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "a37c8bc08098966f5a14b633d9972fbd78832378503a04f15301e9717503c0c8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "f9508c40161302f24eb54d8a86c647c0cda4bc8b7d0e941b64efa3691d227c67"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "e2fc106e3acb000d2508bfcf142cb3f5979c66290fcd522117d64457fdb3ebfd"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "ded1928bb5d145dbfdfcb87d023ac7d0a0cf481b2ef1b858fdbe6c9e4caa0240"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "7700d882f9a82db8df7d96897d4456926b80d205bf694959a8c1f7c5c54581c8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "194cb5fa80149fbf489c155422f9d4ea765cd66be81c46115101b3bb4cc08bc7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "b4b1bc3ca228840902e6b4f61e1ca56f784149f9667faefe88fbbe31b7e44153"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "35e9be5541da8cd01283c1f800d5de701ca8e478c6ed2ce5ae2bb41f6c0dc7ea"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "8b76e80a2283c97d7a647b83b578e05680b0ad9174e4e91571df4f997fb45f2c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "f973fb6d09daffd1fb161e994553d339e093ee322a08ad4acf359ece1686fc64"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "234cba351e07486680eb791409bdb9ba89ca58925a72502e8894dde3da15ca94"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "4e82f2a991d2b20d4ae5db5e5a1b3cdd8ec5116eb1bef4f0d89b215a1f9ffe3f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "384f5cc726e982dd5ecf3bfff94a724b3c5b434d896606bbeb4f4643bca3d1da"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "573e7a275ae1100c25a2b003f732f81c1ff87e027558c06c431fe77d30283588"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "9e0ede241bc79f8599cacc4080514fde9ef50cef65344e9135ffaaf0ec3fa9c8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "f6cc4c6d71549772e5363f125062e66b3bdeb1cee7ffc31aeda47d0a7902c915"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "6f063aeaef65af3b83fb3c314ba04922f2b8bd6ae8114c54807b7a141d9e5a9b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "e5405430b191bb64de92ebc9383ecb1ec699ce6a224c985785861109dbb6e213"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "64ba0571e630673670f134aac3788d2d1311d26219b2ecda0d0f237450f4ff83"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "9de6458f06b6d85e074e0030358d4a8d8a1fa4e6097dc88fa58f36d3003138af"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "d739415f45490ca1218f46ec3f9e21889dc273faf2c11f3c71e2de4b2e18bbb2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "f2bb5399c880775ae675a56c7708c807c5a90714644fd8ec6b136e91deba569b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "8da4c4fb53fe16042abcbb6058b35f9a195766a8377f88b3591cc82efd76bc23"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "0ed06af2cada1eba698c28d09ef8e9f94ca0883db6f178be82bbd3059f483153"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "2202aadf6bdf9d4b208b5de26ddfe23a6d4b437962a024253a392c32fb81dc10"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "d1bfb244f78af77abcf03444b2263f81d97c781b3e65438eabd7457e22bb5e80"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "e66241dcc109e9405a9c2e8c8e84bfc3b628bf758ca13bcd8a7d038516b085b1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "18c34ab45afc41b21c9b0924d86c98a4e8f8a84fe53fd1e33679b8c469a362e0"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "eccd232bb3d474a2416d598c4f53862870fc0945aaff97c7b74faaf14159fd14"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "ab95e94b8c58483509c5127800464a4c81884e460c0928cb4a7675483c51fb44"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "63f5ed2e1b751d99db94979767cf61d27f30853b99633d009db67584af91dead"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "fa5e2d05d7b9a0132df95022eb0be97e4f048ef3fe0e84847acab216d23e1579"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "45a5d3ac22cd875b7a4fc57b81ee49987efbde41bf8a97c904180b7fc4038de5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "81a57f69d0b81fba1b85d4dc58e3826c1db27ace5a993f360cd24e6601ecc8e9"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "25facf94d6d3f6f79de41d6dc5d9de5dc0a088b06f6bc59e29a1709f24d34670"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "7c9879f306626b282aa2cb0d3ae08810df1b5d69ba8687bfd75bb0be7e4320b2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "983fdd954c409739d954ac90c0fe60c676db77ed2126e40fd42f28915d88b2bd"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "d9b0bc8efb22a59cdb0cf4ade13f2542036b5b21b078ffb7d8bd2ada682553be"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "18203f5c5e8f8872081cf312bd91668da787805229ea7216277ac546992574ae"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "63863af1a188b4121117e6ebd5c2c98a56b22b8eb5a077320f07429d18133370"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "797a287186c5d1434a8c9783c3d6a5b5b56640ac168b590fcbb75f1e19ce7caf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "cd9cf09c86a0b277da90c7b7d7da00577af99602f70d25d1da3144b01821019f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "6178072a545b530dcbb80d7555989c3e622365b8657c2e8ba79f5b29c33c4cd5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "c080e31bfccedd20eaf208083ff11a08f9fb20c83148937cdba32da121feba23"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "65742432dc68b585970fa8a7954bcd5c9829d1bc356f1030a79082080fe08899"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "d8527ea5fa89c0d63b3907f5fba0724203279214a76195ea85d8f1020a64201b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "5a93c781fdc1c66395f8b7413dae549050c6e3f00256497299f73062ad7c4174"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "ba2ba9c11d07299ca6356291bb85339316c6e5096af64c98ae7a5f5fdfbe2528"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "a8ead3506a5929fb0533745f60bb25b3616036ed354b62a394a7f0d7d11d5756"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "c6217afe59018bd0ee361784acdb4c55d21bbe2a3ffb675232f1aebc1cec8864"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "ce545298ae56b459fdc50ee538b44da49968fc288ea27e5b18b9d3e883a1ef2b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "106df4fe1d30356983bcfa1e59cb09d5e10390aaa235d7f5f8e0607e12b23aed"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "72e4ffe8baa95aab2a7bc186285679de2acfb768efd89b9cd3659359eee8f179"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "5ea67478e558726484dc1b1d724b19d124c7e8d32fc198f74451dcd6960e3d24"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "b7d88efec791666dc2d569d58294a18c9eb5fb7c428109ca5e303f92dfb0cb0b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "74fbe8f78510beb13916ff2a41be6f7b5126332bce00bd946c7b5b02dc348274"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "46145109c02303a311ff47957632eb731d6d239455316f4dea3507ed5290ead5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "7c1c6383a66b460c0d5d166424bb5ebb5be393e28e56ef43042ee9e2131c29b3"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "faf23fbf845b9afbf0f59c799e4e164a305a771a06c83be7cf7e08cb5bc482b1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "341dff64122335898a1ffc17d6237701b5b281b6b6c7f99b23c66ca1c55f3937"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "780183777147fc9a6600f03255d7c15fddaf4e24d921016eb41c9f245d8f2902"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "eeb423b52c11e169c723566bdac6ff9d362ea08c9992773554793d6eb8ce4480"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "87e25197ed7f243743cedafa04d9d6859f06ba9a8a15dba5ae80328b46e1323f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "d700c56df2e83ce12b5cfdce89e26b88242462b74faddea79f7c1f82b3fac15a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "476f373c6f4c4e1a0751a79f7783322b6c38351f955e2ff4164aa4f0f837eacf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "ef5089178c75766ba905ca44636a8b8edcf5f0b72fbe6ec8f689b57b43ce0b14"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_42/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "750d99d632cdfa86addfc8fa101d4260910fe961402c7582dff8a0723e3a606a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "92354f2e1737b8c09d2407a38ec4f3cb264a9ad28c054149421433ec725b3bd6"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "9842ff8492ef9f8b40ece8d54b66c4e040105cb3fec5cd3d9354b7adab9b6577"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "231bacf511d05504585847fd42d0ca3d6093cd396d8f56550172863451eaee07"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "cb13675b570384f9d62010f1008918473c84e1dea8dab7faf274db854e8a2f53"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "e9cb2fb635a62d87b8cdcc08787bb25b93327021eb5c55016ee9ce4fc7c69eef"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "3dc69aa6d9c7ed6c5dfa1d4f398e59a5e2d332387d02e95171bb2b5025c5d182"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "a55d093899d19f73b6d0f9108c65e8f9129cbf8cce227670fa85e9a281a39540"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "1a8cd3bc72bfea8707f79f6a9113d3d2852a4eb3cb4fb2edb31f6d76b93054d2"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "2b84cf692ae9564aa6acda61d5e9a24ab8d628c170a8861c5a07fc48c00c250d"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "9253f2202fc61848101a2bda20f5a213309460b6892e870816457e32f5bf88bc"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "54db723ea50bbacfd8e501ba7884b1f68bc33cb2ada435df211f679417069512"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "1e10ddd1b3cc7a015b19aac13773783de4869db159ab28040199a0fc092a24d2"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "afcd96434cf67dc9570cda595c5c4d6da5fe89ccd7ea218214c47c16de4d8d66"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "6f8a57a5778e5a52275c0b909cf7f6f5124e8e5f4e6e907f7318d90fc836f5e5"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "814e25b1afdc8b9ac03eaf4cfb2f211c5c5b79f0c76cf8d66c83b9b3c98e3e9b"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "d04b602f45fe25664bac955b6cbc41dc44e54e35a7fd0f080f3f0d72245d27ee"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "edf88db36f12f7e791548967a7d6f0da8a144f09c21fe3ce95bbc42977ea3c17"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "d9faff254966f0c87de18ec422b58626f60e943e65e07d6e1b1140343c45b08c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "151b0decef6834ca04a014758b90d2494b9bb64cd51721f7a9ae7313ccf281cb"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "093d8b43eee3aad8ff1fd4a668fbbbe54918969747f9f8d6e3f01dcca3094539"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "b7ff5c135cf3bb50edcdbff0ae25ea7aeeb5d8abe338c771de7772a1c3f7a58a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "f62f96ed84444d5caae449880aec916fefafb179cc5d04a546fba2e12aed3f9b"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "fcfd905d36210a4e5920a2f5ddff6f42a8fe4909895d8b4a6ea1cff65dd9be59"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "33d47669990642549c16f4bb259ebef390270d5e2396a0506e528e85802a68ba"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "e42f26ad2a7c03581c729639c11f77fde8750a90b51313621c69331a6ded841a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "28bb41d1fd339fddbbb7de571ae89d9a2f8246a4e7849a639546124c990a6869"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "19a5436249e30276d02c942b819146f149e36b0b975eaf07454b20f4cb320c84"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "49108c45491849e95895c94e8f856368de821c0288d08afa0818e07cec46b2e9"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "52c6c13f107cc5e40bacd54f5382bbd248a7707400bf39536494f5961a4d5342"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "c10b7e476df92f4ff54f111154651dfa39ae2c417f437221076458a3eed64753"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "2a9dc0e2f6a3e18fc46e5f1b43c3cc8dedcb8a63d6960150b9cbdc471cc379d7"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "4f0f7ead18d7b7aa0bfe9677e63cac0de1e09f57253711fc71e1f98cd459c2e1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "60c60d437dce87bcfc4aa78da04b83eec4c17f7776b0905d5b9069e9c0363aa1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "21b0dd5bb53c525fcea2404576d26226ec47b7a58ae3d65796167964b097d02f"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "62361450309243ea12f107c21b326bf0ef8e0e5bd9069df6765d6133d61a3200"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "ed06a2109d4618369adb7170d5fed6e63b2be4c30de3addf24f34a154e62733f"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "674c3361ededbf7f90473aca0b7fd83c838a23c2995be5dce7889dc4feb825a5"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "a3247dfba53446a7892f8e7b7c256145524b8fc87972b716b1c42a0b63b6a973"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "e067b4804bd615ebfaee905d775a6fc48ca2bc0d085597845aac7118d62f3744"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "2c3cde149a8dfef34a2e68e6dff66e68bf8cc075159e23df244bb408707d9ace"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "85e0013bcc4707cd5869a1af0acf03a370ccd5d7dd4a184e76b1333bb0310967"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "45386f4a63cfebf8faa265cfa147bea59c6d73e2f76737a6fa575875e22752af"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "ad7e2f4978a089b83472dc7340c7cce7a3e075d2de7f855f7b88f4dfc76f14de"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "cc83a365b4eb25b00cf700a21c1f0dc91b26e1309d89fa2b9515bc6d20f07612"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "33543b76c29067f8288dda55fa6b14dc9f8a0216da57b6e8dc13b64b986b038a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "7790328fe742e5de9324d9ba8674f43cd379ce45e9e9849d54baff8cee3e7290"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "a0c9601f64a226344da0c87ec1086775162d046a5504675e9343e29a17b3c883"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "c887d0b0baf7cec2c9cdd377db61219407c3d25ab97f4f7a339521c8c9aebe1c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "f4fbff2a05a8c7492992b836b3fd6c0841bf4d2f88a52b1d8320817c3bc3e362"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "c9a293325f9c2ce7a239d8e90faa95412e48a6f0b7944b1142028fa1628d64e3"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "cc2120dc5c20b0f87e9581b4d37307a910ca1afb9b904f1d3738c4aaeafb1fc3"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "982e34fba02ab9892b2c86bca7c8dfc44016e9a1c92feaa5fa00a12981c6c427"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "b7797a50c71db2a1cee58d678dbadbec3f9372e23a67988ffa835034eb73b78a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "e48c7baf0e1a3e803ab8cabe0d7f0ff6ed20944877f05210c3290207403284c1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "ebf1d189ccb546b355036476f897e660585ea09c19ec0b6c570e2bc17da560ca"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "d67004d04b842819bdca46f75d2d241f97919dd0682fd32cb93f61d9269b9b0f"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "16a4a66a053e96b658ae62a1d3a1091800397013b28f04572d30d410af05f18e"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "a56c0dfeb591442af213e0292273314bf6a0e53fb08203437a61799abe33764c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "e713c0032f3063248b61f80bfef6a4b842d9d5e9faa2e2a48fcffcc46c3e9830"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "3940988c14167f592e37889a53bddc79e5cdddbeba6071f92528ca77d038c3dc"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "5f40d17bed26ddc7f0acfa53636d583fe8146b7c081bea96668ffcb14eee48f0"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "78caa19e81b427cc07b6eaa67fe60941456c56403a9791fbb0aa645a90ba2978"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "dc385f01cadc4cd23dc234e3698464087cf0103da735c9287870273e3c642f44"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "4c11135d8b221d979ae20d4c3b65f88673474e394811cea098cfd9269a7c6839"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "a5ca10a418ac992bb80d8e892ba6e57b89ad98580ce03149b32418d4730c4473"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "68d382f77b8c8a172920de6d48ca5293ec9ba63fa342167639c5e033334215a1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "045fd4096016a5b978172b3d7006ec5a595b81b512d7d8d346788846e9f0de71"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "e1ea3acdb2b3aab78b50203b29fac12b6c502ec65126c1cc90f79a256cc24510"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "754b41ed94c238049a535ee0f45bdb119f6ca468507dc96f781783ce7cda135e"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "f49b2dd66269d335b0854e7ed4285e2217f4bde4988ff31beabe26f52c89f0f9"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "36c23b2064f67c279aa9baeef247ab137b92e6a21d79a6f64207c93c6d13683b"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_42/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "0f1d9f395ba63d2237aad4658f74647bc484e4e612bb7c9db6ee4f5212c3a437"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "618df44e5e330e44aabc4826dbbb202fec058c9a734f410c44016b05da38d108"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "6ac9131a4b3024eac1881fe74fe26d41aa0cff70b6cf53f96c7d5752a9a1567f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "22905df7dc25a442e0e902519c34facb0a2854a09b0eb63b3b65297fc8d06924"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "24691b0f8d8cf8f20328053e59e7e044dfd0b07501e9979a4f0631bf8cb35f8d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "7b278fcc95b0775888c3938f6f540ca2a58d9a56267fdf610fa4339b5fa2fe1f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "878a134bc01f6bdec3d2c24ab0d59db4c1d0ec2bd33c8fe43055ad0209b5887e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "a7c5a777b873d2031bb97076fb3aae21beffa251dad0334de4f5edfdce552482"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "642bf7ab17cbaa843069d116ac498515a3c4c23c368ce9fdf79a4798f434b1c3"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "da3bc11301bdc05bdd297d0794782b1c60a00985206f4cb4b8612f2be5315189"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "04924fa5d1cde44286bd0d7d521989c7f44516a9d1e130f2c1dc6ebe0cb00b3f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "7c21e0a86e27e60477086a1f6c562e8be3f04fc0d86d54d7c93c33c0b5614936"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "84da068417c9948ed9535f5b11fa47de0939b26ab0ea8062910297e0bb974b08"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "9159d4f2ca55da28352952783af08135855d28c39c93ba782ea6de84c5292ce0"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "28b4122e3e805aa8d25826a9d33babfaa980aebed9ecf7a3b3a5f5bf70d3d006"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "a1d9c6e05abbad80bfc6e7e38c176e8d9c96f91bd4a6c54ddbd89a6e95a888ca"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "4ec9a5af62309656340665a2ffc9c4cd0c95686611f47b850d12208789f09228"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "0bff6e667d084511adfe842c31fed51cd07fe6b96a05b6d5523d7b2f53f0357c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "bd2d315775a948f96e24052cd9eeeb4b45334aae1d227ee8d44b32d959114ead"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "4b287763b08c1c06ecf39938b6a141020a81a4834dc0e07cdd1aadb6f6bb9aa1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "0cbcd3b55e0e59b3601df853c7a70dc671d83f0735bc8762328d32bdd84f0451"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "fbd5c68ae65b50060ecbeb51cb826bf78ae3ee4266b6b816afc0333b7fae9d9f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "50de486a466bfc18c1094fabdffc8933e89134c439d12c6df83cb65d4bde0f33"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "44a49604d8b50dd42f122f14d79f142da479ef4ac0049cc91b7999b16274bb5a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "242320e363cac23f5d83774c1aa6865b2e68cd06e26ee737b1d3b8eb8e4df97b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "2a100db19c5cc4fd244a4c1f27941f361c98f7ee8939e274c31951962dfbd652"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "bf0db44450f288613d74a20c994313f59e7db61d3ec9fda9c80a526d7c85a0a7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "e1ea05d769c37c00ff873150404396a4ac72a1a89981cc7641ea68f47332b451"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "482f945ed1c9e3d60fa318b65a62877a10668a7417399a779108d6d492642bf7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "1a9b9e7b57c2e47e6828c9819a420994e448b2e1b7bbc77b7a86d4db0a067a9e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "1d5bc4559378260a77d2f8c8d6a9b9dba1759f82f32ecb001db6a7bc3544f110"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "78c04aa3e0926efe40ffa2b08e225ce9f16bbbc7eee4d26a2c5105718e8aae59"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "6c14bcc0899888042a512abd3370656c66de38866ab0c5385ba62f2c8845179f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "9557ce750fedb097a649389719d2842175916c02f40d78ddfc70d8dc49c33795"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "7edca5f12f9073b79233a09a788aee063b3dc6a2abecb924e0f29a143adf2450"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "914947a66a34dc282138964f7f53f62d0018daa99556f851837c858ce1258352"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "5ce114fdcd4f0020315ad75cc60f3e13fcf73fca9d76c71c5f7090ec4ae8f13b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "9988631ee23baa547c1a9a7040257f4a6c2e3209497f35dcdf2fe9ce791721e6"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "419179acfdec57a3af1c4987b10eed679861a300c5453e47522ae560bf0fdf0f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "50d433bdf12efc271c95d496f50c4be93d638a9ca827447adf6738a615e623eb"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "cb26a2f2031c136a9dd8695076c33f88efeae0f735421b86c9cec6cb44c71b3c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "680e806df6d67ecf6540e56cb1c7e82eb2cf1af4cffa8fe101967cdf566633d2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "1d35bfd95d8b1f7b6bf3651f3aa103bb040541a27e3a8a6c289766387a79481e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "9a62f47948634529e311785e503bd4b720fe57baa1d69b0b9d0d6bb0a8c9785a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "77dcd233145500472e8eaf5045d165c033f2a6d65efc9bf44df8539e7501c5da"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "c6d339b4aa518f8d74ec58293079a7a5617c8d787ae0bee6115797403f09494c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "098f4c726453a2ef90901291cfa69d9111f331b3b7b53d4de042174b85e52a0c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "af8711fe592ba130e4f9b2a03a67e1a93c879e5c81d3f612d80ea426553660cc"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "bd9090a8e2bafd2130964c84333bd6f82283663cb6768566d268ef5c7780e520"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "6e05d22f37be882fe8073f9fd77b6b58962ba3e4b3d455e18477029335b84c32"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "226d438d57b1a6424cbf130b49fbc6085a616c4a1205a8e7d16ed80bba8709e7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "7d292a53857200e46e553d35f77e48dc08e6722b35a1e1e70d1021ba74bf3996"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "c53713a44c415af8ca7337991cd81b1b32c1ee39985a65b1ec06ed911d8e2c1c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "42c950fd598b3f9b74cd4e39ef51a9d55f3e97a5425798cda95851b76ff67348"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "6375b03a0544b25198ad6c0d915885e3da22b8b3554ccff9b277f465915c1969"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "a2cebaf0ca4b4550b8182908b7ab860ab4162f6a83022b3e9ebd0845709e9501"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "00a795a950cbcc91e98ae14c0bd15ba8bf3b73e834bba74f604c89aaf84c8e05"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "6d2b9ccaabd09f5e71e259bc2c559580d688f0fdd31092e90c8cca49156a0825"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "6e8dbbf45100d696302f6b8e94dc799ba9d4fd45460ce8d49faa54faafcb3e15"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "25cdd920755b76e547d468f1477288ff119d5c1bd33ca35cccba831032b0355f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "e9522fb67dc91c3f1dc4bc30ffacc5bef0972bb7d58a453eb4c1b5422dff996b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "0bfb41ca44c1b95a48dd19d726ad0a113dedc2de480979077e688355187d7752"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "77801ab206855201e6282f2fe91b9119a6c553c30c1dafb66b1b83fd13c4a3b3"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "202c6225b20003868a42eba051e3a58d08f30ce6b6d1b9927c85430858dcd4fa"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "45e219694bc12fcc254e7c468a92ac4f12ebfc6fdc29064b2eb785ede7050470"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "9dd7d3d7612015432080016da7ac7f6925902772d0be46b48ca3c63a0373fc70"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "fb400b968e0b02446303d6ff3dceea3825d64e5b333b068adc7aaaab84a96460"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "81f116ea7b6cfed7aaf65de768c975cbd9a15d5f50bc5466edcfe7d7465aa3cf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "c98c1f21d95dd23c97a22a8f6ae0c17c391c2305a04e1c3943013d3d92f5f2ae"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "7c2795bf0633b4c3c1c3e4706f66da5b6027d630984f690e7924e78d99496843"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "81ea0669080d239551e5263bb67318b4cbed79d0cacf7ce7448cff06652765cf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "9adfc6d9dace51f7ae15efc701c1f9cc1dd5c0f8faa880ed226b9c0e4a3e2891"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_control_31415/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "181ce115f95d64967e7c2d9f77238f12f96a9998a918b1118db17f7b60db5c22"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "1c16e6fa28869114b6b875c9513dd042898d80527ddf50e5b825501badd2b928"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "9e13d7bd99a292e38e2a7772ce2a62460c6024df88ef1b347e0fe529d6f6f659"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "512e1e26642cc018e30d68bff309e0409dbb632e4e5cc345876208d0aa18a2d3"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "f059026cf944370c3e52c88c2963fddf0e5ed64720203345b09ac65807654632"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "df06c07d65bc3cc7e8493201f6fea274c268bd9a1a5aafde64a0e1e01002a33c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "3509be0272877a3f2ff8655cdc2ff717d5c4dbefab9bb148bd7306995cde517f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "359f0933a2f670df6d99899c2db4a084b3c7b3d2fa23f9961507d54271c1e4a1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "25037e94ce3e0a5e90d58080574dc417561dcf9b74a7b9359c31da2071d5d182"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "dbad26adc5be1c7375c5ea09ffcdb8ef48846b82b6e4ab77b1b1886b88307937"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "6e8e481d8821757777ce8c707dc6e04d916b466b2f80ce156bcb9f4f2c1a496a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "71096a54499b9c5eb37c6dbfd0fe6bbb2637d8bd985698827a0b3880c875e252"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "4209e4231a6cef83f7c47f99e20c489db5ef3364e1747e102c4a3e69a74b5eea"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "13390a5ae3bd3881a0bac708690447b888f1646a91691287b7006a1b2172eab1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "a77e2dea661fe81932b42af879f5f651cebc61bf7d01f31a488e2ffda6356459"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "469459f2a667b16339f8c724f67c7a3cddb9cf7ccb3cd05e3ce14ed7ae6df416"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "d7e7a318bddf158803799ba8f57ac3d8d6f260747a3754a95b7cd944f3d01ff1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "5e53104b57ea9ea6980e02fd2ed3dbbb575b98fbe7a836cdfbe72311f25ca82f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "164287ef488816d129a04e472f3c03d82609ec9ae06e23459ad99b289423acfe"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "ff06199b4a62f038f53829d462397d51158dfd003af8116671c812aafa54e0af"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "77ac49ea967af12ca98419510b7d89e30ecd68652858f920fcbdec407962dcdf"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "d4c446b5c5bccf7ce6ca0be0bc682c833d11f981aa879e0e9c624aa99c206413"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "7ab8b08a406cf54b6d433393ed5c545fc19aa018a1881d97f16311890b0f70fa"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "169c4d4f3b78455a1f090df4169e97c633163d1da87c55d36cbdbb69a70ac4ed"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "eb9313e583b67da2fe8c69b7002973aa2fd2cf711fb10b8ba81ac22304daf6e5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "88b593f164e2f82159f0ef95ec0c4c39b4ff3cd29027c63a20b2d24095d5ad2c"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "a157a75ddf978e5b85e0f53808e2e95d2596ba61c49f513a9551e7012a213dc9"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "a2c2c5a9b55c9683b880ba2bdd062ec6979713fe23d8f21f88ed8e4949d9be9d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "73f77d4f1d6a34f13987b4c64852b40b327495dc364bacaf486bb0bebd3ae7bb"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "a5b08414bea27d866c376950e155df85c70fa67ae2573858e72e8a5321ed7397"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "6e664572cb8aa72eba816cb55202ec554e375741f077a284fc08e5f1ff112576"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "f78326401a94cddddc9ccdc141f476a38a1d092b0e644ee980815adfa718a0b4"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "23519027682342d01db2e69c0fbd46be8055c4b58bd2a67e6588b4e47921173b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "dfd705926f03bcb115b6e6a7141806145a475d0e0e985931209974091c544e46"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "28df8693c300a4c0d6efafd4c49ccf9a30ca1ff0f0f95e97273e06d237082779"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "d60251689e3c70779ce4696c02c06469d93eedbc7ac800a4f3c40dfdfd2051ae"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "acab43abfbc8bb0992a75e0b631f60d275617954d20e2aaeadf8e509660e0fc0"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "f347b198c11949264a467386a409e95d1c02e11e67bb35ee36e4a4bfea54c050"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "b46f984c7bd9aec7544199e5dcff79b0847c8acf9dcb21a171cb8a7c8886acd2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "63df7dd057458fb4f1d216b5210b6a96d4ecb4cdc00a7237b9a0497bd90396f5"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "cb3e22a874fcc94771c5272fb45558c7384e7b7e8cbad150fc597f77d52bf54a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "99145ed0dc429ab2683a310b0535451d37de1d5b847fdf538f04d6fff400087e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "603bac719c69b50201e68dae94c44c1cbdb0f2da0099057907cf88b4ed9798d0"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "60d6bedea6ee89c31b28dd94f8203fcddc51f8335bef7a4023499ca09beba179"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "0379935e32e49574a27e6f946843ff2c34eb29912cbf9bce008b553d6be5ea03"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "c56a075262bbdaf7872090e92e25f24b0ef8501568037e1f4553548c14c0b691"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "0318e16f08c811846b96fa780e89bd7768379a6a0ef5a610f957d073bc04da7b"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "b44a892dba853c0e889f47ad5a750a2d74e2a8c218c3231c46314cc2a14391a9"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "02afaf2efc182881d2918d097b7ab8559c769d7479e8b61a7efa2a475c140ebe"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "8a1bc3db7a736c5fad3a0350cf977b23d760410957980663336326d023f32a3a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "a2e99e56e937e723f26376858f279324fa78ae11b78831f79d736601077659c1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "1ca38c57b8da9a0afccd4c4b14cb85d5ef93dfecec51a815f738ae9b98ea4de1"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "34289f397f60b2a923d884c103962bc98e4c049f746f67c7da727fc2c62bb78e"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "22f5b63d679a1ba3ae1d5abf1621299316572670856780f8873f38a1e5f89b55"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "bc6f1c4378a1499c3f80deb811ddbec26ecb619650ada0e2ce7092e7d12f3ff8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "6bcf1220d279b8ba980f7a2575616fc4a62ff98b97b1525dc68583a1beda7aff"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "d078a54a96eaa006e9af24712897d07751e58b19c781d5260a7fdadd0af92596"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "4ec8006edba55de29efd93f02d40888bc1ef013e024b1962191edc4484e9fdf4"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "8f1a598db86c449c7c124bb45023da09949def6eb6830a34156fc1211be1f3cd"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "7a797ef3e0e7941b71be0c8a8974958859b9e023e0776fe1805ce72e3b4bc48f"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "e009de5715b16a4901381568096bb25988baaf06175ad7af6b6d8f0045932274"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "c52ed155f94cff753e81a851d7f112714e87e182438a26ca94d120a03febfcc8"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "a07d2add1294d5f96dbc36178b5bd437127b0c2186176dd64b71da25da8329f6"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "607aeed9548652d3f84a9a6db0bc40f34d181b8b9e1e0f1985fd957420242fa7"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "0d833666c360510f841237e81f558fe96430be49b25a37fffb609551495b624d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "9d785b191c4cf22b7a061e8eb3a2e8027fb7f829a74736340d2f3ae853dbedd2"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "93b30d60c1b7737c49e01ea16bb19ae7d89f408322d0e66c89e54d92eeda8f6a"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "c2e9aeaa408a5f6121b7cefb61b774a2694e444d44d04655f53e78dd443fc1c6"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "ec202f8d91143eed6dc802cfac5778ac656c228e6c6dc88150bba9583f13166d"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "acf7893ec0dc546e72e2e2936c650b36f116cd2ff31515d6808f055d0296b058"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "cf582d7126ea60916904e1dfdd5edecefbb9548538fb27b6f79ec94436667763"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "ea00c43e94a5c266dcdf91bfeea1a77c6199c6a98eb42835e85b6a484e3ab3fa"
+    },
+    {
+      "file": "research/cache/vlm_lora_v2_r2/predictions/development_partial_31415/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "aa18b38881894a2403a6d675c0cfde08496aa09ece6385921f915ec7eb7c7839"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/0150efee94259a912000c485449e53936c240c865dbe2e3352c902fe08d03eb5.json",
+      "sha256": "f9123aefca85efc9dc9a25674a6c024b1c57f6c1ec7438fb89f64b80fc2178fc"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/083b555ad6c9d752eb6e6f9cae4c469321f126c8e626b812d89759870437cec8.json",
+      "sha256": "0a798200c37c52434582b32fc15b908c930a3f003d75d7d09f8e58d454a7323d"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/0bc24edef0381bddda4c5534c920fac2c76706561611843c67d5203d2751278f.json",
+      "sha256": "16225096d29f8213c9e829a0ab5a60d047d89f2204ced933aa0fa223efd204c0"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/0caee69f8d12296e3b417b412fc94a15cddcde46393f30fe7df611d977e0040d.json",
+      "sha256": "2471d84dae6bfbaf7fc7849e724d80d6424afa06d319e7ce84ec94e12354fb19"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/0d27b9970dda0ac272fad3f407478da35c524e62a01561be459096f07a2fbfdc.json",
+      "sha256": "08ffb39c885ba0bb6c31ec27ae32c87ffad9e5b4377775a0dd4cd074c496ccff"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/106cd75197d17f056dd858c2249d44346204e5804392160c5dee7ba4a1800362.json",
+      "sha256": "ea19d4db5b5027e3584b54cd237e9718210f98ade1815fa58b7f1f49907cfbbd"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/106ddc8d7c6ad769df37ea121b2258e9b1552147308cdef6a16234c788c9f27d.json",
+      "sha256": "448120bba2edf9e62b89450a0f905c62d4f03be6277c3c6a7386a6f33b1e8258"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/17ee68764e6e7c131416853361eb4fb9953e665af35fabfba6a079efbc9399c9.json",
+      "sha256": "4ed3e44c5f71642ef5f255327d56f4a12da711a017187d5072ef41a1555cae6a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/19e65216c0bd757d116b8038f747649424ebb6edfe882839415a9e52f2048b9f.json",
+      "sha256": "23f9d4977c012807a81ef74fbd1bcf37993cfbda5fd6b751348c95fffcb7ad43"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/1e6ee61224c336b55240bd7994fa43e554a6990799edf9ad1e2dfd2460be5c88.json",
+      "sha256": "5b8eda6ce3237080026873dbbc02b6cecac068fea9afd69cd141a50703f73fcb"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2320e03d4618ddb6717076aaa534150e080a3f96e8e71e034576f2ef556a1809.json",
+      "sha256": "2c7b98e676c17186b97844818e45cd86a3bb42d3dbdc293a973b4dcd9c70d3ec"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/25527ea5befc0ffd8f816067dbb0b1eb23d98213fd5795309b0dc38fc6684a26.json",
+      "sha256": "9d5553a002c1d8862c01199b440773ebeb523d40eb6ad1c712c22eac4cef8afa"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/29ec596f3f8b4c09b0a1f1024b002c3a03a63d4a5155e13641aa3083ef8eb1ab.json",
+      "sha256": "4c4c9b3e8cb7fd68838feba9dc88b8bca5b2e77369a149ceabcadc699e33d066"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2cf54d04f80bc87fa744c1481b331be45d8202385c8086a861d056ec03214167.json",
+      "sha256": "2f9beb74391e6ecd96eb535f8f014a5eff4853a9c47615934189190a6f544af7"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2d35aee2545e0025613f6ff3ec654c3944cefef380e107a114e09224457ecd0d.json",
+      "sha256": "371aa5f95b6688e7b0ce00200c3f193dbdf178aceb2a1f3c7270935f64be1aee"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2d433c4b38544189286e48e2227f8c22bfc9668e6349fec59918bd7fed934986.json",
+      "sha256": "a0939d7fe1535e8cb351f1db4292b34a10d78165e69f588a2e4d7d7398b85975"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2dfb15d3f07349353b831cc4686d3c4cbfd58a8da819e9745ba8e26f25545ab0.json",
+      "sha256": "c1a4efff34a2ec88cf4254bd54a1ab25e076727f7cc1840421ef0d84e0f5cd84"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2e2355db3d87ce6bb9f2ba2b2f68cf2ec4025c2155631a92faeb3042e8496101.json",
+      "sha256": "85318a93629e26e75280c3fb37fcb14617c1cd9d48cad8140f06f25d29ffc138"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/2f8982407031bfaa0bb4a4f35e0790b9ae42996db9ce112ba26bb0f20b7a7c36.json",
+      "sha256": "6b526ee21e5f8bcd2de06e515b1b2bcb2927c55356112ee88d63d4f39d980a12"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/37bb76f46388f7b465615cd53f14c4f4a350ebeeac02f23fb2d71a06247b8bdc.json",
+      "sha256": "65fc4ae7b2413e80c1f925d177aea24a5b8e9d65c3960cbb597c6c84f9799f54"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/395e21ecc86e5006c9d0fc4b96b0d9798e6c1b04a24a5f9d033bf7e7f7d27495.json",
+      "sha256": "1054e63bd918a483b3e262ce59a60ef0a7a151bd96dab8066802543a5ce099a8"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/39886e88001dcfa910c056d52fd89df8261c2a342d74fcc6bc07154bca53398f.json",
+      "sha256": "64c12a2469b9709cad9f2592482655a2564009e90c19a0fbc963e79a8940ade6"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/3a3551ac055b3f5fb2cc2f750fee87cdc1b6e961fcb9da66ba0503a5aa868ce6.json",
+      "sha256": "ec3700ff454ad5a653312aaedad1e8805395a6252de08366e1a1f02235a961f2"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/3bf5afc58445b4fbdc0cb0704e8363efe5c97226faf4880aa7cb2616bce1a362.json",
+      "sha256": "f0a35bfa9f6b7fe53ae3ec0dbb9468c6e2da8c0f6466d7a886f5f5e05791244a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/3fb0f519c70b4aec3c836a5d228fbd7f39d35b61604af1efbc75bfebe1209b98.json",
+      "sha256": "e045e008e909cc59294f6b25f53e91d2184617faf5b4f723348ec84c9db84c04"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/4a2c12a566f3b6fa64fdf51c309d475771ed6c284c872244c341b44a1b946a3f.json",
+      "sha256": "814d32ce8f3f0a90a7631efcbe3e6d71bee451f106732e69fa483b9a6923b4aa"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/4c142643f63cc35dbe7033dfff4e1c795e010c8adb8d7866fe4d8faaa3921750.json",
+      "sha256": "50b0abf338b78ab8077f2003c017374ae075133d8d597a859c2081258cc1444e"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/4d8b63f8b9b4e052e41fe8576486bdf157b21beb44bb35d4172a089f01b69d2c.json",
+      "sha256": "3d9de38c51dc7720f545dedc1ea42b449cf06287329e3dceb2fa1901976400f4"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/5250ec52e9ec66a542ad38c53bf8f996959bdb51cc7b424306a77e746a11862b.json",
+      "sha256": "91206cb19dd769bd2ff89319aa080a69c825a94742c22db6c886c89292fdf83b"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/5730df17e35eaa5a5726268849f5eaa1a21e84348169639bd9f8baaf3188709b.json",
+      "sha256": "b1ccd1c93ebb76610f3ba7b8360340c3b55967a8e53e3601d7d506b5498ebe31"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/5d5cab015db9a093e35455ff064229bed3313a404470ca1b0208e75d42bf921d.json",
+      "sha256": "be794d1f45c751214c060f0730ef21f56aa2cc5a5e4d008145b2b808f2205aa3"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/5f8e97ae4508e17a5ec0fc369e818c03004a4c6a71f369230aa9da55fe07679b.json",
+      "sha256": "2f1d9fa098817b72b69b279331f699790cc8f8421aeb0fcbd0070ff49135f73d"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/647c0bffeb92dfcd492824b5b1e6401c480e18b9ac5f2f6b7f95cbae4dcc8d4d.json",
+      "sha256": "630a866088cc0de4010b3a2e92dd301d78f1512d6bb99ca58647da8c3598c773"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/64c7d44892bc253f7e3a55a28f61f7e51e61f62d2e5dac1e6661512e5b790792.json",
+      "sha256": "79c37e752b4142fbfbe1a15c6d62f6f9b2b112a3b1ba96556c8c685f50a86371"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/69fe7bc4673309e3f634358c44e04da30d33a00c06dbef59f1a704e60638b9a5.json",
+      "sha256": "14c9cc8d739030754f48a827ea5c7766e9eaf924c99bec8e7904469920c7f9d9"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/6cac9e77d654d23024f043c44ccb6bccd0ff551ea3ee8344de646e863fdf662e.json",
+      "sha256": "8daa67a78a68fe4c3f578daea863b8240cb6b6a2701143cd5d000c289f49493a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/6ff044e21af6ea03608e9286e20c0b01d4db6140e7d1e1a9ce2a84b870122bde.json",
+      "sha256": "8c8ed610e0fdcf08f17ec51bcb3bbf39bd0c641887019ae16a43963f5cb09e9c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/71bee00c1c5f10229ee2934b228d3134a7a52111489b411e12f50914775dfbe2.json",
+      "sha256": "d481cf3176f70827ae6501094660b50c83f85274b5cadc0e22d612147352a667"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/758802dfad81884ef79250220d380be0dea2c0a91fdf8a4343f0129ce7b880bd.json",
+      "sha256": "6bed5814e17bec8e009d091fdecdfa7c4d2b37674aaf6052ad3c9d6b99699044"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/765c02c8f98646c6d4ce9cfdd29c16c084a4122e885f5ded5d82c9ecaab08f77.json",
+      "sha256": "a251c898f443bc09f67c298d5f1f49601829dd85b2dad69f591e6aa77b83e317"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/7ce986754b602acf11c2fe276e4a536abf935a9ee0045b762994221740a3ed4b.json",
+      "sha256": "c8148ff20318079074f3003bbde468f0b50eedbed27843b4c4d25bdd758bdf52"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/7ed7164e77e8072c8c6f606ebf7a9536b1bae93d60e4f1142c80f6cf5f4fe7fa.json",
+      "sha256": "472bc86719d878636d6de2edced1ec83ac6d1cb60cce4c0d168e15b39540aa3c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/834fd8510169888fb9abd57ff931eb6b8418c37d9d9b3de7236ac8beb2291dab.json",
+      "sha256": "1bd8f2c98e32d5191400b7e203fdc8bf3871a62ed79fd3cfd23498e11c21c231"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/86808e60fc39b3baa9dfba56c5c30f8d3fdab4fa4328cf1d3638209a56cb287f.json",
+      "sha256": "b8a7db7c1ca8f70ded45f9784bc79b3ad95b99e3254d80943b8b58a97d8b6c3b"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/987e59e1345fe392f18c9fc5b399cf2e74bac4a544b0a488c10334fae52679a4.json",
+      "sha256": "ee7067e82c7a443b5e49431bcff6e7b1358f7bc05fb005e42cca33b7bab867e5"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/99c679335e065b26a3b7d912043bc2c2be4e123f7532e7b681c63dcdd82cc230.json",
+      "sha256": "8edc104cc8c919f97700a7646c654fce7950eb5c816153f0d4d0d10d1ba47097"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/9a4954fab86031b75c2a9d761f2ab849b168c3af35d83bdecc69643b1a491ead.json",
+      "sha256": "66e6000c05a0400c9757a841a9ce88adb6adf8bddf8ee75711a7d42dee3187e1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/9b10bbfb2f0dc073a7f41284bd4ec6a0e78bf672ef456e536f240d8a2c2fc089.json",
+      "sha256": "0dc92a75cd3778e46aca9de40135fa332a37746d90e2908698fcbad02285fe3a"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/9b4883650a61cf94ccbfe2acf8d97c367e20243f13ce28963e5ad92f86428b3b.json",
+      "sha256": "6b3d68cbb2bfe7ade5d6c4dcf8ecf869f657de44b988889cf9e65915bd6e3192"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/9cdaeacac4a1ee5de696395bf37b840c7da258a50f8eb0c30ec25a3689c81239.json",
+      "sha256": "7ea89ae0d45b259f5370bfbcbd4f7e94b8afad63386af186db1ce010448a614c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/a0ff09a5058afea97b2753bd132388e40dd1c30b089626e9020157faa7f191be.json",
+      "sha256": "b017236d0ae80fca249d1aa0922a7187efaebebc78ffc10d627a50a786c4cabd"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/a1dac75fff872307f1c6919bb563935f1302c4a3dc584b095f4756adbc3d91e0.json",
+      "sha256": "9803258405f1fa621c729930a41db23cf916454b1677fb60df1eb1f216d5545c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/a73979173ec7e2e394b54f3d2a1ac98e7748c3d69e029264bd9a6b043bf8699c.json",
+      "sha256": "35b7f82d9717c76c9f6f105d5759ea399589fbc98d7495f812c46e5a094b555e"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/aa317aa0efd3d312da583e9e77844366935325ccad70c288c7c9013f77185a60.json",
+      "sha256": "4d1727eaf78eb5a59ea49685527b895d1ce1351255bbcc5043bed5fa38e3e221"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/ad79cdf5ea1fcd96f21097152bbbb34cd3dd57702c61553503667752151a3f3e.json",
+      "sha256": "e60698265fde49e59f96b2789593befab55b87d8e0bda5b3ffcb1f2e0cfe7cf1"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/af3f6f0e270706043304f8f950606ca2bd4917c4fa29ea4b17f8024213e0f5b1.json",
+      "sha256": "e5282e5aff65a6d31a8d78d0e06a57b8bfe9148aa294752304bee2a6740d8442"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/b3d5d57188e52a371f723a15044954cc9c8fc32f95f5be020dc67427311ac704.json",
+      "sha256": "113413ec6e869b8791af2331fd49fe3832a1a0b2c0c496d45736862aa65a8ef8"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/b729104ac5f06af54b6c53a3ab12d06e241ebd4f5d47bf4d7814d932057c61c6.json",
+      "sha256": "30fb9123e8ce6fb16aa49cbb79954205791d0404edc7d7643e2ada6d1ef136f8"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/b79418b37f10dd271195a87e6b00be370744f2e70f08a7d9dc2f7b51513e4a87.json",
+      "sha256": "150798d406ca35cb28cfdef05a243212a086e547ec418d5478ca933d237b1ffe"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/b920fafedf0c5d53e795b9700ae6d3847af6efc1d68ee9efc31be69c12d63e1d.json",
+      "sha256": "8ff4f472ae1427e2366274f5270d93b1836012b0fb8e3cae53c7b0709f12aae0"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/c5baebafbdb2322919f61a54ca6f294b24e55ea1f879bafdf35679c0c70c1ca9.json",
+      "sha256": "b8509d9ae9c3220cc9d61585f503ab05ec4c45f40bb4096ed9072f75260d5e01"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/c839fe209e25a7cdbedb9ef60d85829aac6878c976067d4cedff86fe2f34c4f1.json",
+      "sha256": "aee346e065233cfee9f152d0747d18148cd1e07d6c7de5cc073d73a746cbc762"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/c9c5a40257190d6a5ff78d462b6f35d88be0dd0350dbd8f1dd4d2e277c6939c2.json",
+      "sha256": "41c30cf0bf3a9f659b9f746d86c21481711f15c3adfd791744eecd0f2b70550f"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/cc3c2b8c4131b6d7616e39d2e8e89be9e6fabee932fc8ca2768273543554aff3.json",
+      "sha256": "44b6fb4b7554b37a5c09c2c592e9bd6757de64ecacefb343ef10c1ee2f2db448"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/cc7b90a8f5e69544850e8eaa2f45b820aac61583703e4677bab7d7c8bda5aafb.json",
+      "sha256": "2be187c808f856bdb739161276634fcd56eac45a1ef2813c82d9a922d5e20ab2"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/d3eafcee128946a180107f96510fb71c9f17a8d4b2ca0e6f6d3c258d4e431137.json",
+      "sha256": "5c46a3aecfe555e17590ae05f3a81036f64bf5416b3ad6a8f09f1039bc811033"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/d47d11606a9eba76bd98b801349b41679c3846dc6ec031ef497144fe5e4216d3.json",
+      "sha256": "0aeacb9452684ea4b3eed0ca4cc3d5a2ad2ff646e912b178413a77769536885c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/df658980fb9fbce38cda3b92d583b6fa8146f2b7a40a0646c92de6490a233e7a.json",
+      "sha256": "d7283c60e49405a192068c09b24df399440c2166eff935ec1b71b7827e18f427"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/ea80a1ef0cdd1cc479430d4829c690350f0a2fc8cc476c992b75cba6b8e5a676.json",
+      "sha256": "b9b1f3a90c2438706061862b32df4d82f1baf143ccf3867391a7f28e102339b4"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/f70862fd92ddc3d4977fc88b63fdff25668bdf30b6af877d553cb4283f889be6.json",
+      "sha256": "194b1ec327393d808fba4ffc2b26456336c7b0e9db096b9d1df7e3a43de865a7"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/fc88d69d26af96a5b4d750c793bfc20f8fc8cc0a7f49e8fe65385e45299ee2a8.json",
+      "sha256": "0ea1ff98d8f43118c1bdfbb5a49570fee9c789f266d4b678cfa6545257fdbb3c"
+    },
+    {
+      "file": "research/cache/source_visibility_v3/predictions/development_source_31415/fdfeb6735426eefaf3bf1fb60781f674ef0b87c194bcdb2d5c238e6fa9bd8c28.json",
+      "sha256": "1c1aeb3af5e6236c4ba2093d2d768e492bcfec3430ae842b68054791d64a0750"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ def publish(stage):
         if read(OUT/'fusion_lock.json')['signature']!=fusion_signature():raise ValueError('Secondary method lock differs')
         publish_r2('lock')
     else:publish_r2('final')
-    if git('branch','--show-current').decode().strip()!=BRANCH:raise ValueError('Wrong research branch')
+    if git('branch','--show-current').decode().strip()!=BRANCH:raise ValueError('Wrong publication branch')
     paths=list((ROOT/'research').glob('v3_*.py'))+list((ROOT/'research').glob('V3*.md'))+list((ROOT/'research/tests').glob('test_v3*.py'))
     paths+=list((ROOT/'research/tests').glob('v3*.cjs'))
     paths+=list(OUT.glob('*.json'))+list((OUT/'figures').glob('*.png'))+list((OUT/'figures').glob('*.svg'))

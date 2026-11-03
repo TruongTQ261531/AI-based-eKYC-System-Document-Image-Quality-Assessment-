@@ -4,7 +4,9 @@ import hashlib
 import subprocess
 from research.v2_common import *
 
-BRANCH='research/vlm-v2-evidence'
+# Completed studies are consolidated on main. Historical pre-test seals remain
+# bound to their original immutable commits; this only changes future publishing.
+BRANCH='main'
 
 def git(*args):
     r=subprocess.run(['git',*args],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE)

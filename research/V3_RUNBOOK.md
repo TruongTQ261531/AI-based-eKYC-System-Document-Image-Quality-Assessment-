@@ -1,20 +1,29 @@
 # Chạy nghiên cứu nguồn thông tin trên máy hiện tại
 
-Mã có thể phục vụ web từ main. Việc công bố thí nghiệm vẫn giới hạn ở nhánh
-`research/vlm-v2-evidence`; checkout nhánh đó trước khi chạy lại supervisor có
-bước ghi Git. Toàn bộ V1/V4 và bản mentor được giữ để đối chiếu.
+Mã và công cụ công bố đều chạy từ `main`. Các tên nhánh cũ được lưu bằng tag
+cùng tên sau khi gộp/xóa branch theo yêu cầu cập nhật; không cần tạo lại branch
+nghiên cứu để chạy. Toàn bộ V1/V4 và bản mentor được giữ để đối chiếu.
 Không tạo môi trường hay cài hàng loạt dependency. Lệnh dưới dùng Python hiện có.
 
 ```powershell
 cd D:\laptrinhcuatao\Ekyc\versions\research-document-recovery
-git switch research/vlm-v2-evidence
-& D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.v3_workflow
+git switch main
+& D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.priority_progress
 ```
 
-Chỉ chạy một supervisor. Nó đợi R2 development và file implementation_ready,
+Lệnh trên kiểm tra trạng thái từ bằng chứng và cập nhật `PRIORITY_PROGRESS_VI.md`;
+không gọi model, không đọc output test để chọn ca khó. Các marker
+`test_complete_audit_pending`/`complete_browser_validation_pending` cũ là giai đoạn
+cuối do supervisor ghi trước những kiểm chứng bổ sung. Chúng không có nghĩa audit
+hoặc browser còn thiếu khi các JSON kết quả hiện tại đã xác nhận chúng hoàn tất.
+
+Supervisor `python -m research.v3_workflow` dùng để tái tục bước thực nghiệm bị
+thiếu, không dùng để bắt đầu một nghiên cứu mới trên test đã mở. Chỉ chạy một
+supervisor. Nó đợi R2 development và file implementation_ready,
 huấn luyện hai seed bổ sung, chọn trên development, đẩy hai khóa chính và khóa
-baseline ghép bổ sung lên nhánh
-nghiên cứu trước khi đọc test, rồi benchmark, phát lại output, audit và báo cáo.
+baseline ghép bổ sung lên ref công bố trước khi đọc test, rồi benchmark, phát lại
+output, audit và báo cáo. Lần thí nghiệm cũ đã công bố khóa trên nhánh nghiên cứu
+trước test; việc chuyển công cụ công bố sang main không thay lịch sử hoặc khóa đó.
 Checkpoint, optimizer và output nguyên văn nằm trong cache local bị Git bỏ qua.
 Không xóa checkpoint khi bị usage limit. Log và trạng thái được ghi ra đĩa;
 chạy lại supervisor sau khi dừng tiến trình cũ sẽ tiếp tục các bước còn thiếu.

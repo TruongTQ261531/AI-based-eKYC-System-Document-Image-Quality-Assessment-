@@ -4,7 +4,30 @@ Rà soát ngày 2026-11-03, sau benchmark, audit và bốn thử nghiệm OCR qu
 Kết luận: các nhánh tạo thành một chuỗi tổ tiên, đủ điều kiện fast-forward;
 không cần chọn bên khi giải quyết conflict hoặc ghi đè luồng mentor. Nếu ref
 remote đổi hoặc kiểm tra tổ tiên không còn đúng, bước cập nhật main phải dừng.
-Giữ toàn bộ branch; không force-push, squash hoặc xóa nhánh.
+Ở lượt rà soát đầu, yêu cầu là giữ branch. Yêu cầu cập nhật sau đó cho phép xóa
+các branch đã gộp. Chính sách hiện tại: chỉ giữ branch main, lưu tag cho từng
+mốc cũ trước khi xóa. Không ghi đè lịch sử hoặc tự giải quyết nhánh phân kỳ.
+
+## Cập nhật theo yêu cầu xóa branch đã gộp
+
+Đã phát hiện phụ thuộc vận hành cần xử lý: `v2_publish.py` và `v3_publish.py`
+trước đây từ chối công bố nếu checkout main; một số công cụ kiểm chứng lịch sử
+tham chiếu tên `mentor/ekyc-v3.2.0`. Công cụ công bố nay dùng main. Các tên ref cũ
+được giữ dưới dạng tag cùng commit, vì thế các phép so sánh Git cũ vẫn phân giải
+đúng mà không sửa các file V1/V4 đã đóng băng.
+
+| Tag lưu mốc nhánh trước khi xóa | Commit |
+|---|---|
+| `mentor/ekyc-v3.2.0` | `4110f22b94699d30950cd1c0b23532ee9ccaaa59` |
+| `research/document-recovery-core-b` | `c326328b8a36d0836650841c96de2751189158f1` |
+| `research/vlm-v2-evidence` | `5eb84549f9be463d16c6f9ba030c496fda11a426` |
+
+Trước khi xóa: xác minh cả ba commit là tổ tiên main, remote branch không đổi,
+tag đã công bố trùng commit, và worktree mentor không có thay đổi. Worktree
+mentor được detach tại đúng commit, không xóa thư mục hoặc dữ liệu của nó.
+Mọi nhánh phân kỳ hoặc ref không khớp sẽ làm bước dọn dừng, giữ nguyên nhánh đó.
+Các file kết quả cũ ghi tên branch là lịch sử tại thời điểm thí nghiệm, không phải
+chỉ dẫn tạo lại branch. Các JSON audit/lock và checkpoint không bị sửa.
 
 ## Ý định và phạm vi từng nhánh
 
