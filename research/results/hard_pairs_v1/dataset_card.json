@@ -1,0 +1,40 @@
+{
+  "rows": 928,
+  "samples_sha256": "4a073c7611bf847bff737bd1e29d90c75fea03bda2bea1adb456e8629974f86c",
+  "base_graphs_sha256": "76f1982a70b8862f8c7bd97ffc54248000261b0b75e270880ea5f16e285167f4",
+  "derivation_code_sha256": "eb6dcfca8333d0ec4979d541669b7c528a5e5aa7b16f093a98d0e3033d1affc0",
+  "roles": {
+    "train": {
+      "identities": 128,
+      "images": 640
+    },
+    "development": {
+      "identities": 24,
+      "images": 96
+    },
+    "test": {
+      "identities": 48,
+      "images": 192
+    }
+  },
+  "changed_train_slots": 64,
+  "train_id_slot_order_matches_V3": true,
+  "test_previous_role_overlap": 0,
+  "test_previous_raster_overlap": 0,
+  "complete_answer_fingerprint_overlap": 0,
+  "test_source_counts": {
+    "midv2020": 24,
+    "authored": 24
+  },
+  "photo_device_counts": {
+    "iPhone XS Max": 20,
+    "SM-G973F": 4
+  },
+  "font_hashes": [
+    "57e93ff143572bcc092c1f56202d43ddc07bb119aa104c6d7af163470fb551f6",
+    "84e70ccc1664482f4a960442c7a166c91a1b2cf98ff88c33cb73f79403f66d7b"
+  ],
+  "pair_fallbacks": 18,
+  "human_legibility_labels": false,
+  "independent_camera_collection": false
+}

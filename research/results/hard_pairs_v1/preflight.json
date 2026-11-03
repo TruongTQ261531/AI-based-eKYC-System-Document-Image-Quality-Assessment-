@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "signature": "17358ce950945fc159b35362da8508a1601d45c28baea34e37f51dfd4b1ddb3e",
+  "frozen_V1_files": 101,
+  "frozen_V4_files": 63,
+  "self_scored_rows": 928,
+  "new_test_cases": 192,
+  "new_test_document_instances": 48,
+  "distinct_new_test_rasters": 179,
+  "cross_document_exact_raster_groups": 0,
+  "prior_document_overlap": 0,
+  "prior_raster_overlap": 0,
+  "prior_complete_answer_fingerprint_overlap": 0,
+  "changed_train_slots": 64,
+  "changed_train_document_instances": 32,
+  "retained_train_slot_order": true,
+  "pair_reference_replay": true,
+  "pair_eligibility_by_role": {
+    "train": 64,
+    "development": 18,
+    "test": 36
+  },
+  "fallback_counts_by_role": {
+    "train": 0,
+    "development": 6,
+    "test": 12
+  },
+  "raw_labels_images_or_weights_published": false,
+  "training_started": false
+}
