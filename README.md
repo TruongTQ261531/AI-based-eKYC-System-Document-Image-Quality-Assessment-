@@ -33,6 +33,30 @@ tiếp tục dùng `partial_42`. Xem [kết quả mục 4 và giới hạn](rese
 [cách chạy/tiếp tục](research/FAIR_CONTROLS_RUNBOOK.md) và
 [kiểm thử mã nguồn cuối](research/results/fair_controls_v1/software_verification.json).
 
+**Mục 1 đã hoàn tất phần dữ liệu và kiểm chứng tự động.** Bản xuất local có
+21.050 ảnh và 229.866 vùng chữ có đáp án tác giả, tọa độ và nguồn, gồm đủ 50 ảnh
+tham chiếu MIDV-2019 bổ sung thuộc Clean. Nhãn chất lượng và phần chữ người đọc
+được là hai dữ liệu riêng. Bộ kiểm chứng đã khóa có 304 ảnh từ 56 ID, trong đó
+224 ảnh test; ảnh chụp mới chọn từ MIDV-2020 không phải bộ camera mới tự thu thập.
+
+Đã chạy 912 lượt chính và 24 lượt đọc lặp. Audit tái tính đủ 912 hàng điểm và
+24 output đọc lặp khớp hash, không có lượt chạy lỗi hoặc gián đoạn. VLM
+`partial_42` đạt F1 0,8833 trên ảnh giả lập đầy đủ và 0,6061 trên ảnh chụp đầy đủ;
+hai bộ RapidOCR đạt lần lượt 0,5841/0,2471 và 0,6354/0,0649. Đây là benchmark
+theo tham chiếu tác giả, với 16 ID ảnh chụp ở test; chưa huấn luyện lại, chưa thay
+model trên web và chưa xác nhận đủ bằng chứng CORE B.
+
+Mở [trang đánh giá OCR](http://127.0.0.1:8005/) hoặc chạy `.\start-ocr-labels.ps1`
+từ thư mục repository. Xem [báo cáo mục 1](research/OCR_LABELS_RESULTS_VI.md),
+[audit dữ liệu](research/results/ocr_labels_v1/data_audit.json),
+[audit điểm](research/results/ocr_labels_v1/audit.json),
+[biểu đồ bố cục và font](research/results/ocr_labels_v1/font_layout_f1.svg),
+[cách chạy và xuất nhãn](research/OCR_LABELS_RUNBOOK.md) và
+[hướng dẫn pilot một người](research/OCR_LABELS_SINGLE_REVIEW.md). Bản xuất
+trong báo cáo có 6/48 mẫu được một người đánh giá, 30 lượt trường và 0 nhãn
+đạt đối chiếu nhiều người. Phiếu gửi tiếp vẫn được giữ ở localhost. Mẫu cần
+sửa có thể báo riêng; mẫu không bị xóa hoặc loại khỏi benchmark đã công bố.
+
 [Tiến độ từng ưu tiên](research/PRIORITY_PROGRESS_VI.md) là snapshot R2/V3
 **trước** vòng cặp che/giữ. `python -m research.priority_progress` chỉ tái tạo
 snapshot lịch sử đó; không gọi model hoặc thay kết quả của vòng mới. Nhãn
