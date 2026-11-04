@@ -9,13 +9,14 @@ def report():
     if any(v['status']!='passed' or v['signature']!=sig for v in (audit,verification)):raise ValueError('Matching audits required')
     corpus=read(OUT/'corpus_release.json');data=read(OUT/'data_audit.json');card=read(OUT/'evaluation_card.json')
     factorial=read(OUT/'factorial_effects.json');statistics=read(OUT/'slices.json');exports=read(OUT/'exports.json');human=status()
-    results={m:read(OUT/f'evaluation_{m}.json') for m in MODELS}
+    results={m:read(OUT/f'evaluation_{m}.json') for m in MODELS};single=exports.get('single',{})
     lines=['# Mục 1: nhãn OCR có nguồn gốc và kiểm chứng bố cục/font/ảnh chụp', '',
         'Đã hoàn tất lớp nhãn tác giả, vị trí, xuất dữ liệu, bộ kiểm chứng mới và các kiểm tra tự động. '
         'Đánh giá khả năng đọc chuyển sang pilot một người theo nguồn lực người dùng xác nhận. '
         'Không gọi nhãn hình học hoặc kết quả OCR là nhãn đọc được của người; không tính hai lượt của cùng người thành hai reviewer.', '',
-        f'Hiện có {human["events"]} sự kiện đề xuất tự khai, {human.get("pilot_review_images",0)}/48 mẫu pilot đã nhận đánh giá, '
-        f'{human.get("single_review_field_assessments",0)} lượt trường đánh giá đơn và {human["independently_verified_field_labels"]} nhãn trường đạt đối chiếu độc lập. '
+        f'Theo snapshot xuất lúc {single.get("exported_utc","chưa xuất")}: '
+        f'{single.get("pilot_images",0)}/48 mẫu pilot đã nhận đánh giá, {single.get("fields",0)} lượt trường đánh giá đơn '
+        f'và {exports["verified"]["fields"]} nhãn trường đạt đối chiếu độc lập. '
         'Không có bộ ảnh camera mới tự thu thập có sự đồng ý của người tham gia. Kết quả này không tự xác nhận đủ đóng góp CORE B.', '',
         '## Bộ ảnh gốc và từng trường OCR', '',
         f'- {corpus["images"]:,} ảnh, {corpus["fields"]:,} bản ghi vùng chữ, {corpus["physical_document_groups"]} nhóm giấy tờ gốc.',
@@ -86,6 +87,12 @@ def report():
         'Mở [trang nhãn OCR](http://127.0.0.1:8005/): lọc ảnh, xem vùng chữ/đáp án tác giả, kéo để đề xuất vùng mới, '
         'hoặc mở chế độ đánh giá độc lập không nhận đáp án/box ký tự/output OCR. '
         'Các đề xuất là append-only, lưu ở SQLite riêng; không sửa nhãn phát hành hoặc test đã công bố.', '',
+        f'Trạng thái trong snapshot đánh giá đơn: {single.get("assessment_states",{})}. '
+        'Phiếu gửi sau thời điểm snapshot vẫn được giữ trong database live, không tự sửa báo cáo đã phát hành. '
+        'Không biết ngôn ngữ hoặc chưa chắc chắn không bị coi thành nhãn âm “không đọc được”.', '',
+        f'Có {exports.get("issues",{}).get("images",0)} mẫu được đề nghị kiểm tra/sửa/loại trong snapshot riêng. '
+        'Các đề nghị không xóa ảnh hoặc loại case khỏi benchmark đã khóa, không tạo nhãn đọc được và không được cộng thành mẫu đã gán nhãn xong. '
+        'Lý do riêng và lịch sử rút đề nghị được giữ ở local; nếu tạo tập đã chỉnh sửa phải phát hành phiên bản mới và báo quy tắc loại.', '',
         f'Bản xuất annotations ở local có {exports["annotations"]["images"]:,} ảnh và {exports["annotations"]["fields"]:,} trường; '
         f'bản xuất đánh giá đơn có {exports.get("single",{}).get("fields",0)} lượt trường; '
         f'bản xuất đối chiếu nhiều người hiện có {exports["verified"]["fields"]} trường. '

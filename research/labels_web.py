@@ -8,6 +8,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from PIL import Image,ImageOps
 from research.labels_common import *
 from research import labels_review
+from research import labels_issues
 
 def evaluation():
     return sample_rows() if (OUT/'evaluation_card.json').exists() else []
@@ -134,6 +135,17 @@ def create_app(sample_lookup=get_sample,listing=list_samples,tasks=review_tasks,
         registry=read(DATA/'reviewer_registry.json') if (DATA/'reviewer_registry.json').exists() else {}
         value=dict(version='ocr_labels_v1_single_review',consensus_verified=False,assessments=labels_review.export_single(review_path,registry))
         return Response(canonical(value),media_type='application/json',headers={'Content-Disposition':'attachment; filename="ocr-label-single-review.json"'})
+    @app.post('/api/issues/{key}')
+    async def flag_issue(key:str,request:Request):
+        raw=await request.body()
+        if len(raw)>16384:raise HTTPException(413,'Đề nghị quá dài.')
+        try:record=labels_issues.store(sample(key),json.loads(raw),review_path)
+        except (ValueError,TypeError,KeyError,AttributeError):raise HTTPException(422,'Nhập mã người đánh giá, loại vấn đề và lý do cụ thể.')
+        return dict(saved=True,event_id=record['event_id'],action=record['action'],image_deleted=False,benchmark_changed=False)
+    @app.get('/api/issues/export')
+    async def issue_export():
+        return Response(canonical(dict(events=labels_issues.events(review_path),active=labels_issues.status(review_path))),
+                        media_type='application/json',headers={'Content-Disposition':'attachment; filename="ocr-sample-issue-proposals.json"'})
     return app
 
 app=create_app()

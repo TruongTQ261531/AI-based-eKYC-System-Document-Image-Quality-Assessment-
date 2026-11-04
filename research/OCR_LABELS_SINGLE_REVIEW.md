@@ -19,6 +19,19 @@ Kiểm tra lặp lại cùng người là tự nhất quán, không phải inter
 Các lần gửi lại cùng người/cùng mẫu lấy bản mới nhất khi xuất, nhưng lịch sử
 append-only vẫn được giữ.
 
+Không chọn mẫu ưng ý nhất. Đánh giá từng mẫu theo chữ thực thấy và lưu sau khi
+đã chọn trạng thái cho từng trường. Mặc định của form là **Chọn trạng thái**,
+không tự ghi mọi vùng thành chưa chắc chắn. Ảnh mờ/che/cắt và không biết ngôn ngữ
+là những tình huống cần nhãn, không phải lý do tự bỏ mẫu để tăng điểm.
+
+Nếu thật sự sai loại giấy tờ, lỗi dựng hoặc khung chữ lệch, mở **Báo mẫu không
+phù hợp**, chọn vấn đề, ghi lý do rồi gửi. Có thể chuyển tiếp mà không phải tạo
+nhãn đọc được giả. **Rút đề nghị của tôi** lưu một event mới, không xóa lịch sử.
+Mẫu được báo vẫn nằm trong48 tác vụ và trong benchmark304 ảnh đã khóa; không
+âm thầm giảm mẫu số. Có thể xuất riêng đề nghị để sửa/loại ở một phiên bản dữ
+liệu sau, kèm quy tắc và lý do. Các phiếu đọc được và các đề nghị kiểm tra được
+đếm riêng.
+
 ```powershell
 & D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.labels_export --mode single
 ```
