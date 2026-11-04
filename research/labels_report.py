@@ -2,13 +2,12 @@
 import numpy as np
 from research.labels_common import *
 from research.labels_study import MODELS
-from research.labels_review import status
 
 def report():
     sig=signature();audit=read(OUT/'audit.json');verification=read(OUT/'software_verification.json')
     if any(v['status']!='passed' or v['signature']!=sig for v in (audit,verification)):raise ValueError('Matching audits required')
     corpus=read(OUT/'corpus_release.json');data=read(OUT/'data_audit.json');card=read(OUT/'evaluation_card.json')
-    factorial=read(OUT/'factorial_effects.json');statistics=read(OUT/'slices.json');exports=read(OUT/'exports.json');human=status()
+    factorial=read(OUT/'factorial_effects.json');statistics=read(OUT/'slices.json');exports=read(OUT/'exports.json')
     results={m:read(OUT/f'evaluation_{m}.json') for m in MODELS};single=exports.get('single',{})
     lines=['# Mục 1: nhãn OCR có nguồn gốc và kiểm chứng bố cục/font/ảnh chụp', '',
         'Đã hoàn tất lớp nhãn tác giả, vị trí, xuất dữ liệu, bộ kiểm chứng mới và các kiểm tra tự động. '
@@ -55,6 +54,17 @@ def report():
             values.append(summary(subset)['f1'])
         lines.append('| '+model+' | '+' | '.join(f'{v:.4f}' for v in values)+' |')
     lines+=['', 'Các F1 là đối chiếu tham chiếu tác giả/nguồn được khai báo, không phải độ chính xác đã lọc bằng nhãn legibility của người.', '',
+        '## Các đầu ra không đạt trên toàn bộ 224 view test', '',
+        '| Reader | JSON không hợp lệ | Không trích được trường | Chạm384 token | Giá trị ngoài nguồn tham chiếu |',
+        '|---|---:|---:|---:|---:|']
+    for model in MODELS:
+        test=[r for r in results[model]['rows'] if r['role']=='test']
+        limit=str(sum(r['hit_token_limit'] for r in test)) if model=='partial_42' else 'không áp dụng'
+        lines.append(f'| {model} | {sum(not r["valid_json"] for r in test)}/{len(test)} | '
+            f'{sum(r["predicted"]==0 for r in test)}/{len(test)} | {limit} | {sum(r["unsupported_nonempty"] for r in test)} |')
+    lines+=['', 'Các cột có thể trùng cùng một ảnh, không cộng lại thành số ca lỗi. Không có trường trích được là proxy yêu cầu chụp lại, '
+        'chưa phải tỷ lệ khách hàng thực sự phải chụp lại. Giá trị ngoài nguồn tham chiếu là lỗi theo hợp đồng chấm hiện tại, '
+        'không tự chứng minh nguyên nhân hallucination hoặc khả năng đọc của người.', '',
         '## Tách riêng bố cục và font trên ảnh giả lập full', '',
         '| Reader | Bố cục cũ/font cũ | Bố cục mới/font cũ | Bố cục cũ/font mới | Cả hai mới |',
         '|---|---:|---:|---:|---:|']
@@ -130,7 +140,11 @@ def report():
     except ImportError:raise RuntimeError('Existing matplotlib runtime unavailable; do not claim figure generated')
     save(OUT/'report_provenance.json',dict(signature=sig,report_sha256=sha(path),report_code_sha256=sha(__file__),
         audit_sha256=sha(OUT/'audit.json'),software_verification_sha256=sha(OUT/'software_verification.json'),
-        figure_sha256=sha(OUT/'font_layout_f1.png'),human_evidence_not_fabricated=True))
+        figure_sha256=sha(OUT/'font_layout_f1.png'),vector_figure_sha256=sha(OUT/'font_layout_f1.svg'),
+        input_artifact_sha256={name:sha(OUT/name) for name in ('data_audit.json','corpus_release.json','evaluation_card.json',
+            'analysis_plan.json','models.json','test_lock.json','prepare_publication.json','factorial_effects.json','slices.json','exports.json')},
+        evaluation_output_sha256={m:sha(OUT/f'evaluation_{m}.json') for m in MODELS},
+        human_evidence_not_fabricated=True))
     print('LABEL_REPORT_READY',flush=True)
 
 if __name__=='__main__':report()
