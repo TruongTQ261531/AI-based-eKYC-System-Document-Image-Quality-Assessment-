@@ -1,16 +1,16 @@
 """Portable private annotations; verified targets require actual external review."""
 import argparse
 from research.labels_common import *
-from research.labels_review import export_verified
+from research.labels_review import export_verified,export_single
 
 def export(mode='annotations'):
-    if mode not in ('annotations','verified'):raise ValueError('Unknown export mode')
+    if mode not in ('annotations','single','verified'):raise ValueError('Unknown export mode')
     folder=DATA/'exports';folder.mkdir(parents=True,exist_ok=True)
     dest=folder/(mode+'.jsonl');tmp=dest.with_suffix('.tmp');images=0;fields=0
     with tmp.open('w',encoding='utf-8',newline='\n') as stream:
-        if mode=='verified':
+        if mode in ('single','verified'):
             registry=read(DATA/'reviewer_registry.json') if (DATA/'reviewer_registry.json').exists() else {}
-            rows=export_verified(registry=registry)
+            rows=export_verified(registry=registry) if mode=='verified' else export_single(registry=registry)
             for row in rows:stream.write(canonical(row)+'\n');fields+=1
             images=len({r['sample_uid'] for r in rows})
         else:
@@ -25,8 +25,11 @@ def export(mode='annotations'):
     manifest=read(OUT/'exports.json') if (OUT/'exports.json').exists() else {}
     manifest[mode]=dict(private_path=dest.relative_to(ROOT).as_posix(),sha256=sha(dest),bytes=dest.stat().st_size,
         images=images,fields=fields,contains_private_reference_text=mode=='annotations',published_to_git=False,
-        confirmed_human_training_targets=mode=='verified',empty_verified_export_is_not_a_successful_human_annotation_study=mode=='verified' and not fields)
+        requires_independent_consensus=mode=='verified',single_reviewer_not_consensus=mode=='single',
+        empty_verified_export_is_not_a_successful_human_annotation_study=mode=='verified' and not fields)
     save(OUT/'exports.json',manifest);print('LABEL_EXPORT',mode,images,fields,flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--mode',choices=['annotations','verified'],default='annotations');export(p.parse_args().mode)
+    p=argparse.ArgumentParser();p.add_argument('--mode',choices=['annotations','single','verified'],default='annotations');mode=p.parse_args().mode
+    export(mode)
+    if mode=='verified':export('single')

@@ -12,8 +12,10 @@ def report():
     results={m:read(OUT/f'evaluation_{m}.json') for m in MODELS}
     lines=['# Mục 1: nhãn OCR có nguồn gốc và kiểm chứng bố cục/font/ảnh chụp', '',
         'Đã hoàn tất lớp nhãn tác giả, vị trí, xuất dữ liệu, bộ kiểm chứng mới và các kiểm tra tự động. '
-        'Phần khả năng đọc do người đánh giá độc lập chưa hoàn tất. Không gọi nhãn hình học hoặc kết quả OCR là nhãn đọc được của người.', '',
-        f'Hiện có {human["events"]} sự kiện đề xuất tự khai và {human["independently_verified_field_labels"]} nhãn trường đã được xác nhận độc lập. '
+        'Đánh giá khả năng đọc chuyển sang pilot một người theo nguồn lực người dùng xác nhận. '
+        'Không gọi nhãn hình học hoặc kết quả OCR là nhãn đọc được của người; không tính hai lượt của cùng người thành hai reviewer.', '',
+        f'Hiện có {human["events"]} sự kiện đề xuất tự khai, {human.get("pilot_review_images",0)}/48 mẫu pilot đã nhận đánh giá, '
+        f'{human.get("single_review_field_assessments",0)} lượt trường đánh giá đơn và {human["independently_verified_field_labels"]} nhãn trường đạt đối chiếu độc lập. '
         'Không có bộ ảnh camera mới tự thu thập có sự đồng ý của người tham gia. Kết quả này không tự xác nhận đủ đóng góp CORE B.', '',
         '## Bộ ảnh gốc và từng trường OCR', '',
         f'- {corpus["images"]:,} ảnh, {corpus["fields"]:,} bản ghi vùng chữ, {corpus["physical_document_groups"]} nhóm giấy tờ gốc.',
@@ -85,16 +87,18 @@ def report():
         'hoặc mở chế độ đánh giá độc lập không nhận đáp án/box ký tự/output OCR. '
         'Các đề xuất là append-only, lưu ở SQLite riêng; không sửa nhãn phát hành hoặc test đã công bố.', '',
         f'Bản xuất annotations ở local có {exports["annotations"]["images"]:,} ảnh và {exports["annotations"]["fields"]:,} trường; '
-        f'bản xuất chỉ nhãn người đã được xác nhận hiện có {exports["verified"]["fields"]} trường. '
+        f'bản xuất đánh giá đơn có {exports.get("single",{}).get("fields",0)} lượt trường; '
+        f'bản xuất đối chiếu nhiều người hiện có {exports["verified"]["fields"]} trường. '
         'Không tự biến đáp án tác giả nằm ngoài ảnh hoặc bị che thành training target quan sát được. '
         'Ảnh, text riêng và weights không đưa lên Git. Hai mã reviewer/tích ô tự khai chưa chứng minh có hai người độc lập.', '',
-        'Còn cần hai người thực sự đánh giá và xử lý bất đồng để kết thúc phần legibility độc lập của mục1; '
+        'Một người có thể hoàn thành pilot, kiểm thử web và cung cấp nhãn người sơ bộ. '
+        'Độ hoàn thành phải dựa vào phiếu thực tế; cần thêm người độc lập và xử lý bất đồng nếu muốn báo cáo độ đồng thuận giữa người gán nhãn. '
         'bộ ảnh camera mới có sự đồng ý vẫn chưa có. Không huấn luyện lại hoặc chọn model bằng test đã mở này. '
         'eKYC8000 và web nghiên cứu8003 đã được xác nhận hoạt động, web8003 tiếp tục dùng partial_42.', '',
         'Bằng chứng: [audit dữ liệu](results/ocr_labels_v1/data_audit.json), [audit output](results/ocr_labels_v1/audit.json), '
         '[hiệu ứng bố cục/font](results/ocr_labels_v1/factorial_effects.json), [các lát dữ liệu](results/ocr_labels_v1/slices.json), '
         '[kiểm thử phần mềm](results/ocr_labels_v1/software_verification.json), [protocol](OCR_LABELS_PROTOCOL.md), '
-        '[hướng dẫn](OCR_LABELS_RUNBOOK.md). Nguồn: [MIDV-2020](https://arxiv.org/abs/2107.00396); giữ attribution/CC BY-SA2.5.']
+        '[hướng dẫn](OCR_LABELS_RUNBOOK.md), [pilot một người](OCR_LABELS_SINGLE_REVIEW.md). Nguồn: [MIDV-2020](https://arxiv.org/abs/2107.00396); giữ attribution/CC BY-SA2.5.']
     path=ROOT/'research/OCR_LABELS_RESULTS_VI.md';path.write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
     try:
         import matplotlib

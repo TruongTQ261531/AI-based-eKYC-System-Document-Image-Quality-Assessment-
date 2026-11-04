@@ -28,6 +28,9 @@ def publish(stage):
             models_sha256=sha(OUT/'models.json'),evaluation_sha256=sha(DATA/'evaluation.json'),
             scheduled_main_calls=912,scheduled_fresh_calls=24,training_runs=0,model_selection=False,
             source='Provider/renderer annotations; no OCR pseudo-labels or independent-human claim'))
+    elif stage=='review_setup':
+        if read(OUT/'prepare_publication.json')['signature']!=sig:raise ValueError('Main experiment changed during human supplement')
+        if read(OUT/'single_review_verification.json')['status']!='passed':raise ValueError('Single-review contract checks required')
     else:
         for name in ('audit.json','software_verification.json'):
             if read(OUT/name)['status']!='passed' or read(OUT/name)['signature']!=sig:raise ValueError('Matching audited verification required')
@@ -53,4 +56,4 @@ def publish(stage):
     return tip
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','final']);publish(p.parse_args().stage)
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['prepare','review_setup','final']);publish(p.parse_args().stage)

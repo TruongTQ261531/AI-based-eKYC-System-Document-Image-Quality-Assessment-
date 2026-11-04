@@ -42,9 +42,13 @@ def list_samples(cohort,source,quality,offset,limit):
     return count,[dict(id=r['uid'],name=r['native_uid'],source=r['source'],quality=r['quality'],role=r['role']) for r in rows]
 
 def review_tasks():
+    if (OUT/'human_review_plan.json').exists():
+        plan=read(OUT/'human_review_plan.json')
+        if plan['evaluation_sha256']!=sha(DATA/'evaluation.json'):raise ValueError('Registered human panel differs')
+        return plan['task_ids']
     rows=evaluation();chosen=[]
     for source in ('authored','midv2020'):
-        ids=sorted({r['physical_id'] for r in rows if r['source']==source},key=lambda p:uid('label-review-20261104/'+p))[:24]
+        ids=sorted({r['physical_id'] for r in rows if r['source']==source and r['physical_id']!='ocr-labels-v1-fictional-000'},key=lambda p:uid('label-review-20261104/'+p))[:24]
         for index,pid in enumerate(ids):
             candidates=[r for r in rows if r['physical_id']==pid and r['capture']==('full' if index%2==0 else 'value_mask')]
             selected=min(candidates,key=lambda r:uid('blind-condition/'+r['uid']))
@@ -125,6 +129,11 @@ def create_app(sample_lookup=get_sample,listing=list_samples,tasks=review_tasks,
     async def verified():
         registry=read(DATA/'reviewer_registry.json') if (DATA/'reviewer_registry.json').exists() else {}
         return dict(fields=labels_review.export_verified(review_path,registry),basis='Chỉ reviewer đã được người quản lý xác nhận độc lập; không dùng OCR làm nhãn người')
+    @app.get('/api/reviews/single')
+    async def single():
+        registry=read(DATA/'reviewer_registry.json') if (DATA/'reviewer_registry.json').exists() else {}
+        value=dict(version='ocr_labels_v1_single_review',consensus_verified=False,assessments=labels_review.export_single(review_path,registry))
+        return Response(canonical(value),media_type='application/json',headers={'Content-Disposition':'attachment; filename="ocr-label-single-review.json"'})
     return app
 
 app=create_app()

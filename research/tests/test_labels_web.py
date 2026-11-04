@@ -4,7 +4,7 @@ from fastapi.testclient import TestClient
 from PIL import Image
 import pytest
 from research.labels_web import create_app
-from research.labels_review import store,events,export_verified
+from research.labels_review import store,events,export_verified,export_single
 
 SECRET='AUTHOR_SECRET_MUST_NOT_APPEAR_IN_BLIND_PAYLOAD'
 
@@ -44,6 +44,8 @@ def test_review_append_does_not_change_reference(client,sample):
     assert sample['fields'][0]['reference_text']==SECRET
     data=client.get('/api/reviews/export').json()
     assert len(data['events'])==1 and data['events'][0]['independence_verified_by_system'] is False
+    single=client.get('/api/reviews/single').json()
+    assert single['consensus_verified'] is False and len(single['assessments'])==1
 
 def test_extra_reference_text_cannot_overwrite_released_labels(client):
     p=payload();p['reference_text']='REPLACEMENT'
@@ -67,3 +69,17 @@ def test_two_self_declared_codes_do_not_become_verified_humans(sample,tmp_path):
     store(sample,payload('A'),path);store(sample,payload('B'),path)
     assert len(events(path))==2
     assert export_verified(path)==[]
+
+def test_single_reviewer_export_is_useful_without_claiming_consensus(sample,tmp_path):
+    path=tmp_path/'single.sqlite3';store(sample,payload('A'),path)
+    rows=export_single(path,{'reviewer_people':{'A':'person1'}})
+    assert len(rows)==1 and rows[0]['field']['text']=='OBSERVED'
+    assert rows[0]['consensus_verified'] is False
+    assert export_verified(path)==[]
+
+def test_two_codes_for_one_person_never_make_two_independent_reviewers(sample,tmp_path):
+    path=tmp_path/'sameperson.sqlite3';store(sample,payload('A'),path);store(sample,payload('A2'),path)
+    registry={'independence_evidence_confirmed':True,'verified_reviewer_codes':['A','A2'],
+              'reviewer_people':{'A':'person1','A2':'person1'}}
+    assert export_verified(path,registry)==[]
+    assert len(export_single(path,registry))==1

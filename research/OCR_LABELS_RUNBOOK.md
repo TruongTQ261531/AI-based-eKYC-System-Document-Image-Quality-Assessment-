@@ -40,6 +40,7 @@ Xuất lại dữ liệu local:
 
 ```powershell
 & D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.labels_export --mode annotations
+& D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.labels_export --mode single
 & D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -m research.labels_export --mode verified
 ```
 
@@ -51,10 +52,15 @@ mới trong `research/cache/ocr_labels_v1/reviews.sqlite3`, không sửa bản p
 
 Mã A/B và ô tự khai không chứng minh hai người độc lập. Chỉ khi người quản lý
 đã có bằng chứng độc lập mới tạo file local `reviewer_registry.json` với
-`independence_evidence_confirmed: true` và danh sách `verified_reviewer_codes`.
+`independence_evidence_confirmed: true`, danh sách `verified_reviewer_codes` và
+ánh xạ `reviewer_people` tới hai người khác nhau.
 Không có API tự xác nhận reviewer. Bộ xuất verified chỉ lấy trường đồng thuận
 giữa ít nhất hai reviewer được xác nhận; bất đồng cần xử lý và phát hành bổ sung,
 không thay âm thầm test cũ. Không ghi fixture/model predictions thành nhãn người.
+
+Nếu hiện chỉ có một người, dùng mã A và bản xuất single theo
+[hướng dẫn pilot một người](OCR_LABELS_SINGLE_REVIEW.md). Vẫn ghi nhận dữ liệu
+thực, đồng thời giữ rõ giới hạn chưa có đối chiếu giữa người gán nhãn.
 
 Code/protocol/aggregates/hashes lên Git; ảnh, transcript, đề xuất cá nhân và
 weights ở local. Bộ gốc có50 giấy tờ lặp nhiều frame; không gọi21.050 ảnh là
