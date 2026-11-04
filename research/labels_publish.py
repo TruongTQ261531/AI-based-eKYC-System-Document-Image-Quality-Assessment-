@@ -37,6 +37,7 @@ def publish(stage):
         if read(OUT/'report_provenance.json')['report_sha256']!=sha(ROOT/'research/OCR_LABELS_RESULTS_VI.md'):raise ValueError('Report differs')
     paths=list((ROOT/'research').glob('labels_*.py'))+list((ROOT/'research').glob('OCR_LABELS*.md'))
     paths+=list((ROOT/'research/tests').glob('test_labels*.py'))+list((ROOT/'web').glob('labels_review.*'))
+    paths+=[ROOT/'research/tests/labels_frontend.test.cjs']
     paths+=[ROOT/'start-ocr-labels.ps1']+list(OUT.glob('*.json'))+list(OUT.glob('font_layout*.png'))+list(OUT.glob('font_layout*.svg'))
     for path in OUT.glob('*.json'):no_private_values(read(path))
     names=[p.relative_to(ROOT).as_posix() for p in paths if p.is_file()]

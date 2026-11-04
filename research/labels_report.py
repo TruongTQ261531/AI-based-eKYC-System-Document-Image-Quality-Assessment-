@@ -69,7 +69,15 @@ def report():
     lines+=['', 'Bootstrap 10.000 lần theo ID, seed 20261109; giữ bốn điều kiện của cùng ID trong một cụm. '
         'CI mô tả chưa điều chỉnh nhiều phép so sánh, có điều kiện trên model, hai font và hai bố cục cố định. '
         'Ảnh chụp được báo riêng, không gọi chênh lệch nguồn là hiệu ứng nhân quả của camera.', '',
-        '## Lượt chạy, phục hồi và kiểm thử', '',
+        '## Thời gian đo trực tiếp trên test full', '',
+        '| Reader | Nguồn | View | Pixel→OCR p50 giây | p95 giây | Kiểm hash/đọc/giải mã file p50 giây |',
+        '|---|---|---:|---:|---:|---:|']
+    for model in MODELS:
+        for source in ('authored','midv2020'):
+            sample=[r for r in results[model]['rows'] if r['role']=='test' and r['capture']=='full' and r['source']==source]
+            wall=[r['wall_seconds'] for r in sample];decode=[r['file_decode_seconds'] for r in sample]
+            lines.append(f'| {model} | {source} | {len(sample)} | {np.percentile(wall,50):.3f} | {np.percentile(wall,95):.3f} | {np.percentile(decode,50):.3f} |')
+    lines+=['', '## Lượt chạy, phục hồi và kiểm thử', '',
         f'Đã replay {audit["replayed_score_rows"]} hàng điểm từ raw output và {audit["additional_fresh_calls"]} lượt đọc lại trực tiếp từ pixel. '
         f'Có {audit["fresh_output_hash_mismatches"]} hash output đọc lại khác lượt chính. '
         f'Ledger ghi {audit["generation_attempts"]} lần bắt đầu, {audit["completed_text_generation_calls"]} lần hoàn tất, '

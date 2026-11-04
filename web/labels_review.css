@@ -3,3 +3,4 @@
 aside{align-self:start;position:sticky;top:16px}#samples{max-height:65vh;overflow-y:auto}#sampleName{overflow-wrap:anywhere}@media(max-width:850px){aside{position:static}#samples{max-height:none;overflow-y:hidden;overflow-x:auto}}
 
 .issuePanel{margin:18px 0;padding:14px;background:#fff8ec;border:1px solid #e2c78a;border-radius:8px}.issuePanel summary{cursor:pointer;font-weight:600}.issuePanel label{margin:10px 0}.issuePanel button{margin-top:8px}
+#saveStatus{padding:12px;border-radius:7px;background:#edf5f7;white-space:pre-wrap}#saveStatus:empty{display:none}

@@ -42,12 +42,13 @@ def verify():
     node=run('frontend_main',['node','--test','tests/camera_frontend.test.cjs','research/tests/vlm_frontend.test.cjs',
         'research/tests/v3_review.test.cjs','research/tests/v2_frontend.test.cjs','research/tests/recovery_frontend.test.cjs'])
     variant=run('frontend_source',['node','--test','research/tests/v2_frontend.test.cjs'],dict(OCR_TEST_WEB='v3'))
+    labels=run('labels_frontend',['node','--test','research/tests/labels_frontend.test.cjs'])
     run('labels_javascript_syntax',['node','--check','web/labels_review.js'])
     passed=int(re.search(r'(\d+) passed',main)[1]);skipped=int(re.search(r'(\d+) skipped',main)[1]);subtests=int(re.search(r'(\d+) subtests passed',main)[1])
     warning=re.search(r'(\d+) warnings?',main);warnings=int(warning[1]) if warning else 0
     a=xml_counts(CACHE/'software_main.xml');b=xml_counts(CACHE/'software_optional.xml')
     if a['tests']!=passed+skipped+subtests or b['tests']!=skipped or b['skipped']:raise ValueError('Skipped checks not covered by overlay')
-    n=node_counts(node);v=node_counts(variant);opener=urllib.request.build_opener(urllib.request.ProxyHandler({}));services={}
+    n=node_counts(node);v=node_counts(variant);l=node_counts(labels);opener=urllib.request.build_opener(urllib.request.ProxyHandler({}));services={}
     def get(url):
         with opener.open(url,timeout=10) as response:return json.load(response)
     for port in (8000,8003,8005):
@@ -68,15 +69,15 @@ def verify():
             raise ValueError('Blinded route exposes answers or predictions')
     if sources()!=before:raise ValueError('Source changed during software checks')
     evidence=['software_main.log','software_main.xml','software_optional.log','software_optional.xml','frontend_main.log',
-              'frontend_source.log','labels_javascript_syntax.log','health_8000.json','health_8003.json','health_8005.json']
+              'frontend_source.log','labels_frontend.log','labels_javascript_syntax.log','health_8000.json','health_8003.json','health_8005.json']
     save(OUT/'software_verification.json',dict(status='passed',signature=sig,verified_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         main_passed=passed,main_skipped_optional=skipped,optional_overlay_passed=b['tests'],
-        unique_python_checks=passed+b['tests'],subtests_passed=subtests,frontend_checks=n['pass']+v['pass'],warnings=warnings,
+        unique_python_checks=passed+b['tests'],subtests_passed=subtests,frontend_checks=n['pass']+v['pass']+l['pass'],annotation_frontend_checks=l['pass'],warnings=warnings,
         annotation_javascript_syntax=True,real_blind_API_tasks_checked=48,human_review_state=services[8005]['review'],
         services_ready=[8000,8003,8005],research_model='partial_42',new_model_promoted=False,
         sources_unchanged_during_checks=True,tested_working_tree_sources=before,source_snapshot_sha256=digest(before),
         tested_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT).decode().strip(),
         evidence=[dict(path=(CACHE/p).relative_to(ROOT).as_posix(),sha256=sha(CACHE/p)) for p in evidence]))
-    print('LABEL_SOFTWARE_VERIFIED',passed+b['tests'],subtests,n['pass']+v['pass'],flush=True)
+    print('LABEL_SOFTWARE_VERIFIED',passed+b['tests'],subtests,n['pass']+v['pass']+l['pass'],flush=True)
 
 if __name__=='__main__':verify()

@@ -7,6 +7,10 @@ tạo tự động từ GT hoặc OCR. Mức hoàn thành là số phiếu thự
 
 Mở http://127.0.0.1:8005/ và chọn **Đánh giá độc lập**. Ghi mã A, các ngôn ngữ
 bạn đọc được; xem từng vùng, chọn trạng thái và chép đúng phần chữ thấy được.
+Đánh giá đúng vùng đang được khoanh, không lấy một giá trị in ở vùng khác để
+điền cho vùng đã mất chữ. Mã native được giữ cạnh tên tiếng Việt khi cần phân
+biệt các biến thể cùng trường. Nguồn khác/MRZ có thể giúp model ở bài KIE toàn
+giấy tờ, nhưng không làm vùng chữ đang bị che trở thành đọc được.
 Chưa chắc chắn hoặc không biết ngôn ngữ là những trạng thái hợp lệ, không đoán.
 Chỉ tích ô độc lập nếu chưa xem đáp án/OCR/ảnh khác cùng ID. Mỗi mẫu phải đánh
 giá các trường đang liệt kê rồi bấm lưu. Nếu chỉ thử chức năng bằng giá trị giả,
@@ -23,6 +27,12 @@ Không chọn mẫu ưng ý nhất. Đánh giá từng mẫu theo chữ thực t
 đã chọn trạng thái cho từng trường. Mặc định của form là **Chọn trạng thái**,
 không tự ghi mọi vùng thành chưa chắc chắn. Ảnh mờ/che/cắt và không biết ngôn ngữ
 là những tình huống cần nhãn, không phải lý do tự bỏ mẫu để tăng điểm.
+Thông báo **ĐÃ LƯU** xuất hiện ngay cạnh nút lưu; nút khóa khi đang gửi và sau
+khi lưu bản không thay đổi. Sửa đánh giá sẽ mở nút để lưu một phiên bản mới.
+Nếu còn thiếu trạng thái hoặc text không phù hợp, form nêu rõ tên trường cần
+sửa; lỗi mạng giữ nguyên nội dung để thử lại. Bản giao diện cũ chỉ báo thành
+công ở đầu trang nên dễ tưởng chưa lưu và bấm lặp. Các event đã có vẫn được
+giữ nguyên; nhiều event cùng người/cùng ảnh chỉ tính một mẫu trong tiến độ.
 
 Nếu thật sự sai loại giấy tờ, lỗi dựng hoặc khung chữ lệch, mở **Báo mẫu không
 phù hợp**, chọn vấn đề, ghi lý do rồi gửi. Có thể chuyển tiếp mà không phải tạo
