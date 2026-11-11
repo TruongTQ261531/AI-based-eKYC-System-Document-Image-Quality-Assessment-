@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Preflight draft only. This document cannot authorize confirmatory execution.",
+  "type": "object",
+  "required": ["schema", "state", "allow_confirmatory_execution", "future_requirements"],
+  "properties": {
+    "schema": {"const": "evidence-test-lock-draft/1"},
+    "state": {"const": "DRAFT_ONLY"},
+    "allow_confirmatory_execution": {"const": false},
+    "file_bindings": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "future_requirements": {
+      "type": "object",
+      "required": ["new_go_decision", "claims_and_endpoints_approved", "independent_exposure_audit",
+                   "independent_fault_references", "verified_reviewer_provenance", "adequacy_and_power_review",
+                   "specimen_manifest", "dataset_and_code_hashes", "reader_and_prompt_hashes", "perturbations_and_budget",
+                   "baseline_and_ablations", "exclusions_and_analysis"],
+      "propertyNames": {
+        "enum": ["new_go_decision", "claims_and_endpoints_approved", "independent_exposure_audit",
+                 "independent_fault_references", "verified_reviewer_provenance", "adequacy_and_power_review",
+                 "specimen_manifest", "dataset_and_code_hashes", "reader_and_prompt_hashes", "perturbations_and_budget",
+                 "baseline_and_ablations", "exclusions_and_analysis"]
+      },
+      "additionalProperties": {"enum": ["PENDING", "PREPARED_DRAFT", "BLOCKED"]}
+    }
+  }
+}

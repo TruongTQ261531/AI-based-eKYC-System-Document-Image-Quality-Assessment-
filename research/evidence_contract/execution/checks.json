@@ -1,0 +1,59 @@
+{
+  "task": "TASK 0 safe fixtures only",
+  "python": "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.4",
+  "pytest": "9.1.1",
+  "env_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "real_model_inference_calls": 0,
+  "optimizer_steps": 0,
+  "checks": [
+    {
+      "name": "python_safe_tests",
+      "command": [
+        "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q",
+        "--tb=short",
+        "--basetemp=D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\execution\\pytest_tmp",
+        "--junitxml=D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\execution\\python_safe_tests.xml",
+        "research/tests/test_v3_sources.py",
+        "research/tests/test_hp_masks.py",
+        "research/tests/test_hp_metrics.py",
+        "research/tests/test_hp_statistics.py::ClusterIntervals",
+        "research/tests/test_labels_schema.py",
+        "research/tests/test_labels_metrics.py",
+        "research/tests/test_labels_issues.py",
+        "research/tests/test_labels_web.py",
+        "research/tests/test_fc_statistics.py"
+      ],
+      "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+      "started_utc": "2026-11-05T15:38:58.536168+00:00",
+      "elapsed_seconds": 16.39047122001648,
+      "exit_code": 0,
+      "log": "research/evidence_contract/execution/python_safe_tests.log"
+    },
+    {
+      "name": "javascript_review_tests",
+      "command": [
+        "node",
+        "--test",
+        "research/tests/labels_frontend.test.cjs"
+      ],
+      "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+      "started_utc": "2026-11-05T15:39:14.978029+00:00",
+      "elapsed_seconds": 0.37224745750427246,
+      "exit_code": 0,
+      "log": "research/evidence_contract/execution/javascript_review_tests.log"
+    }
+  ]
+}

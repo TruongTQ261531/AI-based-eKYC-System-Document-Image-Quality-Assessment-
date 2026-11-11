@@ -1,0 +1,19 @@
+{
+  "schema": "evidence-test-lock-draft/1",
+  "state": "DRAFT_ONLY",
+  "allow_confirmatory_execution": false,
+  "future_requirements": {
+    "new_go_decision": "BLOCKED",
+    "claims_and_endpoints_approved": "PENDING",
+    "independent_exposure_audit": "PREPARED_DRAFT",
+    "independent_fault_references": "BLOCKED",
+    "verified_reviewer_provenance": "BLOCKED",
+    "adequacy_and_power_review": "PREPARED_DRAFT",
+    "specimen_manifest": "PENDING",
+    "dataset_and_code_hashes": "PENDING",
+    "reader_and_prompt_hashes": "PREPARED_DRAFT",
+    "perturbations_and_budget": "PREPARED_DRAFT",
+    "baseline_and_ablations": "PREPARED_DRAFT",
+    "exclusions_and_analysis": "PREPARED_DRAFT"
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "case_id": "d70fdb8a0da2df1deca3e0f24025a34fe5134162c9e5501e617d7f174b783e52",
+  "contract_id": "C4",
+  "data_policy": "fictional",
+  "document_id": "fixture/multiline",
+  "expectations_are_not_validity_proofs": true,
+  "expected_source_state": {
+    "school": "SUPPORTED"
+  },
+  "followup_path": "d70fdb8a0da2df1deca3e0f24025a34fe5134162c9e5501e617d7f174b783e52/followup.png",
+  "graph_sha256": "e55ad1cc433992d10f880d1456f19b1c6354c2082c0829a6fa09e1988fa6f5c2",
+  "human_readability_inferred_from_geometry": false,
+  "input_pixel_sha256": "2e7398841fa20260003871d4a5b6166583d11d5beb8dde0cc499cb269df77a72",
+  "input_sha256": "f1922c5fe8161f0b2efcbe5ecdf7274fb61ed63a6eac29562f1598492acba3d0",
+  "mask_geometry": [],
+  "observed_source_state": {
+    "address": "SUPPORTED",
+    "school": "SUPPORTED"
+  },
+  "original_input_sha256": "6f12a0f45bdbaa714fe762339758cd81f89f674a490be1d797ceef2dda217865",
+  "original_path": "d70fdb8a0da2df1deca3e0f24025a34fe5134162c9e5501e617d7f174b783e52/original.png",
+  "original_pixel_sha256": "1be568bcd0ab80be5b01b20d9c91964a305faf174cc241a86824b52cdec80ad3",
+  "parent_file_sha256": null,
+  "physical_id": "fixture/multiline",
+  "role": "fixture",
+  "schema_version": "evidence-pairs/1",
+  "seed": 31415,
+  "source_id": "fixture/multiline/render",
+  "transformation": {
+    "contract_id": "C4",
+    "expected_source_state": [
+      [
+        "school",
+        "SUPPORTED"
+      ]
+    ],
+    "fill": [
+      35,
+      38,
+      42
+    ],
+    "hidden_source_ids": [],
+    "homography": [
+      [
+        0.0,
+        -1.0,
+        559.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "kind": "geometry_rotate90",
+    "mask_geometry": [],
+    "operator": "rotate90",
+    "output_size": [
+      560,
+      1000
+    ],
+    "retained_key": null,
+    "seed": 31415,
+    "target_key": "school"
+  },
+  "validation": {
+    "after_graph": {
+      "data_policy": "fictional",
+      "document_id": "fixture/multiline",
+      "fields": [
+        {
+          "coverage": "complete",
+          "coverage_provenance": "Complete fictional renderer inventory including labels and MRZ",
+          "key": "address",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "address/line1",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      436.0,
+                      42.0
+                    ],
+                    [
+                      436.0,
+                      222.0
+                    ],
+                    [
+                      421.0,
+                      222.0
+                    ],
+                    [
+                      421.0,
+                      42.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        436.0,
+                        42.0
+                      ],
+                      [
+                        436.0,
+                        52.0
+                      ],
+                      [
+                        421.0,
+                        52.0
+                      ],
+                      [
+                        421.0,
+                        42.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        55.0
+                      ],
+                      [
+                        436.0,
+                        65.0
+                      ],
+                      [
+                        421.0,
+                        65.0
+                      ],
+                      [
+                        421.0,
+                        55.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        67.0
+                      ],
+                      [
+                        436.0,
+                        78.0
+                      ],
+                      [
+                        421.0,
+                        78.0
+                      ],
+                      [
+                        421.0,
+                        67.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        80.0
+                      ],
+                      [
+                        436.0,
+                        92.0
+                      ],
+                      [
+                        421.0,
+                        92.0
+                      ],
+                      [
+                        421.0,
+                        80.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        94.0
+                      ],
+                      [
+                        436.0,
+                        104.0
+                      ],
+                      [
+                        421.0,
+                        104.0
+                      ],
+                      [
+                        421.0,
+                        94.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        105.0
+                      ],
+                      [
+                        436.0,
+                        118.0
+                      ],
+                      [
+                        421.0,
+                        118.0
+                      ],
+                      [
+                        421.0,
+                        105.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        119.0
+                      ],
+                      [
+                        436.0,
+                        130.0
+                      ],
+                      [
+                        421.0,
+                        130.0
+                      ],
+                      [
+                        421.0,
+                        119.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        131.0
+                      ],
+                      [
+                        436.0,
+                        145.0
+                      ],
+                      [
+                        421.0,
+                        145.0
+                      ],
+                      [
+                        421.0,
+                        131.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        146.0
+                      ],
+                      [
+                        436.0,
+                        156.0
+                      ],
+                      [
+                        421.0,
+                        156.0
+                      ],
+                      [
+                        421.0,
+                        146.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        172.0
+                      ],
+                      [
+                        436.0,
+                        183.0
+                      ],
+                      [
+                        421.0,
+                        183.0
+                      ],
+                      [
+                        421.0,
+                        172.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        183.0
+                      ],
+                      [
+                        436.0,
+                        196.0
+                      ],
+                      [
+                        421.0,
+                        196.0
+                      ],
+                      [
+                        421.0,
+                        183.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        196.0
+                      ],
+                      [
+                        436.0,
+                        210.0
+                      ],
+                      [
+                        421.0,
+                        210.0
+                      ],
+                      [
+                        421.0,
+                        196.0
+                      ]
+                    ],
+                    [
+                      [
+                        436.0,
+                        210.0
+                      ],
+                      [
+                        436.0,
+                        222.0
+                      ],
+                      [
+                        421.0,
+                        222.0
+                      ],
+                      [
+                        421.0,
+                        210.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.ink_patch; explicit fictional renderer source inventory",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "address/line2",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      391.0,
+                      41.0
+                    ],
+                    [
+                      391.0,
+                      158.0
+                    ],
+                    [
+                      376.0,
+                      158.0
+                    ],
+                    [
+                      376.0,
+                      41.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        391.0,
+                        41.0
+                      ],
+                      [
+                        391.0,
+                        53.0
+                      ],
+                      [
+                        376.0,
+                        53.0
+                      ],
+                      [
+                        376.0,
+                        41.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        55.0
+                      ],
+                      [
+                        391.0,
+                        65.0
+                      ],
+                      [
+                        376.0,
+                        65.0
+                      ],
+                      [
+                        376.0,
+                        55.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        66.0
+                      ],
+                      [
+                        391.0,
+                        79.0
+                      ],
+                      [
+                        376.0,
+                        79.0
+                      ],
+                      [
+                        376.0,
+                        66.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        79.0
+                      ],
+                      [
+                        391.0,
+                        92.0
+                      ],
+                      [
+                        376.0,
+                        92.0
+                      ],
+                      [
+                        376.0,
+                        79.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        106.0
+                      ],
+                      [
+                        391.0,
+                        117.0
+                      ],
+                      [
+                        376.0,
+                        117.0
+                      ],
+                      [
+                        376.0,
+                        106.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        120.0
+                      ],
+                      [
+                        391.0,
+                        130.0
+                      ],
+                      [
+                        376.0,
+                        130.0
+                      ],
+                      [
+                        376.0,
+                        120.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        132.0
+                      ],
+                      [
+                        391.0,
+                        144.0
+                      ],
+                      [
+                        376.0,
+                        144.0
+                      ],
+                      [
+                        376.0,
+                        132.0
+                      ]
+                    ],
+                    [
+                      [
+                        391.0,
+                        144.0
+                      ],
+                      [
+                        391.0,
+                        158.0
+                      ],
+                      [
+                        376.0,
+                        158.0
+                      ],
+                      [
+                        376.0,
+                        144.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.ink_patch; explicit fictional renderer source inventory",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "address/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      476.0,
+                      40.0
+                    ],
+                    [
+                      476.0,
+                      109.0
+                    ],
+                    [
+                      465.0,
+                      109.0
+                    ],
+                    [
+                      465.0,
+                      40.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        476.0,
+                        40.0
+                      ],
+                      [
+                        476.0,
+                        50.0
+                      ],
+                      [
+                        465.0,
+                        50.0
+                      ],
+                      [
+                        465.0,
+                        40.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        50.0
+                      ],
+                      [
+                        476.0,
+                        60.0
+                      ],
+                      [
+                        465.0,
+                        60.0
+                      ],
+                      [
+                        465.0,
+                        50.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        60.0
+                      ],
+                      [
+                        476.0,
+                        70.0
+                      ],
+                      [
+                        465.0,
+                        70.0
+                      ],
+                      [
+                        465.0,
+                        60.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        71.0
+                      ],
+                      [
+                        476.0,
+                        80.0
+                      ],
+                      [
+                        465.0,
+                        80.0
+                      ],
+                      [
+                        465.0,
+                        71.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        81.0
+                      ],
+                      [
+                        476.0,
+                        89.0
+                      ],
+                      [
+                        465.0,
+                        89.0
+                      ],
+                      [
+                        465.0,
+                        81.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        90.0
+                      ],
+                      [
+                        476.0,
+                        99.0
+                      ],
+                      [
+                        465.0,
+                        99.0
+                      ],
+                      [
+                        465.0,
+                        90.0
+                      ]
+                    ],
+                    [
+                      [
+                        476.0,
+                        100.0
+                      ],
+                      [
+                        476.0,
+                        109.0
+                      ],
+                      [
+                        465.0,
+                        109.0
+                      ],
+                      [
+                        465.0,
+                        100.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.ink_patch; explicit fictional renderer source inventory",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit fixture schema/labels",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "fictional fixture renderer",
+              "reference_value": "FICTIONAL ROAD DEMO CITY",
+              "semantic_key": "address",
+              "source_id": "address",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "FICTIONAL ROAD DEMO CITY",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "Complete fictional renderer inventory including labels and MRZ",
+          "key": "school",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "school/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      276.0,
+                      42.0
+                    ],
+                    [
+                      276.0,
+                      234.0
+                    ],
+                    [
+                      261.0,
+                      234.0
+                    ],
+                    [
+                      261.0,
+                      42.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        276.0,
+                        42.0
+                      ],
+                      [
+                        276.0,
+                        53.0
+                      ],
+                      [
+                        261.0,
+                        53.0
+                      ],
+                      [
+                        261.0,
+                        42.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        55.0
+                      ],
+                      [
+                        276.0,
+                        65.0
+                      ],
+                      [
+                        261.0,
+                        65.0
+                      ],
+                      [
+                        261.0,
+                        55.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        67.0
+                      ],
+                      [
+                        276.0,
+                        78.0
+                      ],
+                      [
+                        261.0,
+                        78.0
+                      ],
+                      [
+                        261.0,
+                        67.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        81.0
+                      ],
+                      [
+                        276.0,
+                        91.0
+                      ],
+                      [
+                        261.0,
+                        91.0
+                      ],
+                      [
+                        261.0,
+                        81.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        92.0
+                      ],
+                      [
+                        276.0,
+                        106.0
+                      ],
+                      [
+                        261.0,
+                        106.0
+                      ],
+                      [
+                        261.0,
+                        92.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        107.0
+                      ],
+                      [
+                        276.0,
+                        118.0
+                      ],
+                      [
+                        261.0,
+                        118.0
+                      ],
+                      [
+                        261.0,
+                        107.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        119.0
+                      ],
+                      [
+                        276.0,
+                        130.0
+                      ],
+                      [
+                        261.0,
+                        130.0
+                      ],
+                      [
+                        261.0,
+                        119.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        132.0
+                      ],
+                      [
+                        276.0,
+                        143.0
+                      ],
+                      [
+                        261.0,
+                        143.0
+                      ],
+                      [
+                        261.0,
+                        132.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        158.0
+                      ],
+                      [
+                        276.0,
+                        169.0
+                      ],
+                      [
+                        261.0,
+                        169.0
+                      ],
+                      [
+                        261.0,
+                        158.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        171.0
+                      ],
+                      [
+                        276.0,
+                        182.0
+                      ],
+                      [
+                        261.0,
+                        182.0
+                      ],
+                      [
+                        261.0,
+                        171.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        184.0
+                      ],
+                      [
+                        276.0,
+                        195.0
+                      ],
+                      [
+                        261.0,
+                        195.0
+                      ],
+                      [
+                        261.0,
+                        184.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        196.0
+                      ],
+                      [
+                        276.0,
+                        209.0
+                      ],
+                      [
+                        261.0,
+                        209.0
+                      ],
+                      [
+                        261.0,
+                        196.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        209.0
+                      ],
+                      [
+                        276.0,
+                        222.0
+                      ],
+                      [
+                        261.0,
+                        222.0
+                      ],
+                      [
+                        261.0,
+                        209.0
+                      ]
+                    ],
+                    [
+                      [
+                        276.0,
+                        224.0
+                      ],
+                      [
+                        276.0,
+                        234.0
+                      ],
+                      [
+                        261.0,
+                        234.0
+                      ],
+                      [
+                        261.0,
+                        224.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.ink_patch; explicit fictional renderer source inventory",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "school/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      316.0,
+                      40.0
+                    ],
+                    [
+                      316.0,
+                      99.0
+                    ],
+                    [
+                      305.0,
+                      99.0
+                    ],
+                    [
+                      305.0,
+                      40.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        316.0,
+                        40.0
+                      ],
+                      [
+                        316.0,
+                        49.0
+                      ],
+                      [
+                        305.0,
+                        49.0
+                      ],
+                      [
+                        305.0,
+                        40.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        50.0
+                      ],
+                      [
+                        316.0,
+                        59.0
+                      ],
+                      [
+                        305.0,
+                        59.0
+                      ],
+                      [
+                        305.0,
+                        50.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        60.0
+                      ],
+                      [
+                        316.0,
+                        69.0
+                      ],
+                      [
+                        305.0,
+                        69.0
+                      ],
+                      [
+                        305.0,
+                        60.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        70.0
+                      ],
+                      [
+                        316.0,
+                        80.0
+                      ],
+                      [
+                        305.0,
+                        80.0
+                      ],
+                      [
+                        305.0,
+                        70.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        80.0
+                      ],
+                      [
+                        316.0,
+                        90.0
+                      ],
+                      [
+                        305.0,
+                        90.0
+                      ],
+                      [
+                        305.0,
+                        80.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        92.0
+                      ],
+                      [
+                        316.0,
+                        99.0
+                      ],
+                      [
+                        305.0,
+                        99.0
+                      ],
+                      [
+                        305.0,
+                        92.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.ink_patch; explicit fictional renderer source inventory",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit fixture schema/labels",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "fictional fixture renderer",
+              "reference_value": "RESEARCH SCHOOL",
+              "semantic_key": "school",
+              "source_id": "school",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "RESEARCH SCHOOL",
+          "value_kind": "text"
+        }
+      ],
+      "height": 1000,
+      "input_file_sha256": null,
+      "input_pixel_sha256": "2e7398841fa20260003871d4a5b6166583d11d5beb8dde0cc499cb269df77a72",
+      "physical_id": "fixture/multiline",
+      "role": "fixture",
+      "schema_version": "evidence-graph/1",
+      "source_id": "fixture/multiline/render",
+      "unmapped_fields": [],
+      "width": 560
+    },
+    "after_pixel_sha256": "2e7398841fa20260003871d4a5b6166583d11d5beb8dde0cc499cb269df77a72",
+    "before_pixel_sha256": "1be568bcd0ab80be5b01b20d9c91964a305faf174cc241a86824b52cdec80ad3",
+    "graph_sha256": "e55ad1cc433992d10f880d1456f19b1c6354c2082c0829a6fa09e1988fa6f5c2",
+    "measurements": {
+      "exact_pixel_correspondence": true
+    },
+    "mutation": {
+      "contract_id": "C4",
+      "expected_source_state": [
+        [
+          "school",
+          "SUPPORTED"
+        ]
+      ],
+      "fill": [
+        35,
+        38,
+        42
+      ],
+      "hidden_source_ids": [],
+      "homography": [
+        [
+          0.0,
+          -1.0,
+          559.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "geometry_rotate90",
+      "mask_geometry": [],
+      "operator": "rotate90",
+      "output_size": [
+        560,
+        1000
+      ],
+      "retained_key": null,
+      "seed": 31415,
+      "target_key": "school"
+    },
+    "mutation_sha256": "0abe05bd4f0a50f17efb0556fa35964c9c1830a62445a828088f44310bc87a17",
+    "reasons": [],
+    "reference_before_graph": null,
+    "review_required": [],
+    "status": "VALID"
+  }
+}

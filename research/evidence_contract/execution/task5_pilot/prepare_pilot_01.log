@@ -1,0 +1,1 @@
+{"pool_proposals": 63, "selected_pair_counts": {"A": 20, "B1": 20, "shared_diagnostic": 4}, "selected_validity": {"VALID": 40, "INVALID_TEST": 2, "INCONCLUSIVE": 2}, "unique_images": 31, "physical_ids": 5, "planned_union_image_reader_requests": 93}

@@ -236,3 +236,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Research UI captures remain local with the underlying specimen images.
+research/results/source_visibility_v3/ui/
+research/results/vlm_lora_v2/ui/

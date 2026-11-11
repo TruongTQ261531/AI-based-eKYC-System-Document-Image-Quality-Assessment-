@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research.evidence_contract.execution.task4_runner.final_checks"
+  ],
+  "workdir": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "observed_after_execution_utc": "2026-11-05 20:40:10 UTC",
+  "chunk_id": "72bcad",
+  "wall_time_seconds": 2.6212094,
+  "exit_code": 0,
+  "original_token_count": 44,
+  "output": "{\"all_checks_passed\": true, \"unit_cases\": 146, \"subtests\": 6, \"actual_calls\": 12, \"replay_new_calls\": 0, \"checked_preexisting_files\": 2523, \"changed_preexisting_files\": 0}\r\n"
+}

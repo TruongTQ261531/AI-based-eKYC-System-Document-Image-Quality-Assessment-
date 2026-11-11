@@ -1,0 +1,21 @@
+{
+  "task": "TASK 3",
+  "timestamp_utc": "2026-11-05T19:43:42.905164+00:00",
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "branch": "main",
+  "head_unchanged": true,
+  "refs_unchanged": true,
+  "files_checked": 889,
+  "bytes_checked": 102254867,
+  "preexisting_file_mismatches": [],
+  "tracked_diff": "",
+  "staged_diff": "",
+  "tested_code_mismatches": [],
+  "pilot_code_mismatches": [],
+  "junit_tests": 95,
+  "junit_failures": 0,
+  "junit_errors": 0,
+  "junit_skips": 0,
+  "scope": "Tracked and pre-existing nonignored untracked files only. Ignored datasets/checkpoints not rehashed; no training or completed benchmark rerun.",
+  "status": "?? research/evidence_contract/\n?? research/priority2_tiles.py\n?? research/results/priority2_tiles_v1/\n?? research/results/source_visibility_v3/ui/\n?? research/results/vlm_lora_v2/ui/"
+}

@@ -1,0 +1,15 @@
+COMMAND ["node", "--test", "research/tests/labels_frontend.test.cjs"]
+✔ missing sample explains why saving cannot run (68.3047ms)
+✔ missing status and missing observed text name the exact field beside Save (3.9889ms)
+✔ unreadable with guessed text is rejected without silently clearing user input (5.026ms)
+✔ successful save is visible beside the button and unchanged re-click does not create another event (3.458ms)
+✔ double click while request is pending creates only one request (2.7874ms)
+✔ network error keeps draft and allows a retry; editing saved text allows a new revision (3.9002ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 228.8278

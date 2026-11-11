@@ -1,0 +1,12 @@
+# Local-only inference text, image inputs, runtime state and raw model caches.
+local/
+
+# Publish audited execution logs; keep generated rasters and test scratch local.
+!execution/**/*.log
+execution/pytest_tmp/
+execution/**/tmp/
+execution/**/*.png
+execution/**/*.jpg
+execution/**/*.jpeg
+*.sqlite3
+*.sqlite3-*

@@ -1,0 +1,3 @@
+Command: & workspace Python venv -B -m research.evidence_contract.task55.review prepare
+{"status": "BLOCKED_ON_HUMAN_REVIEW", "image_count": 31, "field_slots": 86, "actual_human_observations": 0, "model_calls": 0}
+Exit: 0

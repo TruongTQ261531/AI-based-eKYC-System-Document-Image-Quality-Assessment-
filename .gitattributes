@@ -13,3 +13,6 @@ research/vlm_web/** text eol=lf
 
 # Preserve measured artifact bytes (including recorded Windows line endings).
 research/results/** -text
+
+# Keep recorded source and execution hashes valid across Windows checkouts.
+research/evidence_contract/** -text

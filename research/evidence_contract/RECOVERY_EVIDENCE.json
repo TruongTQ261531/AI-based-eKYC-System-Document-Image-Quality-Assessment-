@@ -1,0 +1,317 @@
+{
+  "branch": "main",
+  "checkpoints": {
+    "base_model_id": "5CD-AI/Vintern-1B-v3_5",
+    "base_revision": "b98f263eab246eb5269ade64edbdca8a887dc44d",
+    "manifest_sha256": "d8d0cf34bf556d2d2ac36f5f0506560afc23d491f85970c1d9cd8a348998b871",
+    "max_new_tokens": 384,
+    "profile": "rect2",
+    "seed": 42,
+    "verified_assets": [
+      {
+        "algorithm": "sha256",
+        "bytes": 4745517,
+        "hash": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "path": "research/cache/upstream/rapid144/rapidocr_onnxruntime/models/ch_PP-OCRv4_det_infer.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 10857958,
+        "hash": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "path": "research/cache/upstream/rapid144/rapidocr_onnxruntime/models/ch_PP-OCRv4_rec_infer.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 585532,
+        "hash": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+        "path": "research/cache/upstream/rapid144/rapidocr_onnxruntime/models/ch_ppocr_mobile_v2.0_cls_infer.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 7904513,
+        "hash": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+        "path": "research/cache/upstream/latin_PP-OCRv5_rec_mobile.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 4767987,
+        "hash": "f4117b786e3a18470f3865c93f3c2bd69d9b998edd60f385574a5c665e79594e",
+        "path": "research/cache/upstream/lcnet100.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 83084930,
+        "hash": "7f9f5a8935b2eb22b3ee0245d34996063f54562df390d34714af2d76928695bc",
+        "path": "research/cache/docaligner/fastvit_sa24.onnx"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 4350392,
+        "hash": "98835d5922f968ce29681e2ec9a2b85f26e87d7ea9538fbfb701cc37cc8a6b27",
+        "path": "research/cache/vlm_lora_v2_r2/training/partial_42/step_0320/adapter_model.safetensors"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 782,
+        "hash": "9a0bad222ec08c150cd75f08f2afbbb370d97bf2b6900492787496b5ee7599c7",
+        "path": "research/cache/vlm_lora_v2_r2/training/partial_42/step_0320/adapter_config.json"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 11073,
+        "hash": "0236a9655f492f022e8a9a32fbf7d5bb92996941d3d5235849eaedff47b6fff5",
+        "path": "research/results/vlm_lora_v1/assets.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 9501,
+        "hash": "b8266c3f3115f0c9adebc95560de1fbd7f1375ff",
+        "path": "research/cache/vlm_lora_v1/model/README.md"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 790,
+        "hash": "dd972e4080e791eab591742c1168ee7fd6279146",
+        "path": "research/cache/vlm_lora_v1/model/added_tokens.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 5300,
+        "hash": "2668519f652eddcc2abbb56a52518d38c4f88887",
+        "path": "research/cache/vlm_lora_v1/model/config.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 5548,
+        "hash": "7e630c456eb9cf350e55bf850c3ff72f445a7e17",
+        "path": "research/cache/vlm_lora_v1/model/configuration_intern_vit.py"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 3885,
+        "hash": "799209432caf749e77de4c889ec03fe6a32fcdf9",
+        "path": "research/cache/vlm_lora_v1/model/configuration_internvl_chat.py"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 16385,
+        "hash": "76fcea7f331de42b6aed7e39fdf80728f9784b7f",
+        "path": "research/cache/vlm_lora_v1/model/conversation.py"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 129,
+        "hash": "cd9a20c20b3f0f173cff8cae0392521c06342afa",
+        "path": "research/cache/vlm_lora_v1/model/generation_config.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 1670344,
+        "hash": "8488ce08857fb9abc0dd05fd9f399d6d0234686f",
+        "path": "research/cache/vlm_lora_v1/model/merges.txt"
+      },
+      {
+        "algorithm": "sha256",
+        "bytes": 3752849256,
+        "hash": "296a16a6bf28e6d3f0fb9298deba70b3cfa1d7519f4aa326e2f862bf2e63be05",
+        "path": "research/cache/vlm_lora_v1/model/model.safetensors"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 18063,
+        "hash": "1c5c043a4b860720b3b6e55107e8e6ecf0c573de",
+        "path": "research/cache/vlm_lora_v1/model/modeling_intern_vit.py"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 15594,
+        "hash": "41f48cd5cb907e025725fc42ac819cf3f03c01b5",
+        "path": "research/cache/vlm_lora_v1/model/modeling_internvl_chat.py"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 744,
+        "hash": "74ea6ef5bd52e11d45791fbab7cca3dc984942fa",
+        "path": "research/cache/vlm_lora_v1/model/special_tokens_map.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 9023,
+        "hash": "096d822badcaf73b141f570f46642ce486d39dd5",
+        "path": "research/cache/vlm_lora_v1/model/tokenizer_config.json"
+      },
+      {
+        "algorithm": "git_blob_sha1",
+        "bytes": 3383407,
+        "hash": "6bce3a0a3866c4791a74d83d78f6824c3af64ec3",
+        "path": "research/cache/vlm_lora_v1/model/vocab.json"
+      }
+    ]
+  },
+  "client_local_date": "2026-11-09",
+  "client_timezone": "Asia/Bangkok",
+  "correction": {
+    "A_alarms": 17,
+    "A_exclusive_alarms": 0,
+    "A_flat_verdict_agreement": 120,
+    "B3_alarms": 58,
+    "alarm_agreement": 79,
+    "confusion": [
+      {
+        "A": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION",
+        "n": 17
+      },
+      {
+        "A": "INCONCLUSIVE",
+        "B3": "CANDIDATE_VIOLATION",
+        "n": 41
+      },
+      {
+        "A": "INCONCLUSIVE",
+        "B3": "PASS",
+        "n": 1
+      },
+      {
+        "A": "PASS",
+        "B3": "PASS",
+        "n": 61
+      }
+    ],
+    "n": 120,
+    "original_wrong_exclusions": 42,
+    "verdict_agreement": 78
+  },
+  "git_status": "?? research/evidence_contract/\n?? research/priority2_tiles.py\n?? research/results/priority2_tiles_v1/\n?? research/results/source_visibility_v3/ui/\n?? research/results/vlm_lora_v2/ui/",
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "historical_review": {
+    "distinct_samples": 35,
+    "events": 81,
+    "independent_person_count": null,
+    "path": "research/cache/ocr_labels_v1/reviews.sqlite3",
+    "scope": "historical OCR-labels only; immutable main DB snapshot; no review records or transcripts printed",
+    "self_declared_codes": 1,
+    "sha256": "8358cb806bdb08c0dee38f93bdce558fc6d692e5220e60fa90caf52350632230",
+    "wal_bytes": 0
+  },
+  "initial_staged_diff": "",
+  "initial_tracked_diff": "",
+  "local_remote_tracking_main": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "pilot_cache": {
+    "all_six_event_logs_match_previous_audit": true,
+    "completed_payload_hash_bound": true,
+    "new_calls_this_recovery": 0,
+    "outputs_verified": 93,
+    "task4_cache_reused_by_task5": 9,
+    "task5_new": 84
+  },
+  "plan": {
+    "bytes": 56246,
+    "lines": 695,
+    "path": "D:\\App\\EASE2027_EVIDENCE_CONTRACT_RECOVERY_MASTER_PLAN.md",
+    "sha256": "edd876c329c364b51b77e594473d62815d89eebd094b9c7bd757113a669ab1ee"
+  },
+  "pre_interruption_mismatches": [],
+  "pre_interruption_preserved_files": 2622,
+  "processes": {
+    "cim": "access unavailable",
+    "gpu_owner_identity": "unresolved from nvidia-smi permission-limited records",
+    "matching_listeners_seen": false,
+    "python_or_uvicorn_seen": false,
+    "stopped_processes": 0
+  },
+  "production_changes": 0,
+  "refs": "f5d130d93525e7633053edc03e6d9f6edeba7a6f refs/heads/main\nf5d130d93525e7633053edc03e6d9f6edeba7a6f refs/remotes/origin/HEAD\nf5d130d93525e7633053edc03e6d9f6edeba7a6f refs/remotes/origin/main\n4110f22b94699d30950cd1c0b23532ee9ccaaa59 refs/tags/mentor/ekyc-v3.2.0\nc326328b8a36d0836650841c96de2751189158f1 refs/tags/research/document-recovery-core-b\n5eb84549f9be463d16c6f9ba030c496fda11a426 refs/tags/research/vlm-v2-evidence",
+  "repo_root": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "resume_snapshot_file_count": 2632,
+  "stages": {
+    "TASK0": {
+      "artifacts": {
+        "PRESERVATION_MANIFEST.json": "c4037d48153ec6d9060379874da3db067e74f5dba8b94bd50d399449aaec7dab",
+        "PROJECT_INVENTORY.md": "5402dc693c63ea73a63f74156ca2ed5b2b7548d81789e9e61ff5336e69620f64",
+        "REUSE_MAP.md": "62426af0d464cb5d8ff2c29e0b08fda2d41031a1dba3f6c7a71f600db5ec4e21"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK1": {
+      "artifacts": {
+        "METHOD_SPEC.md": "dd322065b5fddf40b96e55cfef66ba0f6d1c7b13fbacce767fc5e0a8ad7a0c08",
+        "RELATED_WORK.md": "3daec0cfb1565d705bc1beb7924cf3a8d661aafd49859e692aef85309e7d4acc",
+        "RESEARCH_QUESTIONS.md": "50e07763d5bae63f962758f811f0bd460f10daa47292d39149d18ea9be2f09d0",
+        "execution/task1_review/document_validation.json": "b26c44ed0bccdcf81f4b501b4fd35828f6839d4c36a84c96cb92256c29a63779"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK2_foundation": {
+      "artifacts": {
+        "execution/task3_generator/delivery_validation.json": "fff92415c8a517fb9f0e9ad77313796b27c6908c3cb1450a3a10056c42710f8b",
+        "source_graph.py": "901489fdf95c754cf1c8dbf99007630d7f798d110b8bae6fbf796f0d39369466"
+      },
+      "detail": "Legacy labels schema/review/source adapter exist; no distinct completed TASK2 delivery found. No older data stage rerun.",
+      "source": "VERIFIED_LOCALLY",
+      "state": "PARTIAL"
+    },
+    "TASK3": {
+      "artifacts": {
+        "CONTRACT_SPEC.md": "d30bd5f6f1de79ffddd3b6cf70eb83a36d41521cd028638af32cc55508867f8f",
+        "GENERATOR_AUDIT.md": "f0fab5e14f4cd9699cd9e025d487a418b92ec1df7007587a02d93576da65d324",
+        "execution/task3_generator/delivery_validation.json": "fff92415c8a517fb9f0e9ad77313796b27c6908c3cb1450a3a10056c42710f8b"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK4": {
+      "artifacts": {
+        "TASK4_RESULTS_VI.md": "e78be4c8ba8cb1fb71e9fcd452d93152e96aebe70dc221cbcd48efe42fe60963",
+        "execution/task4_runner/final_checks.json": "43d733356fcba0527cd5db467dd3f581b454d7a728f26a140c0dd7109529e212"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK5": {
+      "artifacts": {
+        "DEVELOPMENT_PILOT.md": "f276d18a59df2865efc0f894fc6277cb3f3fdbff85b1403bef6812cf6463282a",
+        "GO_NO_GO_REVIEW.md": "7be6bb25b9c2e3b1932ef3a37377779679c927d0f8d764b4a33344dca6309703",
+        "execution/task5_pilot/final_checks.json": "41dbf4f84cf0466fc8187a2aec9fd56d88848271421383bb04c192a0fa71580f"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK55_AUTO": {
+      "scope": "research and mentor worktrees, research cache/results and evidence_contract including ignored names; no existing fault manifest/runner found",
+      "state": "NOT_FOUND"
+    },
+    "TASK55_A_vs_B3": {
+      "artifacts": {
+        "execution/task55_audit/audit_run_01.json": "4ea21b0c860759837bf0c85c7cbd71bf6a0d10dd80732576f6d9643b00da566a",
+        "execution/task55_audit/audit_run_01.log": "0df93c1668b44bf68b01c2aa28843e3269f85220814cc061812a9c268ab7565f"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "DONE"
+    },
+    "TASK55_IFV": {
+      "artifacts": {
+        "task55/review.py": "53c018fd27ee52452cabbd2f196d05937eb73e37d047726ff5320dd41bd5ea3e",
+        "task55/review_core.js": "3b0bf29dce05368b7f4bf524cd096a24dbab5a1c523804663dfbc681e1afecd1",
+        "task55/review_template.html": "745ccdd50289ea7a8e67862ba1820cd6800d35cd0d2f81eeeb87c2df80fdc6e7",
+        "task55/review_ui.js": "69d510868a7564a5808cb7e475646a922e2ef9ee7489c5bc1f5143a1135bd3fd"
+      },
+      "detail": "Source draft only. Packet output directory, real IFV export, phase2 and completed tests were absent at recovery.",
+      "source": "VERIFIED_LOCALLY",
+      "state": "PARTIAL"
+    },
+    "TASK6": {
+      "artifacts": {
+        "TASK6_GATE_REVIEW.md": "c4b35725afe4bc6fd7564e7676ad18b37d1e87a2865c83d1b3e70a99bb868261",
+        "execution/task6_gate/gate_check.json": "70588d53f79a25acdb060b3c4e9fa8b778e0eb34096e3a323fb599e1b101e3d3"
+      },
+      "source": "VERIFIED_LOCALLY",
+      "state": "BLOCKED"
+    }
+  },
+  "task6_confirmatory_output_access": 0,
+  "timestamp_utc": "2026-11-09T11:38:26.207337+00:00",
+  "worktrees": "worktree D:/laptrinhcuatao/Ekyc/versions/mentor-ekyc-v3.2.0\nHEAD 4110f22b94699d30950cd1c0b23532ee9ccaaa59\ndetached\n\nworktree D:/laptrinhcuatao/Ekyc/versions/research-document-recovery\nHEAD f5d130d93525e7633053edc03e6d9f6edeba7a6f\nbranch refs/heads/main"
+}

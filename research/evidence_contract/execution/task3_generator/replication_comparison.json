@@ -1,0 +1,1016 @@
+{
+  "timestamp_utc": "2026-11-05T19:41:10.347616+00:00",
+  "compared_pairs": 168,
+  "mismatches": 0,
+  "note": "Two implementation revisions: run 02 additionally hardens role/privacy adapters and automatically snapshots code. This is raster/contract non-regression evidence, not an independent model experiment.",
+  "rows": [
+    {
+      "document_id": "fixture/backup",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-bad-checksum",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/backup-limited",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/multiline",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "fixture/shared-semantic-context",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "all_sources_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "full",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_rotate90",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "geometry_translate",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_a_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "pair_b_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 42,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 31415,
+      "pixels_masks_states_same": true
+    },
+    {
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "family": "single_source_mask",
+      "seed": 20261106,
+      "pixels_masks_states_same": true
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "case_id": "ffb20640df733879028325b926a9f25e90731165bc36d78bbbc2adbbc8760362",
+  "contract_id": "C2",
+  "data_policy": "fictional",
+  "document_id": "fixture/shared-semantic-context",
+  "expectations_are_not_validity_proofs": true,
+  "expected_source_state": {
+    "category": "SUPPORTED"
+  },
+  "followup_path": "ffb20640df733879028325b926a9f25e90731165bc36d78bbbc2adbbc8760362/followup.png",
+  "graph_sha256": "dc500e700d139612bfb713ef80797052f9d60dce31b6f621256c966ff52b85e2",
+  "human_readability_inferred_from_geometry": false,
+  "input_pixel_sha256": "8fd86c5cd9237b9beedbeded166a6de304dd077bd5d2e084d8273b228edeb178",
+  "input_sha256": "a5acd3a18c8fc1d48b3b9e06d94c683642053b87906ba79440579a27f7bbd767",
+  "mask_geometry": [
+    [
+      [
+        46.0,
+        101.0
+      ],
+      [
+        210.0,
+        101.0
+      ],
+      [
+        210.0,
+        120.0
+      ],
+      [
+        46.0,
+        120.0
+      ]
+    ]
+  ],
+  "observed_source_state": {},
+  "original_input_sha256": "7231f2c550d8d697d97b06f15a4285817c435cd3dc3195242f1373602efe446c",
+  "original_path": "ffb20640df733879028325b926a9f25e90731165bc36d78bbbc2adbbc8760362/original.png",
+  "original_pixel_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+  "parent_file_sha256": null,
+  "physical_id": "fixture/shared-semantic-context",
+  "role": "fixture",
+  "schema_version": "evidence-pairs/1",
+  "seed": 31415,
+  "source_id": "fixture/shared-semantic-context/render",
+  "transformation": {
+    "contract_id": "C2",
+    "expected_source_state": [
+      [
+        "category",
+        "SUPPORTED"
+      ]
+    ],
+    "fill": [
+      35,
+      38,
+      42
+    ],
+    "hidden_source_ids": [
+      "category"
+    ],
+    "homography": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "kind": "single_source_mask",
+    "mask_geometry": [
+      [
+        [
+          46.0,
+          101.0
+        ],
+        [
+          210.0,
+          101.0
+        ],
+        [
+          210.0,
+          120.0
+        ],
+        [
+          46.0,
+          120.0
+        ]
+      ]
+    ],
+    "operator": "mask",
+    "output_size": [
+      1000,
+      560
+    ],
+    "retained_key": null,
+    "seed": 31415,
+    "target_key": "category"
+  },
+  "validation": {
+    "after_graph": null,
+    "after_pixel_sha256": "8fd86c5cd9237b9beedbeded166a6de304dd077bd5d2e084d8273b228edeb178",
+    "before_pixel_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+    "graph_sha256": "dc500e700d139612bfb713ef80797052f9d60dce31b6f621256c966ff52b85e2",
+    "measurements": {
+      "changed_pixels": 3300,
+      "changes_outside_mask": 0,
+      "components": {
+        "category/value": {
+          "actual_changed_pixels": 2480,
+          "mask_covered_pixels": 2480,
+          "pixels": 2480
+        },
+        "code/context": {
+          "actual_changed_pixels": 2480,
+          "mask_covered_pixels": 2480,
+          "pixels": 2480
+        },
+        "code/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 1856
+        }
+      },
+      "mask_pixels": 3300
+    },
+    "mutation": {
+      "contract_id": "C2",
+      "expected_source_state": [
+        [
+          "category",
+          "SUPPORTED"
+        ]
+      ],
+      "fill": [
+        35,
+        38,
+        42
+      ],
+      "hidden_source_ids": [
+        "category"
+      ],
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "single_source_mask",
+      "mask_geometry": [
+        [
+          [
+            46.0,
+            101.0
+          ],
+          [
+            210.0,
+            101.0
+          ],
+          [
+            210.0,
+            120.0
+          ],
+          [
+            46.0,
+            120.0
+          ]
+        ]
+      ],
+      "operator": "mask",
+      "output_size": [
+        1000,
+        560
+      ],
+      "retained_key": null,
+      "seed": 31415,
+      "target_key": "category"
+    },
+    "mutation_sha256": "f651175132405f68c583d2897654b9c0465d4899a358223c833a96c06bc73116",
+    "reasons": [
+      "collateral_source_or_context_change:code/context"
+    ],
+    "reference_before_graph": null,
+    "review_required": [],
+    "status": "INVALID_TEST"
+  }
+}

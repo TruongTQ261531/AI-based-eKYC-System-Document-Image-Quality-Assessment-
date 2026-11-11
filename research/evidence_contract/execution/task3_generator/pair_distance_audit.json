@@ -1,0 +1,394 @@
+{
+  "threshold": 0.08,
+  "scope": "Descriptive only; all C3 attempts retained, including invalid cases; no neighbor-specific effectiveness claim",
+  "counts": {
+    "near": 36,
+    "far": 12
+  },
+  "rows": [
+    {
+      "case_id": "4263339fd677b62914669c9d8fe06f8660df7075c5aca4f7a22490d8313d7a41",
+      "document_id": "fixture/backup",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "ea2fa1ea61103a5ae0a5323efb0d6f825a6ac5b87297403c6b3dfe155b6435d6",
+      "document_id": "fixture/backup",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "2bd866abbbba3d7d2ce3a83661f923d224787b268cf625a87f665924dcd15626",
+      "document_id": "fixture/backup-limited",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "7c4df49352be00b2f0c992ad56e5d0c53a3f2ec2e45373b212bce91a2f4cfec3",
+      "document_id": "fixture/backup-limited",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "205c7ecefb97c87a22a2efa078711f6c8318921bfdc6aa9d7db3e099a9376c60",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "1624633e93de9283cc37e4251a52372355c8717b91a7f6672fe823f1a45a5a70",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "840f9f2b6cf8f58e59b6f21a534b6b2b9c05b8269827da3be875f68f65f6720f",
+      "document_id": "fixture/multiline",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "2057b949196c3c76aff24751cceff47b52cda8ee08256413f5f8ebea782b343d",
+      "document_id": "fixture/multiline",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "3fabb0745df0cb36c799e658bbb115aebd1894778f8637a31fd18715d9bff814",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 20261106,
+      "validity": "INVALID_TEST",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "33c1d01b19f63c50826e6a0827ab536134bdbec6e4163551518486be3a1df369",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "2102285bafd3a0511073e568e0b84f4a039fbe647f75ed7fa71798d30e074cde",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "f0ac9bc61311a85fdaad223e02127f8bebb07ad4fc33ffb63ec4c8e745c71cc3",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "8c3dd053a39dabef8cf60fe5fde1c9c73343ece2b3a4a9fb8251e5a41e263322",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "18d7daadd51b973afde1f17689c07de72d9ac3282e7a11604db73853ea4d2c43",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "42fd3ece0703a6b430796aa3327c34f0f67a0443b39429bd476c5b349a433b75",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    },
+    {
+      "case_id": "544d53c5f00cd94081dd5267960b8c9918d063b289cee9e6f34d8d20255127ce",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 20261106,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    },
+    {
+      "case_id": "ef5ebf0833a47b4ab6281c9ef85ebb899004acc59afe4330cece3bc2c2419e57",
+      "document_id": "fixture/backup",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "f0284ce900e63e19dc8f1845e53c25c64bcaae398a688903e57451efa16b6764",
+      "document_id": "fixture/backup",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "3beb8318bb633b105a3dd4d73c5433b74f4c4d37b07905739bc2834b21927714",
+      "document_id": "fixture/backup-limited",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "16813a55c255079c6eb2ca9967b4a215569f49907aa98a1b183a859df1a5787c",
+      "document_id": "fixture/backup-limited",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "2b9b05e744a1b7cfeb7293df627b5f4ec6731279bbc6b669d24dc28cfd59ee5d",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "20beeea2b3dfd5070f312cb9e8b9985f71a64f872c6d3fa3a95c93d4e20a0c0f",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "bd89267607e198f8ab931c845396db8046fd5d2f95a00a156e9568a4bfa67534",
+      "document_id": "fixture/multiline",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "fee6c4ec633ca6f790f28773ff8d7d60ac6d0f3659715416504c75f1c5d80cdd",
+      "document_id": "fixture/multiline",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "89fc51c30eb5e0a59ba39948e2e2d1bfcaac74ab83ab04155ab23d84b5e0b627",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 31415,
+      "validity": "INVALID_TEST",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "1ecbf7c7b9aa78827e560868b493a24f49b143faf5da17dbbb3f42641a0e7d1b",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "e4d29187ae2f2454dfdaae2e1171b7259c19dd0d7e61ec2003419293a25af08a",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "0ff1c73080691aeb5ac8ea027d1754fd28cefc8ea0e3397287cfc2212e7e7cf1",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "ffcbd95d4cad035e01022875d6608805d84462d696213a8bd2be5c1643e2f3bb",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "929610b7b4b49384f30015b28716259bb8ac2a7a63ac6289a3248906ab9afb20",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "ca5721606786d8746e8fadee926433b497962616ee7a8360f56992db3c6a7c93",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    },
+    {
+      "case_id": "03ef5acef68e24eae338a89aec793109961ea9878b1a1addf091630da3bf7dfe",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 31415,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    },
+    {
+      "case_id": "869ba7013b54ebf75a1b64613db4061fbab52bfcedd7c65f4d0c622b7e482899",
+      "document_id": "fixture/backup",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "73b5a702c9628ffa897f903951ba252db54d816180b5b5b1911ea00f56b118ac",
+      "document_id": "fixture/backup",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "29f2d7375d02cc895d6754b33b81a5ee518b6b5cd0472dbb94eb67d1a42a4ac3",
+      "document_id": "fixture/backup-limited",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "e0d51177f02fcd878d03c7f3bb5f568b43d27355d3230413fa9b95bb21207b16",
+      "document_id": "fixture/backup-limited",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "37e90306ae27595dbf727cb7ff572b631b7ba746aa3deca779848fb55f41083a",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "2e26e3e7eb620a65d5884dacd1c9f51ef4f5a77dd5f4390ae2ddd94d4a753b24",
+      "document_id": "fixture/backup-bad-checksum",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.065437951196229,
+      "stratum": "near"
+    },
+    {
+      "case_id": "b7453408b27624b033f3f0dba5a92ad38111b7b37dcd47866541fe88b9289577",
+      "document_id": "fixture/multiline",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "85c181d3fa7bc354f5e96abfaca0746c06b241b4c49eb38836be169c0c410cd9",
+      "document_id": "fixture/multiline",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.08725060159497201,
+      "stratum": "far"
+    },
+    {
+      "case_id": "659aa86fd2fd85d5a78f0d14365711443c3647a355ff764dc2fd96d05111ddef",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 42,
+      "validity": "INVALID_TEST",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "c8d58306f4c7a0840ad6a16a1072456860f8221b818bf698c294b5a3cd62c5ab",
+      "document_id": "fixture/shared-semantic-context",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0392627707177374,
+      "stratum": "near"
+    },
+    {
+      "case_id": "de20c533adbcd159a2e555f078bb4ba8f234ff73b3b210765a717cffd4c44e7d",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "536da7140b9fe409c47cfdb6f3e8951b228a73f3c745a008a960bb1481cf6419",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.05616339486780445,
+      "stratum": "near"
+    },
+    {
+      "case_id": "7ad115c9d5677106872a826e7e015836fc00092c1cf480a827ca81fe97ff3aa2",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "e959f0bd47c8ad75778183b56d12610937c8328039d0e54590bff1cdf2b489a7",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.10539303728279353,
+      "stratum": "far"
+    },
+    {
+      "case_id": "793bbef78945f80e3277796ccbce08bfe270209544bba43b20e542c08a7234bc",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    },
+    {
+      "case_id": "1e3399e1f870dd6424c1527a91d68ed88ce46c64307e3c3f0f557276d48ba98f",
+      "document_id": "ocr-labels-v1-fictional-002/evidence-task3/seen_layout_seen_font",
+      "seed": 42,
+      "validity": "VALID",
+      "normalized_body_gap": 0.0533898938866783,
+      "stratum": "near"
+    }
+  ]
+}

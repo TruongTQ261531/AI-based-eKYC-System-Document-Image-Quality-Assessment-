@@ -1,0 +1,100 @@
+{
+  "planned_attempts": 168,
+  "ledger_attempts": 168,
+  "validity_counts": {
+    "VALID": 138,
+    "INCONCLUSIVE": 21,
+    "INVALID_TEST": 9
+  },
+  "generation_yield": 0.8214285714285714,
+  "invalid_test_rate": 0.05357142857142857,
+  "inconclusive_rate": 0.125,
+  "physical_ids": 7,
+  "unique_original_rasters": 7,
+  "by_contract": {
+    "C1": {
+      "attempts": 24,
+      "validity_counts": {
+        "VALID": 18,
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3
+      },
+      "validity_yield": 0.75,
+      "constructed_control_decisions": 18,
+      "contract_decision_coverage": 0.75,
+      "correct_pack_verdict_counts": {
+        "PASS": 18,
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3
+      },
+      "incorrect_pack_verdict_counts": {
+        "VIOLATION": 18,
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3
+      }
+    },
+    "C2": {
+      "attempts": 24,
+      "validity_counts": {
+        "VALID": 3,
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3
+      },
+      "validity_yield": 0.125,
+      "constructed_control_decisions": 3,
+      "contract_decision_coverage": 0.125,
+      "correct_pack_verdict_counts": {
+        "PASS": 3,
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3
+      },
+      "incorrect_pack_verdict_counts": {
+        "VIOLATION": 3,
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3
+      }
+    },
+    "C3": {
+      "attempts": 48,
+      "validity_counts": {
+        "VALID": 45,
+        "INVALID_TEST": 3
+      },
+      "validity_yield": 0.9375,
+      "constructed_control_decisions": 45,
+      "contract_decision_coverage": 0.9375,
+      "correct_pack_verdict_counts": {
+        "PASS": 45,
+        "INVALID_TEST": 3
+      },
+      "incorrect_pack_verdict_counts": {
+        "VIOLATION": 45,
+        "INVALID_TEST": 3
+      }
+    },
+    "C4": {
+      "attempts": 72,
+      "validity_counts": {
+        "VALID": 72
+      },
+      "validity_yield": 1.0,
+      "constructed_control_decisions": 48,
+      "contract_decision_coverage": 0.6666666666666666,
+      "correct_pack_verdict_counts": {
+        "PASS": 48,
+        "INCONCLUSIVE": 24
+      },
+      "incorrect_pack_verdict_counts": {
+        "VIOLATION": 48,
+        "INCONCLUSIVE": 24
+      }
+    }
+  },
+  "artifact_audit": {
+    "images_checked": 336,
+    "cases_checked": 168,
+    "mismatches": 0
+  },
+  "neural_model_calls": 0,
+  "training_steps": 0
+}

@@ -1,0 +1,16 @@
+workspace venv python -B -m research.evidence_contract.task55.controls
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\task55\controls.py", line 143, in <module>
+    run()
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\task55\controls.py", line 134, in run
+    cases = evaluate_controls()
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\task55\controls.py", line 127, in evaluate_controls
+    cases.append(check_case(name, pair, values, values, validity + ': authored diagnostic',
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\task55\controls.py", line 36, in check_case
+    raise AssertionError((name, expected_verdicts, observed))
+AssertionError: ('limited_source_universe', {'A': 'INCONCLUSIVE', 'B3': 'INCONCLUSIVE', 'B3_V3_gate': 'INCONCLUSIVE'}, {'A': 'CANDIDATE_VIOLATION', 'B0': 'INCONCLUSIVE', 'B2': 'INCONCLUSIVE', 'B3': 'INCONCLUSIVE', 'B3_V3': 'CANDIDATE_VIOLATION', 'B3_V3_gate': 'INCONCLUSIVE', 'A_flat': 'INCONCLUSIVE', 'A_no_alternative': 'CANDIDATE_VIOLATION', 'A_no_validator': 'INCONCLUSIVE', 'A_no_NI': 'CANDIDATE_VIOLATION'})
+Exit: 1

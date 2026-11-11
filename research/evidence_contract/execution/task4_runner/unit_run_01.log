@@ -1,0 +1,136 @@
+test_budget_counts_begins_not_cache_or_rescoring (research.evidence_contract.tests.test_runner_oracle.MetricsTests.test_budget_counts_begins_not_cache_or_rescoring) ... ok
+test_false_alarm_and_recall_include_inconclusive_known_positive (research.evidence_contract.tests.test_runner_oracle.MetricsTests.test_false_alarm_and_recall_include_inconclusive_known_positive) ... ok
+test_field_dedup_missing_unjudged_and_cer_denominators (research.evidence_contract.tests.test_runner_oracle.MetricsTests.test_field_dedup_missing_unjudged_and_cer_denominators) ... ok
+test_actual_reader_registration_gate (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_actual_reader_registration_gate) ... ok
+test_bad_types_are_flagged_not_empty_omissions (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_bad_types_are_flagged_not_empty_omissions) ... ok
+test_fences_preserve_tolerant_vs_strict (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_fences_preserve_tolerant_vs_strict) ... ok
+test_invalid_json_not_valid_empty_output (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_invalid_json_not_valid_empty_output) ... ok
+test_native_confidence_requires_real_scope (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_native_confidence_requires_real_scope) ... ok
+test_no_fabricated_confidence_or_missing_defaults (research.evidence_contract.tests.test_runner_oracle.NormalizationTests.test_no_fabricated_confidence_or_missing_defaults) ... ok
+test_bad_json_not_a_successful_refusal_or_semantic_omission (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_bad_json_not_a_successful_refusal_or_semantic_omission) ... ok
+test_bound_negative_gold_preserves_issued_alarm_for_precision (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_bound_negative_gold_preserves_issued_alarm_for_precision) ... ok
+test_c1_independently_verified_absence (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c1_independently_verified_absence) ... ok
+test_c1_refusal_pass_but_assertion_only_candidate_without_independent_proof (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c1_refusal_pass_but_assertion_only_candidate_without_independent_proof) ... ok
+test_c2_mrz_backup_correct_not_hallucination (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c2_mrz_backup_correct_not_hallucination) ... ok
+test_c2_omission_not_claimed_human_readable_without_review (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c2_omission_not_claimed_human_readable_without_review) ... ok
+test_c2_wrong_value_is_reading_error_not_evidence_absence (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c2_wrong_value_is_reading_error_not_evidence_absence) ... ok
+test_c3_original_wrong_not_version_regression (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c3_original_wrong_not_version_regression) ... ok
+test_c3_unchanged_neighbor_pass_and_changed_neighbor_candidate (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c3_unchanged_neighbor_pass_and_changed_neighbor_candidate) ... ok
+test_c4_only_declared_preserving_operator_is_invariant (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_c4_only_declared_preserving_operator_is_invariant) ... ok
+test_certificate_wrong_pair_or_dependent_rejected (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_certificate_wrong_pair_or_dependent_rejected) ... ok
+test_injected_certificate_cannot_confirm_actual_output (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_injected_certificate_cannot_confirm_actual_output) ... ok
+test_injected_oracle_failures_excluded_from_model_results (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_injected_oracle_failures_excluded_from_model_results) ... ok
+test_invalid_validation_with_no_after_graph_does_not_crash (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_invalid_validation_with_no_after_graph_does_not_crash) ... ok
+test_limited_source_scope_alarm_remains_candidate (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_limited_source_scope_alarm_remains_candidate) ... ok
+test_pixel_or_reader_binding_mismatch_is_invalid (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_pixel_or_reader_binding_mismatch_is_invalid) ... ok
+test_unknown_extra_key_not_automatically_hallucination (research.evidence_contract.tests.test_runner_oracle.OracleTests.test_unknown_extra_key_not_automatically_hallucination) ... ok
+test_ambiguous_previous_call_blocks_automatic_retry (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_ambiguous_previous_call_blocks_automatic_retry) ... ok
+test_cache_key_freezes_all_inference_inputs (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_cache_key_freezes_all_inference_inputs) ... ok
+test_corrupt_cache_preserved_no_extra_call (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_corrupt_cache_preserved_no_extra_call) ... ERROR
+test_failed_call_requires_explicit_retry_and_keeps_failure (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_failed_call_requires_explicit_retry_and_keeps_failure) ... ERROR
+test_forbidden_roles_and_personal_unknown_policy_block_before_loading (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_forbidden_roles_and_personal_unknown_policy_block_before_loading) ... ok
+test_input_tamper_blocked_before_loading (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_input_tamper_blocked_before_loading) ... ok
+test_log_tamper_or_truncation_detected (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_log_tamper_or_truncation_detected) ... ok
+test_missing_replay_does_not_load_model (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_missing_replay_does_not_load_model) ... ok
+test_model_malformed_json_is_cached_not_rerun (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_model_malformed_json_is_cached_not_rerun) ... ERROR
+test_resume_no_inference_no_model_load_and_replay_unchanged_log (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_resume_no_inference_no_model_load_and_replay_unchanged_log) ... ERROR
+test_two_runners_same_key_invoke_once (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_two_runners_same_key_invoke_once) ... ERROR
+test_write_once_cannot_replace_prior_artifact (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_write_once_cannot_replace_prior_artifact) ... ERROR
+
+======================================================================
+ERROR: test_corrupt_cache_preserved_no_extra_call (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_corrupt_cache_preserved_no_extra_call)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 132, in test_corrupt_cache_preserved_no_extra_call
+    runner.infer(self.request)
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 242, in infer
+    write_once(path, dict(payload=payload, payload_sha256=payload_sha))
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 104, in write_once
+    os.link(temp, path)  # Fails if destination exists, unlike replace().
+    ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp2vveunuq\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json.e0457b6beea445b3a67e4b32301663b8.tmp' -> 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp2vveunuq\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json'
+
+======================================================================
+ERROR: test_failed_call_requires_explicit_retry_and_keeps_failure (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_failed_call_requires_explicit_retry_and_keeps_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 194, in test_failed_call_requires_explicit_retry_and_keeps_failure
+    self.runner().infer(self.request, retry_failed=True)
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 242, in infer
+    write_once(path, dict(payload=payload, payload_sha256=payload_sha))
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 104, in write_once
+    os.link(temp, path)  # Fails if destination exists, unlike replace().
+    ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmpicujmg8x\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json.f388f745c4d346278c2953eb2a6fba56.tmp' -> 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmpicujmg8x\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json'
+
+======================================================================
+ERROR: test_model_malformed_json_is_cached_not_rerun (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_model_malformed_json_is_cached_not_rerun)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 147, in test_model_malformed_json_is_cached_not_rerun
+    a = runner.infer(self.request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 242, in infer
+    write_once(path, dict(payload=payload, payload_sha256=payload_sha))
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 104, in write_once
+    os.link(temp, path)  # Fails if destination exists, unlike replace().
+    ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp6toep6r0\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json.02a2ab9c25fb44ccab4e525471d01902.tmp' -> 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp6toep6r0\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json'
+
+======================================================================
+ERROR: test_resume_no_inference_no_model_load_and_replay_unchanged_log (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_resume_no_inference_no_model_load_and_replay_unchanged_log)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 104, in test_resume_no_inference_no_model_load_and_replay_unchanged_log
+    a = runner.infer(self.request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 242, in infer
+    write_once(path, dict(payload=payload, payload_sha256=payload_sha))
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 104, in write_once
+    os.link(temp, path)  # Fails if destination exists, unlike replace().
+    ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp401gp7dq\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json.fd93595773da446c97f96d7b51c09e4c.tmp' -> 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp401gp7dq\\store\\raw\\f92f1eca58e0d11e41610c0c2db934e87cf70769aa30f8c0a402ff0f886e9ada.json'
+
+======================================================================
+ERROR: test_two_runners_same_key_invoke_once (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_two_runners_same_key_invoke_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 172, in test_two_runners_same_key_invoke_once
+    values = list(executor.map(work, range(2)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Environment_Code\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Environment_Code\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Environment_Code\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Environment_Code\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Environment_Code\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 170, in work
+    return runner.infer(self.request).call_id
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 211, in infer
+    raise RuntimeError("Previous failed/ambiguous inference; explicit retry and audit required")
+RuntimeError: Previous failed/ambiguous inference; explicit retry and audit required
+
+======================================================================
+ERROR: test_write_once_cannot_replace_prior_artifact (research.evidence_contract.tests.test_runner_oracle.RunnerTests.test_write_once_cannot_replace_prior_artifact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\tests\test_runner_oracle.py", line 209, in test_write_once_cannot_replace_prior_artifact
+    write_once(target, dict(a=1))
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\runner.py", line 104, in write_once
+    os.link(temp, path)  # Fails if destination exists, unlike replace().
+    ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp7s1zg9ca\\artifact.json.7a531708a0a449f5952a371b4a768103.tmp' -> 'C:\\Users\\Truong\\AppData\\Local\\Packages\\sandbox.{6543f81f-e532-4072-967c-525870e31308}\\AC\\Temp\\tmp7s1zg9ca\\artifact.json'
+
+----------------------------------------------------------------------
+Ran 38 tests in 6.193s
+
+FAILED (errors=6)

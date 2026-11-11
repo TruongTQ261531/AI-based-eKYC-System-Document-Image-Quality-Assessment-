@@ -1,0 +1,1950 @@
+{
+  "case_id": "536da7140b9fe409c47cfdb6f3e8951b228a73f3c745a008a960bb1481cf6419",
+  "contract_id": "C3",
+  "data_policy": "fictional",
+  "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+  "expectations_are_not_validity_proofs": true,
+  "expected_source_state": {
+    "full_name": "REMOVED",
+    "id_number": "SUPPORTED"
+  },
+  "followup_path": "536da7140b9fe409c47cfdb6f3e8951b228a73f3c745a008a960bb1481cf6419/followup.png",
+  "graph_sha256": "4b57c8119c401980999d59c5ab85d2e8b8be347bca508567a738cef16186167c",
+  "human_readability_inferred_from_geometry": false,
+  "input_pixel_sha256": "6ff36c28d3d229025f6e24b907da95cbc71a40daf3e28220446e09d4b10c9ca5",
+  "input_sha256": "be9a857066f6479d839a67bc70f21c340f5b3fc38496928084a148161a660805",
+  "mask_geometry": [
+    [
+      [
+        257.0,
+        291.0
+      ],
+      [
+        553.0,
+        291.0
+      ],
+      [
+        553.0,
+        336.0
+      ],
+      [
+        257.0,
+        336.0
+      ]
+    ]
+  ],
+  "observed_source_state": {
+    "address": "SUPPORTED",
+    "dob": "SUPPORTED",
+    "full_name": "REMOVED",
+    "gender": "SUPPORTED",
+    "id_number": "SUPPORTED"
+  },
+  "original_input_sha256": "c2ef74b5be7a90dcfd1a811cc950cece2c18db972c5656d59c786db5c524affc",
+  "original_path": "536da7140b9fe409c47cfdb6f3e8951b228a73f3c745a008a960bb1481cf6419/original.png",
+  "original_pixel_sha256": "a181e8f6c924fae6bd338dcf83a73c2ad434dfb9c8326b6a0c0630a36fbc7c16",
+  "parent_file_sha256": null,
+  "physical_id": "ocr-labels-v1-fictional-000",
+  "role": "development",
+  "schema_version": "evidence-pairs/1",
+  "seed": 42,
+  "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+  "transformation": {
+    "contract_id": "C3",
+    "expected_source_state": [
+      [
+        "full_name",
+        "REMOVED"
+      ],
+      [
+        "id_number",
+        "SUPPORTED"
+      ]
+    ],
+    "fill": [
+      35,
+      38,
+      42
+    ],
+    "hidden_source_ids": [
+      "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1"
+    ],
+    "homography": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "kind": "pair_b_mask",
+    "mask_geometry": [
+      [
+        [
+          257.0,
+          291.0
+        ],
+        [
+          553.0,
+          291.0
+        ],
+        [
+          553.0,
+          336.0
+        ],
+        [
+          257.0,
+          336.0
+        ]
+      ]
+    ],
+    "operator": "mask",
+    "output_size": [
+      1200,
+      800
+    ],
+    "retained_key": "id_number",
+    "seed": 42,
+    "target_key": "full_name"
+  },
+  "validation": {
+    "after_graph": {
+      "data_policy": "fictional",
+      "document_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "fields": [
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "gender",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      268.0,
+                      190.0
+                    ],
+                    [
+                      341.0,
+                      190.0
+                    ],
+                    [
+                      341.0,
+                      215.0
+                    ],
+                    [
+                      268.0,
+                      215.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        268.0,
+                        190.0
+                      ],
+                      [
+                        288.0,
+                        190.0
+                      ],
+                      [
+                        288.0,
+                        215.0
+                      ],
+                      [
+                        268.0,
+                        215.0
+                      ]
+                    ],
+                    [
+                      [
+                        291.0,
+                        190.0
+                      ],
+                      [
+                        313.0,
+                        190.0
+                      ],
+                      [
+                        313.0,
+                        215.0
+                      ],
+                      [
+                        291.0,
+                        215.0
+                      ]
+                    ],
+                    [
+                      [
+                        316.0,
+                        190.0
+                      ],
+                      [
+                        341.0,
+                        190.0
+                      ],
+                      [
+                        341.0,
+                        215.0
+                      ],
+                      [
+                        316.0,
+                        215.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      143.0
+                    ],
+                    [
+                      362.0,
+                      143.0
+                    ],
+                    [
+                      362.0,
+                      161.0
+                    ],
+                    [
+                      265.0,
+                      161.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        143.0
+                      ],
+                      [
+                        362.0,
+                        143.0
+                      ],
+                      [
+                        362.0,
+                        161.0
+                      ],
+                      [
+                        265.0,
+                        161.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "NAM",
+              "semantic_key": "gender",
+              "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "NAM",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "full_name",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "removed",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      294.0
+                    ],
+                    [
+                      545.0,
+                      294.0
+                    ],
+                    [
+                      545.0,
+                      333.0
+                    ],
+                    [
+                      265.0,
+                      333.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        302.0
+                      ],
+                      [
+                        284.0,
+                        302.0
+                      ],
+                      [
+                        284.0,
+                        327.0
+                      ],
+                      [
+                        265.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        286.0,
+                        294.0
+                      ],
+                      [
+                        309.0,
+                        294.0
+                      ],
+                      [
+                        309.0,
+                        327.0
+                      ],
+                      [
+                        286.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        323.0,
+                        302.0
+                      ],
+                      [
+                        343.0,
+                        302.0
+                      ],
+                      [
+                        343.0,
+                        327.0
+                      ],
+                      [
+                        323.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        348.0,
+                        302.0
+                      ],
+                      [
+                        369.0,
+                        302.0
+                      ],
+                      [
+                        369.0,
+                        327.0
+                      ],
+                      [
+                        348.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        373.0,
+                        302.0
+                      ],
+                      [
+                        396.0,
+                        302.0
+                      ],
+                      [
+                        396.0,
+                        333.0
+                      ],
+                      [
+                        373.0,
+                        333.0
+                      ]
+                    ],
+                    [
+                      [
+                        400.0,
+                        302.0
+                      ],
+                      [
+                        419.0,
+                        302.0
+                      ],
+                      [
+                        419.0,
+                        327.0
+                      ],
+                      [
+                        400.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        431.0,
+                        302.0
+                      ],
+                      [
+                        449.0,
+                        302.0
+                      ],
+                      [
+                        449.0,
+                        327.0
+                      ],
+                      [
+                        431.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        452.0,
+                        302.0
+                      ],
+                      [
+                        471.0,
+                        302.0
+                      ],
+                      [
+                        471.0,
+                        327.0
+                      ],
+                      [
+                        452.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        474.0,
+                        302.0
+                      ],
+                      [
+                        496.0,
+                        302.0
+                      ],
+                      [
+                        496.0,
+                        327.0
+                      ],
+                      [
+                        474.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        499.0,
+                        302.0
+                      ],
+                      [
+                        519.0,
+                        302.0
+                      ],
+                      [
+                        519.0,
+                        327.0
+                      ],
+                      [
+                        499.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        524.0,
+                        302.0
+                      ],
+                      [
+                        545.0,
+                        302.0
+                      ],
+                      [
+                        545.0,
+                        327.0
+                      ],
+                      [
+                        524.0,
+                        327.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      255.0
+                    ],
+                    [
+                      374.0,
+                      255.0
+                    ],
+                    [
+                      374.0,
+                      277.0
+                    ],
+                    [
+                      265.0,
+                      277.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        255.0
+                      ],
+                      [
+                        374.0,
+                        255.0
+                      ],
+                      [
+                        374.0,
+                        277.0
+                      ],
+                      [
+                        265.0,
+                        277.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "TÔ NGỌC KHANG",
+              "semantic_key": "full_name",
+              "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "TÔ NGỌC KHANG",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "id_number",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      268.0,
+                      414.0
+                    ],
+                    [
+                      504.0,
+                      414.0
+                    ],
+                    [
+                      504.0,
+                      439.0
+                    ],
+                    [
+                      268.0,
+                      439.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        268.0,
+                        414.0
+                      ],
+                      [
+                        293.0,
+                        414.0
+                      ],
+                      [
+                        293.0,
+                        439.0
+                      ],
+                      [
+                        268.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        296.0,
+                        414.0
+                      ],
+                      [
+                        315.0,
+                        414.0
+                      ],
+                      [
+                        315.0,
+                        439.0
+                      ],
+                      [
+                        296.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        317.0,
+                        414.0
+                      ],
+                      [
+                        333.0,
+                        414.0
+                      ],
+                      [
+                        333.0,
+                        439.0
+                      ],
+                      [
+                        317.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        335.0,
+                        414.0
+                      ],
+                      [
+                        352.0,
+                        414.0
+                      ],
+                      [
+                        352.0,
+                        439.0
+                      ],
+                      [
+                        335.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        354.0,
+                        414.0
+                      ],
+                      [
+                        371.0,
+                        414.0
+                      ],
+                      [
+                        371.0,
+                        439.0
+                      ],
+                      [
+                        354.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        373.0,
+                        414.0
+                      ],
+                      [
+                        390.0,
+                        414.0
+                      ],
+                      [
+                        390.0,
+                        439.0
+                      ],
+                      [
+                        373.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        392.0,
+                        414.0
+                      ],
+                      [
+                        409.0,
+                        414.0
+                      ],
+                      [
+                        409.0,
+                        439.0
+                      ],
+                      [
+                        392.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        414.0
+                      ],
+                      [
+                        428.0,
+                        414.0
+                      ],
+                      [
+                        428.0,
+                        439.0
+                      ],
+                      [
+                        412.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        430.0,
+                        414.0
+                      ],
+                      [
+                        447.0,
+                        414.0
+                      ],
+                      [
+                        447.0,
+                        439.0
+                      ],
+                      [
+                        430.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        449.0,
+                        414.0
+                      ],
+                      [
+                        466.0,
+                        414.0
+                      ],
+                      [
+                        466.0,
+                        439.0
+                      ],
+                      [
+                        449.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        467.0,
+                        414.0
+                      ],
+                      [
+                        486.0,
+                        414.0
+                      ],
+                      [
+                        486.0,
+                        439.0
+                      ],
+                      [
+                        467.0,
+                        439.0
+                      ]
+                    ],
+                    [
+                      [
+                        487.0,
+                        414.0
+                      ],
+                      [
+                        504.0,
+                        414.0
+                      ],
+                      [
+                        504.0,
+                        439.0
+                      ],
+                      [
+                        487.0,
+                        439.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      367.0
+                    ],
+                    [
+                      377.0,
+                      367.0
+                    ],
+                    [
+                      377.0,
+                      393.0
+                    ],
+                    [
+                      265.0,
+                      393.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        367.0
+                      ],
+                      [
+                        377.0,
+                        367.0
+                      ],
+                      [
+                        377.0,
+                        393.0
+                      ],
+                      [
+                        265.0,
+                        393.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "MT5990256746",
+              "semantic_key": "id_number",
+              "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "MT5990256746",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "dob",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      266.0,
+                      526.0
+                    ],
+                    [
+                      437.0,
+                      526.0
+                    ],
+                    [
+                      437.0,
+                      551.0
+                    ],
+                    [
+                      266.0,
+                      551.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        266.0,
+                        526.0
+                      ],
+                      [
+                        283.0,
+                        526.0
+                      ],
+                      [
+                        283.0,
+                        551.0
+                      ],
+                      [
+                        266.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        285.0,
+                        526.0
+                      ],
+                      [
+                        302.0,
+                        526.0
+                      ],
+                      [
+                        302.0,
+                        551.0
+                      ],
+                      [
+                        285.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        303.0,
+                        526.0
+                      ],
+                      [
+                        316.0,
+                        526.0
+                      ],
+                      [
+                        316.0,
+                        551.0
+                      ],
+                      [
+                        303.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        317.0,
+                        526.0
+                      ],
+                      [
+                        334.0,
+                        526.0
+                      ],
+                      [
+                        334.0,
+                        551.0
+                      ],
+                      [
+                        317.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        336.0,
+                        526.0
+                      ],
+                      [
+                        353.0,
+                        526.0
+                      ],
+                      [
+                        353.0,
+                        551.0
+                      ],
+                      [
+                        336.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        354.0,
+                        526.0
+                      ],
+                      [
+                        367.0,
+                        526.0
+                      ],
+                      [
+                        367.0,
+                        551.0
+                      ],
+                      [
+                        354.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        370.0,
+                        526.0
+                      ],
+                      [
+                        380.0,
+                        526.0
+                      ],
+                      [
+                        380.0,
+                        551.0
+                      ],
+                      [
+                        370.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        387.0,
+                        526.0
+                      ],
+                      [
+                        404.0,
+                        526.0
+                      ],
+                      [
+                        404.0,
+                        551.0
+                      ],
+                      [
+                        387.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        406.0,
+                        526.0
+                      ],
+                      [
+                        423.0,
+                        526.0
+                      ],
+                      [
+                        423.0,
+                        551.0
+                      ],
+                      [
+                        406.0,
+                        551.0
+                      ]
+                    ],
+                    [
+                      [
+                        427.0,
+                        526.0
+                      ],
+                      [
+                        437.0,
+                        526.0
+                      ],
+                      [
+                        437.0,
+                        551.0
+                      ],
+                      [
+                        427.0,
+                        551.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      479.0
+                    ],
+                    [
+                      378.0,
+                      479.0
+                    ],
+                    [
+                      378.0,
+                      503.0
+                    ],
+                    [
+                      265.0,
+                      503.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        479.0
+                      ],
+                      [
+                        378.0,
+                        479.0
+                      ],
+                      [
+                        378.0,
+                        503.0
+                      ],
+                      [
+                        265.0,
+                        503.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "02/06/1981",
+              "semantic_key": "dob",
+              "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3",
+              "value_kind": "date_full"
+            }
+          ],
+          "reference_value": "02/06/1981",
+          "value_kind": "date_full"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "address",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      266.0,
+                      630.0
+                    ],
+                    [
+                      969.0,
+                      630.0
+                    ],
+                    [
+                      969.0,
+                      667.0
+                    ],
+                    [
+                      266.0,
+                      667.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        266.0,
+                        638.0
+                      ],
+                      [
+                        283.0,
+                        638.0
+                      ],
+                      [
+                        283.0,
+                        663.0
+                      ],
+                      [
+                        266.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        287.0,
+                        638.0
+                      ],
+                      [
+                        297.0,
+                        638.0
+                      ],
+                      [
+                        297.0,
+                        663.0
+                      ],
+                      [
+                        287.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        304.0,
+                        638.0
+                      ],
+                      [
+                        321.0,
+                        638.0
+                      ],
+                      [
+                        321.0,
+                        663.0
+                      ],
+                      [
+                        304.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        332.0,
+                        638.0
+                      ],
+                      [
+                        354.0,
+                        638.0
+                      ],
+                      [
+                        354.0,
+                        663.0
+                      ],
+                      [
+                        332.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        359.0,
+                        637.0
+                      ],
+                      [
+                        384.0,
+                        637.0
+                      ],
+                      [
+                        384.0,
+                        663.0
+                      ],
+                      [
+                        359.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        385.0,
+                        630.0
+                      ],
+                      [
+                        411.0,
+                        630.0
+                      ],
+                      [
+                        411.0,
+                        663.0
+                      ],
+                      [
+                        385.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        413.0,
+                        638.0
+                      ],
+                      [
+                        433.0,
+                        638.0
+                      ],
+                      [
+                        433.0,
+                        663.0
+                      ],
+                      [
+                        413.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        438.0,
+                        638.0
+                      ],
+                      [
+                        459.0,
+                        638.0
+                      ],
+                      [
+                        459.0,
+                        663.0
+                      ],
+                      [
+                        438.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        473.0,
+                        638.0
+                      ],
+                      [
+                        498.0,
+                        638.0
+                      ],
+                      [
+                        498.0,
+                        663.0
+                      ],
+                      [
+                        473.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        501.0,
+                        630.0
+                      ],
+                      [
+                        523.0,
+                        630.0
+                      ],
+                      [
+                        523.0,
+                        663.0
+                      ],
+                      [
+                        501.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        523.0,
+                        638.0
+                      ],
+                      [
+                        543.0,
+                        638.0
+                      ],
+                      [
+                        543.0,
+                        663.0
+                      ],
+                      [
+                        523.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        551.0,
+                        638.0
+                      ],
+                      [
+                        570.0,
+                        638.0
+                      ],
+                      [
+                        570.0,
+                        663.0
+                      ],
+                      [
+                        551.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        571.0,
+                        630.0
+                      ],
+                      [
+                        581.0,
+                        630.0
+                      ],
+                      [
+                        581.0,
+                        663.0
+                      ],
+                      [
+                        571.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        585.0,
+                        638.0
+                      ],
+                      [
+                        610.0,
+                        638.0
+                      ],
+                      [
+                        610.0,
+                        663.0
+                      ],
+                      [
+                        585.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        614.0,
+                        659.0
+                      ],
+                      [
+                        620.0,
+                        659.0
+                      ],
+                      [
+                        620.0,
+                        667.0
+                      ],
+                      [
+                        614.0,
+                        667.0
+                      ]
+                    ],
+                    [
+                      [
+                        634.0,
+                        638.0
+                      ],
+                      [
+                        650.0,
+                        638.0
+                      ],
+                      [
+                        650.0,
+                        663.0
+                      ],
+                      [
+                        634.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        655.0,
+                        638.0
+                      ],
+                      [
+                        674.0,
+                        638.0
+                      ],
+                      [
+                        674.0,
+                        663.0
+                      ],
+                      [
+                        655.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        680.0,
+                        637.0
+                      ],
+                      [
+                        705.0,
+                        637.0
+                      ],
+                      [
+                        705.0,
+                        663.0
+                      ],
+                      [
+                        680.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        706.0,
+                        630.0
+                      ],
+                      [
+                        732.0,
+                        630.0
+                      ],
+                      [
+                        732.0,
+                        663.0
+                      ],
+                      [
+                        706.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        734.0,
+                        638.0
+                      ],
+                      [
+                        754.0,
+                        638.0
+                      ],
+                      [
+                        754.0,
+                        663.0
+                      ],
+                      [
+                        734.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        759.0,
+                        638.0
+                      ],
+                      [
+                        780.0,
+                        638.0
+                      ],
+                      [
+                        780.0,
+                        663.0
+                      ],
+                      [
+                        759.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        792.0,
+                        638.0
+                      ],
+                      [
+                        809.0,
+                        638.0
+                      ],
+                      [
+                        809.0,
+                        663.0
+                      ],
+                      [
+                        792.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        812.0,
+                        630.0
+                      ],
+                      [
+                        835.0,
+                        630.0
+                      ],
+                      [
+                        835.0,
+                        663.0
+                      ],
+                      [
+                        812.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        840.0,
+                        638.0
+                      ],
+                      [
+                        860.0,
+                        638.0
+                      ],
+                      [
+                        860.0,
+                        663.0
+                      ],
+                      [
+                        840.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        865.0,
+                        638.0
+                      ],
+                      [
+                        886.0,
+                        638.0
+                      ],
+                      [
+                        886.0,
+                        663.0
+                      ],
+                      [
+                        865.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        898.0,
+                        638.0
+                      ],
+                      [
+                        920.0,
+                        638.0
+                      ],
+                      [
+                        920.0,
+                        663.0
+                      ],
+                      [
+                        898.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        925.0,
+                        630.0
+                      ],
+                      [
+                        939.0,
+                        630.0
+                      ],
+                      [
+                        939.0,
+                        663.0
+                      ],
+                      [
+                        925.0,
+                        663.0
+                      ]
+                    ],
+                    [
+                      [
+                        944.0,
+                        638.0
+                      ],
+                      [
+                        969.0,
+                        638.0
+                      ],
+                      [
+                        969.0,
+                        663.0
+                      ],
+                      [
+                        944.0,
+                        663.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      265.0,
+                      591.0
+                    ],
+                    [
+                      344.0,
+                      591.0
+                    ],
+                    [
+                      344.0,
+                      615.0
+                    ],
+                    [
+                      265.0,
+                      615.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        265.0,
+                        591.0
+                      ],
+                      [
+                        344.0,
+                        591.0
+                      ],
+                      [
+                        344.0,
+                        615.0
+                      ],
+                      [
+                        265.0,
+                        615.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "318 ĐƯỜNG MÂY TÍM, PHƯỜNG SÔNG ĐÊM",
+              "semantic_key": "address",
+              "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "318 ĐƯỜNG MÂY TÍM, PHƯỜNG SÔNG ĐÊM",
+          "value_kind": "text"
+        }
+      ],
+      "height": 800,
+      "input_file_sha256": null,
+      "input_pixel_sha256": "6ff36c28d3d229025f6e24b907da95cbc71a40daf3e28220446e09d4b10c9ca5",
+      "physical_id": "ocr-labels-v1-fictional-000",
+      "role": "development",
+      "schema_version": "evidence-graph/1",
+      "source_id": "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font",
+      "unmapped_fields": [],
+      "width": 1200
+    },
+    "after_pixel_sha256": "6ff36c28d3d229025f6e24b907da95cbc71a40daf3e28220446e09d4b10c9ca5",
+    "before_pixel_sha256": "a181e8f6c924fae6bd338dcf83a73c2ad434dfb9c8326b6a0c0630a36fbc7c16",
+    "graph_sha256": "4b57c8119c401980999d59c5ab85d2e8b8be347bca508567a738cef16186167c",
+    "measurements": {
+      "changed_pixels": 13662,
+      "changes_outside_mask": 0,
+      "components": {
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 1862
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 1924
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 2530
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value": {
+          "actual_changed_pixels": 11240,
+          "mask_covered_pixels": 11240,
+          "pixels": 11240
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 3051
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 6162
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 2850
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 4472
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 2000
+        },
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 26752
+        }
+      },
+      "mask_pixels": 13662
+    },
+    "mutation": {
+      "contract_id": "C3",
+      "expected_source_state": [
+        [
+          "full_name",
+          "REMOVED"
+        ],
+        [
+          "id_number",
+          "SUPPORTED"
+        ]
+      ],
+      "fill": [
+        35,
+        38,
+        42
+      ],
+      "hidden_source_ids": [
+        "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1"
+      ],
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "pair_b_mask",
+      "mask_geometry": [
+        [
+          [
+            257.0,
+            291.0
+          ],
+          [
+            553.0,
+            291.0
+          ],
+          [
+            553.0,
+            336.0
+          ],
+          [
+            257.0,
+            336.0
+          ]
+        ]
+      ],
+      "operator": "mask",
+      "output_size": [
+        1200,
+        800
+      ],
+      "retained_key": "id_number",
+      "seed": 42,
+      "target_key": "full_name"
+    },
+    "mutation_sha256": "e6a18f710526eae79c4630e4649b0078209cc4e543dda8d80d841f2a3d72b7ca",
+    "reasons": [],
+    "reference_before_graph": null,
+    "review_required": [],
+    "status": "VALID"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "attempt": "Chrome headless CLI dump-dom, using a new isolated workspace profile and evidence-only HTML",
+  "status": "FAILED_TO_VERIFY_BROWSER_RENDER",
+  "native_process_status": 2147483651,
+  "shell_exit_code": 1,
+  "progress_visible": false,
+  "image_path_seen_in_dom": false,
+  "stderr_nonempty": false,
+  "human_observations_entered": 0,
+  "model_calls": 0
+}

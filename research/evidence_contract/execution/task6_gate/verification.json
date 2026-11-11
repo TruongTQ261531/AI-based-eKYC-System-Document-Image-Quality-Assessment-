@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED",
+  "gate_file_sha256": "70588d53f79a25acdb060b3c4e9fa8b778e0eb34096e3a323fb599e1b101e3d3",
+  "report_sha256": "c4b35725afe4bc6fd7564e7676ad18b37d1e87a2865c83d1b3e70a99bb868261",
+  "task5_documents_verified": 4,
+  "task5_code_files_verified": 16,
+  "head_and_refs_unchanged": true,
+  "tracked_and_staged_diffs_empty": true,
+  "new_files": [
+    "research/evidence_contract/TASK6_GATE_REVIEW.md",
+    "research/evidence_contract/execution/task6_gate/gate_check.json",
+    "research/evidence_contract/execution/task6_gate/verification.json"
+  ],
+  "new_confirmatory_lock_created": false,
+  "model_calls": 0,
+  "unit_tests_run": 0,
+  "checks": "Verified decision scope, pinned TASK5 hashes, gate/report JSON/UTF-8, git HEAD/refs/diffs; no model or benchmark execution"
+}

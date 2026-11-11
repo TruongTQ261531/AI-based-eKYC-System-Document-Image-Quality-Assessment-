@@ -1,0 +1,10 @@
+{
+  "ci": null,
+  "inter_rater_agreement": null,
+  "model_calls": 0,
+  "phase1_files": 0,
+  "phase2_files": 0,
+  "phase2_packets": 0,
+  "real_metrics": null,
+  "status": "WAITING_FOR_HUMAN_REVIEW"
+}

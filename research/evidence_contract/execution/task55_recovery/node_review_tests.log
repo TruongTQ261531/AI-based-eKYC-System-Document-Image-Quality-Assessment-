@@ -1,0 +1,15 @@
+See run key node_review_tests
+✔ partial draft survives backup export and load without becoming a submitted label (10.4095ms)
+✔ browser storage failure recommends the file fallback (0.7065ms)
+✔ malformed storage never overwrites a bad draft while restoring (2.9607ms)
+✔ visible observation requires per-source states, while unknown language is expressible (0.6242ms)
+✔ wrong image backup is rejected (1.1803ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 65.8296
+Exit: 0

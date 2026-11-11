@@ -1,0 +1,215 @@
+{
+  "case_id": "659aa86fd2fd85d5a78f0d14365711443c3647a355ff764dc2fd96d05111ddef",
+  "contract_id": "C3",
+  "data_policy": "fictional",
+  "document_id": "fixture/shared-semantic-context",
+  "expectations_are_not_validity_proofs": true,
+  "expected_source_state": {
+    "category": "REMOVED",
+    "category_code": "SUPPORTED"
+  },
+  "followup_path": "659aa86fd2fd85d5a78f0d14365711443c3647a355ff764dc2fd96d05111ddef/followup.png",
+  "graph_sha256": "dc500e700d139612bfb713ef80797052f9d60dce31b6f621256c966ff52b85e2",
+  "human_readability_inferred_from_geometry": false,
+  "input_pixel_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+  "input_sha256": "f6d21c4fa08b093e8162674a8f48339ff23b5bcaae671210e0fc195c7ea6402a",
+  "mask_geometry": [
+    [
+      [
+        45.0,
+        100.0
+      ],
+      [
+        211.0,
+        100.0
+      ],
+      [
+        211.0,
+        121.0
+      ],
+      [
+        45.0,
+        121.0
+      ]
+    ]
+  ],
+  "observed_source_state": {},
+  "original_input_sha256": "7231f2c550d8d697d97b06f15a4285817c435cd3dc3195242f1373602efe446c",
+  "original_path": "659aa86fd2fd85d5a78f0d14365711443c3647a355ff764dc2fd96d05111ddef/original.png",
+  "original_pixel_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+  "parent_file_sha256": null,
+  "physical_id": "fixture/shared-semantic-context",
+  "role": "fixture",
+  "schema_version": "evidence-pairs/1",
+  "seed": 42,
+  "source_id": "fixture/shared-semantic-context/render",
+  "transformation": {
+    "contract_id": "C3",
+    "expected_source_state": [
+      [
+        "category",
+        "REMOVED"
+      ],
+      [
+        "category_code",
+        "SUPPORTED"
+      ]
+    ],
+    "fill": [
+      35,
+      38,
+      42
+    ],
+    "hidden_source_ids": [
+      "category"
+    ],
+    "homography": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "kind": "pair_a_mask",
+    "mask_geometry": [
+      [
+        [
+          45.0,
+          100.0
+        ],
+        [
+          211.0,
+          100.0
+        ],
+        [
+          211.0,
+          121.0
+        ],
+        [
+          45.0,
+          121.0
+        ]
+      ]
+    ],
+    "operator": "mask",
+    "output_size": [
+      1000,
+      560
+    ],
+    "retained_key": "category_code",
+    "seed": 42,
+    "target_key": "category"
+  },
+  "validation": {
+    "after_graph": null,
+    "after_pixel_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+    "before_pixel_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+    "graph_sha256": "dc500e700d139612bfb713ef80797052f9d60dce31b6f621256c966ff52b85e2",
+    "measurements": {
+      "changed_pixels": 3674,
+      "changes_outside_mask": 0,
+      "components": {
+        "category/value": {
+          "actual_changed_pixels": 2480,
+          "mask_covered_pixels": 2480,
+          "pixels": 2480
+        },
+        "code/context": {
+          "actual_changed_pixels": 2480,
+          "mask_covered_pixels": 2480,
+          "pixels": 2480
+        },
+        "code/value": {
+          "actual_changed_pixels": 0,
+          "mask_covered_pixels": 0,
+          "pixels": 1856
+        }
+      },
+      "mask_pixels": 3674
+    },
+    "mutation": {
+      "contract_id": "C3",
+      "expected_source_state": [
+        [
+          "category",
+          "REMOVED"
+        ],
+        [
+          "category_code",
+          "SUPPORTED"
+        ]
+      ],
+      "fill": [
+        35,
+        38,
+        42
+      ],
+      "hidden_source_ids": [
+        "category"
+      ],
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "pair_a_mask",
+      "mask_geometry": [
+        [
+          [
+            45.0,
+            100.0
+          ],
+          [
+            211.0,
+            100.0
+          ],
+          [
+            211.0,
+            121.0
+          ],
+          [
+            45.0,
+            121.0
+          ]
+        ]
+      ],
+      "operator": "mask",
+      "output_size": [
+        1000,
+        560
+      ],
+      "retained_key": "category_code",
+      "seed": 42,
+      "target_key": "category"
+    },
+    "mutation_sha256": "b9f4817c145d7e1b4fc4d3de72239269a21f210a4903aabecbf21eeab89e4bae",
+    "reasons": [
+      "collateral_source_or_context_change:code/context"
+    ],
+    "reference_before_graph": null,
+    "review_required": [],
+    "status": "INVALID_TEST"
+  }
+}

@@ -1,0 +1,2 @@
+{"primary": {"n": 120, "verdict_matches": 78, "left_alarms": 17, "right_alarms": 58, "left_only": 0, "right_only": 41}, "discordance_by_contract": {"C4": 22, "C3": 20}, "discordance_reasons": {"original_already_wrong_or_unverified_not_a_regression": 42}, "model_calls": 0}
+Exit: 0

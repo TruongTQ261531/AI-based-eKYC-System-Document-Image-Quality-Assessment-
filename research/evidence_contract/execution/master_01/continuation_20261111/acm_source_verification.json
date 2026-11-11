@@ -1,0 +1,10 @@
+{
+  "anonymous_source_scan": "PASS",
+  "brace_and_environment_checks": "PASS",
+  "citation_keys_verified": 6,
+  "compilation_status": "BLOCKED_NO_EXISTING_TEX_COMPILER",
+  "compiler": null,
+  "pdf_compiled": false,
+  "source_sha256": "e83f49853cb99321f6ec93a0ba32da819e44c8c532e593b5263f50f546253103",
+  "status": "SOURCE_CHECKS_PASS"
+}

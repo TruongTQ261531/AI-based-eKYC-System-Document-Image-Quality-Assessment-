@@ -1,0 +1,26 @@
+{
+  "documents": [
+    {
+      "file": "CONTRACT_SPEC.md",
+      "utf8_intact": true,
+      "broken_links": [],
+      "links_checked": 10
+    },
+    {
+      "file": "GENERATOR_AUDIT.md",
+      "utf8_intact": true,
+      "broken_links": [],
+      "links_checked": 30
+    }
+  ],
+  "python_modules_parsed": 8,
+  "pilot_ledger_complete": true,
+  "source_pixels_unchanged": true,
+  "execution_code_unchanged": true,
+  "artifact_mismatches": 0,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "confirmatory_inputs": 0,
+  "snapshot_mismatches": 0,
+  "final_pilot_comparison_mismatches": 0
+}

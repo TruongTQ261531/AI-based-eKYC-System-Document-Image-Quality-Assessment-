@@ -1,0 +1,17 @@
+{
+  "before_snapshot_count": 2816,
+  "branch": "main",
+  "checked_model_assets": 23,
+  "client_date": "2026-11-11",
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "model_calls": 0,
+  "preserved_history_checked": 2746,
+  "prior_delivery_sha256": "b2f38716ef7db8dcd7d2672a68c1f2a3248ce4220e4421a037b69dfeaf7181f7",
+  "prior_delivery_verified": true,
+  "reviews": {
+    "phase1_files": 0,
+    "phase2_files": 0,
+    "phase2_packets": 0
+  },
+  "valid_cache": 93
+}

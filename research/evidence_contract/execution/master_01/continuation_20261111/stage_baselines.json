@@ -1,0 +1,215 @@
+{
+  "crop_site_ground_truth": "M2, from the predeclared supplied-corner intervention",
+  "degraded_explanation_agreement": 4,
+  "degraded_fields": 4,
+  "explanation_agreement": 24,
+  "field_comparisons": 24,
+  "graph_intervention_hits": {
+    "denominator": 3,
+    "numerator": 3,
+    "value": 1.0
+  },
+  "human_ground_truth_used": false,
+  "model_calls": 0,
+  "natural_fault_localization_accuracy": null,
+  "rows": [
+    {
+      "cluster": "fixture_1",
+      "contrast": "raw_vs_rectified",
+      "field": "id_number",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_1",
+      "contrast": "raw_vs_rectified",
+      "field": "school",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_1",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "id_number",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_1",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "school",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "raw_vs_rectified",
+      "field": "address",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "raw_vs_rectified",
+      "field": "dob",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "raw_vs_rectified",
+      "field": "full_name",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "raw_vs_rectified",
+      "field": "gender",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "raw_vs_rectified",
+      "field": "id_number",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "address",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "dob",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "full_name",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "gender",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": true
+    },
+    {
+      "cluster": "fixture_2",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "id_number",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "raw_vs_rectified",
+      "field": "course",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "raw_vs_rectified",
+      "field": "dob",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "raw_vs_rectified",
+      "field": "full_name",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "raw_vs_rectified",
+      "field": "school",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "raw_vs_rectified",
+      "field": "student_id",
+      "flat_explanation": "undetermined_or_no_new_error",
+      "graph_explanation": "undetermined_or_no_new_error",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "course",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": true
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "dob",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": true
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "full_name",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "school",
+      "flat_explanation": "source_retained_error_stage_unresolved",
+      "graph_explanation": "source_retained_error_stage_unresolved",
+      "pointwise_regression": false
+    },
+    {
+      "cluster": "fixture_3",
+      "contrast": "rectified_vs_bad_crop",
+      "field": "student_id",
+      "flat_explanation": "geometry_loss_at_M2",
+      "graph_explanation": "geometry_loss_at_M2",
+      "pointwise_regression": true
+    }
+  ],
+  "scope": "same saved development traces and source metadata",
+  "stage_diff_intervention_hits": {
+    "denominator": 3,
+    "numerator": 3,
+    "value": 1.0
+  }
+}

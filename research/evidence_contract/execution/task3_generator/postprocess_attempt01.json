@@ -1,0 +1,9 @@
+{
+  "stage": "descriptive distance audit",
+  "status": "failed",
+  "exception": "TypeError: 'NoneType' object is not subscriptable",
+  "cause": "INVALID_TEST reports can intentionally have after_graph=None; auxiliary script assumed a graph",
+  "repair": "Use the matching immutable original/full-control graph, keep invalid cases in the audit",
+  "recorded_after_error_utc": "2026-11-05T19:41:53.206463+00:00",
+  "main_tests_or_pilot_failed": false
+}

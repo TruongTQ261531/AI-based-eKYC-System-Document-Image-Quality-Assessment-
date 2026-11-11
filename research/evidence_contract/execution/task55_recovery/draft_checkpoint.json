@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "backup": "research/evidence_contract/local/task55_recovery_before/review.py",
+      "sha256": "53c018fd27ee52452cabbd2f196d05937eb73e37d047726ff5320dd41bd5ea3e",
+      "source": "research/evidence_contract/task55/review.py"
+    },
+    {
+      "backup": "research/evidence_contract/local/task55_recovery_before/review_core.js",
+      "sha256": "3b0bf29dce05368b7f4bf524cd096a24dbab5a1c523804663dfbc681e1afecd1",
+      "source": "research/evidence_contract/task55/review_core.js"
+    },
+    {
+      "backup": "research/evidence_contract/local/task55_recovery_before/review_ui.js",
+      "sha256": "69d510868a7564a5808cb7e475646a922e2ef9ee7489c5bc1f5143a1135bd3fd",
+      "source": "research/evidence_contract/task55/review_ui.js"
+    },
+    {
+      "backup": "research/evidence_contract/local/task55_recovery_before/review_template.html",
+      "sha256": "745ccdd50289ea7a8e67862ba1820cd6800d35cd0d2f81eeeb87c2df80fdc6e7",
+      "source": "research/evidence_contract/task55/review_template.html"
+    }
+  ],
+  "scope": "Interrupted IFV draft files before completion"
+}

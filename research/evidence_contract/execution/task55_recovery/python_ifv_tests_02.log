@@ -1,0 +1,4 @@
+workspace venv python -B -m pytest -q -p no:cacheprovider --basetemp=research/evidence_contract/local/task55_pytest_02 research/evidence_contract/tests/test_task55_ifv.py
+...............                                                          [100%]
+15 passed in 1.01s
+Exit: 0

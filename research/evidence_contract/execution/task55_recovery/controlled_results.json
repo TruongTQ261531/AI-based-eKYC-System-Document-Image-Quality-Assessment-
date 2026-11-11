@@ -1,0 +1,1475 @@
+{
+  "actual_reader_calls": 0,
+  "cases": [
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "ca4e2cc88689571b65075e42448624125201ce3d02be49934e9a47ffffa25a71",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C2",
+      "control_id": "C2_correct_mrz_only",
+      "expected_behavior": "NO_FAULT: retained MRZ supports the correct value",
+      "expected_verdicts": {
+        "A": "PASS",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "B2": "CANDIDATE_VIOLATION",
+        "B3": "PASS"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "PASS",
+        "A_flat": "PASS",
+        "A_no_NI": "PASS",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "A_no_validator": "PASS",
+        "B0": "PASS",
+        "B2": "CANDIDATE_VIOLATION",
+        "B3": "PASS",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "PASS"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "duplicated_body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "mrz": {
+          "filled": false,
+          "ink_pixels": 210,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C2",
+        "expected_source_state": [
+          [
+            "id_number",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "single_source_mask",
+        "mask_geometry": [
+          [
+            [
+              41.0,
+              120.0
+            ],
+            [
+              166.0,
+              120.0
+            ],
+            [
+              166.0,
+              141.0
+            ],
+            [
+              41.0,
+              141.0
+            ]
+          ],
+          [
+            [
+              626.0,
+              120.0
+            ],
+            [
+              751.0,
+              120.0
+            ],
+            [
+              751.0,
+              141.0
+            ],
+            [
+              626.0,
+              141.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C1",
+      "control_id": "C1_assert_after_total_erasure",
+      "expected_behavior": "FAULT_ACTIVATED: known unsupported assertion within the fixture",
+      "expected_verdicts": {
+        "A": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_flat": "CANDIDATE_VIOLATION",
+        "A_no_NI": "CANDIDATE_VIOLATION",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "A_no_validator": "CANDIDATE_VIOLATION",
+        "B0": "PASS",
+        "B2": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION",
+        "B3_V3": "CANDIDATE_VIOLATION",
+        "B3_V3_gate": "CANDIDATE_VIOLATION"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "duplicated_body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "mrz": {
+          "filled": true,
+          "ink_pixels": 210,
+          "region_unchanged": false
+        }
+      },
+      "transform": {
+        "contract_id": "C1",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "all_sources_mask",
+        "mask_geometry": [
+          [
+            [
+              41.0,
+              120.0
+            ],
+            [
+              166.0,
+              120.0
+            ],
+            [
+              166.0,
+              141.0
+            ],
+            [
+              41.0,
+              141.0
+            ]
+          ],
+          [
+            [
+              626.0,
+              120.0
+            ],
+            [
+              751.0,
+              120.0
+            ],
+            [
+              751.0,
+              141.0
+            ],
+            [
+              626.0,
+              141.0
+            ]
+          ],
+          [
+            [
+              41.0,
+              425.0
+            ],
+            [
+              139.0,
+              425.0
+            ],
+            [
+              139.0,
+              444.0
+            ],
+            [
+              41.0,
+              444.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "after_pixel_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C1",
+      "control_id": "C1_clean_refusal",
+      "expected_behavior": "NO_FAULT: target absent and correctly left blank",
+      "expected_verdicts": {
+        "A": "PASS",
+        "B3": "PASS"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "PASS",
+        "A_flat": "PASS",
+        "A_no_NI": "PASS",
+        "A_no_alternative": "PASS",
+        "A_no_validator": "PASS",
+        "B0": "CANDIDATE_VIOLATION",
+        "B2": "PASS",
+        "B3": "PASS",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "PASS"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "duplicated_body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "mrz": {
+          "filled": true,
+          "ink_pixels": 210,
+          "region_unchanged": false
+        }
+      },
+      "transform": {
+        "contract_id": "C1",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "all_sources_mask",
+        "mask_geometry": [
+          [
+            [
+              41.0,
+              120.0
+            ],
+            [
+              166.0,
+              120.0
+            ],
+            [
+              166.0,
+              141.0
+            ],
+            [
+              41.0,
+              141.0
+            ]
+          ],
+          [
+            [
+              626.0,
+              120.0
+            ],
+            [
+              751.0,
+              120.0
+            ],
+            [
+              751.0,
+              141.0
+            ],
+            [
+              626.0,
+              141.0
+            ]
+          ],
+          [
+            [
+              41.0,
+              425.0
+            ],
+            [
+              139.0,
+              425.0
+            ],
+            [
+              139.0,
+              444.0
+            ],
+            [
+              41.0,
+              444.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "d848b0987e14f377dd8bfbdff6fa29f38789a4ada4965591da31f146919171a8",
+      "after_pixel_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C3",
+      "control_id": "C3_neighbor_regresses",
+      "expected_behavior": "FAULT_ACTIVATED: B correct before, corrupted after while its source/context are retained",
+      "expected_verdicts": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_no_NI": "INCONCLUSIVE",
+        "B3": "CANDIDATE_VIOLATION"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_flat": "CANDIDATE_VIOLATION",
+        "A_no_NI": "INCONCLUSIVE",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "A_no_validator": "CANDIDATE_VIOLATION",
+        "B0": "CANDIDATE_VIOLATION",
+        "B2": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION",
+        "B3_V3": "CANDIDATE_VIOLATION",
+        "B3_V3_gate": "CANDIDATE_VIOLATION"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "semantic_context": {
+          "filled": false,
+          "ink_pixels": 125,
+          "region_unchanged": true
+        },
+        "value": {
+          "filled": false,
+          "ink_pixels": 767,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C3",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ],
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "pair_a_mask",
+        "mask_geometry": [
+          [
+            [
+              42.0,
+              121.0
+            ],
+            [
+              165.0,
+              121.0
+            ],
+            [
+              165.0,
+              140.0
+            ],
+            [
+              42.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              627.0,
+              121.0
+            ],
+            [
+              750.0,
+              121.0
+            ],
+            [
+              750.0,
+              140.0
+            ],
+            [
+              627.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              42.0,
+              426.0
+            ],
+            [
+              138.0,
+              426.0
+            ],
+            [
+              138.0,
+              443.0
+            ],
+            [
+              42.0,
+              443.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "school",
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "d848b0987e14f377dd8bfbdff6fa29f38789a4ada4965591da31f146919171a8",
+      "after_pixel_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "before_injected_sha256": "d848b0987e14f377dd8bfbdff6fa29f38789a4ada4965591da31f146919171a8",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C3",
+      "control_id": "C3_neighbor_wrong_already",
+      "expected_behavior": "Existing pointwise error; new pair regression is unestablished",
+      "expected_verdicts": {
+        "A": "INCONCLUSIVE",
+        "B3": "CANDIDATE_VIOLATION"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "INCONCLUSIVE",
+        "A_flat": "INCONCLUSIVE",
+        "A_no_NI": "INCONCLUSIVE",
+        "A_no_alternative": "INCONCLUSIVE",
+        "A_no_validator": "INCONCLUSIVE",
+        "B0": "CANDIDATE_VIOLATION",
+        "B2": "PASS",
+        "B3": "CANDIDATE_VIOLATION",
+        "B3_V3": "CANDIDATE_VIOLATION",
+        "B3_V3_gate": "CANDIDATE_VIOLATION"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "semantic_context": {
+          "filled": false,
+          "ink_pixels": 125,
+          "region_unchanged": true
+        },
+        "value": {
+          "filled": false,
+          "ink_pixels": 767,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C3",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ],
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "pair_a_mask",
+        "mask_geometry": [
+          [
+            [
+              42.0,
+              121.0
+            ],
+            [
+              165.0,
+              121.0
+            ],
+            [
+              165.0,
+              140.0
+            ],
+            [
+              42.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              627.0,
+              121.0
+            ],
+            [
+              750.0,
+              121.0
+            ],
+            [
+              750.0,
+              140.0
+            ],
+            [
+              627.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              42.0,
+              426.0
+            ],
+            [
+              138.0,
+              426.0
+            ],
+            [
+              138.0,
+              443.0
+            ],
+            [
+              42.0,
+              443.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "school",
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "d848b0987e14f377dd8bfbdff6fa29f38789a4ada4965591da31f146919171a8",
+      "after_pixel_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C3",
+      "control_id": "C3_shared_matcher_forced_correct",
+      "expected_behavior": "FAULT_ACTIVATED: shared matcher masks a known wrong injected value",
+      "expected_verdicts": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_no_NI": "INCONCLUSIVE",
+        "B3": "CANDIDATE_VIOLATION"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "in_memory_oracle_dependency_mutation",
+      "mutant_expected_verdicts": {
+        "A": "PASS",
+        "B3": "PASS"
+      },
+      "mutation": "replace contracts.assessment with constant correct",
+      "mutation_status": "FAULT_ACTIVATED",
+      "observed": {
+        "A": "PASS",
+        "B3": "PASS"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "semantic_context": {
+          "filled": false,
+          "ink_pixels": 125,
+          "region_unchanged": true
+        },
+        "value": {
+          "filled": false,
+          "ink_pixels": 767,
+          "region_unchanged": true
+        }
+      },
+      "stage": "testing_oracle",
+      "transform": {
+        "contract_id": "C3",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ],
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "pair_a_mask",
+        "mask_geometry": [
+          [
+            [
+              42.0,
+              121.0
+            ],
+            [
+              165.0,
+              121.0
+            ],
+            [
+              165.0,
+              140.0
+            ],
+            [
+              42.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              627.0,
+              121.0
+            ],
+            [
+              750.0,
+              121.0
+            ],
+            [
+              750.0,
+              140.0
+            ],
+            [
+              627.0,
+              140.0
+            ]
+          ],
+          [
+            [
+              42.0,
+              426.0
+            ],
+            [
+              138.0,
+              426.0
+            ],
+            [
+              138.0,
+              443.0
+            ],
+            [
+              42.0,
+              443.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "school",
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C4",
+      "control_id": "C4_translation_unchanged",
+      "expected_behavior": "NO_FAULT: exact translation and correct output",
+      "expected_verdicts": {
+        "A": "PASS",
+        "B3": "PASS"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "PASS",
+        "A_flat": "PASS",
+        "A_no_NI": "PASS",
+        "A_no_alternative": "PASS",
+        "A_no_validator": "PASS",
+        "B0": "PASS",
+        "B2": "PASS",
+        "B3": "PASS",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "PASS"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "dx": 7,
+        "dy": 14,
+        "full_inverse_translation_byte_match": true
+      },
+      "transform": {
+        "contract_id": "C4",
+        "expected_source_state": [
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            7
+          ],
+          [
+            0.0,
+            1.0,
+            14
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "geometry_translate",
+        "mask_geometry": [],
+        "operator": "translate_pad",
+        "output_size": [
+          1014,
+          588
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "school"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "d848b0987e14f377dd8bfbdff6fa29f38789a4ada4965591da31f146919171a8",
+      "after_pixel_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C4",
+      "control_id": "C4_translation_value_corruption",
+      "expected_behavior": "FAULT_ACTIVATED: exact translation but injected field corruption",
+      "expected_verdicts": {
+        "A": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "output_control",
+      "observed": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_flat": "CANDIDATE_VIOLATION",
+        "A_no_NI": "CANDIDATE_VIOLATION",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "A_no_validator": "CANDIDATE_VIOLATION",
+        "B0": "CANDIDATE_VIOLATION",
+        "B2": "CANDIDATE_VIOLATION",
+        "B3": "CANDIDATE_VIOLATION",
+        "B3_V3": "CANDIDATE_VIOLATION",
+        "B3_V3_gate": "CANDIDATE_VIOLATION"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "dx": 7,
+        "dy": 14,
+        "full_inverse_translation_byte_match": true
+      },
+      "transform": {
+        "contract_id": "C4",
+        "expected_source_state": [
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            7
+          ],
+          [
+            0.0,
+            1.0,
+            14
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "geometry_translate",
+        "mask_geometry": [],
+        "operator": "translate_pad",
+        "output_size": [
+          1014,
+          588
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "school"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "3c97276a9600a183b3c2851f3b4313521af5f95c6424441762a3b821be51b26e",
+      "after_pixel_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+      "before_injected_sha256": "3c97276a9600a183b3c2851f3b4313521af5f95c6424441762a3b821be51b26e",
+      "before_pixel_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+      "contract": "C3",
+      "control_id": "shared_context_loss",
+      "expected_behavior": "INVALID_TEST: authored diagnostic",
+      "expected_verdicts": {
+        "A": "INVALID_TEST",
+        "B3": "INVALID_TEST",
+        "B3_V3_gate": "INVALID_TEST"
+      },
+      "graph_sha256": "dc500e700d139612bfb713ef80797052f9d60dce31b6f621256c966ff52b85e2",
+      "kind": "mutation_validity_control",
+      "observed": {
+        "A": "INVALID_TEST",
+        "A_flat": "INVALID_TEST",
+        "A_no_NI": "INCONCLUSIVE",
+        "A_no_alternative": "INVALID_TEST",
+        "A_no_validator": "PASS",
+        "B0": "INVALID_TEST",
+        "B2": "INVALID_TEST",
+        "B3": "INVALID_TEST",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "INVALID_TEST"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "semantic_context": {
+          "filled": true,
+          "ink_pixels": 606,
+          "region_unchanged": false
+        },
+        "value": {
+          "filled": false,
+          "ink_pixels": 445,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C3",
+        "expected_source_state": [
+          [
+            "category",
+            "REMOVED"
+          ],
+          [
+            "category_code",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "category"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "pair_a_mask",
+        "mask_geometry": [
+          [
+            [
+              45.0,
+              100.0
+            ],
+            [
+              211.0,
+              100.0
+            ],
+            [
+              211.0,
+              121.0
+            ],
+            [
+              45.0,
+              121.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "category_code",
+        "seed": 42,
+        "target_key": "category"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "5941b506b2a930f35c3a8b1318114ebbadd508fc2ca953ef2f215e948a67ce45",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C1",
+      "control_id": "limited_source_universe",
+      "expected_behavior": "INCONCLUSIVE: authored diagnostic",
+      "expected_verdicts": {
+        "A": "CANDIDATE_VIOLATION",
+        "B3": "INCONCLUSIVE",
+        "B3_V3_gate": "INCONCLUSIVE"
+      },
+      "graph_sha256": "849c737fab8d9e531e376a02fb37d8c43ea59b7efbe62e9cf545237bb4464536",
+      "independent_contract_eligibility": "INCONCLUSIVE",
+      "intended_review": "Backup ink remains outside declared scope. Candidate is not verified absence.",
+      "kind": "mutation_validity_control",
+      "observed": {
+        "A": "CANDIDATE_VIOLATION",
+        "A_flat": "INCONCLUSIVE",
+        "A_no_NI": "CANDIDATE_VIOLATION",
+        "A_no_alternative": "CANDIDATE_VIOLATION",
+        "A_no_validator": "INCONCLUSIVE",
+        "B0": "INCONCLUSIVE",
+        "B2": "INCONCLUSIVE",
+        "B3": "INCONCLUSIVE",
+        "B3_V3": "CANDIDATE_VIOLATION",
+        "B3_V3_gate": "INCONCLUSIVE"
+      },
+      "oracle_candidate_on_unknown": true,
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "duplicated_body": {
+          "filled": false,
+          "ink_pixels": 496,
+          "region_unchanged": true
+        },
+        "mrz": {
+          "filled": false,
+          "ink_pixels": 210,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C1",
+        "expected_source_state": [
+          [
+            "id_number",
+            "UNKNOWN"
+          ],
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "all_sources_mask",
+        "mask_geometry": [
+          [
+            [
+              41.0,
+              120.0
+            ],
+            [
+              166.0,
+              120.0
+            ],
+            [
+              166.0,
+              141.0
+            ],
+            [
+              41.0,
+              141.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "school",
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "ba534db467c99cc98b7fb18f5dd792373e4f8a786fe201ed368722e2e5e395aa",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "5b0f2f3b752f6d0fbc683ed23327d4af9824de0e932b910233f015fe897284da",
+      "contract": "C2",
+      "control_id": "invalid_mrz_backup",
+      "expected_behavior": "INCONCLUSIVE: authored diagnostic",
+      "expected_verdicts": {
+        "A": "INCONCLUSIVE",
+        "B3": "INCONCLUSIVE",
+        "B3_V3_gate": "INCONCLUSIVE"
+      },
+      "graph_sha256": "b0c75755d728928f15406b1f4591c2b4b0c27a7571ec52082994b1bfb974d36f",
+      "kind": "mutation_validity_control",
+      "observed": {
+        "A": "INCONCLUSIVE",
+        "A_flat": "INCONCLUSIVE",
+        "A_no_NI": "INCONCLUSIVE",
+        "A_no_alternative": "INCONCLUSIVE",
+        "A_no_validator": "INCONCLUSIVE",
+        "B0": "INCONCLUSIVE",
+        "B2": "INCONCLUSIVE",
+        "B3": "INCONCLUSIVE",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "INCONCLUSIVE"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {},
+      "transform": {
+        "contract_id": "C2",
+        "expected_source_state": [
+          [
+            "id_number",
+            "SUPPORTED"
+          ],
+          [
+            "school",
+            "SUPPORTED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "single_source_mask",
+        "mask_geometry": [
+          [
+            [
+              42.0,
+              121.0
+            ],
+            [
+              165.0,
+              121.0
+            ],
+            [
+              165.0,
+              140.0
+            ],
+            [
+              42.0,
+              140.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": "school",
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    },
+    {
+      "after_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "after_pixel_sha256": "5941b506b2a930f35c3a8b1318114ebbadd508fc2ca953ef2f215e948a67ce45",
+      "before_injected_sha256": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "before_pixel_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "contract": "C1",
+      "control_id": "incomplete_target_erasure",
+      "expected_behavior": "INVALID_TEST: authored diagnostic",
+      "expected_verdicts": {
+        "A": "INVALID_TEST",
+        "A_no_validator": "CANDIDATE_VIOLATION",
+        "B3": "INVALID_TEST",
+        "B3_V3_gate": "INVALID_TEST"
+      },
+      "graph_sha256": "031c497161fbfea25cefbcc236fb7af5177ead316d9519745ca1a3b202d7ddb7",
+      "kind": "mutation_validity_control",
+      "observed": {
+        "A": "INVALID_TEST",
+        "A_flat": "INVALID_TEST",
+        "A_no_NI": "INVALID_TEST",
+        "A_no_alternative": "INVALID_TEST",
+        "A_no_validator": "CANDIDATE_VIOLATION",
+        "B0": "INVALID_TEST",
+        "B2": "INVALID_TEST",
+        "B3": "INVALID_TEST",
+        "B3_V3": "PASS",
+        "B3_V3_gate": "INVALID_TEST"
+      },
+      "oracle_truth_basis": "developer-authored expectation and fixture pixels",
+      "output_origin": "oracle_unit_injected",
+      "probes": {
+        "body": {
+          "filled": true,
+          "ink_pixels": 496,
+          "region_unchanged": false
+        },
+        "duplicated_body": {
+          "filled": false,
+          "ink_pixels": 496,
+          "region_unchanged": true
+        },
+        "mrz": {
+          "filled": false,
+          "ink_pixels": 210,
+          "region_unchanged": true
+        }
+      },
+      "transform": {
+        "contract_id": "C1",
+        "expected_source_state": [
+          [
+            "id_number",
+            "REMOVED"
+          ]
+        ],
+        "fill": [
+          35,
+          38,
+          42
+        ],
+        "hidden_source_ids": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "homography": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "kind": "all_sources_mask",
+        "mask_geometry": [
+          [
+            [
+              41.0,
+              120.0
+            ],
+            [
+              166.0,
+              120.0
+            ],
+            [
+              166.0,
+              141.0
+            ],
+            [
+              41.0,
+              141.0
+            ]
+          ]
+        ],
+        "operator": "mask",
+        "output_size": [
+          1000,
+          560
+        ],
+        "retained_key": null,
+        "seed": 42,
+        "target_key": "id_number"
+      },
+      "verified_real_model_fault": false
+    }
+  ],
+  "code_sha256": "b053398fe869d360576d7388d838de6f8865fe29b7d6494b79af51e1dc899a71",
+  "controls": 12,
+  "human_labels_created": 0,
+  "matched_expected": true,
+  "method": "TASK 3/5 fixtures plus bounded checks",
+  "real_model_errors_added": 0
+}

@@ -1,0 +1,167 @@
+% Internal development draft. Confirmatory tables remain pending.
+% Authors verify AI-assisted content and complete the applicable disclosure.
+\documentclass[sigconf,review,anonymous]{acmart}
+\acmConference[EASE 2027]{The 31st International Conference on Evaluation and Assessment in Software Engineering}{15--18 June, 2027}{Hanoi, Vietnam}
+\acmYear{2027}
+\copyrightyear{2027}
+\title{Source-Aware Evidence-Contract Testing for AI-Based Document Verification Pipelines}
+\author{Anonymous Author(s)}
+
+\begin{document}
+\begin{abstract}
+Document verification pipelines transform captured images before extracting structured fields. A value may remain supported after one occurrence is occluded, while a crop may remove the only source for another field. These situations complicate software test oracles that compare final values. We study evidence contracts that track source availability, apply tests subject to explicit preconditions, and distinguish field errors from transformation-related changes. In a development panel, a flat checker with the same eligibility rules reproduced all primary contract verdicts. Controlled faults and a bounded crop intervention illustrate how evidence records distinguish source loss from retained-source errors. Independent fault validation and confirmatory comparisons are pending. The planned study tests whether contracts provide a reliability or triage benefit over strong baselines given the same evidence.
+\end{abstract}
+\keywords{Software testing, document pipelines, metamorphic testing, test oracles, evidence contracts}
+\maketitle
+
+\section{Introduction}
+Document extraction crosses several software interfaces. Image quality and rectification affect what reaches a reader. Recognition produces text, and parsing maps it to semantic fields. A changed final field can reflect source loss, a reading error on retained text, schema handling, or an error already present on the original input.
+
+We investigate when explicit source preconditions improve the reliability of a test decision. The unit under test is an image-to-fields pipeline. Current development inputs are fictional specimens with authored references. The measured interface concerns extraction. Identity matching and liveness remain outside the experiment.
+
+\section{Motivation}
+An identifier can occur in printed body text, a repeated region, and a machine-readable zone (MRZ). Hiding one occurrence leaves the field answerable when another valid realization remains. Conversely, a crop can remove every valid realization. Continuing to assert the value then requires evidence absent from the input.
+
+An unchanged word image can lose the label that identifies its semantic key. Pixel preservation alone can therefore be insufficient for a metamorphic relation. A follow-up field error also requires careful interpretation when the original output was already wrong. We retain pointwise and relational endpoints to make this distinction explicit.
+
+\section{Related Work}
+GenMorph generates metamorphic relations using objectives for false alarms and missed faults, followed by filtering~\cite{ayerdi2024genmorph}. Its results motivate explicit oracle controls. Data fault injection frameworks already study ML responses to corrupted input~\cite{nurminen2019faultinjection}.
+
+LMDX grounds extracted values in document locations~\cite{perot2024lmdx}. OCRBench v2 covers text localization, parsing, and reasoning~\cite{fu2025ocrbenchv2}. VeriOCRBench evaluates whether OCR-grounded tasks are executable and measures over-refusal~\cite{zhou2026veriocrbench}. We cite the latter as a preprint. Our comparative endpoint is the reliability of an external pipeline test oracle supplied with the same evidence as its baselines.
+
+\section{Research Gap}
+The open question is which oracle components provide useful decisions after a simple baseline receives the same source information. Collecting source metadata, checking transformation validity, conditioning a relation, and representing evidence as a graph can each change a conclusion. Their effects should be distinguished empirically.
+
+If a flat checker with the same validity and eligibility rules reproduces a contract oracle, a comparative claim needs evidence of improved coverage, verified fault discovery, diagnostic accuracy, or cost.
+
+\section{Method}
+Each semantic field has alternative source realizations combined with OR. Required value and context components within a realization are combined with AND. Each component records geometry, availability, and provenance. MRZ support includes applicable format, checksum, precision, and field-linkage conditions. Inventory coverage is recorded separately from the visibility of listed sources.
+
+\begin{figure*}[t]
+\centering
+\fbox{\begin{minipage}{0.94\textwidth}
+\centering
+Authored specimen and source inventory\\[3pt]
+$\downarrow$\\[3pt]
+Transformation and precondition validation\\[5pt]
+\begin{tabular}{c@{\qquad}c}
+Pixel-only geometry and reader pipeline & Blind evidence observation\\
+$\downarrow$ & $\downarrow$\\
+Raw and normalized output & Sealed observation snapshot\\
+$\downarrow$ & $\downarrow$\\
+Contract oracle and matched baselines & Anonymized output verification
+\end{tabular}\\[5pt]
+$\downarrow$\\[3pt]
+Paired metrics, uncertainty, and score replay
+\end{minipage}}
+\caption{Evaluation interfaces. Inference receives image pixels. Evidence observations are sealed before the reviewer sees predictions. References and method verdicts remain in the evaluation interface.}
+\Description{Two evaluation paths start from a transformed specimen. One runs the pipeline and test oracles. The other seals human evidence observations before anonymized output review. They meet in paired statistical evaluation.}
+\label{fig:method}
+\end{figure*}
+
+\begin{table}[t]
+\centering
+\caption{Evidence contracts and eligibility conditions.}
+\label{tab:contracts}
+\footnotesize
+\begin{tabular}{@{}p{0.06\columnwidth}p{0.38\columnwidth}p{0.47\columnwidth}@{}}
+\toprule
+ & Preconditions & Endpoint\\
+\midrule
+C1 & Sufficient scope and every valid source removed & Unsupported assertion or appropriate refusal\\
+C2 & Main source removed, valid alternative retained & Correct value, mismatch, or omission\\
+C3 & Neighbor value and context retained, original correct & Follow-up error on the neighbor\\
+C4 & Valid evidence-preserving operator, original correct & Follow-up error under geometry\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The oracle records invalid tests, inconclusive results, and candidate alerts under incomplete scope separately. Reviewers first record availability, readability, source locations, and observed transcriptions while predictions and author answers are hidden. After sealing those observations, they assess anonymized outputs and explain test validity and field errors. Both alert and non-alert comparisons are included.
+
+\section{Research Questions}
+\begin{description}
+\item[RQ1.] Do contracts reduce false alarms against evidence-matched frozen oracles while retaining sensitivity and decision coverage?
+\item[RQ2.] Do contracts detect additional verified transformation-specific regressions over generic per-field checks on the same execution set?
+\item[RQ3.] Does source-conditioned test generation discover more verified fault families than validity-filtered random selection under matched budgets?
+\end{description}
+
+An exploratory extension evaluates whether stage interventions distinguish geometry loss from downstream extraction errors. A stronger localization claim needs independent fault provenance and equally informative baselines.
+
+\section{Experimental Design}
+\subsection{Subjects and data}
+Development subjects include frozen CPU OCR and VLM readers. The historical primary panel has 120 scheduled contract--field--reader evaluations from three fictional document IDs. Views and fields from one ID are dependent. The complete blind packet has 31 images and 86 field slots. Up to 46 comparisons are selected for output review, including alerts, non-alerts, and diagnostics.
+
+Confirmatory specimens require verified separation of physical ID, full authored content, image bytes, decoded pixels, and lineage. Historical pixel metadata has gaps, and public-model pretraining exposure is unknown. New camera data and confirmatory specimens remain pending.
+
+\subsection{Baselines}
+B0 compares complete field references. B1 selects from the same validity-filtered pool. B2 applies source-agnostic relations. B3 compares follow-up values with the available sources. Gated legacy V3 and a flat conditional checker receive the same evidence as A.
+
+The stage pilot compares aggregate field F1, per-field raw/rectified changes, stage hashes, and flat source availability. Its known crop intervention changes supplied corners in Module 2. It tests a declared boundary intervention, with one reader, rather than natural bug provenance.
+
+\subsection{Metrics and inference}
+We report precision, sensitivity, false-alarm rate, decision coverage, and rates of invalid and inconclusive tests with explicit denominators. Zero denominators return unavailable estimates. Positive gold cases without an oracle alarm contribute false negatives.
+
+The draft plan uses paired cluster resampling at physical-ID or fault-family level, depending on the research question. Each method must have sufficient contributing clusters for a paired interval. Holm adjustment preserves the primary comparison family~\cite{holm1979sequential}. Coverage and sensitivity guards accompany a false-alarm claim. The selected development review supports descriptive subset estimates. Adjudicated labels and a locked confirmatory design remain pending.
+
+\section{Results}
+\subsection{Development observations}
+All 42 A/B3 verdict differences arise from the original-correctness prerequisite of C3/C4. They do not assign independent false-alarm labels.
+
+\begin{table}[t]
+\centering
+\caption{Development comparison on 120 scheduled evaluations.}
+\label{tab:pilot}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Observation & Count\\
+\midrule
+A/B3 matching verdicts & 78/120\\
+A/flat matching verdicts & 120/120\\
+A alerts & 17\\
+B3 alerts & 58\\
+A alerts outside B3 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Fourteen constructed controls contain seven activated observable faults, including five structured-field faults. A and B3 detect those same five field faults. Separate schema and attribution checks detect the remaining interface faults. They are controlled cases with construction evidence.
+
+The stage pilot has three IDs and four views per ID. Two outputs use historical cache, and ten are fresh CPU OCR calls. Score replay uses zero new inference and reproduces the saved digest. Correct rectification changes no field correctness relative to raw input. A deliberately bad crop changes four correctly read fields to wrong results. All four lose their declared evidence. The three planned crop targets were already wrong before cropping. Given the same source metadata, flat and graph explanations agree on all 24 field comparisons.
+
+\subsection{Confirmatory results pending}
+\begin{table*}[t]
+\centering
+\caption{Measurements reserved for the locked study.}
+\label{tab:pending}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Claim & Planned evidence & Current state\\
+\midrule
+RQ1 reliability & Paired FAR, sensitivity, coverage, and intervals & Labels and test cohort pending\\
+RQ2 fault discovery & Verified fault-family recall and known-good FAR & Fault provenance pending\\
+RQ3 discovery cost & Discovery curves and review cost & Verified fault yield pending\\
+Exploratory diagnosis & Evidence-loss classification and triage time & Development feasibility only\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Discussion}
+A relation can narrow the type of error reported while adding an eligibility requirement. An original reading error can make the relation inconclusive even when the follow-up contains a pointwise error. Independent labels are needed before interpreting a lower alarm count as a reliability gain.
+
+Stage evidence can explain whether a field difference coincides with a lost source. The flat comparison shows that this explanation is available from the same metadata without requiring graph representation at the decision boundary. Comparative value requires additional evidence about valid-test generation, verified error discovery, or diagnosis cost.
+
+\section{Threats to Validity}
+\textbf{Construct validity.} Geometry establishes construction support. Human legibility, semantic linkage, typed precision, and true absence require additional evidence. Field error labels do not establish software root causes.
+
+\textbf{Internal validity.} Shared matchers and source states can yield shared mistakes. Invalid transformations and incomplete scope can inflate alarm counts. The review records exposure and seals observations before predictions are shown.
+
+\textbf{Conclusion validity.} Development panels have few IDs, correlated views, and pending adjudication. Stage comparisons use one reader. Intervals and p-values require sufficient contributing clusters and an appropriate sampling design.
+
+\textbf{External validity.} Fictional specimens and supplied-corner projections cover a restricted set of layouts and capture conditions. Effects across devices, scripts, automatic localization methods, and model versions remain to be assessed.
+
+\section{Conclusion}
+Evidence contracts make document-test preconditions and the scope of an extraction alarm explicit. Current development results explain verdict differences and demonstrate replay feasibility. The flat baseline accounts for observed primary decisions and stage explanations under information parity. Independent verification and a locked study are needed to assess comparative reliability, discovery yield, and triage value.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}

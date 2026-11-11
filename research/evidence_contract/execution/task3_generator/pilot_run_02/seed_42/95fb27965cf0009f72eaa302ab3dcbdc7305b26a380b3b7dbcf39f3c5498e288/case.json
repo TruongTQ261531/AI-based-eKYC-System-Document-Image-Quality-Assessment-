@@ -1,0 +1,1736 @@
+{
+  "case_id": "95fb27965cf0009f72eaa302ab3dcbdc7305b26a380b3b7dbcf39f3c5498e288",
+  "contract_id": "C4",
+  "data_policy": "fictional",
+  "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+  "expectations_are_not_validity_proofs": true,
+  "expected_source_state": {
+    "full_name": "SUPPORTED"
+  },
+  "followup_path": "95fb27965cf0009f72eaa302ab3dcbdc7305b26a380b3b7dbcf39f3c5498e288/followup.png",
+  "graph_sha256": "6252916f2631cf5586569c5762c740f3b630d499a8cdd9f01b9c61f71d64324e",
+  "human_readability_inferred_from_geometry": false,
+  "input_pixel_sha256": "e1c27e8e8e4942962b09e5000f227b68f5a62dbe3daae7852281cc3596e08540",
+  "input_sha256": "b7b3cd8dce2d289edd3d2430b531b894c7da1f8b38462b0ce6445704d014343b",
+  "mask_geometry": [],
+  "observed_source_state": {
+    "course": "SUPPORTED",
+    "dob": "SUPPORTED",
+    "full_name": "SUPPORTED",
+    "school": "SUPPORTED",
+    "student_id": "SUPPORTED"
+  },
+  "original_input_sha256": "edbae4e58b6fab7ea7afa0f25fe1072222581f0ec1797074a8f986c8d75ac3cc",
+  "original_path": "95fb27965cf0009f72eaa302ab3dcbdc7305b26a380b3b7dbcf39f3c5498e288/original.png",
+  "original_pixel_sha256": "7a63c59b52f7cdb93f9158a27656ba991d1a7936c2b8e9c8dd509abf61d812ec",
+  "parent_file_sha256": null,
+  "physical_id": "ocr-labels-v1-fictional-001",
+  "role": "development",
+  "schema_version": "evidence-pairs/1",
+  "seed": 42,
+  "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+  "transformation": {
+    "contract_id": "C4",
+    "expected_source_state": [
+      [
+        "full_name",
+        "SUPPORTED"
+      ]
+    ],
+    "fill": [
+      35,
+      38,
+      42
+    ],
+    "hidden_source_ids": [],
+    "homography": [
+      [
+        0.0,
+        -1.0,
+        799.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "kind": "geometry_rotate90",
+    "mask_geometry": [],
+    "operator": "rotate90",
+    "output_size": [
+      800,
+      1200
+    ],
+    "retained_key": null,
+    "seed": 42,
+    "target_key": "full_name"
+  },
+  "validation": {
+    "after_graph": {
+      "data_policy": "fictional",
+      "document_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "fields": [
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "dob",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      598.0,
+                      32.0
+                    ],
+                    [
+                      598.0,
+                      201.0
+                    ],
+                    [
+                      567.0,
+                      201.0
+                    ],
+                    [
+                      567.0,
+                      32.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        597.0,
+                        32.0
+                      ],
+                      [
+                        597.0,
+                        47.0
+                      ],
+                      [
+                        572.0,
+                        47.0
+                      ],
+                      [
+                        572.0,
+                        32.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        51.0
+                      ],
+                      [
+                        597.0,
+                        66.0
+                      ],
+                      [
+                        572.0,
+                        66.0
+                      ],
+                      [
+                        572.0,
+                        51.0
+                      ]
+                    ],
+                    [
+                      [
+                        598.0,
+                        68.0
+                      ],
+                      [
+                        598.0,
+                        78.0
+                      ],
+                      [
+                        567.0,
+                        78.0
+                      ],
+                      [
+                        567.0,
+                        68.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        80.0
+                      ],
+                      [
+                        597.0,
+                        95.0
+                      ],
+                      [
+                        572.0,
+                        95.0
+                      ],
+                      [
+                        572.0,
+                        80.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        98.0
+                      ],
+                      [
+                        597.0,
+                        115.0
+                      ],
+                      [
+                        572.0,
+                        115.0
+                      ],
+                      [
+                        572.0,
+                        98.0
+                      ]
+                    ],
+                    [
+                      [
+                        598.0,
+                        116.0
+                      ],
+                      [
+                        598.0,
+                        126.0
+                      ],
+                      [
+                        567.0,
+                        126.0
+                      ],
+                      [
+                        567.0,
+                        116.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        128.0
+                      ],
+                      [
+                        597.0,
+                        143.0
+                      ],
+                      [
+                        572.0,
+                        143.0
+                      ],
+                      [
+                        572.0,
+                        128.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        146.0
+                      ],
+                      [
+                        597.0,
+                        163.0
+                      ],
+                      [
+                        572.0,
+                        163.0
+                      ],
+                      [
+                        572.0,
+                        146.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        165.0
+                      ],
+                      [
+                        597.0,
+                        182.0
+                      ],
+                      [
+                        572.0,
+                        182.0
+                      ],
+                      [
+                        572.0,
+                        165.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        184.0
+                      ],
+                      [
+                        597.0,
+                        201.0
+                      ],
+                      [
+                        572.0,
+                        201.0
+                      ],
+                      [
+                        572.0,
+                        184.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      644.0,
+                      30.0
+                    ],
+                    [
+                      644.0,
+                      143.0
+                    ],
+                    [
+                      620.0,
+                      143.0
+                    ],
+                    [
+                      620.0,
+                      30.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        644.0,
+                        30.0
+                      ],
+                      [
+                        644.0,
+                        143.0
+                      ],
+                      [
+                        620.0,
+                        143.0
+                      ],
+                      [
+                        620.0,
+                        30.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "22/10/2003",
+              "semantic_key": "dob",
+              "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0",
+              "value_kind": "date_full"
+            }
+          ],
+          "reference_value": "22/10/2003",
+          "value_kind": "date_full"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "student_id",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      597.0,
+                      661.0
+                    ],
+                    [
+                      597.0,
+                      912.0
+                    ],
+                    [
+                      572.0,
+                      912.0
+                    ],
+                    [
+                      572.0,
+                      661.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        597.0,
+                        661.0
+                      ],
+                      [
+                        597.0,
+                        691.0
+                      ],
+                      [
+                        572.0,
+                        691.0
+                      ],
+                      [
+                        572.0,
+                        661.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        693.0
+                      ],
+                      [
+                        597.0,
+                        718.0
+                      ],
+                      [
+                        572.0,
+                        718.0
+                      ],
+                      [
+                        572.0,
+                        693.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        720.0
+                      ],
+                      [
+                        597.0,
+                        736.0
+                      ],
+                      [
+                        572.0,
+                        736.0
+                      ],
+                      [
+                        572.0,
+                        720.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        738.0
+                      ],
+                      [
+                        597.0,
+                        761.0
+                      ],
+                      [
+                        572.0,
+                        761.0
+                      ],
+                      [
+                        572.0,
+                        738.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        762.0
+                      ],
+                      [
+                        597.0,
+                        779.0
+                      ],
+                      [
+                        572.0,
+                        779.0
+                      ],
+                      [
+                        572.0,
+                        762.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        781.0
+                      ],
+                      [
+                        597.0,
+                        798.0
+                      ],
+                      [
+                        572.0,
+                        798.0
+                      ],
+                      [
+                        572.0,
+                        781.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        801.0
+                      ],
+                      [
+                        597.0,
+                        817.0
+                      ],
+                      [
+                        572.0,
+                        817.0
+                      ],
+                      [
+                        572.0,
+                        801.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        820.0
+                      ],
+                      [
+                        597.0,
+                        836.0
+                      ],
+                      [
+                        572.0,
+                        836.0
+                      ],
+                      [
+                        572.0,
+                        820.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        838.0
+                      ],
+                      [
+                        597.0,
+                        854.0
+                      ],
+                      [
+                        572.0,
+                        854.0
+                      ],
+                      [
+                        572.0,
+                        838.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        857.0
+                      ],
+                      [
+                        597.0,
+                        874.0
+                      ],
+                      [
+                        572.0,
+                        874.0
+                      ],
+                      [
+                        572.0,
+                        857.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        877.0
+                      ],
+                      [
+                        597.0,
+                        893.0
+                      ],
+                      [
+                        572.0,
+                        893.0
+                      ],
+                      [
+                        572.0,
+                        877.0
+                      ]
+                    ],
+                    [
+                      [
+                        597.0,
+                        896.0
+                      ],
+                      [
+                        597.0,
+                        912.0
+                      ],
+                      [
+                        572.0,
+                        912.0
+                      ],
+                      [
+                        572.0,
+                        896.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      644.0,
+                      660.0
+                    ],
+                    [
+                      644.0,
+                      796.0
+                    ],
+                    [
+                      622.0,
+                      796.0
+                    ],
+                    [
+                      622.0,
+                      660.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        644.0,
+                        660.0
+                      ],
+                      [
+                        644.0,
+                        796.0
+                      ],
+                      [
+                        622.0,
+                        796.0
+                      ],
+                      [
+                        622.0,
+                        660.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "MHSV38775377",
+              "semantic_key": "student_id",
+              "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "MHSV38775377",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "course",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      412.0,
+                      32.0
+                    ],
+                    [
+                      412.0,
+                      192.0
+                    ],
+                    [
+                      387.0,
+                      192.0
+                    ],
+                    [
+                      387.0,
+                      32.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        412.0,
+                        32.0
+                      ],
+                      [
+                        412.0,
+                        47.0
+                      ],
+                      [
+                        387.0,
+                        47.0
+                      ],
+                      [
+                        387.0,
+                        32.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        50.0
+                      ],
+                      [
+                        412.0,
+                        67.0
+                      ],
+                      [
+                        387.0,
+                        67.0
+                      ],
+                      [
+                        387.0,
+                        50.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        70.0
+                      ],
+                      [
+                        412.0,
+                        85.0
+                      ],
+                      [
+                        387.0,
+                        85.0
+                      ],
+                      [
+                        387.0,
+                        70.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        89.0
+                      ],
+                      [
+                        412.0,
+                        104.0
+                      ],
+                      [
+                        387.0,
+                        104.0
+                      ],
+                      [
+                        387.0,
+                        89.0
+                      ]
+                    ],
+                    [
+                      [
+                        398.0,
+                        106.0
+                      ],
+                      [
+                        398.0,
+                        116.0
+                      ],
+                      [
+                        395.0,
+                        116.0
+                      ],
+                      [
+                        395.0,
+                        106.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        119.0
+                      ],
+                      [
+                        412.0,
+                        134.0
+                      ],
+                      [
+                        387.0,
+                        134.0
+                      ],
+                      [
+                        387.0,
+                        119.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        137.0
+                      ],
+                      [
+                        412.0,
+                        154.0
+                      ],
+                      [
+                        387.0,
+                        154.0
+                      ],
+                      [
+                        387.0,
+                        137.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        157.0
+                      ],
+                      [
+                        412.0,
+                        172.0
+                      ],
+                      [
+                        387.0,
+                        172.0
+                      ],
+                      [
+                        387.0,
+                        157.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        176.0
+                      ],
+                      [
+                        412.0,
+                        192.0
+                      ],
+                      [
+                        387.0,
+                        192.0
+                      ],
+                      [
+                        387.0,
+                        176.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      459.0,
+                      30.0
+                    ],
+                    [
+                      459.0,
+                      145.0
+                    ],
+                    [
+                      441.0,
+                      145.0
+                    ],
+                    [
+                      441.0,
+                      30.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        459.0,
+                        30.0
+                      ],
+                      [
+                        459.0,
+                        145.0
+                      ],
+                      [
+                        441.0,
+                        145.0
+                      ],
+                      [
+                        441.0,
+                        30.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "2022-2027",
+              "semantic_key": "course",
+              "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "2022-2027",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "full_name",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      420.0,
+                      770.0
+                    ],
+                    [
+                      420.0,
+                      1001.0
+                    ],
+                    [
+                      381.0,
+                      1001.0
+                    ],
+                    [
+                      381.0,
+                      770.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        412.0,
+                        770.0
+                      ],
+                      [
+                        412.0,
+                        791.0
+                      ],
+                      [
+                        387.0,
+                        791.0
+                      ],
+                      [
+                        387.0,
+                        770.0
+                      ]
+                    ],
+                    [
+                      [
+                        420.0,
+                        792.0
+                      ],
+                      [
+                        420.0,
+                        815.0
+                      ],
+                      [
+                        387.0,
+                        815.0
+                      ],
+                      [
+                        387.0,
+                        792.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        826.0
+                      ],
+                      [
+                        412.0,
+                        850.0
+                      ],
+                      [
+                        387.0,
+                        850.0
+                      ],
+                      [
+                        387.0,
+                        826.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        852.0
+                      ],
+                      [
+                        412.0,
+                        875.0
+                      ],
+                      [
+                        387.0,
+                        875.0
+                      ],
+                      [
+                        387.0,
+                        852.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        876.0
+                      ],
+                      [
+                        412.0,
+                        899.0
+                      ],
+                      [
+                        381.0,
+                        899.0
+                      ],
+                      [
+                        381.0,
+                        876.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        901.0
+                      ],
+                      [
+                        412.0,
+                        920.0
+                      ],
+                      [
+                        387.0,
+                        920.0
+                      ],
+                      [
+                        387.0,
+                        901.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        931.0
+                      ],
+                      [
+                        412.0,
+                        956.0
+                      ],
+                      [
+                        387.0,
+                        956.0
+                      ],
+                      [
+                        387.0,
+                        931.0
+                      ]
+                    ],
+                    [
+                      [
+                        412.0,
+                        957.0
+                      ],
+                      [
+                        412.0,
+                        981.0
+                      ],
+                      [
+                        387.0,
+                        981.0
+                      ],
+                      [
+                        387.0,
+                        957.0
+                      ]
+                    ],
+                    [
+                      [
+                        420.0,
+                        982.0
+                      ],
+                      [
+                        420.0,
+                        1001.0
+                      ],
+                      [
+                        381.0,
+                        1001.0
+                      ],
+                      [
+                        381.0,
+                        982.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      459.0,
+                      770.0
+                    ],
+                    [
+                      459.0,
+                      879.0
+                    ],
+                    [
+                      437.0,
+                      879.0
+                    ],
+                    [
+                      437.0,
+                      770.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        459.0,
+                        770.0
+                      ],
+                      [
+                        459.0,
+                        879.0
+                      ],
+                      [
+                        437.0,
+                        879.0
+                      ],
+                      [
+                        437.0,
+                        770.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "TÔ NGỌC HUỆ",
+              "semantic_key": "full_name",
+              "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "TÔ NGỌC HUỆ",
+          "value_kind": "text"
+        },
+        {
+          "coverage": "complete",
+          "coverage_provenance": "labels_synth.render full; existing development spec; in-memory only",
+          "key": "school",
+          "optional": true,
+          "realizations": [
+            {
+              "checksum_required": null,
+              "components": [
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/value",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      109.0,
+                      30.0
+                    ],
+                    [
+                      109.0,
+                      538.0
+                    ],
+                    [
+                      72.0,
+                      538.0
+                    ],
+                    [
+                      72.0,
+                      30.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        97.0,
+                        30.0
+                      ],
+                      [
+                        97.0,
+                        51.0
+                      ],
+                      [
+                        72.0,
+                        51.0
+                      ],
+                      [
+                        72.0,
+                        30.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        52.0
+                      ],
+                      [
+                        97.0,
+                        74.0
+                      ],
+                      [
+                        72.0,
+                        74.0
+                      ],
+                      [
+                        72.0,
+                        52.0
+                      ]
+                    ],
+                    [
+                      [
+                        98.0,
+                        73.0
+                      ],
+                      [
+                        98.0,
+                        100.0
+                      ],
+                      [
+                        72.0,
+                        100.0
+                      ],
+                      [
+                        72.0,
+                        73.0
+                      ]
+                    ],
+                    [
+                      [
+                        105.0,
+                        100.0
+                      ],
+                      [
+                        105.0,
+                        126.0
+                      ],
+                      [
+                        72.0,
+                        126.0
+                      ],
+                      [
+                        72.0,
+                        100.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        126.0
+                      ],
+                      [
+                        97.0,
+                        150.0
+                      ],
+                      [
+                        72.0,
+                        150.0
+                      ],
+                      [
+                        72.0,
+                        126.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        152.0
+                      ],
+                      [
+                        97.0,
+                        175.0
+                      ],
+                      [
+                        72.0,
+                        175.0
+                      ],
+                      [
+                        72.0,
+                        152.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        185.0
+                      ],
+                      [
+                        97.0,
+                        215.0
+                      ],
+                      [
+                        72.0,
+                        215.0
+                      ],
+                      [
+                        72.0,
+                        185.0
+                      ]
+                    ],
+                    [
+                      [
+                        109.0,
+                        216.0
+                      ],
+                      [
+                        109.0,
+                        240.0
+                      ],
+                      [
+                        72.0,
+                        240.0
+                      ],
+                      [
+                        72.0,
+                        216.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        240.0
+                      ],
+                      [
+                        97.0,
+                        264.0
+                      ],
+                      [
+                        72.0,
+                        264.0
+                      ],
+                      [
+                        72.0,
+                        240.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        274.0
+                      ],
+                      [
+                        97.0,
+                        299.0
+                      ],
+                      [
+                        72.0,
+                        299.0
+                      ],
+                      [
+                        72.0,
+                        274.0
+                      ]
+                    ],
+                    [
+                      [
+                        98.0,
+                        300.0
+                      ],
+                      [
+                        98.0,
+                        327.0
+                      ],
+                      [
+                        72.0,
+                        327.0
+                      ],
+                      [
+                        72.0,
+                        300.0
+                      ]
+                    ],
+                    [
+                      [
+                        105.0,
+                        327.0
+                      ],
+                      [
+                        105.0,
+                        353.0
+                      ],
+                      [
+                        72.0,
+                        353.0
+                      ],
+                      [
+                        72.0,
+                        327.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        353.0
+                      ],
+                      [
+                        97.0,
+                        377.0
+                      ],
+                      [
+                        72.0,
+                        377.0
+                      ],
+                      [
+                        72.0,
+                        353.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        379.0
+                      ],
+                      [
+                        97.0,
+                        402.0
+                      ],
+                      [
+                        72.0,
+                        402.0
+                      ],
+                      [
+                        72.0,
+                        379.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        412.0
+                      ],
+                      [
+                        97.0,
+                        434.0
+                      ],
+                      [
+                        72.0,
+                        434.0
+                      ],
+                      [
+                        72.0,
+                        412.0
+                      ]
+                    ],
+                    [
+                      [
+                        98.0,
+                        436.0
+                      ],
+                      [
+                        98.0,
+                        463.0
+                      ],
+                      [
+                        72.0,
+                        463.0
+                      ],
+                      [
+                        72.0,
+                        436.0
+                      ]
+                    ],
+                    [
+                      [
+                        98.0,
+                        463.0
+                      ],
+                      [
+                        98.0,
+                        489.0
+                      ],
+                      [
+                        72.0,
+                        489.0
+                      ],
+                      [
+                        72.0,
+                        463.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        489.0
+                      ],
+                      [
+                        97.0,
+                        513.0
+                      ],
+                      [
+                        72.0,
+                        513.0
+                      ],
+                      [
+                        72.0,
+                        489.0
+                      ]
+                    ],
+                    [
+                      [
+                        97.0,
+                        515.0
+                      ],
+                      [
+                        97.0,
+                        538.0
+                      ],
+                      [
+                        72.0,
+                        538.0
+                      ],
+                      [
+                        72.0,
+                        515.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "value"
+                },
+                {
+                  "availability": "available",
+                  "component_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/label",
+                  "evidence_basis": "construction_exact",
+                  "geometry": [
+                    [
+                      144.0,
+                      30.0
+                    ],
+                    [
+                      144.0,
+                      162.0
+                    ],
+                    [
+                      120.0,
+                      162.0
+                    ],
+                    [
+                      120.0,
+                      30.0
+                    ]
+                  ],
+                  "glyphs": [
+                    [
+                      [
+                        144.0,
+                        30.0
+                      ],
+                      [
+                        144.0,
+                        162.0
+                      ],
+                      [
+                        120.0,
+                        162.0
+                      ],
+                      [
+                        120.0,
+                        30.0
+                      ]
+                    ]
+                  ],
+                  "provenance": "labels_synth.render full; existing development spec; in-memory only",
+                  "readability": "unassessed",
+                  "required": true,
+                  "reviewer_ids": [],
+                  "role": "semantic_context"
+                }
+              ],
+              "conditions": [
+                {
+                  "name": "semantic_link",
+                  "provenance": "explicit renderer/author semantic key",
+                  "satisfied": true
+                }
+              ],
+              "kind": "body",
+              "provenance": "labels_synth.render full; existing development spec; in-memory only",
+              "reference_value": "TRƯỜNG MẪU HƯỚNG DƯƠNG",
+              "semantic_key": "school",
+              "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4",
+              "value_kind": "text"
+            }
+          ],
+          "reference_value": "TRƯỜNG MẪU HƯỚNG DƯƠNG",
+          "value_kind": "text"
+        }
+      ],
+      "height": 1200,
+      "input_file_sha256": null,
+      "input_pixel_sha256": "e1c27e8e8e4942962b09e5000f227b68f5a62dbe3daae7852281cc3596e08540",
+      "physical_id": "ocr-labels-v1-fictional-001",
+      "role": "development",
+      "schema_version": "evidence-graph/1",
+      "source_id": "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font",
+      "unmapped_fields": [],
+      "width": 800
+    },
+    "after_pixel_sha256": "e1c27e8e8e4942962b09e5000f227b68f5a62dbe3daae7852281cc3596e08540",
+    "before_pixel_sha256": "7a63c59b52f7cdb93f9158a27656ba991d1a7936c2b8e9c8dd509abf61d812ec",
+    "graph_sha256": "6252916f2631cf5586569c5762c740f3b630d499a8cdd9f01b9c61f71d64324e",
+    "measurements": {
+      "exact_pixel_correspondence": true
+    },
+    "mutation": {
+      "contract_id": "C4",
+      "expected_source_state": [
+        [
+          "full_name",
+          "SUPPORTED"
+        ]
+      ],
+      "fill": [
+        35,
+        38,
+        42
+      ],
+      "hidden_source_ids": [],
+      "homography": [
+        [
+          0.0,
+          -1.0,
+          799.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "kind": "geometry_rotate90",
+      "mask_geometry": [],
+      "operator": "rotate90",
+      "output_size": [
+        800,
+        1200
+      ],
+      "retained_key": null,
+      "seed": 42,
+      "target_key": "full_name"
+    },
+    "mutation_sha256": "be8748de19505231a62b260f45fd33e27694d3f1fb7039823649d2bf3b4ac0a8",
+    "reasons": [],
+    "reference_before_graph": null,
+    "review_required": [],
+    "status": "VALID"
+  }
+}

@@ -1,0 +1,3 @@
+See run key controls_run_02
+{"controls": 12, "matched_expected": true, "method": "TASK 3/5 fixtures plus bounded checks", "actual_reader_calls": 0, "real_model_errors_added": 0, "human_labels_created": 0, "code_sha256": "b053398fe869d360576d7388d838de6f8865fe29b7d6494b79af51e1dc899a71"}
+Exit: 0

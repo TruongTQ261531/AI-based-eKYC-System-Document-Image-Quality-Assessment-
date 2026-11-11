@@ -1,0 +1,23 @@
+{
+  "confirmatory_executable": false,
+  "exposure_audit_sha256": "cbbf8318754aa1a5fe5c8c37976393989b1913d69217b6666d7001e34e71126f",
+  "exposure_index_sha256": "cba9aa71231ee619872eb5d84c21f389d6f530c5aa7da872392fd71ec983e7ab",
+  "manifest_check": null,
+  "model_calls": 0,
+  "proposal_sha256": "948a9a6a73da19fde8583a2d6aa2cfe4a188cac3e94179063d68952efa8d8bb4",
+  "review": {
+    "phase1_files": 0,
+    "phase2_files": 0,
+    "phase2_packets": 0
+  },
+  "schema_check": "PASS",
+  "status": "BLOCKED",
+  "unmet": [
+    "new_go_decision",
+    "claims_and_endpoints_approved",
+    "independent_fault_references",
+    "verified_reviewer_provenance",
+    "specimen_manifest",
+    "dataset_and_code_hashes"
+  ]
+}

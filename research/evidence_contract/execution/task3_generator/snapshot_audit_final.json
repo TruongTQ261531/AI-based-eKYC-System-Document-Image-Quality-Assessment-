@@ -1,0 +1,19 @@
+{
+  "runs": [
+    {
+      "run": "pilot_run_01",
+      "files": 10,
+      "mismatches": []
+    },
+    {
+      "run": "pilot_run_02",
+      "files": 10,
+      "mismatches": []
+    },
+    {
+      "run": "pilot_run_03",
+      "files": 10,
+      "mismatches": []
+    }
+  ]
+}

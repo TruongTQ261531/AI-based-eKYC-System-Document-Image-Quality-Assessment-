@@ -1,0 +1,7 @@
+{
+  "previous": "pilot_run_02",
+  "current": "pilot_run_03",
+  "pairs": 168,
+  "mismatches": [],
+  "note": "Different code revisions; repeated fixture executions are not independent model experiments"
+}

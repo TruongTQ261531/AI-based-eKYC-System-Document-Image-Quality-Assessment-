@@ -1,0 +1,16 @@
+✔ phase 1 wires save, JSON export, and reload with image provenance in an offline fixture (18.9204ms)
+✔ partial draft survives backup export and load without becoming a submitted label (1.1616ms)
+✔ browser storage failure recommends the file fallback (0.4801ms)
+✔ malformed storage never overwrites a bad draft while restoring (4.8541ms)
+✔ visible observation requires per-source states, while unknown language is expressible (1.6645ms)
+✔ wrong image backup is rejected (1.7704ms)
+✔ output review locks conditions before displaying predictions and requires notes for errors (6.5852ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 104.5333
+Exit: 0

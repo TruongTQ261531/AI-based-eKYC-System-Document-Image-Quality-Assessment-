@@ -1,0 +1,57 @@
+{
+  "observed_utc": "2026-11-05T15:48:09.305139+00:00",
+  "timezone": "Asia/Bangkok",
+  "python": "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+  "python_version": "3.11.4",
+  "sys_prefix": "D:\\laptrinhcuatao\\Ekyc\\.venv",
+  "packages": {
+    "pytest": "9.1.1",
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "opencv-python-headless": "5.0.0.93",
+    "Pillow": "13.0.0",
+    "fastapi": "0.162.0",
+    "starlette": "1.9.0",
+    "httpx": "0.28.1"
+  },
+  "overlay_packages": {
+    "accelerate": "1.2.1",
+    "peft": "0.14.0",
+    "psutil": "6.1.1",
+    "safetensors": "0.5.3",
+    "torch": "2.7.1+cu126",
+    "transformers": "4.46.3"
+  },
+  "node": "v24.22.1",
+  "live_human_review_counts": {
+    "events": 81,
+    "self_declared_reviewer_codes": 1,
+    "single_review_field_assessments": 269,
+    "single_review_images": 35,
+    "pilot_review_images": 35,
+    "single_review_blinded_field_assessments": 65,
+    "independently_verified_field_labels": 0,
+    "sample_issues": {
+      "active_flagged_images": 0,
+      "pilot_flagged_images": 0,
+      "categories": {},
+      "images_deleted": 0,
+      "benchmark_cases_removed": 0
+    },
+    "automatic_ocr_predictions_count_as_humans": false
+  },
+  "model_instances_loaded_by_task0": 0,
+  "package_installs": 0,
+  "new_virtual_environments": 0,
+  "official_sources": [
+    {
+      "url": "https://conf.researchr.org/track/ease-2027/ease-2027-papers",
+      "accessed_local_date": "2026-11-05"
+    },
+    {
+      "url": "https://conf.researchr.org/home/ease-2027",
+      "accessed_local_date": "2026-11-05"
+    }
+  ],
+  "probe_note": "Initial opencv-python metadata lookup failed. Existing opencv-python-headless identified and tests passed; no installation performed."
+}

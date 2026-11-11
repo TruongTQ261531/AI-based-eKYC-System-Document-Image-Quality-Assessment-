@@ -1,0 +1,153 @@
+{
+  "draws": 4000,
+  "includes_coverage_or_recall_guard": false,
+  "rows": [
+    {
+      "P_A_only_alarm": 0.06,
+      "P_B_only_alarm": 0.09,
+      "assumed_far_delta": -0.03,
+      "clusters": 24,
+      "monte_carlo_standard_error": 0.0002499687480466308,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 1,
+        "value": 0.00025
+      }
+    },
+    {
+      "P_A_only_alarm": 0.04,
+      "P_B_only_alarm": 0.14,
+      "assumed_far_delta": -0.1,
+      "clusters": 24,
+      "monte_carlo_standard_error": 0.0011693748329770057,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 22,
+        "value": 0.0055
+      }
+    },
+    {
+      "P_A_only_alarm": 0.02,
+      "P_B_only_alarm": 0.22,
+      "assumed_far_delta": -0.2,
+      "clusters": 24,
+      "monte_carlo_standard_error": 0.0048774416962173925,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 426,
+        "value": 0.1065
+      }
+    },
+    {
+      "P_A_only_alarm": 0.06,
+      "P_B_only_alarm": 0.09,
+      "assumed_far_delta": -0.03,
+      "clusters": 48,
+      "monte_carlo_standard_error": 0.0015925559252346526,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 41,
+        "value": 0.01025
+      }
+    },
+    {
+      "P_A_only_alarm": 0.04,
+      "P_B_only_alarm": 0.14,
+      "assumed_far_delta": -0.1,
+      "clusters": 48,
+      "monte_carlo_standard_error": 0.005579133837344288,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 583,
+        "value": 0.14575
+      }
+    },
+    {
+      "P_A_only_alarm": 0.02,
+      "P_B_only_alarm": 0.22,
+      "assumed_far_delta": -0.2,
+      "clusters": 48,
+      "monte_carlo_standard_error": 0.007228308066207472,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 2810,
+        "value": 0.7025
+      }
+    },
+    {
+      "P_A_only_alarm": 0.06,
+      "P_B_only_alarm": 0.09,
+      "assumed_far_delta": -0.03,
+      "clusters": 96,
+      "monte_carlo_standard_error": 0.0033715700163277048,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 191,
+        "value": 0.04775
+      }
+    },
+    {
+      "P_A_only_alarm": 0.04,
+      "P_B_only_alarm": 0.14,
+      "assumed_far_delta": -0.1,
+      "clusters": 96,
+      "monte_carlo_standard_error": 0.007905645727895982,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 1993,
+        "value": 0.49825
+      }
+    },
+    {
+      "P_A_only_alarm": 0.02,
+      "P_B_only_alarm": 0.22,
+      "assumed_far_delta": -0.2,
+      "clusters": 96,
+      "monte_carlo_standard_error": 0.0018576867335479367,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 3944,
+        "value": 0.986
+      }
+    },
+    {
+      "P_A_only_alarm": 0.06,
+      "P_B_only_alarm": 0.09,
+      "assumed_far_delta": -0.03,
+      "clusters": 192,
+      "monte_carlo_standard_error": 0.0048774416962173925,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 426,
+        "value": 0.1065
+      }
+    },
+    {
+      "P_A_only_alarm": 0.04,
+      "P_B_only_alarm": 0.14,
+      "assumed_far_delta": -0.1,
+      "clusters": 192,
+      "monte_carlo_standard_error": 0.005478132665425327,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 3442,
+        "value": 0.8605
+      }
+    },
+    {
+      "P_A_only_alarm": 0.02,
+      "P_B_only_alarm": 0.22,
+      "assumed_far_delta": -0.2,
+      "clusters": 192,
+      "monte_carlo_standard_error": 0.0,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 4000,
+        "value": 1.0
+      }
+    }
+  ],
+  "scope": "hypothetical paired no-fault cluster power only",
+  "seed": 7195,
+  "worst_case_holm_alpha": 0.016666666666666666
+}

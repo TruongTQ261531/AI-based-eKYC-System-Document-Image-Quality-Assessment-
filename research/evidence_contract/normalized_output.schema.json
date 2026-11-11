@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ekyc-research:normalized-document-output:1",
+  "title": "GT-free normalized reader output (local/private record)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "reader_id", "model_version", "model_sha256", "reader_fingerprint", "config_sha256", "inference_code_sha256", "runtime_sha256", "input_file_sha256", "input_pixel_sha256", "cache_key", "call_id", "output_origin", "raw_text", "raw_validity", "json_validity", "predicted_fields", "missing_fields", "missing_fields_basis", "confidence", "confidence_scope", "native_tokens", "latency_seconds", "cpu_seconds", "runtime_metadata", "access_mode", "normalization_code_sha256"],
+  "$defs": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+  "properties": {
+    "schema_version": {"const": "normalized-document-output/1"},
+    "reader_id": {"type": "string"}, "model_version": {"type": "string"},
+    "model_sha256": {"$ref": "#/$defs/sha256"}, "reader_fingerprint": {"$ref": "#/$defs/sha256"},
+    "config_sha256": {"$ref": "#/$defs/sha256"}, "inference_code_sha256": {"$ref": "#/$defs/sha256"},
+    "runtime_sha256": {"$ref": "#/$defs/sha256"}, "input_file_sha256": {"$ref": "#/$defs/sha256"},
+    "input_pixel_sha256": {"$ref": "#/$defs/sha256"}, "cache_key": {"$ref": "#/$defs/sha256"},
+    "normalization_code_sha256": {"$ref": "#/$defs/sha256"},
+    "call_id": {"type": "string", "minLength": 1},
+    "output_origin": {"enum": ["actual_model", "oracle_unit_injected"]},
+    "raw_text": {"type": "string"}, "raw_validity": {"const": "completed"},
+    "json_validity": {"type": "object", "required": ["strict_json_valid", "strict_field_shape_valid", "tolerant_json_valid", "fenced", "bad_type_keys", "null_or_empty_keys", "usable_for_contracts"], "properties": {"strict_json_valid": {"type": "boolean"}, "strict_field_shape_valid": {"type": "boolean"}, "tolerant_json_valid": {"type": "boolean"}, "fenced": {"type": "boolean"}, "usable_for_contracts": {"type": "boolean"}, "bad_type_keys": {"type": "array", "items": {"type": "string"}}, "null_or_empty_keys": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false},
+    "predicted_fields": {"type": "array", "items": {"type": "object", "required": ["semantic_key", "value", "confidence", "confidence_scope"], "properties": {"semantic_key": {"type": "string"}, "value": {"type": "string"}, "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}, "confidence_scope": {"type": ["string", "null"]}}, "additionalProperties": false}},
+    "missing_fields": {"type": "null", "description": "Missing supported fields are computed by the evaluator, after inference; never provided to the predictor."},
+    "missing_fields_basis": {"const": "reference_join_only_after_inference"},
+    "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "confidence_scope": {"type": ["string", "null"]},
+    "native_tokens": {"type": "array", "items": {"type": "object", "required": ["text", "confidence", "box"], "properties": {"text": {"type": "string"}, "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}, "box": {"type": "array", "items": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}}}, "additionalProperties": false}},
+    "latency_seconds": {"type": "number", "minimum": 0}, "cpu_seconds": {"type": "number", "minimum": 0},
+    "runtime_metadata": {"type": "object"},
+    "access_mode": {"enum": ["fresh", "cache_hit", "replay"]}
+  }
+}

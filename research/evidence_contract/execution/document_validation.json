@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-05T15:54:15.045221+00:00",
+  "documents": [
+    "PROJECT_INVENTORY.md",
+    "REUSE_MAP.md",
+    "PRESERVATION_MANIFEST.json",
+    "IMPLEMENTATION_PLAN.md"
+  ],
+  "document_sha256": {
+    "PROJECT_INVENTORY.md": "5402dc693c63ea73a63f74156ca2ed5b2b7548d81789e9e61ff5336e69620f64",
+    "REUSE_MAP.md": "62426af0d464cb5d8ff2c29e0b08fda2d41031a1dba3f6c7a71f600db5ec4e21",
+    "PRESERVATION_MANIFEST.json": "c4037d48153ec6d9060379874da3db067e74f5dba8b94bd50d399449aaec7dab",
+    "IMPLEMENTATION_PLAN.md": "8496a2b0e8e5811d8a16f25d862bbda14ba015dfc24cf605a4c562caa4cdbb88"
+  },
+  "python_tests": 60,
+  "javascript_tests": 6,
+  "warning_count": 1,
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "new_scope": "research/evidence_contract/",
+  "preexisting_untracked_files_preserved": 12,
+  "historical_indexes": [
+    {
+      "path": "research/results/fair_controls_v1/previous_artifacts.json",
+      "files": 53,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/ocr_labels_v1/previous_artifacts.json",
+      "files": 74,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/recovery_v4/artifact_index.json",
+      "files": 63,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/vlm_lora_v1/artifact_index.json",
+      "files": 101,
+      "status": "passed",
+      "mismatches": []
+    }
+  ]
+}

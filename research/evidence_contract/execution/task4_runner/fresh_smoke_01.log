@@ -1,0 +1,16 @@
+{"mode": "fresh", "reader": "rapid_v4", "state": "starting"}
+{"mode": "fresh", "reader": "rapid_v4", "exit_code": 1}
+{"mode": "fresh", "reader": "rapid_latin_v5", "state": "starting"}
+{"mode": "fresh", "reader": "rapid_latin_v5", "exit_code": 1}
+{"mode": "fresh", "reader": "partial_42", "state": "starting"}
+{"mode": "fresh", "reader": "partial_42", "exit_code": 1}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\smoke_task4.py", line 202, in <module>
+    main()
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\smoke_task4.py", line 198, in main
+    execute(args.run, args.action)
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\smoke_task4.py", line 118, in execute
+    raise RuntimeError("Some smoke workers failed. Keep their logs and inspect; no automatic retry")
+RuntimeError: Some smoke workers failed. Keep their logs and inspect; no automatic retry

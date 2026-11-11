@@ -1,0 +1,11 @@
+node --test --test-isolation=none research/evidence_contract/tests/test_task55_stage2_ui.cjs
+✔ output review locks conditions before displaying predictions and requires notes for errors (6.778ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38.3734
+Exit: 0

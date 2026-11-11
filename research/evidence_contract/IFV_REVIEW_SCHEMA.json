@@ -1,0 +1,45 @@
+{
+  "schema": "ifv-review-record-dictionary/1",
+  "phase1": {
+    "schema": "blind-human-review/1",
+    "packet_purpose": "blind_review",
+    "mode_for_submission": "human_entered",
+    "mode_for_test_only": "unit_injected",
+    "export_kind": ["draft", "reviewed_observations"],
+    "required_envelope": ["packet_id", "mode", "export_kind", "reviewer", "items"],
+    "reviewer": {
+      "reviewer_id": "pseudonymous nonempty code",
+      "role": ["project_author", "external_reviewer", "unknown"],
+      "output_exposure": ["none", "aggregate_only", "per_image", "unknown"],
+      "independence_verified": false
+    },
+    "required_item": ["slot_id", "image_id", "image_sha256", "field_key", "touched", "availability", "readability", "semantic_key_confirmed", "prior_exposure", "observed_transcript", "sources", "notes"],
+    "availability": ["visible", "partial", "not_seen", "uncertain"],
+    "readability": ["readable", "partial", "unreadable", "uncertain", "language_unknown", "unassessed"],
+    "semantic_key_confirmed": ["yes", "no", "uncertain"],
+    "prior_exposure": ["no", "yes", "uncertain"],
+    "source_observation": {
+      "kind": ["body", "duplicated_body", "mrz", "other", "uncertain"],
+      "location": "nonempty reviewer observation",
+      "availability": "phase1 availability enum",
+      "readability": "phase1 readability enum",
+      "observed_text": "literal observed text, can be blank",
+      "mrz_line_1": "optional literal observed full line",
+      "mrz_line_2": "optional literal observed full line"
+    }
+  },
+  "phase2": {
+    "schema": "ifv-output-observations/1",
+    "mode_for_submission": "human_entered",
+    "required_envelope": ["packet_id", "phase1_snapshot", "mode", "items"],
+    "required_item": ["case_id", "test_validity", "absence_check", "before_reading", "after_reading", "reason", "first_reveal_at"],
+    "test_validity": ["valid", "invalid", "uncertain"],
+    "absence_check": ["all_sources_removed", "not_established", "not_applicable"],
+    "reading": ["correct", "wrong_value", "readable_omission", "unsupported_verified", "uncertain"],
+    "output_note": "required for alleged error; evidence-based explanation",
+    "statuses_per_endpoint": ["CONFIRMED_FAULT", "NO_FAULT", "INVALID_TEST", "INCONCLUSIVE"],
+    "unsubmitted_cases": "UNREVIEWED",
+    "adjudication_required_for_independent_claim": true
+  },
+  "parser_validation": ["task55/review.py", "task55/ifv.py"]
+}

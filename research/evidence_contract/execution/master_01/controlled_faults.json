@@ -1,0 +1,2324 @@
+{
+  "activated": 9,
+  "cases": [
+    {
+      "activation_stage": null,
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M1_backup_correct",
+      "checked_key": "id_number",
+      "contract": "C2",
+      "eligibility": "NEGATIVE_CONTROL",
+      "error_types": [],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M1",
+      "fault_activated": false,
+      "fault_installed": false,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 2,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 2,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 2,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intended_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intervention": "none",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "only_C2_backup_handling_removed",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "observed_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "699467aab02c31c954a34cfeca9b79497851081d5de1ebe22e632da436a30520",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.055476400069892406
+    },
+    {
+      "activation_stage": "M3_reader_router",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M1_ignore_backup",
+      "checked_key": "id_number",
+      "contract": "C2",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "FIELD"
+      ],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M1",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 1,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 1,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 1,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intended_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intervention": "body_only",
+      "methods": {
+        "A": {
+          "alarm": true,
+          "reason": "supported_field_reading_error",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_flat": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_NI": {
+          "alarm": true,
+          "reason": "supported_field_reading_error",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "only_C2_backup_handling_removed",
+          "verdict": "PASS"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "supported_field_reading_error",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": true,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "PASS"
+        },
+        "B3": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": true,
+      "observable_effect": true,
+      "observed_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "observed_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "observed_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "597091604802f990e22adcba5e3bc2e396bd083f3d3ac50d3d9973a384c7be15",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.04672500002197921
+    },
+    {
+      "activation_stage": null,
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M2_clean_refusal",
+      "checked_key": "id_number",
+      "contract": "C1",
+      "eligibility": "NEGATIVE_CONTROL",
+      "error_types": [],
+      "expected_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "expected_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M2",
+      "fault_activated": false,
+      "fault_installed": false,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 1,
+        "reference": 1,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "intended_m2_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "intervention": "none",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "removed_field_not_asserted",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "removed_field_not_asserted",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "removed_field_not_asserted",
+          "verdict": "PASS"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "removed_field_not_asserted",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": true,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "PASS"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "observed_m2_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "observed_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "597091604802f990e22adcba5e3bc2e396bd083f3d3ac50d3d9973a384c7be15",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "erased"
+          },
+          "mrz/a": {
+            "value": "erased"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.06198429991491139
+    },
+    {
+      "activation_stage": "KIE",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M2_stale_assertion",
+      "checked_key": "id_number",
+      "contract": "C1",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "FIELD"
+      ],
+      "expected_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "expected_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M2",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 1,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 1,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 1,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "intended_m2_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "intervention": "stale_field",
+      "methods": {
+        "A": {
+          "alarm": true,
+          "reason": "assertion_after_complete_removal",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_flat": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_NI": {
+          "alarm": true,
+          "reason": "assertion_after_complete_removal",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "assertion_after_complete_removal",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "assertion_after_complete_removal",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": true,
+      "observable_effect": true,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "1394d26adc53564fab6c64fd6303213d2a82d2bf0689ddd957e9fbf5ebf3799f",
+      "observed_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "826b1b6a643b8383b873f30b91866f65f6eed2365198a5615d515f09d6af3d6c",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "erased"
+          },
+          "mrz/a": {
+            "value": "erased"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05609309999272227
+    },
+    {
+      "activation_stage": null,
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M3_keep_neighbor",
+      "checked_key": "school",
+      "contract": "C3",
+      "eligibility": "NEGATIVE_CONTROL",
+      "error_types": [],
+      "expected_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "expected_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M3",
+      "fault_activated": false,
+      "fault_installed": false,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 1,
+        "reference": 1,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "intended_m2_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "intervention": "none",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "C3_disabled",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "PASS"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "observed_m2_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "observed_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "597091604802f990e22adcba5e3bc2e396bd083f3d3ac50d3d9973a384c7be15",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "erased"
+          },
+          "mrz/a": {
+            "value": "erased"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.058544799918308854
+    },
+    {
+      "activation_stage": "KIE",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M3_drop_neighbor",
+      "checked_key": "school",
+      "contract": "C3",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "FIELD"
+      ],
+      "expected_field_digest": "f963d270dad00f5d7eb439ac8c7f71c167848c1d9011d3339d935ee745667edf",
+      "expected_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M3",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 0,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 0,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 0,
+        "missing_keys": 1,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 0,
+        "reference": 1,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 1,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "intended_m2_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "intervention": "coupled_field",
+      "methods": {
+        "A": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_flat": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "C3_disabled",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": true,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": true,
+      "observable_effect": true,
+      "observed_field_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "observed_m2_sha256": "04d133d9c5d7da2360ae6542261636f07efb9dd41cb7662a5570a1fd00050acd",
+      "observed_visible_sources": {
+        "id_number": [],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "c89a148be40e6752261e3038609a4b68de22fa3bfdaf32f884edffb8480b9bbe",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "erased"
+          },
+          "mrz/a": {
+            "value": "erased"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05406009987927973
+    },
+    {
+      "activation_stage": null,
+      "attribution_changed": false,
+      "before_sha256": "82c3f39262955c1cea05029ee121840750be2da766a32f9b24bff42e74f4602c",
+      "case_id": "M3_context_erased",
+      "checked_key": "category_code",
+      "contract": "C3",
+      "eligibility": "INVALID",
+      "error_types": [],
+      "expected_field_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "expected_visible_sources": {
+        "category": [],
+        "category_code": []
+      },
+      "family": "M3",
+      "fault_activated": false,
+      "fault_installed": false,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 0,
+        "correct_empty_abstention": true,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": true,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 0,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 0,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 0,
+        "reference": 0,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": false,
+      "input_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+      "intended_m2_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+      "intervention": "none",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "mutation_preconditions_failed",
+          "verdict": "INVALID_TEST"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "common_mutation_gate",
+          "verdict": "INVALID_TEST"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "C3_disabled",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "mutation_preconditions_failed",
+          "verdict": "INVALID_TEST"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "common_mutation_gate",
+          "verdict": "INVALID_TEST"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "common_mutation_gate",
+          "verdict": "INVALID_TEST"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "common_mutation_gate",
+          "verdict": "INVALID_TEST"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "common_mutation_gate",
+          "verdict": "INVALID_TEST"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "observed_m2_sha256": "c9088dd0fb6e47499c30508db1778eab28953eb1df72f7c7dc89df6200f0e155",
+      "observed_visible_sources": {
+        "category": [],
+        "category_code": []
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "c89a148be40e6752261e3038609a4b68de22fa3bfdaf32f884edffb8480b9bbe",
+      "raw_json_changed": false,
+      "source_probes": {
+        "category": {
+          "category": {
+            "value": "erased"
+          }
+        },
+        "category_code": {
+          "code": {
+            "semantic_context": "erased",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.045867100125178695
+    },
+    {
+      "activation_stage": "M2",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M4_crop_loses_neighbor",
+      "checked_key": "school",
+      "contract": "C4",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "FIELD"
+      ],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M4",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 1,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 1,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 1,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intended_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intervention": "crop_loses_B",
+      "methods": {
+        "A": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_flat": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_NI": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": true,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": true,
+      "observable_effect": true,
+      "observed_field_digest": "71d81efc013147e0e7d129d012423552acd0f7195235da8d6cb6fffe3cd2b2ae",
+      "observed_m2_sha256": "6d8a0dd595e2cd40e4a8e238b0cc91fb2089291dce357ff7f76f43a524c47a89",
+      "observed_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a"
+        ],
+        "school": []
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "af9f9f3262d287c993daab24d2dd01674616293430c66fd8e7e531c836d2f2d5",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05608490016311407
+    },
+    {
+      "activation_stage": "M2",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M4_noop",
+      "checked_key": "school",
+      "contract": "C4",
+      "eligibility": "EQUIVALENT_ON_FIXTURE",
+      "error_types": [],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M4",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 2,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 2,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 2,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intended_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intervention": "noop_crop",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "PASS"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "observed_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "699467aab02c31c954a34cfeca9b79497851081d5de1ebe22e632da436a30520",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.06455509993247688
+    },
+    {
+      "activation_stage": "KIE",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M5_wrong_semantic_key",
+      "checked_key": "school",
+      "contract": "C4",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "FIELD"
+      ],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M5",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 1,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 1,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 1,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 1
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intended_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intervention": "semantic_swap",
+      "methods": {
+        "A": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_flat": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_NI": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": true,
+          "reason": "conditional_metamorphic_failure",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B0": {
+          "alarm": true,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": true,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3_V3_gate": {
+          "alarm": true,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": true,
+      "observable_effect": true,
+      "observed_field_digest": "8d506cc2933fa0483656e132b7467521127d656fa685639d699777c3f05eeb29",
+      "observed_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "observed_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "076136759e0f1ca815786f7fc92c0cf42a9e4f2251ba96cbe441018b156a41a9",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05917679984122515
+    },
+    {
+      "activation_stage": "Attribution",
+      "attribution_changed": true,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M6_claim_removed_source",
+      "checked_key": "id_number",
+      "contract": "C2",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "ATTRIBUTION"
+      ],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M6",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 2,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 2,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 2,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intended_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intervention": "stale_attribution",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "only_C2_backup_handling_removed",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": true
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": true,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "observed_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "699467aab02c31c954a34cfeca9b79497851081d5de1ebe22e632da436a30520",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05249429983086884
+    },
+    {
+      "activation_stage": null,
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M6_correct_source",
+      "checked_key": "id_number",
+      "contract": "C2",
+      "eligibility": "NEGATIVE_CONTROL",
+      "error_types": [],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M6",
+      "fault_activated": false,
+      "fault_installed": false,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 2,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 2,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 2,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intended_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "intervention": "none",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": true,
+          "reason": "only_C2_backup_handling_removed",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "backup_supported_reading",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": true,
+          "reason": "does_not_model_alternative_sources",
+          "verdict": "CANDIDATE_VIOLATION"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "ad2b380d787a6c0fb1c1ab02aac4b0de3f0aa6203b3fa79375d8a50389de6e8c",
+      "observed_visible_sources": {
+        "id_number": [
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "699467aab02c31c954a34cfeca9b79497851081d5de1ebe22e632da436a30520",
+      "raw_json_changed": false,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "erased"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05737089994363487
+    },
+    {
+      "activation_stage": "Serialization",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M7_unparseable",
+      "checked_key": "school",
+      "contract": "C4",
+      "eligibility": "ACTIVATED_OBSERVABLE",
+      "error_types": [
+        "JSON"
+      ],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M7",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 0,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": false,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 0,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 0,
+        "missing_keys": 2,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 0,
+        "reference": 2,
+        "syntax_object_success": false,
+        "unsupported_nonempty": 0,
+        "valid_json": false,
+        "visible_omissions": 2,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": true,
+      "independently_valid": true,
+      "input_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intended_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intervention": "broken_json",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "structured_output_invalid_scored_separately",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "structured_output_invalid_scored_separately",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "structured_output_invalid_scored_separately",
+          "verdict": "INCONCLUSIVE"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "structured_output_invalid_scored_separately",
+          "verdict": "INCONCLUSIVE"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "unusable_structured_output",
+          "verdict": "INCONCLUSIVE"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": true
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": true,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "observed_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "49037e106f4c1b5eb0c6f60773c5aaa406d8137c1e79acea43ac818f51bb77e5",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.05637179990299046
+    },
+    {
+      "activation_stage": "Serialization",
+      "attribution_changed": false,
+      "before_sha256": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+      "case_id": "M7_format_only",
+      "checked_key": "school",
+      "contract": "C4",
+      "eligibility": "EQUIVALENT_ON_FIXTURE",
+      "error_types": [],
+      "expected_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "expected_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "family": "M7",
+      "fault_activated": true,
+      "fault_installed": true,
+      "hard_pair_field_counters": {
+        "bad_type": 0,
+        "correct": 2,
+        "correct_empty_abstention": false,
+        "date_century_overreach": 0,
+        "declared_hidden_outputs": 0,
+        "declared_hidden_reference_keys": 0,
+        "empty_reference": false,
+        "exact_document": true,
+        "extra_keys": 0,
+        "fenced": false,
+        "literal_correct": 2,
+        "masked_field_outputs": 0,
+        "max_precision_correct": 2,
+        "missing_keys": 0,
+        "neighbor_correct": 0,
+        "neighbor_omissions": 0,
+        "neighbor_reference_keys": 0,
+        "neighbor_wrong": 0,
+        "null_or_empty": 0,
+        "pair_eligible": false,
+        "pair_hidden_leaked": 0,
+        "pair_kept_correct": 0,
+        "pair_success": 0,
+        "predicted": 2,
+        "reference": 2,
+        "syntax_object_success": true,
+        "unsupported_nonempty": 0,
+        "valid_json": true,
+        "visible_omissions": 0,
+        "wrong_visible_values": 0
+      },
+      "independently_faulty": false,
+      "independently_valid": true,
+      "input_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intended_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "intervention": "equivalent_json",
+      "methods": {
+        "A": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_flat": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "A_no_NI": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_no_alternative": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "A_no_validator": {
+          "alarm": false,
+          "reason": "supported_information_preserved",
+          "verdict": "PASS"
+        },
+        "B0": {
+          "alarm": false,
+          "reason": "full_reference_result_evaluation_not_fault_discovery",
+          "verdict": "PASS"
+        },
+        "B2": {
+          "alarm": false,
+          "reason": "pairwise_change_not_verified_version_regression",
+          "verdict": "PASS"
+        },
+        "B3": {
+          "alarm": false,
+          "reason": "post_image_visible_reference_not_temporal_fault_proof",
+          "verdict": "PASS"
+        },
+        "B3_V3": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "B3_V3_gate": {
+          "alarm": false,
+          "reason": "frozen_v3_geometry_visible_refs_and_precision_scorer",
+          "verdict": "PASS"
+        },
+        "FLAT_ATTRIBUTION": {
+          "alarm": false
+        },
+        "JSON_SCHEMA": {
+          "alarm": false
+        }
+      },
+      "normalized_field_changed": false,
+      "observable_effect": false,
+      "observed_field_digest": "53d745e8cbe7be56ea03241c865607d06b45f6ba367e94512b0a2b3d60adbb77",
+      "observed_m2_sha256": "638e56a40a2da4161073ca0c7fc7e1f38337f371d22ca73ad0e20cd7eb30d27d",
+      "observed_visible_sources": {
+        "id_number": [
+          "body/a",
+          "duplicate/a",
+          "mrz/a"
+        ],
+        "school": [
+          "body/b"
+        ]
+      },
+      "origin": "controlled_fixture_only",
+      "output_sha256": "fd37b138ba84ca954b7e03d6faff5b25dd6b1273e075e2e4817dad16b32d791c",
+      "raw_json_changed": true,
+      "source_probes": {
+        "id_number": {
+          "body/a": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          },
+          "duplicate/a": {
+            "value": "preserved"
+          },
+          "mrz/a": {
+            "value": "preserved"
+          }
+        },
+        "school": {
+          "body/b": {
+            "semantic_context": "preserved",
+            "value": "preserved"
+          }
+        }
+      },
+      "wall_seconds": 0.060644299956038594
+    }
+  ],
+  "code_sha256": "f74b9e1747d42899eedd554e761ebccba36e19999a56d35fd74ef080dbd94be5",
+  "family_counts": {
+    "M1": 2,
+    "M2": 2,
+    "M3": 3,
+    "M4": 2,
+    "M5": 1,
+    "M6": 2,
+    "M7": 2
+  },
+  "human_labels": 0,
+  "independently_faulty": 7,
+  "installed": 9,
+  "model_calls": 0,
+  "natural_model_errors": 0,
+  "records": 14,
+  "results": {
+    "A": {
+      "alarms": 5,
+      "detected_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 5,
+        "value": 0.7142857142857143
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 5,
+        "value": 1.0
+      }
+    },
+    "A_flat": {
+      "alarms": 5,
+      "detected_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 5,
+        "value": 0.7142857142857143
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 5,
+        "value": 1.0
+      }
+    },
+    "B2": {
+      "alarms": 7,
+      "detected_families": [
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 5,
+        "value": 0.7142857142857143
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 4,
+        "value": 0.8
+      }
+    },
+    "B3": {
+      "alarms": 5,
+      "detected_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 5,
+        "value": 0.7142857142857143
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 5,
+        "value": 1.0
+      }
+    },
+    "B3_V3_gate": {
+      "alarms": 5,
+      "detected_families": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 5,
+        "value": 0.7142857142857143
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 5,
+        "value": 1.0
+      }
+    },
+    "FLAT_ATTRIBUTION": {
+      "alarms": 1,
+      "detected_families": [
+        "M6"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 1,
+        "value": 0.14285714285714285
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      }
+    },
+    "JSON_SCHEMA": {
+      "alarms": 1,
+      "detected_families": [
+        "M7"
+      ],
+      "invalid_alarms": 0,
+      "mutation_score_all_interfaces": {
+        "denominator": 7,
+        "numerator": 1,
+        "value": 0.14285714285714285
+      },
+      "structured_field_mutation_score": {
+        "denominator": 5,
+        "numerator": 0,
+        "value": 0.0
+      }
+    }
+  },
+  "status_counts": {
+    "ACTIVATED_OBSERVABLE": 7,
+    "EQUIVALENT_ON_FIXTURE": 2,
+    "INVALID": 1,
+    "NEGATIVE_CONTROL": 4
+  },
+  "structured_field_faults": 5,
+  "valid_test_rate": {
+    "denominator": 14,
+    "numerator": 13,
+    "value": 0.9285714285714286
+  }
+}

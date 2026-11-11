@@ -1,0 +1,39 @@
+{
+  "actual_human_observations": 0,
+  "actual_new_model_inference_calls": 0,
+  "archived_and_completed_drafts": 4,
+  "browser_smoke": "FAILED_TO_VERIFY_BROWSER_RENDER",
+  "confirmatory_opened": false,
+  "earlier_snapshot_byte_matches": 2622,
+  "git_status": [
+    "?? research/evidence_contract/",
+    "?? research/priority2_tiles.py",
+    "?? research/results/priority2_tiles_v1/",
+    "?? research/results/source_visibility_v3/ui/",
+    "?? research/results/vlm_lora_v2/ui/"
+  ],
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "historical_model_assets_checked_at_recovery": 23,
+  "mentor_status": "clean",
+  "no_gate_artifacts_present": true,
+  "original_inference_log_hashes_matching": 6,
+  "refs_unchanged": true,
+  "resume_snapshot_byte_matches": 2628,
+  "resume_snapshot_entries": 2632,
+  "retained_failed_control_log_sha256": "09c9e3dc264382fb91ed9150cdb445de8bd4dad786d423a3484a0934e1fd4a00",
+  "review_assets_verified": 35,
+  "review_packet_id": "e0819a7806fbc8d799b4a241f5d4ea58c55f96d014de2246f1bc1ed5e5650103",
+  "sampling_id": "7a5d2ef884ad662633198b9f294c9535e47924f0ec27135b579da01696d97f8d",
+  "staged_diff": "",
+  "status": "VERIFIED_DEVELOPMENT_RECOVERY",
+  "successful_log_sha256": {
+    "controls_run_02": "107d500a8468bc40aa80410032a4797902c76090ae86b519dce525fb4abe2fcf",
+    "ifv_prepare": "fc4d0a3870ba3cfead47e16ce8fa99f55e484ad1dc8a081fda8aa38e45814d90",
+    "ifv_sample": "80ebffc347d18bdc9d3f4a4de4e5faf88b8c3ec940282bac5d3a0f2313743ae1",
+    "node_review_syntax": "fa8dfc4bec9df56de9a9bf6700f3c2a5cb3e2a482975f4a97980b66f56cfbdc5",
+    "node_review_tests": "b9af551ed7d4421df3b292c3e2149a62bebd03b566149f9ac19a0a7499cc0d8e",
+    "node_stage2_ui_test": "cdb59e5845821f8731c1c09d0db19b8853824d222740fa7c42d866516c3cff53",
+    "python_ifv_tests_02": "9311eb339882298a8213e2063cc0d18da262a48c892ceba4fa8586636e22e140"
+  },
+  "tracked_diff": ""
+}

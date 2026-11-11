@@ -1,0 +1,24 @@
+{
+  "binding_check": {
+    "files": {
+      "analysis.json": "MATCH",
+      "draft": "MATCH",
+      "exposure": "MATCH",
+      "index": "MATCH",
+      "inputs.json": "MATCH"
+    },
+    "status": "PASS"
+  },
+  "confirmatory_executable": false,
+  "manifest_check": null,
+  "schema_check": "PASS",
+  "status": "BLOCKED",
+  "unmet": [
+    "new_go_decision",
+    "claims_and_endpoints_approved",
+    "independent_fault_references",
+    "verified_reviewer_provenance",
+    "specimen_manifest",
+    "dataset_and_code_hashes"
+  ]
+}

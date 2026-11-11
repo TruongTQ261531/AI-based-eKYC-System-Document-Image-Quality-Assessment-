@@ -1,0 +1,12 @@
+{
+  "changed_files": [],
+  "confirmatory_published": false,
+  "files_matching": 2746,
+  "inference_log_matches": 6,
+  "refs_unchanged": true,
+  "review": {
+    "phase1_files": 0,
+    "phase2_files": 0,
+    "phase2_packets": 0
+  }
+}

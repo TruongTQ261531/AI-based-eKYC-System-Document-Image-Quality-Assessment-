@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\continuation_20261111\candidate_20261111_01\verify_results.py", line 110, in <module>
+    print(json.dumps(verify(Path(__file__).resolve().parent, replay=options.oracle), sort_keys=True))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\continuation_20261111\candidate_20261111_01\verify_results.py", line 103, in verify
+    return dict(status="PASS", summary=result, oracle=oracle_replay(root) if replay else None, model_calls=0)
+                                                      ^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\continuation_20261111\candidate_20261111_01\verify_results.py", line 85, in oracle_replay
+    if baselines.unpack(function(graph, report, before, after)) != record["checks"][name]:
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: b2() takes 3 positional arguments but 4 were given

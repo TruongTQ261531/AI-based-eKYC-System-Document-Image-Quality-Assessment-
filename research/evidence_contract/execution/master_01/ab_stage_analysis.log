@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\stage_analysis.py", line 86, in <module>
+    bindings = raw_receipts(run)
+               ^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\stage_analysis.py", line 43, in raw_receipts
+    native_metadata_keys=sorted(native["metadata"]))
+                                ~~~~~~^^^^^^^^^^^^
+KeyError: 'metadata'
+Exit: 1

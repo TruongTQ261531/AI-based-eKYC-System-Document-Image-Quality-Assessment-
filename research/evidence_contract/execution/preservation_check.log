@@ -1,0 +1,52 @@
+TASK 0 post-check. SHA256 content reads only; no model or analysis runner invoked.
+Checked 2000 content hashes
+Checked 4000 content hashes
+Checked 6000 content hashes
+Checked 8000 content hashes
+Checked 10000 content hashes
+Checked 12000 content hashes
+Checked 14000 content hashes
+Checked 16000 content hashes
+Checked 18000 content hashes
+Checked 20000 content hashes
+Checked 22000 content hashes
+{
+  "status": "passed",
+  "verified_utc": "2026-11-05T15:50:47.697098+00:00",
+  "content_files_checked": 23897,
+  "elapsed_seconds": 209.6537253856659,
+  "mismatches": [],
+  "historical_indexes": [
+    {
+      "path": "research/results/fair_controls_v1/previous_artifacts.json",
+      "files": 53,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/ocr_labels_v1/previous_artifacts.json",
+      "files": 74,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/recovery_v4/artifact_index.json",
+      "files": 63,
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "path": "research/results/vlm_lora_v1/artifact_index.json",
+      "files": 101,
+      "status": "passed",
+      "mismatches": []
+    }
+  ],
+  "head_unchanged": true,
+  "branch_unchanged": true,
+  "refs_unchanged": true,
+  "worktrees_unchanged": true,
+  "tracked_diff": "",
+  "staged_diff": "",
+  "git_status_after": "# branch.oid f5d130d93525e7633053edc03e6d9f6edeba7a6f\n# branch.head main\n# branch.upstream origin/main\n# branch.ab +0 -0\n? research/evidence_contract/\n? research/priority2_tiles.py\n? research/results/priority2_tiles_v1/\n? research/results/source_visibility_v3/ui/\n? research/results/vlm_lora_v2/ui/"
+}

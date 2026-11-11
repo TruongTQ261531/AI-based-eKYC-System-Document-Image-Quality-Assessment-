@@ -1,0 +1,13 @@
+{
+  "draws": 4000,
+  "includes_coverage_or_recall_guard": false,
+  "rows": [
+    {
+      "P_A_only_alarm": 0.06,
+      "P_B_only_alarm": 0.09,
+      "assumed_far_delta": -0.03,
+      "clusters": 24,
+      "monte_carlo_standard_error": 0.0002499687480466308,
+      "rejection": {
+        "denominator": 4000,
+        "numerator": 

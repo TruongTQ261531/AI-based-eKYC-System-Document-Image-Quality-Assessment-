@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\replication.py", line 147, in <module>
+    print(json.dumps(build(args.name)), flush=True)
+                     ^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\replication.py", line 123, in build
+    raise RuntimeError("Candidate verification failed. Preserve the folder and log before repairing.")
+RuntimeError: Candidate verification failed. Preserve the folder and log before repairing.
+Exit: 1

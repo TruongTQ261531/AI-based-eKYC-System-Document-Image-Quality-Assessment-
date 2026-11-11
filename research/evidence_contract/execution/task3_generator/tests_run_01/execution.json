@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "research/evidence_contract/tests",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\execution\\task3_generator\\tests_run_01\\tmp",
+    "--junitxml=research\\evidence_contract\\execution\\task3_generator\\tests_run_01\\junit.xml"
+  ],
+  "started_utc": "2026-11-05T19:22:14.160463+00:00",
+  "ended_utc": "2026-11-05T19:22:28.732033+00:00",
+  "exit_code": 0
+}

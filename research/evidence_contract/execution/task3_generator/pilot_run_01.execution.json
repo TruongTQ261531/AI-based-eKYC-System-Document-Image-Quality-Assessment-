@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-m",
+    "research.evidence_contract.pilot",
+    "--run",
+    "--output",
+    "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\execution\\task3_generator\\pilot_run_01"
+  ],
+  "started_utc": "2026-11-05T19:31:04.161467+00:00",
+  "ended_utc": "2026-11-05T19:31:53.723375+00:00",
+  "exit_code": 0
+}

@@ -14,6 +14,13 @@ khi kiểm tra tổ tiên và tag đã có trên remote. Kết quả V1/V4 đư�
 weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
+Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
+Xem [trạng thái master_01](research/evidence_contract/MASTER_EXECUTION_STATUS.md),
+[quyết định GO/NO-GO](research/evidence_contract/REVISED_GO_NO_GO.md) và
+[bản thảo paper](research/evidence_contract/paper/MANUSCRIPT_DRAFT.md).
+Phần chuẩn bị và kiểm thử development đã có kết quả; IFV vẫn chờ đánh giá thật,
+TASK 6B/7B chưa được phép chạy. Bản thảo chưa phải bài báo đã hoàn thành.
+
 Vòng cải thiện hai nhóm lỗi OCR dùng cặp che/giữ đã có hai LoRA mới, đối chiếu
 hai checkpoint V3 cùng ID/lượt ảnh/số update trên 48 giấy tờ mới (192 view).
 Xem [kết quả, audit và giới hạn](research/HARD_PAIR_RESULTS_VI.md),

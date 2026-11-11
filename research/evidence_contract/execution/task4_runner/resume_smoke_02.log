@@ -1,0 +1,6 @@
+{"mode": "resume", "reader": "rapid_v4", "state": "starting"}
+{"mode": "resume", "reader": "rapid_v4", "exit_code": 0}
+{"mode": "resume", "reader": "rapid_latin_v5", "state": "starting"}
+{"mode": "resume", "reader": "rapid_latin_v5", "exit_code": 0}
+{"mode": "resume", "reader": "partial_42", "state": "starting"}
+{"mode": "resume", "reader": "partial_42", "exit_code": 0}

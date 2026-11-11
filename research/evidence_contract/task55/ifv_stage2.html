@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đối chiếu đầu ra ẩn danh</title>
+  <style>
+    body { margin: 0; background: #eef4f7; color: #18313f; font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 1080px; padding: 24px; margin: auto; }
+    section { padding: 16px; margin-block: 16px; border-radius: 12px; background: white; }
+    .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    img { width: 100%; height: auto; }
+    label, select, textarea { display: block; margin: 8px 0; }
+    select, textarea { max-width: 100%; width: 100%; padding: 8px; box-sizing: border-box; font: inherit; }
+    button { border: none; border-radius: 6px; background: #087e8b; color: white; padding: 10px 14px; font: inherit; }
+    button:disabled { opacity: .45; }
+    #message { color: #0d5460; white-space: pre-wrap; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    [hidden] { display: none !important; }
+    @media(max-width: 680px) { main { padding: 12px; } .pair { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Đối chiếu đầu ra ẩn danh</h1>
+  <p>Phiếu đọc ảnh đã khóa. Xem hai ảnh và ghi điều kiện phép thử trước khi mở đầu ra.
+     Đánh giá theo chữ đã quan sát. Đáp án tác giả giúp đối chiếu nhưng không chứng minh phần chữ đã che còn đọc được.</p>
+  <p id="progress" aria-live="polite"></p>
+  <h2 id="field"></h2>
+  <div class="pair">
+    <section><h3>Ảnh gốc</h3><a id="before-link" target="_blank" rel="noopener"><img id="before-image" alt="Ảnh gốc"></a><p id="before-evidence"></p></section>
+    <section><h3>Ảnh biến đổi</h3><a id="after-link" target="_blank" rel="noopener"><img id="after-image" alt="Ảnh biến đổi"></a><p id="after-evidence"></p></section>
+  </div>
+  <section>
+    <p id="condition"></p>
+    <label>Điều kiện của ca kiểm thử
+      <select id="test_validity">
+        <option value="">Chưa chọn</option><option value="valid">Đủ điều kiện</option>
+        <option value="invalid">Phép thử không hợp lệ</option><option value="uncertain">Chưa đủ bằng chứng</option>
+      </select>
+    </label>
+    <label id="absence-label">Đã xác minh mọi nguồn hợp lệ đều bị xóa?
+      <select id="absence_check">
+        <option value="">Chưa chọn</option><option value="all_sources_removed">Đã xác minh trên toàn ảnh</option>
+        <option value="not_established">Chưa xác minh được</option>
+      </select>
+    </label>
+    <label>Lý do, gồm nguồn đã thấy và vì sao phép thử hợp lệ hoặc không hợp lệ
+      <textarea id="reason" rows="3"></textarea>
+    </label>
+    <button id="reveal" type="button">Ghi điều kiện và xem đầu ra</button>
+  </section>
+  <section id="output" hidden>
+    <h3>Giá trị sau chuẩn hóa</h3>
+    <p>Tham chiếu tác giả <strong id="reference"></strong></p>
+    <div class="pair">
+      <div><strong>Trên ảnh gốc</strong><pre id="before-value"></pre><label>Đánh giá giá trị gốc<select id="before_reading"></select></label></div>
+      <div><strong>Trên ảnh biến đổi</strong><pre id="after-value"></pre><label>Đánh giá giá trị biến đổi<select id="after_reading"></select></label></div>
+    </div>
+    <p>Nếu ô bị che và đã xác minh không còn nguồn, giá trị trống là từ chối phù hợp. Nếu cấu trúc đầu ra bị lỗi hoặc bằng chứng mơ hồ, chọn “Chưa xác định”.</p>
+    <label>Ghi chú về phán đoán đầu ra<textarea id="output-note" rows="2"></textarea></label>
+    <button id="save" type="button">Lưu đánh giá ca này</button>
+  </section>
+  <p id="message" role="status"></p>
+  <button id="previous" type="button">Ca trước</button>
+  <button id="next" type="button">Ca tiếp</button>
+  <button id="export" type="button">Xuất phiếu JSON</button>
+  <label>Nạp phiếu JSON đã xuất<input id="load" type="file" accept=".json,application/json"></label>
+  <p>Phiếu được lưu trên máy. Xuất JSON để có bản sao. Bước này vẫn giấu danh tính reader, kết quả A/B3 và nhóm lấy mẫu.</p>
+  <!--PACKET-->
+  <!--UI-->
+</main>
+</body>
+</html>

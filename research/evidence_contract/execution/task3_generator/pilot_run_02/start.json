@@ -1,0 +1,31 @@
+{
+  "code_sha256": {
+    "research/evidence_contract/contracts.py": "7264238f6a64c94ac2734465a091017f8713e982910de68d453387bed0bd660b",
+    "research/evidence_contract/fixtures.py": "0ebaee34cb25bdca2ca77d192d7a7268ddac93b39245703c25a79ec63a0c7d3d",
+    "research/evidence_contract/generator.py": "0511a4a78ed5b88b3c2fbb3d6dfe95b0bf54d5d37924a60ca0baee83347bac40",
+    "research/evidence_contract/pilot.py": "b5e788947ffaccabeb37a2e6f65dcb4f90e31ad895f3efbdcd0b6fbcf62c1bdc",
+    "research/evidence_contract/source_graph.py": "b9f620842a0dbc89e25062ba1f74d830712bddb823c21ec326eae3eb108e78d1",
+    "research/evidence_contract/validity.py": "e136cef0f6c30d0a835aca60464c251dd2f1a1e5cbf90737d5aab00e18834b5a",
+    "research/hp_data.py": "eb6dcfca8333d0ec4979d541669b7c528a5e5aa7b16f093a98d0e3033d1affc0",
+    "research/labels_schema.py": "b9077e07e4630d1a570e78496b198cdb008e59b7256f3b97720a256c62cdff1f",
+    "research/labels_synth.py": "1f1d0ae2a2c27b0ce594c3903e46a0a3e5b6fa9f1208f3469f23be4926a365ad",
+    "research/v3_sources.py": "b760dd8e62e0ac62066b0ad53cdc73be8ee29cba50edc474afc8b0ceb26b1f58"
+  },
+  "confirmatory_inputs_opened": 0,
+  "mode": "fixture/development generation; constructed control outputs only",
+  "model_calls": 0,
+  "packages": {
+    "Pillow": "13.0.0",
+    "numpy": "2.4.6",
+    "opencv-python-headless": "5.0.0.93",
+    "pytest": "9.1.1"
+  },
+  "python": "3.11.4",
+  "seeds": [
+    42,
+    31415,
+    20261106
+  ],
+  "started_utc": "2026-11-05T19:35:08.076489+00:00",
+  "training_steps": 0
+}

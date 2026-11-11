@@ -1,0 +1,264 @@
+{
+  "confirmatory_created": false,
+  "index_sha256": "cba9aa71231ee619872eb5d84c21f389d6f530c5aa7da872392fd71ec983e7ab",
+  "limitations": [
+    "Unrecorded decoded pixels and source alias equivalence remain unverified",
+    "Authored content matches are conservative where transformed annotation lists vary",
+    "Public external source content is not fingerprinted from private text"
+  ],
+  "manifest_sha256": {
+    "research/data/fair_controls_v1/evaluation.json": "1a4a8adb1ad77c3d761471d1597a6784ffd0e67c09c9798e0bf33fac5094ea8a",
+    "research/data/fair_controls_v1/train.json": "700004781c344d6fd113913c11647e8cc708b62a252aee3a2d8480dc481b802c",
+    "research/data/hard_pairs_v1/samples.json": "4a073c7611bf847bff737bd1e29d90c75fea03bda2bea1adb456e8629974f86c",
+    "research/data/ocr_labels_v1/render_specs.json": "ac2f3322000d252f23d72a7093e2224667fa7ea676ab31840717be8b75302a06",
+    "research/data/recovery_v4/synthetic_samples.json": "1e53bec9592b032dfa31254c56cec3754fd22127feebf6270b85801154e67788",
+    "research/data/source_visibility_v3/samples.json": "043fa5c91ebe0119861f24b045b0ca9fb83b003f06a28b8d3ede3ce27c785cf6",
+    "research/data/vlm_lora_v1/samples.json": "722646bfdfa1600c28fb09e8b6aac41626abc51795db6a038f00c0e4603e5604",
+    "research/data/vlm_lora_v2/samples.json": "0753015693f13bda5796cba411f7357571aeead7a9b43af51ab0771c8abdad16",
+    "research/data/vlm_lora_v2_r2/samples.json": "4d6d6d4b5fe3cb83078b945d31a931e4d0c728c4019a9f5f8b6cbecb1bfc4f0c",
+    "research/evidence_contract/execution/master_01/controlled_faults.json": "6f462664150ffdf7328080c69f73ee899dce11808ef11e009322396a72d95ad1",
+    "research/evidence_contract/local/master_01/stage_pilot/analysis.json": "14c968826ede4688c3de4b2aee972c6fb6ec1e9f65ee807a1be31a0355f743a0",
+    "research/evidence_contract/local/master_01/stage_pilot/inputs.json": "08bc84bddb86c5c545b4ea2ae515b33714b7a07ef525a4f1050beaba2c3f2216",
+    "research/evidence_contract/local/task5_pilot_01/inputs.json": "4c8bf4decd4b86818cfc5e1aa1358698d7f9dd0a2e352d26762786719a0629cb",
+    "research/evidence_contract/local/task5_pilot_01/scoring.json": "d4fb600f4cbef1ba407851b8b3e6f21299fd5fdc2c276c19d6da58189f5151ce",
+    "research/results/e2e_ocr_v1/manifest.json": "b8d15bf20fbc46f17b910a5bb86459f695c2afa7c61c3f17fa32280732dd6879",
+    "research/results/e2e_ocr_v2/manifest.json": "9621bbd6a8fc2e64bf99351cba6f97be3078fff3d4be2958bb816aa3512b6d0b",
+    "research/results/fair_controls_v1/dataset_manifest.json": "8463ed5a5a16b8cef239d18542e81fd699ce49585dfee9c20866b06c9b2c1975",
+    "research/results/fair_controls_v1/pixel_manifest.json": "9aad673f56049dcf52756daf9a17467979fb9237bcff4b4dadb9247349e639bf",
+    "research/results/hard_pairs_v1/dataset_manifest.json": "1514a4d357f5f6ec881e084c90e9bdcb0e2b42ff09410615857d9d794945be1b",
+    "research/results/ocr_labels_v1/evaluation_manifest.json": "b2449b19b749cc8a59493a1ab2afb8ada7538e79b1a8823287199121254d0827",
+    "research/results/recovery_v4/dataset_manifest.json": "55011ba5e3691734d73d57843a1f7af970e22e48eff2936dbe43a8b2428fe046",
+    "research/results/source_visibility_v3/dataset_manifest.json": "543d73089baa107cd82a64ced2de2eb8ced195dc71aeca54b7677de13308fad0",
+    "research/results/vlm_lora_v1/dataset_manifest.json": "f7abaaad37f4803b6265b98b6f6adc0d787a245db4930b3822fd07dea5426800",
+    "research/results/vlm_lora_v2/dataset_manifest.json": "a7b1610dcbb1ff9e1c0c0da47994f079d3ad4306a6a6384b18ca1a14384fb6c5",
+    "research/results/vlm_lora_v2_r2/dataset_manifest.json": "543d73089baa107cd82a64ced2de2eb8ced195dc71aeca54b7677de13308fad0"
+  },
+  "model_calls": 0,
+  "model_pretraining_exposure": "unknown",
+  "scope": "local exposure, no model output or new test input read",
+  "shared_by_axis": {
+    "content_sha256": 139,
+    "file_sha256": 1358,
+    "physical_id": 203,
+    "pixel_sha256": 801,
+    "uid": 1681
+  },
+  "sources": {
+    "OCR-labels": {
+      "by_role": {
+        "development": 80,
+        "test": 224
+      },
+      "content_annotated_physical_ids": 32,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 304,
+        "physical_id": 304,
+        "pixel_sha256": 304,
+        "uid": 304
+      },
+      "physical_ids": 56,
+      "records": 304
+    },
+    "TASK5": {
+      "by_role": {
+        "development": 8,
+        "fixture": 23
+      },
+      "content_annotated_physical_ids": 5,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 31,
+        "physical_id": 31,
+        "pixel_sha256": 31
+      },
+      "physical_ids": 5,
+      "records": 31
+    },
+    "V1": {
+      "by_role": {
+        "calibration": 40,
+        "development": 80,
+        "test": 120,
+        "train": 480
+      },
+      "content_annotated_physical_ids": 144,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 720,
+        "physical_id": 720,
+        "uid": 720
+      },
+      "physical_ids": 144,
+      "records": 720
+    },
+    "V2": {
+      "by_role": {
+        "development": 72,
+        "test": 144,
+        "train": 1280
+      },
+      "content_annotated_physical_ids": 136,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 1496,
+        "physical_id": 1496,
+        "pixel_sha256": 1039,
+        "uid": 1496
+      },
+      "physical_ids": 200,
+      "records": 1496
+    },
+    "V2-R2": {
+      "by_role": {
+        "development": 72,
+        "test": 144,
+        "train": 1280
+      },
+      "content_annotated_physical_ids": 136,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 1496,
+        "physical_id": 1496,
+        "pixel_sha256": 1096,
+        "uid": 1496
+      },
+      "physical_ids": 200,
+      "records": 1496
+    },
+    "V3": {
+      "by_role": {
+        "development": 72,
+        "test": 144,
+        "train": 1280
+      },
+      "content_annotated_physical_ids": 136,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 1496,
+        "physical_id": 1496,
+        "pixel_sha256": 1096,
+        "uid": 1496
+      },
+      "physical_ids": 200,
+      "records": 1496
+    },
+    "V4": {
+      "by_role": {
+        "calibration": 110,
+        "development": 140,
+        "test": 290
+      },
+      "content_annotated_physical_ids": 90,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 540,
+        "physical_id": 540,
+        "uid": 540
+      },
+      "physical_ids": 150,
+      "records": 540
+    },
+    "e2e_ocr_v1": {
+      "by_role": {
+        "previously_exposed": 161
+      },
+      "coverage": {
+        "file_sha256": 161,
+        "uid": 161
+      },
+      "physical_ids": 0,
+      "records": 161
+    },
+    "e2e_ocr_v2": {
+      "by_role": {
+        "previously_exposed": 161
+      },
+      "coverage": {
+        "file_sha256": 161,
+        "uid": 161
+      },
+      "physical_ids": 0,
+      "records": 161
+    },
+    "fair-controls": {
+      "by_role": {
+        "development": 96,
+        "test": 192
+      },
+      "content_annotated_physical_ids": 136,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 288,
+        "physical_id": 288,
+        "pixel_sha256": 288,
+        "uid": 288
+      },
+      "physical_ids": 72,
+      "records": 288
+    },
+    "fair-controls/train": {
+      "by_role": {
+        "train": 2560
+      },
+      "coverage": {
+        "file_sha256": 2560,
+        "physical_id": 2560,
+        "pixel_sha256": 2560,
+        "uid": 2560
+      },
+      "physical_ids": 128,
+      "records": 2560
+    },
+    "hard-pair": {
+      "by_role": {
+        "development": 96,
+        "test": 192,
+        "train": 640
+      },
+      "content_annotated_physical_ids": 136,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 928,
+        "physical_id": 928,
+        "pixel_sha256": 736,
+        "uid": 928
+      },
+      "physical_ids": 200,
+      "records": 928
+    },
+    "master/M1-M7": {
+      "by_role": {
+        "fixture": 8
+      },
+      "coverage": {
+        "pixel_sha256": 8
+      },
+      "physical_ids": 0,
+      "records": 8
+    },
+    "master/M2-M3": {
+      "by_role": {
+        "development": 8,
+        "fixture": 4
+      },
+      "content_annotated_physical_ids": 3,
+      "content_variant_ids": 0,
+      "coverage": {
+        "file_sha256": 12,
+        "physical_id": 12,
+        "pixel_sha256": 12
+      },
+      "physical_ids": 3,
+      "records": 12
+    }
+  },
+  "status": "HISTORICAL_METADATA_CHECKED",
+  "unique_by_axis": {
+    "content_sha256": 453,
+    "file_sha256": 3417,
+    "physical_id": 626,
+    "pixel_sha256": 1330,
+    "uid": 3693
+  }
+}

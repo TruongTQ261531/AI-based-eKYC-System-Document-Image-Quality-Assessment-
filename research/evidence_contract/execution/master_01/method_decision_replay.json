@@ -1,0 +1,177 @@
+{
+  "ablations": {
+    "A_flat": {
+      "diagnostic": {
+        "left_alarms": 0,
+        "left_only": 0,
+        "n": 12,
+        "right_alarms": 0,
+        "right_only": 0,
+        "verdict_matches": 12
+      },
+      "primary": {
+        "left_alarms": 17,
+        "left_only": 0,
+        "n": 120,
+        "right_alarms": 17,
+        "right_only": 0,
+        "verdict_matches": 120
+      }
+    },
+    "A_no_NI": {
+      "diagnostic": {
+        "left_alarms": 0,
+        "left_only": 0,
+        "n": 12,
+        "right_alarms": 0,
+        "right_only": 0,
+        "verdict_matches": 9
+      },
+      "primary": {
+        "left_alarms": 17,
+        "left_only": 1,
+        "n": 120,
+        "right_alarms": 16,
+        "right_only": 0,
+        "verdict_matches": 104
+      }
+    },
+    "A_no_alternative": {
+      "diagnostic": {
+        "left_alarms": 0,
+        "left_only": 0,
+        "n": 12,
+        "right_alarms": 0,
+        "right_only": 0,
+        "verdict_matches": 12
+      },
+      "primary": {
+        "left_alarms": 17,
+        "left_only": 11,
+        "n": 120,
+        "right_alarms": 6,
+        "right_only": 0,
+        "verdict_matches": 109
+      }
+    },
+    "A_no_validator": {
+      "diagnostic": {
+        "left_alarms": 0,
+        "left_only": 0,
+        "n": 12,
+        "right_alarms": 0,
+        "right_only": 0,
+        "verdict_matches": 6
+      },
+      "primary": {
+        "left_alarms": 17,
+        "left_only": 0,
+        "n": 120,
+        "right_alarms": 17,
+        "right_only": 0,
+        "verdict_matches": 120
+      }
+    }
+  },
+  "b3_equals_v3_gate": {
+    "left_alarms": 58,
+    "left_only": 0,
+    "n": 120,
+    "right_alarms": 58,
+    "right_only": 0,
+    "verdict_matches": 120
+  },
+  "by_contract": {
+    "C1": {
+      "left_alarms": 3,
+      "left_only": 0,
+      "n": 36,
+      "right_alarms": 3,
+      "right_only": 0,
+      "verdict_matches": 36
+    },
+    "C2": {
+      "left_alarms": 12,
+      "left_only": 0,
+      "n": 12,
+      "right_alarms": 12,
+      "right_only": 0,
+      "verdict_matches": 12
+    },
+    "C3": {
+      "left_alarms": 1,
+      "left_only": 0,
+      "n": 36,
+      "right_alarms": 21,
+      "right_only": 20,
+      "verdict_matches": 16
+    },
+    "C4": {
+      "left_alarms": 1,
+      "left_only": 0,
+      "n": 36,
+      "right_alarms": 22,
+      "right_only": 21,
+      "verdict_matches": 14
+    }
+  },
+  "diagnostics_raw_vs_gated_v3": {
+    "left_alarms": 9,
+    "left_only": 9,
+    "n": 12,
+    "right_alarms": 0,
+    "right_only": 0,
+    "verdict_matches": 0
+  },
+  "discordance_by_contract": {
+    "C3": 20,
+    "C4": 22
+  },
+  "discordance_reasons": {
+    "original_already_wrong_or_unverified_not_a_regression": 42
+  },
+  "model_calls": 0,
+  "old_inference_executed_again": false,
+  "pilot_sha256": "4ea21b0c860759837bf0c85c7cbd71bf6a0d10dd80732576f6d9643b00da566a",
+  "primary": {
+    "left_alarms": 17,
+    "left_only": 0,
+    "n": 120,
+    "right_alarms": 58,
+    "right_only": 41,
+    "verdict_matches": 78
+  },
+  "scope": "observed development decisions",
+  "sources": {
+    "B0": {
+      "left_alarms": 17,
+      "left_only": 0,
+      "n": 120,
+      "right_alarms": 91,
+      "right_only": 74,
+      "verdict_matches": 45
+    },
+    "B2": {
+      "left_alarms": 17,
+      "left_only": 11,
+      "n": 120,
+      "right_alarms": 9,
+      "right_only": 3,
+      "verdict_matches": 83
+    },
+    "B3_V3_gate": {
+      "left_alarms": 17,
+      "left_only": 0,
+      "n": 120,
+      "right_alarms": 58,
+      "right_only": 41,
+      "verdict_matches": 78
+    }
+  },
+  "taxonomy": {
+    "OMISSION_DECLARED_SUPPORTED_FIELD": 12,
+    "UNDETERMINED_OUTPUT": 42,
+    "UNSUPPORTED_DECLARED_SOURCES": 3,
+    "VALUE_MISMATCH_REFERENCE": 5
+  }
+}

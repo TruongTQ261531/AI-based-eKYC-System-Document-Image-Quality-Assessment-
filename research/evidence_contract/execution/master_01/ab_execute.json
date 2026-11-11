@@ -1,0 +1,2009 @@
+{
+  "cases": [
+    {
+      "cluster": "fixture_1",
+      "contrasts": {
+        "raw_vs_rectified": {
+          "f1_only_delta": 0.0,
+          "fields": {
+            "id_number": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "school": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            }
+          },
+          "fields_correct_to_wrong": 0,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": []
+        },
+        "rectified_vs_bad_crop": {
+          "f1_only_delta": 0.0,
+          "fields": {
+            "id_number": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "school": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": false,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            }
+          },
+          "fields_correct_to_wrong": 0,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": [
+            "id_number",
+            "school"
+          ]
+        }
+      },
+      "stages": {
+        "author": {
+          "canonical_crop": [
+            0,
+            0,
+            999,
+            559
+          ],
+          "end_to_end": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "external_input": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+          "geometric_source_state": {
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "body/a": {
+                  "components": {
+                    "body/a/label": "retained",
+                    "body/a/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                },
+                "duplicate/a": {
+                  "components": {
+                    "duplicate/a/value": "retained"
+                  },
+                  "kind": "duplicated_body",
+                  "status": "retained"
+                },
+                "mrz/a": {
+                  "components": {
+                    "mrz/a/value": "retained"
+                  },
+                  "kind": "mrz",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "body/b": {
+                  "components": {
+                    "body/b/label": "retained",
+                    "body/b/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 242.07425650557622,
+            "contrast": 20.752033504780282,
+            "min_side": 560,
+            "p90": 245.0,
+            "sharpness": 833.4916008364312
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "655488e4cfc7473489c84af7c5f8ee9b",
+          "m3_output_digest": "4af960d758a939db878363868d1ee9fdada2ede8419c39803175f0adeca1d10d",
+          "m3_reader_seconds": 2.6614148998633027,
+          "output_fields_count": 2,
+          "output_usable": true,
+          "pixel": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d",
+          "retained_field_exact": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "visible_reference_errors": 2
+        },
+        "bad_crop": {
+          "canonical_crop": [
+            0,
+            236,
+            999,
+            559
+          ],
+          "end_to_end": {
+            "correct": 0,
+            "f1": {
+              "denominator": 2,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 0,
+            "reference": 2
+          },
+          "external_input": "8c3654a3708bfaa82ba538de1437fb7bb2340cefc9486f7cf0ebd0a232e90c82",
+          "geometric_source_state": {
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "body/a": {
+                  "components": {
+                    "body/a/label": "clipped",
+                    "body/a/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                },
+                "duplicate/a": {
+                  "components": {
+                    "duplicate/a/value": "clipped"
+                  },
+                  "kind": "duplicated_body",
+                  "status": "clipped"
+                },
+                "mrz/a": {
+                  "components": {
+                    "mrz/a/value": "retained"
+                  },
+                  "kind": "mrz",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "body/b": {
+                  "components": {
+                    "body/b/label": "clipped",
+                    "body/b/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 207.82585276338514,
+            "contrast": 66.02024900054558,
+            "min_side": 671,
+            "p90": 245.0,
+            "sharpness": 514.4886046344271
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                47.456783294677734,
+                294.65643310546875
+              ],
+              [
+                1040.9840087890625,
+                255.54168701171875
+              ],
+              [
+                1066.0,
+                601.0
+              ],
+              [
+                29.0,
+                637.0
+              ]
+            ],
+            "detection": null,
+            "height": 346,
+            "matrix": [
+              [
+                1.1015627233626981,
+                0.05938859799536993,
+                -69.77585590056889
+              ],
+              [
+                0.04314817739429124,
+                1.095977687518199,
+                -324.98454987145374
+              ],
+              [
+                1.9399016395949995e-05,
+                0.00013291673862094502,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 243.19,
+              "brightness_p90": 245.0,
+              "contrast_std": 13.36,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 202.24
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1037
+          },
+          "m2_wall_seconds": 0.04326409986242652,
+          "m3_call_id": "bc3b3d44c6ac4e94a7a7143430a547a2",
+          "m3_output_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "m3_reader_seconds": 0.6720078000798821,
+          "output_fields_count": 0,
+          "output_usable": true,
+          "pixel": "58cbc1546b4b7e598788c192eba01e4ec7632e53971ed04748736863496dbd9d",
+          "retained_field_exact": {
+            "correct": 0,
+            "f1": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 0,
+            "reference": 1
+          },
+          "visible_reference_errors": 1
+        },
+        "raw": {
+          "canonical_crop": [
+            0,
+            0,
+            999,
+            559
+          ],
+          "end_to_end": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "external_input": "8c3654a3708bfaa82ba538de1437fb7bb2340cefc9486f7cf0ebd0a232e90c82",
+          "geometric_source_state": {
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "body/a": {
+                  "components": {
+                    "body/a/label": "retained",
+                    "body/a/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                },
+                "duplicate/a": {
+                  "components": {
+                    "duplicate/a/value": "retained"
+                  },
+                  "kind": "duplicated_body",
+                  "status": "retained"
+                },
+                "mrz/a": {
+                  "components": {
+                    "mrz/a/value": "retained"
+                  },
+                  "kind": "mrz",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "body/b": {
+                  "components": {
+                    "body/b/label": "retained",
+                    "body/b/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 207.82585276338514,
+            "contrast": 66.02024900054558,
+            "min_side": 671,
+            "p90": 245.0,
+            "sharpness": 514.4886046344271
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "deb84bd0377341f9aca50733db6fce85",
+          "m3_output_digest": "4af960d758a939db878363868d1ee9fdada2ede8419c39803175f0adeca1d10d",
+          "m3_reader_seconds": 1.8681278000585735,
+          "output_fields_count": 2,
+          "output_usable": true,
+          "pixel": "8c3654a3708bfaa82ba538de1437fb7bb2340cefc9486f7cf0ebd0a232e90c82",
+          "retained_field_exact": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "visible_reference_errors": 2
+        },
+        "rectified": {
+          "canonical_crop": [
+            0,
+            0,
+            999,
+            559
+          ],
+          "end_to_end": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "external_input": "8c3654a3708bfaa82ba538de1437fb7bb2340cefc9486f7cf0ebd0a232e90c82",
+          "geometric_source_state": {
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "body/a": {
+                  "components": {
+                    "body/a/label": "retained",
+                    "body/a/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                },
+                "duplicate/a": {
+                  "components": {
+                    "duplicate/a/value": "retained"
+                  },
+                  "kind": "duplicated_body",
+                  "status": "retained"
+                },
+                "mrz/a": {
+                  "components": {
+                    "mrz/a/value": "retained"
+                  },
+                  "kind": "mrz",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "body/b": {
+                  "components": {
+                    "body/b/label": "retained",
+                    "body/b/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 207.82585276338514,
+            "contrast": 66.02024900054558,
+            "min_side": 671,
+            "p90": 245.0,
+            "sharpness": 514.4886046344271
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                60.0,
+                62.0
+              ],
+              [
+                1024.0,
+                21.0
+              ],
+              [
+                1066.0,
+                601.0
+              ],
+              [
+                29.0,
+                637.0
+              ]
+            ],
+            "detection": null,
+            "height": 581,
+            "matrix": [
+              [
+                1.101562610316461,
+                0.059388592904017955,
+                -69.7758493790368
+              ],
+              [
+                0.04666442434448508,
+                1.0971830504410625,
+                -70.82521458801499
+              ],
+              [
+                1.9398990405369444e-05,
+                0.00013291659673662521,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 241.94,
+              "brightness_p90": 245.0,
+              "contrast_std": 18.35,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 310.8
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1037
+          },
+          "m2_wall_seconds": 0.06165889999829233,
+          "m3_call_id": "364842f5f978488799ccdfd3e95f77b0",
+          "m3_output_digest": "4af960d758a939db878363868d1ee9fdada2ede8419c39803175f0adeca1d10d",
+          "m3_reader_seconds": 2.599018699955195,
+          "output_fields_count": 2,
+          "output_usable": true,
+          "pixel": "b01d6700ad2d40e9e01a110829d638f3148906f70e1e2bf884fddcb833a6727e",
+          "retained_field_exact": {
+            "correct": 0,
+            "f1": {
+              "denominator": 4,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 2,
+            "reference": 2
+          },
+          "visible_reference_errors": 2
+        }
+      },
+      "target": "school"
+    },
+    {
+      "cluster": "fixture_2",
+      "contrasts": {
+        "raw_vs_rectified": {
+          "f1_only_delta": 0.0,
+          "fields": {
+            "address": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "dob": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            },
+            "full_name": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "gender": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            },
+            "id_number": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            }
+          },
+          "fields_correct_to_wrong": 0,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": [
+            "address"
+          ]
+        },
+        "rectified_vs_bad_crop": {
+          "f1_only_delta": -0.09999999999999998,
+          "fields": {
+            "address": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "dob": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            },
+            "full_name": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": false,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            },
+            "gender": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": true,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            },
+            "id_number": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            }
+          },
+          "fields_correct_to_wrong": 1,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": [
+            "address",
+            "full_name",
+            "gender"
+          ]
+        }
+      },
+      "stages": {
+        "author": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "external_input": "a181e8f6c924fae6bd338dcf83a73c2ad434dfb9c8326b6a0c0630a36fbc7c16",
+          "geometric_source_state": {
+            "address": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "gender": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 216.0332373046875,
+            "contrast": 60.81775906865641,
+            "min_side": 800,
+            "p90": 244.0,
+            "sharpness": 897.827841796875
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "b937044b4c9a4375856a2d302bba6240",
+          "m3_output_digest": "c690d59c2a518b7330aa769d2b216b46e78f436e085d04ec3e6ad30c7e3a7d99",
+          "m3_reader_seconds": 1.8922011000104249,
+          "output_fields_count": 5,
+          "output_usable": true,
+          "pixel": "a181e8f6c924fae6bd338dcf83a73c2ad434dfb9c8326b6a0c0630a36fbc7c16",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        },
+        "bad_crop": {
+          "canonical_crop": [
+            0,
+            341,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 2,
+            "f1": {
+              "denominator": 8,
+              "numerator": 4,
+              "value": 0.5
+            },
+            "predicted": 3,
+            "reference": 5
+          },
+          "external_input": "9224e94b5422cb04a2fe168f86c3c6b0ab456c6e7a3599de856bb64376203833",
+          "geometric_source_state": {
+            "address": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label": "clipped",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            },
+            "gender": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label": "clipped",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            },
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 194.70790229885057,
+            "contrast": 72.60176059126923,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 640.7314655172414
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                47.22647476196289,
+                397.8200988769531
+              ],
+              [
+                1241.300537109375,
+                358.7718811035156
+              ],
+              [
+                1266.0,
+                841.0
+              ],
+              [
+                29.0,
+                877.0
+              ]
+            ],
+            "detection": null,
+            "height": 482,
+            "matrix": [
+              [
+                1.0783908110974727,
+                0.041018546178449924,
+                -67.24659852032728
+              ],
+              [
+                0.03510605821433578,
+                1.07352488628846,
+                -428.7277117823964
+              ],
+              [
+                1.0283507176265708e-05,
+                7.734799114159537e-05,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 238.05,
+              "brightness_p90": 244.0,
+              "contrast_std": 26.29,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 471.29
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1237
+          },
+          "m2_wall_seconds": 0.054605199955403805,
+          "m3_call_id": "0cb5bed08b2e4b0fa003ecee45f49703",
+          "m3_output_digest": "3fc4d789d9471e280d2d60e76e283dde424f269934a12c733cbf491b43805696",
+          "m3_reader_seconds": 1.7351844999939203,
+          "output_fields_count": 3,
+          "output_usable": true,
+          "pixel": "3a9a46fbe4681a5d296696677fd667da0fc7f9d89b11fd4ec974f34ab67f69fa",
+          "retained_field_exact": {
+            "correct": 2,
+            "f1": {
+              "denominator": 6,
+              "numerator": 4,
+              "value": 0.6666666666666666
+            },
+            "predicted": 3,
+            "reference": 3
+          },
+          "visible_reference_errors": 1
+        },
+        "raw": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "external_input": "9224e94b5422cb04a2fe168f86c3c6b0ab456c6e7a3599de856bb64376203833",
+          "geometric_source_state": {
+            "address": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "gender": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 194.70790229885057,
+            "contrast": 72.60176059126923,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 640.7314655172414
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "5dcc21cc6245412abd4d6d668083b689",
+          "m3_output_digest": "ccdd1eace6e09071ea0685720452265ab7eaeebc5465fc4c959d82d1166736ea",
+          "m3_reader_seconds": 1.7348509000148624,
+          "output_fields_count": 5,
+          "output_usable": true,
+          "pixel": "9224e94b5422cb04a2fe168f86c3c6b0ab456c6e7a3599de856bb64376203833",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        },
+        "rectified": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "external_input": "9224e94b5422cb04a2fe168f86c3c6b0ab456c6e7a3599de856bb64376203833",
+          "geometric_source_state": {
+            "address": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "gender": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "id_number": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-000/evidence-task3/seen_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 194.70790229885057,
+            "contrast": 72.60176059126923,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 640.7314655172414
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                60.0,
+                62.0
+              ],
+              [
+                1224.0,
+                21.0
+              ],
+              [
+                1266.0,
+                841.0
+              ],
+              [
+                29.0,
+                877.0
+              ]
+            ],
+            "detection": null,
+            "height": 821,
+            "matrix": [
+              [
+                1.078390892110338,
+                0.04101854927045459,
+                -67.24660358138847
+              ],
+              [
+                0.03790482388008497,
+                1.0761271950346056,
+                -68.99417552495063
+              ],
+              [
+                1.0283536446353348e-05,
+                7.734804337990762e-05,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 215.97,
+              "brightness_p90": 244.0,
+              "contrast_std": 59.96,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 446.4
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1237
+          },
+          "m2_wall_seconds": 0.07735170004889369,
+          "m3_call_id": "eeb992ca75f1461eb2843e066909843a",
+          "m3_output_digest": "1f06ef86b4c5b4d41297e6543aaa90482c7293864e979ea76bcf5efb9d74a0d4",
+          "m3_reader_seconds": 2.2947309999726713,
+          "output_fields_count": 5,
+          "output_usable": true,
+          "pixel": "348e39fc7e08aeefcf8828653756318e22fcd525a3af5d8d75566f5cae9f652b",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 10,
+              "numerator": 6,
+              "value": 0.6
+            },
+            "predicted": 5,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        }
+      },
+      "target": "full_name"
+    },
+    {
+      "cluster": "fixture_3",
+      "contrasts": {
+        "raw_vs_rectified": {
+          "f1_only_delta": 0.0,
+          "fields": {
+            "course": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            },
+            "dob": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            },
+            "full_name": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "school": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "student_id": {
+              "after_correct": true,
+              "all_declared_sources_lost": false,
+              "before_correct": true,
+              "explanation": "undetermined_or_no_new_error",
+              "retained_source": true
+            }
+          },
+          "fields_correct_to_wrong": 0,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": []
+        },
+        "rectified_vs_bad_crop": {
+          "f1_only_delta": -0.6666666666666666,
+          "fields": {
+            "course": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": true,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            },
+            "dob": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": true,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            },
+            "full_name": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": false,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            },
+            "school": {
+              "after_correct": false,
+              "all_declared_sources_lost": false,
+              "before_correct": false,
+              "explanation": "source_retained_error_stage_unresolved",
+              "retained_source": true
+            },
+            "student_id": {
+              "after_correct": false,
+              "all_declared_sources_lost": true,
+              "before_correct": true,
+              "explanation": "geometry_loss_at_M2",
+              "retained_source": false
+            }
+          },
+          "fields_correct_to_wrong": 3,
+          "fields_wrong_to_correct": 0,
+          "first_observed_boundary": "M2_pixels",
+          "input_same": true,
+          "m2_pixels_changed": true,
+          "raw_field_difference_keys": [
+            "course",
+            "dob",
+            "full_name",
+            "student_id"
+          ]
+        }
+      },
+      "stages": {
+        "author": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "external_input": "7a63c59b52f7cdb93f9158a27656ba991d1a7936c2b8e9c8dd509abf61d812ec",
+          "geometric_source_state": {
+            "course": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "student_id": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 215.01881673177084,
+            "contrast": 60.74750580897405,
+            "min_side": 800,
+            "p90": 244.0,
+            "sharpness": 950.7795540364583
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "21e6a3f25d444f29916a9f36aeb8e456",
+          "m3_output_digest": "c69e507733936a1a886f1599964c538f24138f67490702389a323919c43c3ff1",
+          "m3_reader_seconds": 2.2288889000192285,
+          "output_fields_count": 4,
+          "output_usable": true,
+          "pixel": "7a63c59b52f7cdb93f9158a27656ba991d1a7936c2b8e9c8dd509abf61d812ec",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        },
+        "bad_crop": {
+          "canonical_crop": [
+            0,
+            426,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 0,
+            "f1": {
+              "denominator": 5,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 0,
+            "reference": 5
+          },
+          "external_input": "2e7bb11537c3a45e714ac08f1571600e2e6f82a88f85296ea6268850250f8fc5",
+          "geometric_source_state": {
+            "course": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/label": "clipped",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/label": "clipped",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/label": "clipped",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "student_id": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/label": "clipped",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/value": "clipped"
+                  },
+                  "kind": "body",
+                  "status": "clipped"
+                }
+              },
+              "state": "clipped"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 193.7546773488256,
+            "contrast": 72.27528332685893,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 656.8216829085458
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                43.939552307128906,
+                484.23431396484375
+              ],
+              [
+                1245.7535400390625,
+                445.712890625
+              ],
+              [
+                1266.0,
+                841.0
+              ],
+              [
+                29.0,
+                877.0
+              ]
+            ],
+            "detection": null,
+            "height": 395,
+            "matrix": [
+              [
+                1.0783910383816537,
+                0.04101855100447778,
+                -67.24660934399496
+              ],
+              [
+                0.03438608342909998,
+                1.0727972246462991,
+                -520.9961372114593
+              ],
+              [
+                1.0283581271284532e-05,
+                7.734814990878937e-05,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 235.0,
+              "brightness_p90": 244.0,
+              "contrast_std": 27.59,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 341.9
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1237
+          },
+          "m2_wall_seconds": 0.04657590016722679,
+          "m3_call_id": "2ce4d320c6344694b436a04680549fc9",
+          "m3_output_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "m3_reader_seconds": 1.9183786001522094,
+          "output_fields_count": 0,
+          "output_usable": true,
+          "pixel": "151aada163bffd5ea5f7f8b2375885d40e3aa90d1da6b08ec9f55daccfa91730",
+          "retained_field_exact": {
+            "correct": 0,
+            "f1": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "predicted": 0,
+            "reference": 1
+          },
+          "visible_reference_errors": 1
+        },
+        "raw": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "external_input": "2e7bb11537c3a45e714ac08f1571600e2e6f82a88f85296ea6268850250f8fc5",
+          "geometric_source_state": {
+            "course": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "student_id": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 193.7546773488256,
+            "contrast": 72.27528332685893,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 656.8216829085458
+          },
+          "m2_geometry": {
+            "method": "bypass"
+          },
+          "m2_wall_seconds": 0.0,
+          "m3_call_id": "3fd1ac93ec8e4b8592722163753ac5c7",
+          "m3_output_digest": "c69e507733936a1a886f1599964c538f24138f67490702389a323919c43c3ff1",
+          "m3_reader_seconds": 2.362633900018409,
+          "output_fields_count": 4,
+          "output_usable": true,
+          "pixel": "2e7bb11537c3a45e714ac08f1571600e2e6f82a88f85296ea6268850250f8fc5",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        },
+        "rectified": {
+          "canonical_crop": [
+            0,
+            0,
+            1199,
+            799
+          ],
+          "end_to_end": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "external_input": "2e7bb11537c3a45e714ac08f1571600e2e6f82a88f85296ea6268850250f8fc5",
+          "geometric_source_state": {
+            "course": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/2/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "dob": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/0/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "full_name": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/3/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "school": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/4/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            },
+            "student_id": {
+              "scope": "complete",
+              "sources": {
+                "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1": {
+                  "components": {
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/label": "retained",
+                    "ocr-labels-v1-fictional-001/evidence-task3/new_layout_seen_font/source/1/value": "retained"
+                  },
+                  "kind": "body",
+                  "status": "retained"
+                }
+              },
+              "state": "retained"
+            }
+          },
+          "m1_mode": "diagnostic_only",
+          "m1_quality": {
+            "brightness": 193.7546773488256,
+            "contrast": 72.27528332685893,
+            "min_side": 911,
+            "p90": 244.0,
+            "sharpness": 656.8216829085458
+          },
+          "m2_geometry": {
+            "aspect_ratio_source": "edge_estimate",
+            "corners": [
+              [
+                60.0,
+                62.0
+              ],
+              [
+                1224.0,
+                21.0
+              ],
+              [
+                1266.0,
+                841.0
+              ],
+              [
+                29.0,
+                877.0
+              ]
+            ],
+            "detection": null,
+            "height": 821,
+            "matrix": [
+              [
+                1.078390892110338,
+                0.04101854927045459,
+                -67.24660358138847
+              ],
+              [
+                0.03790482388008497,
+                1.0761271950346056,
+                -68.99417552495063
+              ],
+              [
+                1.0283536446353348e-05,
+                7.734804337990762e-05,
+                1.0
+              ]
+            ],
+            "method": "provided_corners",
+            "orientation": "geometric_only",
+            "rectified_metrics": {
+              "bright_pixel_fraction": 0.0,
+              "brightness_mean": 214.96,
+              "brightness_p90": 244.0,
+              "contrast_std": 59.9,
+              "note": "Diagnostic only: bright paper is not proof of glare; OCR must assess readability.",
+              "sharpness": 453.71
+            },
+            "requires_review": false,
+            "warnings": [
+              "reading_direction_unverified",
+              "aspect_ratio_estimated_from_edges"
+            ],
+            "width": 1237
+          },
+          "m2_wall_seconds": 0.079216199927032,
+          "m3_call_id": "08c533ee05804fac825a00923e108f28",
+          "m3_output_digest": "c69e507733936a1a886f1599964c538f24138f67490702389a323919c43c3ff1",
+          "m3_reader_seconds": 1.8027645000256598,
+          "output_fields_count": 4,
+          "output_usable": true,
+          "pixel": "816d68999444e71e82527e1cdcd2ccbce55a6da3ae687fbb4ebb4e99c7cd6176",
+          "retained_field_exact": {
+            "correct": 3,
+            "f1": {
+              "denominator": 9,
+              "numerator": 6,
+              "value": 0.6666666666666666
+            },
+            "predicted": 4,
+            "reference": 5
+          },
+          "visible_reference_errors": 2
+        }
+      },
+      "target": "full_name"
+    }
+  ],
+  "content_digest": "5960d28024879d5f54046ca4d9dbd21ffcb13b6a326d8af9773cda0e81944699",
+  "historical_cache_read_only": true,
+  "human_labels": 0,
+  "mode": "execute",
+  "model_calls": 10,
+  "new_gpu_calls": 0,
+  "prior_and_current_calls": 10,
+  "provenance": [
+    {
+      "call_id": "2ce4d320c6344694b436a04680549fc9",
+      "origin": "fresh",
+      "pixel": "151aada163bffd5ea5f7f8b2375885d40e3aa90d1da6b08ec9f55daccfa91730"
+    },
+    {
+      "call_id": "3fd1ac93ec8e4b8592722163753ac5c7",
+      "origin": "fresh",
+      "pixel": "2e7bb11537c3a45e714ac08f1571600e2e6f82a88f85296ea6268850250f8fc5"
+    },
+    {
+      "call_id": "eeb992ca75f1461eb2843e066909843a",
+      "origin": "fresh",
+      "pixel": "348e39fc7e08aeefcf8828653756318e22fcd525a3af5d8d75566f5cae9f652b"
+    },
+    {
+      "call_id": "0cb5bed08b2e4b0fa003ecee45f49703",
+      "origin": "fresh",
+      "pixel": "3a9a46fbe4681a5d296696677fd667da0fc7f9d89b11fd4ec974f34ab67f69fa"
+    },
+    {
+      "call_id": "655488e4cfc7473489c84af7c5f8ee9b",
+      "origin": "historical_cache",
+      "pixel": "3d7258671d71a97800edab0a2175b3f8ec9f0061db140ba86b81f01551a5953d"
+    },
+    {
+      "call_id": "bc3b3d44c6ac4e94a7a7143430a547a2",
+      "origin": "fresh",
+      "pixel": "58cbc1546b4b7e598788c192eba01e4ec7632e53971ed04748736863496dbd9d"
+    },
+    {
+      "call_id": "21e6a3f25d444f29916a9f36aeb8e456",
+      "origin": "fresh",
+      "pixel": "7a63c59b52f7cdb93f9158a27656ba991d1a7936c2b8e9c8dd509abf61d812ec"
+    },
+    {
+      "call_id": "08c533ee05804fac825a00923e108f28",
+      "origin": "fresh",
+      "pixel": "816d68999444e71e82527e1cdcd2ccbce55a6da3ae687fbb4ebb4e99c7cd6176"
+    },
+    {
+      "call_id": "deb84bd0377341f9aca50733db6fce85",
+      "origin": "fresh",
+      "pixel": "8c3654a3708bfaa82ba538de1437fb7bb2340cefc9486f7cf0ebd0a232e90c82"
+    },
+    {
+      "call_id": "5dcc21cc6245412abd4d6d668083b689",
+      "origin": "fresh",
+      "pixel": "9224e94b5422cb04a2fe168f86c3c6b0ab456c6e7a3599de856bb64376203833"
+    },
+    {
+      "call_id": "b937044b4c9a4375856a2d302bba6240",
+      "origin": "historical_cache",
+      "pixel": "a181e8f6c924fae6bd338dcf83a73c2ad434dfb9c8326b6a0c0630a36fbc7c16"
+    },
+    {
+      "call_id": "364842f5f978488799ccdfd3e95f77b0",
+      "origin": "fresh",
+      "pixel": "b01d6700ad2d40e9e01a110829d638f3148906f70e1e2bf884fddcb833a6727e"
+    }
+  ],
+  "reader": "rapid_v4",
+  "scope": "development_only",
+  "stats": {
+    "average_cpu_percent_of_one_core": 137.20741704753942,
+    "gpu_device_peak_used_mib": null,
+    "gpu_device_peak_utilization_percent": null,
+    "gpu_device_sample_count": 0,
+    "gpu_query_error": null,
+    "gpu_scope": "device-wide utilization includes other applications; native CUDA memory is reader-reported",
+    "native_peak_allocated_bytes": null,
+    "native_peak_reserved_bytes": null,
+    "process_cpu_seconds": 46.1875,
+    "process_peak_sampled_rss_bytes": 943431680,
+    "process_peak_sampled_thread_count": 18,
+    "process_sample_count": 126,
+    "wall_seconds": 33.66253879992291
+  },
+  "test_set_opened": false
+}

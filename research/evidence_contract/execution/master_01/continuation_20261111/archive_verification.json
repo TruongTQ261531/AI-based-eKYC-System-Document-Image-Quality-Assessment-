@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "d72b610ee069f68f90d4c451c000d0a3fab59012278817f03ff856175b412e0b",
+  "isolated_process": true,
+  "model_calls": 0,
+  "published": false,
+  "status": "PASS",
+  "tamper_rejected": true,
+  "verified_decisions": 660
+}

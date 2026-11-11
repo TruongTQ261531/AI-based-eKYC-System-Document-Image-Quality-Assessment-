@@ -1,0 +1,29 @@
+{
+  "schema": "ifv-packet-index/1",
+  "role": "development",
+  "data_policy": "fictional",
+  "review_status": "BLOCKED_ON_HUMAN_REVIEW",
+  "phase1": {
+    "packet_id": "e0819a7806fbc8d799b4a241f5d4ea58c55f96d014de2246f1bc1ed5e5650103",
+    "images": 31,
+    "field_slots": 86,
+    "form": "local/task55_blind_review_v1/index.html",
+    "asset_sha256_receipt": "execution/task55_audit/review_packet_preparation.json",
+    "outputs_or_author_reference_exposed": false,
+    "real_submissions": 0
+  },
+  "phase2": {
+    "sample_id": "7a5d2ef884ad662633198b9f294c9535e47924f0ec27135b579da01696d97f8d",
+    "sampling_receipt": "execution/task55_recovery/ifv_sampling_summary.json",
+    "unique_primary_frame": 108,
+    "selected_primary": 42,
+    "selected_diagnostics": 4,
+    "real_output_packets": 0,
+    "real_submissions": 0
+  },
+  "input_schema": "IFV_REVIEW_SCHEMA.json",
+  "review_guide": "IFV_REVIEW_GUIDE.md",
+  "analyst_mapping_access": "private separate location",
+  "independent_adjudication_available": false,
+  "confirmatory": false
+}

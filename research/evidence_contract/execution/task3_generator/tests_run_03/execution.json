@@ -1,0 +1,29 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "research/evidence_contract/tests",
+    "research/tests/test_v3_sources.py",
+    "research/tests/test_hp_masks.py",
+    "research/tests/test_labels_schema.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\execution\\task3_generator\\tests_run_03\\tmp",
+    "--junitxml=research\\evidence_contract\\execution\\task3_generator\\tests_run_03\\junit.xml"
+  ],
+  "started_utc": "2026-11-05T19:34:52.595501+00:00",
+  "ended_utc": "2026-11-05T19:35:07.133405+00:00",
+  "exit_code": 0,
+  "code_sha256": {
+    "research\\evidence_contract\\contracts.py": "7264238f6a64c94ac2734465a091017f8713e982910de68d453387bed0bd660b",
+    "research\\evidence_contract\\fixtures.py": "0ebaee34cb25bdca2ca77d192d7a7268ddac93b39245703c25a79ec63a0c7d3d",
+    "research\\evidence_contract\\generator.py": "0511a4a78ed5b88b3c2fbb3d6dfe95b0bf54d5d37924a60ca0baee83347bac40",
+    "research\\evidence_contract\\pilot.py": "b5e788947ffaccabeb37a2e6f65dcb4f90e31ad895f3efbdcd0b6fbcf62c1bdc",
+    "research\\evidence_contract\\source_graph.py": "b9f620842a0dbc89e25062ba1f74d830712bddb823c21ec326eae3eb108e78d1",
+    "research\\evidence_contract\\validity.py": "e136cef0f6c30d0a835aca60464c251dd2f1a1e5cbf90737d5aab00e18834b5a",
+    "research\\evidence_contract\\__init__.py": "eaf621b7e055b12a69e9ca0c0eb7701e122ad5db9532e90726c9fe3aeea35002",
+    "research\\evidence_contract\\tests\\test_contracts.py": "831e0bfae14cc654646d38c52c7130bce1d3c8553c90aa52b68424d1cd0bc1b8"
+  }
+}

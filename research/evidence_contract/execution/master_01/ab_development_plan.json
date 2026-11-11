@@ -1,0 +1,20 @@
+{
+  "clusters": 3,
+  "code_sha256": {
+    "ekyc/module1_quality.py": "70753e414466d507e4f246a66109158552380cfde5bf75546cf73e44e0f0e6d1",
+    "ekyc/module2_homography.py": "02ea0a5a3f6fc82eed3b7f2aa688055e891533240e00c1e310635f91bbeb8be8",
+    "research/evidence_contract/master/propagation.py": "000f1591fe42a713df61bf30cc10632c327da78c220dfbe2a80025d7e61fc735",
+    "research/evidence_contract/reader_adapters.py": "62041ba97d7db34c97efc04a87dbfea45011dbe7525f15b59c64d6009a17ab42",
+    "research/evidence_contract/runner.py": "37ed6ff09b2cf973f17a5ee92c5e5ac549ab898ad986c4effe4d398542ee3190"
+  },
+  "confirmatory": false,
+  "max_reader_calls": 12,
+  "private_manifest_sha256": {
+    "analysis.json": "14c968826ede4688c3de4b2aee972c6fb6ec1e9f65ee807a1be31a0355f743a0",
+    "inputs.json": "08bc84bddb86c5c545b4ea2ae515b33714b7a07ef525a4f1050beaba2c3f2216"
+  },
+  "reader": "rapid_v4",
+  "reader_spec_sha256": "915691954610f4db91103ace0234d8bbdcb194941ac5a35868176dc1941c7383",
+  "scope": "development_only",
+  "unique_requests": 12
+}

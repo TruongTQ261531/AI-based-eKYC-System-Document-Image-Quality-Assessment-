@@ -1,0 +1,54 @@
+{
+  "task": "TASK 6",
+  "status": "BLOCKED",
+  "checked_utc": "2026-11-05T22:28:35.606890+00:00",
+  "branch": "main",
+  "head": "f5d130d93525e7633053edc03e6d9f6edeba7a6f",
+  "user_precondition": "Only begin after TASK5 has a valid GO for the requested confirmatory preparation and lock",
+  "task5_engineering_checks_passed": true,
+  "task5_research_go_for_confirmatory": false,
+  "task5_allowed_scope": "bounded independent oracle-validity/fault-provenance audit only",
+  "task5_evidence": {
+    "review_path": "research/evidence_contract/GO_NO_GO_REVIEW.md",
+    "review_sha256": "7be6bb25b9c2e3b1932ef3a37377779679c927d0f8d764b4a33344dca6309703",
+    "final_checks_path": "research/evidence_contract/execution/task5_pilot/final_checks.json",
+    "final_checks_sha256": "41dbf4f84cf0466fc8187a2aec9fd56d88848271421383bb04c192a0fa71580f",
+    "documents_match_task5_audit": {
+      "BASELINE_PROTOCOL.md": true,
+      "ABLATION_PLAN.md": true,
+      "DEVELOPMENT_PILOT.md": true,
+      "GO_NO_GO_REVIEW.md": true
+    },
+    "code_mismatches": [],
+    "exclusive_A_alarms_over_strong_B3": 0,
+    "flat_oracle_equivalent_on_primary": true,
+    "independent_real_model_failure_labels": 0
+  },
+  "reasons": [
+    "No superseding GO for confirmatory preparation/locking was found in the research gate artifacts.",
+    "TASK5 found no exclusive A alarm over the strong visible-reference baseline; the flat conditional oracle matched A on the primary pilot.",
+    "Independent failure/readability verification and fault provenance remain prerequisites; passing unit tests is not a research GO."
+  ],
+  "exposure_audit_performed": false,
+  "new_specimens_generated": 0,
+  "new_camera_images_claimed": 0,
+  "human_labels_created": 0,
+  "confirmatory_records_created": 0,
+  "confirmatory_data_sealed": false,
+  "confirmatory_outputs_accessed": false,
+  "model_inference_calls": 0,
+  "training_runs": 0,
+  "research_questions_changed": false,
+  "git_writes": false,
+  "deferred_deliverables": [
+    "TEST_DATASET_CARD.md",
+    "TEST_MANIFEST.json",
+    "EXPOSURE_AUDIT.json",
+    "CONFIRMATORY_PROTOCOL.md",
+    "STATISTICAL_ANALYSIS_PLAN.md",
+    "TEST_LOCK.json",
+    "LOCK_VERIFICATION.md"
+  ],
+  "next_gate": "Complete the bounded independent validity/fault audit allowed by TASK5; record a new evidence-backed GO with explicit scope before beginning TASK6",
+  "no_go_is_not_statistical_rejection_of_hypotheses": true
+}

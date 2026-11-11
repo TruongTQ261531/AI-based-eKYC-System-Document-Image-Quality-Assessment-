@@ -1,0 +1,1 @@
+{"command":["D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe","-B","-m","research.evidence_contract.task5.pilot","worker","--run","pilot_01","--reader","rapid_v4","--mode","resume"],"elapsed_seconds":2.6728958999738097,"exit_code":0,"mode":"resume","reader":"rapid_v4","stdout_sha256":"996c93985ff0bba0bd8ebf93926a147404ffdb2afc68187a0696be823adeca6d"}

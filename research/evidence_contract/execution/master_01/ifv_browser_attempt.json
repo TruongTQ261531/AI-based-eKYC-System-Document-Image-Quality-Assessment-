@@ -1,0 +1,11 @@
+{
+  "scope": "read-only smoke of the offline fictional phase-1 form",
+  "attempts": [
+    {"surface": "in-app browser", "outcome": "net::ERR_CONNECTION_TIMED_OUT"},
+    {"surface": "Microsoft Edge window", "outcome": "Computer Use app approval timed out"}
+  ],
+  "loopback_server_closed": true,
+  "reviewer_observations_entered": 0,
+  "browser_render_verified": false,
+  "substitute": "Node tests of actual form JavaScript with in-memory DOM fixtures"
+}

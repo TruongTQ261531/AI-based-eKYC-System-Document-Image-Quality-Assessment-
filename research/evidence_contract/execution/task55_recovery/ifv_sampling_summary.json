@@ -1,0 +1,97 @@
+{
+  "audit_sha256": "4ea21b0c860759837bf0c85c7cbd71bf6a0d10dd80732576f6d9643b00da566a",
+  "confirmatory": false,
+  "identity_fields": [
+    "physical_id_sha256",
+    "original_pixel_sha256",
+    "followup_pixel_sha256",
+    "contract_id",
+    "field_key",
+    "reader",
+    "graph_sha256"
+  ],
+  "independent_labels_available": 0,
+  "model_calls": 0,
+  "no_alert_budget": 28,
+  "physical_ids_selected": 5,
+  "sample_file_sha256": "12d55ec9eb111c35b12d7ccead4cc5bb01ac3c4a8bdac6c4dedb8d954e9d4e69",
+  "sample_id": "7a5d2ef884ad662633198b9f294c9535e47924f0ec27135b579da01696d97f8d",
+  "scheduled": 132,
+  "seed": 550055,
+  "selected": 46,
+  "selected_primary": 42,
+  "selection_code_sha256": "bdd1323f33a70e65c668ae801ab87c9221e75019175d2475fffb3967efbc8adc",
+  "strata": [
+    {
+      "probability_denominator": 3,
+      "probability_numerator": 1,
+      "selected": 1,
+      "stratum": "diagnostic/incomplete_target_erasure",
+      "unique_comparisons": 3
+    },
+    {
+      "probability_denominator": 3,
+      "probability_numerator": 1,
+      "selected": 1,
+      "stratum": "diagnostic/invalid_mrz_backup",
+      "unique_comparisons": 3
+    },
+    {
+      "probability_denominator": 3,
+      "probability_numerator": 1,
+      "selected": 1,
+      "stratum": "diagnostic/limited_source_universe",
+      "unique_comparisons": 3
+    },
+    {
+      "probability_denominator": 3,
+      "probability_numerator": 1,
+      "selected": 1,
+      "stratum": "diagnostic/shared_context_loss",
+      "unique_comparisons": 3
+    },
+    {
+      "probability_denominator": 14,
+      "probability_numerator": 14,
+      "selected": 14,
+      "stratum": "primary/A_alert",
+      "unique_comparisons": 14
+    },
+    {
+      "probability_denominator": 19,
+      "probability_numerator": 6,
+      "selected": 6,
+      "stratum": "primary/A_no_alert/B3_alert/C3",
+      "unique_comparisons": 19
+    },
+    {
+      "probability_denominator": 18,
+      "probability_numerator": 6,
+      "selected": 6,
+      "stratum": "primary/A_no_alert/B3_alert/C4",
+      "unique_comparisons": 18
+    },
+    {
+      "probability_denominator": 30,
+      "probability_numerator": 6,
+      "selected": 6,
+      "stratum": "primary/A_no_alert/B3_no_alert/C1",
+      "unique_comparisons": 30
+    },
+    {
+      "probability_denominator": 13,
+      "probability_numerator": 5,
+      "selected": 5,
+      "stratum": "primary/A_no_alert/B3_no_alert/C3",
+      "unique_comparisons": 13
+    },
+    {
+      "probability_denominator": 14,
+      "probability_numerator": 5,
+      "selected": 5,
+      "stratum": "primary/A_no_alert/B3_no_alert/C4",
+      "unique_comparisons": 14
+    }
+  ],
+  "unique": 120
+}

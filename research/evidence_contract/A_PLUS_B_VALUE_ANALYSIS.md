@@ -1,0 +1,9 @@
+# Giá trị và giới hạn của A+B
+
+Kết quả mới có thêm bằng chứng về **mất nguồn ở M2**. Một so sánh F1 hoặc field diff trên cùng output có thể chỉ ra giảm chất lượng và trường sai. Trace gắn sự suy giảm đó với vị trí crop chủ động đã cắt nguồn. Với vùng vẫn còn nhưng output vốn đã sai, hệ thống giữ chẩn đoán mở. Giá trị quan sát là phân loại tình huống cho triage, chưa có đo người dùng triage nhanh hay chính xác hơn. [Kết quả M2](STAGE_INTERVENTION_RESULTS.md)
+
+So sánh công bằng tiếp theo cần cung cấp cả polygon, phiên bản và metadata cho **checker phẳng nguồn/điều kiện**, cho B3 và phương pháp trace. Trong pilot, B3 bắt cùng 5/5 lỗi field được cài. Sự hiện diện của một trường đúng bên cạnh một crop biết trước tự nó không chứng minh graph hoặc relational oracle có lợi hơn flat checker. Ba trường crop đích vốn sai trước biến đổi, và không có lỗi mới ở vùng còn nguồn để kiểm nhánh phân loại khó. 
+
+Đối chứng phẳng từ metadata stage đã được hoàn thiện ngày 11/11/2026. Hai cách giải thích trùng 24/24 cặp trường, gồm bốn field regression. Bằng chứng hiện tại hỗ trợ nhận định rằng thông tin nguồn có ích cho cách mô tả tình huống, còn biểu diễn graph chưa cho lợi ích riêng khi thông tin đã ngang nhau. Việc so triage của người và kiểm nguyên nhân lỗi tự nhiên vẫn phụ thuộc bằng chứng tiếp theo. [Kết quả đối chứng](execution/master_01/continuation_20261111/stage_baselines.json)
+
+**Giữ A là hướng nghiên cứu chính đã ghi trong protocol, giữ A+B exploratory và tiếp tục NO-GO cho superiority.** Một nhánh có thể kiểm chứng sau IFV là đo độ chính xác phân loại “mất bằng chứng / còn bằng chứng nhưng trích sai / chưa đủ chứng cứ” và phút công trên cùng ca valid, với baseline phẳng cùng trace. Nếu thông tin ngang nhau cho hiệu quả ngang nhau, kết luận phù hợp là negative/empirical characterization. B làm hướng chính cần bằng chứng mới, thiết kế prospective và quyết định riêng.

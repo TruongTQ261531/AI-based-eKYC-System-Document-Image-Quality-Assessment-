@@ -1,0 +1,155 @@
+{
+  "artifact_audit": {
+    "cases_checked": 168,
+    "images_checked": 336,
+    "mismatches": 0
+  },
+  "artifacts_written": 168,
+  "by_contract": {
+    "C1": {
+      "attempts": 24,
+      "constructed_control_decisions": 18,
+      "contract_decision_coverage": 0.75,
+      "correct_pack_verdict_counts": {
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3,
+        "PASS": 18
+      },
+      "incorrect_pack_verdict_counts": {
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3,
+        "VIOLATION": 18
+      },
+      "validity_counts": {
+        "INCONCLUSIVE": 3,
+        "INVALID_TEST": 3,
+        "VALID": 18
+      },
+      "validity_yield": 0.75
+    },
+    "C2": {
+      "attempts": 24,
+      "constructed_control_decisions": 3,
+      "contract_decision_coverage": 0.125,
+      "correct_pack_verdict_counts": {
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3,
+        "PASS": 3
+      },
+      "incorrect_pack_verdict_counts": {
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3,
+        "VIOLATION": 3
+      },
+      "validity_counts": {
+        "INCONCLUSIVE": 18,
+        "INVALID_TEST": 3,
+        "VALID": 3
+      },
+      "validity_yield": 0.125
+    },
+    "C3": {
+      "attempts": 48,
+      "constructed_control_decisions": 45,
+      "contract_decision_coverage": 0.9375,
+      "correct_pack_verdict_counts": {
+        "INVALID_TEST": 3,
+        "PASS": 45
+      },
+      "incorrect_pack_verdict_counts": {
+        "INVALID_TEST": 3,
+        "VIOLATION": 45
+      },
+      "validity_counts": {
+        "INVALID_TEST": 3,
+        "VALID": 45
+      },
+      "validity_yield": 0.9375
+    },
+    "C4": {
+      "attempts": 72,
+      "constructed_control_decisions": 48,
+      "contract_decision_coverage": 0.6666666666666666,
+      "correct_pack_verdict_counts": {
+        "INCONCLUSIVE": 24,
+        "PASS": 48
+      },
+      "incorrect_pack_verdict_counts": {
+        "INCONCLUSIVE": 24,
+        "VIOLATION": 48
+      },
+      "validity_counts": {
+        "VALID": 72
+      },
+      "validity_yield": 1.0
+    }
+  },
+  "by_family": {
+    "all_sources_mask": {
+      "INCONCLUSIVE": 3,
+      "INVALID_TEST": 3,
+      "VALID": 18
+    },
+    "full": {
+      "VALID": 24
+    },
+    "geometry_rotate90": {
+      "VALID": 24
+    },
+    "geometry_translate": {
+      "VALID": 24
+    },
+    "pair_a_mask": {
+      "INVALID_TEST": 3,
+      "VALID": 21
+    },
+    "pair_b_mask": {
+      "VALID": 24
+    },
+    "single_source_mask": {
+      "INCONCLUSIVE": 18,
+      "INVALID_TEST": 3,
+      "VALID": 3
+    }
+  },
+  "confirmatory_inputs_opened": 0,
+  "constructed_control_packs": 168,
+  "ended_utc": "2026-11-05T19:31:53.130322+00:00",
+  "generation_yield": 0.8214285714285714,
+  "graph_instances": 8,
+  "inconclusive_rate": 0.125,
+  "invalid_test_rate": 0.05357142857142857,
+  "ledger_attempts": 168,
+  "limitations": [
+    "Construction support is not human readability",
+    "Repeated seeds/annotation variants are not independent identities",
+    "Control predictions are deliberately authored, not OCR outputs",
+    "Natural image and fault recall claims not tested"
+  ],
+  "neural_model_calls": 0,
+  "new_human_reviews": 0,
+  "physical_ids": 7,
+  "planned_attempts": 168,
+  "review_queue_attempts": 6,
+  "roles": {
+    "development": 3,
+    "fixture": 5
+  },
+  "scope": "Fixture/development pilot, not a model benchmark or RQ significance test",
+  "seeds": [
+    42,
+    31415,
+    20261106
+  ],
+  "source_inputs_byte_unchanged": true,
+  "started_utc": "2026-11-05T19:31:05.011248+00:00",
+  "training_steps": 0,
+  "transformed_attempts_excluding_full": 144,
+  "transformed_validity_yield": 0.7916666666666666,
+  "unique_original_rasters": 7,
+  "validity_counts": {
+    "INCONCLUSIVE": 21,
+    "INVALID_TEST": 9,
+    "VALID": 138
+  }
+}

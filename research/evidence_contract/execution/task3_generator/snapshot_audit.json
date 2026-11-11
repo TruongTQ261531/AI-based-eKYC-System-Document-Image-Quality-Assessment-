@@ -1,0 +1,14 @@
+{
+  "snapshots": [
+    {
+      "run": "pilot_run_01",
+      "files": 10,
+      "mismatches": []
+    },
+    {
+      "run": "pilot_run_02",
+      "files": 10,
+      "mismatches": []
+    }
+  ]
+}

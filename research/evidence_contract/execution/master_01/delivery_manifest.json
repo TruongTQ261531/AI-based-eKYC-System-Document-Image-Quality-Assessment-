@@ -1,0 +1,116 @@
+{
+  "checked_local_document_links": 102,
+  "checkpoint": "master_01",
+  "confirmatory_inferences": 0,
+  "counts": {
+    "bibliography": 1,
+    "execution_files_excluding_this_manifest": 36,
+    "markdown": 17,
+    "python_source": 10,
+    "schemas_and_drafts": 3,
+    "test_files": 2
+  },
+  "execution_event_counts": {
+    "inference_begin": 10,
+    "inference_completed": 10,
+    "model_load_begin": 1,
+    "model_load_completed": 1
+  },
+  "files": {
+    "bibliography": {
+      "research/evidence_contract/paper/references.bib": "3eb5206e35204e727e9598e28f06890fa45a8d3898f7e9e6acc9310c67844e5d"
+    },
+    "execution_files_excluding_this_manifest": {
+      "research/evidence_contract/execution/master_01/ab_development_plan.json": "f74a32c0e93132673e0ce4d608148cf929c141bccc23baa5dc9be5d7ca785e8c",
+      "research/evidence_contract/execution/master_01/ab_execute.json": "2dde03636b1aee85869e3b631ae6237641f66ee240ea11864de6ec9ea24feeb4",
+      "research/evidence_contract/execution/master_01/ab_execute.log": "6c7f8d3cb2324ff7d8f41f2a9312e77f63a6a7ff829f76d6006ee5a6e65ae220",
+      "research/evidence_contract/execution/master_01/ab_prepare.log": "106362b0f7d28ba31f3634986d49a905691ee631c66a42097e1a01047fdb613a",
+      "research/evidence_contract/execution/master_01/ab_replay.json": "8fc0dcbcf7aa1c68ccdb9ec4254d58d1ec38b86e440d8560e15da2a9e345b828",
+      "research/evidence_contract/execution/master_01/ab_replay.log": "ba36b216eab3f33bf29e84c96132628b09b55e5c212c4604240c709dd6f7840d",
+      "research/evidence_contract/execution/master_01/ab_stage_analysis.log": "598fd5e1949e242355ea9e6fb529d235cb6cba49b2406852071459fe77961361",
+      "research/evidence_contract/execution/master_01/ab_stage_analysis_02.log": "a72ea3f8f75e36df3c38631808e97414dc7eca853b5c65247a1ef776bd27ed9b",
+      "research/evidence_contract/execution/master_01/ab_stage_comparison.json": "4aa1cd00d903221070dc39d015dfc530b468ee3d4df557b74ef775fc669861d3",
+      "research/evidence_contract/execution/master_01/controlled_faults.json": "6f462664150ffdf7328080c69f73ee899dce11808ef11e009322396a72d95ad1",
+      "research/evidence_contract/execution/master_01/diagnosis.log": "d7b1530e172391535929250746c9d0a54e198a01a2055d732322b962f7203138",
+      "research/evidence_contract/execution/master_01/exposure.log": "1703b41b856a9835ed79bff56ef6dfa733b8f66aa6f86ae17965614698f682b3",
+      "research/evidence_contract/execution/master_01/exposure_audit.json": "8d7a05631d08a8fdf6df3ad17ea6ab528c43a265252fed9f361c5b99ebb5478f",
+      "research/evidence_contract/execution/master_01/exposure_audit_final.json": "cbbf8318754aa1a5fe5c8c37976393989b1913d69217b6666d7001e34e71126f",
+      "research/evidence_contract/execution/master_01/exposure_final.log": "ebfd478e9d9eb4978984318cb22488de7ef5b092dea739d6692de25cfbe96e92",
+      "research/evidence_contract/execution/master_01/faults_01.log": "f761b8911c51a88f0baaa62c86c4528becc58be4c4e2e8e73c48f3391e1379da",
+      "research/evidence_contract/execution/master_01/ifv_browser_attempt.json": "6baf8d4486521ee903fa8c553b109542d45d831497c76600c2152b9c8732781f",
+      "research/evidence_contract/execution/master_01/ifv_loopback.log": "25f31621eb32780ee89a82b31b5252ad3a582cc4a64acad49056d35773f7fbb0",
+      "research/evidence_contract/execution/master_01/ifv_waiting.json": "f0b54cc44d49698b75f879f3b8a09061e34835f1879af1c65cce69521cddf01c",
+      "research/evidence_contract/execution/master_01/ifv_waiting.log": "8e540569c287e9ce515c29fe2ace93e38f69532b6fd520afcdce7f851b370953",
+      "research/evidence_contract/execution/master_01/intake.json": "128bca0a0a80a6ff9d818ea9b1dd0ebdb832ccbfc1f24a19b915886a69b890e8",
+      "research/evidence_contract/execution/master_01/intake.log": "ec4ef3142466496d42b831131ea621de5125cd700aa5e48df3b50160d9b6c1b6",
+      "research/evidence_contract/execution/master_01/intake_hashes.json": "6d686ac7df8b7ca0543809ec9730d8d753bbe6fe2f805c07cd3bf5c36427c5d7",
+      "research/evidence_contract/execution/master_01/master_python.log": "e979ee7f2822e79ade1d06207266bb459e0d35b8b636891980ed94ee8b46ab2a",
+      "research/evidence_contract/execution/master_01/master_python_02.log": "ba0e85ff1438f009b3f319fd5e81a6e04a3f6a2d414e6861b92c41b50795a295",
+      "research/evidence_contract/execution/master_01/master_python_03.log": "fb9b335445e247d05cd94271ba3de9a25f3a0047918822397df0d424d8ddfdd0",
+      "research/evidence_contract/execution/master_01/master_ui.log": "74bcc7ce541fdd99a2f0a6d9a4720b741c09722d4c94c555fcb3633dde1493f8",
+      "research/evidence_contract/execution/master_01/method_decision_replay.json": "f7eb4c28f11d862697052e1717c776cd342bf2061cb7b95cb5137371fd138457",
+      "research/evidence_contract/execution/master_01/prelock.log": "b2010863e7a956787436684ca4ebaa9dc7dcd85f7662bd981347805053398643",
+      "research/evidence_contract/execution/master_01/prelock_02.log": "6c6769a80688b1bab2a4a4d9c1f6f5c3800630b1f649acab1edba9a112c31f35",
+      "research/evidence_contract/execution/master_01/prelock_readiness.json": "bce6117e4b70c3d21954772a72fe031a6ba4dcc917bbf55e4b87e74e057b4d3e",
+      "research/evidence_contract/execution/master_01/prelock_readiness_v2.json": "bce6117e4b70c3d21954772a72fe031a6ba4dcc917bbf55e4b87e74e057b4d3e",
+      "research/evidence_contract/execution/master_01/preservation_after.json": "46315ffeac3fd8234c7b13596b7e87d4e1303a4f6b436588ae865a35eb32349b",
+      "research/evidence_contract/execution/master_01/preservation_after.log": "f615d2c1bbdda33ed88b8dabd1dc536e549a349d2b9d4f93d81dd182495f68e6",
+      "research/evidence_contract/execution/master_01/sizing_illustration_failed_01.partial": "4d695154f46bdcc2f319065e5607e3515b804b75ecb33e2617edf8fe8920d57c",
+      "research/evidence_contract/execution/master_01/sizing_illustration_v2.json": "0ff2e4f20db070cb2b986de66e22bc8d4478f3a0bf1e0bfe46edb90ddeb35ba2"
+    },
+    "markdown": {
+      "research/evidence_contract/AUTOMATED_FAULT_INJECTION_REPORT.md": "74d39fa9d36e8ace7931d5f5747c88fd15c0f92a63d263fb2b05c2c9c3342a6a",
+      "research/evidence_contract/A_B3_CAUSAL_DIAGNOSIS.md": "90ef36ea62dce437e679d396275b15c125d555f71de79934db594fb85a05a7f6",
+      "research/evidence_contract/A_PLUS_B_VALUE_ANALYSIS.md": "feb587315446c2a7f72d00a8db3880139ea7b121366b1297f667b38ba57411b5",
+      "research/evidence_contract/CONFIRMATORY_PREPARATION_6A.md": "a6ea78a703dfabb7c835d7830bbb1f631494c149710a7c3e389bf1f9ce9259ed",
+      "research/evidence_contract/CONTRACT_COVERAGE_MATRIX.md": "0f03bb0ddf48d1a5392d01a020597d2c9c86feefd765910647e4adb89fe45ccf",
+      "research/evidence_contract/FAILURE_PROPAGATION_PROTOCOL.md": "cc059695932f9b1ca1fbe3b7cf2c654ec6a9feee2da2357dcb084fc605d2939b",
+      "research/evidence_contract/MASTER_EXECUTION_STATUS.md": "299b331ffff89cfd9d78bb507ef520f54cb450832c26efdd3638189e429d7136",
+      "research/evidence_contract/MASTER_RESEARCH_AMENDMENT.md": "1291e945860608faccca97252d0cbf9baa151398daaf105dd2f98a1d239870ed",
+      "research/evidence_contract/METHOD_DIFFERENCE_REPORT.md": "2f599118b2ce0e21a2e735d863c1da73f1ffb5da4f66798029190e71e08abd52",
+      "research/evidence_contract/NO_TRAIN_DECISION.md": "cfcb1853a27e35b39cfe2447a24a875ac3509b7c86b8c35c059ef86d3c0cfeec",
+      "research/evidence_contract/STAGE_INTERVENTION_RESULTS.md": "ce3c8e372578ed4992809122823e593129ed1cf1cb72ae9d4186169094719b38",
+      "research/evidence_contract/STATISTICAL_ANALYSIS_DRAFT.md": "83a516453a781e54f114634508fd45c4f1c2d24c4aa0921be367e28af2b81f26",
+      "research/evidence_contract/TASK7_REPLAY_AND_REPORTING.md": "72747f2a869bad46ce26ee676b44805edd31fdd9ccfff0cad9984c5de398eda4",
+      "research/evidence_contract/paper/CLAIM_TO_EVIDENCE.md": "bd687984e479c028cfcea2e46fe3972889320c777a6f2090a23d5d5c011f5b4c",
+      "research/evidence_contract/paper/MANUSCRIPT_DRAFT.md": "f42dd47ed21367e6cb7b2aeae37c5fa808c3f01b842de455c923e1727bb993e4",
+      "research/evidence_contract/paper/REPLICATION_PLAN.md": "eed29a771c7c00eaf5851d351e07ff73678ddea104535d1fe278c1b28d54e5a7",
+      "research/evidence_contract/paper/SUBMISSION_READINESS.md": "9fd655584d2559f35080b7104376a189f6867dc91dd5afa22a8ed0d3fc265053"
+    },
+    "python_source": {
+      "research/evidence_contract/master/__init__.py": "aa7a5eb1addc040500c22c333bfacfb6ce8fb1fec497293ae841463e25c0adbd",
+      "research/evidence_contract/master/diagnosis.py": "49eb363d53f22474270f8cf2cc1dc09b29d1cdbceb3b4cd331eae9208f83b162",
+      "research/evidence_contract/master/exposure.py": "af87618c06968bfcd9f7508b303d902aa912ddf7977278cf088544c1daad3925",
+      "research/evidence_contract/master/faults.py": "f74b9e1747d42899eedd554e761ebccba36e19999a56d35fd74ef080dbd94be5",
+      "research/evidence_contract/master/ifv_report.py": "79913f6081b333eb7ef09142e61369cf78d2f8ae0a8f130531ecf1322406aa91",
+      "research/evidence_contract/master/intake.py": "3b67ea66937ab684a63ccac21a734d64f18846aa28b8d5d50440dbb8d02e8577",
+      "research/evidence_contract/master/prelock.py": "f019c23889a1754a9c5a6f40803212101de80d1bc1e3781c8e4ace8c46ed44d5",
+      "research/evidence_contract/master/propagation.py": "000f1591fe42a713df61bf30cc10632c327da78c220dfbe2a80025d7e61fc735",
+      "research/evidence_contract/master/stage_analysis.py": "b9bdcba8f5219fb9b68ea511edc13b6bbe5b09f461f4135672ec18c54f404ea4",
+      "research/evidence_contract/master/statistics.py": "c34e7a7b1910ea3223214954181bc30c56aba6f0de36ae031b061b34545344bb"
+    },
+    "schemas_and_drafts": {
+      "research/evidence_contract/master/specimen_manifest.schema.json": "cc333cb1e72d88d28e3b39a63c0dbab3d408cf094e8bd492583d5e62e665239f",
+      "research/evidence_contract/master/test_lock_draft.json": "948a9a6a73da19fde8583a2d6aa2cfe4a188cac3e94179063d68952efa8d8bb4",
+      "research/evidence_contract/master/test_lock_draft.schema.json": "ea403a372b8950a75b56c20fa4e6df23bb63d17677413fc3435594b4c63bcd93"
+    },
+    "test_files": {
+      "research/evidence_contract/tests/test_master_evidence.py": "0eeb760c79c2013043192c4eb8b01287e18eacac9b3a2612458554f270aa9470",
+      "research/evidence_contract/tests/test_master_phase1_ui.cjs": "34eecbdb8744b46278b78e77cc18005ef560fb65db00247dcbdb8bf36cfcd216"
+    }
+  },
+  "gate": "NO_GO",
+  "gpu_inferences": 0,
+  "historical_cache_reused": 2,
+  "independent_human_labels": 0,
+  "new_cpu_inferences": 10,
+  "preserved": 2746,
+  "test_results": {
+    "browser_verified": false,
+    "controlled_cases": 14,
+    "javascript_passed": 7,
+    "python_passed": 28
+  },
+  "training_jobs": 0,
+  "verified_bib_entry_count": 6
+}

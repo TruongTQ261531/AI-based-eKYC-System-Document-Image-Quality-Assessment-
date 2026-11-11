@@ -1,0 +1,392 @@
+{
+  "task": "TASK 1 documentation and preservation validation only",
+  "started_utc": "2026-11-05T18:57:51.444790+00:00",
+  "finished_utc": "2026-11-05T18:57:52.585008+00:00",
+  "interpreter": "D:/laptrinhcuatao/Ekyc/.venv/Scripts/python.exe",
+  "checks": [
+    {
+      "check": "RELATED_WORK.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RELATED_WORK.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RELATED_WORK.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RELATED_WORK.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 5,
+        "broken": []
+      }
+    },
+    {
+      "check": "RELATED_WORK.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "GAP_ANALYSIS.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GAP_ANALYSIS.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GAP_ANALYSIS.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "GAP_ANALYSIS.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 3,
+        "broken": []
+      }
+    },
+    {
+      "check": "GAP_ANALYSIS.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "RESEARCH_QUESTIONS.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RESEARCH_QUESTIONS.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RESEARCH_QUESTIONS.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "RESEARCH_QUESTIONS.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 2,
+        "broken": []
+      }
+    },
+    {
+      "check": "RESEARCH_QUESTIONS.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "METHOD_SPEC.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "METHOD_SPEC.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "METHOD_SPEC.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "METHOD_SPEC.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 1,
+        "broken": []
+      }
+    },
+    {
+      "check": "METHOD_SPEC.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "PROTOCOL_DRAFT.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "PROTOCOL_DRAFT.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "PROTOCOL_DRAFT.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "PROTOCOL_DRAFT.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 8,
+        "broken": []
+      }
+    },
+    {
+      "check": "PROTOCOL_DRAFT.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "NOVELTY_RISK_REVIEW.md: exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "NOVELTY_RISK_REVIEW.md: UTF-8 intact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "NOVELTY_RISK_REVIEW.md: Markdown title",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "NOVELTY_RISK_REVIEW.md: local links resolve",
+      "passed": true,
+      "details": {
+        "links_checked": 1,
+        "broken": []
+      }
+    },
+    {
+      "check": "NOVELTY_RISK_REVIEW.md: table widths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "Exactly three main RQs",
+      "passed": true,
+      "details": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "check": "RQ tables: H0 / H1",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Independent variables",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Dependent variables",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Unit of analysis",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: GT/oracle",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Baselines",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Metrics",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Threats",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Claim criteria",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "RQ tables: Falsification",
+      "passed": true,
+      "details": {
+        "count": 3
+      }
+    },
+    {
+      "check": "Fourteen literature comparison rows",
+      "passed": true,
+      "details": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "check": "Fourteen full-text reading records",
+      "passed": true,
+      "details": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "check": "Official EASE CFP cited",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Budget arithmetic",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Protocol explicit nonexecution",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Novelty review separates hypotheses from evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Pre-existing files byte unchanged",
+      "passed": true,
+      "details": {
+        "files_checked": 880,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "HEAD unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Branch unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Refs unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Tracked diff empty",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": 52,
+  "failed": 0,
+  "files": [
+    {
+      "path": "research/evidence_contract/RELATED_WORK.md",
+      "bytes": 14665,
+      "sha256": "3daec0cfb1565d705bc1beb7924cf3a8d661aafd49859e692aef85309e7d4acc",
+      "lines": 66
+    },
+    {
+      "path": "research/evidence_contract/GAP_ANALYSIS.md",
+      "bytes": 8984,
+      "sha256": "5ddcc9615e0e4d6a876427c2527be464ae09f1da89787d66adeede2e81729be6",
+      "lines": 76
+    },
+    {
+      "path": "research/evidence_contract/RESEARCH_QUESTIONS.md",
+      "bytes": 11316,
+      "sha256": "50e07763d5bae63f962758f811f0bd460f10daa47292d39149d18ea9be2f09d0",
+      "lines": 77
+    },
+    {
+      "path": "research/evidence_contract/METHOD_SPEC.md",
+      "bytes": 12404,
+      "sha256": "dd322065b5fddf40b96e55cfef66ba0f6d1c7b13fbacce767fc5e0a8ad7a0c08",
+      "lines": 94
+    },
+    {
+      "path": "research/evidence_contract/PROTOCOL_DRAFT.md",
+      "bytes": 19843,
+      "sha256": "e8eba10764c685012915a8b8bffe69f8d46ddd7023012231f5b7fc56b4f0ba40",
+      "lines": 136
+    },
+    {
+      "path": "research/evidence_contract/NOVELTY_RISK_REVIEW.md",
+      "bytes": 9318,
+      "sha256": "3dc2aaec9881617c90737658d9a426aeadcf3d6731574a150cc467e5415df4a1",
+      "lines": 64
+    }
+  ],
+  "not_run": [
+    "training",
+    "model inference",
+    "main experiments",
+    "production API or browser tests",
+    "old completed benchmarks",
+    "pytest/application regression suite"
+  ],
+  "counts_scope": "Checks validate document structure, cross-links, arithmetic and pre-existing nonignored files only; they do not validate scientific hypotheses."
+}
