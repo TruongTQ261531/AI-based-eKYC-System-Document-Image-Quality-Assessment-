@@ -1,6 +1,14 @@
 # EASE 2027 · Master execution
 
-Cập nhật **15/11/2026**: review cá nhân đã hoàn tất **86/86 ô pha 1 và 46/46
+Cập nhật **16/11/2026**: đã triển khai [ba hướng A exploratory](A_DEVELOPMENT_20261116.md),
+replay trên 132 lượt đóng băng và chuẩn bị [hai ZIP reviewer độc lập](REVIEWER_HANDOFF_VI.md).
+A_change_union TP/FN pointwise 4/3 so với A cũ 2/5; A_dual 7/0 có kênh field
+trùng B3, không là lợi ích mới vượt B3. Chưa có người ngoài trả phiếu, inference
+hoặc training mới. Code, aggregate và tiến độ được đồng bộ theo
+[chính sách GitHub](../../PROJECT_SYNC_POLICY.md) trên nhánh progress; main chưa gộp.
+[Receipt catch-up](execution/master_01/development_20261116/catchup_sync.json).
+
+Review cá nhân đã hoàn tất **86/86 ô pha 1 và 46/46
 ca pha 2**. Đã nhập, niêm phong và replay nguyên trạng phiếu pha 2. Trạng thái
 **COMPLETE_SINGLE_REVIEW_UNADJUDICATED**: 1 tác giả đánh giá, 2 phiên bản export
 pha 1 và 1 export pha 2. Trong 42 primary: 26 có nhãn pointwise, 21 có nhãn
@@ -8,7 +16,7 @@ relation; 0 UNREVIEWED. Hậu kiểm có 17 cờ literal/15 primary. TASK 6B/7B 
 NO-GO cho superiority. [Kết quả 15/11](IFV_RESULTS_VI.md) · [Hậu kiểm](execution/master_01/ifv_20261115/analysis.md).
 [Trạng thái hiện tại](IFV_REVIEW_STATUS.md) · [Bước tiếp theo](IFV_REVIEW_GUIDE.md) ·
 [Kế hoạch đến EASE 2027](EASE2027_ROADMAP_VI.md). Các đoạn ngày 09, 11 và
-13 và 14/11 bên dưới là snapshot lịch sử, không phải trạng thái hiện tại.
+13, 14 và 15/11 bên dưới là snapshot lịch sử, không phải trạng thái hiện tại.
 
 Checkpoint `master_01`, ngày local 09/11/2026. Phần development và chuẩn bị đã chạy. **IFV WAITING_FOR_HUMAN_REVIEW. TASK 6B/7B NO-GO. Manuscript ở mức draft.** Worktree local `research-document-recovery` trên `main`, HEAD `f5d130d93525e7633053edc03e6d9f6edeba7a6f`. Evidence Contract nằm trong mục untracked có sẵn. Không có tracked/staged diff. Worktree mentor sạch khi tiếp nhận.
 
@@ -150,3 +158,16 @@ thẻ tổng hợp là smoke kỹ thuật, không bổ sung nhãn lỗi IFV ho�
 Lượt này có 0 inference/training mới. Mọi phiếu và log inference cũ được
 bảo toàn; kiểm thử, gói tổng hợp và hash cuối lượt nằm trong
 [completion manifest](execution/master_01/ifv_20261115/completion_manifest.json).
+
+## Development và bàn giao reviewer · 16/11/2026
+
+| Mốc | Đầu ra đã có | Giới hạn / bước tiếp |
+|---|---|---|
+| A development | [Kế hoạch](execution/master_01/development_20261116/variant_plan.json), [hai panel](execution/master_01/development_20261116/variant_results.md), reader/contract slices và decision digest | Thiết kế sau pilot, 0 model calls; A_dual ghép B3 field/A relation; không thay frozen A hoặc chọn reference sau output |
+| Reviewer handoff | Offline ZIP R02/R03, 31 ảnh/86 mục mỗi gói; phase-2 builder buộc seal riêng của người đó và bỏ author hint | 0 người mới thực nhận; không public ZIP ảnh/raw review. Tác giả không cần lặp lại phiếu |
+| Chất lượng review | Kiểm omission/output, ghi chú khi literal lệch; công cụ raw agreement/kappa/alpha có missing/constant guards | Kiểm logic không tự sửa nhãn hoặc tạo gold. Agreement thực và phân xử còn chờ phiếu độc lập |
+| Đồng bộ | [Catch-up đã push](execution/master_01/development_20261116/catchup_sync.json), source ứng dụng được lưu dưới engineering; AGENTS và sync policy ghi yêu cầu cho mọi mốc | Nhánh progress công khai, main chờ PR. Không coi public development repo là supplement ẩn danh đã duyệt |
+
+Đọc [NEXT_ACTIONS](NEXT_ACTIONS.md) để tiếp tục reference/adequacy. Kết quả kiểm thử
+và bảo toàn của mốc này nằm trong
+[completion manifest](execution/master_01/development_20261116/completion_manifest.json).

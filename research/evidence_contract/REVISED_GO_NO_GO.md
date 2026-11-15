@@ -1,5 +1,10 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Kiểm lại 16/11: **NO-GO superiority không đổi**. [Ứng viên A mới](A_DEVELOPMENT_20261116.md)
+dùng lại pilot và không thay frozen A; A_dual field trùng B3. [Hai gói reviewer](REVIEWER_HANDOFF_VI.md)
+đã chuẩn bị nhưng chưa có phiếu ngoài, chưa có reference độc lập được duyệt,
+adequacy hoặc lock mới. Hoàn thiện tooling không cấp scientific GO.
+
 Ngày 15/11/2026, Asia/Bangkok. **IFV cá nhân COMPLETE: 86 ô pha 1 và 46 ca pha
 2 đã nhập nguyên trạng.** Đã replay báo cáo hai endpoint, phân tích ca chưa
 kết luận, kiểm tra nhất quán và độ nhạy. Một tác giả đánh giá, chưa adjudicate.

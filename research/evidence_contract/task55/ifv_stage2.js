@@ -116,6 +116,27 @@
     const after_reading = $('after_reading').value;
     if (!before_reading || !after_reading) { note('Chọn đánh giá cho cả ảnh gốc và ảnh biến đổi.'); return; }
     const output_note = $('output-note').value.trim();
+    const c = record();
+    const literal = text => String(text).normalize('NFC').toLowerCase().replace(/\s+/g, ' ').trim();
+    const differences = [];
+    for (const [side, reading] of [['before', before_reading], ['after', after_reading]]) {
+      const o = c[side + '_output'], evidence = c[side + '_evidence'];
+      if (!o.structured_output_usable) continue;
+      const emitted = Boolean(o.value.trim());
+      if ((reading === 'readable_omission' && emitted) ||
+          (['wrong_value', 'unsupported_verified'].includes(reading) && !emitted)) {
+        note('Lựa chọn chưa khớp trạng thái output: giá trị không trống không phải bỏ sót toàn trường. Kiểm tra lại lựa chọn cho ảnh ' + (side === 'before' ? 'gốc.' : 'biến đổi.'));
+        return;
+      }
+      if (reading === 'correct' && evidence.availability === 'visible' && evidence.readability === 'readable' &&
+          evidence.semantic_key_confirmed === 'yes' && literal(o.value) !== literal(evidence.observed_transcript)) {
+        differences.push(side);
+      }
+    }
+    if (differences.length && !output_note) {
+      note('Output khác bản chép pha 1 (giữ chữ O và số 0 khác nhau). Xem lại ảnh; nếu vẫn chọn đúng, ghi lý do trong ghi chú. Phiếu pha 1 đã khóa được giữ nguyên.');
+      return;
+    }
     if (['wrong_value', 'readable_omission', 'unsupported_verified'].includes(after_reading) && !output_note) {
       note('Ghi lý do quan sát được cho giá trị sai, bị bỏ sót hoặc được điền khi thiếu nguồn.'); return;
     }

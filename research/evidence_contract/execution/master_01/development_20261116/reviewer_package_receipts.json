@@ -1,0 +1,39 @@
+{
+  "actual_new_reviewers": 0,
+  "packages": [
+    {
+      "actual_new_reviewers": 0,
+      "analyst_join_included": false,
+      "archive_bytes": 690923,
+      "archive_name": "reviewer_R02_phase1.zip",
+      "archive_sha256": "04dcc611ea1072f4c0d5d760b602b3fbcb3eb2233ba010a5ac474d6ad7909970",
+      "author_answers_included": false,
+      "files": 38,
+      "images": 31,
+      "independence_verified": false,
+      "job_id": "d2b0fe39d62a57c544f05e3e40d51f306c5966d265de88abfdf78bb926c54468",
+      "model_calls": 0,
+      "phase": "phase1",
+      "reviewer_id": "R02",
+      "status": "PREPARED_NOT_REVIEWED"
+    },
+    {
+      "actual_new_reviewers": 0,
+      "analyst_join_included": false,
+      "archive_bytes": 690925,
+      "archive_name": "reviewer_R03_phase1.zip",
+      "archive_sha256": "1f9e5c0aad67b9ba4a84febf13ca70f6fb5ec8b375775a19c1cfc710134c8322",
+      "author_answers_included": false,
+      "files": 38,
+      "images": 31,
+      "independence_verified": false,
+      "job_id": "d0455e558ac58e92df962a246e0d46919bb1596fd7d58671e9728e9c6ea5a836",
+      "model_calls": 0,
+      "phase": "phase1",
+      "reviewer_id": "R03",
+      "status": "PREPARED_NOT_REVIEWED"
+    }
+  ],
+  "publicly_uploaded_images": false,
+  "status": "TWO_PACKAGES_PREPARED_ZERO_REVIEWS_RECEIVED"
+}

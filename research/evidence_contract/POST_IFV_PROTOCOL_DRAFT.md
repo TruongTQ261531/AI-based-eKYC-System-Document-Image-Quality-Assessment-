@@ -5,6 +5,11 @@ khi đã xem kết quả pilot. **Không phải preregistration của pilot, sci
 test lock hoặc quyền chạy confirmatory 6B/7B.** RQ1–3, sample, output và nhãn
 cũ giữ nguyên. [Kết quả kích hoạt đề xuất](IFV_RESULTS_VI.md)
 
+Cập nhật thực thi 16/11: đã có [A lanes exploratory](A_DEVELOPMENT_20261116.md),
+[gói reviewer và agreement](REVIEWER_HANDOFF_VI.md). Đây là tooling development
+trên output cũ, không phải reference đã được phê duyệt hoặc một panel prospective
+mới. Original A, sample, endpoint labels và superiority gate giữ nguyên.
+
 ## Câu hỏi được ưu tiên
 
 Định lượng ảnh hưởng của **reference validity, nguồn thay thế và điều kiện
@@ -38,7 +43,8 @@ nhiên. Không dùng chính graph vừa sinh làm bằng chứng độc lập du
 
 Danh sách 17 cờ hiện tại nằm riêng dưới `local/master_01/ifv_analysis_812605bbab3940be.json`.
 Nếu cần phân xử, dùng provenance/amendment mới; phiếu cũ không ghi đè. Chưa
-phát hành một bộ review lặp 46 ca và chưa yêu cầu tác giả chấm lại toàn bộ.
+nhận thêm review ngoài; đã chuẩn bị hai ZIP pha 1 cho R02/R03. Pha 2 của từng
+người chỉ được tạo sau seal riêng. Không yêu cầu tác giả chấm lại toàn bộ.
 
 ## Thiết kế panel cần chốt
 
@@ -72,7 +78,7 @@ margins và inference budget còn **PENDING**, không tự lấy số tròn từ
 | Bước | Công việc / đầu ra | Trạng thái |
 |---|---|---|
 | P0 | Nhập, replay, hậu kiểm 46 ca và quyết định claim | DONE ngày 15/11; [receipt](execution/master_01/ifv_20261115/analysis.json) |
-| P1 | Chốt schema reference, typed-normalization policy và các điều kiện trên bằng control fixtures | PREPARATION; không dùng output để chọn reference |
+| P1 | Chốt schema reference, typed-normalization policy và các điều kiện trên bằng control fixtures | PARTIAL TOOLING ngày 16/11: offline bundle, literal/empty guards và agreement đã kiểm; approval/schema reference và policy hoàn chỉnh còn pending |
 | P2 | Kiểm nguồn lực reference, quyền dùng, exposure, sizing và budget | PENDING đầu vào xác minh được |
 | P3 | Quyết định GO mới cho claim/phạm vi cụ thể | NO-GO hiện tại cho superiority |
 | P4 | Sau GO mới, tạo manifest và lock theo prep 6A | NOT STARTED |

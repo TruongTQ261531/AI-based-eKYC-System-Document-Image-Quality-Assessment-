@@ -1,0 +1,40 @@
+{
+  "actual_new_reviewers": 0,
+  "notes": "Adds explicit whole-image/alternative-source instructions. Earlier unissued build preserved. No author answers or model predictions in phase 1.",
+  "packages": [
+    {
+      "actual_new_reviewers": 0,
+      "analyst_join_included": false,
+      "archive_bytes": 691224,
+      "archive_name": "reviewer_R02_phase1.zip",
+      "archive_sha256": "0b859413a9a96282520c1e2c09d08c506e48e57f301ab84036506997ebca31f8",
+      "author_answers_included": false,
+      "files": 38,
+      "images": 31,
+      "independence_verified": false,
+      "job_id": "3b89c791e8ab755659b745200f10435046a80cd09b5637821839f053e7bbb196",
+      "model_calls": 0,
+      "phase": "phase1",
+      "reviewer_id": "R02",
+      "status": "PREPARED_NOT_REVIEWED"
+    },
+    {
+      "actual_new_reviewers": 0,
+      "analyst_join_included": false,
+      "archive_bytes": 691223,
+      "archive_name": "reviewer_R03_phase1.zip",
+      "archive_sha256": "c7e8616d3fc91627ca4c83ebf31d15797e6722f1d3d13cf2a74a43d604b316d6",
+      "author_answers_included": false,
+      "files": 38,
+      "images": 31,
+      "independence_verified": false,
+      "job_id": "95e774307bdc7de1556d21aedd57f67c463093f2fa91149927add38cc9ea9453",
+      "model_calls": 0,
+      "phase": "phase1",
+      "reviewer_id": "R03",
+      "status": "PREPARED_NOT_REVIEWED"
+    }
+  ],
+  "phase1_root": "local/reviewer_exports/v2",
+  "status": "READY_TO_SEND_PHASE1_ONLY"
+}

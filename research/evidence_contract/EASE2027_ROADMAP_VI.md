@@ -1,6 +1,6 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
-Cập nhật 15/11/2026, Asia/Bangkok. Đây là lịch làm việc đề xuất từ trạng thái
+Cập nhật 16/11/2026, Asia/Bangkok. Đây là lịch làm việc đề xuất từ trạng thái
 đã kiểm; ngày nội bộ là mục tiêu, phụ thuộc người đánh giá và dữ liệu thực nhận.
 Không tính phần trăm hoàn thành chung vì phạm vi thực nghiệm chưa khóa.
 
@@ -24,6 +24,15 @@ Ngày 15/11 đã niêm phong, replay báo cáo hai endpoint và kiểm độ nh�
 26/42 nhãn pointwise và 21/42 relation; các mục cá nhân đều đã làm xong.
 CI, agreement, cost và chuẩn độc lập tiếp tục thiếu; chưa có GO hoặc lock mới.
 [Kết quả](IFV_RESULTS_VI.md) · [Protocol prospective](POST_IFV_PROTOCOL_DRAFT.md)
+
+Ngày 16/11 đã replay ba hướng A exploratory trên lịch cũ, tách field/relation,
+đồng thời hoàn thiện gói review offline R02/R03 và công cụ agreement. A_change
+tăng TP pointwise 2→4/7 trong panel tác giả; A_dual đạt 7/7 bằng kênh B3 cũ.
+Đây là development sau pilot, chưa phải tăng hiệu quả được xác nhận độc lập.
+[Kết quả và giới hạn](A_DEVELOPMENT_20261116.md). Hai ZIP đã sẵn sàng gửi riêng;
+**0 reviewer ngoài thực nhận**, không tính package thành người đã chấm.
+[Cách gửi/nhận JSON](REVIEWER_HANDOFF_VI.md). Mỗi mốc hoàn tất phải commit/push
+và kiểm remote HEAD theo [chính sách GitHub](../../PROJECT_SYNC_POLICY.md).
 
 ## Đóng góp phù hợp hội nghị
 
@@ -52,8 +61,9 @@ với A_flat, B3 có gate, V3, B0 và B2; không dùng baseline yếu để tạ
 | 14/11 — DONE | Công cụ/analyst | Khóa pha 1; phát hành pha 2; kiểm ảnh, bảo toàn, cập nhật bản thảo và kế hoạch | 86/86; 46/46; không đổi quan sát hay cache |
 | 15/11 — DONE sớm | Tác giả | Hoàn tất cả 46 ca đối chiếu và gửi export | Đã nhận và khóa; không còn chờ phiếu hiện tại |
 | 15/11 — DONE sớm | Công cụ/analyst | Import/replay; counts hai endpoint; source gates, all-alarm accounting và sensitivity | 26/42 pointwise, 21/42 relation; 17 cờ/15 primary; 0 UNREVIEWED. Bảng chính không đổi |
-| 16–20/11 | Công cụ/analyst + tác giả | Chuẩn bị reference và thiết kế oracle validity/coverage; [protocol](POST_IFV_PROTOCOL_DRAFT.md) đã có | Tách endpoint; không nới guard hay lấy lại sample thuận lợi; sizing/budget còn pending |
-| 16–27/11 | Tác giả tổ chức nguồn lực | Chuẩn độc lập phù hợp endpoint, phân xử có provenance nếu cần trên danh sách cờ riêng | Không yêu cầu làm lại 46 ca; chưa có nguồn thật thì giữ độc lập chưa xác minh |
+| 16/11 — DONE development tooling | Công cụ/analyst | Ba ứng viên A exploratory, replay toàn lịch cũ, ZIP R02/R03, guard lựa chọn và công cụ agreement | 0 inference/training mới; A_dual field=B3; chưa có phiếu ngoài, superiority NO-GO |
+| 16–20/11 | Công cụ/analyst + tác giả | Hoàn thiện reference schema/policy và thiết kế panel oracle validity/coverage; [protocol](POST_IFV_PROTOCOL_DRAFT.md) đã có | Tooling đã có một phần; reference approval, sizing/budget và panel mới còn pending |
+| 16–27/11 | Tác giả tổ chức nguồn lực | Gửi ZIP riêng cho hai người ngoài; thu pha 1→seal→pha 2, đo agreement trước phân xử; chuẩn độc lập phù hợp endpoint | Tối thiểu thêm 1 để bắt đầu so, khuyến nghị thêm 2. Không có số người bảo đảm đúng; không yêu cầu tác giả làm lại 46 ca |
 | 28–30/11 | Tác giả + phân tích | Quyết định GO mới cho claim cụ thể sau prep/reference/adequacy | Pilot hiện giữ NO-GO superiority: A_flat trùng A, sensitivity/coverage A thấp hơn, FAR không vững qua sensitivity |
 | 01–07/12, nếu GO | Công cụ/analyst + nguồn dữ liệu | Thực hiện 6B từ prep 6A: manifest mới, nguồn quyền dùng, kiểm tách ID/content/pixel/lineage, nhãn và lock | Đủ số cụm theo sizing/effect đã chốt; protocol, code, reader, seed, exclusions và inference budget được ghim |
 | 08–20/12, nếu lock hợp lệ | Công cụ/analyst | 7B: thực nghiệm theo manifest; log append-only, replay, thống kê và kiểm sensitivity | Không sửa protocol theo output. Khóa không đạt thì không chạy confirmatory |
@@ -74,7 +84,8 @@ Dùng mục tiêu nội bộ sớm hơn để tránh phụ thuộc giờ cuối.
    inconclusive/invalid; nếu cần panel mới thì tạo protocol/version và exposure
    riêng. Không lựa chọn lại ca thuận lợi trong sample cũ.
 2. **Một người đánh giá.** Kết quả mô tả có ích cho pilot nhưng chưa là độc lập
-   hay agreement. Nếu không có nguồn lực thứ hai, thu hẹp claim và báo rõ giới
+   hay agreement. Gói đã có theo [handoff](REVIEWER_HANDOFF_VI.md); cần người thực
+   và kiểm exposure, không dùng hai phiên bản của một người. Nếu không có nguồn lực thứ hai, thu hẹp claim và báo rõ giới
    hạn; không gắn nhãn confirmatory cho development đã xem.
 3. **Số cụm và fault provenance.** Ba ID primary không cho phép coi nhiều field,
    reader hoặc view là mẫu độc lập. Dùng sizing theo ID/family và kế hoạch đã

@@ -1,9 +1,16 @@
 # Việc tiếp tục độc lập với phiếu đối chiếu
 
-Cập nhật 15/11/2026, Asia/Bangkok. **Review cá nhân đã hoàn tất cả hai pha**;
+Cập nhật 16/11/2026, Asia/Bangkok. **Review cá nhân đã hoàn tất cả hai pha**;
 đã nhập 46 ca và xuất [kết quả](IFV_RESULTS_VI.md). Không còn chờ phiếu hiện
 tại. Reference độc lập và adequacy vẫn là dependency của confirmatory. Công
 cụ, hồi quy ứng dụng và chuẩn bị artifact tiếp tục theo đầu vào riêng.
+
+Ngày 16/11 đã làm thêm [các biến thể A và replay](A_DEVELOPMENT_20261116.md),
+[gói reviewer offline/công cụ agreement](REVIEWER_HANDOFF_VI.md), cùng
+[bản lưu mã sửa ứng dụng](../../engineering/application_20261114/README.md).
+Đó là công việc thực hiện được khi chưa có người ngoài trả phiếu; không phải
+inference/training mới hoặc đánh giá độc lập mới. Các số kiểm backend/model
+bên dưới là kết quả ngày 14/11, không được tính thành lượt chạy mới ngày 16/11.
 
 ## Đã làm trong lượt tiếp tục này
 

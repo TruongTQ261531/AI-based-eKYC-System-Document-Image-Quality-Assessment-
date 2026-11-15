@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\development_verification.py", line 118, in <module>
+    result = verify()
+             ^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\master\development_verification.py", line 61, in verify
+    raise ValueError('A descriptive stratum differs on replay')
+ValueError: A descriptive stratum differs on replay

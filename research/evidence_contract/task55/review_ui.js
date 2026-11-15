@@ -2,6 +2,9 @@
  'use strict';const P=window.BLIND_PACKET,C=window.BlindReviewCore;
  const storage={getItem:k=>window.localStorage.getItem(window.BLIND_REVIEW_STORAGE_KEY||k),setItem:(k,v)=>window.localStorage.setItem(window.BLIND_REVIEW_STORAGE_KEY||k,v)};
  const restored=C.restore(P,storage);let state=restored.state;let dirty=false;
+ if(window.BLIND_REVIEW_PROFILE&&!state.profile.reviewer_id&&!Object.values(state.answers).some(a=>a.touched)){
+   for(const key of ['reviewer_id','role'])state.profile[key]=window.BLIND_REVIEW_PROFILE[key]||'';
+ }
  if(window.BLIND_REVIEW_RESUME&&!restored.warning&&!Object.values(state.answers).some(a=>a.touched)){
    state=C.restoreBackup(P,window.BLIND_REVIEW_RESUME);
    state.page=C.pendingSlots(P,state)[0]?.page||0;

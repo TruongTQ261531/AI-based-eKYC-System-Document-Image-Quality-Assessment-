@@ -18,7 +18,7 @@ function fixture() {
   return {packet, state, submission:core.exportReview(packet,state).value};
 }
 
-function mount(packet, submission, saved=null) {
+function mount(packet, submission, saved=null, profile=null) {
   const nodes = new Map(), sections = new Map(), local = new Map();
   if(saved)local.set('resume-isolated',JSON.stringify(saved));
   const get = id => {if(!nodes.has(id))nodes.set(id,{value:''});return nodes.get(id);};
@@ -35,7 +35,7 @@ function mount(packet, submission, saved=null) {
     return [...sections.values()];
   };
   const downloads=[];
-  const window={BLIND_PACKET:packet,BlindReviewCore:core,BLIND_REVIEW_RESUME:submission,
+  const window={BLIND_PACKET:packet,BlindReviewCore:core,BLIND_REVIEW_RESUME:submission,BLIND_REVIEW_PROFILE:profile,
     BLIND_REVIEW_STORAGE_KEY:'resume-isolated',BLIND_IMAGE_PREFIX:'../frozen/',
     localStorage:{getItem:k=>local.get(k),setItem:(k,v)=>local.set(k,v)},
     addEventListener(){},scrollTo(){},confirm:()=>false};
@@ -63,6 +63,16 @@ test('resume retains text, shows pending progress and blocks misleading full exp
   assert.equal(saved.answers.F0.observed_transcript,'UNIT TEXT 0');
   assert.deepEqual(saved.answers.F0.sources,[]);
   assert.equal(m.local.has('document-review/'+packet.packet_id),false);
+});
+
+test('portable reviewer code is prefilled without attesting output exposure',()=>{
+  const {packet}=fixture();
+  const m=mount(packet,null,null,{reviewer_id:'R02',role:'external_reviewer'});
+  assert.equal(m.get('profile-reviewer_id').value,'R02');
+  assert.equal(m.get('profile-role').value,'external_reviewer');
+  assert.equal(m.get('profile-output_exposure').value,'');
+  m.get('export-review').onclick();
+  assert.equal(m.downloads.length,0);
 });
 
 test('next-pending and page-select retain incomplete answers',()=>{

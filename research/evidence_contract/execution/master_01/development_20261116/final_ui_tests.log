@@ -1,0 +1,23 @@
+✔ phase 1 wires save, JSON export, and reload with image provenance in an offline fixture (16.8273ms)
+✔ resume retains text, shows pending progress and blocks misleading full export (24.2078ms)
+✔ portable reviewer code is prefilled without attesting output exposure (3.1325ms)
+✔ next-pending and page-select retain incomplete answers (10.0906ms)
+✔ new source is blank until reviewer explicitly reuses their own reading (5.3971ms)
+✔ newer saved draft takes priority over embedded original and backup still exports (4.2764ms)
+✔ nonempty field cannot be recorded as an omission (9.2067ms)
+✔ literal O/0 discrepancy requires a note, without auto-correcting a judgment (4.4259ms)
+✔ partial draft survives backup export and load without becoming a submitted label (7.2979ms)
+✔ browser storage failure recommends the file fallback (0.7345ms)
+✔ malformed storage never overwrites a bad draft while restoring (2.2684ms)
+✔ visible observation requires per-source states, while unknown language is expressible (2.2324ms)
+✔ wrong image backup is rejected (7.9538ms)
+✔ output review locks conditions before displaying predictions and requires notes for errors (13.836ms)
+✔ full export waits for every case; draft retains pre-reveal conditions (6.5687ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 356.8035

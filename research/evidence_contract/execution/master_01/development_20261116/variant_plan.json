@@ -1,0 +1,30 @@
+{
+  "claim": "Engineering endpoint visibility and triage. A_dual is B3 field checking plus A relation checking, not a new detector exceeding B3.",
+  "confirmatory": false,
+  "frozen_A_files": {
+    "contracts.py": "7264238f6a64c94ac2734465a091017f8713e982910de68d453387bed0bd660b",
+    "oracle.py": "de56d40776d0bc6c183285b0bbeea898e5522ff312172fc9d61cdc5e55da86f5",
+    "task5/baselines.py": "1015608658d3dfbb09127b98ce8cb66e0a7194fa5472022df5b590092f792cd8"
+  },
+  "independent_reference_approved": false,
+  "local_date": "2026-11-16",
+  "model_call_budget": 0,
+  "panels": [
+    "original unadjudicated labels",
+    "existing post-hoc withholding sensitivity"
+  ],
+  "review_panel": "all 46 sealed comparisons; 42 primary",
+  "scheduled_comparisons": 132,
+  "schema": "A-exploratory-plan/1",
+  "scope": "POST_PILOT_EXPLORATORY",
+  "selection": "entire frozen schedule and existing sample, no refill or favorable-case selection",
+  "training_steps": 0,
+  "variants": [
+    "A_frozen",
+    "A_change_union",
+    "A_dual",
+    "A_reference_gate",
+    "B3",
+    "A_flat"
+  ]
+}

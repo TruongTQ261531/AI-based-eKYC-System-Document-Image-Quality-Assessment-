@@ -1,5 +1,13 @@
 # EASE 2027 submission readiness
 
+Status checked 16 November: exploratory A variants, reviewer package builders
+and agreement tooling are implemented. Two phase-1 ZIPs are ready for private
+handoff; no external judgments have been received. Public development code and
+aggregate archives are synchronized on the progress branch, with main awaiting
+review. This is not an anonymous conference release or a new scientific GO.
+[Development](../A_DEVELOPMENT_20261116.md) · [Handoff](../REVIEWER_HANDOFF_VI.md) ·
+[Synchronization](../execution/master_01/development_20261116/catchup_sync.json)
+
 **Internal draft and local replication candidate prepared. Research submission remains blocked by evidence.** All 86 phase-1 observations and 46 phase-2 judgments are sealed and replayed. A one-project-author review supports descriptive subset counts; 17 cases have literal coherence flags. The apparent FAR difference is not robust to the post-hoc sensitivity panel. Independent references, adequacy and a new scientific GO remain pending. The three linked CFPs were checked again on 15 November 2026. [Current roadmap](../EASE2027_ROADMAP_VI.md) · [IFV results](../IFV_RESULTS_VI.md)
 
 | Official track | Published deadline and format | Fit after evidence is available |
@@ -22,7 +30,7 @@ The official conference site describes the EASE series as CORE A. The track comp
 
 The ACM review source now exists at [main.tex](main.tex), using the prescribed `sigconf,review,anonymous` settings. It contains the method diagram, contract table, verified development counts and explicit confirmatory placeholders. Source checks passed for balanced braces and environments, six citation keys, and identifiable local strings. The existing machine has no pdflatex, LuaLaTeX, XeLaTeX or Tectonic compiler. PDF compilation, layout inspection and the resulting page count therefore remain blocked by that resource. [Source-check receipt](../execution/master_01/continuation_20261111/acm_source_verification.json)
 
-The [local replication candidate](candidate_20261111_02.zip) passed a fresh-process scorer replay and extracted-archive verification. Its automatic identifier scan passed. Final human anonymity and redistribution-rights checks remain open before external release. The first package adapter attempt passed B2 the wrong argument list; the corrected candidate preserves B2's graph-free interface and matches all stored decisions. [Candidate receipt](../execution/master_01/continuation_20261111/candidate_20261111_02_receipt.json)
+The [replication candidate](candidate_20261111_02.zip) passed a fresh-process scorer replay and extracted-archive verification. Its automatic identifier scan passed. It is tracked in the public development branch; final human anonymity and redistribution-rights checks remain open for a separate conference release. The corrected candidate preserves B2's graph-free interface and matches all stored decisions. Its historical build receipt retains the original local-only distribution state. [Candidate receipt](../execution/master_01/continuation_20261111/candidate_20261111_02_receipt.json)
 
 The [15 November IFV aggregate supplement](ifv_aggregate_20261115_02.zip) adds
 original and post-hoc sensitivity counts with a standalone consistency verifier.

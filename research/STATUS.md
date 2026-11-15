@@ -1,4 +1,16 @@
-# Research checkpoints (V4 completed:2026-10-31)
+# Research checkpoints
+
+Current EASE work, 16 November 2026: the one-author IFV is complete (86 phase-1
+slots and 46 phase-2 cases), with no external reviewer returns. Exploratory A
+lanes and offline R02/R03 reviewer packages are implemented; original A, readers
+and judgments remain frozen. Confirmatory superiority remains NO-GO.
+[Current status](evidence_contract/MASTER_EXECUTION_STATUS.md) ·
+[Development results](evidence_contract/A_DEVELOPMENT_20261116.md) ·
+[Reviewer handoff](evidence_contract/REVIEWER_HANDOFF_VI.md) ·
+[GitHub milestone policy](../PROJECT_SYNC_POLICY.md)
+
+The following V4 checkpoint is historical; its process and server statements
+describe that checkpoint, not a fresh process inventory.
 
 ## Completed checkpoint,2026-10-31
 

@@ -1,0 +1,35 @@
+{
+  "status": "PASS_PRESERVATION_REPLAY_AND_PACKAGE_BINDING",
+  "protected_assets": 328,
+  "protected_manifest_sha256": "8de7346eb3d9cf80f7a16da3ee0f4ec1b5d226d47cf6993a0553574d433562d1",
+  "old_sealed_report_replayed_exactly": true,
+  "old_human_answers_changed": 0,
+  "original_scorers_unchanged": true,
+  "raw_output_payloads": 93,
+  "inference_event_logs": 6,
+  "scheduled_comparisons": 132,
+  "variant_panels_replayed": 2,
+  "strata_replayed": 7,
+  "packages": [
+    {
+      "archive": "reviewer_R02_phase1.zip",
+      "sha256": "0b859413a9a96282520c1e2c09d08c506e48e57f301ab84036506997ebca31f8",
+      "files": 38,
+      "images": 31
+    },
+    {
+      "archive": "reviewer_R03_phase1.zip",
+      "sha256": "c7e8616d3fc91627ca4c83ebf31d15797e6722f1d3d13cf2a74a43d604b316d6",
+      "files": 38,
+      "images": 31
+    }
+  ],
+  "actual_new_reviewers": 0,
+  "python_tests": 209,
+  "python_subtests": 6,
+  "javascript_tests": 15,
+  "model_calls": 0,
+  "training_steps": 0,
+  "confirmatory_inputs_opened": 0,
+  "browser_visual_qa_performed": false
+}

@@ -1,11 +1,15 @@
 # Trạng thái IFV
 
-**COMPLETE_SINGLE_REVIEW_UNADJUDICATED**, cập nhật 15/11/2026, Asia/Bangkok.
+**COMPLETE_SINGLE_REVIEW_UNADJUDICATED**, cập nhật 16/11/2026, Asia/Bangkok.
 Phần đánh giá cá nhân của bạn đã hoàn tất cả hai pha: **86/86 ô quan sát và
 46/46 ca đối chiếu output**. Không còn ca chưa nộp trong sample này.
 [Báo cáo chính](execution/master_01/ifv_descriptive_ece01b67a2f6af39.md) ·
 [Hậu kiểm](execution/master_01/ifv_20261115/analysis.md) ·
 [Bước tiếp theo](NEXT_ACTIONS.md)
+
+Đã chuẩn bị gói chấm offline R02/R03 và công cụ agreement theo
+[handoff](REVIEWER_HANDOFF_VI.md). Số reviewer ngoài thực nhận vẫn **0**;
+hai gói chưa phải hai người đã chấm. Phiếu cá nhân và các bảng dưới giữ nguyên.
 
 | Mục | Trạng thái đã kiểm |
 |---|---|
