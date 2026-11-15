@@ -1,0 +1,13 @@
+{
+  "changed_assets": [],
+  "frozen_scorers_unchanged": true,
+  "historical_inference_logs": 6,
+  "model_calls": 0,
+  "model_loaders_constructed": 0,
+  "model_output_cache_payloads": 93,
+  "phase1_and_packet_seals_verified": true,
+  "protected_assets": 325,
+  "sealed_export_equal_to_source": true,
+  "source_export_bytes_unchanged": true,
+  "status": "PASS"
+}

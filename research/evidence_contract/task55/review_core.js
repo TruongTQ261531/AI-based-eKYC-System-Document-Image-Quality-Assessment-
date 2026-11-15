@@ -34,6 +34,10 @@
   }
   function slots(packet){return packet.pages.flatMap(p=>p.fields.map(f=>({...f,image_id:p.image_id,image_sha256:p.file_sha256})));}
   function progress(packet,state){const s=slots(packet);return {total:s.length,complete:s.filter(f=>!observationErrors(state.answers[f.slot_id]).length).length,touched:s.filter(f=>state.answers[f.slot_id]?.touched).length};}
+  function pendingSlots(packet,state){return packet.pages.flatMap((p,page)=>p.fields.flatMap(f=>{
+    const errors=observationErrors(state.answers[f.slot_id]);
+    return errors.length?[{...f,image_id:p.image_id,page,errors}]:[];
+  }));}
   function saveDraft(state,storage){
     const value=JSON.stringify(state);
     try{storage.setItem('document-review/'+state.packet_id,value);return {saved:true,message:'Đã lưu bản nháp tại trình duyệt trên máy này.'};}
@@ -91,7 +95,7 @@
       review_state:p.complete===p.total?'complete':'partial',items,
       no_model_outputs_shown_by_packet:true,no_expected_values_shown_by_packet:true}};
   }
-  const api={AVAIL,READ,SEM,TYPES,blank,initial,observationErrors,profileErrors,slots,progress,saveDraft,restore,restoreBackup,exportReview};
+  const api={AVAIL,READ,SEM,TYPES,blank,initial,observationErrors,profileErrors,slots,progress,pendingSlots,saveDraft,restore,restoreBackup,exportReview};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
   root.BlindReviewCore=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

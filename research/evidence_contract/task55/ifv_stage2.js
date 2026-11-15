@@ -46,13 +46,22 @@
     for (const [key, name] of readings) $(id).add(new Option(name, key));
   }
   function evidenceText(evidence) {
-    const sources = evidence.sources.map((s) => s.kind + ' – ' + s.location).join(', ');
+    const states = {visible:'nhìn thấy', partial:'một phần', not_seen:'không thấy', uncertain:'chưa rõ',
+      readable:'đọc rõ', unreadable:'không đọc được', unassessed:'chưa đánh giá', language_unknown:'không biết ngôn ngữ'};
+    const kinds = {body:'nội dung chính', duplicated_body:'nội dung lặp', mrz:'MRZ', other:'nguồn khác', uncertain:'chưa rõ loại'};
+    const sources = evidence.sources.map((s, i) => [
+      'Nguồn ' + (i + 1) + ': ' + (kinds[s.kind] || s.kind) + ' – ' + s.location,
+      '  ' + (states[s.availability] || s.availability) + ' / ' + (states[s.readability] || s.readability),
+      s.observed_text ? '  Chữ: ' + s.observed_text : '',
+      s.mrz_line_1 ? '  MRZ 1: ' + s.mrz_line_1 : '',
+      s.mrz_line_2 ? '  MRZ 2: ' + s.mrz_line_2 : ''
+    ].filter(Boolean).join('\n')).join('\n');
     return [
-      'Phiếu pha 1: ' + evidence.availability + ' / ' + evidence.readability,
+      'Phiếu pha 1: ' + (states[evidence.availability] || evidence.availability) + ' / ' + (states[evidence.readability] || evidence.readability),
       'Chữ đã chép: ' + (evidence.observed_transcript || '(trống)'),
-      sources ? 'Vị trí đã ghi: ' + sources : '',
+      sources,
       evidence.notes || ''
-    ].filter(Boolean).join(' · ');
+    ].filter(Boolean).join('\n');
   }
   function reveal() {
     const c = record();
@@ -126,18 +135,27 @@
   }
   $('previous').onclick = () => move(-1);
   $('next').onclick = () => move(1);
-  $('export').onclick = () => {
+  function exportFile(kind, partial = false) {
     const completed = Object.values(items).filter((a) => a.before_reading && a.after_reading);
-    if (dirty || !completed.length) { note('Hãy lưu ít nhất một ca và lưu ca đang sửa trước khi xuất.'); return; }
+    if (dirty) { note('Hãy lưu ca đang sửa trước khi xuất.'); return; }
+    if (kind !== 'draft' && !completed.length) { note('Hãy lưu ít nhất một ca trước khi xuất.'); return; }
+    if (kind !== 'draft' && completed.length !== packet.cases.length && !partial) {
+      note('Còn ' + (packet.cases.length - completed.length) + ' ca chưa đánh giá. Có thể sao lưu nháp để tiếp tục.'); return;
+    }
+    if (partial && !window.confirm('Xuất ' + completed.length + '/' + packet.cases.length + ' ca? Các ca còn lại vẫn chưa đánh giá.')) return;
     const value = { schema: 'ifv-output-observations/1', mode: 'human_entered', packet_id: packet.packet_id,
-      phase1_snapshot: packet.phase1_snapshot, exported_at: new Date().toISOString(), items: completed };
+      phase1_snapshot: packet.phase1_snapshot, export_kind: kind,
+      exported_at: new Date().toISOString(), items: kind === 'draft' ? Object.values(items) : completed };
     const url = URL.createObjectURL(new Blob([JSON.stringify(value, null, 2)], { type: 'application/json' }));
     const a = document.createElement('a');
-    a.href = url; a.download = 'ifv-output-' + packet.packet_id.slice(0, 12) + '.json';
+    a.href = url; a.download = 'ifv-output-' + (kind === 'draft' ? 'draft-' : partial ? 'partial-' : '') + packet.packet_id.slice(0, 12) + '.json';
     document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
     needsBackup = false;
     note('Kiểm tra thư mục Downloads để giữ bản phiếu JSON.');
-  };
+  }
+  $('export').onclick = () => exportFile('reviewed_observations');
+  $('export-partial').onclick = () => exportFile('reviewed_observations', true);
+  $('export-draft').onclick = () => exportFile('draft');
   $('load').onchange = async (event) => {
     const file = event.target.files[0]; event.target.value = ''; if (!file) return;
     try {

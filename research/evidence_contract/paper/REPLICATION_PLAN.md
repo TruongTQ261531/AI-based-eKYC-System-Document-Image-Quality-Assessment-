@@ -15,3 +15,15 @@ A local [development candidate](candidate_20261111_02.zip) now implements the sc
 After extracting into a local folder, run `python -I -B verify_results.py` for the standard-library integrity and aggregate check. Use `python -I -B verify_results.py --oracle` in the existing research Python environment for the five frozen scorers. The candidate records NumPy, Pillow and OpenCV versions. Both entry points make zero model calls.
 
 The verified subset concerns stored development decisions. Original image validity, human readability, independent replication, model-inference reproduction and confirmatory findings remain separate obligations. Rights and final human anonymity review are required before publication. The bundle has stayed local. [Technical replay](../TASK7_REPLAY_AND_REPORTING.md) · [Claim ledger](CLAIM_TO_EVIDENCE.md) · [Submission checklist](SUBMISSION_READINESS.md)
+
+## IFV aggregate supplement · 15 November 2026
+
+A separate [aggregate candidate](ifv_aggregate_20261115_02.zip) contains the
+one-author review tables, post-hoc withholding panel and a standard-library
+integrity/arithmetic verifier. It excludes images, transcripts, predictions,
+reviewer identifiers and human notes. Original score replay and human-review
+reproduction remain different obligations. Extract and run
+`python -I -B verify_ifv_aggregate.py`. A fresh-process check and an extracted-ZIP
+check passed; altered counts, private fields and modified-file fixtures are
+rejected. The candidate remains local pending final release review.
+[Receipt](../execution/master_01/ifv_20261115/aggregate_receipt.json)

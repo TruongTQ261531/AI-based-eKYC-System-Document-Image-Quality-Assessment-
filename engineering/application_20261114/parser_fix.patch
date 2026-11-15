@@ -1,0 +1,22 @@
+--- before/ekyc/document_fields.py
++++ after/ekyc/document_fields.py
+@@ -80,7 +80,7 @@
+             if matches and item[0]<matches[-1][1]: continue
+             matches.append(item)
+         if not matches:
+-            custom=re.match(r'^([^:：]{2,60})[:：]\s*(\S.+)$',text)
++            custom=re.match(r'^([^:：]{2,60})[:：]\s*(\S.*)$',text)
+             if custom:
+                 label,value=custom.groups(); key='extra_'+hashlib.sha256(fold(label).encode()).hexdigest()[:12]
+                 labels[key]=label.strip(); values.setdefault(key,[]).append(value.strip());pending=None
+@@ -101,7 +101,9 @@
+     for key,parts in values.items():
+         parts=list(dict.fromkeys(part for part in parts if part))
+         if not parts: continue
+-        if key in ('address','hometown','full_name'): fields[key]=' '.join(parts)
++        # Names are scalar observations: distinct labelled names are a
++        # conflict, while an address can span several continuation rows.
++        if key in ('address','hometown'): fields[key]=' '.join(parts)
+         elif len(parts)==1: fields[key]=parts[0]
+         else: fields[key]=None
+     return fields,labels

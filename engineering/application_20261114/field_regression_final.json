@@ -1,0 +1,341 @@
+{
+  "schema": "application-field-regression/1",
+  "stage": "OCR tokens to semantic fields",
+  "evidence": "Authored synthetic OCR tokens; not human IFV or model accuracy.",
+  "model_calls": 0,
+  "training_steps": 0,
+  "current": {
+    "source_sha256": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+    "cases": 12,
+    "passed": 12,
+    "results": [
+      {
+        "case": "student_fields",
+        "input_sha256": "b72d7d3be3932e5e341615e5f7036b5af1bcda101918f2644df1728fbd01373b",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042",
+          "class_name": "12A3",
+          "course": "2024 - 2027"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Mã học sinh / sinh viên": "HS20260042",
+          "Lớp": "12A3",
+          "Khóa học": "2024 - 2027"
+        },
+        "document_type": "student_card"
+      },
+      {
+        "case": "license_dates",
+        "input_sha256": "0910287c1ffd8decf652877f812069742d750fd78d5cb962d3e7bfd5760936af",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "id_number": "A1234567",
+          "license_class": "B2",
+          "issue_date": "2024-03-02",
+          "expiry_date": "2034-03-02"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "A1234567",
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02"
+        },
+        "document_type": "driver_license"
+      },
+      {
+        "case": "conflicting_names",
+        "input_sha256": "393a4e9617e80e14387758ceaef2669f1f2e3841198dfa4b9f10578af3e28e0c",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "conflicting_names_with_detector_guess",
+        "input_sha256": "c714e161bdb129506b294f153b8d4dd9ecfde8a68e0ac6e5cdefb91d7fb61128",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "repeated_same_name",
+        "input_sha256": "3e49ed37be4ea4fd94e8f10719bc96cb8ada4d29030b8d566aaf3c5b046d372b",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "split_name_label",
+        "input_sha256": "c4330746d411319b35eb6377395871181f1a18a5b5be7324062008ba5318b43d",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "one_character_custom_value",
+        "input_sha256": "a4d074964fa24a44d7c3f3b32903096050e02090ed7d90f0e97d530dfaf08dc7",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "fullwidth_colon_custom_value",
+        "input_sha256": "73de782dc68cf006686f271a1ea8c6f2a7dbb60858040286e144230d5ce1a32e",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "extra_c6b6e312c4e6": "B"
+        },
+        "labelled_items": {
+          "Nhóm": "B"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "conflicting_birth_dates",
+        "input_sha256": "8d3a564f7d8d37657635d83cb47ae711d31299d9b03c39350b3b68dbb39fe095",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "leading_zero_id",
+        "input_sha256": "6a5f0456638d47d4a901aa0a5c84b727fe265009b316b8afe0d489c472f566a1",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "multiline_address",
+        "input_sha256": "8756e4a0a1eb8e193509e8c952ce28ffa245d90aeaeac95159042409fb4cb8ff",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "unknown_document_without_labels",
+        "input_sha256": "1a56addcf2aa31c49eb11ccdb9d54a4be3e8f5159e4fdb62cb29af8b7a71e1eb",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      }
+    ]
+  },
+  "baseline": {
+    "source_sha256": "cca292ef3a12a96757bb9b912a261d1dd591f5f8110e72da7c299183f39b9431",
+    "cases": 12,
+    "passed": 8,
+    "results": [
+      {
+        "case": "student_fields",
+        "input_sha256": "b72d7d3be3932e5e341615e5f7036b5af1bcda101918f2644df1728fbd01373b",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042",
+          "class_name": "12A3",
+          "course": "2024 - 2027"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Mã học sinh / sinh viên": "HS20260042",
+          "Lớp": "12A3",
+          "Khóa học": "2024 - 2027"
+        },
+        "document_type": "student_card"
+      },
+      {
+        "case": "license_dates",
+        "input_sha256": "0910287c1ffd8decf652877f812069742d750fd78d5cb962d3e7bfd5760936af",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "id_number": "A1234567",
+          "license_class": "B2",
+          "issue_date": "2024-03-02",
+          "expiry_date": "2034-03-02"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "A1234567",
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02"
+        },
+        "document_type": "driver_license"
+      },
+      {
+        "case": "conflicting_names",
+        "input_sha256": "393a4e9617e80e14387758ceaef2669f1f2e3841198dfa4b9f10578af3e28e0c",
+        "passed": false,
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "conflicting_names_with_detector_guess",
+        "input_sha256": "c714e161bdb129506b294f153b8d4dd9ecfde8a68e0ac6e5cdefb91d7fb61128",
+        "passed": false,
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "repeated_same_name",
+        "input_sha256": "3e49ed37be4ea4fd94e8f10719bc96cb8ada4d29030b8d566aaf3c5b046d372b",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "split_name_label",
+        "input_sha256": "c4330746d411319b35eb6377395871181f1a18a5b5be7324062008ba5318b43d",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "one_character_custom_value",
+        "input_sha256": "a4d074964fa24a44d7c3f3b32903096050e02090ed7d90f0e97d530dfaf08dc7",
+        "passed": false,
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "fullwidth_colon_custom_value",
+        "input_sha256": "73de782dc68cf006686f271a1ea8c6f2a7dbb60858040286e144230d5ce1a32e",
+        "passed": false,
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "conflicting_birth_dates",
+        "input_sha256": "8d3a564f7d8d37657635d83cb47ae711d31299d9b03c39350b3b68dbb39fe095",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      },
+      {
+        "case": "leading_zero_id",
+        "input_sha256": "6a5f0456638d47d4a901aa0a5c84b727fe265009b316b8afe0d489c472f566a1",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "multiline_address",
+        "input_sha256": "8756e4a0a1eb8e193509e8c952ce28ffa245d90aeaeac95159042409fb4cb8ff",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "document_type": "unknown"
+      },
+      {
+        "case": "unknown_document_without_labels",
+        "input_sha256": "1a56addcf2aa31c49eb11ccdb9d54a4be3e8f5159e4fdb62cb29af8b7a71e1eb",
+        "passed": true,
+        "failures": [],
+        "actual_fields": {},
+        "labelled_items": {},
+        "document_type": "unknown"
+      }
+    ]
+  },
+  "fixed_cases": [
+    "conflicting_names",
+    "conflicting_names_with_detector_guess",
+    "one_character_custom_value",
+    "fullwidth_colon_custom_value"
+  ]
+}

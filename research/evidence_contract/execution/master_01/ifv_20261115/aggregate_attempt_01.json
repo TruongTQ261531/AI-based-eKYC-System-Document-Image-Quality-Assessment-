@@ -1,0 +1,10 @@
+{
+  "hits": [
+    {
+      "file": "verify_ifv_aggregate.py",
+      "matched": "/Users/"
+    }
+  ],
+  "reason": "Path-detection regex source includes generic path-prefix literals; these are not actual machine identifiers. Failed candidate preserved; no archive published.",
+  "status": "SCAN_LITERAL_FALSE_POSITIVE"
+}

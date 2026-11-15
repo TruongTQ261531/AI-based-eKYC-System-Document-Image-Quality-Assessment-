@@ -1,0 +1,85 @@
+.......................................................................F [ 38%]
+.....FF........................................................... [ 73%]
+.................................................                        [100%]
+================================== FAILURES ===================================
+________ test_run_write_hashes_and_refuses_overwrite_and_old_namespace ________
+
+backup = (array([[[245, 247, 239],
+        [245, 247, 239],
+        [245, 247, 239],
+        ...,
+        [245, 247, 239],
+    ...icy='fictional', input_file_sha256=None, unmapped_fields=(), schema_version='evidence-graph/1'), 'id_number', 'school')
+tmp_path = WindowsPath('C:/Users/Truong/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{a335f0f5-93f7-401d-a1d5-612e7c16664e}/Temp/pytest-of-Truong/pytest-0/test_run_write_hashes_and_refu0')
+
+    def test_run_write_hashes_and_refuses_overwrite_and_old_namespace(backup, tmp_path):
+        pair = paired(backup, "all_sources_mask")
+        destination = tmp_path / "new_run"
+>       manifest = write_new_run(destination, (pair,))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+research\evidence_contract\tests\test_contracts.py:391: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+destination = WindowsPath('C:/Users/Truong/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{a335f0f5-93f7-401d-a1d5-612e7c16664e}/Temp/pytest-of-Truong/pytest-0/test_run_write_hashes_and_refu0/new_run')
+pairs = (Pair(case_id='ea06eea13e678ad30560b7716a83bca7f2b0e1025374f45dca4924cdb9b0c827', original=array([[[245, 247, 239],
+  ...els': 720, 'mask_covered_pixels': 0, 'actual_changed_pixels': 0}}}, review_required=(), reference_before_graph=None)),)
+run_metadata = None
+
+    def write_new_run(destination, pairs, *, run_metadata=None):
+        """Exclusive output creation; refuses old namespaces, symlink escapes and PII."""
+        destination = Path(destination).resolve()
+        if not destination.is_relative_to(RESEARCH_ROOT.resolve()) or destination == RESEARCH_ROOT.resolve():
+>           raise ValueError("Output must be a new child of research/evidence_contract")
+E           ValueError: Output must be a new child of research/evidence_contract
+
+research\evidence_contract\generator.py:161: ValueError
+_______ test_invalid_and_inconclusive_attempts_are_written_not_filtered _______
+
+tmp_path = WindowsPath('C:/Users/Truong/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{a335f0f5-93f7-401d-a1d5-612e7c16664e}/Temp/pytest-of-Truong/pytest-0/test_invalid_and_inconclusive_0')
+
+    def test_invalid_and_inconclusive_attempts_are_written_not_filtered(tmp_path):
+        invalid = paired(shared_context_fixture(), "pair_a_mask")
+        uncertain = paired(backup_fixture(limited=True), "all_sources_mask")
+>       manifest = write_new_run(tmp_path / "failed_preconditions", (invalid, uncertain))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+research\evidence_contract\tests\test_contracts.py:467: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+destination = WindowsPath('C:/Users/Truong/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{a335f0f5-93f7-401d-a1d5-612e7c16664e}/Temp/pytest-of-Truong/pytest-0/test_invalid_and_inconclusive_0/failed_preconditions')
+pairs = (Pair(case_id='659aa86fd2fd85d5a78f0d14365711443c3647a355ff764dc2fd96d05111ddef', original=array([[[245, 247, 239],
+  ...ered_pixels': 0, 'actual_changed_pixels': 0}}}, review_required=('coverage:id_number',), reference_before_graph=None)))
+run_metadata = None
+
+    def write_new_run(destination, pairs, *, run_metadata=None):
+        """Exclusive output creation; refuses old namespaces, symlink escapes and PII."""
+        destination = Path(destination).resolve()
+        if not destination.is_relative_to(RESEARCH_ROOT.resolve()) or destination == RESEARCH_ROOT.resolve():
+>           raise ValueError("Output must be a new child of research/evidence_contract")
+E           ValueError: Output must be a new child of research/evidence_contract
+
+research\evidence_contract\generator.py:161: ValueError
+_________ test_duplicate_case_ids_are_rejected_before_output_creation _________
+
+backup = (array([[[245, 247, 239],
+        [245, 247, 239],
+        [245, 247, 239],
+        ...,
+        [245, 247, 239],
+    ...icy='fictional', input_file_sha256=None, unmapped_fields=(), schema_version='evidence-graph/1'), 'id_number', 'school')
+tmp_path = WindowsPath('C:/Users/Truong/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/AC/#!sandbox.{a335f0f5-93f7-401d-a1d5-612e7c16664e}/Temp/pytest-of-Truong/pytest-0/test_duplicate_case_ids_are_re0')
+
+    def test_duplicate_case_ids_are_rejected_before_output_creation(backup, tmp_path):
+        pair = paired(backup, "full")
+>       with pytest.raises(ValueError, match="Duplicate case IDs"):
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'Duplicate case IDs'
+E         Actual message: 'Output must be a new child of research/evidence_contract'
+
+research\evidence_contract\tests\test_contracts.py:474: AssertionError
+=========================== short test summary info ===========================
+FAILED research/evidence_contract/tests/test_contracts.py::test_run_write_hashes_and_refuses_overwrite_and_old_namespace
+FAILED research/evidence_contract/tests/test_contracts.py::test_invalid_and_inconclusive_attempts_are_written_not_filtered
+FAILED research/evidence_contract/tests/test_contracts.py::test_duplicate_case_ids_are_rejected_before_output_creation
+3 failed, 184 passed, 6 subtests passed in 30.72s

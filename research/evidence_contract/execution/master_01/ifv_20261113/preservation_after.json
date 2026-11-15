@@ -1,0 +1,20 @@
+{
+  "authorized_changed": [
+    "IFV_REVIEW_GUIDE.md",
+    "IFV_REVIEW_STATUS.md",
+    "MASTER_EXECUTION_STATUS.md",
+    "REVISED_GO_NO_GO.md",
+    "paper/CLAIM_TO_EVIDENCE.md",
+    "paper/MANUSCRIPT_DRAFT.md",
+    "paper/main.tex",
+    "task55/review_core.js",
+    "task55/review_template.html",
+    "task55/review_ui.js"
+  ],
+  "checkpoint_edits": 0,
+  "historical_local_or_execution_changes": 0,
+  "missing": [],
+  "original_files": 2478,
+  "status": "PASS",
+  "unchanged": 2468
+}

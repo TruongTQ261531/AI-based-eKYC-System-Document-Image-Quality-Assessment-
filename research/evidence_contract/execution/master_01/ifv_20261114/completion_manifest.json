@@ -1,0 +1,83 @@
+{
+  "actual_reviewers": 1,
+  "confirmatory_gate": "NO_GO",
+  "generated_human_annotations": 0,
+  "git_commit_created": false,
+  "independence_verified": false,
+  "local_date": "2026-11-14",
+  "model_calls": 0,
+  "next_step": "Receive actual phase-2 export, import against sealed snapshot, replay descriptive report, then review independent-reference and new scientific GO requirements.",
+  "phase1_complete_observations": 86,
+  "phase1_export_versions": 2,
+  "phase1_images": 31,
+  "phase2_cases": 46,
+  "phase2_human_judgments": 0,
+  "preservation": {
+    "changed_assets": 0,
+    "historical_inference_logs": 6,
+    "protected_assets": 316,
+    "raw_cache_payloads": 93
+  },
+  "receipt_hashes": {
+    "acm_source_verification.json": "180199b9d8e8f2257f8ce1fa34231b9c88a08c32c03ce17058280ed514d1ab34",
+    "browser_qa.json": "df47c0f84599f367aca3f52a3426cd4a480eb2ceeb3106e7e220fe1dc72f07d8",
+    "cfp_verification.json": "5513ed51773e543d3dd28833f40856a6b17e68f30242a0d8686830c861521016",
+    "document_links.json": "9708ac0aeaed817ef89785017a4f83c6f74896c7647083568177b543846508df",
+    "ifv_waiting.json": "8690b2bc223a881e1360d0defd08a0f1603a36a29fedc40cf98ee4d6c7da0daf",
+    "intake.json": "013d246eccc8523adcc8b48790eca445eb6e946cc60658f8ac5d3776f896d5ef",
+    "phase1_readiness.json": "28468eb24245c19568185efb289b0de0479a72c79a43a5c2cdabfbc4420e9411",
+    "preservation_after.json": "6d808ddfd6a247f79c5581a4cc44c919421ba75d926b6476b1bf1123c7c8a9a9",
+    "python_tests.log": "91f89b3e62ad973f6d6bc67631d603f9b4e48a1612578fe78eea19f07cd6b844",
+    "python_tests_final.log": "d0f2d124bba3693ddd6f1b474deec73a8a4c8cd8a8becc594d2bc384fc422d5f",
+    "python_tests_scoped.log": "8886cbb47c492c671a3c3dea56b27d2bfff74c498c096eb8d0c5bb319e79fa7b",
+    "ui_tests.log": "b0ac76e3edc2ee95b2d91a17503a00241878c47efb6b8e7f95c45c0e875f8e8b"
+  },
+  "schema": "ifv-continuation-completion/1",
+  "source_file_hashes": {
+    "EASE2027_ROADMAP_VI.md": "f44b892e82525df39d20fc3ea88a6832c5772af3a83533da10240d32f0ae5458",
+    "IFV_REVIEW_GUIDE.md": "07cc3a7b61691ee8b3a700523e56b8a55326464ea585bd7749f417ad2a23f85f",
+    "IFV_REVIEW_STATUS.md": "1b9fddf90453e8f62abfb6840d451ae563b6e5a46355aa73f7c78bc3c0ddae75",
+    "MASTER_EXECUTION_STATUS.md": "531b2ce1bf595de6a53e6c83c151913cfbd73f0bf89716799385c51eb80e62ec",
+    "NEXT_ACTIONS.md": "607f4b677dc9a782b2d0826c3b001f6c72675b805bdc293410f9f8f4cfa126ce",
+    "REVISED_GO_NO_GO.md": "99154a4bc1b7ffc687809017878553d1ae29789ee417dc7a12dc948165d668b6",
+    "paper/CLAIM_TO_EVIDENCE.md": "c5e8ea2ee1111d6f51805c1b5e5b7d29819059567440107893b712b7e92d6a07",
+    "paper/MANUSCRIPT_DRAFT.md": "5c917b125a31fc577dd43bfca3e6f1496b8658f03dabd920f27a9a8935e24eee",
+    "paper/SUBMISSION_READINESS.md": "c9cb9041caf2c4446cac82faa94ec8983822d8418325dd625ad3107ee831860f",
+    "paper/main.tex": "212ee56a4ac1eca79d024eb2455e9bbdde67981ab85be2d1fbcc0e7f2873b558",
+    "task55/ifv.py": "76371bef2613586c62c5e2a4871d11327785cfb9c4c67e5fcb93e80201c0f304",
+    "task55/ifv_stage2.html": "4008558ea31be24e871464a655b272a3038eb3479f7cd2ad8c192f3f56375df9",
+    "task55/ifv_stage2.js": "1a6d525c53139890396ee4befbc925c685e315fc717908b602a59ba28a34b93d",
+    "tests/test_task55_ifv.py": "a27a9a860cd9e825bca961d9875f4a0b29d0cde032bcd80d2e40fe60804009ff",
+    "tests/test_task55_stage2_ui.cjs": "b61ce909b53c914a297abc7896cd6798e2740005bfc204245a168ee7ff0cba03"
+  },
+  "status": "PHASE1_SEALED_PHASE2_PUBLISHED_ROADMAP_UPDATED",
+  "submission_performed": false,
+  "tests": {
+    "command": "python -B -m pytest research/evidence_contract/tests -q --basetemp research/evidence_contract/local/<new-empty-run-name>",
+    "javascript": 12,
+    "prior_attempts": [
+      {
+        "log": "python_tests.log",
+        "reason": "Default OS tmp is outside generator output namespace; 184 passed and 3 failed."
+      },
+      {
+        "log": "python_tests_scoped.log",
+        "reason": "Explicit basetemp parent was absent; 179 passed and 8 setup errors."
+      }
+    ],
+    "python": 187,
+    "python_subtests": 6,
+    "scoped_temp": "research/evidence_contract/local/qa14",
+    "status": "PASS"
+  },
+  "timezone": "Asia/Bangkok",
+  "training_steps": 0,
+  "verification": {
+    "acm_source": "PASS_SOURCE_ONLY",
+    "browser_visual": "BLOCKED_FILE_PROTOCOL",
+    "diff_check": "PASS",
+    "document_links": 48,
+    "image_links": 92,
+    "pdf_layout": "PENDING_NO_COMPILER"
+  }
+}

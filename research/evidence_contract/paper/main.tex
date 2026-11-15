@@ -9,7 +9,7 @@
 
 \begin{document}
 \begin{abstract}
-Document verification pipelines transform captured images before extracting structured fields. A value may remain supported after one occurrence is occluded, while a crop may remove the only source for another field. These situations complicate software test oracles that compare final values. We study evidence contracts that track source availability, apply tests subject to explicit preconditions, and distinguish field errors from transformation-related changes. In a development panel, a flat checker with the same eligibility rules reproduced all primary contract verdicts. Controlled faults and a bounded crop intervention illustrate how evidence records distinguish source loss from retained-source errors. Independent fault validation and confirmatory comparisons are pending. The planned study tests whether contracts provide a reliability or triage benefit over strong baselines given the same evidence.
+Document verification pipelines transform images before extracting structured fields. We study evidence contracts that make source preconditions and the distinction between pointwise errors and relation violations explicit. A flat checker with matched information reproduced every primary development verdict. In a one-project-author review of 42 primary comparisons, frozen guards admitted 26 pointwise and 21 relation labels. A detected two of seven operational pointwise faults, compared with seven for B3. An apparent false-alarm difference disappeared when cases with literal review discrepancies were withheld in a post-hoc sensitivity panel. Twelve of A's fourteen primary alarms remained inconclusive. These small, unadjudicated findings motivate reference-validity and coverage analysis; they do not establish comparative superiority or population effects. Independent reference and confirmatory evidence remain pending.
 \end{abstract}
 \keywords{Software testing, document pipelines, metamorphic testing, test oracles, evidence contracts}
 \maketitle
@@ -93,6 +93,8 @@ Development subjects include frozen CPU OCR and VLM readers. The historical prim
 
 Confirmatory specimens require verified separation of physical ID, full authored content, image bytes, decoded pixels, and lineage. Historical pixel metadata has gaps, and public-model pretraining exposure is unknown. New camera data and confirmatory specimens remain pending.
 
+One project-author reviewer completed all 86 phase-1 field slots and 46 output comparisons (42 primary, four diagnostic). Two preserved phase-1 versions count as one reviewer. Observations were sealed before predictions were loaded; the phase-2 export was imported unchanged. Frozen guards yielded 26 binary pointwise labels and 21 relation labels in the primary sample, with no unreviewed comparisons. All ten C2 comparisons, including one diagnostic, remain inconclusive. These operational labels are unadjudicated, rather than independent gold or software root causes.
+
 \subsection{Baselines}
 B0 compares complete field references. B1 selects from the same validity-filtered pool. B2 applies source-agnostic relations. B3 compares follow-up values with the available sources. Gated legacy V3 and a flat conditional checker receive the same evidence as A.
 
@@ -128,6 +130,27 @@ Fourteen constructed controls contain seven activated observable faults, includi
 
 The stage pilot has three IDs and four views per ID. Two outputs use historical cache, and ten are fresh CPU OCR calls. Score replay uses zero new inference and reproduces the saved digest. Correct rectification changes no field correctness relative to raw input. A deliberately bad crop changes four correctly read fields to wrong results. All four lose their declared evidence. The three planned crop targets were already wrong before cropping. Given the same source metadata, flat and graph explanations agree on all 24 field comparisons.
 
+\subsection{One-author IFV subset}
+\begin{table}[t]
+\centering
+\caption{Unadjudicated IFV subset counts. Remaining cases are inconclusive.}
+\label{tab:ifv}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Endpoint / method & TP & FP & FN & TN & Labeled\\
+\midrule
+Pointwise A & 2 & 0 & 5 & 19 & 26/42\\
+Pointwise B3 & 7 & 3 & 0 & 16 & 26/42\\
+Relation A & 2 & 0 & 0 & 19 & 21/42\\
+Relation B3 & 2 & 3 & 0 & 16 & 21/42\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A\_flat matches A on all 42 reviewed primary comparisons, and gated V3 matches B3. Pointwise decision coverage is 18/26 for A and 26/26 for B3. Twelve of A's 14 primary alarms remain inconclusive at both endpoints. Precision 2/2 on labeled alarms therefore does not describe all alarms. The sample has only three primary IDs; the cluster guard withholds intervals. Population recall and review cost are unavailable.
+
+A literal cross-phase audit flags 17 comparisons, including 15 primary: nonempty outputs marked as omissions, or correctness judgments differing from phase-1 transcripts after Unicode, case, and whitespace normalization. O and 0 remain distinct. These flags are not adjudications. A post-hoc sensitivity panel retains the full frame but withholds both endpoint labels for flagged cases. Pointwise counts become A 2/0/4/14 and B3 6/0/0/14 (TP/FP/FN/TN); relation counts are 2/0/0/14 for both. The apparent false-alarm difference disappears. The original observations and primary results remain unchanged.
+
 \subsection{Confirmatory results pending}
 \begin{table*}[t]
 \centering
@@ -146,7 +169,7 @@ Exploratory diagnosis & Evidence-loss classification and triage time & Developme
 \end{table*}
 
 \section{Discussion}
-A relation can narrow the type of error reported while adding an eligibility requirement. An original reading error can make the relation inconclusive even when the follow-up contains a pointwise error. Independent labels are needed before interpreting a lower alarm count as a reliability gain.
+A relation can narrow the type of error reported while adding an eligibility requirement. An original reading error can make the relation inconclusive even when the follow-up has a pointwise fault. The completed review exposes this sensitivity/coverage trade-off and shows that the apparent FAR gain is reference-sensitive. Withholding flagged cases is a robustness check, not a correction or independent replication. Fewer alarms alone do not establish reliability.
 
 Stage evidence can explain whether a field difference coincides with a lost source. The flat comparison shows that this explanation is available from the same metadata without requiring graph representation at the decision boundary. Comparative value requires additional evidence about valid-test generation, verified error discovery, or diagnosis cost.
 
@@ -160,7 +183,7 @@ Stage evidence can explain whether a field difference coincides with a lost sour
 \textbf{External validity.} Fictional specimens and supplied-corner projections cover a restricted set of layouts and capture conditions. Effects across devices, scripts, automatic localization methods, and model versions remain to be assessed.
 
 \section{Conclusion}
-Evidence contracts make document-test preconditions and the scope of an extraction alarm explicit. Current development results explain verdict differences and demonstrate replay feasibility. The flat baseline accounts for observed primary decisions and stage explanations under information parity. Independent verification and a locked study are needed to assess comparative reliability, discovery yield, and triage value.
+Evidence contracts make preconditions and alarm scope explicit. The completed one-author development review reveals sensitivity and coverage limitations, unresolved alarms, and reference-sensitive estimates. The flat baseline accounts for observed primary decisions under information parity. Prospective reference validation, endpoint separation, and an adequately supported new cohort are needed before comparative reliability, discovery, or cost claims.
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{references}

@@ -1,0 +1,35 @@
+{
+  "historical_snapshot_preflight": [
+    {
+      "path": "MASTER_EXECUTION_STATUS.md",
+      "state": "DIFFERS_FROM_15_NOV_SNAPSHOT"
+    },
+    {
+      "path": "paper/CLAIM_TO_EVIDENCE.md",
+      "state": "DIFFERS_FROM_15_NOV_SNAPSHOT"
+    },
+    {
+      "path": "paper/REPLICATION_PLAN.md",
+      "state": "DIFFERS_FROM_15_NOV_SNAPSHOT"
+    },
+    {
+      "path": "paper/SUBMISSION_READINESS.md",
+      "state": "DIFFERS_FROM_15_NOV_SNAPSHOT"
+    },
+    {
+      "path": "paper/verify_ifv_aggregate.py",
+      "state": "MISSING"
+    },
+    {
+      "path": "tests/test_ifv_aggregate.py",
+      "state": "MISSING"
+    }
+  ],
+  "local_date": "2026-11-16",
+  "model_calls": 0,
+  "original_A_will_remain_frozen": true,
+  "protected_assets": 328,
+  "scope": "Exploratory A variants, independent-review packages, GitHub synchronization",
+  "timezone": "Asia/Bangkok",
+  "verifier_restored_from_verified_archive": true
+}

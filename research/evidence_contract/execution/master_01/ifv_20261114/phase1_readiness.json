@@ -1,0 +1,72 @@
+{
+  "actual_reviewer_count": 1,
+  "adjudicated": false,
+  "backup_precondition_checks": {
+    "c2_cases": 10,
+    "c2_readable_followup_and_backup": 0
+  },
+  "completion": {
+    "actual_reviewer_count": 1,
+    "complete_observations": 86,
+    "field_slots": 86,
+    "generated_human_annotations": 0,
+    "images": 31,
+    "images_requiring_completion": 0,
+    "incomplete_observations": 0,
+    "issue_counts": {},
+    "issues": [],
+    "missing_slots": 0,
+    "model_calls": 0,
+    "observation_snapshot_sha256": "00ff0a49d4df5a84c2d78511bcf2d9ed36e19945747a93c08d6788e3b9a9da79",
+    "packet_id": "e0819a7806fbc8d799b4a241f5d4ea58c55f96d014de2246f1bc1ed5e5650103",
+    "reviewer_independence_verified": false,
+    "schema": "blind-review-completion/1",
+    "submitted_observations": 86,
+    "usable_for_confirmatory": false
+  },
+  "confirmatory_gate": "NO_GO",
+  "generated_human_annotations": 0,
+  "image_link_checks": 92,
+  "image_links_hash_verified": true,
+  "independence_verified": false,
+  "local_date": "2026-11-14",
+  "model_calls": 0,
+  "phase1_submission_versions": 2,
+  "phase2_cases": 46,
+  "phase2_contracts": {
+    "C1": 11,
+    "C2": 10,
+    "C3": 13,
+    "C4": 12
+  },
+  "phase2_diagnostic_cases": 4,
+  "phase2_files": {
+    "evidence_seal.json": "da0e7eb5cb858e02aed2c33c34be009003929ad1d51d2a37b776292e3daf23bf",
+    "index.html": "8c2a1ae3a70061147bf5569ce90b6137cd804d93965561cb2618968beb6c0a5d",
+    "packet.json": "6f141448a5139e4634060911bb72b6ba4f3ff0cde8c9157068f919c8debb90f5"
+  },
+  "phase2_human_submissions": 0,
+  "phase2_packet_id": "3d3fef8a3184a397ea98b5dc3b7640d27914f61e4744a79378e9ba55330c5e02",
+  "phase2_primary_cases": 42,
+  "phase2_publication_sha256": "d92a10056324d3ed76a43740702649bd2bae9954bec276291b597e9dcdefd4f0",
+  "real_metrics": null,
+  "reviewer_role": "project_author",
+  "schema": "phase1-to-phase2-handoff/1",
+  "selected_missing_evidence": 0,
+  "snapshot": "00ff0a49d4df5a84c2d78511bcf2d9ed36e19945747a93c08d6788e3b9a9da79",
+  "source_context": {
+    "automatic_corrections": 0,
+    "automatic_fault_labels": 0,
+    "flagged_observations": 12,
+    "issue_counts": {
+      "field_not_seen_with_readable_source": 1,
+      "mrz_lines_in_non_mrz_source_kind": 4,
+      "mrz_not_validated_by_existing_td3_check": 7
+    },
+    "meaning": "Context to retain during output review; schema completeness does not establish source consistency or test validity."
+  },
+  "source_file_sha256": "52b88f07c9b49fa71e5a1fd67b86fe53e0aab6b72bafd49f60bd92d593ed57fc",
+  "status": "PHASE1_COMPLETE_SEALED_PHASE2_READY",
+  "unique_linked_images": 30,
+  "usable_for_confirmatory": false
+}

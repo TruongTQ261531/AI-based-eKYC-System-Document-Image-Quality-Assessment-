@@ -1,0 +1,20 @@
+{
+  "captured_on": "2026-11-16",
+  "local_date": "2026-11-14",
+  "preservation": "Archived parent-application changes; frozen research reader not modified.",
+  "schema": "application-source-snapshot/1",
+  "source_files": {
+    "docs/document_recovery_and_fields.md": "be1a091e3086b5fbc34d44146c2256488ab798b7386ca1e3c9393f0179ef7471",
+    "ekyc/document_fields.py": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+    "scripts/audit_field_extraction.py": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f",
+    "tests/test_document_fields.py": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8"
+  },
+  "validation": {
+    "backend": 113,
+    "camera_frontend": 15,
+    "parser_after": 12,
+    "parser_before": 8,
+    "parser_cases": 12,
+    "synthetic_model_runs": 2
+  }
+}

@@ -1,10 +1,10 @@
 # EASE 2027 submission readiness
 
-**Internal draft and local replication candidate prepared. Research submission remains blocked by evidence.** The Research Papers CFP was checked again on 11 November 2026. Recheck the track rules and schedule before submission.
+**Internal draft and local replication candidate prepared. Research submission remains blocked by evidence.** All 86 phase-1 observations and 46 phase-2 judgments are sealed and replayed. A one-project-author review supports descriptive subset counts; 17 cases have literal coherence flags. The apparent FAR difference is not robust to the post-hoc sensitivity panel. Independent references, adequacy and a new scientific GO remain pending. The three linked CFPs were checked again on 15 November 2026. [Current roadmap](../EASE2027_ROADMAP_VI.md) · [IFV results](../IFV_RESULTS_VI.md)
 
 | Official track | Published deadline and format | Fit after evidence is available |
 |---|---|---|
-| Research Papers | Abstract 15 January 2027, full paper 22 January 2027, AoE. ACM conference format. 10 content pages plus 2 reference-only pages | Main target for a rigorous, adequately supported SE evaluation. Current work has development evidence and a plan, with IFV and confirmatory work pending. [Research Papers CFP](https://conf.researchr.org/track/ease-2027/ease-2027-papers) |
+| Research Papers | Abstract 15 January 2027, full paper 22 January 2027, AoE. ACM conference format. 10 content pages plus 2 reference-only pages | Main target conditional on adequate evidence. Personal IFV collection is complete; independent reference, stronger coverage and confirmatory work remain pending. [Research Papers CFP](https://conf.researchr.org/track/ease-2027/ease-2027-papers) |
 | Short Papers and Emerging Results | Abstract 22 February, paper 1 March 2027, AoE. 6 pages total | An option for a specific emerging finding with evidence and a clear scope. [Short Papers CFP](https://conf.researchr.org/track/ease-2027/ease-2027-short-papers-and-emerging-results) |
 | Reproducibility and Negative Results | Abstract 22 February, paper 1 March 2027, AoE. 10 content pages plus 2 reference-only pages | An option if a well-supported analysis shows when strong simple baselines suffice. A small inconclusive study does not on its own support a negative result. [RENE CFP](https://conf.researchr.org/track/ease-2027/ease-2027-reproducibility-and-negative-results) |
 
@@ -23,3 +23,9 @@ The official conference site describes the EASE series as CORE A. The track comp
 The ACM review source now exists at [main.tex](main.tex), using the prescribed `sigconf,review,anonymous` settings. It contains the method diagram, contract table, verified development counts and explicit confirmatory placeholders. Source checks passed for balanced braces and environments, six citation keys, and identifiable local strings. The existing machine has no pdflatex, LuaLaTeX, XeLaTeX or Tectonic compiler. PDF compilation, layout inspection and the resulting page count therefore remain blocked by that resource. [Source-check receipt](../execution/master_01/continuation_20261111/acm_source_verification.json)
 
 The [local replication candidate](candidate_20261111_02.zip) passed a fresh-process scorer replay and extracted-archive verification. Its automatic identifier scan passed. Final human anonymity and redistribution-rights checks remain open before external release. The first package adapter attempt passed B2 the wrong argument list; the corrected candidate preserves B2's graph-free interface and matches all stored decisions. [Candidate receipt](../execution/master_01/continuation_20261111/candidate_20261111_02_receipt.json)
+
+The [15 November IFV aggregate supplement](ifv_aggregate_20261115_02.zip) adds
+original and post-hoc sensitivity counts with a standalone consistency verifier.
+It passed fresh-process and extracted-archive checks. Raw review content remains
+private; verifying aggregate arithmetic does not reproduce human labels or
+establish independent adjudication. [Receipt](../execution/master_01/ifv_20261115/aggregate_receipt.json)

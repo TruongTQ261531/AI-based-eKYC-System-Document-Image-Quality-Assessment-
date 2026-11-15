@@ -1,0 +1,17 @@
+{
+  "balanced_braces": true,
+  "balanced_environments": true,
+  "citation_keys": 6,
+  "compilers": {
+    "lualatex": null,
+    "pdflatex": null,
+    "tectonic": null,
+    "xelatex": null
+  },
+  "configured_identifier_hits": [],
+  "layout_verified": false,
+  "missing_citations": [],
+  "pdf_compiled": false,
+  "status": "PASS_SOURCE_ONLY",
+  "tex_sha256": "212ee56a4ac1eca79d024eb2455e9bbdde67981ab85be2d1fbcc0e7f2873b558"
+}

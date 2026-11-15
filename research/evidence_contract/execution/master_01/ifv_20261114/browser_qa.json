@@ -1,0 +1,8 @@
+{
+  "reason": "Browser policy rejected file: navigation; no alternate route used.",
+  "static_image_link_hash_checks": 92,
+  "status": "BLOCKED_FILE_PROTOCOL",
+  "submitted_human_judgments": 0,
+  "ui_logic_tests_log": "ui_tests.log",
+  "visual_verified": false
+}

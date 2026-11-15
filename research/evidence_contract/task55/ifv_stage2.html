@@ -16,6 +16,7 @@
     button:disabled { opacity: .45; }
     #message { color: #0d5460; white-space: pre-wrap; }
     pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    #before-evidence, #after-evidence { white-space: pre-wrap; overflow-wrap: anywhere; }
     [hidden] { display: none !important; }
     @media(max-width: 680px) { main { padding: 12px; } .pair { grid-template-columns: 1fr; } }
   </style>
@@ -64,9 +65,13 @@
   <p id="message" role="status"></p>
   <button id="previous" type="button">Ca trước</button>
   <button id="next" type="button">Ca tiếp</button>
-  <button id="export" type="button">Xuất phiếu JSON</button>
+  <button id="export" type="button">Xuất phiếu hoàn chỉnh</button>
+  <button id="export-partial" type="button">Xuất phần đã đánh giá</button>
+  <button id="export-draft" type="button">Sao lưu nháp JSON</button>
   <label>Nạp phiếu JSON đã xuất<input id="load" type="file" accept=".json,application/json"></label>
-  <p>Phiếu được lưu trên máy. Xuất JSON để có bản sao. Bước này vẫn giấu danh tính reader, kết quả A/B3 và nhóm lấy mẫu.</p>
+  <p>Có thể làm nhiều buổi. Sao lưu nháp giữ cả điều kiện đã ghi trước khi mở đầu ra.
+     Phiếu hoàn chỉnh cần đủ mọi ca; bản xuất một phần vẫn giữ các ca còn lại chưa đánh giá.
+     Bước này giấu danh tính reader, kết quả A/B3 và nhóm lấy mẫu.</p>
   <!--PACKET-->
   <!--UI-->
 </main>

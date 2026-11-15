@@ -1,0 +1,3372 @@
+{
+  "cases_selected": 46,
+  "declared_phase1_slot_exposure": {
+    "no": 92
+  },
+  "declared_prior_output_exposure": "none",
+  "frame_scope": "development, stratified sample, no population inference",
+  "independence_verified": false,
+  "inter_rater_agreement": null,
+  "model_calls": 0,
+  "phase1_packet_id": "e0819a7806fbc8d799b4a241f5d4ea58c55f96d014de2246f1bc1ed5e5650103",
+  "results": {
+    "pointwise": {
+      "by_contract": {
+        "C1": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 6,
+              "TN": 0,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 6,
+              "value": 1.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 7,
+              "numerator": 1,
+              "value": 0.14285714285714285
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          }
+        },
+        "C2": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          }
+        },
+        "C3": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 5,
+              "value": 0.625
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 5,
+              "value": 0.625
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 8,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 1,
+              "value": 0.3333333333333333
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 7,
+              "value": 0.875
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 8,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 1,
+              "value": 0.3333333333333333
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 8,
+              "numerator": 8,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 8,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 1,
+              "value": 0.3333333333333333
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 7
+            }
+          }
+        },
+        "C4": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 4,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 6,
+              "value": 0.5454545454545454
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 1,
+              "value": 0.2
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 4,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 6,
+              "value": 0.5454545454545454
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 1,
+              "value": 0.2
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 5
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 11,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 6,
+              "numerator": 5,
+              "value": 0.8333333333333334
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 5,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 3
+            },
+            "confusion": {
+              "FN": 2,
+              "FP": 0,
+              "TN": 6,
+              "TP": 3
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 10,
+              "value": 0.9090909090909091
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 3,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 3,
+              "value": 0.6
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 5
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 11,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 6,
+              "numerator": 5,
+              "value": 0.8333333333333334
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 5,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 5
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 11,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 6,
+              "numerator": 5,
+              "value": 0.8333333333333334
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 5,
+              "numerator": 5,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 5,
+              "INCONCLUSIVE": 1,
+              "NO_FAULT": 6
+            }
+          }
+        }
+      },
+      "by_physical_id": {
+        "cluster_1": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 3
+            },
+            "confusion": {
+              "FN": 2,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 9,
+              "numerator": 7,
+              "value": 0.7777777777777778
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 9,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 3,
+              "numerator": 1,
+              "value": 0.3333333333333333
+            },
+            "status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 4
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 3
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 9,
+              "numerator": 9,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 9,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 3,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 3,
+              "numerator": 3,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 6
+            }
+          }
+        },
+        "cluster_2": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 1,
+              "FP": 0,
+              "TN": 10,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 7,
+              "value": 0.6363636363636364
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 10,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 10,
+              "NO_FAULT": 10
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 10,
+              "NO_FAULT": 3
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 3,
+              "TN": 7,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 11,
+              "numerator": 11,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 10,
+              "numerator": 3,
+              "value": 0.3
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 11,
+            "population_recall": null,
+            "precision": {
+              "denominator": 4,
+              "numerator": 1,
+              "value": 0.25
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 10,
+              "NO_FAULT": 10
+            }
+          }
+        },
+        "cluster_3": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 2,
+              "FP": 0,
+              "TN": 3,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 6,
+              "numerator": 4,
+              "value": 0.6666666666666666
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 3,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 6,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 3,
+              "numerator": 1,
+              "value": 0.3333333333333333
+            },
+            "status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 3
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 3,
+              "TP": 3
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 6,
+              "numerator": 6,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 3,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 6,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 3,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 3,
+              "numerator": 3,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 3,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 3
+            }
+          }
+        }
+      },
+      "cluster_count": 3,
+      "diagnostics": {
+        "INCONCLUSIVE": 4
+      },
+      "overall": {
+        "A": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 12
+          },
+          "confusion": {
+            "FN": 5,
+            "FP": 0,
+            "TN": 19,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 18,
+            "value": 0.6923076923076923
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 2,
+            "value": 0.2857142857142857
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        },
+        "A_flat": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 12
+          },
+          "confusion": {
+            "FN": 5,
+            "FP": 0,
+            "TN": 19,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 18,
+            "value": 0.6923076923076923
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 2,
+            "value": 0.2857142857142857
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        },
+        "B0": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 9
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 9,
+            "TN": 10,
+            "TP": 7
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 26,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 9,
+            "value": 0.47368421052631576
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 16,
+            "numerator": 7,
+            "value": 0.4375
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 7,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        },
+        "B2": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 4,
+            "INCONCLUSIVE": 4
+          },
+          "confusion": {
+            "FN": 3,
+            "FP": 0,
+            "TN": 19,
+            "TP": 4
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 24,
+            "value": 0.9230769230769231
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 4,
+            "numerator": 4,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 4,
+            "value": 0.5714285714285714
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        },
+        "B3": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 3
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 3,
+            "TN": 16,
+            "TP": 7
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 26,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 10,
+            "numerator": 7,
+            "value": 0.7
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 7,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        },
+        "B3_V3_gate": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 3
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 3,
+            "TN": 16,
+            "TP": 7
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 26,
+            "numerator": 26,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 26,
+          "population_recall": null,
+          "precision": {
+            "denominator": 10,
+            "numerator": 7,
+            "value": 0.7
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 7,
+            "numerator": 7,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 7,
+            "INCONCLUSIVE": 16,
+            "NO_FAULT": 19
+          }
+        }
+      },
+      "paired_A_minus_B3": {
+        "FAR": {
+          "A": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "B": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 3,
+          "clusters_B": 3,
+          "delta": -0.15789473684210525,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "coverage": {
+          "A": {
+            "denominator": 26,
+            "numerator": 18,
+            "value": 0.6923076923076923
+          },
+          "B": {
+            "denominator": 26,
+            "numerator": 26,
+            "value": 1.0
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 3,
+          "clusters_B": 3,
+          "delta": -0.3076923076923077,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "precision": {
+          "A": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "B": {
+            "denominator": 10,
+            "numerator": 7,
+            "value": 0.7
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 2,
+          "clusters_B": 3,
+          "delta": 0.30000000000000004,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "sensitivity": {
+          "A": {
+            "denominator": 7,
+            "numerator": 2,
+            "value": 0.2857142857142857
+          },
+          "B": {
+            "denominator": 7,
+            "numerator": 7,
+            "value": 1.0
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 3,
+          "clusters_B": 3,
+          "delta": -0.7142857142857143,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        }
+      },
+      "primary_cases": 42
+    },
+    "relation": {
+      "by_contract": {
+        "C1": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 6,
+              "TN": 0,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 6,
+              "value": 1.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 7,
+              "numerator": 1,
+              "value": 0.14285714285714285
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2,
+              "NO_FAULT": 6
+            }
+          }
+        },
+        "C2": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 0,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 0,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 9
+            }
+          }
+        },
+        "C3": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 5,
+              "value": 0.7142857142857143
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 5,
+              "value": 0.7142857142857143
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 2,
+              "TN": 5,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 7,
+              "numerator": 2,
+              "value": 0.2857142857142857
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 7
+            }
+          }
+        },
+        "C4": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 6,
+              "value": 0.8571428571428571
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          },
+          "A_flat": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 6,
+              "value": 0.8571428571428571
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          },
+          "B0": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 1,
+              "value": 0.5
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          },
+          "B2": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 2
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 1,
+              "value": 0.5
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          },
+          "B3_V3_gate": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 1,
+              "TN": 5,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 1,
+              "value": 0.16666666666666666
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 2,
+              "numerator": 1,
+              "value": 0.5
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 5,
+              "NO_FAULT": 6
+            }
+          }
+        }
+      },
+      "by_physical_id": {
+        "cluster_1": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 3
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 6,
+              "NO_FAULT": 6
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 6
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 6,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 7,
+              "numerator": 7,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 6,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 7,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 6,
+              "NO_FAULT": 6
+            }
+          }
+        },
+        "cluster_2": {
+          "A": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 9
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 10,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 10,
+              "numerator": 7,
+              "value": 0.7
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 10,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 10,
+            "population_recall": null,
+            "precision": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 11,
+              "NO_FAULT": 10
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "INCONCLUSIVE": 11,
+              "NO_FAULT": 3
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 3,
+              "TN": 7,
+              "TP": 0
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 10,
+              "numerator": 10,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 10,
+              "numerator": 3,
+              "value": 0.3
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 10,
+            "population_recall": null,
+            "precision": {
+              "denominator": 3,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "status": {
+              "INCONCLUSIVE": 11,
+              "NO_FAULT": 10
+            }
+          }
+        },
+        "cluster_3": {
+          "A": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 3,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 4,
+              "numerator": 4,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 3,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 4,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 3
+            }
+          },
+          "B3": {
+            "alarms_by_status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4
+            },
+            "confusion": {
+              "FN": 0,
+              "FP": 0,
+              "TN": 3,
+              "TP": 1
+            },
+            "decision_coverage_on_reviewed": {
+              "denominator": 4,
+              "numerator": 4,
+              "value": 1.0
+            },
+            "false_alarm_rate_on_reviewed": {
+              "denominator": 3,
+              "numerator": 0,
+              "value": 0.0
+            },
+            "invalid_alarm_rate": {
+              "denominator": 0,
+              "numerator": 0,
+              "value": null
+            },
+            "labeled_cases": 4,
+            "population_recall": null,
+            "precision": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "sensitivity_on_reviewed": {
+              "denominator": 1,
+              "numerator": 1,
+              "value": 1.0
+            },
+            "status": {
+              "CONFIRMED_FAULT": 1,
+              "INCONCLUSIVE": 4,
+              "NO_FAULT": 3
+            }
+          }
+        }
+      },
+      "cluster_count": 3,
+      "diagnostics": {
+        "INCONCLUSIVE": 4
+      },
+      "overall": {
+        "A": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 12
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 19,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 18,
+            "value": 0.8571428571428571
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        },
+        "A_flat": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 12
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 19,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 18,
+            "value": 0.8571428571428571
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        },
+        "B0": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 9
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 9,
+            "TN": 10,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 21,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 9,
+            "value": 0.47368421052631576
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 11,
+            "numerator": 2,
+            "value": 0.18181818181818182
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        },
+        "B2": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 6
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 19,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 21,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        },
+        "B3": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 3
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 3,
+            "TN": 16,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 21,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 5,
+            "numerator": 2,
+            "value": 0.4
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        },
+        "B3_V3_gate": {
+          "alarms_by_status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 3
+          },
+          "confusion": {
+            "FN": 0,
+            "FP": 3,
+            "TN": 16,
+            "TP": 2
+          },
+          "decision_coverage_on_reviewed": {
+            "denominator": 21,
+            "numerator": 21,
+            "value": 1.0
+          },
+          "false_alarm_rate_on_reviewed": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "invalid_alarm_rate": {
+            "denominator": 0,
+            "numerator": 0,
+            "value": null
+          },
+          "labeled_cases": 21,
+          "population_recall": null,
+          "precision": {
+            "denominator": 5,
+            "numerator": 2,
+            "value": 0.4
+          },
+          "sensitivity_on_reviewed": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "status": {
+            "CONFIRMED_FAULT": 2,
+            "INCONCLUSIVE": 21,
+            "NO_FAULT": 19
+          }
+        }
+      },
+      "paired_A_minus_B3": {
+        "FAR": {
+          "A": {
+            "denominator": 19,
+            "numerator": 0,
+            "value": 0.0
+          },
+          "B": {
+            "denominator": 19,
+            "numerator": 3,
+            "value": 0.15789473684210525
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 3,
+          "clusters_B": 3,
+          "delta": -0.15789473684210525,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "coverage": {
+          "A": {
+            "denominator": 21,
+            "numerator": 18,
+            "value": 0.8571428571428571
+          },
+          "B": {
+            "denominator": 21,
+            "numerator": 21,
+            "value": 1.0
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 3,
+          "clusters_B": 3,
+          "delta": -0.1428571428571429,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "precision": {
+          "A": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "B": {
+            "denominator": 5,
+            "numerator": 2,
+            "value": 0.4
+          },
+          "ci95": null,
+          "clusters": 3,
+          "clusters_A": 2,
+          "clusters_B": 3,
+          "delta": 0.6,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        },
+        "sensitivity": {
+          "A": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "B": {
+            "denominator": 2,
+            "numerator": 2,
+            "value": 1.0
+          },
+          "ci95": null,
+          "clusters": 2,
+          "clusters_A": 2,
+          "clusters_B": 2,
+          "delta": 0.0,
+          "draws": 0,
+          "lower95_one_sided": null,
+          "reason": "insufficient_independent_clusters",
+          "seed": 7297
+        }
+      },
+      "primary_cases": 42
+    }
+  },
+  "reviewed_cases": 46,
+  "reviewer_role": "project_author",
+  "reviewers": 1,
+  "selected_missing_evidence": 0,
+  "status": "SINGLE_REVIEW_UNADJUDICATED"
+}

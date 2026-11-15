@@ -1,0 +1,27 @@
+{
+  "checked_local_date": "2026-11-14",
+  "rene": {
+    "abstract_deadline_aoe": "2027-02-22",
+    "content_pages": 10,
+    "paper_deadline_aoe": "2027-03-01",
+    "reference_only_pages": 2,
+    "url": "https://conf.researchr.org/track/ease-2027/ease-2027-reproducibility-and-negative-results"
+  },
+  "research": {
+    "abstract_deadline_aoe": "2027-01-15",
+    "content_pages": 10,
+    "paper_deadline_aoe": "2027-01-22",
+    "reference_only_pages": 2,
+    "url": "https://conf.researchr.org/track/ease-2027/ease-2027-papers"
+  },
+  "scope_fit": "Project interpretation: empirical assessment of testing oracles for AI document-extraction software.",
+  "short_emerging": {
+    "abstract_deadline_aoe": "2027-02-22",
+    "paper_deadline_aoe": "2027-03-01",
+    "total_pages": 6,
+    "url": "https://conf.researchr.org/track/ease-2027/ease-2027-short-papers-and-emerging-results"
+  },
+  "source_type": "official_conference_track_pages",
+  "submission_performed": false,
+  "timezone": "Asia/Bangkok"
+}

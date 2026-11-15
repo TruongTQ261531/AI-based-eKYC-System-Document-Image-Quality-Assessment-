@@ -1,0 +1,13 @@
+{
+  "changed_historical_assets": [],
+  "historical_event_logs_unchanged": true,
+  "historical_inference_logs": 6,
+  "model_calls": 0,
+  "model_loaders_constructed": 0,
+  "observations_equal_to_original": true,
+  "original_file_bytes_preserved": true,
+  "phase2_publication_verified": true,
+  "protected_assets_checked": 316,
+  "raw_cache_payloads": 93,
+  "status": "PASS"
+}

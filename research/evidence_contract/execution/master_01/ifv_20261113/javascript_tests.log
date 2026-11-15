@@ -1,0 +1,18 @@
+✔ phase 1 wires save, JSON export, and reload with image provenance in an offline fixture (17.5621ms)
+✔ resume retains text, shows pending progress and blocks misleading full export (19.2347ms)
+✔ next-pending and page-select retain incomplete answers (6.0441ms)
+✔ new source is blank until reviewer explicitly reuses their own reading (6.1265ms)
+✔ newer saved draft takes priority over embedded original and backup still exports (7.3643ms)
+✔ partial draft survives backup export and load without becoming a submitted label (6.978ms)
+✔ browser storage failure recommends the file fallback (0.7268ms)
+✔ malformed storage never overwrites a bad draft while restoring (4.0149ms)
+✔ visible observation requires per-source states, while unknown language is expressible (2.4115ms)
+✔ wrong image backup is rejected (1.5507ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 283.2174

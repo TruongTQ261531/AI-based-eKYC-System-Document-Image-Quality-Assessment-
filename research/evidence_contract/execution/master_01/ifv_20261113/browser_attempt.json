@@ -1,0 +1,13 @@
+{
+  "allowed_protocols": [
+    "http",
+    "https"
+  ],
+  "alternative_browser_attempts": 0,
+  "operation": "Open local resume HTML for visual QA",
+  "phase1_fields_edited_by_agent": 0,
+  "reason": "Browser tool only permits HTTP(S); no attempt made to bypass the file-URL restriction.",
+  "requested_protocol": "file",
+  "status": "BLOCKED_BY_BROWSER_URL_POLICY",
+  "visual_inspection_completed": false
+}

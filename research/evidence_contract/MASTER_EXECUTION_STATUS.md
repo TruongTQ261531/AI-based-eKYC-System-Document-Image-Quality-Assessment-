@@ -1,5 +1,15 @@
 # EASE 2027 · Master execution
 
+Cập nhật **15/11/2026**: review cá nhân đã hoàn tất **86/86 ô pha 1 và 46/46
+ca pha 2**. Đã nhập, niêm phong và replay nguyên trạng phiếu pha 2. Trạng thái
+**COMPLETE_SINGLE_REVIEW_UNADJUDICATED**: 1 tác giả đánh giá, 2 phiên bản export
+pha 1 và 1 export pha 2. Trong 42 primary: 26 có nhãn pointwise, 21 có nhãn
+relation; 0 UNREVIEWED. Hậu kiểm có 17 cờ literal/15 primary. TASK 6B/7B giữ
+NO-GO cho superiority. [Kết quả 15/11](IFV_RESULTS_VI.md) · [Hậu kiểm](execution/master_01/ifv_20261115/analysis.md).
+[Trạng thái hiện tại](IFV_REVIEW_STATUS.md) · [Bước tiếp theo](IFV_REVIEW_GUIDE.md) ·
+[Kế hoạch đến EASE 2027](EASE2027_ROADMAP_VI.md). Các đoạn ngày 09, 11 và
+13 và 14/11 bên dưới là snapshot lịch sử, không phải trạng thái hiện tại.
+
 Checkpoint `master_01`, ngày local 09/11/2026. Phần development và chuẩn bị đã chạy. **IFV WAITING_FOR_HUMAN_REVIEW. TASK 6B/7B NO-GO. Manuscript ở mức draft.** Worktree local `research-document-recovery` trên `main`, HEAD `f5d130d93525e7633053edc03e6d9f6edeba7a6f`. Evidence Contract nằm trong mục untracked có sẵn. Không có tracked/staged diff. Worktree mentor sạch khi tiếp nhận.
 
 Cập nhật 11/11/2026 tiếp tục đúng các TASK 6A, 7A, 8 và 9 bên dưới. Người dùng đã hoãn IFV. Phần việc độc lập với nhãn đã được hoàn thiện trong phạm vi hiện có. **0 inference hoặc training mới trong lượt tiếp tục này.** [Manifest lượt tiếp tục](execution/master_01/continuation_20261111/completion_manifest.json)
@@ -48,9 +58,9 @@ Các lượt thất bại được giữ. Lượt đọc stage receipt đầu sa
 ## Nối lại từ checkpoint này
 
 1. Mở lại worktree `D:/laptrinhcuatao/Ekyc/versions/research-document-recovery`. Kiểm `git status --short` và HEAD. Đọc file này, [bảo toàn cuối lượt](execution/master_01/preservation_after.json) và [preflight](execution/master_01/prelock_readiness_v2.json). Không cần chạy lại intake, TASK 5 hoặc stage execute đã có. Dùng receipt cache và replay của checkpoint này.
-2. Khi người chấm gửi JSON pha 1 thật, dùng venv có sẵn và [hướng dẫn import](IFV_REVIEW_GUIDE.md). Khóa snapshot theo SHA do importer in ra, rồi mở pha 2 cho reviewer đó. Một người chấm đủ để chạy mô tả. Giữ reviewer exposure và bất đồng chưa adjudicate.
-3. Sau khi có JSON pha 2 thật đã niêm phong, chạy `python -B -m research.evidence_contract.master.ifv_report --submission <sealed output_observations.json>` từ worktree bằng venv hiện có. Report JSON/Markdown giữ riêng pointwise, relation, ca chưa chấm và CI theo ID. Chưa có file người thì giữ `WAITING_FOR_HUMAN_REVIEW`.
-4. Chốt independent reference, chọn claim phân biệt được với B3/gated V3/flat, tính lại adequacy và quyết định GO mới. Chỉ sau đó mới tạo và khóa bộ confirmatory. A tiếp tục là hướng chính đang kiểm chứng. A+B là nhánh exploratory. [Phương án và gate](MASTER_RESEARCH_AMENDMENT.md) · [Các điều kiện 6A](CONFIRMATORY_PREPARATION_6A.md)
+2. Cả hai pha cá nhân đã khóa. Đọc [kết quả](IFV_RESULTS_VI.md), [gate mới](REVISED_GO_NO_GO.md) và [protocol prospective](POST_IFV_PROTOCOL_DRAFT.md); không tiếp tục chờ phiếu đã nhận hoặc sửa snapshot theo output.
+3. Dùng bản niêm phong pha 2 theo [hướng dẫn replay](IFV_REVIEW_GUIDE.md). Giữ báo cáo chính và sensitivity hậu kiểm riêng; không lấy withholding làm nhãn đã phân xử.
+4. Chuẩn bị independent reference, endpoint và adequacy cho claim phù hợp, rồi quyết định GO mới. Chỉ sau đó mới tạo/khóa confirmatory. A+B giữ exploratory. [Phương án](MASTER_RESEARCH_AMENDMENT.md) · [Các điều kiện 6A](CONFIRMATORY_PREPARATION_6A.md)
 
 Nguồn checkpoint cũ gồm [báo cáo phục hồi](RECOVERY_STATE.md), [gate](REVISED_GO_NO_GO.md) và [audit](TASK5_5_AUDIT.md).
 
@@ -75,3 +85,68 @@ Hai lỗi gặp khi hoàn thiện artifact đã được sửa và giữ chứng
 - Sau khi người dùng hoàn thành pha 1, dùng importer và snapshot SHA tại [IFV_REVIEW_GUIDE](IFV_REVIEW_GUIDE.md), rồi mới mở pha 2. Sau khi có phiếu pha 2 hợp lệ, dùng reporter hiện tại. Reporter mới vẫn nhận đúng đường dẫn `output_observations.json` đã niêm phong và giữ các ca chưa chấm trong UNREVIEWED. Các thí nghiệm đã hoàn thành tiếp tục dùng cache/receipt.
 
 Dừng tại đây vì các phần độc lập trong phạm vi còn thiếu đã được xử lý. Công việc tiếp theo phụ thuộc nhãn thật, quyết định khoa học hoặc tài nguyên TeX. Không có branch, worktree hoặc workflow mới được tạo.
+
+## Tiếp nhận phiếu thật ngày 13/11/2026
+
+| Task ID | Mục tiêu / dependency | Trạng thái | Files changed / artifacts | Tests thực tế / model calls | Giới hạn / bước kế tiếp |
+|---|---|---|---|---|---|
+| 5.5 IFV import | Nhập JSON người dùng, đối chiếu packet và SHA | PASS import, PARTIAL observations | Export gốc và snapshot dưới `local/`; [intake](execution/master_01/ifv_20261113/intake.json), [readiness](execution/master_01/ifv_20261113/phase1_readiness.json) | 35 asset phiếu gốc khớp hash; nạp/xuất lại giữ đủ 86 câu trả lời; 0 calls | 19/86 đủ schema. Không cấp gold label, readability certificate hoặc tính độc lập |
+| 5.5 IFV completion | Làm rõ thông tin còn thiếu, giữ nháp đã nhập | PASS logic, visual QA BLOCKED | `task55/review_core.js`, `review_ui.js`, `review_template.html`, `review_resume.py`; [phiếu tiếp tục](local/task55_blind_review_resume_ea62dbfc37a8/index.html) | 20 Python và 10 JavaScript PASS; [logs](execution/master_01/ifv_20261113/). Công cụ browser chặn `file:`; chưa kiểm trực quan | Thêm nguồn/vị trí cho 66 ô và sửa hai mâu thuẫn đã báo, tổng 67 ô trên 29 ảnh |
+| 7A / gate | Kiểm tính đủ trước join output | PASS guard, BLOCKED phase 2 | `phase1_readiness.json` | Chỉ 1/46 cặp đủ hai quan sát; hàm gate từ chối pha 1 thiếu. 0 output packet, 0 labels pha 2, 0 model calls | Không dùng một cặp hoặc phần thiếu để suy ra precision/FAR/recall; chờ export bổ sung |
+| 9 manuscript | Cập nhật độ phủ nhãn thật và giới hạn | UPDATED draft | `paper/MANUSCRIPT_DRAFT.md`, `paper/main.tex`, `paper/CLAIM_TO_EVIDENCE.md` | Chỉ thêm số liệu tiếp nhận đã kiểm, chưa có confirmatory | Không thay RQ hoặc diễn giải khác biệt A/B3 là lợi ích đã chứng minh |
+
+Phát hiện lỗi sử dụng: nút “Xuất phiếu đã đánh giá” trước đây cho phép tải phiếu
+partial mà không nêu đủ rõ điều còn thiếu; lỗi từng trường cũng chưa hiện ngay
+khi render/nạp lại. Bản giao diện tiếp tục hiển thị lỗi tại từng trường, cho
+chuyển nhanh ảnh thiếu và phân biệt xuất hoàn chỉnh với xuất một phần. Không
+thay điều kiện validator, sample, oracle hoặc checkpoint. Asset của phiếu cũ
+được giữ nguyên để đối chiếu hash; bản tiếp tục dùng cùng packet/ảnh và vùng nháp riêng.
+
+Điểm resume: mở phiếu tiếp tục ở hướng dẫn, giữ cùng mã reviewer và bổ sung
+các quan sát còn thiếu. Gửi JSON mới. Importer sẽ tạo snapshot mới; chỉ khi
+pha 1 đủ thông tin mới gọi `open-stage2`. Sau phiếu pha 2 thật, dùng reporter
+đã có để tính hai endpoint và xem lại GO/NO-GO. Bản export partial đã nhận vẫn
+được giữ làm lịch sử; không chạy lại inference hoặc gán nhãn thay người.
+
+## Tiếp tục ngày 14/11/2026
+
+| Mốc | Kết quả thực tế | Bằng chứng / giới hạn |
+|---|---|---|
+| 5.5 pha 1 cá nhân | COMPLETE, SEALED: 86/86 ô, 31 ảnh | [Receipt](execution/master_01/ifv_20261114/phase1_readiness.json). Giữ nguyên từng câu trả lời; phiếu partial cũ vẫn giữ riêng |
+| 5.5 pha 2 | READY: 46 ca = 42 primary + 4 diagnostic; 0 ca thiếu quan sát | Sửa đường dẫn ảnh theo đúng thư mục người chấm. Kiểm 92 liên kết/hash, 30 ảnh được dùng. Snapshot khóa trước khi truy cập cache |
+| Review usability | Hiển thị đủ chữ nguồn và dòng MRZ; sao lưu nháp; xuất đủ hoặc xuất partial có thông báo | Backend từ chối draft làm nhãn thật. Browser chặn mở `file:` nên chưa kiểm trực quan; kiểm logic và hash báo riêng |
+| Kiểm hồi quy | PASS: 187 Python + 6 subtests; 12 JavaScript | [Python](execution/master_01/ifv_20261114/python_tests_final.log) · [UI](execution/master_01/ifv_20261114/ui_tests.log). Chạy fixture tạm trong `local/qa14` để giữ đúng vùng xuất của generator; các lượt lỗi cấu hình trước đó vẫn giữ log |
+| Giới hạn nguồn | 12 quan sát có chi tiết cần giữ bất định; 0/10 ca C2 đạt đồng thời điều kiện đọc rõ và backup theo guard hiện có | Kiểm nhất quán từ dữ liệu đã nhập, không tự sửa MRZ, đổi loại nguồn hoặc gán lỗi OCR. Không nới guard để tăng mẫu số |
+| 9A và tiến độ | Đồng bộ nháp Markdown/ACM và claim ledger; đối chiếu CFP chính thức ngày 14/11 | [Roadmap](EASE2027_ROADMAP_VI.md). Research là mục tiêu; chưa có kết quả pha 2 hoặc GO mới |
+
+Không có inference hay training mới. Trạng thái kiểm thử và bảo toàn cuối lượt
+nằm tại [completion manifest](execution/master_01/ifv_20261114/completion_manifest.json).
+
+## Luồng kỹ thuật độc lập khi chờ pha 2 · 14/11/2026
+
+Lượt IFV phía trên có 0 inference; lượt kỹ thuật sau đó đã chạy **hai luồng
+document inference thật trên thẻ tổng hợp** tại bản ứng dụng gốc. Không dùng
+phiếu IFV, không thay parser hoặc reader của worktree nghiên cứu. Đã sửa hai
+lỗi tách trường, kiểm trước–sau 8/12 → 12/12 ca token tổng hợp và chạy bộ
+backend/API **113 PASS**, frontend camera **15 PASS**. Có kiểm manifest 21.050
+ảnh và split theo ID trong bộ backend. 16 tài sản model không đổi; 0 training.
+
+[Chi tiết công việc độc lập](INDEPENDENT_WORK_STATUS.md) ·
+[Receipt](execution/master_01/independent_20261114/completion_manifest.json).
+Các lượt kiểm API đầu bị kẹt ở socketpair của event loop Windows trong môi
+trường hạn chế; lượt cho phép kết nối nội bộ đã qua cả bộ kiểm. Kết quả hai
+thẻ tổng hợp là smoke kỹ thuật, không bổ sung nhãn lỗi IFV hoặc metric OCR
+độc lập. Natural fault precision/FAR và confirmatory tiếp tục chờ đúng đầu vào.
+
+## Hoàn tất review và phân tích ngày 15/11/2026
+
+| Công việc | Kết quả / artifact | Giới hạn |
+|---|---|---|
+| Import pha 2 | 46/46 khớp packet/snapshot; export gốc và niêm phong dưới local; [intake](execution/master_01/ifv_20261115/intake.json) | 1 tác giả, chưa adjudicate; 0 câu trả lời đổi |
+| Báo cáo 7A | [Replay chính](execution/master_01/ifv_descriptive_ece01b67a2f6af39.md): pointwise A 2/0/5/19, B3 7/3/0/16; relation A 2/0/0/19, B3 2/3/0/16 | 26/42 và 21/42 có nhãn; CI không đủ cụm; 4 diagnostic bất định |
+| Hậu kiểm | [Code](master/ifv_analysis.py), [analysis](execution/master_01/ifv_20261115/analysis.md): 17 cờ/15 primary, giữ nguyên labels. Withholding hậu kiểm làm 3 FP B3 biến mất | Không thay bảng chính, không tự phân xử, không kết luận A hơn B3; 12/14 cảnh báo A chưa kết luận |
+| Hướng tiếp theo | [Protocol prospective](POST_IFV_PROTOCOL_DRAFT.md), [gate](REVISED_GO_NO_GO.md), roadmap/manuscript/claim ledger đã cập nhật | NO-GO cho superiority 6B/7B; tiếp tục reference validity và coverage characterization |
+
+Lượt này có 0 inference/training mới. Mọi phiếu và log inference cũ được
+bảo toàn; kiểm thử, gói tổng hợp và hash cuối lượt nằm trong
+[completion manifest](execution/master_01/ifv_20261115/completion_manifest.json).

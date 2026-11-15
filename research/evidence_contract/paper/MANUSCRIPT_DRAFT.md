@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Document verification pipelines transform captured images before extracting structured fields. A field value may remain supported after one occurrence is occluded, while a crop may remove the only source for another field. These situations complicate software test oracles that compare only final values. We study evidence contracts that explicitly track source availability, apply tests subject to independently checkable preconditions, and separate field errors from transformation-related changes. In a development panel, a flat checker with the same eligibility rules reproduced every primary contract verdict. Controlled faults and a bounded crop intervention show how evidence records distinguish missing sources from retained-source errors. Independent fault validation and confirmatory comparisons are pending. The planned study tests whether the contracts provide a reliability or triage benefit over strong baselines given the same evidence.
+Document verification pipelines transform captured images before extracting structured fields. A value can remain supported by an alternative source, while a crop can remove its only source. We study evidence contracts that make source preconditions and the distinction between pointwise errors and relation violations explicit. A flat checker with matched information reproduced every primary development verdict. In a one-project-author review of 42 primary comparisons, frozen guards admitted 26 pointwise and 21 relation labels. A detected two of seven operational pointwise faults, compared with seven for B3. An apparent false-alarm difference disappeared when cases with literal review discrepancies were withheld in a post-hoc sensitivity panel. Twelve of A's fourteen primary alarms remained inconclusive. These small, unadjudicated development findings motivate reference-validity and coverage analysis; they do not establish comparative superiority or population effects. Independent reference and confirmatory evidence remain pending.
 
 ## 1. Introduction
 
@@ -68,6 +68,8 @@ An exploratory extension asks whether stage interventions and evidence traces di
 
 **Subjects and datasets.** Historical development pilots use fictional authored cards and frozen OCR/VLM readers. In the primary Task 5 panel, 120 scheduled checks span three document IDs. Repeated views and reader outputs within one ID are dependent. The blind evidence packet has 31 unique images and 86 field slots across the whole development panel. The planned output review covers up to 46 distinct comparisons sampled before labels, including alarms and non-alarms. A future confirmatory cohort needs newly authorized specimens with verified ID, content, pixel and provenance separation. Capture and model pretraining exposure are documented with their uncertainty.
 
+**Review collection status.** One project-author reviewer completed all 86 field slots and all 46 output comparisons (42 primary, four diagnostic). Two preserved phase-1 versions count as one reviewer. Observations were sealed before cached predictions were loaded; the phase-2 export was imported unchanged. Frozen guards yielded 26 binary pointwise labels and 21 relation labels in the primary sample; no comparisons are unreviewed. All ten C2 comparisons, including one diagnostic, remain inconclusive. These are operational, unadjudicated labels, not independent gold, software root causes, or inter-rater agreement. [Replay](../execution/master_01/ifv_descriptive_ece01b67a2f6af39.json)
+
 **Baselines.** B0 compares full field reference, B1 samples from the same validity-filtered domain, B2 uses a source-agnostic relation, and B3 checks post-transformation values against available evidence. Gated legacy V3 and the flat conditional checker receive the same evidence as A. Inputs, model calls, preprocessing and reader configurations are paired. The causal-stage pilot adds aggregate F1, per-field raw/rectified comparison and stage hashes without source reasoning.
 
 **Evaluation.** Report valid-test denominators, false-alarm rate, sensitivity and decision coverage separately from alarms on invalid or uncertain cases. Repeat comparisons at the physical-ID or verified fault-family level, depending on the research question. Report budget prefixes and verified unique faults rather than counting multiple alerts for one fault. The draft analysis plan uses a paired cluster bootstrap and Holm adjustment with sensitivity and coverage guards. Seeded faults, natural behavior and verified historical software faults are separate panels. [Holm procedure](https://www.jstor.org/stable/4615733)
@@ -76,10 +78,23 @@ An exploratory extension asks whether stage interventions and evidence traces di
 
 ### Development observations
 
-- A and B3 agreed on 78 of 120 primary verdicts. The flat conditional checker reproduced 120 of 120 A verdicts. All 17 A alerts were among the 58 B3 alerts. The 42 verdict disagreements followed from the original-output prerequisite in C3/C4. Independent review is pending for the B3-only alerts.
+- A and B3 agreed on 78 of 120 scheduled primary verdicts. The flat conditional checker reproduced 120 of 120 A verdicts. All 17 A alerts were among the 58 B3 alerts. The 42 verdict disagreements followed from the original-output prerequisite in C3/C4. These scheduled development counts differ from the deduplicated 42-comparison IFV sample below.
 - On 14 controlled cases, both A and B3 detected all five activated structured-field faults. Separate attribution and JSON checks detected two faults outside this endpoint. These are fixture observations.
 - In the three-ID stage pilot, correct rectification changed no field correctness relative to raw input. A deliberately bad crop caused four correct-to-wrong field transitions, all in fields with source loss by construction. The three planned crop targets were already wrong before crop. The field results replayed exactly with no fresh model calls.
 - Completing the evidence-matched stage comparison reproduced all 24 graph explanations with a flat source checker, including all four degraded fields. Stage differences and source traces identified the known M2 intervention in all three crop pairs. Natural software-fault localization remains unmeasured.
+
+### One-author IFV subset
+
+| Endpoint / method | TP | FP | FN | TN | Inconclusive / primary sample |
+|---|---:|---:|---:|---:|---:|
+| Pointwise A / A_flat | 2 | 0 | 5 | 19 | 16/42 |
+| Pointwise B3 / gated V3 | 7 | 3 | 0 | 16 | 16/42 |
+| Relation A / A_flat | 2 | 0 | 0 | 19 | 21/42 |
+| Relation B3 / gated V3 | 2 | 3 | 0 | 16 | 21/42 |
+
+Pointwise decision coverage is 18/26 for A and 26/26 for B3. Twelve of A's 14 primary alarms remain inconclusive at both endpoints; precision 2/2 on labeled alarms therefore does not describe all alarms. The sample spans only three primary physical IDs, so the prespecified cluster guard withholds intervals; no population recall or review-time estimate is inferred.
+
+A literal cross-phase audit flagged 17 comparisons, including 15 primary, for nonempty outputs marked as omissions or judgments of correctness differing from phase-1 transcripts after Unicode/case/whitespace normalization. O and 0 remain distinct. Flags are not adjudications. A post-hoc panel retains the full frame but withholds both endpoint labels for any flagged case. Its pointwise counts are A 2/0/4/14 and B3 6/0/0/14; relation counts are 2/0/0/14 for both. The apparent B3 false-alarm difference disappears. Original observations and primary results remain unchanged. [Post-review analysis](../execution/master_01/ifv_20261115/analysis.json)
 
 ### Confirmatory results to populate after a verified lock
 
@@ -92,7 +107,7 @@ An exploratory extension asks whether stage interventions and evidence traces di
 
 ## 9. Discussion
 
-The development results support an information-parity check. Explicit relations can narrow the type of error being reported, but the additional eligibility rule can also turn an observable pointwise error into an inconclusive relation. This explains a difference in alerts without assigning a false-alarm label to either method. Recording the evidence that survived a crop adds an explanation to a field-level difference. A strong baseline given the same evidence and stage trace could produce the same explanation. A later comparison can test that boundary explicitly.
+The development results support an information-parity check and expose an endpoint/coverage trade-off. An original-output prerequisite can leave an operational pointwise fault outside a relation endpoint. The review discrepancies also make the apparent FAR advantage reference-sensitive; fewer alarms alone do not establish reliability. Withholding flagged cases is a robustness check, not a correction or independent replication. Recording evidence surviving a crop adds an explanation, but a flat baseline with the same information can reproduce it. Prospective reference validation and endpoint-specific analysis are needed before claiming comparative benefit.
 
 ## 10. Threats to Validity
 
@@ -103,6 +118,6 @@ The development results support an information-parity check. Explicit relations 
 
 ## 11. Conclusion
 
-Evidence contracts make test admissibility and the scope of a document extraction alarm explicit. The current pilots explain verdict differences and establish replay feasibility. Evidence for superiority over a flat, information-matched checker remains pending. The next phase needs independent labels, a locked cohort and endpoints that distinguish useful diagnosis from additional test instrumentation.
+Evidence contracts make test admissibility and alarm scope explicit. The completed one-author development review reveals sensitivity and coverage limitations, unresolved alarms, and reference-sensitive estimates. It does not establish superiority over strong information-matched baselines. Prospective reference validation, endpoint separation and an adequately supported new cohort are needed before comparative reliability, discovery or cost claims.
 
 [Local claim matrix](CLAIM_TO_EVIDENCE.md) · [Verified bibliography](references.bib) · [ACM review source](main.tex)

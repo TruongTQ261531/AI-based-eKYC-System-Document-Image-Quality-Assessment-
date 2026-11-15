@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-11-15",
+  "official_pages": [
+    "https://conf.researchr.org/track/ease-2027/ease-2027-papers",
+    "https://conf.researchr.org/track/ease-2027/ease-2027-short-papers-and-emerging-results",
+    "https://conf.researchr.org/track/ease-2027/ease-2027-reproducibility-and-negative-results"
+  ],
+  "research_deadlines_aoe": {
+    "abstract": "2027-01-15",
+    "paper": "2027-01-22"
+  },
+  "short_and_rene_deadlines_aoe": {
+    "abstract": "2027-02-22",
+    "paper": "2027-03-01"
+  },
+  "submission_performed": false,
+  "timezone": "Asia/Bangkok",
+  "track_change_performed": false
+}

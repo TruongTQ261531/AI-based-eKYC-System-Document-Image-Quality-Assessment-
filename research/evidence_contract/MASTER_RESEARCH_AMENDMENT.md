@@ -1,5 +1,11 @@
 # Amendment prospective sau master_01
 
+Cập nhật 15/11/2026: cả hai pha IFV cá nhân đã hoàn tất; giữ các lựa chọn
+lịch sử bên dưới và dùng [protocol prospective mới](POST_IFV_PROTOCOL_DRAFT.md)
+cho bước chuẩn bị tiếp theo. Kết quả pointwise/sensitivity và sự bất ổn của
+FP qua hậu kiểm chưa ủng hộ superiority. [Kết quả](IFV_RESULTS_VI.md) ·
+[Quyết định](REVISED_GO_NO_GO.md). Chưa có GO confirmatory hoặc đổi RQ cũ.
+
 Giữ lịch sử và RQ của A. Phạm vi bổ sung gồm control M1–M7, stage pilot có giới hạn trên development, prep 6A, replay 7A và paper 9A. Pilot stage không thuộc IFV và không đi vào primary comparison. Các lựa chọn dưới đây chỉ dùng cho quyết định nghiên cứu kế tiếp.
 
 | Hướng | Bằng chứng ủng hộ | Điều có thể bác bỏ / quyết định |

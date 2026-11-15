@@ -1,0 +1,105 @@
+{
+  "schema": "independent-engineering-completion/1",
+  "local_date": "2026-11-14",
+  "timezone": "Asia/Bangkok",
+  "status": "COMPLETE_WITH_RESEARCH_DEPENDENCIES_SEPARATE",
+  "scope": "Application regression and parser repair; no human IFV dependency.",
+  "application_root": "D:\\laptrinhcuatao\\Ekyc",
+  "research_root": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "changes": {
+    "bug_families": 2,
+    "description": [
+      "Conflicting labelled names are omitted instead of concatenated or replaced by a detector guess.",
+      "Single-character custom field values are retained, including fullwidth-colon labels."
+    ],
+    "source_hashes": {
+      "ekyc/document_fields.py": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+      "tests/test_document_fields.py": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8",
+      "scripts/audit_field_extraction.py": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f"
+    }
+  },
+  "tests": {
+    "backend_passed": 113,
+    "camera_frontend_passed": 15,
+    "parser_matrix_cases": 12,
+    "parser_before_passed": 8,
+    "parser_after_passed": 12,
+    "fixed_fixture_cases": [
+      "conflicting_names",
+      "conflicting_names_with_detector_guess",
+      "one_character_custom_value",
+      "fullwidth_colon_custom_value"
+    ],
+    "matrix_source": "authored synthetic OCR tokens, not human labels or OCR model accuracy"
+  },
+  "real_weight_smoke": {
+    "document_pipeline_runs": 2,
+    "statuses": [
+      "review",
+      "review"
+    ],
+    "field_counts": [
+      4,
+      5
+    ],
+    "elapsed_seconds": [
+      24.62,
+      13.02
+    ],
+    "exact_neural_call_count": null,
+    "exact_call_count_reason": "Existing smoke script counts whole pipeline cases, not internal model invocations.",
+    "source": "two in-memory synthetic cards; no new personal images",
+    "limitations": [
+      "Synthetic cards do not establish real student/license OCR accuracy.",
+      "Screenshot camera preview differs from original sensor image.",
+      "Counts are not a claim that all OCR characters are correct. No OCR values/images saved."
+    ]
+  },
+  "preservation": {
+    "weights_checked": 16,
+    "changed_weights": 0,
+    "frozen_research_parser_unchanged": true,
+    "protected_historical_ifv_assets": 316,
+    "changed_historical_ifv_assets": 0,
+    "phase1_snapshot_unchanged": true,
+    "phase2_publication_unchanged": true
+  },
+  "training": {
+    "steps": 0,
+    "reason": "Quality classifier already fine-tuned; current research subjects remain frozen. Local application corpus has quality labels but no discovered geometry/mask/transcript annotation files for a new segmentation/OCR training task."
+  },
+  "test_environment": {
+    "initial_default_execution": "Interrupted after TestClient stalled; minimal FastAPI reproducer timed out while creating Windows socketpair.",
+    "final_execution": "Full backend tests passed with permission for local socket creation.",
+    "diagnosis_log": "D:\\laptrinhcuatao\\Ekyc\\outputs\\independent_work_20261114_01\\testclient_diagnosis.log"
+  },
+  "artifacts": {
+    "outputs/independent_work_20261114_01/backend_tests.log": "48c7ecc76f7188b4e3128b2644e9abcc9c401ab510574c41a0ef50c047a63171",
+    "outputs/independent_work_20261114_01/document_models_smoke.json": "693c119051faf218696a564305685a73e0f69b2f61757642655a7491626973a8",
+    "outputs/independent_work_20261114_01/document_models_smoke.log": "ebc4f09bff3c375dd2b7e1e2b19da84b6b4a19a9c4460d8eecdd8bc15a162817",
+    "outputs/independent_work_20261114_01/field_regression.json": "f3295a5cf29ed8e2395bb0f33998fda3cbc99f25bfbfc293c31aa02a9a4bcf87",
+    "outputs/independent_work_20261114_01/field_regression_final.json": "b48df3c5f2ff83076c516fc012448c6c75c732b1460e241e2f394b364537f406",
+    "outputs/independent_work_20261114_01/frontend_tests.log": "2e34b49cd6f9472276b6cfb49d262843b39016bea75db8ae116304a94a38cb6f",
+    "outputs/independent_work_20261114_01/intake.json": "9fd1ca5fe20b4d78443bfde3de6c04c07143f65eac0619c606b584d78c14df42",
+    "outputs/independent_work_20261114_01/parser_fix.patch": "f22eda4d2833ecfedba8a3f614f672e4f798442f271ead8a2d6556bd729153ad",
+    "outputs/independent_work_20261114_01/parser_tests.log": "7882af6f2e0a3eff81772ae38e81b65d3cfb59ae865178e08a7a0525b879a193",
+    "outputs/independent_work_20261114_01/targeted_tests.log": "dcaa6e5cb5776f68dc86b78251a3cebce4cf06f65091dab06d3e085bdd9e88a5",
+    "outputs/independent_work_20261114_01/testclient_diagnosis.log": "c86aaccdf68f46b2bd5bae7086a2fcbc56cefb88060a1ec98e8ae743d179c8c0",
+    "outputs/independent_work_20261114_01/after/ekyc/document_fields.py": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+    "outputs/independent_work_20261114_01/after/scripts/audit_field_extraction.py": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f",
+    "outputs/independent_work_20261114_01/after/tests/test_document_fields.py": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8",
+    "outputs/independent_work_20261114_01/before/docs/document_recovery_and_fields.md": "75d476e8a03712a1b3379e211ed983743f1249986b9c5416100bda3ab729ed02",
+    "outputs/independent_work_20261114_01/before/ekyc/document_fields.py": "cca292ef3a12a96757bb9b912a261d1dd591f5f8110e72da7c299183f39b9431",
+    "outputs/independent_work_20261114_01/before/tests/test_document_fields.py": "a3444e4a71610244e9eb0c503ebd6b7b417db6ff7f526c32c795e8c2799f1522"
+  },
+  "research_documents": {
+    "INDEPENDENT_WORK_STATUS.md": "63d145087cd10dd4e7c4d16b22f0c9d90e3760c834f5afa3ea17c56000975b10",
+    "EASE2027_ROADMAP_VI.md": "d1dcd048f2a300c26d0cb93287964f5f5712c3012d867fa0ef7b19e5c23c5236",
+    "NEXT_ACTIONS.md": "d44599e549d478fed833199fed9d9443fd5e70881c49f16484d341fd1dd73034",
+    "MASTER_EXECUTION_STATUS.md": "6ded82bcf508c9948efc903d8bfc4f8d864dd67c3324579778e67ce5f0423b2b"
+  },
+  "research_natural_fault_labels_added": 0,
+  "confirmatory_inputs_opened": 0,
+  "confirmatory_gate": "NO_GO_PENDING_EVIDENCE",
+  "submission_performed": false
+}

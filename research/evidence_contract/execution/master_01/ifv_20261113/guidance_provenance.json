@@ -1,0 +1,25 @@
+{
+  "schema": "review-guidance-provenance/1",
+  "date_local": "2026-11-13",
+  "requested_by_user": true,
+  "images_visually_inspected": 31,
+  "schema_incomplete_fields": 67,
+  "additional_source_availability_review_pages": [
+    5,
+    8,
+    16,
+    28,
+    31
+  ],
+  "semantic_uncertainty_review_pages": [
+    1,
+    24,
+    30
+  ],
+  "original_observations_modified": false,
+  "reference_or_prediction_used": false,
+  "guidance_origin": "assistant_visual_inspection_and_user_submission",
+  "future_revisions_require_guidance_exposure_disclosure": true,
+  "independent_human_labels_created": 0,
+  "guidance_sha256": "343b230acd6d5883af981502a2bb54bb8b1df74204f5dd3c1f4b4ece0de47a41"
+}

@@ -1,0 +1,11 @@
+{
+  "checked": 180,
+  "missing_before_finalization": [
+    {
+      "file": "MASTER_EXECUTION_STATUS.md",
+      "target": "execution/master_01/ifv_20261115/completion_manifest.json"
+    }
+  ],
+  "status": "PASS_WITH_FINAL_MANIFEST_PENDING",
+  "unexpected_missing": []
+}

@@ -115,6 +115,23 @@ def test_no_frozen_human_export_means_no_output_access(tmp_path):
         reader.assert_not_called()
 
 
+def test_selected_images_resolve_from_the_reviewer_folder():
+    packet = read(review.PACKET_ROOT / 'packet_manifest.json')
+    mapping = read(ifv_sampling.SAMPLE.parent / 'review_mapping.json')['mapping']
+    observations = [dict(image_id=p['image_id'], field_key=f['field_key'])
+                    for p in packet['pages'] for f in p['fields']]
+    cases, _, unavailable = ifv.select_reviewable(read(ifv_sampling.SAMPLE), mapping, packet,
+                                                observations, 'f' * 64)
+    reviewer_folder = ifv.STAGE2 / 'unit-reviewer'
+    assert len(cases) == 46 and unavailable == 0
+    expected = {p['image_id']: p['file_sha256'] for p in packet['pages']}
+    for case in cases:
+        for side in ('before', 'after'):
+            path = (reviewer_folder / case[side + '_image']).resolve()
+            assert path.is_relative_to((review.PACKET_ROOT / 'images').resolve())
+            assert sha(path) == expected[path.stem]
+
+
 def test_phase2_build_seals_first_and_keeps_join_outside_packet(tmp_path):
     # Observations and reader outputs are injected doubles in the test scratch
     # directory. Neither the human importer nor the historical cache is used.
@@ -157,6 +174,10 @@ def test_malformed_review_not_treated_as_human():
     with pytest.raises(ValueError, match='remain separate'):
         ifv.validate_stage2(value, packet)
     assert ifv.validate_stage2(value, packet, allow_unit=True)['CASE-unit']['pointwise'] == 'CONFIRMED_FAULT'
+    value['export_kind'] = 'draft'
+    with pytest.raises(ValueError, match='Draft is a backup'):
+        ifv.validate_stage2(value, packet, allow_unit=True)
+    value['export_kind'] = 'reviewed_observations'
     item['output_note'] = ''
     with pytest.raises(ValueError, match='observation note'):
         ifv.validate_stage2(value, packet, allow_unit=True)

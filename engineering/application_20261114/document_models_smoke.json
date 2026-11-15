@@ -1,0 +1,58 @@
+{
+  "real_weights": true,
+  "cases": [
+    {
+      "case": "synthetic_student",
+      "status": "review",
+      "reason": null,
+      "rectification_method": "contour_detection",
+      "document_type": "student_card",
+      "field_keys": [
+        "full_name",
+        "student_id",
+        "class_name",
+        "course"
+      ],
+      "field_lengths": {
+        "full_name": 13,
+        "student_id": 10,
+        "class_name": 4,
+        "course": 9
+      },
+      "ocr_text_rows": 6,
+      "portrait_available": false,
+      "elapsed_seconds": 24.62,
+      "source": "synthetic text card; no real identity or portrait"
+    },
+    {
+      "case": "synthetic_driver",
+      "status": "review",
+      "reason": null,
+      "rectification_method": "contour_detection",
+      "document_type": "driver_license",
+      "field_keys": [
+        "full_name",
+        "id_number",
+        "license_class",
+        "issue_date",
+        "expiry_date"
+      ],
+      "field_lengths": {
+        "full_name": 12,
+        "id_number": 8,
+        "license_class": 2,
+        "issue_date": 10,
+        "expiry_date": 10
+      },
+      "ocr_text_rows": 7,
+      "portrait_available": false,
+      "elapsed_seconds": 13.02,
+      "source": "synthetic text card; no real identity or portrait"
+    }
+  ],
+  "limitations": [
+    "Synthetic cards do not establish real student/license OCR accuracy.",
+    "Screenshot camera preview differs from original sensor image.",
+    "Counts are not a claim that all OCR characters are correct. No OCR values/images saved."
+  ]
+}

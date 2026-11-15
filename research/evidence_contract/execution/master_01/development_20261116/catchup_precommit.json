@@ -1,0 +1,11 @@
+{
+  "application_snapshot": "engineering/application_20261114",
+  "configured_secret_pattern_hits": [],
+  "new_pending_files": 90,
+  "phase2_raw_reviews_excluded_by_gitignore": true,
+  "prior_remote_head": "05e32ee4c2720eb1a0f137b912b2d6980e485046",
+  "private_paths_in_pending_changes": 0,
+  "source_verifier_restored": true,
+  "status": "PASS",
+  "tested": 198
+}

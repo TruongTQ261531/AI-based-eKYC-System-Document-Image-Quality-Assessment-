@@ -1,0 +1,126 @@
+...E...................................................................E [ 38%]
+.....EE....E.........E............................................ [ 73%]
+....................E.E..........................                        [100%]
+=================================== ERRORS ====================================
+____ ERROR at setup of test_draft_binding_detects_change_and_missing_file _____
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_run_write_hashes_and_refuses_overwrite_and_old_namespace _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_invalid_and_inconclusive_attempts_are_written_not_filtered _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_duplicate_case_ids_are_rejected_before_output_creation _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_manifest_catches_pixel_duplicate_across_distinct_encodings_and_roles _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+____ ERROR at setup of test_ifv_rejects_unsealed_paths_before_reading_text ____
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+____ ERROR at setup of test_no_frozen_human_export_means_no_output_access _____
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_phase2_build_seals_first_and_keeps_join_outside_packet _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/test_runs/ifv_20261114_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\test_runs\\ifv_20261114_01'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR research/evidence_contract/tests/test_continuation_regressions.py::test_draft_binding_detects_change_and_missing_file
+ERROR research/evidence_contract/tests/test_contracts.py::test_run_write_hashes_and_refuses_overwrite_and_old_namespace
+ERROR research/evidence_contract/tests/test_contracts.py::test_invalid_and_inconclusive_attempts_are_written_not_filtered
+ERROR research/evidence_contract/tests/test_contracts.py::test_duplicate_case_ids_are_rejected_before_output_creation
+ERROR research/evidence_contract/tests/test_master_evidence.py::test_manifest_catches_pixel_duplicate_across_distinct_encodings_and_roles
+ERROR research/evidence_contract/tests/test_master_evidence.py::test_ifv_rejects_unsealed_paths_before_reading_text
+ERROR research/evidence_contract/tests/test_task55_ifv.py::test_no_frozen_human_export_means_no_output_access
+ERROR research/evidence_contract/tests/test_task55_ifv.py::test_phase2_build_seals_first_and_keeps_join_outside_packet
+179 passed, 8 errors, 6 subtests passed in 27.48s

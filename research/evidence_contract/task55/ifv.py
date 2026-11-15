@@ -57,8 +57,8 @@ def select_reviewable(sample, mapping, manifest, observations, snapshot_id):
             continue
         opaque = 'CASE-' + digest([snapshot_id, case['identity_sha256']])[:16]
         visible = dict(case_id=opaque, contract=row['contract_id'], field_key=key, label=LABELS.get(key, key),
-                       before_image='../task55_blind_review_v1/' + before['image'],
-                       after_image='../task55_blind_review_v1/' + after['image'],
+                       before_image='../../task55_blind_review_v1/' + before['image'],
+                       after_image='../../task55_blind_review_v1/' + after['image'],
                        before_evidence=evidence[before['image_id'], key],
                        after_evidence=evidence[after['image_id'], key])
         cases.append(visible)
@@ -241,6 +241,8 @@ def validate_stage2(value, packet, *, allow_unit=False):
     expected = 'unit_injected' if allow_unit else 'human_entered'
     if value.get('mode') != expected:
         raise ValueError('Controls and human observations must remain separate')
+    if value.get('export_kind') not in (None, 'reviewed_observations'):
+        raise ValueError('Draft is a backup, not submitted output judgments')
     cases = {c['case_id']: c for c in packet['cases']}
     labels = {}
     for item in value['items']:

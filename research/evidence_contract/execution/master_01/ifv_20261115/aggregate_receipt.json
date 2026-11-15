@@ -1,0 +1,26 @@
+{
+  "archive_name": "ifv_aggregate_20261115_02.zip",
+  "archive_sha256": "251c8ac016ffc75219178bcb87616cecad6a393750a965ef2b868e0148c52fc9",
+  "bytes": 11534,
+  "extracted_verification": {
+    "human_review_reproduced": false,
+    "model_calls": 0,
+    "primary": 42,
+    "reviewed": 46,
+    "status": "PASS_AGGREGATE_CONSISTENCY"
+  },
+  "files": 5,
+  "identifier_scan": "PASS_ACTUAL_PATH_COMPONENTS_AND_CONFIGURED_STRINGS",
+  "model_calls": 0,
+  "published": false,
+  "raw_human_content_included": false,
+  "release_readiness": "PENDING_RIGHTS_AND_FINAL_ANONYMITY_REVIEW",
+  "status": "LOCAL_AGGREGATE_CANDIDATE_VERIFIED",
+  "verification": {
+    "human_review_reproduced": false,
+    "model_calls": 0,
+    "primary": 42,
+    "reviewed": 46,
+    "status": "PASS_AGGREGATE_CONSISTENCY"
+  }
+}
