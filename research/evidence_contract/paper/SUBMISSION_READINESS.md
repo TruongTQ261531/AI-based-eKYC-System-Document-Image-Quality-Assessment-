@@ -1,5 +1,12 @@
 # EASE 2027 submission readiness
 
+Additional feedback-independent development on 16 November validated the
+[reference-boundary prototype and constructed controls](../REFERENCE_CONTROLS_20261116.md).
+The 252 injected executions reduce to 131 distinct comparisons/13 pixel pairs;
+245 Python tests plus 6 subtests and 15 JavaScript tests pass. This adds software
+and counterexample evidence, not external labels, natural-model accuracy or a
+confirmatory GO. It does not replace the frozen manuscript's pilot results.
+
 Status checked 16 November: exploratory A variants, reviewer package builders
 and agreement tooling are implemented. Two phase-1 ZIPs are ready for private
 handoff; no external judgments have been received. Public development code and

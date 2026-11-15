@@ -23,6 +23,9 @@ IFV cá nhân đã hoàn tất 86 ô pha 1 và 46 ca pha 2; chưa có reviewer n
 Ngày 16/11 đã có [biến thể A exploratory](research/evidence_contract/A_DEVELOPMENT_20261116.md)
 và [gói gửi người chấm độc lập](research/evidence_contract/REVIEWER_HANDOFF_VI.md).
 TASK 6B/7B giữ NO-GO cho superiority. Bản thảo chưa phải bài báo đã hoàn thành.
+Trong lúc gửi phiếu, đã làm thêm [reference controls và prototype kiểm tham chiếu](research/evidence_contract/REFERENCE_CONTROLS_20261116.md):
+252 lượt injected, 131 so sánh khác nhau; 245 Python + 6 subtests và 15 JS qua.
+Không có inference/training hoặc đánh giá độc lập mới trong mốc này.
 
 Vòng cải thiện hai nhóm lỗi OCR dùng cặp che/giữ đã có hai LoRA mới, đối chiếu
 hai checkpoint V3 cùng ID/lượt ảnh/số update trên 48 giấy tờ mới (192 view).

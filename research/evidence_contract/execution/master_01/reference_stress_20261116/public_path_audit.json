@@ -1,0 +1,7 @@
+{
+  "configured_secret_pattern_hits": [],
+  "private_or_model_paths": [],
+  "reviewed_files": 32,
+  "scope": "Configured patterns only; not an exhaustive secret detector.",
+  "status": "PASS_PUBLIC_PATHS_AND_CONFIGURED_TOKEN_PATTERNS"
+}

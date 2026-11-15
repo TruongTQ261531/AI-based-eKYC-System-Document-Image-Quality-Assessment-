@@ -1,5 +1,11 @@
 # Việc tiếp tục độc lập với phiếu đối chiếu
 
+Mốc không cần JSON feedback tiếp theo ngày 16/11 đã hoàn tất:
+[reference controls và prototype kiểm tham chiếu](REFERENCE_CONTROLS_20261116.md).
+Đã chạy 252 injected executions, khử trùng còn 131 so sánh/13 cặp pixel; có
+counterexamples của union và reference sai dùng chung. 245 Python + 6 subtests,
+15 JavaScript qua. Các ca tổng hợp không được cộng vào lỗi model thật hay nhãn người.
+
 Cập nhật 16/11/2026, Asia/Bangkok. **Review cá nhân đã hoàn tất cả hai pha**;
 đã nhập 46 ca và xuất [kết quả](IFV_RESULTS_VI.md). Không còn chờ phiếu hiện
 tại. Reference độc lập và adequacy vẫn là dependency của confirmatory. Công

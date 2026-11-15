@@ -1,0 +1,28 @@
+{
+  "changed_protected_assets": [],
+  "constructed_control_verification": {
+    "control_executions": 252,
+    "human_gold_created": false,
+    "method_decisions_reexecuted": false,
+    "model_calls": 0,
+    "pixels_reconstructed": false,
+    "status": "PASS_CONSTRUCTED_CONTROL_INTEGRITY_AND_ARITHMETIC",
+    "unique_injected_comparisons": 131
+  },
+  "external_references_approved": 0,
+  "inference_event_logs_preserved": 6,
+  "javascript_tests": 15,
+  "model_calls": 0,
+  "new_browser_visual_qa": false,
+  "new_human_answers": 0,
+  "new_plan_and_source_bindings_match": true,
+  "old_exploratory_variant_outputs_unchanged": true,
+  "old_sealed_report_replayed_exactly": true,
+  "protected_assets": 430,
+  "python_subtests": 6,
+  "python_tests": 245,
+  "raw_output_payloads_preserved": 93,
+  "reviewer_zip_v2_hashes_unchanged": true,
+  "status": "PASS_OLD_EVIDENCE_PRESERVATION_AND_NEW_CONTROL_INTEGRITY",
+  "training_steps": 0
+}

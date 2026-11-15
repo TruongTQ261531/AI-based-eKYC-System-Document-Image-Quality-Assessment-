@@ -1,0 +1,13 @@
+{
+  "scope": "CONSTRUCTED_CONTROL_DEVELOPMENT_ONLY",
+  "control_executions": 252,
+  "unique_injected_comparisons": 131,
+  "unique_pixel_pairs": 13,
+  "format_lane": {
+    "detected": 36,
+    "injected": 36,
+    "false_alarms": 0
+  },
+  "model_calls": 0,
+  "wall_seconds": 22.876875799964182
+}

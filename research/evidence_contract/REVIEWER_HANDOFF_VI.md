@@ -38,6 +38,10 @@ lập hoặc tự mở confirmatory.
 
 Hai ZIP được chuẩn bị riêng, khoảng 0,7 MB mỗi gói:
 
+**Cả hai đều là pha 1 với cùng 31 ảnh/86 mục, dành cho hai người R02/R03.**
+Chúng không lần lượt là pha 1 và pha 2. Pha 2 có 46 ca đối chiếu output, không
+phải 46 ảnh khác nhau; chỉ tạo sau khi khóa pha 1 của chính người đó.
+
 - `local/reviewer_exports/v2/reviewer_R02_phase1.zip`: gửi riêng cho người thứ nhất.
 - `local/reviewer_exports/v2/reviewer_R03_phase1.zip`: gửi riêng cho người thứ hai.
 

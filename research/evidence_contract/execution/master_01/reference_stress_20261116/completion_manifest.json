@@ -1,0 +1,93 @@
+{
+  "changed_public_file_hashes": {
+    "README.md": "ef0a791c961e74135899a11dfdc80e4e9f85e7f364ec9221e87aa99268a4ab66",
+    "research/evidence_contract/EASE2027_ROADMAP_VI.md": "484ce45315055830208f46e6f65f29d8b87d1622400d124bd93e0de23bed2e00",
+    "research/evidence_contract/INDEPENDENT_WORK_STATUS.md": "a7e1589fab2cd058f01f347a8234e6dfaad3d60c5dd5b1dc051d8ef1873c9373",
+    "research/evidence_contract/MASTER_EXECUTION_STATUS.md": "eeacdef6e1106bf80808d469703920512c35fddf2320d320bf1953c21dc629c8",
+    "research/evidence_contract/NEXT_ACTIONS.md": "de0fd3c8418f69d19205b8ee4fd9d9ed458ec710df4d5ee2edf41ef1a5ac579d",
+    "research/evidence_contract/POST_IFV_PROTOCOL_DRAFT.md": "f752d1a883dd39742c39abd160b9679a4f29b7d081f13db4ef740998d5cca4c5",
+    "research/evidence_contract/REFERENCE_CONTROLS_20261116.md": "b84e55567d0b52683f6d9e23e1e51925b83e4ad1430059d6f7594cc9d7119c20",
+    "research/evidence_contract/REVIEWER_HANDOFF_VI.md": "9fa6899d99ef6db1ec035b65ec3d2b456eb81b8ca6e2c2d43122265420fd929f",
+    "research/evidence_contract/REVISED_GO_NO_GO.md": "3a16b4c0125d8a1fec277f15c876adaa1c93bcf1436b3c8ef60e5699fbe40c76",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/environment.json": "ca5da3fe2b8afc49282ab71966578c2918dca287470ac288f13bfd7b53a5ce27",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/plan.json": "277629b4376ce0de6b6c0c89ea42a9c983719a809dc269825a867d5cba32ae92",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/preservation_and_verification.json": "a1ae163085b8198e2d9a503069ba03c67abc2dc254f5e6b86505b2bac82ecf64",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/public_path_audit.json": "a4d0055a192cadd2fa225b77bd5bb9b83cacf25f8124cf15b0ddad0c66d1a860",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/python_tests_final.log": "994bffa7658cf5aeb553840775a4cc73335aa239f38563cff52b3919a211a4c5",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/reference_policy_tests_01.log": "37122cc0b624fc2975720da509c68eb8e36bbe769b62bd1161b8bf662d43ebdf",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/run_01.log": "29a5110e6198dda020216ee5fd65c7cc464b33df90dd39189cd97c201a6b1760",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/run_01/cases.json": "21141aef6bae4d0ea0ce695952571e3f3eba8777927785c5a8046c741cc0595b",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/run_01/results.json": "2862b11fc8289af4662b182eb675639b6a9c4db17971a188d477f3b0d7df2a81",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/run_01/results.md": "95009a346ca42f6bce9cde30f11662609ff2dc0154b8cef9b254bc79b6579eb3",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/stdlib_verification_01.log": "d45938864fa8cb9158cf9ae5b7aab58a6dcc718032ce3de92f0899a092e4b2a4",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/stdlib_verification_02.log": "d45938864fa8cb9158cf9ae5b7aab58a6dcc718032ce3de92f0899a092e4b2a4",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/stress_tests_01.log": "c93dbbd2b037127ce1b7785936e1731e655c1d357c0b29c5084997d412a31017",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/ui_tests_final.log": "e5e3f224f91075f721328dd5825df8a520785b567a49c8d735630ac0768adc2f",
+    "research/evidence_contract/execution/master_01/reference_stress_20261116/verifier_tests_final.log": "9f039dbced3b15a2d759d92b22c45c7164f5a8cb35c24e769db706811cca47cc",
+    "research/evidence_contract/master/reference_policy.py": "66445d70031a2bb2a7333cdb004601cfa9ce988ee9a8b6897c49e7b1481ca35f",
+    "research/evidence_contract/master/reference_stress.py": "7305b6389df05211427b318094f2703953dabdcca801460a6780299a486ad2a5",
+    "research/evidence_contract/master/reference_stress_verify.py": "7c0b21f968787cfda83b2dc3e86b5eb667752441d1e6fd3a3945aace7873bee7",
+    "research/evidence_contract/paper/CLAIM_TO_EVIDENCE.md": "1717bdaa081468ed274f10c4f812bed7bae38829f60fcd84ecb32f2236acb4ab",
+    "research/evidence_contract/paper/REPLICATION_PLAN.md": "964a737e03b62629b2f2c8f81822500a771bbc74c74422bdaa569c1cea27ee50",
+    "research/evidence_contract/paper/SUBMISSION_READINESS.md": "58c8c2326870270a4e20bead47a207370b1b245407f861f286fe58fe1e525097",
+    "research/evidence_contract/tests/test_reference_policy.py": "327f22616df9e28a5f9372eedd9afd3428a1652a1fbd8ac7e9a4fcf592319e72",
+    "research/evidence_contract/tests/test_reference_stress.py": "b59a069c9b14c7a04b514c97a5d942e21ee8eb16f2ac2165fdebaf0de0abd249",
+    "research/evidence_contract/tests/test_reference_stress_verify.py": "84ee23f28cf93c15a2ebc139f171f755f3a595f46779fec8c69aecd2dfdc7179"
+  },
+  "confirmatory_gate": "NO_GO_SUPERIORITY",
+  "control_executions": 252,
+  "external_reference_approved": false,
+  "git_parent_commit": "21f28473c73de991d67fdca219bfb16af7faef53",
+  "git_progress_branch": "codex/ekyc-progress-20261116",
+  "human_answers_changed": 0,
+  "issued_reviewer_zip_v2_bytes_changed": false,
+  "limitations": [
+    "All outputs are injected; no real-model faults were added.",
+    "Pixel checker shares pristine renderer inventory; control truth is not external human evidence.",
+    "Equal-information B3_bound has identical field checks; no graph superiority.",
+    "Hash binding does not establish honesty or human readability.",
+    "Renderer/font versions affect byte-exact pixel reproduction."
+  ],
+  "local_date": "2026-11-16",
+  "main_merge_completed": false,
+  "model_calls": 0,
+  "new_external_reviews_imported": 0,
+  "new_human_labels": 0,
+  "original_frozen_methods_changed": false,
+  "plan": "plan.json",
+  "protected_assets_unchanged": 430,
+  "run": "run_01",
+  "schema": "feedback-independent-development/1",
+  "scope": "Constructed controls; post-pilot development; not natural-model performance or confirmatory evidence",
+  "status": "REFERENCE_PROTOTYPE_AND_CONSTRUCTED_CONTROLS_VALIDATED",
+  "training_steps": 0,
+  "unique_injected_comparisons": 131,
+  "unique_pixel_pairs": 13,
+  "validation": {
+    "final_verifier_targeted": {
+      "after_integer_type_guard": true,
+      "log": "verifier_tests_final.log",
+      "passed": 3
+    },
+    "full_python_suite": {
+      "log": "python_tests_final.log",
+      "passed": 245,
+      "subtests": 6
+    },
+    "javascript_suite": {
+      "log": "ui_tests_final.log",
+      "passed": 15
+    },
+    "preservation_receipt": "preservation_and_verification.json",
+    "stdlib_log": "stdlib_verification_02.log",
+    "stdlib_verifier": {
+      "control_executions": 252,
+      "human_gold_created": false,
+      "method_decisions_reexecuted": false,
+      "model_calls": 0,
+      "pixels_reconstructed": false,
+      "status": "PASS_CONSTRUCTED_CONTROL_INTEGRITY_AND_ARITHMETIC",
+      "unique_injected_comparisons": 131
+    }
+  }
+}

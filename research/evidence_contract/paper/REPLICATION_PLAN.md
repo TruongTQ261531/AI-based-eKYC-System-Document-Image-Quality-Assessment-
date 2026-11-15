@@ -43,3 +43,24 @@ reviews; actual new reviewers remain zero.
 and one-author judgments. Their new named source and decision digest accompany
 both original and withholding panels. They do not replace the frozen-scorer
 archive or convert post-pilot design into confirmatory evidence.
+
+## Constructed reference controls · 16 November 2026
+
+[The new development panel](../REFERENCE_CONTROLS_20261116.md) records 252
+injected executions, 131 distinct comparisons and 13 pixel pairs. Its fictional
+control values, hashes and decisions are public; it contains no new human
+submissions or real-model output cache. Renderer inventory is shared by the
+pixel checker and is an explicit limit of the control truth.
+
+From the repository root, run the independent arithmetic/integrity entry point:
+
+```powershell
+python -I -B research/evidence_contract/master/reference_stress_verify.py research/evidence_contract/execution/master_01/reference_stress_20261116/run_01
+```
+
+This standard-library mode checks case/reference bindings, injected origin,
+deduplication and counts. It does not reconstruct pixels or rerun methods.
+Method execution uses `master.reference_stress` and the saved plan, with a fresh
+checkpoint destination. Pixel-exact reproduction needs the recorded renderer
+and font [environment](../execution/master_01/reference_stress_20261116/environment.json).
+Neither mode grants a scientific GO or independently validates human readability.

@@ -34,6 +34,13 @@ tăng TP pointwise 2→4/7 trong panel tác giả; A_dual đạt 7/7 bằng kên
 [Cách gửi/nhận JSON](REVIEWER_HANDOFF_VI.md). Mỗi mốc hoàn tất phải commit/push
 và kiểm remote HEAD theo [chính sách GitHub](../../PROJECT_SYNC_POLICY.md).
 
+Trong lúc người dùng gửi phiếu, đã hoàn thành thêm
+[reference controls](REFERENCE_CONTROLS_20261116.md): 252 lượt injected, khử trùng
+còn 131 so sánh/13 cặp pixel. Tìm được counterexample của union và shared-reference
+failure; prototype reference-bound xử lý được controls nhưng baseline nhận cùng
+reference cũng tương đương ở field. Đây là tiến độ P1 không phụ thuộc feedback,
+không tăng số lỗi model thật hoặc reviewer.
+
 ## Đóng góp phù hợp hội nghị
 
 Đề xuất giữ câu hỏi chính: **tiền điều kiện về nguồn và cách xử lý bất định
@@ -62,6 +69,7 @@ với A_flat, B3 có gate, V3, B0 và B2; không dùng baseline yếu để tạ
 | 15/11 — DONE sớm | Tác giả | Hoàn tất cả 46 ca đối chiếu và gửi export | Đã nhận và khóa; không còn chờ phiếu hiện tại |
 | 15/11 — DONE sớm | Công cụ/analyst | Import/replay; counts hai endpoint; source gates, all-alarm accounting và sensitivity | 26/42 pointwise, 21/42 relation; 17 cờ/15 primary; 0 UNREVIEWED. Bảng chính không đổi |
 | 16/11 — DONE development tooling | Công cụ/analyst | Ba ứng viên A exploratory, replay toàn lịch cũ, ZIP R02/R03, guard lựa chọn và công cụ agreement | 0 inference/training mới; A_dual field=B3; chưa có phiếu ngoài, superiority NO-GO |
+| 16/11 — DONE reference controls | Công cụ/analyst | Prototype schema/typed policy/trust binding và 252 injected executions; verifier stdlib; kiểm hồi quy 245 Python + 6 subtests/15 JS | 131 comparisons khác nhau, 13 cặp pixel; fixture truth và inventory chia sẻ renderer, chưa là external ground truth |
 | 16–20/11 | Công cụ/analyst + tác giả | Hoàn thiện reference schema/policy và thiết kế panel oracle validity/coverage; [protocol](POST_IFV_PROTOCOL_DRAFT.md) đã có | Tooling đã có một phần; reference approval, sizing/budget và panel mới còn pending |
 | 16–27/11 | Tác giả tổ chức nguồn lực | Gửi ZIP riêng cho hai người ngoài; thu pha 1→seal→pha 2, đo agreement trước phân xử; chuẩn độc lập phù hợp endpoint | Tối thiểu thêm 1 để bắt đầu so, khuyến nghị thêm 2. Không có số người bảo đảm đúng; không yêu cầu tác giả làm lại 46 ca |
 | 28–30/11 | Tác giả + phân tích | Quyết định GO mới cho claim cụ thể sau prep/reference/adequacy | Pilot hiện giữ NO-GO superiority: A_flat trùng A, sensitivity/coverage A thấp hơn, FAR không vững qua sensitivity |

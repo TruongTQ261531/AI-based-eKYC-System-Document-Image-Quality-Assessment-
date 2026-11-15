@@ -1,0 +1,2404 @@
+{
+  "all_executions": {
+    "pointwise": {
+      "A_bound_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 52,
+          "TP": 92
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 144
+        },
+        "labeled_control_rows": 144
+      },
+      "A_change_union": {
+        "abstentions_on_known_faults": 24,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 24,
+          "FP": 28,
+          "TN": 24,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 120
+        },
+        "labeled_control_rows": 144
+      },
+      "A_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 44,
+          "TP": 92
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 144
+        },
+        "labeled_control_rows": 144
+      },
+      "A_flat": {
+        "abstentions_on_known_faults": 24,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 24,
+          "FP": 8,
+          "TN": 44,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 108
+        },
+        "labeled_control_rows": 144
+      },
+      "A_frozen": {
+        "abstentions_on_known_faults": 24,
+        "alarms_on_unassessed": 20,
+        "confusion": {
+          "FN": 24,
+          "FP": 8,
+          "TN": 44,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 108
+        },
+        "labeled_control_rows": 144
+      },
+      "B3": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 44,
+          "TP": 92
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 144
+        },
+        "labeled_control_rows": 144
+      },
+      "B3_bound": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 52,
+          "TP": 92
+        },
+        "decision_coverage": {
+          "denominator": 144,
+          "numerator": 144
+        },
+        "labeled_control_rows": 144
+      }
+    },
+    "relation": {
+      "A_bound_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 40,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "A_change_union": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 20,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 32,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "A_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 20,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 32,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "A_flat": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 32,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "A_frozen": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 20,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 32,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "B3": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 24,
+        "confusion": {
+          "FN": 0,
+          "FP": 8,
+          "TN": 32,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      },
+      "B3_bound": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 24,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 40,
+          "TP": 68
+        },
+        "decision_coverage": {
+          "denominator": 108,
+          "numerator": 108
+        },
+        "labeled_control_rows": 108
+      }
+    }
+  },
+  "bound_field_matches_equal_information_baseline": true,
+  "by_scenario": {
+    "C1_complete": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 12,
+            "TP": 12
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      }
+    },
+    "C1_limited": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 20,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 20,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 20,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 20,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      }
+    },
+    "C2_backup": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      }
+    },
+    "C2_bad_backup": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      }
+    },
+    "C2_reference_poison": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 8,
+            "TN": 0,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      }
+    },
+    "C3_keep": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 4,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 16
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        }
+      }
+    },
+    "C3_lost_context": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 0,
+            "TP": 0
+          },
+          "decision_coverage": {
+            "denominator": 0,
+            "numerator": 0
+          },
+          "labeled_control_rows": 0
+        }
+      }
+    },
+    "C4_identity": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 4,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 16
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        }
+      }
+    },
+    "C4_translate": {
+      "pointwise": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 4,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 16
+          },
+          "labeled_control_rows": 24
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 8,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 8,
+            "FP": 0,
+            "TN": 8,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 12
+          },
+          "labeled_control_rows": 24
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 8,
+            "TP": 16
+          },
+          "decision_coverage": {
+            "denominator": 24,
+            "numerator": 24
+          },
+          "labeled_control_rows": 24
+        }
+      },
+      "relation": {
+        "A_bound_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_change_union": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_dual": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_flat": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "A_frozen": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 0,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        },
+        "B3_bound": {
+          "abstentions_on_known_faults": 0,
+          "alarms_on_unassessed": 8,
+          "confusion": {
+            "FN": 0,
+            "FP": 0,
+            "TN": 4,
+            "TP": 8
+          },
+          "decision_coverage": {
+            "denominator": 12,
+            "numerator": 12
+          },
+          "labeled_control_rows": 12
+        }
+      }
+    }
+  },
+  "cases_sha256": "cc4ef992085dde01c3445675cebe5bcf54a46354ec952a7c2f51e448ed6c0e41",
+  "confirmatory": false,
+  "control_executions": 252,
+  "deduplicated": {
+    "pointwise": {
+      "A_bound_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 26,
+          "TP": 50
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 76
+        },
+        "labeled_control_rows": 76
+      },
+      "A_change_union": {
+        "abstentions_on_known_faults": 14,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 14,
+          "FP": 15,
+          "TN": 11,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 62
+        },
+        "labeled_control_rows": 76
+      },
+      "A_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 22,
+          "TP": 50
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 76
+        },
+        "labeled_control_rows": 76
+      },
+      "A_flat": {
+        "abstentions_on_known_faults": 14,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 14,
+          "FP": 4,
+          "TN": 22,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 55
+        },
+        "labeled_control_rows": 76
+      },
+      "A_frozen": {
+        "abstentions_on_known_faults": 14,
+        "alarms_on_unassessed": 10,
+        "confusion": {
+          "FN": 14,
+          "FP": 4,
+          "TN": 22,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 55
+        },
+        "labeled_control_rows": 76
+      },
+      "B3": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 22,
+          "TP": 50
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 76
+        },
+        "labeled_control_rows": 76
+      },
+      "B3_bound": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 26,
+          "TP": 50
+        },
+        "decision_coverage": {
+          "denominator": 76,
+          "numerator": 76
+        },
+        "labeled_control_rows": 76
+      }
+    },
+    "relation": {
+      "A_bound_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 19,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "A_change_union": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 10,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 15,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "A_dual": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 10,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 15,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "A_flat": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 0,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 15,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "A_frozen": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 10,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 15,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "B3": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 14,
+        "confusion": {
+          "FN": 0,
+          "FP": 4,
+          "TN": 15,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      },
+      "B3_bound": {
+        "abstentions_on_known_faults": 0,
+        "alarms_on_unassessed": 14,
+        "confusion": {
+          "FN": 0,
+          "FP": 0,
+          "TN": 19,
+          "TP": 36
+        },
+        "decision_coverage": {
+          "denominator": 55,
+          "numerator": 55
+        },
+        "labeled_control_rows": 55
+      }
+    }
+  },
+  "external_reference_approved": false,
+  "format_lane": {
+    "detected": 36,
+    "false_alarms": 0,
+    "injected": 36
+  },
+  "human_labels_created": 0,
+  "model_calls": 0,
+  "natural_model_faults": 0,
+  "new_external_reviewers": 0,
+  "note": "Constructed expectations only. Pixel checker shares pristine fixture inventory. Equal-information B3_bound receives the same sealed reference; no graph superiority claim.",
+  "plan_sha256": "277629b4376ce0de6b6c0c89ea42a9c983719a809dc269825a867d5cba32ae92",
+  "policy_source_sha256": "66445d70031a2bb2a7333cdb004601cfa9ce988ee9a8b6897c49e7b1481ca35f",
+  "schema": "constructed-reference-stress/1",
+  "scope": "CONSTRUCTED_CONTROL_DEVELOPMENT_ONLY",
+  "source_sha256": "7305b6389df05211427b318094f2703953dabdcca801460a6780299a486ad2a5",
+  "training_steps": 0,
+  "unique_injected_comparisons": 131,
+  "unique_pixel_pairs": 13,
+  "wall_seconds": 22.876875799964182
+}

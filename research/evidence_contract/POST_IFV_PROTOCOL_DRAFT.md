@@ -10,6 +10,11 @@ Cập nhật thực thi 16/11: đã có [A lanes exploratory](A_DEVELOPMENT_2026
 trên output cũ, không phải reference đã được phê duyệt hoặc một panel prospective
 mới. Original A, sample, endpoint labels và superiority gate giữ nguyên.
 
+Mốc không chờ feedback cùng ngày đã hoàn tất [prototype reference và đối chứng](REFERENCE_CONTROLS_20261116.md):
+hash/schema binding, typed policy, scope/trust guards, lane cấu trúc và 252 control
+executions. Cùng reference đúng giúp cả A_bound_dual và B3_bound; chưa có approval
+external hoặc ảnh/model mới. Constructed reference không được dùng cho actual_model.
+
 ## Câu hỏi được ưu tiên
 
 Định lượng ảnh hưởng của **reference validity, nguồn thay thế và điều kiện
@@ -78,7 +83,7 @@ margins và inference budget còn **PENDING**, không tự lấy số tròn từ
 | Bước | Công việc / đầu ra | Trạng thái |
 |---|---|---|
 | P0 | Nhập, replay, hậu kiểm 46 ca và quyết định claim | DONE ngày 15/11; [receipt](execution/master_01/ifv_20261115/analysis.json) |
-| P1 | Chốt schema reference, typed-normalization policy và các điều kiện trên bằng control fixtures | PARTIAL TOOLING ngày 16/11: offline bundle, literal/empty guards và agreement đã kiểm; approval/schema reference và policy hoàn chỉnh còn pending |
+| P1 | Chốt schema reference, typed-normalization policy và các điều kiện trên bằng control fixtures | VALIDATED DEVELOPMENT PROTOTYPE ngày 16/11: schema/binding, typed policy v1, source/approval guards và 252 controls đã chạy; policy áp dụng bộ mới và approval reference external còn pending |
 | P2 | Kiểm nguồn lực reference, quyền dùng, exposure, sizing và budget | PENDING đầu vào xác minh được |
 | P3 | Quyết định GO mới cho claim/phạm vi cụ thể | NO-GO hiện tại cho superiority |
 | P4 | Sau GO mới, tạo manifest và lock theo prep 6A | NOT STARTED |

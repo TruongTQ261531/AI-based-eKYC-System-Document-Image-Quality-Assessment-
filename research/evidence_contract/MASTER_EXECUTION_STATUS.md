@@ -1,5 +1,15 @@
 # EASE 2027 · Master execution
 
+Mốc tiếp tục không chờ feedback **16/11/2026** đã hoàn tất
+[reference controls](REFERENCE_CONTROLS_20261116.md): 252 lượt injected, 131 so sánh
+khác nhau/13 cặp pixel; prototype reference-bound và baseline cùng thông tin có
+kênh field trùng nhau. Đã làm rõ thêm false alarms của union và lỗi do reference
+sai dùng chung. **245 Python + 6 subtests và 15 JavaScript PASS.** Không có inference,
+training hoặc JSON reviewer mới. Phiếu cũ, source A/B3 và hai ZIP đang gửi giữ nguyên.
+[Kết quả](execution/master_01/reference_stress_20261116/run_01/results.md).
+[Kiểm cuối và bảo toàn](execution/master_01/reference_stress_20261116/completion_manifest.json).
+Các số của mốc đầu ngày bên dưới giữ nguyên như lịch sử.
+
 Cập nhật **16/11/2026**: đã triển khai [ba hướng A exploratory](A_DEVELOPMENT_20261116.md),
 replay trên 132 lượt đóng băng và chuẩn bị [hai ZIP reviewer độc lập](REVIEWER_HANDOFF_VI.md).
 A_change_union TP/FN pointwise 4/3 so với A cũ 2/5; A_dual 7/0 có kênh field

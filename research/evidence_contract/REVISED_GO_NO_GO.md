@@ -1,5 +1,10 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Mốc reference controls 16/11 không thay GO: counterexample của union và shared
+reference đã được tái hiện trên injected fixtures. Bound prototype cần reference
+đúng và không hơn baseline cùng reference ở kênh field. Chưa có external approval,
+fault provenance tự nhiên hoặc adequacy mới. [Kết quả](REFERENCE_CONTROLS_20261116.md).
+
 Kiểm lại 16/11: **NO-GO superiority không đổi**. [Ứng viên A mới](A_DEVELOPMENT_20261116.md)
 dùng lại pilot và không thay frozen A; A_dual field trùng B3. [Hai gói reviewer](REVIEWER_HANDOFF_VI.md)
 đã chuẩn bị nhưng chưa có phiếu ngoài, chưa có reference độc lập được duyệt,

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_CONSTRUCTED_CONTROL_INTEGRITY_AND_ARITHMETIC",
+  "control_executions": 252,
+  "unique_injected_comparisons": 131,
+  "pixels_reconstructed": false,
+  "method_decisions_reexecuted": false,
+  "human_gold_created": false,
+  "model_calls": 0
+}

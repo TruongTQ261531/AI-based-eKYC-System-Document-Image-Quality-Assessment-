@@ -1,0 +1,59 @@
+{
+  "confirmatory": false,
+  "deduplication": "Report all planned rows, unique input pairs and unique injected comparison identities separately; seeds/views are not independent subjects.",
+  "endpoints": [
+    "pointwise",
+    "relation",
+    "format_separate"
+  ],
+  "expectations": "Declared from scenario and injected output modes, never from a method decision. Partial or invalid test preconditions and malformed fields remain unassessed for the semantic comparison.",
+  "human_labels_created": 0,
+  "local_date": "2026-11-16",
+  "methods": [
+    "A_frozen",
+    "A_change_union",
+    "A_dual",
+    "B3",
+    "A_flat",
+    "A_bound_dual",
+    "B3_bound"
+  ],
+  "model_call_budget": 0,
+  "output_modes": [
+    "correct_correct",
+    "correct_empty",
+    "correct_wrong",
+    "wrong_wrong",
+    "wrong_correct",
+    "empty_wrong",
+    "correct_malformed"
+  ],
+  "planned_control_executions": 252,
+  "promotion_rule": "No real-model promotion or confirmatory GO. Constructed references are rejected for actual_model outputs; external references require exact approval ID and provenance.",
+  "protected_assets": 430,
+  "protected_manifest_sha256": "ba5b60c2c7ab2cfad3d8239c1006f482a61f811f94672efbcba4f986530e5ea3",
+  "readability_claim": false,
+  "reference_poisoning": "One scenario deliberately gives old graph-based checks incorrect reference values while the sealed audit retains the fixed fixture strings. Equal-information B3_bound receives the same audit.",
+  "reference_source": "Fixed fictional field strings plus separately computed pixel-slice probes on the pristine fixture inventory; shares renderer inventory and is not external adjudication.",
+  "scenarios": [
+    "C1_complete",
+    "C1_limited",
+    "C2_backup",
+    "C2_bad_backup",
+    "C3_keep",
+    "C3_lost_context",
+    "C4_translate",
+    "C4_identity",
+    "C2_reference_poison"
+  ],
+  "schema": "constructed-reference-stress-plan/1",
+  "scope": "CONSTRUCTED_CONTROL_DEVELOPMENT_ONLY",
+  "seeds": [
+    0,
+    1,
+    42,
+    2027
+  ],
+  "training_steps": 0,
+  "written_after_human_pilot": true
+}
