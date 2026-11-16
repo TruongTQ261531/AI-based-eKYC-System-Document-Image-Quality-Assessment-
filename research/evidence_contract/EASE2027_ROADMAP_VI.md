@@ -1,5 +1,12 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+Mốc mới nhất 16/11: [R02 pha 1 đủ 86/86 mục](R02_REVIEW_INTAKE_20261116.md)
+đã nhập nguyên trạng, vai trò ngoài dự án được đính chính riêng. Đã có agreement
+pha 1 tác giả/R02 và ZIP pha 2 riêng 46 ca; còn chờ R02 pha 2 và R03 pha 1.
+19 bất đồng semantic key cần giữ lại để phân xử sau đánh giá độc lập. NO-GO
+superiority không đổi; toàn bộ tiến độ tiếp tục đồng bộ trên main duy nhất.
+Các số reviewer/test ở các mốc development trước intake bên dưới là lịch sử.
+
 Mốc readiness 16/11 đã bổ sung [phân tích gap và thực nghiệm](READINESS_ANALYSIS_20261116.md):
 255 cấu hình nguồn, 164 control, 118 ca parser/2 lỗi lịch sử với patch-revert.
 CFP Research, Short/Emerging và RENE đã kiểm lại; project đúng chủ đề nhưng
@@ -77,7 +84,7 @@ với A_flat, B3 có gate, V3, B0 và B2; không dùng baseline yếu để tạ
 | 16/11 — DONE development tooling | Công cụ/analyst | Ba ứng viên A exploratory, replay toàn lịch cũ, ZIP R02/R03, guard lựa chọn và công cụ agreement | 0 inference/training mới; A_dual field=B3; chưa có phiếu ngoài, superiority NO-GO |
 | 16/11 — DONE reference controls | Công cụ/analyst | Prototype schema/typed policy/trust binding và 252 injected executions; verifier stdlib; kiểm hồi quy 245 Python + 6 subtests/15 JS | 131 comparisons khác nhau, 13 cặp pixel; fixture truth và inventory chia sẻ renderer, chưa là external ground truth |
 | 16–20/11 | Công cụ/analyst + tác giả | Hoàn thiện reference schema/policy và thiết kế panel oracle validity/coverage; [protocol](POST_IFV_PROTOCOL_DRAFT.md) đã có | Tooling đã có một phần; reference approval, sizing/budget và panel mới còn pending |
-| 16–27/11 | Tác giả tổ chức nguồn lực | Gửi ZIP riêng cho hai người ngoài; thu pha 1→seal→pha 2, đo agreement trước phân xử; chuẩn độc lập phù hợp endpoint | Tối thiểu thêm 1 để bắt đầu so, khuyến nghị thêm 2. Không có số người bảo đảm đúng; không yêu cầu tác giả làm lại 46 ca |
+| 16–27/11 — R02 pha 1 DONE | Tác giả tổ chức nguồn lực | Gửi ZIP pha 2 riêng R02; nhận pha 1 R03 rồi seal/cấp pha 2, đo agreement trước phân xử | Đã có 1 người ngoài pha 1, 0 người ngoài pha 2. Khuyến nghị thêm R03 để so hai người ngoài; không có số người bảo đảm đúng hoặc yêu cầu tác giả làm lại 46 ca |
 | 28–30/11 | Tác giả + phân tích | Quyết định GO mới cho claim cụ thể sau prep/reference/adequacy | Pilot hiện giữ NO-GO superiority: A_flat trùng A, sensitivity/coverage A thấp hơn, FAR không vững qua sensitivity |
 | 01–07/12, nếu GO | Công cụ/analyst + nguồn dữ liệu | Thực hiện 6B từ prep 6A: manifest mới, nguồn quyền dùng, kiểm tách ID/content/pixel/lineage, nhãn và lock | Đủ số cụm theo sizing/effect đã chốt; protocol, code, reader, seed, exclusions và inference budget được ghim |
 | 08–20/12, nếu lock hợp lệ | Công cụ/analyst | 7B: thực nghiệm theo manifest; log append-only, replay, thống kê và kiểm sensitivity | Không sửa protocol theo output. Khóa không đạt thì không chạy confirmatory |

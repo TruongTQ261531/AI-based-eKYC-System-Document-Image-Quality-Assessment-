@@ -1,0 +1,14 @@
+{
+  "command": [
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests/test_review_agreement.py",
+    "research/evidence_contract/tests/test_portable_review.py",
+    "research/evidence_contract/tests/test_task55_ifv.py"
+  ],
+  "exit_code": 0,
+  "scope": "Existing phase1 agreement, portable package isolation and IFV sealing/guard tests; unit controls are not human evidence"
+}

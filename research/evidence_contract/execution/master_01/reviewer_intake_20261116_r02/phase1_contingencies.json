@@ -1,0 +1,101 @@
+{
+  "rows": {
+    "availability": [
+      {
+        "R02": "not_seen",
+        "author": "not_seen",
+        "count": 13
+      },
+      {
+        "R02": "partial",
+        "author": "not_seen",
+        "count": 3
+      },
+      {
+        "R02": "not_seen",
+        "author": "uncertain",
+        "count": 1
+      },
+      {
+        "R02": "visible",
+        "author": "uncertain",
+        "count": 3
+      },
+      {
+        "R02": "not_seen",
+        "author": "visible",
+        "count": 1
+      },
+      {
+        "R02": "visible",
+        "author": "visible",
+        "count": 65
+      }
+    ],
+    "readability": [
+      {
+        "R02": "readable",
+        "author": "readable",
+        "count": 65
+      },
+      {
+        "R02": "unreadable",
+        "author": "readable",
+        "count": 1
+      },
+      {
+        "R02": "readable",
+        "author": "unassessed",
+        "count": 1
+      },
+      {
+        "R02": "readable",
+        "author": "uncertain",
+        "count": 2
+      },
+      {
+        "R02": "unreadable",
+        "author": "uncertain",
+        "count": 1
+      },
+      {
+        "R02": "partial",
+        "author": "unreadable",
+        "count": 3
+      },
+      {
+        "R02": "unreadable",
+        "author": "unreadable",
+        "count": 13
+      }
+    ],
+    "semantic_key_confirmed": [
+      {
+        "R02": "no",
+        "author": "no",
+        "count": 1
+      },
+      {
+        "R02": "yes",
+        "author": "no",
+        "count": 3
+      },
+      {
+        "R02": "no",
+        "author": "yes",
+        "count": 15
+      },
+      {
+        "R02": "uncertain",
+        "author": "yes",
+        "count": 1
+      },
+      {
+        "R02": "yes",
+        "author": "yes",
+        "count": 66
+      }
+    ]
+  },
+  "scope": "Descriptive category counts; no transcript or item identity"
+}

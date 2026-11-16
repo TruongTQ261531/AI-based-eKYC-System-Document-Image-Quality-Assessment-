@@ -9,9 +9,9 @@ và [hướng dẫn chạy nghiên cứu](research/V3_RUNBOOK.md).
 
 Các mốc `mentor/ekyc-v3.2.0`, `research/document-recovery-core-b` và
 `research/vlm-v2-evidence` được lưu bằng tag để đối chiếu sau khi gộp vào main.
-Yêu cầu giữ một branch trước đây đã được thực hiện tại mốc gộp. Ngày 16/11,
-tiến độ mới được đồng bộ trên `codex/ekyc-progress-20261116` để duyệt trước khi
-gộp vào `main`; xem [chính sách đồng bộ](PROJECT_SYNC_POLICY.md). Kết quả V1/V4 được bảo toàn;
+Ngày 16/11, toàn bộ tiến độ đã được gộp vào **main**, branch làm việc và đồng bộ
+duy nhất; branch progress đã được xóa sau khi kiểm main chứa đầy đủ lịch sử.
+Xem [chính sách đồng bộ](PROJECT_SYNC_POLICY.md). Kết quả V1/V4 được bảo toàn;
 weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
@@ -23,7 +23,10 @@ và bản thảo Emerging riêng; chưa có claim superiority hoặc scientific 
 Xem [trạng thái master_01](research/evidence_contract/MASTER_EXECUTION_STATUS.md),
 [quyết định GO/NO-GO](research/evidence_contract/REVISED_GO_NO_GO.md) và
 [bản thảo paper](research/evidence_contract/paper/MANUSCRIPT_DRAFT.md).
-IFV cá nhân đã hoàn tất 86 ô pha 1 và 46 ca pha 2; chưa có reviewer ngoài dự án.
+IFV cá nhân đã hoàn tất 86 ô pha 1 và 46 ca pha 2. Đã nhận thêm
+[R02 pha 1 đủ 86/86 mục](research/evidence_contract/R02_REVIEW_INTAKE_20261116.md),
+giữ nguyên raw export và lưu đính chính vai trò riêng. Đã tính agreement pha 1
+và tạo gói pha 2 riêng 46 ca cho R02; pha 2 ngoài dự án và R03 vẫn đang chờ.
 Ngày 16/11 đã có [biến thể A exploratory](research/evidence_contract/A_DEVELOPMENT_20261116.md)
 và [gói gửi người chấm độc lập](research/evidence_contract/REVIEWER_HANDOFF_VI.md).
 TASK 6B/7B giữ NO-GO cho superiority. Bản thảo chưa phải bài báo đã hoàn thành.

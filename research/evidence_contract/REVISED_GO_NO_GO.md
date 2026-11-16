@@ -1,5 +1,12 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Sau [intake R02 ngày 16/11](R02_REVIEW_INTAKE_20261116.md), **NO_GO_SUPERIORITY
+giữ nguyên**. Có thêm 86/86 mục pha 1 từ người ngoài theo xác nhận organizer,
+đã đo agreement thực với tác giả. Semantic key có 19/86 bất đồng, κ=0,0239;
+chưa phân xử hoặc xác minh độc lập. R02 pha 2 mới chuẩn bị, R03 chưa nộp.
+Không thay bảng endpoint của tác giả hoặc coi agreement là gold. Các đoạn mốc
+trước intake bên dưới giữ ý nghĩa lịch sử, gồm lúc chưa có phiếu ngoài.
+
 Mốc readiness 16/11 giữ **NO_GO_SUPERIORITY**. Phân tích quyết định giải thích
 A/flat trong miền có điều kiện, đồng thời lưu 11 counterexample ở boundary.
 Hai lỗi parser nay có chứng cứ historical fix/revert trên mã chạy thực; đây là

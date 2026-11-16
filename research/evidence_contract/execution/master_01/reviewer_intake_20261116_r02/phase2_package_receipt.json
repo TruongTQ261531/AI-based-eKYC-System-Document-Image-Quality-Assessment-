@@ -1,0 +1,16 @@
+{
+  "actual_new_reviewers": 0,
+  "analyst_join_included": false,
+  "archive_bytes": 673385,
+  "archive_name": "reviewer_R02_phase2.zip",
+  "archive_sha256": "7c36d6440af67bfbed06e8ca35f060df4c4feebcbbbfd5412edde52a14b0ac0d",
+  "author_answers_included": false,
+  "files": 35,
+  "images": 30,
+  "independence_verified": false,
+  "job_id": "9d860b0d10de42d688a6ab8d1984f518116822cd1d082cfca1592c17cf6f24bd",
+  "model_calls": 0,
+  "phase": "phase2",
+  "reviewer_id": "R02",
+  "status": "PREPARED_NOT_REVIEWED"
+}

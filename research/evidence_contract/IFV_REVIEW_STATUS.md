@@ -1,15 +1,21 @@
 # Trạng thái IFV
 
-**COMPLETE_SINGLE_REVIEW_UNADJUDICATED**, cập nhật 16/11/2026, Asia/Bangkok.
+**R02_PHASE1_COMPLETE_UNADJUDICATED**, cập nhật 16/11/2026, Asia/Bangkok.
+Đã có **2 người nộp pha 1: tác giả + 1 người ngoài R02**. R02 đủ 86/86 mục,
+vai trò được người tổ chức đính chính riêng, phiếu gốc không đổi. Đồng thuận
+availability/readability 78/86; semantic key 67/86 (κ=0,0239); transcript 65/65
+trên tập cả hai đọc được và xác nhận đúng trường. R02 pha 2 đã tạo gói 46 ca,
+**chưa nhận phiếu pha 2**; R03 chưa nộp. [Intake và giới hạn](R02_REVIEW_INTAKE_20261116.md).
+
+Các bảng pha 2 bên dưới vẫn thuộc **COMPLETE_SINGLE_REVIEW_UNADJUDICATED**:
 Phần đánh giá cá nhân của bạn đã hoàn tất cả hai pha: **86/86 ô quan sát và
 46/46 ca đối chiếu output**. Không còn ca chưa nộp trong sample này.
 [Báo cáo chính](execution/master_01/ifv_descriptive_ece01b67a2f6af39.md) ·
 [Hậu kiểm](execution/master_01/ifv_20261115/analysis.md) ·
 [Bước tiếp theo](NEXT_ACTIONS.md)
 
-Đã chuẩn bị gói chấm offline R02/R03 và công cụ agreement theo
-[handoff](REVIEWER_HANDOFF_VI.md). Số reviewer ngoài thực nhận vẫn **0**;
-hai gói chưa phải hai người đã chấm. Phiếu cá nhân và các bảng dưới giữ nguyên.
+Gói chấm và thao tác gửi tiếp theo [handoff](REVIEWER_HANDOFF_VI.md).
+Phiếu cá nhân và các bảng dưới giữ nguyên; chưa có agreement pha 2.
 
 | Mục | Trạng thái đã kiểm |
 |---|---|
@@ -20,7 +26,7 @@ hai gói chưa phải hai người đã chấm. Phiếu cá nhân và các bản
 | Pointwise primary | 7 operational CONFIRMED_FAULT, 19 NO_FAULT, 16 INCONCLUSIVE; mẫu số có nhãn 26/42 |
 | Relation primary | 2 operational CONFIRMED_FAULT, 19 NO_FAULT, 21 INCONCLUSIVE; mẫu số có nhãn 21/42 |
 | Diagnostic | 4/4 INCONCLUSIVE; không gộp vào primary |
-| Thống kê | Chỉ mô tả subset; CI/p-value, recall quần thể, agreement và phút công: NA |
+| Thống kê pha 2 tác giả | Chỉ mô tả subset; CI/p-value, recall quần thể, agreement pha 2 và phút công: NA |
 | Gate | NO-GO cho confirmatory superiority; tiếp tục characterization và chuẩn bị protocol mới |
 
 Nhãn CONFIRMED_FAULT ở đây là trạng thái vận hành do quy tắc đã chốt gán cho

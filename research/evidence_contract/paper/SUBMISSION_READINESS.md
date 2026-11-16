@@ -1,5 +1,15 @@
 # EASE 2027 submission readiness
 
+Latest intake, 16 November: [R02 completed all 86 phase-1 slots](../R02_REVIEW_INTAKE_20261116.md).
+The organizer clarified that the reviewer is external and selected the author
+role by mistake; the correction is separate from the immutable export.
+Author/R02 phase-1 agreement is now available, with 19/86 semantic-key
+disagreements (Cohen kappa 0.0239). R02's own 46-case phase-2 ZIP is prepared,
+not completed; R03 is pending. No independent gold or superiority GO follows.
+The frozen paper's endpoint results remain the author's single-review pilot.
+Code, aggregate results and progress use **main as the sole branch**; earlier
+progress-branch and zero-external-review statements below describe prior milestones.
+
 16 November readiness milestone: [conditional representation analysis and actual
 historical parser executions](../READINESS_ANALYSIS_20261116.md) are complete.
 **260 Python tests and 6 subtests pass.** The [Emerging Results draft](output/pdf/emerging_20261116.pdf)

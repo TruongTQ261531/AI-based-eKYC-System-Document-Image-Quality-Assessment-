@@ -1,0 +1,80 @@
+{
+  "adjudicated_items": 0,
+  "author_phase1_snapshot": "00ff0a49d4df5a84c2d78511bcf2d9ed36e19945747a93c08d6788e3b9a9da79",
+  "complete_field_slots": 86,
+  "confirmatory_superiority": "NO_GO",
+  "effective_roles": [
+    "project_author",
+    "external_reviewer"
+  ],
+  "image_count": 31,
+  "incomplete_field_slots": 0,
+  "independent_gold_created": false,
+  "issued_job_version_binding_limitation": "Export contains packet ID and reviewer ID but no package job ID; exact ZIP revision cannot be proven from this export",
+  "issued_job_version_binding_verified": false,
+  "missing_field_slots": 0,
+  "model_calls": 0,
+  "original_packet_id": "e0819a7806fbc8d799b4a241f5d4ea58c55f96d014de2246f1bc1ed5e5650103",
+  "packet_binding_verified": true,
+  "phase1_disagreement_by_field": {
+    "address": {
+      "any_disagreement": 1,
+      "slots": 15
+    },
+    "category": {
+      "any_disagreement": 2,
+      "slots": 2
+    },
+    "category_code": {
+      "any_disagreement": 2,
+      "slots": 2
+    },
+    "dob": {
+      "any_disagreement": 1,
+      "slots": 8
+    },
+    "full_name": {
+      "any_disagreement": 2,
+      "slots": 8
+    },
+    "gender": {
+      "any_disagreement": 0,
+      "slots": 8
+    },
+    "id_number": {
+      "any_disagreement": 9,
+      "slots": 22
+    },
+    "school": {
+      "any_disagreement": 4,
+      "slots": 21
+    }
+  },
+  "phase1_disagreement_counts_by_dimension": {
+    "availability": 8,
+    "readability": 8,
+    "semantic_key_confirmed": 19
+  },
+  "phase1_disagreement_slots_any": 21,
+  "phase1_external_reviewers_per_organizer": 1,
+  "phase1_reviewers_total": 2,
+  "phase1_snapshot": "b25d59d918c7cd0ba01702bc0c16b3c19acd973245ab2c7ebe83352dcbeb074b",
+  "phase2_completed_reviewers_total": 1,
+  "phase2_external_completed_reviewers": 0,
+  "previous_protected_files": 2493,
+  "prior_exposure_counts": {
+    "no": 86
+  },
+  "raw_answers_changed": 0,
+  "raw_roles": [
+    "project_author",
+    "project_author"
+  ],
+  "reviewer_code": "R02",
+  "reviewer_independence_verified": false,
+  "role_correction": "role_correction.json",
+  "schema": "external-review-intake/1",
+  "source_file_sha256": "1d324ae5aefd6478137c0bf98218899c7728f02ca702f6dc492a8d79fcbc99b7",
+  "status": "PHASE1_COMPLETE_UNADJUDICATED",
+  "training_runs": 0
+}

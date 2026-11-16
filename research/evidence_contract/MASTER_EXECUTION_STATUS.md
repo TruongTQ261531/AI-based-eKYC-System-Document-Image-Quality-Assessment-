@@ -1,5 +1,13 @@
 # EASE 2027 · Master execution
 
+Mốc tiếp nhận R02 **16/11**: [86/86 mục pha 1 đã niêm phong](R02_REVIEW_INTAKE_20261116.md),
+1 người ngoài dự án theo xác nhận organizer; đính chính role riêng, không sửa
+phiếu. Đã tính agreement tác giả/R02 (21/86 mục bất đồng ít nhất một tiêu chí),
+tạo ZIP pha 2 riêng 46 ca/30 ảnh. R02 pha 2 và R03 chưa nộp. **23 tests PASS**,
+2.493 tài sản lịch sử giữ nguyên, báo cáo tác giả replay chính xác; không có
+inference/training, gold hoặc GO mới. GitHub dùng **main duy nhất**; phần nhắc
+branch progress và chưa có phiếu ngoài trong các mốc cũ bên dưới là lịch sử.
+
 Mốc readiness 16/11: [phân tích và kết quả](READINESS_ANALYSIS_20261116.md),
 [tìm kiếm phương pháp](METHODS_EVIDENCE_MAP_20261116.md). Đã chạy 255 cấu hình nguồn,
 164 injected control và 118 ca parser thực trên 5 phiên bản mã. Bản sửa 118/118,

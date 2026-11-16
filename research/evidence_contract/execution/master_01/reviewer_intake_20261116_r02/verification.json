@@ -1,0 +1,20 @@
+{
+  "cached_output_bindings": 92,
+  "diagnostic_cases": 4,
+  "historical_author_phase2_report_replayed": true,
+  "independence_verified": false,
+  "model_calls": 0,
+  "own_phase1_evidence_bindings": 92,
+  "phase1_agreement_replayed": true,
+  "phase1_slots": 86,
+  "phase2_cases": 46,
+  "portable_files": 35,
+  "portable_image_files": 30,
+  "primary_cases": 42,
+  "protected_files_unchanged": 2493,
+  "raw_answers_changed": 0,
+  "raw_bytes_and_answers_preserved": true,
+  "role_correction_separate": true,
+  "status": "PASS",
+  "training_runs": 0
+}

@@ -4,10 +4,17 @@ Cập nhật 16/11/2026. Không cần gửi toàn bộ project hoặc cài Pytho
 Gói điền phiếu cần **ảnh + giao diện + manifest**, không chỉ một JSON trống.
 Người chấm điền trên trình duyệt, rồi gửi lại JSON đã xuất.
 
+**Đã nhận R02 pha 1: 86/86 mục**, vai trò ngoài dự án do organizer đính chính
+riêng; phiếu gốc giữ nguyên. [Kết quả và giới hạn](R02_REVIEW_INTAKE_20261116.md).
+Gửi tiếp cho đúng người này **`local/reviewer_exports/r02_20261116/reviewer_R02_phase2.zip`**:
+46 ca (42 primary + 4 diagnostic), 30 file ảnh, khoảng 0,67 MB. Giải nén, mở
+`index.html`, chấm đủ rồi gửi lại JSON. Không cần gửi lại pha 1 hay toàn project.
+R03 vẫn dùng ZIP pha 1 v2 phía dưới. Không chuyển gói pha 2 của R02 cho R03.
+
 ## Bao nhiêu người là phù hợp?
 
-Không có số người chấm nào tự bảo đảm kết quả đúng. Pilot hiện có một tác giả
-đánh giá, giữ được provenance và số liệu mô tả nhưng chưa là gold độc lập.
+Không có số người chấm nào tự bảo đảm kết quả đúng. Pilot pha 2 hiện có một tác
+giả đánh giá; pha 1 đã có thêm R02, vẫn chưa là gold độc lập.
 Thêm người giúp đo bất đồng; vẫn phải kiểm hướng dẫn, lỗi annotation, nguồn
 tham chiếu và phân xử. Agreement cao cũng không tự chứng minh annotation đúng.
 [Phân tích chất lượng annotation](https://aclanthology.org/2024.cl-3.1/)
@@ -24,7 +31,8 @@ Thu agreement **trước phân xử**, trên cùng ảnh/ô/cặp. Báo exact ag
 Cohen kappa khi hai người và nominal Krippendorff alpha khi thích hợp; giữ
 NA khi không có biến thiên hoặc thiếu dữ liệu. Với transcript, báo exact match
 riêng, giữ O/0 khác nhau. Công cụ `task55.agreement` hiện hỗ trợ **pha 1**,
-nhưng chưa có JSON mới từ người ngoài nên hiện không có agreement thực để báo.
+đã có agreement tác giả/R02; xem báo cáo intake ở trên. Chưa có agreement giữa
+hai người ngoài vì R03 chưa nộp.
 Đối chiếu pha 2 cần nối các mã ca riêng từng reviewer về cùng frozen sample
 trên máy organizer; không ghép trực tiếp bằng case ID hoặc gộp thành gold.
 [Tài liệu alpha của tác giả](https://www.asc.upenn.edu/krippendorffs-alpha-reliability) ·
@@ -34,7 +42,7 @@ Nhiều người không thay được nhiều ID/layout/điều kiện chụp. P
 có ba ID; chưa thể dùng thêm người chấm để biến các view/field thành mẫu độc
 lập hoặc tự mở confirmatory.
 
-## Gửi gì ngay bây giờ?
+## Hai gói pha 1 đã phát trước khi nhận R02
 
 Hai ZIP được chuẩn bị riêng, khoảng 0,7 MB mỗi gói:
 
@@ -62,7 +70,7 @@ Không gửi kèm kết quả pilot, lựa chọn của tác giả hoặc bảng
 Nếu muốn nhận góp ý về phương pháp từ cùng người đó, thực hiện sau pha 1 hoặc
 khai đúng exposure. Không trao đổi đáp án giữa R02/R03 trước khi khóa riêng.
 
-## Pha 2 được gửi sau, không nằm trong ZIP hiện tại
+## Quy trình cấp pha 2 sau khi khóa pha 1
 
 Sau khi nhận JSON pha 1 của R02/R03, organizer import bằng công cụ hiện có.
 Khi đủ schema, snapshot của **chính người đó** được khóa rồi mới mở output:

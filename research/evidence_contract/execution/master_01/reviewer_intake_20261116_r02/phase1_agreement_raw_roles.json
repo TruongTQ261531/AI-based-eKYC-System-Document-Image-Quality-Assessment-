@@ -1,0 +1,52 @@
+{
+  "categorical": {
+    "availability": {
+      "alpha_unavailable_reason": null,
+      "cohen_kappa": 0.7421289355322337,
+      "exact_pairwise_agreement": 0.9069767441860465,
+      "nominal_krippendorff_alpha": 0.742905468896824,
+      "pairwise_comparisons": 86,
+      "units_with_multiple_ratings": 86
+    },
+    "readability": {
+      "alpha_unavailable_reason": null,
+      "cohen_kappa": 0.7421289355322337,
+      "exact_pairwise_agreement": 0.9069767441860465,
+      "nominal_krippendorff_alpha": 0.7430503380916604,
+      "pairwise_comparisons": 86,
+      "units_with_multiple_ratings": 86
+    },
+    "semantic_key_confirmed": {
+      "alpha_unavailable_reason": null,
+      "cohen_kappa": 0.023894862604540483,
+      "exact_pairwise_agreement": 0.7790697674418605,
+      "nominal_krippendorff_alpha": -0.018176120338452062,
+      "pairwise_comparisons": 86,
+      "units_with_multiple_ratings": 86
+    }
+  },
+  "complete_counts": [
+    86,
+    86
+  ],
+  "declared_output_exposure": [
+    "none",
+    "none"
+  ],
+  "declared_reviewer_count": 2,
+  "distinct_people_independently_verified": false,
+  "independent_gold_created": false,
+  "inter_rater_ci": null,
+  "model_calls": 0,
+  "planned_field_slots": 86,
+  "readable_transcript_exact_agreement": {
+    "common_readable_slots": 65,
+    "value": 1.0
+  },
+  "roles": [
+    "project_author",
+    "project_author"
+  ],
+  "schema": "phase1-agreement/1",
+  "scope": "descriptive agreement, not accuracy or adjudication"
+}

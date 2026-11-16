@@ -1,0 +1,15 @@
+{
+  "authority": "organizer clarification in user message on 2026-11-16",
+  "basis": "Organizer states reviewer did not participate in project development and selected the role by mistake",
+  "declared_output_exposure": "none",
+  "effective_role": "external_reviewer",
+  "exposure_independently_verified": false,
+  "observation_snapshot_sha256": "b25d59d918c7cd0ba01702bc0c16b3c19acd973245ab2c7ebe83352dcbeb074b",
+  "raw_declared_role": "project_author",
+  "raw_export_modified": false,
+  "reviewer_code": "R02",
+  "reviewer_independence_verified": false,
+  "schema": "reviewer-role-correction/1",
+  "source_answers_modified": false,
+  "submission_file_sha256": "1d324ae5aefd6478137c0bf98218899c7728f02ca702f6dc492a8d79fcbc99b7"
+}

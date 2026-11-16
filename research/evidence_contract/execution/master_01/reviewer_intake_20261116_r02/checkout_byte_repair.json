@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "git_blob_sha256": "be1a091e3086b5fbc34d44146c2256488ab798b7386ca1e3c9393f0179ef7471",
+      "path": "engineering/application_20261114/source/docs/document_recovery_and_fields.md",
+      "prior_CRLF_working_sha256": "ec0e57f737f4a7a8c897b3d9c19bfb8fd3a477e60ae9d43438be0156823b0e96",
+      "recorded_original_sha256": "be1a091e3086b5fbc34d44146c2256488ab798b7386ca1e3c9393f0179ef7471",
+      "restored_working_sha256": "be1a091e3086b5fbc34d44146c2256488ab798b7386ca1e3c9393f0179ef7471"
+    },
+    {
+      "git_blob_sha256": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+      "path": "engineering/application_20261114/source/ekyc/document_fields.py",
+      "prior_CRLF_working_sha256": "9dd31ee04d59dec31b60ec463383ea0499686cc4556b7ae9012ce8948ed6eb52",
+      "recorded_original_sha256": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+      "restored_working_sha256": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62"
+    },
+    {
+      "git_blob_sha256": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f",
+      "path": "engineering/application_20261114/source/scripts/audit_field_extraction.py",
+      "prior_CRLF_working_sha256": "be58f9faa5c036c36bc4a91f431990678dd3f6ae1ad60b94c5845ee79aa7a69c",
+      "recorded_original_sha256": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f",
+      "restored_working_sha256": "9cd419221f570200c915b019734efad0f5160961d41d2214d5003b02a6b3363f"
+    },
+    {
+      "git_blob_sha256": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8",
+      "path": "engineering/application_20261114/source/tests/test_document_fields.py",
+      "prior_CRLF_working_sha256": "e3e2c56905f0f369a98215192b38e70b1ca70d8d38202c46231f3c0e9f5434bc",
+      "recorded_original_sha256": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8",
+      "restored_working_sha256": "01c349c5cebad00801f48a4d89271d99551f2a1a57e00f5c3407fe94672166a8"
+    },
+    {
+      "git_blob_sha256": "44f901979a6dcf48743ec7bb1e328740925ced0fb4fa7bfb8bbcbb136cb1857e",
+      "path": "engineering/application_20261114/source_manifest.json",
+      "prior_CRLF_working_sha256": "5fd28e18ecb222b931e9ba3ed9b2f238ca0b45ccb5e7651ab11524a1b3466865",
+      "recorded_original_sha256": "44f901979a6dcf48743ec7bb1e328740925ced0fb4fa7bfb8bbcbb136cb1857e",
+      "restored_working_sha256": "44f901979a6dcf48743ec7bb1e328740925ced0fb4fa7bfb8bbcbb136cb1857e"
+    }
+  ],
+  "logic_changed": false,
+  "old_receipts_modified": false,
+  "prevention": "Targeted -text rules in .gitattributes",
+  "scope": "Five archived application files observed with CRLF checkout bytes before intake; original LF Git blob exactly matches historical receipts"
+}
