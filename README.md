@@ -16,6 +16,10 @@ weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
+Mốc mới 16/11: [phân tích readiness và kết quả chạy thực](research/evidence_contract/READINESS_ANALYSIS_20261116.md)
+giải thích A/flat bằng 255 cấu hình nguồn và 164 control; kiểm 2 lỗi parser lịch sử
+trên 118 ca với before/fix/revert. Có [evidence map phương pháp](research/evidence_contract/METHODS_EVIDENCE_MAP_20261116.md)
+và bản thảo Emerging riêng; chưa có claim superiority hoặc scientific GO mới.
 Xem [trạng thái master_01](research/evidence_contract/MASTER_EXECUTION_STATUS.md),
 [quyết định GO/NO-GO](research/evidence_contract/REVISED_GO_NO_GO.md) và
 [bản thảo paper](research/evidence_contract/paper/MANUSCRIPT_DRAFT.md).

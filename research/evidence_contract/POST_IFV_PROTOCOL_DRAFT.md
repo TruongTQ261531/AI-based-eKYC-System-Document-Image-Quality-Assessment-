@@ -1,5 +1,13 @@
 # Chuẩn bị prospective sau IFV · DRAFT_ONLY
 
+Amendment 16/11 sau [readiness audit](READINESS_ANALYSIS_20261116.md): không dùng
+thêm biến thể pilot để tìm superiority. Giả thuyết tiếp theo cần tách source
+information khỏi representation, validity, generation và diagnosis cost. Hai
+historical parser families là development, phải loại khỏi claim phát hiện lỗi
+chưa biết. Budget curve 500 hoán vị là trên pool đã chọn sau khi biết lỗi; không
+dùng nó để sizing như dữ liệu độc lập. Research cần cohort mới; draft Emerging
+có thể báo phân tích hữu hạn và giới hạn hiện có.
+
 Ngày 15/11/2026. Đây là đề xuất thiết kế development tiếp theo, được viết sau
 khi đã xem kết quả pilot. **Không phải preregistration của pilot, scientific GO,
 test lock hoặc quyền chạy confirmatory 6B/7B.** RQ1–3, sample, output và nhãn

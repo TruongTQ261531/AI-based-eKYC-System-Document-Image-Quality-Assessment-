@@ -1,5 +1,10 @@
 # Việc tiếp tục độc lập với phiếu đối chiếu
 
+Mốc readiness tiếp theo 16/11: [118 ca parser actual execution và phân tích A/flat](READINESS_ANALYSIS_20261116.md),
+[phương pháp có nguồn paper](METHODS_EVIDENCE_MAP_20261116.md). Hai sửa parser cũ
+được cô lập bằng hoàn tác riêng và witness tối giản; không có fix mới, model call
+hoặc training mới. Code ứng dụng và reader nghiên cứu được giữ tách biệt.
+
 Mốc không cần JSON feedback tiếp theo ngày 16/11 đã hoàn tất:
 [reference controls và prototype kiểm tham chiếu](REFERENCE_CONTROLS_20261116.md).
 Đã chạy 252 injected executions, khử trùng còn 131 so sánh/13 cặp pixel; có

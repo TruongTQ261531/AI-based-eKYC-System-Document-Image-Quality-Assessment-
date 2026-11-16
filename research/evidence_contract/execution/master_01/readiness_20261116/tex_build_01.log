@@ -1,0 +1,814 @@
+note: generating format "latex"
+note: downloading tectonic-format-latex.tex
+note: downloading xelatex.ini
+note: downloading latex.ltx
+note: downloading texsys.cfg
+note: downloading expl3.ltx
+note: downloading expl3-code.tex
+note: downloading cmr10.tfm
+note: downloading UnicodeData.txt
+note: downloading CaseFolding.txt
+note: downloading SpecialCasing.txt
+note: downloading fonttext.cfg
+note: downloading fonttext.ltx
+note: downloading omlenc.def
+note: downloading omsenc.def
+note: downloading ot1enc.def
+note: downloading t1enc.def
+note: downloading ts1enc.def
+note: downloading tuenc.def
+note: downloading tulmr.fd
+note: downloading tulmss.fd
+note: downloading tulmtt.fd
+note: downloading ts1lmr.fd
+note: downloading t1cmr.fd
+note: downloading ot1cmr.fd
+note: downloading ot1cmss.fd
+note: downloading ot1cmtt.fd
+note: downloading fontmath.cfg
+note: downloading fontmath.ltx
+note: downloading omlcmm.fd
+note: downloading omscmsy.fd
+note: downloading omxcmex.fd
+note: downloading ucmr.fd
+note: downloading preload.cfg
+note: downloading preload.ltx
+note: downloading cmex10.tfm
+note: downloading line10.tfm
+note: downloading linew10.tfm
+note: downloading lcircle10.tfm
+note: downloading lcirclew10.tfm
+note: downloading cmr5.tfm
+note: downloading cmr7.tfm
+note: downloading cmmi5.tfm
+note: downloading cmmi7.tfm
+note: downloading cmmi10.tfm
+note: downloading cmsy5.tfm
+note: downloading cmsy7.tfm
+note: downloading cmsy10.tfm
+note: downloading atveryend.sty
+note: downloading atveryend-ltx.sty
+note: downloading atbegshi.sty
+note: downloading atbegshi-ltx.sty
+note: downloading load-unicode-data.tex
+note: downloading hyphen.cfg
+note: downloading xebabel.def
+note: downloading language.dat
+note: downloading hyphen.tex
+note: downloading dumyhyph.tex
+note: downloading zerohyph.tex
+note: downloading dehypht-x-2022-03-16.tex
+note: downloading dehypht-x-2022-03-16.pat
+note: downloading dehyphn-x-2022-03-16.tex
+note: downloading dehyphn-x-2022-03-16.pat
+note: downloading loadhyph-af.tex
+note: downloading hyph-af.tex
+note: downloading hyph-quote-af.tex
+note: downloading loadhyph-grc.tex
+note: downloading hyph-grc.tex
+note: downloading ibyhyph.tex
+note: downloading loadhyph-hy.tex
+note: downloading hyph-hy.tex
+note: downloading loadhyph-eu.tex
+note: downloading hyph-eu.tex
+note: downloading loadhyph-be.tex
+note: downloading hyph-be.tex
+note: downloading hyph-quote-be.tex
+note: downloading loadhyph-bg.tex
+note: downloading hyph-bg.tex
+note: downloading loadhyph-ca.tex
+note: downloading hyph-ca.tex
+note: downloading loadhyph-zh-latn-pinyin.tex
+note: downloading hyph-zh-latn-pinyin.tex
+note: downloading loadhyph-cu.tex
+note: downloading hyph-cu.tex
+note: downloading loadhyph-cop.tex
+note: downloading hyph-cop.tex
+note: downloading loadhyph-hr.tex
+note: downloading hyph-hr.tex
+note: downloading loadhyph-cs.tex
+note: downloading hyph-cs.tex
+note: downloading loadhyph-da.tex
+note: downloading hyph-da.tex
+note: downloading loadhyph-nl.tex
+note: downloading hyph-nl.tex
+note: downloading loadhyph-en-gb.tex
+note: downloading hyph-en-gb.tex
+note: downloading loadhyph-en-us.tex
+note: downloading hyph-en-us.tex
+note: downloading loadhyph-eo.tex
+note: downloading hyph-eo.tex
+note: downloading loadhyph-et.tex
+note: downloading hyph-et.tex
+note: downloading loadhyph-mul-ethi.tex
+note: downloading hyph-mul-ethi.tex
+note: downloading loadhyph-fi.tex
+note: downloading hyph-fi.tex
+note: downloading loadhyph-fi-x-school.tex
+note: downloading hyph-fi-x-school.tex
+note: downloading loadhyph-fr.tex
+note: downloading hyph-fr.tex
+note: downloading hyph-quote-fr.tex
+note: downloading loadhyph-fur.tex
+note: downloading hyph-fur.tex
+note: downloading hyph-quote-fur.tex
+note: downloading loadhyph-gl.tex
+note: downloading hyph-gl.tex
+note: downloading loadhyph-ka.tex
+note: downloading hyph-ka.tex
+note: downloading loadhyph-de-1901.tex
+note: downloading hyph-de-1901.tex
+note: downloading loadhyph-de-1996.tex
+note: downloading hyph-de-1996.tex
+note: downloading loadhyph-de-ch-1901.tex
+note: downloading hyph-de-ch-1901.tex
+note: downloading loadhyph-el-polyton.tex
+note: downloading hyph-el-polyton.tex
+note: downloading loadhyph-el-monoton.tex
+note: downloading hyph-el-monoton.tex
+note: downloading loadhyph-hu.tex
+note: downloading hyph-hu.tex
+note: downloading loadhyph-is.tex
+note: downloading hyph-is.tex
+note: downloading loadhyph-as.tex
+note: downloading hyph-as.tex
+note: downloading loadhyph-bn.tex
+note: downloading hyph-bn.tex
+note: downloading loadhyph-gu.tex
+note: downloading hyph-gu.tex
+note: downloading loadhyph-hi.tex
+note: downloading hyph-hi.tex
+note: downloading loadhyph-kn.tex
+note: downloading hyph-kn.tex
+note: downloading loadhyph-ml.tex
+note: downloading hyph-ml.tex
+note: downloading loadhyph-mr.tex
+note: downloading hyph-mr.tex
+note: downloading loadhyph-or.tex
+note: downloading hyph-or.tex
+note: downloading loadhyph-pi.tex
+note: downloading hyph-pi.tex
+note: downloading loadhyph-pa.tex
+note: downloading hyph-pa.tex
+note: downloading loadhyph-ta.tex
+note: downloading hyph-ta.tex
+note: downloading loadhyph-te.tex
+note: downloading hyph-te.tex
+note: downloading loadhyph-id.tex
+note: downloading hyph-id.tex
+note: downloading loadhyph-ia.tex
+note: downloading hyph-ia.tex
+note: downloading loadhyph-ga.tex
+note: downloading hyph-ga.tex
+note: downloading loadhyph-it.tex
+note: downloading hyph-it.tex
+note: downloading hyph-quote-it.tex
+note: downloading loadhyph-kmr.tex
+note: downloading hyph-kmr.tex
+note: downloading loadhyph-la-x-classic.tex
+note: downloading hyph-la-x-classic.tex
+note: downloading loadhyph-la.tex
+note: downloading hyph-la.tex
+note: downloading loadhyph-la-x-liturgic.tex
+note: downloading hyph-la-x-liturgic.tex
+note: downloading loadhyph-lv.tex
+note: downloading hyph-lv.tex
+note: downloading loadhyph-lt.tex
+note: downloading hyph-lt.tex
+note: downloading loadhyph-mk.tex
+note: downloading hyph-mk.tex
+note: downloading loadhyph-mn-cyrl.tex
+note: downloading hyph-mn-cyrl.tex
+note: downloading loadhyph-mn-cyrl-x-lmc.tex
+note: downloading hyph-mn-cyrl-x-lmc.tex
+note: downloading loadhyph-nb.tex
+note: downloading hyph-nb.tex
+note: downloading hyph-no.tex
+note: downloading loadhyph-nn.tex
+note: downloading hyph-nn.tex
+note: downloading loadhyph-oc.tex
+note: downloading hyph-oc.tex
+note: downloading hyph-quote-oc.tex
+note: downloading loadhyph-pms.tex
+note: downloading hyph-pms.tex
+note: downloading hyph-quote-pms.tex
+note: downloading loadhyph-pl.tex
+note: downloading hyph-pl.tex
+note: downloading loadhyph-pt.tex
+note: downloading hyph-pt.tex
+note: downloading loadhyph-ro.tex
+note: downloading hyph-ro.tex
+note: downloading loadhyph-rm.tex
+note: downloading hyph-rm.tex
+note: downloading hyph-quote-rm.tex
+note: downloading loadhyph-ru.tex
+note: downloading hyph-ru.tex
+note: downloading loadhyph-sa.tex
+note: downloading hyph-sa.tex
+note: downloading loadhyph-sr-latn.tex
+note: downloading hyph-sh-latn.tex
+note: downloading hyph-sh-cyrl.tex
+note: downloading loadhyph-sr-cyrl.tex
+note: downloading loadhyph-sk.tex
+note: downloading hyph-sk.tex
+note: downloading loadhyph-sl.tex
+note: downloading hyph-sl.tex
+note: downloading loadhyph-es.tex
+note: downloading hyph-es.tex
+note: downloading loadhyph-sv.tex
+note: downloading hyph-sv.tex
+note: downloading loadhyph-th.tex
+note: downloading hyph-th.tex
+note: downloading loadhyph-tr.tex
+note: downloading hyph-tr.tex
+note: downloading loadhyph-tk.tex
+note: downloading hyph-tk.tex
+note: downloading loadhyph-uk.tex
+note: downloading hyph-uk.tex
+note: downloading hyph-quote-uk.tex
+note: downloading loadhyph-hsb.tex
+note: downloading hyph-hsb.tex
+note: downloading loadhyph-cy.tex
+note: downloading hyph-cy.tex
+note: downloading latex2e-first-aid-for-external-files.ltx
+note: Running TeX ...
+note: downloading acmart.cls
+note: downloading xkeyval.sty
+note: downloading xkeyval.tex
+note: downloading xkvutils.tex
+note: downloading keyval.tex
+note: downloading xstring.sty
+note: downloading xstring.tex
+note: downloading iftex.sty
+note: downloading amsart.cls
+note: downloading amsmath.sty
+note: downloading lmroman10-regular.otf
+Fontconfig error: Cannot load default config file: No such file: (null)
+note: downloading tex-text.tec
+note: downloading lmroman9-regular.otf
+note: downloading amsopn.sty
+note: downloading amstext.sty
+note: downloading amsgen.sty
+note: downloading amsbsy.sty
+note: downloading umsa.fd
+note: downloading amsfonts.sty
+note: downloading microtype.sty
+note: downloading keyval.sty
+note: downloading etoolbox.sty
+note: downloading microtype-xetex.def
+note: downloading microtype.cfg
+note: downloading booktabs.sty
+note: downloading refcount.sty
+note: downloading ltxcmds.sty
+note: downloading infwarerr.sty
+note: downloading totpages.sty
+note: downloading everyshi.sty
+note: downloading environ.sty
+note: downloading trimspaces.sty
+note: downloading textcase.sty
+note: downloading natbib.sty
+note: downloading hyperxmp.sty
+note: downloading kvoptions.sty
+note: downloading kvsetkeys.sty
+note: downloading pdfescape.sty
+note: downloading pdftexcmds.sty
+note: downloading stringenc.sty
+note: downloading intcalc.sty
+note: downloading ifmtarg.sty
+note: downloading ifthen.sty
+note: downloading ifdraft.sty
+note: downloading ifluatex.sty
+note: downloading hyperref.sty
+note: downloading kvdefinekeys.sty
+note: downloading hycolor.sty
+note: downloading letltxmacro.sty
+note: downloading auxhook.sty
+note: downloading pd1enc.def
+note: downloading etexcmds.sty
+note: downloading puenc.def
+note: downloading url.sty
+note: downloading pzdr.tfm
+note: downloading bitset.sty
+note: downloading bigintcalc.sty
+note: downloading hxetex.def
+note: downloading rerunfilecheck.sty
+note: downloading uniquecounter.sty
+note: downloading graphicx.sty
+note: downloading graphics.sty
+note: downloading trig.sty
+note: downloading graphics.cfg
+note: downloading xetex.def
+note: downloading xcolor.sty
+note: downloading color.cfg
+note: downloading geometry.sty
+note: downloading ifvtex.sty
+note: downloading manyfoot.sty
+note: downloading nccfoots.sty
+note: downloading libertine.sty
+note: downloading zi4.sty
+note: downloading newtxmath.sty
+note: downloading fontenc.sty
+note: downloading t1lmr.fd
+note: downloading ec-lmr9.tfm
+note: downloading ifxetex.sty
+note: downloading centernot.sty
+note: downloading binhex.tex
+note: downloading textcomp.sty
+note: downloading fontspec.sty
+note: downloading xparse.sty
+note: downloading expl3.sty
+note: downloading l3backend-xetex.def
+note: downloading fontspec-xetex.sty
+note: downloading fontspec.cfg
+note: downloading lmroman9-bold.otf
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 8.99997pt
+note: downloading LinLibertine_R.otf
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_RB.otf
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_RI.otf
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_RBI.otf
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 8.99997pt
+note: downloading LinBiolinum_R.otf
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinBiolinum_RB.otf
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinBiolinum_RI.otf
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinBiolinum_RBO.otf
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 8.99997pt
+note: downloading LinLibertine_RZ.otf
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_RZI.otf
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 8.99997pt
+note: downloading LinLibertine_DR.otf
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 8.99997pt
+note: downloading LinLibertine_M.otf
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_MB.otf
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_MO.otf
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_MBO.otf
+note: downloading LinBiolinum_K.otf
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 8.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 8.99997pt
+note: downloading LinLibertine_I.otf
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading LinLibertine_R.tex
+note: downloading LinBiolinum_R.tex
+note: downloading LinBiolinum_K.tex
+note: downloading LinLibertine_I.tex
+note: downloading LKey.tex
+note: downloading inconsolata.fontspec
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 8.99997pt
+note: downloading Inconsolatazi4-Regular.otf
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+note: downloading Inconsolatazi4-Bold.otf
+note: downloading caption.sty
+note: downloading caption3.sty
+note: downloading caption-ams-smf.sto
+note: downloading float.sty
+note: downloading comment.sty
+note: downloading fancyhdr.sty
+note: downloading balance.sty
+note: downloading omlnxlmi.fd
+note: downloading ts1cmr.fd
+note: downloading untxexa.fd
+note: downloading lmsntxsy.fd
+note: downloading lmxntxexx.fd
+warning: emerging_20261116.tex:12: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+note: downloading ot1minlibertine.fd
+warning: emerging_20261116.tex:12: 
+Requested font "MinLibReg-ot1" at 7.3pt
+note: downloading MinLibReg-ot1.tfm
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "MinLibReg-ot1" at 5.5pt
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "nxlmi7" at 7.3pt
+note: downloading nxlmi7.tfm
+warning: emerging_20261116.tex:12:  -> nxlmi7
+warning: emerging_20261116.tex:12: Requested font "nxlmi5" at 5.5pt
+note: downloading nxlmi5.tfm
+warning: emerging_20261116.tex:12:  -> nxlmi5
+warning: emerging_20261116.tex:12: Requested font "ntxsy7" at 7.3pt
+note: downloading ntxsy7.tfm
+warning: emerging_20261116.tex:12:  -> ntxsy7
+warning: emerging_20261116.tex:12: Requested font "ntxsy5" at 5.5pt
+note: downloading ntxsy5.tfm
+warning: emerging_20261116.tex:12:  -> ntxsy5
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 7.3pt
+note: downloading ntxexx.tfm
+warning: emerging_20261116.tex:12:  -> ntxexx
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexx
+note: downloading msam7.tfm
+warning: emerging_20261116.tex:12: 
+Requested font "msam7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> msam7
+warning: emerging_20261116.tex:12: Requested font "msam5" at 5.5pt
+note: downloading msam5.tfm
+warning: emerging_20261116.tex:12:  -> msam5
+note: downloading umsb.fd
+warning: emerging_20261116.tex:12: 
+Requested font "msbm7" at 7.3pt
+note: downloading msbm7.tfm
+warning: emerging_20261116.tex:12:  -> msbm7
+warning: emerging_20261116.tex:12: Requested font "msbm5" at 5.5pt
+note: downloading msbm5.tfm
+warning: emerging_20261116.tex:12:  -> msbm5
+note: downloading untxmia.fd
+warning: emerging_20261116.tex:12: 
+Requested font "nxlmia" at 7.3pt
+note: downloading nxlmia.tfm
+warning: emerging_20261116.tex:12:  -> nxlmia
+warning: emerging_20261116.tex:12: Requested font "nxlmia" at 5.5pt
+warning: emerging_20261116.tex:12:  -> nxlmia
+note: downloading untxsym.fd
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsym" at 7.3pt
+note: downloading ntxsym.tfm
+warning: emerging_20261116.tex:12:  -> ntxsym
+warning: emerging_20261116.tex:12: Requested font "ntxsym" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsym
+note: downloading untxsyc.fd
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsyc" at 7.3pt
+note: downloading ntxsyc.tfm
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxsyc" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 7.3pt
+note: downloading ntxexa.tfm
+warning: emerging_20261116.tex:12:  -> ntxexa
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexa
+note: downloading nameref.sty
+note: downloading gettitlestring.sty
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: emerging_20261116.tex:17: Overfull \hbox (6.13728pt too wide) in paragraph at lines 17--17
+warning: emerging_20261116.tex:21: Overfull \hbox (1.26pt too wide) in paragraph at lines 20--21
+warning: emerging_20261116.tex:31: Overfull \hbox (3.06154pt too wide) in paragraph at lines 30--31
+warning: emerging_20261116.tex:35: Requested font "MinLibReg-ot1" at 9.0pt
+warning: emerging_20261116.tex:35:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:35: Requested font "nxlmi" at 9.0pt
+note: downloading nxlmi.tfm
+warning: emerging_20261116.tex:35:  -> nxlmi
+warning: emerging_20261116.tex:35: Requested font "ntxsy" at 9.0pt
+note: downloading ntxsy.tfm
+warning: emerging_20261116.tex:35:  -> ntxsy
+warning: emerging_20261116.tex:35: Requested font "ntxexx" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexx
+warning: emerging_20261116.tex:35: Requested font "msam10" at 9.0pt
+note: downloading msam10.tfm
+warning: emerging_20261116.tex:35:  -> msam10
+note: downloading mt-msa.cfg
+warning: emerging_20261116.tex:35: 
+Requested font "msbm10" at 9.0pt
+note: downloading msbm10.tfm
+warning: emerging_20261116.tex:35:  -> msbm10
+note: downloading mt-msb.cfg
+warning: emerging_20261116.tex:35: 
+Requested font "nxlmia" at 9.0pt
+warning: emerging_20261116.tex:35:  -> nxlmia
+warning: emerging_20261116.tex:35: Requested font "ntxsym" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsym
+warning: emerging_20261116.tex:35: Requested font "ntxsyc" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsyc
+warning: emerging_20261116.tex:35: Requested font "ntxexa" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexa
+warning: emerging_20261116.tex:38: Underfull \vbox (badness 3078) has occurred while \output is active
+warning: emerging_20261116.tex:38: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: emerging_20261116.tex:43: Overfull \hbox (18.19579pt too wide) in paragraph at lines 42--43
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:86: Overfull \hbox (4.29152pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:86: Overfull \hbox (2.11052pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:93: Overfull \hbox (6.15453pt too wide) in paragraph at lines 92--93
+warning: emerging_20261116.tex:97: Overfull \hbox (1.35977pt too wide) in paragraph at lines 96--97
+warning: emerging_20261116.tex:102: Overfull \hbox (7.05453pt too wide) in paragraph at lines 101--102
+note: downloading se-pdfdoc.def
+note: downloading se-utf32be.def
+note: Running BibTeX on emerging_20261116.aux ...
+note: downloading ACM-Reference-Format.bst
+note: warnings were issued by BibTeX; use --print and/or --keep-logs for details.
+note: Rerunning TeX because bibtex was run ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 8.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 8.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 8.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 8.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 8.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 8.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 8.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 8.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: emerging_20261116.tex:12: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:12: 
+Requested font "MinLibReg-ot1" at 7.3pt
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "MinLibReg-ot1" at 5.5pt
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "nxlmi7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> nxlmi7
+warning: emerging_20261116.tex:12: Requested font "nxlmi5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> nxlmi5
+warning: emerging_20261116.tex:12: Requested font "ntxsy7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsy7
+warning: emerging_20261116.tex:12: Requested font "ntxsy5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsy5
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxexx
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexx
+warning: emerging_20261116.tex:12: 
+Requested font "msam7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> msam7
+warning: emerging_20261116.tex:12: Requested font "msam5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> msam5
+warning: emerging_20261116.tex:12: 
+Requested font "msbm7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> msbm7
+warning: emerging_20261116.tex:12: Requested font "msbm5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> msbm5
+warning: emerging_20261116.tex:12: 
+Requested font "nxlmia" at 7.3pt
+warning: emerging_20261116.tex:12:  -> nxlmia
+warning: emerging_20261116.tex:12: Requested font "nxlmia" at 5.5pt
+warning: emerging_20261116.tex:12:  -> nxlmia
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsym" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsym
+warning: emerging_20261116.tex:12: Requested font "ntxsym" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsym
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsyc" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxsyc" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxexa
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexa
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: emerging_20261116.tex:17: Overfull \hbox (6.13728pt too wide) in paragraph at lines 17--17
+warning: emerging_20261116.tex:21: Overfull \hbox (1.26pt too wide) in paragraph at lines 20--21
+warning: emerging_20261116.tex:31: Overfull \hbox (3.06154pt too wide) in paragraph at lines 30--31
+warning: emerging_20261116.tex:35: Requested font "MinLibReg-ot1" at 9.0pt
+warning: emerging_20261116.tex:35:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:35: Requested font "nxlmi" at 9.0pt
+warning: emerging_20261116.tex:35:  -> nxlmi
+warning: emerging_20261116.tex:35: Requested font "ntxsy" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsy
+warning: emerging_20261116.tex:35: Requested font "ntxexx" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexx
+warning: emerging_20261116.tex:35: Requested font "msam10" at 9.0pt
+warning: emerging_20261116.tex:35:  -> msam10
+warning: emerging_20261116.tex:35: 
+Requested font "msbm10" at 9.0pt
+warning: emerging_20261116.tex:35:  -> msbm10
+warning: emerging_20261116.tex:35: 
+Requested font "nxlmia" at 9.0pt
+warning: emerging_20261116.tex:35:  -> nxlmia
+warning: emerging_20261116.tex:35: Requested font "ntxsym" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsym
+warning: emerging_20261116.tex:35: Requested font "ntxsyc" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsyc
+warning: emerging_20261116.tex:35: Requested font "ntxexa" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexa
+warning: emerging_20261116.tex:38: Underfull \vbox (badness 3078) has occurred while \output is active
+warning: emerging_20261116.tex:38: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: emerging_20261116.tex:43: Overfull \hbox (18.19579pt too wide) in paragraph at lines 42--43
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:86: Overfull \hbox (4.29152pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:86: Overfull \hbox (2.11052pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:93: Overfull \hbox (6.15453pt too wide) in paragraph at lines 92--93
+warning: emerging_20261116.tex:97: Overfull \hbox (1.35977pt too wide) in paragraph at lines 96--97
+warning: emerging_20261116.tex:102: Overfull \hbox (7.05453pt too wide) in paragraph at lines 101--102
+note: Rerunning TeX because "emerging_20261116.out" changed ...
+warning: libertine.sty:308: 
+Requested font "[LinLibertine_R.otf]/OT" at 8.99997pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_RBI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:308: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 8.99997pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:319: Requested font "[LinBiolinum_RBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 8.99997pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZ.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:338: Requested font "[LinLibertine_RZI.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 8.99997pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT" at 9.00003pt
+warning: libertine.sty:361: Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 8.99997pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_M.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MB.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:435: Requested font "[LinLibertine_MBO.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 8.99997pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT" at 9.00003pt
+warning: libertine.sty:436: Requested font "[LinBiolinum_K.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 8.99997pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT" at 9.00003pt
+warning: libertine.sty:437: Requested font "[LinLibertine_I.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: acmart.cls:815: 
+Requested font "[Inconsolatazi4-Regular.otf]/OT" at 8.99997pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Regular.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: acmart.cls:815: Requested font "[Inconsolatazi4-Bold.otf]/OT:script=latn;language=dflt;" at 9.00003pt
+warning: emerging_20261116.tex:12: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:12: 
+Requested font "MinLibReg-ot1" at 7.3pt
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "MinLibReg-ot1" at 5.5pt
+warning: emerging_20261116.tex:12:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:12: Requested font "nxlmi7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> nxlmi7
+warning: emerging_20261116.tex:12: Requested font "nxlmi5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> nxlmi5
+warning: emerging_20261116.tex:12: Requested font "ntxsy7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsy7
+warning: emerging_20261116.tex:12: Requested font "ntxsy5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsy5
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxexx
+warning: emerging_20261116.tex:12: Requested font "ntxexx" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexx
+warning: emerging_20261116.tex:12: 
+Requested font "msam7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> msam7
+warning: emerging_20261116.tex:12: Requested font "msam5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> msam5
+warning: emerging_20261116.tex:12: 
+Requested font "msbm7" at 7.3pt
+warning: emerging_20261116.tex:12:  -> msbm7
+warning: emerging_20261116.tex:12: Requested font "msbm5" at 5.5pt
+warning: emerging_20261116.tex:12:  -> msbm5
+warning: emerging_20261116.tex:12: 
+Requested font "nxlmia" at 7.3pt
+warning: emerging_20261116.tex:12:  -> nxlmia
+warning: emerging_20261116.tex:12: Requested font "nxlmia" at 5.5pt
+warning: emerging_20261116.tex:12:  -> nxlmia
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsym" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsym
+warning: emerging_20261116.tex:12: Requested font "ntxsym" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsym
+warning: emerging_20261116.tex:12: 
+Requested font "ntxsyc" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxsyc" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxsyc
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 7.3pt
+warning: emerging_20261116.tex:12:  -> ntxexa
+warning: emerging_20261116.tex:12: Requested font "ntxexa" at 5.5pt
+warning: emerging_20261116.tex:12:  -> ntxexa
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinBiolinum_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 17.28pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RI.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:17: Requested font "[LinLibertine_RB.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: emerging_20261116.tex:17: Overfull \hbox (6.13728pt too wide) in paragraph at lines 17--17
+warning: emerging_20261116.tex:21: Overfull \hbox (1.26pt too wide) in paragraph at lines 20--21
+warning: emerging_20261116.tex:31: Overfull \hbox (3.06154pt too wide) in paragraph at lines 30--31
+warning: emerging_20261116.tex:35: Requested font "MinLibReg-ot1" at 9.0pt
+warning: emerging_20261116.tex:35:  -> MinLibReg-ot1
+warning: emerging_20261116.tex:35: Requested font "nxlmi" at 9.0pt
+warning: emerging_20261116.tex:35:  -> nxlmi
+warning: emerging_20261116.tex:35: Requested font "ntxsy" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsy
+warning: emerging_20261116.tex:35: Requested font "ntxexx" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexx
+warning: emerging_20261116.tex:35: Requested font "msam10" at 9.0pt
+warning: emerging_20261116.tex:35:  -> msam10
+warning: emerging_20261116.tex:35: 
+Requested font "msbm10" at 9.0pt
+warning: emerging_20261116.tex:35:  -> msbm10
+warning: emerging_20261116.tex:35: 
+Requested font "nxlmia" at 9.0pt
+warning: emerging_20261116.tex:35:  -> nxlmia
+warning: emerging_20261116.tex:35: Requested font "ntxsym" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsym
+warning: emerging_20261116.tex:35: Requested font "ntxsyc" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxsyc
+warning: emerging_20261116.tex:35: Requested font "ntxexa" at 9.0pt
+warning: emerging_20261116.tex:35:  -> ntxexa
+warning: emerging_20261116.tex:38: Underfull \vbox (badness 3078) has occurred while \output is active
+warning: emerging_20261116.tex:38: Requested font "[LinLibertine_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 6.0pt
+warning: emerging_20261116.tex:43: Overfull \hbox (18.19579pt too wide) in paragraph at lines 42--43
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 9.0pt
+warning: emerging_20261116.tex:84: Requested font "[LinBiolinum_R.otf]/OT:script=latn;language=dflt;+tnum;+lnum;mapping=tex-text;" at 7.0pt
+warning: emerging_20261116.tex:86: Overfull \hbox (5.9835pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:86: Overfull \hbox (1.674pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:86: Overfull \hbox (7.80301pt too wide) in paragraph at lines 85--86
+warning: emerging_20261116.tex:93: Overfull \hbox (6.15453pt too wide) in paragraph at lines 92--93
+warning: emerging_20261116.tex:97: Overfull \hbox (1.35977pt too wide) in paragraph at lines 96--97
+warning: emerging_20261116.tex:102: Overfull \hbox (7.05453pt too wide) in paragraph at lines 101--102
+note: Running xdvipdfmx ...
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: downloading pdftex.map
+note: downloading kanjix.map
+note: downloading ckx.map
+note: downloading texglyphlist.txt
+note: downloading pdfglyphlist.txt
+note: downloading glyphlist.txt
+note: downloading 7t.enc
+note: downloading MinLibReg.pfb
+note: downloading ntxsy.vf
+note: downloading txsys.tfm
+note: downloading txsys.pfb
+note: downloading txex-bar.tfm
+note: downloading txex-bar.pfb
+note: downloading nxlmia.vf
+note: downloading LibertineMathRM.tfm
+note: downloading LibertineMathRM.pfb
+note: downloading txmiaSTbb.tfm
+note: downloading txmiaSTbb.pfb
+note: downloading txmiaX.tfm
+note: downloading txmiaX.pfb
+note: downloading nxlmi.vf
+note: downloading LibertineMathMI.tfm
+note: downloading LibertineMathMI.pfb
+note: downloading NewTXMI.tfm
+note: downloading NewTXMI.pfb
+note: downloading stxscr.tfm
+note: downloading stxscr.pfb
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.log` (62.134765625 KiB)
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.aux` (3.5400390625 KiB)
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.pdf` (90.328125 KiB)
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.bbl` (7.30078125 KiB)
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.blg` (647 B)
+note: Writing `D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\local\master_01\readiness_20261116\pdf_build_01\emerging_20261116.out` (2.4130859375 KiB)

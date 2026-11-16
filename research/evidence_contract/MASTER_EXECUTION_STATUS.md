@@ -1,5 +1,17 @@
 # EASE 2027 · Master execution
 
+Mốc readiness 16/11: [phân tích và kết quả](READINESS_ANALYSIS_20261116.md),
+[tìm kiếm phương pháp](METHODS_EVIDENCE_MAP_20261116.md). Đã chạy 255 cấu hình nguồn,
+164 injected control và 118 ca parser thực trên 5 phiên bản mã. Bản sửa 118/118,
+bản cũ 42/118; chỉ 2 lỗi lịch sử đã biết. A/flat khớp 64/64 primary control nhưng
+có 11 ngoại lệ ở miền boundary; không claim tương đương phổ quát. Có verifier
+stdlib tái chạy 596 parser calls. Không inference/training/phiếu mới; scientific
+gate vẫn NO_GO_SUPERIORITY. [Receipt mốc](execution/master_01/readiness_20261116/README.md).
+Các số test và trạng thái ở những mốc cũ bên dưới thuộc lịch sử riêng của chúng.
+Kiểm cuối mốc readiness: **260 Python + 6 subtests PASS**, 460 tài sản không đổi;
+[PDF Emerging 3 trang](paper/output/pdf/emerging_20261116.pdf) đã kiểm trực quan,
+[gói replay](paper/readiness_replay_20261116.zip) chạy độc lập sau giải nén.
+
 Mốc tiếp tục không chờ feedback **16/11/2026** đã hoàn tất
 [reference controls](REFERENCE_CONTROLS_20261116.md): 252 lượt injected, 131 so sánh
 khác nhau/13 cặp pixel; prototype reference-bound và baseline cùng thông tin có

@@ -1,5 +1,12 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Mốc readiness 16/11 giữ **NO_GO_SUPERIORITY**. Phân tích quyết định giải thích
+A/flat trong miền có điều kiện, đồng thời lưu 11 counterexample ở boundary.
+Hai lỗi parser nay có chứng cứ historical fix/revert trên mã chạy thực; đây là
+known-fault development, không phải A phát hiện lỗi mới. Bản thảo Emerging riêng
+thu hẹp claim, chưa được xác nhận đủ novelty hoặc sẵn sàng nộp.
+[Chi tiết gap, kết quả và tiêu chí đóng](READINESS_ANALYSIS_20261116.md).
+
 Mốc reference controls 16/11 không thay GO: counterexample của union và shared
 reference đã được tái hiện trên injected fixtures. Bound prototype cần reference
 đúng và không hơn baseline cùng reference ở kênh field. Chưa có external approval,

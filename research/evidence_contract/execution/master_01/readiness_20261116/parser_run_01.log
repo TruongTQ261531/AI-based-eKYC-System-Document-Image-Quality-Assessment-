@@ -1,0 +1,45 @@
+{
+  "status": "PASS_KNOWN_FAULT_REPRODUCTION",
+  "cases": 118,
+  "unique_inputs": 115,
+  "method_totals": {
+    "before": {
+      "passed": 42,
+      "total": 118
+    },
+    "fixed": {
+      "passed": 118,
+      "total": 118
+    },
+    "revert_custom_single_character": {
+      "passed": 92,
+      "total": 118
+    },
+    "revert_conflicting_scalar_name": {
+      "passed": 68,
+      "total": 118
+    },
+    "revert_both": {
+      "passed": 42,
+      "total": 118
+    }
+  },
+  "historical_faults": {
+    "custom_single_character": {
+      "authored_variants": 26,
+      "independent_faults": 1,
+      "all_fix_revert_witnesses": true
+    },
+    "conflicting_scalar_name": {
+      "authored_variants": 50,
+      "independent_faults": 1,
+      "all_fix_revert_witnesses": true
+    }
+  },
+  "unexpected_cases": [],
+  "parser_executions": {
+    "matrix": 590,
+    "delta_debugging": 18,
+    "timing": 17700
+  }
+}

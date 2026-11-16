@@ -1,0 +1,2723 @@
+[
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": []
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": []
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": []
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "REMOVED",
+    "reduced_state": "REMOVED",
+    "source_states": [
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "REMOVED",
+    "reduced_state": "REMOVED",
+    "source_states": [
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "REMOVED",
+    "reduced_state": "REMOVED",
+    "source_states": [
+      "removed",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "removed",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "removed",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "unknown",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "unknown",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "SUPPORTED",
+    "reduced_state": "SUPPORTED",
+    "source_states": [
+      "matching",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "matching",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "removed",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "unknown",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "matching",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "removed"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "unknown"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "matching"
+    ]
+  },
+  {
+    "coverage": "complete",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "limited",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "conflicting"
+    ]
+  },
+  {
+    "coverage": "unknown",
+    "equivalent": true,
+    "graph_state": "UNKNOWN",
+    "reduced_state": "UNKNOWN",
+    "source_states": [
+      "conflicting",
+      "conflicting",
+      "conflicting"
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+{
+  "all_A_flat_equal": 153,
+  "cases_sha256": "f5e83c244e130473e0ca7c84beefa4290017880a7ff93a6eef64f06ae837ff5c",
+  "confirmatory": false,
+  "flat_counterexamples": [
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "matching",
+      "before": "matching",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "wrong",
+      "before": "matching",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "matching",
+      "before": "wrong",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "wrong",
+      "before": "wrong",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "matching",
+      "before": "empty",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "wrong",
+      "before": "empty",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "matching",
+      "before": "malformed",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "A_flat": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "common_mutation_gate",
+        "verdict": "INCONCLUSIVE"
+      },
+      "after": "wrong",
+      "before": "malformed",
+      "diagnostic": null,
+      "scenario": "C1_limited"
+    },
+    {
+      "A": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "validation_not_bound_to_graph_mutation_contract",
+        "verdict": "INVALID_TEST"
+      },
+      "A_flat": {
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "after": "wrong",
+      "before": "matching",
+      "diagnostic": "graph_binding",
+      "scenario": "binding_diagnostic"
+    },
+    {
+      "A": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "validation_not_bound_to_graph_mutation_contract",
+        "verdict": "INVALID_TEST"
+      },
+      "A_flat": {
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "after": "wrong",
+      "before": "matching",
+      "diagnostic": "mutation_binding",
+      "scenario": "binding_diagnostic"
+    },
+    {
+      "A": {
+        "alarm": false,
+        "categories": [],
+        "confirmed": false,
+        "fault": false,
+        "reason": "output_image_or_reader_binding_mismatch",
+        "verdict": "INVALID_TEST"
+      },
+      "A_flat": {
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "confirmed": false,
+        "fault": false,
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "verdict": "CANDIDATE_VIOLATION"
+      },
+      "after": "wrong",
+      "before": "matching",
+      "diagnostic": "origin_binding",
+      "scenario": "binding_diagnostic"
+    }
+  ],
+  "frozen_sources_sha256": {
+    "research\\evidence_contract\\contracts.py": "7264238f6a64c94ac2734465a091017f8713e982910de68d453387bed0bd660b",
+    "research\\evidence_contract\\oracle.py": "de56d40776d0bc6c183285b0bbeea898e5522ff312172fc9d61cdc5e55da86f5",
+    "research\\evidence_contract\\source_graph.py": "901489fdf95c754cf1c8dbf99007630d7f798d110b8bae6fbf796f0d39369466",
+    "research\\evidence_contract\\task5\\baselines.py": "1015608658d3dfbb09127b98ce8cb66e0a7194fa5472022df5b590092f792cd8"
+  },
+  "human_labels_created": 0,
+  "model_calls": 0,
+  "module_sha256": "329de95328113a3248cd0f9e915306e69b01bdb2866072ff98868bc2412ee76e",
+  "oracle_controls": 164,
+  "plan_sha256": "db4df5eac28aa8db9ddb7b6e5826d9a8ed89726ffcc378800800246235624d6b",
+  "primary_A_flat_equal": 64,
+  "primary_controls": 64,
+  "reduced_A_equal": 164,
+  "reduction_assumptions": [
+    "Default policy; no independent gold/certificate/version quad",
+    "All upstream validity, bindings, source states and typed assessment retained",
+    "Analyzed fields annotated; finite text/control domains only",
+    "Same verdict/alarm boundary, not diagnostic explanation or generation cost"
+  ],
+  "remaining_value_of_graph": "Generation, validity, evidence provenance and explanations need separate cost/correctness experiments",
+  "schema": "representation-boundary-audit/1",
+  "scope": "FINITE_DEVELOPMENT_REDUCTION",
+  "source_enumeration": {
+    "cases": 255,
+    "domain": "0..3 text sources, four abstract source states, three coverage states; no image truth claim",
+    "equivalent": 255
+  },
+  "states_sha256": "015188997ea51bf02cf3ca15697175a96a8b7f1b4f64f60065f385b65f4c358a",
+  "training_steps": 0,
+  "universal_equivalence_claim": false
+}

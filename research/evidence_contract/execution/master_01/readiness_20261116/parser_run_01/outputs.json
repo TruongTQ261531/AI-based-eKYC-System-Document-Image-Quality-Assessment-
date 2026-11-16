@@ -1,0 +1,6996 @@
+[
+  {
+    "case_id": "conflicting_name/000",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/001",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/006",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/007",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/008",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/009",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/010",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/011",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/012",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/013",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/014",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/015",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/016",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/017",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/018",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/019",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/020",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/021",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/022",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/023",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/024",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/025",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/026",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/027",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/028",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/029",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/030",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/031",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI NGUYỄN VĂN AN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/032",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/033",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/034",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/035",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/036",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/037",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/038",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/039",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/040",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/041",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/042",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/043",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "TRAN MINH BINH LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH LE THI MAI"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/044",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/045",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/046",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "conflicting_name/047",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "LE THI MAI TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI TRAN MINH BINH"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "single_character/000",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/001",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/006",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/007",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/008",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/009",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "7"
+        },
+        "labelled_items": {
+          "Đơn vị": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/010",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/011",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/012",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/013",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/014",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/015",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/016",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/017",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/018",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/019",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "A"
+        },
+        "labelled_items": {
+          "Nhóm": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/020",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/021",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "7"
+        },
+        "labelled_items": {
+          "Nhóm": "7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/022",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "single_character/023",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "same_name/000",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/001",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/006",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/007",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/008",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/009",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/010",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "same_name/011",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/000",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/001",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "TRAN MINH BINH"
+        },
+        "labelled_items": {
+          "Họ tên": "TRAN MINH BINH"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "split_name/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "LE THI MAI"
+        },
+        "labelled_items": {
+          "Họ tên": "LE THI MAI"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/000",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/001",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "AB"
+        },
+        "labelled_items": {
+          "Đơn vị": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/006",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/007",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "Đ7"
+        },
+        "labelled_items": {
+          "Đơn vị": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/008",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/009",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/010",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/011",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/012",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/013",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "AB"
+        },
+        "labelled_items": {
+          "Nhóm": "AB"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/014",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "multi_character/015",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "Đ7"
+        },
+        "labelled_items": {
+          "Nhóm": "Đ7"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/000",
+    "outputs": {
+      "before": {
+        "document_type": "student_card",
+        "failures": [],
+        "fields": {
+          "class_name": "12A3",
+          "course": "2024 - 2027",
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Khóa học": "2024 - 2027",
+          "Lớp": "12A3",
+          "Mã học sinh / sinh viên": "HS20260042"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "student_card",
+        "failures": [],
+        "fields": {
+          "class_name": "12A3",
+          "course": "2024 - 2027",
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Khóa học": "2024 - 2027",
+          "Lớp": "12A3",
+          "Mã học sinh / sinh viên": "HS20260042"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "student_card",
+        "failures": [],
+        "fields": {
+          "class_name": "12A3",
+          "course": "2024 - 2027",
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Khóa học": "2024 - 2027",
+          "Lớp": "12A3",
+          "Mã học sinh / sinh viên": "HS20260042"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "student_card",
+        "failures": [],
+        "fields": {
+          "class_name": "12A3",
+          "course": "2024 - 2027",
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Khóa học": "2024 - 2027",
+          "Lớp": "12A3",
+          "Mã học sinh / sinh viên": "HS20260042"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "student_card",
+        "failures": [],
+        "fields": {
+          "class_name": "12A3",
+          "course": "2024 - 2027",
+          "full_name": "NGUYỄN VĂN AN",
+          "student_id": "HS20260042"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN",
+          "Khóa học": "2024 - 2027",
+          "Lớp": "12A3",
+          "Mã học sinh / sinh viên": "HS20260042"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/001",
+    "outputs": {
+      "before": {
+        "document_type": "driver_license",
+        "failures": [],
+        "fields": {
+          "expiry_date": "2034-03-02",
+          "id_number": "A1234567",
+          "issue_date": "2024-03-02",
+          "license_class": "B2"
+        },
+        "labelled_items": {
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02",
+          "Số giấy tờ": "A1234567"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "driver_license",
+        "failures": [],
+        "fields": {
+          "expiry_date": "2034-03-02",
+          "id_number": "A1234567",
+          "issue_date": "2024-03-02",
+          "license_class": "B2"
+        },
+        "labelled_items": {
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02",
+          "Số giấy tờ": "A1234567"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "driver_license",
+        "failures": [],
+        "fields": {
+          "expiry_date": "2034-03-02",
+          "id_number": "A1234567",
+          "issue_date": "2024-03-02",
+          "license_class": "B2"
+        },
+        "labelled_items": {
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02",
+          "Số giấy tờ": "A1234567"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "driver_license",
+        "failures": [],
+        "fields": {
+          "expiry_date": "2034-03-02",
+          "id_number": "A1234567",
+          "issue_date": "2024-03-02",
+          "license_class": "B2"
+        },
+        "labelled_items": {
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02",
+          "Số giấy tờ": "A1234567"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "driver_license",
+        "failures": [],
+        "fields": {
+          "expiry_date": "2034-03-02",
+          "id_number": "A1234567",
+          "issue_date": "2024-03-02",
+          "license_class": "B2"
+        },
+        "labelled_items": {
+          "Hạng giấy phép": "B2",
+          "Ngày cấp": "2024-03-02",
+          "Ngày hết hạn": "2034-03-02",
+          "Số giấy tờ": "A1234567"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/002",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/003",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [
+          "unexpected_field:full_name",
+          "unexpected_observed_fields"
+        ],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN TRẦN THỊ LAN"
+        },
+        "passed": false
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/004",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/005",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "full_name": "NGUYỄN VĂN AN"
+        },
+        "labelled_items": {
+          "Họ tên": "NGUYỄN VĂN AN"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/006",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_19198252dad4": "A"
+        },
+        "labelled_items": {
+          "Đơn vị": "A"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Đơn vị"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/007",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "B"
+        },
+        "labelled_items": {
+          "Nhóm": "B"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "extra_c6b6e312c4e6": "B"
+        },
+        "labelled_items": {
+          "Nhóm": "B"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [
+          "labelled_value:Nhóm"
+        ],
+        "fields": {},
+        "labelled_items": {},
+        "passed": false
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/008",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/009",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "id_number": "001234567890"
+        },
+        "labelled_items": {
+          "Số giấy tờ": "001234567890"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/010",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {
+          "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "labelled_items": {
+          "Địa chỉ": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+        },
+        "passed": true
+      }
+    }
+  },
+  {
+    "case_id": "original_matrix/011",
+    "outputs": {
+      "before": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "fixed": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_both": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_conflicting_scalar_name": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      },
+      "revert_custom_single_character": {
+        "document_type": "unknown",
+        "failures": [],
+        "fields": {},
+        "labelled_items": {},
+        "passed": true
+      }
+    }
+  }
+]

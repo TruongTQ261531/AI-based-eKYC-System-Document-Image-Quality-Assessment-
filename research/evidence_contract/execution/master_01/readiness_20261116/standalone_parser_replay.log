@@ -1,0 +1,13 @@
+{
+  "status": "PASS_PINNED_PROGRAM_REPLAY",
+  "cases": 118,
+  "subjects": 5,
+  "actual_replay_parser_calls": 596,
+  "historical_fault_families": 2,
+  "new_faults_discovered": 0,
+  "model_calls": 0,
+  "human_reference_validated": false,
+  "timing_reproduced": false,
+  "budget_curve_independently_replayed": false,
+  "limitation": "Checks actual parser outputs and attribution against authored requirements; not unseen-fault discovery or A superiority"
+}

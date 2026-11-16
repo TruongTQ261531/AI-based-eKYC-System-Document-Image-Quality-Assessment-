@@ -1,0 +1,27 @@
+{
+  "schema": "public-readiness-package/1",
+  "archive": "paper/readiness_replay_20261116.zip",
+  "archive_sha256": "630aeb3ac0fbe79f5903ce88cb1348d98834f2f71ec16a6b29b03fb1f983d018",
+  "bytes": 148417,
+  "files": 22,
+  "manifest_sha256": "6d6d0fbff4fc34694053dfd47217bfb8a9357ddf6fb54c0d571f722f8c3b9f34",
+  "byte_verification": true,
+  "isolated_extracted_replay": {
+    "status": "PASS_PINNED_PROGRAM_REPLAY",
+    "cases": 118,
+    "subjects": 5,
+    "actual_replay_parser_calls": 596,
+    "historical_fault_families": 2,
+    "new_faults_discovered": 0,
+    "model_calls": 0,
+    "human_reference_validated": false,
+    "timing_reproduced": false,
+    "budget_curve_independently_replayed": false,
+    "limitation": "Checks actual parser outputs and attribution against authored requirements; not unseen-fault discovery or A superiority"
+  },
+  "model_calls": 0,
+  "private_review_files_included": false,
+  "image_files_included": false,
+  "downloaded_compiler_included": false,
+  "final_anonymous_release": false
+}

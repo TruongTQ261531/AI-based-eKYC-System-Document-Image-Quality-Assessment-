@@ -1,0 +1,112 @@
+% Internal emerging-results draft, not submitted or accepted.
+% Author approval, novelty review, anonymous release and disclosure remain open.
+\documentclass[sigconf,review,anonymous]{acmart}
+\acmConference[EASE 2027]{The 31st International Conference on Evaluation and Assessment in Software Engineering}{15--18 June, 2027}{Hanoi, Vietnam}
+\acmYear{2027}
+\copyrightyear{2027}
+\setcopyright{none}
+\acmDOI{}
+\acmISBN{}
+\setlength{\emergencystretch}{1em}
+\title[Evidence Matching in a Metamorphic Oracle]{When Evidence Matching Explains a Metamorphic Oracle: A Development Study in Document Extraction}
+\author{Anonymous Author(s)}
+
+\begin{document}
+\begin{abstract}
+Metamorphic tests for document extraction depend on which sources survive a transformation. We examine whether an explicit graph adds detection value once a flat baseline receives the same information. In a frozen pilot, both methods agree on 120 scheduled primary comparisons. A conditional reduction explains this agreement; 255 abstract source configurations and 164 injected boundary controls expose its limits, including eleven cases where the methods differ. Separately, exact patch reversions reproduce two historical parser defects on authored OCR-token inputs: the original program passes 42 of 118 cases and the repaired program passes all 118. These are selected known faults, not discoveries by the graph oracle. The study provides executable counterexamples and fault-provenance witnesses, and motivates separate evaluation of source collection, validity, representation, and diagnosis cost. It establishes neither population accuracy nor comparative graph superiority.
+\end{abstract}
+\ccsdesc[500]{Software and its engineering~Software testing and debugging}
+\ccsdesc[300]{Computing methodologies~Artificial intelligence}
+\keywords{metamorphic testing, test oracles, document extraction, evidence provenance, empirical software engineering}
+\maketitle
+
+\section{Problem and Research Questions}
+An extraction system may correctly recover a document number after its main printed occurrence is masked: a duplicate field or machine-readable zone can remain. Conversely, preserving value pixels does not guarantee that their semantic context survives. A test oracle therefore needs a justified transformation precondition and a clear distinction between a reading error and an unsupported assertion. The test-oracle problem and metamorphic testing already provide the general motivation~\cite{barr2015oracle,segura2016survey}; we do not claim these ideas as new.
+
+Our starting system represents alternative sources with OR and required components within each source with AND. Its contract oracle, denoted A, was intended to improve testing reliability. A stronger baseline changed the interpretation: when source availability and reference matching were retained, a flat checker reproduced all primary pilot verdicts. Alarm reduction also partly resulted from refusing to evaluate relations whose original output was already wrong. This motivated a development audit rather than an additional superiority experiment on the same data.
+
+We ask two focused questions. \textbf{RQ1:} Which retained information explains agreement between graph and flat oracle decisions, and where does that agreement fail? \textbf{RQ2:} What can actual historical program revisions establish beyond injected-output controls? The second question concerns evidence quality and attribution; it is not a test of A's fault-discovery performance. The contribution is a bounded case analysis with executable counterexamples and reproducible patch witnesses. Its relevance beyond this system remains an empirical question.
+
+\section{Study Design and Evidence Types}
+\subsection{Frozen pilot and endpoints}
+The original pilot contains 93 cached actual-reader outputs and 132 scheduled comparisons: 120 primary and 12 diagnostic. Deduplication leaves 108 primary and 12 diagnostic comparisons. Repeated views and readers are not independent documents. Three readers include two related OCR pipelines; the reviewed primary subset covers only three physical identifiers. All methods consume the same cached outputs.
+
+Contract C1 concerns assertion after complete removal. C2 concerns reading from a retained alternative source. C3 checks a retained neighboring field after a target mask. C4 checks an explicitly permitted evidence-preserving geometry operation. C3 and C4 require a correct original output. A pointwise baseline B3 instead evaluates the follow-up reading whenever its reference is supported. The flat ablation retains B3's source and reference information and adds the original-correctness condition for C3/C4. Thus, it removes graph representation at the decision boundary, not upstream annotation or validation effort.
+
+A single project author completed a two-stage review. Of 42 primary reviewed comparisons, 26 have operational pointwise labels and 21 have relation labels; the others remain inconclusive. A detects two of seven labeled pointwise faults with 18/26 decision coverage; B3 detects seven with 26/26 coverage. Twelve of A's fourteen primary alarms remain unresolved. A literal consistency audit flags fifteen primary comparisons. Withholding their labels in a post-hoc sensitivity panel removes the apparent false-alarm difference. These observations are unadjudicated, selected development evidence. We do not use them as external gold for the new experiments.
+
+\subsection{Finite boundary audit}
+The development plan precedes the new executions but follows knowledge of the pilot and parser fixes. It is not preregistration of an unseen evaluation. We enumerate three evidence scopes (complete, limited, unknown), zero to three text sources, and four source states (removed, unknown, supported matching value, supported conflicting value). This yields $3(1+4+16+64)=255$ abstract configurations. Component geometry is only scaffolding for source-state objects; these configurations are not independently validated images.
+
+For oracle checks, ten constructed scenarios cover complete removal, limited inventory, valid and invalid backups, retained and lost context, supported geometry, poisoned references, and incomplete erasure. Each has four original-output modes crossed with four follow-up modes: matching, wrong, empty, and malformed. Four additional metadata-corruption probes test graph, mutation, origin, and image bindings, giving 164 controls. All outputs are injected. None is new neural inference. The first four eligible C1--C4 scenarios comprise 64 primary controls; the remainder probe boundaries.
+
+\subsection{Historical parser revisions}
+We preserve the exact pre-fix program from Git and the archived repaired application, then derive two single-patch reversions and a combined reversion. The combined reversion has the same abstract syntax tree as the historical program. SHA-256 binds all subject files before execution. No research reader or oracle is replaced.
+
+One defect concatenated conflicting scalar names instead of abstaining, including when a specialized detector supplied a guess. The other rejected custom label values containing only one character. Requirements are author-written and selected after these defects were known. The factorial panel varies names, Vietnamese and English labels, ordering, specialized guesses, irrelevant rows, ASCII and full-width colons, and one-character values. Controls include repeated identical names, split labels, multi-character values, and the original twelve regression cases. There are 118 cases and 115 distinct inputs.
+
+Each of five programs executes every case. A family is attributed to a patch only if the historical program fails, the fixed program passes, the corresponding single reversion fails, the other reversion passes, and the combined reversion fails. Whole-row delta debugging reduces one witness per family while preserving the requirement precondition~\cite{zeller2002simplifying}. The result is 1-minimal under this constraint, not a globally minimal string.
+
+\section{Conditional Reduction and Counterexamples}
+Let $s$ denote the follow-up field's source state, $p$ whether its output is nonempty, $c_1$ whether its supported reference matches that output, and $c_0$ whether the original output is correct. Assume valid and correctly bound inputs, usable structured outputs, the default required-field policy, and no external adjudication or certificate promotion. Also assume C1 has $s=\mathrm{REMOVED}$, C2--C4 have $s=\mathrm{SUPPORTED}$, and C4 uses an allowed operator. Then the candidate-alarm conditions are:
+\[
+\begin{array}{ll}
+\mathrm{C1}:&p,\\
+\mathrm{C2}:&\neg c_1,\\
+\mathrm{C3/C4}:&c_0\ \wedge\ \neg c_1.
+\end{array}
+\]
+For C3/C4, $\neg c_0$ produces an inconclusive verdict, not a pass. Substituting the same predicates into A and the flat ablation yields the same verdict on this domain. This follows by inspecting each contract branch; it is a conditional implementation reduction, not a theorem about arbitrary graph-based testing. Typed matching and the evidence that supplies $s,c_0,c_1$ remain necessary.
+
+All 255 source-state configurations agree with the corresponding flat aggregation. All 64 primary controls agree between A and flat. Across all 164 controls, agreement is 153/164. Eight differences arise when C1's listed sources are removed but inventory completeness is unproven: A raises an explicitly unverified candidate for nonempty output, while flat abstains. Three differences arise from corrupted graph, mutation, or origin bindings that A rejects more strictly. The corrupted image-binding probe is rejected by both. These differences concern eligibility and integrity; they do not establish better model-fault detection.
+
+A predicate implementation retaining the additional integrity and limited-inventory rules reproduces A's verdict in 164/164 controls. It reuses upstream state and typed assessment and is an explanatory reduction, not independently obtained truth. The controls do not exhaust source precision, all policies, external certificates, or adjudication behavior. The original 120/120 agreement is therefore consistent with the implementation structure, while universal equivalence would be false.
+
+\section{Historical Fault Results and Budget Sensitivity}
+\begin{table}[t]
+\centering
+\caption{Actual parser executions on 118 authored cases. Reversions start from the repaired program.}
+\label{tab:parser}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Program & Cases passing\\
+\midrule
+Historical & 42/118\\
+Repaired & 118/118\\
+Revert one-character patch & 92/118\\
+Revert scalar-name patch & 68/118\\
+Revert both & 42/118\\
+\bottomrule
+\end{tabular}
+\end{table}
+Table~\ref{tab:parser} shows that both fixes have isolated witnesses. The 50 name cases and 26 one-character cases are variants of two known fault families; they are not 76 independent defects. The remaining 42 control cases pass on every version. Minimization removes irrelevant rows, leaving one custom label/value row and two conflicting name rows. A standalone standard-library verifier re-executes the pinned subjects and checks all saved outputs and both minimal witnesses. This reproduction validates the stated program behavior against authored requirements, not those requirements' external validity.
+
+We also compare uniform random ordering with round-robin sampling of authored input kinds over 500 seeded permutations of the 115-input pool. The budget is the number of inputs tested against one program. At budget two, the observed fraction finding both known families is 20.0\% for random and 10.6\% for round-robin. At budget five it is 68.2\% and 73.8\%; at budget ten, 93.0\% and 100\%. Thus, even within this selected pool, one policy does not dominate at every budget. Input kinds were designed after the faults were known, so these are finite-pool development measurements, not unbiased discovery probabilities.
+
+The main matrix uses 590 parser calls and minimization uses 18. Thirty timed repetitions per program add 17,700 calls. Median batch time for the 118 cases is 19.82 ms for the historical program and 19.84 ms for the repaired program on the measured host. Timing includes token construction and requirement checks in a warm process. Subject order is sequential. It excludes OCR, loading, annotation, and human diagnosis; it supports no speedup or end-to-end cost claim.
+
+\section{Implications and Related Work}
+The oracle problem and metamorphic testing are established fields~\cite{barr2015oracle,segura2016survey}. GenMorph evaluates false-alarm and missed-fault objectives and filters candidate relations~\cite{ayerdi2024genmorph}. MR-Coupler combines functional coupling with amplification and mutation-based validation~\cite{xu2026mrcoupler}. These methods motivate evaluating eligibility and rejection behavior alongside alarms; they are not empirical comparators in our study.
+
+Document grounding also predates this work: LMDX associates extracted entities with document locations~\cite{perot2024lmdx}. Our analysis concerns the evidence supplied to an external test oracle. Improving that evidence can improve both graph and flat methods; attributing the improvement to representation would be misleading. Likewise, prior research studies the relationship between mutants and real faults~\cite{just2014mutants}. It motivates keeping injected controls separate from actual historical revisions, without assuming that either generalizes automatically to natural neural failures.
+
+Three practical lessons follow. First, hold information, validity, and endpoints constant before attributing a benefit to graph representation. Second, report abstention and sensitivity alongside false alarms: a relation that cannot assess an already-wrong original may miss a pointwise follow-up fault. Third, publish fault-family provenance and patch/revert witnesses when claiming software defects. Repeated views, malformed controls, and row variants answer different questions and should not share an inflated sample-size denominator.
+
+\balance
+\section{Limitations and Next Evaluation}
+\textbf{Construct validity.} Authored source states and token requirements are not independent human observations. Shared inventory or matching errors can affect both methods. The reduction preserves this shared information and cannot establish its truth. No graph generation-cost or explanation-quality advantage is measured.
+
+\textbf{Internal validity.} The two parser defects and all input factors were selected after fixes. The parser panel does not show that A discovered these faults and does not evaluate a neural model. Single-patch isolation supports causal attribution within this implementation, not a general fault taxonomy. The timing order and host restrict performance interpretation.
+
+\textbf{Conclusion and external validity.} The pilot has few independent identifiers and correlated readers. The new finite controls cover a declared domain, and the historical panel has two selected families. We report no population confidence intervals, significance tests, or universal superiority. Larger counts of variants do not solve these limitations.
+
+A subsequent study should separate prospective test generation, independently checked validity, and diagnostic effort. It should freeze information-matched baselines and measure valid distinct tests and verified fault families per budget, including annotation and human triage. A separate document corpus with diverse layouts, scripts, and capture conditions would address transfer; for example, MIDV-2020 provides varied mock documents~\cite{bulatov2022midv}. Its published annotations do not by themselves certify every transformed-source precondition. Independent reference validation and a declared target effect are needed before choosing a confirmatory sample size.
+
+\section{Conclusion and Artifact Status}
+For this implementation, the primary graph-oracle decisions are explained by retained source, validity, and reading predicates. Boundary probes show why the reduction must be conditional. Actual historical patch reversions add two reproducible defect witnesses, while leaving graph fault-discovery claims open. The current evidence supports a focused development analysis and a prospective evaluation design, not comparative superiority.
+
+Code, hashes, cases, outputs, and replay instructions are prepared as development artifacts. An anonymous release and author review remain pending; no public identifying repository link is included in this draft. AI assistance was used for coding, analysis organization, and drafting. Authors must verify the complete text, artifacts, citations, and the final disclosure before submission. This document has not been submitted.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references,readiness_references}
+\end{document}

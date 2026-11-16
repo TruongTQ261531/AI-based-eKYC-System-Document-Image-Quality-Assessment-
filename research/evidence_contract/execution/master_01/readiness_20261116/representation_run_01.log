@@ -1,0 +1,282 @@
+{
+  "source_enumeration": {
+    "cases": 255,
+    "equivalent": 255,
+    "domain": "0..3 text sources, four abstract source states, three coverage states; no image truth claim"
+  },
+  "oracle_controls": 164,
+  "primary_controls": 64,
+  "primary_A_flat_equal": 64,
+  "all_A_flat_equal": 153,
+  "reduced_A_equal": 164,
+  "flat_counterexamples": [
+    {
+      "scenario": "C1_limited",
+      "before": "matching",
+      "after": "matching",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "matching",
+      "after": "wrong",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "wrong",
+      "after": "matching",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "wrong",
+      "after": "wrong",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "empty",
+      "after": "matching",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "empty",
+      "after": "wrong",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "malformed",
+      "after": "matching",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "C1_limited",
+      "before": "malformed",
+      "after": "wrong",
+      "diagnostic": null,
+      "A": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "UNSUPPORTED_DECLARED_SOURCES",
+          "VALUE_MISMATCH_REFERENCE"
+        ],
+        "reason": "assertion_after_declared_sources_removed_scope_unknown",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "INCONCLUSIVE",
+        "alarm": false,
+        "categories": [],
+        "reason": "common_mutation_gate",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "binding_diagnostic",
+      "before": "matching",
+      "after": "wrong",
+      "diagnostic": "graph_binding",
+      "A": {
+        "verdict": "INVALID_TEST",
+        "alarm": false,
+        "categories": [],
+        "reason": "validation_not_bound_to_graph_mutation_contract",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "binding_diagnostic",
+      "before": "matching",
+      "after": "wrong",
+      "diagnostic": "mutation_binding",
+      "A": {
+        "verdict": "INVALID_TEST",
+        "alarm": false,
+        "categories": [],
+        "reason": "validation_not_bound_to_graph_mutation_contract",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "confirmed": false,
+        "fault": false
+      }
+    },
+    {
+      "scenario": "binding_diagnostic",
+      "before": "matching",
+      "after": "wrong",
+      "diagnostic": "origin_binding",
+      "A": {
+        "verdict": "INVALID_TEST",
+        "alarm": false,
+        "categories": [],
+        "reason": "output_image_or_reader_binding_mismatch",
+        "confirmed": false,
+        "fault": false
+      },
+      "A_flat": {
+        "verdict": "CANDIDATE_VIOLATION",
+        "alarm": true,
+        "categories": [
+          "VALUE_MISMATCH"
+        ],
+        "reason": "post_image_visible_reference_not_temporal_fault_proof",
+        "confirmed": false,
+        "fault": false
+      }
+    }
+  ]
+}

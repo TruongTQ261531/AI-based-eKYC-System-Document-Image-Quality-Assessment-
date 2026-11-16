@@ -1,5 +1,11 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+Mốc readiness 16/11 đã bổ sung [phân tích gap và thực nghiệm](READINESS_ANALYSIS_20261116.md):
+255 cấu hình nguồn, 164 control, 118 ca parser/2 lỗi lịch sử với patch-revert.
+CFP Research, Short/Emerging và RENE đã kiểm lại; project đúng chủ đề nhưng
+chưa đủ cho superiority. Có draft Emerging tập trung parity/validity/provenance;
+mục tiêu Research và yêu cầu cohort độc lập vẫn giữ. [Evidence map](METHODS_EVIDENCE_MAP_20261116.md).
+
 Cập nhật 16/11/2026, Asia/Bangkok. Đây là lịch làm việc đề xuất từ trạng thái
 đã kiểm; ngày nội bộ là mục tiêu, phụ thuộc người đánh giá và dữ liệu thực nhận.
 Không tính phần trăm hoàn thành chung vì phạm vi thực nghiệm chưa khóa.

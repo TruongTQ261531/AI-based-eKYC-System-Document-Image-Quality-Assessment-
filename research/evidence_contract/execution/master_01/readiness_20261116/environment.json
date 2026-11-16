@@ -1,0 +1,9 @@
+{
+  "local_date": "2026-11-16",
+  "machine": "AMD64",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "runtime": "Existing project venv; no model import or training",
+  "task_timezone": "Asia/Bangkok"
+}

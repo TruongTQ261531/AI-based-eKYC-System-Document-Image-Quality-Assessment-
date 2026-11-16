@@ -1,0 +1,45 @@
+{
+  "acmart_version": "1.83 (2022-02-19; bundled official ACM class)",
+  "bibliography_sha256": {
+    "readiness_references.bib": "c9dd4f9c13bab68782a0634e19b74aa0c0b8ff38a59620daf9737ec6d96d1014",
+    "references.bib": "3eb5206e35204e727e9598e28f06890fa45a8d3898f7e9e6acc9310c67844e5d"
+  },
+  "build": "pdf_build_04",
+  "cached_build": true,
+  "compiler": "Tectonic 0.17.0",
+  "compiler_archive_sha256": "f61ce51f0b0ade1015b7de7ef368541c5424e9756ecbd0d7af97d6d48030845f",
+  "compiler_executable_sha256": "99ffcfdbf1ebf8bdda9e791942e3d06aedb12463fddc33f07de6f5211c8bf08d",
+  "compiler_release": "https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.17.0",
+  "corrected_build_attempts": [
+    "build_01: horizontal overflows and placeholder DOI/ISBN",
+    "build_02: orphan last reference line",
+    "build_03: one vertical overflow and stale total-page text",
+    "pdf_check_01: pdftotext executable unavailable; replaced with bundled pypdf"
+  ],
+  "final_extra_tex_passes": 3,
+  "manuscript_status": "INTERNAL_EMERGING_RESULTS_DRAFT_NOT_SUBMITTED",
+  "metadata_no_identifying_author": true,
+  "missing_characters": false,
+  "overflow_warnings": false,
+  "pages": 3,
+  "pdf": "paper/output/pdf/emerging_20261116.pdf",
+  "pdf_sha256": "353f3362bf849046c1b88278402911e07521a36e2acd871c525ac95fa0e446c3",
+  "remaining": [
+    "Author/novelty review",
+    "Final anonymous supplement and rights review",
+    "Recheck current official ACM class and CFP before submission",
+    "Scientific claims restricted to development evidence"
+  ],
+  "residual_warnings": [
+    "Underfull boxes and informational font requests; rendered pages inspected"
+  ],
+  "schema": "acm-pdf-build/1",
+  "shell_escape_disabled": true,
+  "source": "paper/emerging_20261116.tex",
+  "source_sha256": "bcc8819e540d04eedd25d782f67731fcd7e1da2cb6a9c25df9227021ff261d72",
+  "text_identifier_scan_pass": true,
+  "undefined_citations": false,
+  "visual_review": "Three final pages inspected at 105 dpi: no clipping, overlaps, missing glyphs or orphan reference page; ACM reference correctly states 3 pages.",
+  "visual_review_all_pages": true,
+  "within_short_track_six_page_limit": true
+}

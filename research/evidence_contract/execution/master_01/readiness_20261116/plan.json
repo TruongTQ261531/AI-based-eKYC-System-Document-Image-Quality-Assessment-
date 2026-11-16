@@ -1,0 +1,76 @@
+{
+  "budgets": {
+    "budget_curve_permutations": 500,
+    "holdout": "No new holdout or claims of unseen data. Plan and examples use already-known defects.",
+    "latency_repeats": 30,
+    "model_calls": 0,
+    "training_steps": 0
+  },
+  "experiments": {
+    "controls": "Same-name duplicate, split label, multi-character custom values, full original 12-case regression matrix.",
+    "historical_parser_faults": "Execute pre-fix and archived fixed code plus exact individual reversions, with authored OCR-token inputs. Source before must match Git 4110f22 and preserved November14 bytes. Two known fault families, post-fix selected development controls.",
+    "input_factors": {
+      "conflict_orders": [
+        "forward",
+        "reverse"
+      ],
+      "custom_labels": [
+        "Đơn vị",
+        "Nhóm"
+      ],
+      "custom_noise_rows": [
+        0,
+        2
+      ],
+      "custom_values": [
+        "A",
+        "7",
+        "Đ"
+      ],
+      "name_labels": [
+        "Họ và tên",
+        "Full name"
+      ],
+      "names": [
+        "NGUYỄN VĂN AN",
+        "TRAN MINH BINH",
+        "LE THI MAI"
+      ],
+      "noise_rows": [
+        0,
+        2
+      ],
+      "separators": [
+        ":",
+        "："
+      ],
+      "specialized_guess": [
+        false,
+        true
+      ]
+    },
+    "metrics": [
+      "actual output failures",
+      "per-family fix/revert witness",
+      "known-good alerts",
+      "fault-family yield at equal input budgets",
+      "execution time excluding model and human review",
+      "delta-debugged 1-minimal token witnesses"
+    ],
+    "representation": "Finite enumeration of source-state summaries and frozen A/flat verdict behavior; document assumptions and counterexamples; no universal graph advantage claimed."
+  },
+  "frozen_A_replaced": false,
+  "human_answers_generated": 0,
+  "local_date": "2026-11-16",
+  "not_confirmatory": true,
+  "protected_assets": 460,
+  "protected_manifest_sha256": "5fe4ca1d15552908565acb649dbe0423706fe3f217c364ae9f9878e8c3a0db3b",
+  "schema": "readiness-closure-plan/1",
+  "scope": "POST_PILOT_DEVELOPMENT_AND_CRITICAL_REVIEW",
+  "search_scope": "Primary papers and official methods/CFP sources; targeted evidence map, not exhaustive systematic review",
+  "tracks": [
+    "Research",
+    "Short/Emerging",
+    "RENE"
+  ]
+}

@@ -1,5 +1,17 @@
 # EASE 2027 submission readiness
 
+16 November readiness milestone: [conditional representation analysis and actual
+historical parser executions](../READINESS_ANALYSIS_20261116.md) are complete.
+**260 Python tests and 6 subtests pass.** The [Emerging Results draft](output/pdf/emerging_20261116.pdf)
+now compiles to **3 pages** in ACM anonymous review format and all rendered pages
+were inspected. No overfull boxes, missing glyphs or undefined references remain.
+[Build receipt](../execution/master_01/readiness_20261116/pdf_build_receipt.json).
+The [22-file public replay archive](readiness_replay_20261116.zip) passes an
+isolated extracted run with 596 actual parser calls. It is a development archive,
+not the final anonymous submission supplement. Author/novelty review, final
+anonymity, rights and scientific adequacy remain open. Research superiority is
+still NO-GO; the new draft does not replace that gate or the frozen pilot.
+
 Additional feedback-independent development on 16 November validated the
 [reference-boundary prototype and constructed controls](../REFERENCE_CONTROLS_20261116.md).
 The 252 injected executions reduce to 131 distinct comparisons/13 pixel pairs;
@@ -28,14 +40,23 @@ The official conference site describes the EASE series as CORE A. The track comp
 ## Double-anonymous submission checklist
 
 - [ ] Confirm a contribution, claims, locked evidence and an appropriate track. Apply the relevant ACM SIGSOFT empirical standards and discuss limitations of each inference. [Empirical standards](https://www2.sigsoft.org/EmpiricalStandards/)
-- [ ] Move the draft into the official ACM Primary Article Template using the research track's anonymous review settings. Check page limits and PDF properties, links, author information, affiliations, identifiable paths, logos and acknowledgment fields.
+- [x] Build the separate Emerging draft using ACM `sigconf,review,anonymous`; inspect all three pages and scan identifiers/metadata. Recheck the latest official class and final manuscript before submission.
 - [ ] Write self-citations in third person. Keep code archive, datasets, metadata and version history anonymous in the submission. Prepare the final supplement with a non-identifying link. The local Markdown and paths are for internal use.
 - [ ] Review usage and redistribution rights for specimen assets, fonts, public corpus components and model weights. Release hashes, configuration and replay instructions for material that cannot be redistributed.
 - [ ] Record reviewer role, instructions, blinding, disagreements and approvals or exemptions required by the institution and publisher when applicable. Keep observations and identities private.
 - [ ] Apply ACM authorship and AI-content disclosure policy. Authors verify every claim, citation, figure and artifact. Follow the CFP link to check the current disclosure wording. [Research Papers CFP](https://conf.researchr.org/track/ease-2027/ease-2027-papers)
-- [ ] Review soundness, significance, novelty, verifiability and presentation against the official CFP. PDF compilation and layout inspection remain pending. No manuscript or artifact has been submitted.
+- [ ] Review soundness, significance, novelty, verifiability and presentation against the official CFP. Compilation and layout inspection are complete for the Emerging draft; the full Research draft remains scientifically incomplete. No manuscript or artifact has been submitted.
 
-The ACM review source now exists at [main.tex](main.tex), using the prescribed `sigconf,review,anonymous` settings. It contains the method diagram, contract table, verified development counts and explicit confirmatory placeholders. Source checks passed for balanced braces and environments, six citation keys, and identifiable local strings. The existing machine has no pdflatex, LuaLaTeX, XeLaTeX or Tectonic compiler. PDF compilation, layout inspection and the resulting page count therefore remain blocked by that resource. [Source-check receipt](../execution/master_01/continuation_20261111/acm_source_verification.json)
+The full Research source remains at [main.tex](main.tex), with the method diagram,
+contract table and explicit confirmatory placeholders. Its historical source
+checks passed, but compilation was unavailable at the 11 November checkpoint.
+[Historical receipt](../execution/master_01/continuation_20261111/acm_source_verification.json).
+On 16 November, a pinned portable Tectonic 0.17.0 compiler removed that environment
+blocker. The new [Emerging source](emerging_20261116.tex) was built and visually
+checked; `main.tex` was not rebuilt in this milestone. The measured dependency is
+the bundled official `acmart` 1.83, recorded in the build receipt. Check the current
+ACM distribution again for the final submission. The first build attempts and
+their layout corrections are retained in the execution directory.
 
 The [replication candidate](candidate_20261111_02.zip) passed a fresh-process scorer replay and extracted-archive verification. Its automatic identifier scan passed. It is tracked in the public development branch; final human anonymity and redistribution-rights checks remain open for a separate conference release. The corrected candidate preserves B2's graph-free interface and matches all stored decisions. Its historical build receipt retains the original local-only distribution state. [Candidate receipt](../execution/master_01/continuation_20261111/candidate_20261111_02_receipt.json)
 

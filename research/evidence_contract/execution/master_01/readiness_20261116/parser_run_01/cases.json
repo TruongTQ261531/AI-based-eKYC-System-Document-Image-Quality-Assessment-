@@ -1,0 +1,2876 @@
+[
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/000",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7956c43e41c0224f75742ed591baa0db99c11ed936005ce18f3875ae7a27b9b7",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/001",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "279ffd6ad94a1b217a6e9551ded8a8e7c73baed6c41782db501272a618a4a7fc",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/002",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "b8d8fcc05922032e81cdc831d13ba9f34f135d06c00b8367af63b71031780fab",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/003",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d0866f92f9cc4c397b0c4b8c3edaf7b317e239da05fb1fdc5180ff43918f312d",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/004",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7f74f85525479f9846dee368d989f33c38132317a91c0957fdff4bb51645e690",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/005",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5db3f578cff153fd43790aa3514d7129f9f574add683f6f1a9a5c0ae55cf54ab",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/006",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "2cbe1f22cb196e10aefbf8ef442b86be45bdc0af8f756325c095392e103722e4",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/007",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d5c615ce54e35c128fe007e1e08194cf7cd5bb8731783aa94e028476e405f7fe",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/008",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "67217740966891f607ca2d40b08d90f4cee2cf015d52e764b327cf635767fd38",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/009",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "45c4cb8bb069e1bebdafc9aff015d6d063eb398832e43a1d3d3051736333b531",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/010",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "4cddf3400f62cd823162ec6ab47c190f2fda34a3e22b3c6e87876ff570cf05af",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/011",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "9412efa430466b06c51a1dab7d45912c57e9a1e1657a30779516c73b59a044cb",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/012",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "6de90c6f1f216e5a54104f8f86e526b3a8d3a4a5b6cfabf809fbaccbaf34078b",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: TRAN MINH BINH",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/013",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "468a76e2c79e314f43fa6cdf5a2d3ecc57e5b65c0d19bfc5d0cc5e4563e0645d",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: TRAN MINH BINH",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/014",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "580d4177c2af1005aad08ecdd05a4d9404415a3b8ddb89f03730f9be4616ac50",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "Full name: TRAN MINH BINH",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/015",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "90e04b38a3108cdde6413e3ca366eda9ba028288bf4439c9803906a50dac2e53",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: TRAN MINH BINH",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/016",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "27216855355267908f41878520176ab25ce5a5986ac63c5bdc82f94cbe839e57",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/017",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d251b976988b5e82d135939fe8b444aa0fbdf152cfdb796dfb166af2035ef9a3",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/018",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5c98c263bcb3442e32c1afb7867ac1b887cbda253bdf1add860d4610e7596844",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/019",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "40db4640538ea5fc639b2281f7ad14f9ada7f44673b85d6a4f1de7c44e53cd83",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/020",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "8903374bb98e7ad662f958adbac623ed33f98cf65e74c22a06959995a3db6923",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/021",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "1051a5c193153226b77c9a18f350c70783ca9b63adca124672f0586a666b9c33",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/022",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "0d2c4aba852c61b3fdc8820e9de98f7103ff203594b3f08c83e4ebe1acf42bd4",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/023",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "59df5662f5c2a955d1cfb99a29756cd6ccc48beb25104ba0378144d6b88c329b",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/024",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "0e946115ae499ba3344cff63abd655a194e368e91609b41e91fc5be9ee3e9947",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/025",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "3905e016c0ec5b1ce81ef9d546d726b3f6b425d1d29699263d8c2edb3ea73c14",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/026",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "1f2306cdfe7af927f8022228b9cece9a216df2e30617f3c831a68b7ed498c726",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/027",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "e31a13ebd9d3c7405f3cc3292e859dc215c81a3599137c74b0e863254cd418d4",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: NGUYỄN VĂN AN",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/028",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "050c19eae1bd8abef4bc5ba153363a54587f1e651135f5a6248e41a0c6f02436",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: LE THI MAI",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/029",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a0dc6cdf1bd8d3467fbe5c1dddec03144411b3e2263f617777817f23de1c8eb7",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: LE THI MAI",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/030",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "965232e5af2098cad802d73e944e4f3ab29b2b69a6cc5511e39c061f69715132",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "Full name: LE THI MAI",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/031",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "97ed15a48958ff999d49db9224abb4eefab5a2f20b8ca82acededc1629f7f0ed",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: LE THI MAI",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/032",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "fe34ed9665ce8fd4978522d7f264bf86bf614a514b073427d2b52c1fef3f9bcf",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/033",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "4a740fe6029725d9696a506a10425b6342f359e87160e982313558a386b1b59d",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/034",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "29c5ea9e1f93d1f007845a715d07e5346143f4c1592f3e3498b1908c7d100a03",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/035",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "9ebeeb01069742aa3f32aaa28c04e04d814c1c11bddaae13e0effa939590d158",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: TRAN MINH BINH",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/036",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "418d7b6e43466e12ed4d184893023b8bf2a8fe2b03037aa4443dc991396f19d1",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/037",
+    "factors": {
+      "guess": false,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "4da6e59766ae85f8f2b152477444946ae003c6bb97914161fd24a53bd3f35038",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/038",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "1bb4183b24a79b8cbba95c50d2447ef0c78307b865963b2e522c9317e699187e",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/039",
+    "factors": {
+      "guess": true,
+      "label": "Họ và tên",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "edb64a935c4200442883ed6bc26fde832b17b45cc546d2c87e8ec5ef6795d2cb",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: LE THI MAI",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/040",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "25ab8c603fa1abd3167119b414e9c4d9cfb2f6f9757a1b6f75a3b2d5b04b26a7",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: TRAN MINH BINH",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/041",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "e381dd21958876fa98592f36dfb666c0e50865809ec428efcdf72fd170ff63fe",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: TRAN MINH BINH",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/042",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5a3607a2b2cbe05ae154104c39532ed44ca29ef6141badab599f076bc7bf2255",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "Full name: TRAN MINH BINH",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/043",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "forward"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "f7a23ac69caa04ca0d125b31dd941a112c05bf8cac145f8214c37b47aee4f872",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: TRAN MINH BINH",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/044",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "b78b93835db100d1250da74546a7587166fd89a4a457af600d3bbf5b303f4d20",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Full name: LE THI MAI",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/045",
+    "factors": {
+      "guess": false,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a0931352f9f671397c2c82d58984e7a22a4561d8531f66c745b3d1a0d371dd43",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: LE THI MAI",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/046",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 0,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "859e7e2ec9a99972294a6ed9d7efbad93dee3ff26f1aa78cb3ca8d88146fda24",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "Full name: LE THI MAI",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "conflicting_name/047",
+    "factors": {
+      "guess": true,
+      "label": "Full name",
+      "noise": 2,
+      "order": "reverse"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "e8b01267856770212cb0734b50ea68ef09c8924b18f3a8a6898d57bc8427cfde",
+    "kind": "conflicting_name",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "LE THI MAI"
+    },
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: LE THI MAI",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/000",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": ":",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "0847a1675708d3601bd61325ecd5ee30ec70b37845a8182108f81b9be6e25879",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "A"
+    },
+    "requirement_sha256": "92c7bfc5102f9e55bfdaf0746117a9fa5013e822ba2483814e0207588d8db074",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/001",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": ":",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7f38265c4e73114212c17a3aeccc0c6f53cb99d05fd6904cab7f937552a7cd68",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "A"
+    },
+    "requirement_sha256": "92c7bfc5102f9e55bfdaf0746117a9fa5013e822ba2483814e0207588d8db074",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị: A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/002",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": ":",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "931f27ccc4b10ed0fce794ebab64c9bbcf39354c5bb5ff7379a98f130c35f202",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "7"
+    },
+    "requirement_sha256": "d52e3963e324cfba685575142e1f70ec4a85637004ee8f269c35cd3bf22bad00",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/003",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": ":",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "6833c6385801d99abe91076108a885b54c17d26a48e1cc899815f138964e8fb2",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "7"
+    },
+    "requirement_sha256": "d52e3963e324cfba685575142e1f70ec4a85637004ee8f269c35cd3bf22bad00",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị: 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/004",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": ":",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "216e15658043027d0b1989835bd4ed7a3c06a0ea7fa7b994872e02d82f1c99e3",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ"
+    },
+    "requirement_sha256": "0ec1dfbbee16d69ccc8304c018f50ccbe021feb354c68defcc39d3aaf1ed2ed4",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/005",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": ":",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "20a5e767a039e50892b0e13a66f6237e9d9c41c7e72706397f71ac7d15c7cb11",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ"
+    },
+    "requirement_sha256": "0ec1dfbbee16d69ccc8304c018f50ccbe021feb354c68defcc39d3aaf1ed2ed4",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị: Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/006",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": "：",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "4077d6923af7c31fe490bb5237c6ca3493c9a2a273b9627234414d61f63695bc",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "A"
+    },
+    "requirement_sha256": "92c7bfc5102f9e55bfdaf0746117a9fa5013e822ba2483814e0207588d8db074",
+    "specialized": {},
+    "texts": [
+      "Đơn vị： A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/007",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": "：",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "3ef2b029406d4fd39b25efc6218b090702932697dcb7fe063e0e0eecce5cc426",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "A"
+    },
+    "requirement_sha256": "92c7bfc5102f9e55bfdaf0746117a9fa5013e822ba2483814e0207588d8db074",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị： A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/008",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": "：",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d3050bd34692471a6f06643e05ad649531b7442a355d64e125dafaee36fc34c5",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "7"
+    },
+    "requirement_sha256": "d52e3963e324cfba685575142e1f70ec4a85637004ee8f269c35cd3bf22bad00",
+    "specialized": {},
+    "texts": [
+      "Đơn vị： 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/009",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": "：",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "136b5f0138434ae0f7a783d26eb6df86614a119ca0bd92069aef8a84ade63689",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "7"
+    },
+    "requirement_sha256": "d52e3963e324cfba685575142e1f70ec4a85637004ee8f269c35cd3bf22bad00",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị： 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/010",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 0,
+      "separator": "：",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "53f6e54f4b47e9b118c127fbd2037a69f87a96126d8897febcbafd86271bcaa8",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ"
+    },
+    "requirement_sha256": "0ec1dfbbee16d69ccc8304c018f50ccbe021feb354c68defcc39d3aaf1ed2ed4",
+    "specialized": {},
+    "texts": [
+      "Đơn vị： Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/011",
+    "factors": {
+      "label": "Đơn vị",
+      "noise": 2,
+      "separator": "：",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "774dedd23d56e0b41273ef3828ad146c7d83074102038c8044b0520f14970517",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ"
+    },
+    "requirement_sha256": "0ec1dfbbee16d69ccc8304c018f50ccbe021feb354c68defcc39d3aaf1ed2ed4",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị： Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/012",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": ":",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "25d6b7bc272652371c29e56acb742da7647ddde6c00713f95d571034b0d4615d",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "A"
+    },
+    "requirement_sha256": "e4d8026fc10e2d2537b78bebdadb20fcc2ea040c080c35efdfc6d81fe5338d05",
+    "specialized": {},
+    "texts": [
+      "Nhóm: A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/013",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": ":",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "413b2f2439c82bc82d21b5ed7c45052ebd3f84892020fba2251281238046f336",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "A"
+    },
+    "requirement_sha256": "e4d8026fc10e2d2537b78bebdadb20fcc2ea040c080c35efdfc6d81fe5338d05",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm: A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/014",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": ":",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "866b9be904a90f0bb142a0659ba0bf66644abdf66144c241863ed3d5395fa24a",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "7"
+    },
+    "requirement_sha256": "adb37efc87ee91c945dce353700b558b85b228e97c63bd73c0891da39c5f2acb",
+    "specialized": {},
+    "texts": [
+      "Nhóm: 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/015",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": ":",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "8b72f7960fb27609eac47339b861b1a0c912105c1aea035806c39602b242eb8f",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "7"
+    },
+    "requirement_sha256": "adb37efc87ee91c945dce353700b558b85b228e97c63bd73c0891da39c5f2acb",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm: 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/016",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": ":",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "79be3112789efaa7deacc42aa8fe89286412abb7a24da546423b6cabfe3e18d6",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ"
+    },
+    "requirement_sha256": "b88ce037d6ff543d95350a6997a4bc3770e70a13f53b68448cc25989f51b8db7",
+    "specialized": {},
+    "texts": [
+      "Nhóm: Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/017",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": ":",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "fc81f38da699b5e99e8b23e33a0111539757128bb43a5d60d67aa11bfa2dce60",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ"
+    },
+    "requirement_sha256": "b88ce037d6ff543d95350a6997a4bc3770e70a13f53b68448cc25989f51b8db7",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm: Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/018",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": "：",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "763db09883ac20c76d88fb0c8de850e1c7f85a781a32f53992fae754e9a22706",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "A"
+    },
+    "requirement_sha256": "e4d8026fc10e2d2537b78bebdadb20fcc2ea040c080c35efdfc6d81fe5338d05",
+    "specialized": {},
+    "texts": [
+      "Nhóm： A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/019",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": "：",
+      "value": "A"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "b6a327ea93dbdc777f1aeedde0736beee2058e38c3e443204a8a234f7d11cb9f",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "A"
+    },
+    "requirement_sha256": "e4d8026fc10e2d2537b78bebdadb20fcc2ea040c080c35efdfc6d81fe5338d05",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm： A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/020",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": "：",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "ad543a785e584d8015448fd27c6f16e750f63f50b10d3a9c6ae67b191ef6c420",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "7"
+    },
+    "requirement_sha256": "adb37efc87ee91c945dce353700b558b85b228e97c63bd73c0891da39c5f2acb",
+    "specialized": {},
+    "texts": [
+      "Nhóm： 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/021",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": "：",
+      "value": "7"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "cabd65bca405666ba3a72cb2bb79a7d21454a233fc4163490d0077148dfdde53",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "7"
+    },
+    "requirement_sha256": "adb37efc87ee91c945dce353700b558b85b228e97c63bd73c0891da39c5f2acb",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm： 7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/022",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 0,
+      "separator": "：",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "86f0bf5819d17e9b585e5c54e042807381d0192cf0c63d63d148ab6b6306e602",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ"
+    },
+    "requirement_sha256": "b88ce037d6ff543d95350a6997a4bc3770e70a13f53b68448cc25989f51b8db7",
+    "specialized": {},
+    "texts": [
+      "Nhóm： Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "single_character/023",
+    "factors": {
+      "label": "Nhóm",
+      "noise": 2,
+      "separator": "：",
+      "value": "Đ"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "f2b6f5380ba936557ef546f25d2e83cc40f2dcd8d3548aceea9e2cb8b2134c9d",
+    "kind": "single_character",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ"
+    },
+    "requirement_sha256": "b88ce037d6ff543d95350a6997a4bc3770e70a13f53b68448cc25989f51b8db7",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm： Đ"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/000",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "86314c414081161c4c3bd0907964f544b26d3a9afb05dbba019c716afceaae8d",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/001",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "b900d68856414c7d3c958e54c5b666992d127a2ae02ee7f77b9df62754cb0553",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/002",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7f4fb201cf1a50cf9d7a86361f4edd168c9887836a46f4a8be3215493e4dfefe",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Full name: NGUYỄN VĂN AN",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/003",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d586407dcc061c59b64678b349cf941ee2be81112fa230a7f20a14369498686c",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: NGUYỄN VĂN AN",
+      "Họ và tên: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/004",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "915d0e6c9322505bd61e4987b523c1a9f9b9e2a20312962e9dedf1b2e98bd535",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: TRAN MINH BINH",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/005",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a9064925425dd220c7936de976a0dbb1bfc7d19acf24caac46ca14837308cc86",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: TRAN MINH BINH",
+      "Full name: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/006",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "e7faf1d026aec8536130cbfc6e4bdee0e1bb1d10e416df2274c51777de96a27b",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "Full name: TRAN MINH BINH",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/007",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "ab71a23ffbd3c5c7895786c096092ec53a7ce4aa3ae336ffdc58706789aaddd7",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: TRAN MINH BINH",
+      "Họ và tên: TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/008",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5c628ca08cbd49f5d103964fd0b52e093f1dc3bf7dfd38f09ab053db680f3770",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: LE THI MAI",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/009",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "8b22b869724a7e898b87881c2434d4dc84fd18e9bae8af40c8924cc4509a8f98",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Họ và tên: LE THI MAI",
+      "Full name: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/010",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "09983fd6b6f7d6ce6138cba8217f5c3a4e30825c15ee0262626cde72a11d3c58",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "Full name: LE THI MAI",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "same_name/011",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "c28c2c3f59dd8e0d61cabce1994db1afff6bbd3f39c7a4f19b021604453b5b69",
+    "kind": "same_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Full name: LE THI MAI",
+      "Họ và tên: LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/000",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d570405ea701f2fb4a5df9fee047fca613e838049ff09d823619c396675e9e6e",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Họ và tên:",
+      "NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/001",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "ac5f8be019316572afc5cb050d963b2f1d72b847d496f0b04931df8348f49e43",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Full name:",
+      "NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/002",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "6cfb790112109a23bc452639350b062b72991ca990632e2bd0c69d3da57e10ab",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "Họ và tên:",
+      "TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/003",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "471b1b1b622a36477516bf622dc01b0846b407836e72f393bc24c86915b3417d",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "TRAN MINH BINH"
+    },
+    "required_items": {},
+    "requirement_sha256": "5235472b9be560b9caca22b7b11ded34caed83f06b5d75a3cc142cdc76da9303",
+    "specialized": {},
+    "texts": [
+      "Full name:",
+      "TRAN MINH BINH"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/004",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "96b4d141ff0a33a821a9b28a9de6d93017383ce064ba2b0e5d43bff7cfdafdee",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "Họ và tên:",
+      "LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "split_name/005",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d50ddaac360bd7bc2a99214ff09797c726b17ae2004227a41b88e68a9d8535fa",
+    "kind": "split_name",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "LE THI MAI"
+    },
+    "required_items": {},
+    "requirement_sha256": "bc7d7d0da151568c3c525b3c5c61f8c4b44a02ea41bbc01118cf3629b8cc348e",
+    "specialized": {},
+    "texts": [
+      "Full name:",
+      "LE THI MAI"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/000",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a824e4ebf428ba2ef26b7c760fee4ece6f8a251852af0d97dfd6780a8606b3e7",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "AB"
+    },
+    "requirement_sha256": "2e86fd6c06ff143fe5402c8d471d3e89ee56a3a6ab831607c43f99b322b6af6a",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/001",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "b243f4b33aee1e2972019e32effbe24571cb18c35931fd22f7b7d3b5f2054f7e",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "AB"
+    },
+    "requirement_sha256": "2e86fd6c06ff143fe5402c8d471d3e89ee56a3a6ab831607c43f99b322b6af6a",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị: AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/002",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "df339a662aa36e41e6e31fb872c7d3a5682d8f961bbee3bfa3f6c9215b5eb704",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ7"
+    },
+    "requirement_sha256": "f3c0aaaab4eca7995462801b3771700ed5a8527819e6cecefe8603e2504e3b75",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/003",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a6f16a0b73597b460f035546d26f72d213a108ba3bfbdd5e9c83bc4826b926ea",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ7"
+    },
+    "requirement_sha256": "f3c0aaaab4eca7995462801b3771700ed5a8527819e6cecefe8603e2504e3b75",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị: Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/004",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "313bc70c47567f966ec3d285d1d82eede002c465fcf200379dbb03dc5f0a18d6",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "AB"
+    },
+    "requirement_sha256": "2e86fd6c06ff143fe5402c8d471d3e89ee56a3a6ab831607c43f99b322b6af6a",
+    "specialized": {},
+    "texts": [
+      "Đơn vị： AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/005",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "aeaf81053454c381c8174bd958f0dd8462104fb1d6d893d069cde24e45160103",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "AB"
+    },
+    "requirement_sha256": "2e86fd6c06ff143fe5402c8d471d3e89ee56a3a6ab831607c43f99b322b6af6a",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị： AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/006",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "f568646b7ab9889d41b26ba5e68bb53620707443b6735253969f97b84a538f31",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ7"
+    },
+    "requirement_sha256": "f3c0aaaab4eca7995462801b3771700ed5a8527819e6cecefe8603e2504e3b75",
+    "specialized": {},
+    "texts": [
+      "Đơn vị： Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/007",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5d3459cb041e2e2e6da4fd1cf244f111280d424aee3bba9d721bb06eefe9a5c4",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "Đ7"
+    },
+    "requirement_sha256": "f3c0aaaab4eca7995462801b3771700ed5a8527819e6cecefe8603e2504e3b75",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Đơn vị： Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/008",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "738807dd8e684ec988bae95e599d38ac04e06a542caeb9447277de137de71e38",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "AB"
+    },
+    "requirement_sha256": "90b6b0ff6956abadb9d1cb42df6bfa289be23e9a76ed9e565847c2c2a122ff21",
+    "specialized": {},
+    "texts": [
+      "Nhóm: AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/009",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "f7ac0b14a30789033fe9eebd589d56e989d070318a6af6f00b0800d025af2051",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "AB"
+    },
+    "requirement_sha256": "90b6b0ff6956abadb9d1cb42df6bfa289be23e9a76ed9e565847c2c2a122ff21",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm: AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/010",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "659cde4d7b58df7e5cfb716d9525424fa751227e7ec85e75379e39828ce9a1e3",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ7"
+    },
+    "requirement_sha256": "186752f65a1e7bfe9c1f949a1c3726a653b625b84d9c1f31db767b2a200eeedd",
+    "specialized": {},
+    "texts": [
+      "Nhóm: Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/011",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "70495826afbefd5a1580e41e4a7be8e3a6fe045a280020602871a76eaf7a37b3",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ7"
+    },
+    "requirement_sha256": "186752f65a1e7bfe9c1f949a1c3726a653b625b84d9c1f31db767b2a200eeedd",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm: Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/012",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "2f30385a4abfa0a911933b73d21a202f3cbe73628e98e54aa455dd172a139704",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "AB"
+    },
+    "requirement_sha256": "90b6b0ff6956abadb9d1cb42df6bfa289be23e9a76ed9e565847c2c2a122ff21",
+    "specialized": {},
+    "texts": [
+      "Nhóm： AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/013",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "ff0c2570717365d2691151965bd59b0cfab2e62a32caba72c943e4903dfe95bd",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "AB"
+    },
+    "requirement_sha256": "90b6b0ff6956abadb9d1cb42df6bfa289be23e9a76ed9e565847c2c2a122ff21",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm： AB"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/014",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7ee9ca060fb2f2b65faa22c05e94b828a1e502f2f25aa5799e2e545ec3519e85",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ7"
+    },
+    "requirement_sha256": "186752f65a1e7bfe9c1f949a1c3726a653b625b84d9c1f31db767b2a200eeedd",
+    "specialized": {},
+    "texts": [
+      "Nhóm： Đ7"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "multi_character/015",
+    "factors": {},
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "1d0d189eeedfc8a6413ab743d8aa0ff159de78e16ab1a5ccf1e6f63336d45096",
+    "kind": "multi_character",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "Đ7"
+    },
+    "requirement_sha256": "186752f65a1e7bfe9c1f949a1c3726a653b625b84d9c1f31db767b2a200eeedd",
+    "specialized": {},
+    "texts": [
+      "TÀI LIỆU THỬ",
+      "MẪU MINH HỌA",
+      "Nhóm： Đ7"
+    ]
+  },
+  {
+    "absent_fields": [
+      "id_number",
+      "dob"
+    ],
+    "case_id": "original_matrix/000",
+    "factors": {
+      "original_case": "student_fields"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d06a2ae3a6ac6b4868aafa9c423bbe9d25243b3d9c80ae1bc39dce06212104e2",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "class_name": "12A3",
+      "course": "2024 - 2027",
+      "full_name": "NGUYỄN VĂN AN",
+      "student_id": "HS20260042"
+    },
+    "required_items": {},
+    "requirement_sha256": "62d8965806af5d06ac54bb23a6fa6c9cd22a5e8ca651dc059fb0eba31b54e61e",
+    "specialized": {},
+    "texts": [
+      "THẺ HỌC SINH",
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Mã học sinh: HS20260042",
+      "Lớp: 12A3",
+      "Niên khóa: 2024 - 2027"
+    ]
+  },
+  {
+    "absent_fields": [
+      "dob"
+    ],
+    "case_id": "original_matrix/001",
+    "factors": {
+      "original_case": "license_dates"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "7df3da316d130118f1c0fd036b59082ea78a977e7eb7911938f88f7d06f0678f",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "expiry_date": "2034-03-02",
+      "id_number": "A1234567",
+      "issue_date": "2024-03-02",
+      "license_class": "B2"
+    },
+    "required_items": {},
+    "requirement_sha256": "5e477721c98daab59f0592522babac7d869564b1bc522c77ed4cb6a3c586d799",
+    "specialized": {},
+    "texts": [
+      "GIẤY PHÉP LÁI XE",
+      "License number: A1234567",
+      "Hạng: B2",
+      "Ngày cấp: 02/03/2024",
+      "Có giá trị đến: 02/03/2034"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "original_matrix/002",
+    "factors": {
+      "original_case": "conflicting_names"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "0d5858fae84de6953f5bed6f4db122f746bc33f8243b7e1642253b8d24e36fd4",
+    "kind": "original_matrix",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRẦN THỊ LAN"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name"
+    ],
+    "case_id": "original_matrix/003",
+    "factors": {
+      "original_case": "conflicting_names_with_detector_guess"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "f1254e5ffdb8d5b8b9d6b391b0a778a5502774189903c834b576a9fb37c751b1",
+    "kind": "original_matrix",
+    "known_fault_family": "conflicting_scalar_name",
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "551fc0741eb2afaa74dc87a0f72303f7db27173323b2c26df045591c2d3e3574",
+    "specialized": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Họ và tên: TRẦN THỊ LAN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/004",
+    "factors": {
+      "original_case": "repeated_same_name"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "86314c414081161c4c3bd0907964f544b26d3a9afb05dbba019c716afceaae8d",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Họ và tên: NGUYỄN VĂN AN",
+      "Full name: NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/005",
+    "factors": {
+      "original_case": "split_name_label"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "d570405ea701f2fb4a5df9fee047fca613e838049ff09d823619c396675e9e6e",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "full_name": "NGUYỄN VĂN AN"
+    },
+    "required_items": {},
+    "requirement_sha256": "a1e9f8312a145b24c9c35e7a90c557218278590d6fd2b9fd88aca38693966fe2",
+    "specialized": {},
+    "texts": [
+      "Họ và tên:",
+      "NGUYỄN VĂN AN"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/006",
+    "factors": {
+      "original_case": "one_character_custom_value"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "0847a1675708d3601bd61325ecd5ee30ec70b37845a8182108f81b9be6e25879",
+    "kind": "original_matrix",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Đơn vị": "A"
+    },
+    "requirement_sha256": "92c7bfc5102f9e55bfdaf0746117a9fa5013e822ba2483814e0207588d8db074",
+    "specialized": {},
+    "texts": [
+      "Đơn vị: A"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/007",
+    "factors": {
+      "original_case": "fullwidth_colon_custom_value"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "a7698c87eed8d91f4ca49a3591b12138c109d095361b4c302400b76b45f69ffa",
+    "kind": "original_matrix",
+    "known_fault_family": "custom_single_character",
+    "require_empty_fields": false,
+    "required_fields": {},
+    "required_items": {
+      "Nhóm": "B"
+    },
+    "requirement_sha256": "29551ff9f22a873e3497289b3afd20b772ca82451d56ca97530e64bd30876be0",
+    "specialized": {},
+    "texts": [
+      "Nhóm： B"
+    ]
+  },
+  {
+    "absent_fields": [
+      "dob"
+    ],
+    "case_id": "original_matrix/008",
+    "factors": {
+      "original_case": "conflicting_birth_dates"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "4e461d8bb5b2dbb7a9f95666e367005976edf5664a8ac0a75413a3b5630ee243",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "843e3ed0ce61a0e7704bcec5de2d0f15e3690d0f3c9b4eb7679a4716d2d2a3f7",
+    "specialized": {
+      "dob": "01/01/2000"
+    },
+    "texts": [
+      "Ngày sinh: 01/01/2000",
+      "Ngày sinh: 02/02/2000"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/009",
+    "factors": {
+      "original_case": "leading_zero_id"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "3ca7e18ca264c623941e68589708625161fbb31a04cc972daef247fbbaef03cc",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "id_number": "001234567890"
+    },
+    "required_items": {},
+    "requirement_sha256": "ed2c3e177cc18a03a3d072ee045a5fc053e9325b628243dea9012959fd6a1239",
+    "specialized": {},
+    "texts": [
+      "ID number: 001234567890"
+    ]
+  },
+  {
+    "absent_fields": [],
+    "case_id": "original_matrix/010",
+    "factors": {
+      "original_case": "multiline_address"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "5df92aec90ebfaaec53de03010365ec7fa2d986b33683bcdd5e15f32c84b259a",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": false,
+    "required_fields": {
+      "address": "12 ĐƯỜNG MẪU PHƯỜNG THỬ THÀNH PHỐ DEMO"
+    },
+    "required_items": {},
+    "requirement_sha256": "7b26cf037009d35edeeacdb43932e51f6043eb99372f565efbe92fdfb6b0ad6e",
+    "specialized": {},
+    "texts": [
+      "Địa chỉ: 12 ĐƯỜNG MẪU",
+      "PHƯỜNG THỬ",
+      "THÀNH PHỐ DEMO"
+    ]
+  },
+  {
+    "absent_fields": [
+      "full_name",
+      "id_number",
+      "address",
+      "dob"
+    ],
+    "case_id": "original_matrix/011",
+    "factors": {
+      "original_case": "unknown_document_without_labels"
+    },
+    "input_origin": "authored_ocr_tokens",
+    "input_sha256": "2e2436ab6e9c9dca4c38286cf9d2784860b328f310b297e260ece0606d6e70a4",
+    "kind": "original_matrix",
+    "known_fault_family": null,
+    "require_empty_fields": true,
+    "required_fields": {},
+    "required_items": {},
+    "requirement_sha256": "ad2770bd7aa7681bcac95e018a3a0abc87ac1276d26d67ba691f894ff62e347a",
+    "specialized": {},
+    "texts": [
+      "THẺ THƯ VIỆN",
+      "Thông tin chưa có nhãn"
+    ]
+  }
+]

@@ -1,0 +1,815 @@
+{
+  "budget_curves": {
+    "budget_unit": "one authored token input executed against one subject; no model cost",
+    "caveat": "Pool and input kinds were designed after the two defects were known. This is not unbiased discovery performance.",
+    "independent_fault_families": 2,
+    "permutations": 500,
+    "policies": {
+      "input_kind_round_robin": {
+        "1": {
+          "found_both_fraction": 0.0,
+          "maximum": 1,
+          "mean_families": 0.392,
+          "minimum": 0
+        },
+        "10": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        },
+        "115": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        },
+        "2": {
+          "found_both_fraction": 0.106,
+          "maximum": 2,
+          "mean_families": 0.778,
+          "minimum": 0
+        },
+        "20": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        },
+        "5": {
+          "found_both_fraction": 0.738,
+          "maximum": 2,
+          "mean_families": 1.738,
+          "minimum": 1
+        },
+        "50": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        }
+      },
+      "uniform_random": {
+        "1": {
+          "found_both_fraction": 0.0,
+          "maximum": 1,
+          "mean_families": 0.662,
+          "minimum": 0
+        },
+        "10": {
+          "found_both_fraction": 0.93,
+          "maximum": 2,
+          "mean_families": 1.93,
+          "minimum": 1
+        },
+        "115": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        },
+        "2": {
+          "found_both_fraction": 0.2,
+          "maximum": 2,
+          "mean_families": 1.09,
+          "minimum": 0
+        },
+        "20": {
+          "found_both_fraction": 0.996,
+          "maximum": 2,
+          "mean_families": 1.996,
+          "minimum": 1
+        },
+        "5": {
+          "found_both_fraction": 0.682,
+          "maximum": 2,
+          "mean_families": 1.68,
+          "minimum": 0
+        },
+        "50": {
+          "found_both_fraction": 1.0,
+          "maximum": 2,
+          "mean_families": 2,
+          "minimum": 2
+        }
+      }
+    },
+    "unique_inputs": 115
+  },
+  "cases": 118,
+  "cases_sha256": "b2a195ad4f67bda35e76d9e12d72047909aa46ae0c6c53bc7e7417401857db1e",
+  "confirmatory": false,
+  "delta_debugging": [
+    {
+      "family": "custom_single_character",
+      "granularity": "whole OCR text rows; fixed requirement precondition; not character/global minimality",
+      "minimal_texts": [
+        "Đơn vị: A"
+      ],
+      "one_minimal_under_requirement": true,
+      "original_case": "single_character/001",
+      "original_rows": 3,
+      "parser_calls": 9,
+      "specialized": {},
+      "trace": [
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {
+                "extra_19198252dad4": "A"
+              },
+              "labelled_items": {
+                "Đơn vị": "A"
+              },
+              "passed": true
+            },
+            "revert_custom_single_character": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "TÀI LIỆU THỬ",
+            "MẪU MINH HỌA",
+            "Đơn vị: A"
+          ]
+        },
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {
+                "extra_19198252dad4": "A"
+              },
+              "labelled_items": {
+                "Đơn vị": "A"
+              },
+              "passed": true
+            },
+            "revert_custom_single_character": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "Đơn vị: A"
+          ]
+        },
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {
+                "extra_19198252dad4": "A"
+              },
+              "labelled_items": {
+                "Đơn vị": "A"
+              },
+              "passed": true
+            },
+            "revert_custom_single_character": {
+              "document_type": "unknown",
+              "failures": [
+                "labelled_value:Đơn vị"
+              ],
+              "fields": {},
+              "labelled_items": {},
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "Đơn vị: A"
+          ]
+        },
+        {
+          "outcome": "UNRESOLVED_REQUIREMENT_PRECONDITION",
+          "parser_calls": 0,
+          "texts": []
+        }
+      ]
+    },
+    {
+      "family": "conflicting_scalar_name",
+      "granularity": "whole OCR text rows; fixed requirement precondition; not character/global minimality",
+      "minimal_texts": [
+        "Họ và tên: NGUYỄN VĂN AN",
+        "Họ và tên: TRAN MINH BINH"
+      ],
+      "one_minimal_under_requirement": true,
+      "original_case": "conflicting_name/001",
+      "original_rows": 4,
+      "parser_calls": 9,
+      "specialized": {},
+      "trace": [
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {},
+              "labelled_items": {},
+              "passed": true
+            },
+            "revert_conflicting_scalar_name": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "TÀI LIỆU THỬ",
+            "MẪU MINH HỌA",
+            "Họ và tên: NGUYỄN VĂN AN",
+            "Họ và tên: TRAN MINH BINH"
+          ]
+        },
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {},
+              "labelled_items": {},
+              "passed": true
+            },
+            "revert_conflicting_scalar_name": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "Họ và tên: NGUYỄN VĂN AN",
+            "Họ và tên: TRAN MINH BINH"
+          ]
+        },
+        {
+          "outcome": "UNRESOLVED_REQUIREMENT_PRECONDITION",
+          "parser_calls": 0,
+          "texts": [
+            "Họ và tên: TRAN MINH BINH"
+          ]
+        },
+        {
+          "outcome": "UNRESOLVED_REQUIREMENT_PRECONDITION",
+          "parser_calls": 0,
+          "texts": [
+            "Họ và tên: NGUYỄN VĂN AN"
+          ]
+        },
+        {
+          "measured": {
+            "before": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            },
+            "fixed": {
+              "document_type": "unknown",
+              "failures": [],
+              "fields": {},
+              "labelled_items": {},
+              "passed": true
+            },
+            "revert_conflicting_scalar_name": {
+              "document_type": "unknown",
+              "failures": [
+                "unexpected_field:full_name",
+                "unexpected_observed_fields"
+              ],
+              "fields": {
+                "full_name": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "labelled_items": {
+                "Họ tên": "NGUYỄN VĂN AN TRAN MINH BINH"
+              },
+              "passed": false
+            }
+          },
+          "outcome": "FAILURE_REPRODUCED",
+          "parser_calls": 3,
+          "texts": [
+            "Họ và tên: NGUYỄN VĂN AN",
+            "Họ và tên: TRAN MINH BINH"
+          ]
+        },
+        {
+          "outcome": "UNRESOLVED_REQUIREMENT_PRECONDITION",
+          "parser_calls": 0,
+          "texts": [
+            "Họ và tên: TRAN MINH BINH"
+          ]
+        },
+        {
+          "outcome": "UNRESOLVED_REQUIREMENT_PRECONDITION",
+          "parser_calls": 0,
+          "texts": [
+            "Họ và tên: NGUYỄN VĂN AN"
+          ]
+        }
+      ]
+    }
+  ],
+  "frozen_A_changed": false,
+  "frozen_A_evaluated": false,
+  "historical_fault_families": 2,
+  "historical_faults": {
+    "conflicting_scalar_name": {
+      "all_fix_revert_witnesses": true,
+      "authored_variants": 50,
+      "independent_faults": 1
+    },
+    "custom_single_character": {
+      "all_fix_revert_witnesses": true,
+      "authored_variants": 26,
+      "independent_faults": 1
+    }
+  },
+  "human_labels_created": 0,
+  "latency": {
+    "before": {
+      "batch_milliseconds": [
+        19.7348,
+        19.1073,
+        19.5265,
+        20.0898,
+        20.3559,
+        19.8851,
+        19.2565,
+        19.9001,
+        25.0679,
+        20.616,
+        21.2064,
+        19.2134,
+        19.0554,
+        19.4149,
+        19.699,
+        19.4286,
+        19.3138,
+        20.0187,
+        21.7083,
+        19.7546,
+        22.7944,
+        23.7088,
+        19.1775,
+        23.126,
+        19.4122,
+        22.7323,
+        21.5549,
+        20.1488,
+        19.3335,
+        19.3905
+      ],
+      "cases_per_batch": 118,
+      "excludes": "OCR/model loading, annotation, human triage; not an end-to-end performance comparison",
+      "includes": "token construction, parser and expected-value comparisons; warm process; sequential subjects",
+      "median_batch_ms": 19.819850000000002,
+      "p95_batch_ms": 23.126
+    },
+    "fixed": {
+      "batch_milliseconds": [
+        21.1276,
+        19.8223,
+        19.4793,
+        21.0424,
+        20.8815,
+        20.1115,
+        21.3141,
+        19.6026,
+        19.8356,
+        19.8019,
+        19.543,
+        19.6902,
+        19.6534,
+        19.8591,
+        19.3833,
+        23.6537,
+        20.1657,
+        19.4454,
+        19.6035,
+        19.7302,
+        23.9946,
+        19.757,
+        20.2823,
+        20.2083,
+        20.532,
+        19.6745,
+        19.8453,
+        19.7454,
+        21.1039,
+        19.9105
+      ],
+      "cases_per_batch": 118,
+      "excludes": "OCR/model loading, annotation, human triage; not an end-to-end performance comparison",
+      "includes": "token construction, parser and expected-value comparisons; warm process; sequential subjects",
+      "median_batch_ms": 19.84045,
+      "p95_batch_ms": 21.3141
+    },
+    "revert_both": {
+      "batch_milliseconds": [
+        25.6773,
+        25.5121,
+        26.8321,
+        26.0996,
+        25.1011,
+        25.2293,
+        25.3505,
+        25.4639,
+        24.7526,
+        25.8299,
+        27.6416,
+        25.2778,
+        25.002,
+        26.3796,
+        25.7524,
+        25.1014,
+        33.6817,
+        26.8003,
+        25.4186,
+        24.9838,
+        25.0586,
+        25.4126,
+        27.3875,
+        25.2732,
+        25.6726,
+        26.4945,
+        24.5495,
+        25.2397,
+        23.9985,
+        25.8065
+      ],
+      "cases_per_batch": 118,
+      "excludes": "OCR/model loading, annotation, human triage; not an end-to-end performance comparison",
+      "includes": "token construction, parser and expected-value comparisons; warm process; sequential subjects",
+      "median_batch_ms": 25.44125,
+      "p95_batch_ms": 27.3875
+    },
+    "revert_conflicting_scalar_name": {
+      "batch_milliseconds": [
+        20.5788,
+        25.3013,
+        19.6782,
+        20.0002,
+        22.125,
+        19.8431,
+        20.1076,
+        21.9195,
+        21.2064,
+        20.6517,
+        22.4644,
+        20.6281,
+        21.4857,
+        19.7226,
+        19.8953,
+        19.7487,
+        22.0429,
+        24.7213,
+        27.4406,
+        25.7696,
+        38.8758,
+        25.1875,
+        25.9496,
+        25.3779,
+        24.7808,
+        26.0138,
+        43.3098,
+        43.5059,
+        48.181,
+        27.4224
+      ],
+      "cases_per_batch": 118,
+      "excludes": "OCR/model loading, annotation, human triage; not an end-to-end performance comparison",
+      "includes": "token construction, parser and expected-value comparisons; warm process; sequential subjects",
+      "median_batch_ms": 22.2947,
+      "p95_batch_ms": 43.3098
+    },
+    "revert_custom_single_character": {
+      "batch_milliseconds": [
+        19.698,
+        19.5542,
+        22.6965,
+        20.6538,
+        19.46,
+        19.466,
+        19.578,
+        20.9479,
+        20.1365,
+        20.545,
+        20.0059,
+        19.4821,
+        31.2396,
+        20.4597,
+        26.477,
+        21.9207,
+        20.9747,
+        20.4861,
+        20.1895,
+        20.9887,
+        19.8611,
+        19.2109,
+        20.6514,
+        20.5905,
+        20.2064,
+        20.9508,
+        19.7826,
+        19.6028,
+        20.8622,
+        21.3831
+      ],
+      "cases_per_batch": 118,
+      "excludes": "OCR/model loading, annotation, human triage; not an end-to-end performance comparison",
+      "includes": "token construction, parser and expected-value comparisons; warm process; sequential subjects",
+      "median_batch_ms": 20.472900000000003,
+      "p95_batch_ms": 22.6965
+    }
+  },
+  "method_totals": {
+    "before": {
+      "passed": 42,
+      "total": 118
+    },
+    "fixed": {
+      "passed": 118,
+      "total": 118
+    },
+    "revert_both": {
+      "passed": 42,
+      "total": 118
+    },
+    "revert_conflicting_scalar_name": {
+      "passed": 68,
+      "total": 118
+    },
+    "revert_custom_single_character": {
+      "passed": 92,
+      "total": 118
+    }
+  },
+  "model_calls": 0,
+  "module_sha256": "c26b9742e100deb6648dc0cd56b500d2f015410b392408fb4d8b42a2fcc254f7",
+  "new_faults_discovered": 0,
+  "output_origin": "actual_parser_execution_on_authored_ocr_tokens",
+  "outputs_sha256": "bb436817d1b88a83be484d27b8b484ec61b9550f7c10821829d7a3ec669f5705",
+  "parser_executions": {
+    "delta_debugging": 18,
+    "matrix": 590,
+    "timing": 17700
+  },
+  "per_kind": {
+    "conflicting_name": {
+      "before": {
+        "passed": 0,
+        "total": 48
+      },
+      "fixed": {
+        "passed": 48,
+        "total": 48
+      },
+      "revert_both": {
+        "passed": 0,
+        "total": 48
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 0,
+        "total": 48
+      },
+      "revert_custom_single_character": {
+        "passed": 48,
+        "total": 48
+      }
+    },
+    "multi_character": {
+      "before": {
+        "passed": 16,
+        "total": 16
+      },
+      "fixed": {
+        "passed": 16,
+        "total": 16
+      },
+      "revert_both": {
+        "passed": 16,
+        "total": 16
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 16,
+        "total": 16
+      },
+      "revert_custom_single_character": {
+        "passed": 16,
+        "total": 16
+      }
+    },
+    "original_matrix": {
+      "before": {
+        "passed": 8,
+        "total": 12
+      },
+      "fixed": {
+        "passed": 12,
+        "total": 12
+      },
+      "revert_both": {
+        "passed": 8,
+        "total": 12
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 10,
+        "total": 12
+      },
+      "revert_custom_single_character": {
+        "passed": 10,
+        "total": 12
+      }
+    },
+    "same_name": {
+      "before": {
+        "passed": 12,
+        "total": 12
+      },
+      "fixed": {
+        "passed": 12,
+        "total": 12
+      },
+      "revert_both": {
+        "passed": 12,
+        "total": 12
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 12,
+        "total": 12
+      },
+      "revert_custom_single_character": {
+        "passed": 12,
+        "total": 12
+      }
+    },
+    "single_character": {
+      "before": {
+        "passed": 0,
+        "total": 24
+      },
+      "fixed": {
+        "passed": 24,
+        "total": 24
+      },
+      "revert_both": {
+        "passed": 0,
+        "total": 24
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 24,
+        "total": 24
+      },
+      "revert_custom_single_character": {
+        "passed": 0,
+        "total": 24
+      }
+    },
+    "split_name": {
+      "before": {
+        "passed": 6,
+        "total": 6
+      },
+      "fixed": {
+        "passed": 6,
+        "total": 6
+      },
+      "revert_both": {
+        "passed": 6,
+        "total": 6
+      },
+      "revert_conflicting_scalar_name": {
+        "passed": 6,
+        "total": 6
+      },
+      "revert_custom_single_character": {
+        "passed": 6,
+        "total": 6
+      }
+    }
+  },
+  "plan_sha256": "db4df5eac28aa8db9ddb7b6e5826d9a8ed89726ffcc378800800246235624d6b",
+  "requirement_origin": "Author-written requirements, selected after known fixes; no external gold",
+  "schema": "historical-parser-development/1",
+  "scope": "KNOWN_FAULT_POST_FIX_DEVELOPMENT",
+  "source_before_commit": "4110f22",
+  "sources_sha256": {
+    "before": "cca292ef3a12a96757bb9b912a261d1dd591f5f8110e72da7c299183f39b9431",
+    "fixed": "3f10617d53a5e11b4f2541a3d2ef63504a38c979cb3cc79256b56524317c0e62",
+    "revert_both": "0cdd095e5fd5c133f52667fd5d0ab5bb9ae6208f6ad4e7834e68072507246a53",
+    "revert_conflicting_scalar_name": "acf941759df916071daa3e6eff9d8ddb7b01f8e86ef493e358eb558da7be084c",
+    "revert_custom_single_character": "de074484615b0505be8b6fd33d0b5e31c95b5a901a7a36a68f3082e0f2bfc648"
+  },
+  "statistical_inference": "NONE: two selected fault families, correlated input variants, no unseen holdout",
+  "status": "PASS_KNOWN_FAULT_REPRODUCTION",
+  "training_steps": 0,
+  "unexpected_cases": [],
+  "unique_inputs": 115
+}
