@@ -1,0 +1,31 @@
+{
+  "budget_model_calls": 0,
+  "budget_training_runs": 0,
+  "documents": {
+    "B_ORACLE_RELIABILITY_20261116.md": "3f9fbc797de33aeb887bc84e2ce95a5578c65134028e8ce16d26601e57757abb",
+    "B_PROSPECTIVE_PROTOCOL_DRAFT.md": "b27b0a2be35904c5d31baac95aafe41f904f97084803afafc0ea8d0122b7d85e",
+    "IFV_REVIEW_STATUS.md": "35234a96f600270fa5af15f1013c30ac6ffca098fee0cbab6af9052d462c7411",
+    "NEXT_ACTIONS.md": "916eae9da7860c23416610d0974d4683ee0f25d79446033d1d44bc34596d4111",
+    "REVIEWER_HANDOFF_VI.md": "4ab28dce8055be5f7b13395ff24ba5704e78b11a6015dbe9bb0ccc3f08e837a1",
+    "REVISED_GO_NO_GO.md": "f50632d3c20d02a59a81d2282c97b0af05370b401f3b21a122513e4c6f4c42e4",
+    "execution/master_01/oracle_reliability_20261116/README.md": "00cd9a92541cf9d08c9bdda389811a61590f48810f2e7c073a59189b57d8e6ab",
+    "execution/master_01/oracle_reliability_20261116/SOURCES_AND_FEASIBILITY.md": "9b7b58dfce2cd1960fb65ff93a280f9bd5de9f1ebe0ee837b623d64ce63b2f18",
+    "paper/B_CLAIM_TO_EVIDENCE_20261116.md": "e274d668c36405713de509ef9835334ef64d12e7095f1112fe82289fac6d1ed5",
+    "paper/SUBMISSION_READINESS.md": "a21df3799884fd09d20e2eb146887c499f2e3155c431aee3e2bd85d3cfc9d724"
+  },
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]"
+  },
+  "input_lines": 1231,
+  "input_sha256": "482f2d02e1a2b97d18fa5b5d08cacfd6271a8a2bf7d2e5c3639cc5f89738d896",
+  "input_status": "Read completely; adopted as task context, not approval or independent evidence; embedded prior-chat citation tokens not verified sources",
+  "instructions": {
+    "AGENTS.md": "27c7b6ce62d6c96ca431306f3328a2b0a8d9f487bd16d8b31ef4873e637c162e",
+    "PROJECT_SYNC_POLICY.md": "7192656a996ec632f2adcbe9a672195a149d27e40b8442539e91169811d40d51"
+  },
+  "production_approvals": 0,
+  "protected_files": 2741,
+  "protected_manifest_sha256": "39fc8495950611f596766650c3205ce1acae5e1d471b89bf5baab88a4b07bfbd",
+  "scope": "Preparatory workflow, semantic/exposure/C2 audit, sizing, protocol and paper outline; no new inference/training/cohort/approval"
+}

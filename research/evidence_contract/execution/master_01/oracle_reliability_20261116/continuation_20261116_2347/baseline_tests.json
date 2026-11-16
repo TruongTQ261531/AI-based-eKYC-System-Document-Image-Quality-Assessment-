@@ -1,0 +1,26 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests",
+    "--basetemp",
+    "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\oracle_reliability_20261116\\continuation_20261116_2347\\baseline_qa"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "end": "2026-11-16T16:49:41.118899+00:00",
+  "exit_code": 0,
+  "head": "0f40f5e014b1065d86c10ad453ed23e2db17ac34",
+  "log": "baseline_tests.log",
+  "model_calls": 0,
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "start": "2026-11-16T16:48:53.276206+00:00",
+  "stdout_stderr_sha256": "3a05caa437219a2f54408eb3bbe5c397d565ce08fea06a0db63dc0de073d2ae6",
+  "training_runs": 0
+}
