@@ -1,0 +1,11 @@
+{
+  "control_payloads_reviewed": "Authored DEMO/WRONG/POISON values and fictional ICAO example only",
+  "development_note": "A documentation apply_patch attempt had an invalid hunk and made no changes; corrected patch applied.",
+  "git_source_byte_policy": "research/evidence_contract/** -text",
+  "local_markdown_links_checked": 25,
+  "new_markdown_files_checked": 6,
+  "private_rows_published": false,
+  "public_bundle_files": 7,
+  "public_history": "Grouped contingency cells with anonymous cluster labels; no reviewer IDs/notes or actual model text",
+  "status": "PASS"
+}

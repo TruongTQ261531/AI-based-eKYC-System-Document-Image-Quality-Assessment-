@@ -1,5 +1,14 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+Mốc B tiếp theo ngày 16/11 đã xong [P0/P1/P2](B_ORACLE_RELIABILITY_20261116.md):
+reference policy v2, hai mức abstention, matched flat baseline, control/replay và
+verifier. 336 tests + 6 subtests PASS; kết quả âm về shared wrong reference được
+giữ rõ. [Protocol prospective B](B_PROSPECTIVE_PROTOCOL_DRAFT.md) và claim ledger
+đã viết; P3 review vẫn mở, P4 chưa khóa cohort/sizing/approval, P5 chưa có paper B
+hoàn chỉnh. MIDV đã kiểm nguồn license và schema local; lịch sử có ít nhất
+148 instance/10 loại, không coi cả corpus là unseen. Không training/inference mới.
+Ưu tiên tiếp: reference độc lập, diversity/lineage, design và adequacy; vẫn NO-GO.
+
 Mốc mới nhất 16/11: [R02 pha 1 đủ 86/86 mục](R02_REVIEW_INTAKE_20261116.md)
 đã nhập nguyên trạng, vai trò ngoài dự án được đính chính riêng. Đã có agreement
 pha 1 tác giả/R02 và ZIP pha 2 riêng 46 ca; còn chờ R02 pha 2 và R03 pha 1.

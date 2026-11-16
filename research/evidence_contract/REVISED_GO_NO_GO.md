@@ -1,5 +1,14 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Sau [P0–P2 B Oracle Reliability ngày 16/11](B_ORACLE_RELIABILITY_20261116.md),
+**NO_GO_SUPERIORITY giữ nguyên**. Policy v2 và replay đã kiểm; hai nguồn cùng sai
+vẫn gây FP. Tier 2 trên constructed controls có risk pointwise 1/7 và coverage
+7/25, so với 2/25 và 25/25 ở tier 1. Trên actual-model pilot chưa có reference
+được duyệt, B abstain toàn bộ field/relation, risk NA. Không có independent gold,
+cohort mới, sizing hoặc GO. [Protocol B](B_PROSPECTIVE_PROTOCOL_DRAFT.md) chỉ là
+dự thảo; hoàn thiện tooling không mở TASK 6B/7B. Không tuyên bố EASE yêu cầu mọi
+bài phải chứng minh superiority; gate này áp dụng cho claim của project.
+
 Sau [intake R02 ngày 16/11](R02_REVIEW_INTAKE_20261116.md), **NO_GO_SUPERIORITY
 giữ nguyên**. Có thêm 86/86 mục pha 1 từ người ngoài theo xác nhận organizer,
 đã đo agreement thực với tác giả. Semantic key có 19/86 bất đồng, κ=0,0239;

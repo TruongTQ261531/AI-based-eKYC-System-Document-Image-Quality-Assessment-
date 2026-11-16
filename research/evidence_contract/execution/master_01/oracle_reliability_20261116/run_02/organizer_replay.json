@@ -1,0 +1,16 @@
+{
+  "actual_cache_files_verified": 93,
+  "command": "Call control_rows() and pilot_rows(); compare complete records, aggregated cells and report with run_02; verify source hashes.",
+  "control_records": 58,
+  "historical_rows": 92,
+  "independent_truth_validation": false,
+  "metrics_exact": true,
+  "model_calls": 0,
+  "new_human_annotations": 0,
+  "private_historical_rows_exact": true,
+  "public_aggregate_cells_exact": true,
+  "public_control_records_exact": true,
+  "source_files_verified": 7,
+  "status": "PASS",
+  "training_runs": 0
+}

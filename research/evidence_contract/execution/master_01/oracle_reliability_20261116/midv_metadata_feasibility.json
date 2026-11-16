@@ -1,0 +1,126 @@
+{
+  "human_annotations_created": 0,
+  "images_visually_reviewed": 0,
+  "inspected_exposure_manifests": {
+    "research/data/fair_controls_v1/sources.json": {
+      "distinct_instances": 24,
+      "rows": 24,
+      "sha256": "cb54b0054ea950d3fb0f81065d89a75c17925389cd2eedd2a42d6c2a93f1e270"
+    },
+    "research/data/hard_pairs_v1/sources.json": {
+      "distinct_instances": 24,
+      "rows": 24,
+      "sha256": "96602a7753840e014035ac16f0fe8f3624922dc01bc1a29edc04660d1c32b0f6"
+    },
+    "research/data/midv2020/selection.json": {
+      "distinct_instances": 20,
+      "rows": 20,
+      "sha256": "2bfd8972e0040a8b614f25e0d83dba8584f2c1cb9a1a3eb923ea704b4854a641"
+    },
+    "research/data/ocr_labels_v1/sources.json": {
+      "distinct_instances": 24,
+      "rows": 24,
+      "sha256": "bf5b29c23bcd990d54ca99aedd1f61834c27e1657f24930d7615e76aad4c957f"
+    },
+    "research/data/vlm_lora_v2_r2/sources.json": {
+      "distinct_instances": 64,
+      "rows": 64,
+      "sha256": "01df541ed0dd7ea5677ca87a983b5b81c3c6805f25306807ee9bf483733005e3"
+    }
+  },
+  "known_exposed_document_types": 10,
+  "known_exposed_instances_lower_bound": 148,
+  "metadata": {
+    "head.bin": {
+      "annotation_files": 10,
+      "field_names": [
+        "doc_quad",
+        "face"
+      ],
+      "image_metadata_rows": 1000,
+      "input_unchanged": true,
+      "region_attribute_keys": {
+        "features": 1000,
+        "field_name": 2000,
+        "orientation": 22,
+        "value": 1000
+      },
+      "regions": 2000,
+      "sha256": "890af18896149074d82d70d371297bb35d8c928cd80ddc0036bb14d7b8f13a67",
+      "shapes": {
+        "polygon": 1000,
+        "rect": 1000
+      }
+    },
+    "template_head.bin": {
+      "annotation_files": 10,
+      "field_names": [
+        "",
+        "authority",
+        "authority_eng",
+        "authority_line0",
+        "authority_line1",
+        "birth_country",
+        "birth_date",
+        "birth_date_2",
+        "birth_date_22",
+        "birth_place",
+        "birth_place_eng",
+        "birth_place_line0",
+        "birth_place_line1",
+        "birth_place_line2",
+        "code",
+        "expiry_date",
+        "expiry_date2",
+        "expiry_date_2",
+        "face",
+        "gender",
+        "height",
+        "id_number",
+        "issue_date",
+        "issue_place",
+        "mrz_line0",
+        "mrz_line1",
+        "name",
+        "name_code",
+        "name_eng",
+        "nationality",
+        "nationality/nationality_eng",
+        "number",
+        "number2",
+        "number3",
+        "patronymic",
+        "photo",
+        "residence_line0",
+        "residence_line1",
+        "signature",
+        "surname",
+        "surname_eng",
+        "surname_second",
+        "type"
+      ],
+      "image_metadata_rows": 1000,
+      "input_unchanged": true,
+      "region_attribute_keys": {
+        "features": 3584,
+        "field_name": 16194,
+        "orientation": 3395,
+        "value": 16194
+      },
+      "regions": 16194,
+      "sha256": "75dd3432dc70ced7642db64bedf5f8e7385664425f62dc80ef7b289a135133ad",
+      "shapes": {
+        "rect": 16194
+      }
+    }
+  },
+  "model_calls": 0,
+  "new_cohort_selected": false,
+  "new_images_downloaded": 0,
+  "pixel_overlap_recomputed": false,
+  "pretraining_overlap": "UNKNOWN",
+  "script_sha256": "e12c37fefe0f01f18aaf060b19d9006b901d475cf5b38ac87e222ef8669ac9b7",
+  "source_inventory_or_readability_approved": false,
+  "status": "METADATA_FEASIBILITY_ONLY",
+  "total_history_completeness_verified": false
+}

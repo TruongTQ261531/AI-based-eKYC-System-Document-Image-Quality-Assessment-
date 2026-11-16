@@ -1,5 +1,14 @@
 # EASE 2027 · Master execution
 
+Mốc B mới **16/11**: [Oracle Reliability & Abstention](B_ORACLE_RELIABILITY_20261116.md)
+đã hoàn tất P0/P1/P2: policy v2 riêng, 58 control logic, replay 46 ca lịch sử,
+336 tests + 6 subtests PASS; verifier độc lập tái tính 492 nhóm metric.
+Tier chặt hơn giảm coverage nhưng vẫn có FP do hai nguồn cùng sai; chưa có
+superiority. 0 inference/training/phiếu mới. [Protocol B](B_PROSPECTIVE_PROTOCOL_DRAFT.md)
+là DRAFT_ONLY; Round 1 vẫn mở, R02 pha 2/R03 còn chờ. MIDV đã kiểm license/schema,
+ít nhất 148 instance/10 loại có exposure lịch sử; chưa chọn cohort mới.
+**NO_GO_SUPERIORITY**, không mở TASK 6B/7B. Các mốc bên dưới giữ nguyên lịch sử.
+
 Mốc tiếp nhận R02 **16/11**: [86/86 mục pha 1 đã niêm phong](R02_REVIEW_INTAKE_20261116.md),
 1 người ngoài dự án theo xác nhận organizer; đính chính role riêng, không sửa
 phiếu. Đã tính agreement tác giả/R02 (21/86 mục bất đồng ít nhất một tiêu chí),

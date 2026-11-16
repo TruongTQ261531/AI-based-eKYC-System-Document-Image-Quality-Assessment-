@@ -1,5 +1,11 @@
 # Trạng thái IFV
 
+Mốc [B Oracle Reliability ngày 16/11](B_ORACLE_RELIABILITY_20261116.md) không thay
+trạng thái người chấm hoặc nhãn. Không nhận JSON mới; Round 1 vẫn OPEN theo
+[đề xuất snapshot](B_PROSPECTIVE_PROTOCOL_DRAFT.md). Replay giữ báo cáo tác giả
+và panel withholding riêng; không biến reference do dựng thành gold hoặc sửa
+raw role/đáp án của R02. Các số người chấm bên dưới vẫn là trạng thái hiện tại.
+
 **R02_PHASE1_COMPLETE_UNADJUDICATED**, cập nhật 16/11/2026, Asia/Bangkok.
 Đã có **2 người nộp pha 1: tác giả + 1 người ngoài R02**. R02 đủ 86/86 mục,
 vai trò được người tổ chức đính chính riêng, phiếu gốc không đổi. Đồng thuận

@@ -11,6 +11,14 @@ Gửi tiếp cho đúng người này **`local/reviewer_exports/r02_20261116/rev
 `index.html`, chấm đủ rồi gửi lại JSON. Không cần gửi lại pha 1 hay toàn project.
 R03 vẫn dùng ZIP pha 1 v2 phía dưới. Không chuyển gói pha 2 của R02 cho R03.
 
+Kế hoạch nội bộ organizer sau mốc B: **Round 1 vẫn OPEN**, đề xuất snapshot
+author + R02 + R03 khi hoàn tất, hoặc khi organizer ghi rõ một cutoff phân tích
+có ngày và thành phần thực nhận. Chưa áp dụng cutoff/đóng tuyển trong lượt này.
+Người đến muộn vào Round 2/amendment, giữ raw, phiên bản và exposure. Đọc phần
+[reviewer rounds](B_PROSPECTIVE_PROTOCOL_DRAFT.md) để nối tiếp. ZIP đã phát giữ
+nguyên; không gửi kèm báo cáo B, đáp án tác giả hoặc bảng bất đồng cho người
+đang chấm độc lập. Mốc kỹ thuật không tạo thêm phiếu đánh giá.
+
 ## Bao nhiêu người là phù hợp?
 
 Không có số người chấm nào tự bảo đảm kết quả đúng. Pilot pha 2 hiện có một tác

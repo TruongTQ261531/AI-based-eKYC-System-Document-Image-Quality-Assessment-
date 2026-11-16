@@ -1,0 +1,9 @@
+{
+  "frozen_A_baselines_v1_preserved": true,
+  "historical_receipts_preserved": true,
+  "protected_files_unchanged": 2685,
+  "protected_manifest_sha256": "3d039cefe4faa98772b6d6fc22dcc4ddb761b78ad09f3eb916479ba75b410355",
+  "raw_answers_changed": 0,
+  "raw_reviews_and_issued_packages_preserved": true,
+  "status": "PASS"
+}

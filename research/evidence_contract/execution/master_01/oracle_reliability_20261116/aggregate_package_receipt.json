@@ -1,0 +1,23 @@
+{
+  "archive": "execution/master_01/oracle_reliability_20261116/aggregate_replay_02.zip",
+  "bytes": 37005,
+  "exit_code": 0,
+  "extracted_manifest_verified": true,
+  "files": 7,
+  "includes_actual_model_text": false,
+  "includes_images": false,
+  "includes_raw_review": false,
+  "isolated_process": true,
+  "result": {
+    "control_cases": 58,
+    "metric_groups": 492,
+    "policy_reexecuted": false,
+    "private_labels_reproduced": false,
+    "public_contingency_cells": 823,
+    "scope": "File integrity and independent arithmetic only",
+    "status": "PASS"
+  },
+  "sha256": "42074771c72e857c39d27760a81c4f2761d53b2dd374a29cb41b73d856d5c8c4",
+  "source_verifier_sha256": "58fe0e4d242d99de468f4e8782d06b988a41787825f5a3280ef7f0a19cd5b3b1",
+  "status": "PASS"
+}

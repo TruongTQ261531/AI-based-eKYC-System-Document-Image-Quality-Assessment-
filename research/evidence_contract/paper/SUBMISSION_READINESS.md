@@ -1,5 +1,15 @@
 # EASE 2027 submission readiness
 
+Latest B milestone, 16 November: [Oracle Reliability & Abstention](../B_ORACLE_RELIABILITY_20261116.md)
+P0/P1/P2 are complete for development: 58 symbolic controls, historical replay,
+336 tests + 6 subtests, and an independent aggregate verifier. Stricter evidence
+tiers still fail on correlated wrong references; no superiority is established.
+[B claim ledger](B_CLAIM_TO_EVIDENCE_20261116.md) and [prospective draft](../B_PROSPECTIVE_PROTOCOL_DRAFT.md)
+are available. No new B manuscript/PDF, human labels, inference or confirmatory
+lock was created. Reviewer Round 1 remains open. Provider license/schema checks
+advance corpus feasibility; exposure, independent truth, sizing and scientific
+GO remain pending. Frozen papers and older receipts below retain their scope.
+
 Latest intake, 16 November: [R02 completed all 86 phase-1 slots](../R02_REVIEW_INTAKE_20261116.md).
 The organizer clarified that the reviewer is external and selected the author
 role by mistake; the correction is separate from the immutable export.

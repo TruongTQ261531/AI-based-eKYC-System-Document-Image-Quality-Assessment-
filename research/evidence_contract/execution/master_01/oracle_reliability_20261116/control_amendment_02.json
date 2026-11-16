@@ -1,0 +1,15 @@
+{
+  "additional_control": "corroborated_shared_wrong_reference",
+  "constructed_truth_pointwise": false,
+  "expected_at_tiers": [
+    1,
+    2
+  ],
+  "expected_policy_pointwise": "FAULT",
+  "model_calls": 0,
+  "old_run_preserved": true,
+  "preregistered_before_pilot": false,
+  "previous_run": "run_01",
+  "reason": "Tier 2 deferred a single poisoned source. Add a control where two declared sources share the same wrong value, testing the claimed evidence tier under correlated error. This can invalidate an apparent risk benefit; do not tune to remove the counterexample.",
+  "status": "POST_RUN_DEVELOPMENT_AMENDMENT"
+}

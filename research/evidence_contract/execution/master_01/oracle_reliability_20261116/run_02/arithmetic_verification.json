@@ -1,0 +1,9 @@
+{
+  "control_cases": 58,
+  "metric_groups": 492,
+  "policy_reexecuted": false,
+  "private_labels_reproduced": false,
+  "public_contingency_cells": 823,
+  "scope": "File integrity and independent arithmetic only",
+  "status": "PASS"
+}

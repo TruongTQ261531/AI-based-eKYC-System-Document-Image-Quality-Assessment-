@@ -1,0 +1,19 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests",
+    "--basetemp",
+    "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\qa_b_20261116_final01"
+  ],
+  "exit_code": 0,
+  "model_calls": 0,
+  "scope": "Full evidence-contract regression suite; temporary injected controls only"
+}

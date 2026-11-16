@@ -1,0 +1,17 @@
+{
+  "files": {
+    "aggregate_cells.json": "bbed6055902d61890ec121defa0ee8bd61812626c1b7798a519ecee736225a93",
+    "control_cases.json": "95f97af440af1309abeae0cb522a057aa08fa455e214c789d93e8ba8af24651d",
+    "results.json": "f72387cc3b916b96f6ee3091e4120e6cc8493c244ae3eda8f5b2e0808e99d4ca"
+  },
+  "plan_sha256": "d72766f28d05270197152cd08bd9ab6d49d0f25a4cbe7bf312738128a4a68928",
+  "sources": {
+    "master/ifv_analysis.py": "2661d8c0a85037b05f3a1e73f5f7689dda14f3ee34a0c0c5cc9c252f8110c0c0",
+    "master/reference_policy.py": "66445d70031a2bb2a7333cdb004601cfa9ce988ee9a8b6897c49e7b1481ca35f",
+    "normalized_output.py": "53ba8bf4c9df80ead46ac89c88297e04f9e02692610e5b2d8ad290f592a1dea0",
+    "oracle_reliability/controls.py": "d3bbb8b290533039afb138d0bf996396829b12a9a1d629144831798ee97229a7",
+    "oracle_reliability/policy.py": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26",
+    "oracle_reliability/reporting.py": "44e72ee5f9a38f870ede8deb18defa44a37c692da3ccc4f3bc0bd1a3137f2b0f",
+    "oracle_reliability/run.py": "c918f808369f847d1f01d1fc1e149b238760796dff547c0d6d61625e40ee4f04"
+  }
+}

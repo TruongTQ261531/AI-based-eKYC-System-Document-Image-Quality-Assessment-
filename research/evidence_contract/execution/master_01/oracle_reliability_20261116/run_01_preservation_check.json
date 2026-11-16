@@ -1,0 +1,14 @@
+{
+  "arithmetic": {
+    "control_cases": 57,
+    "metric_groups": 492,
+    "policy_reexecuted": false,
+    "private_labels_reproduced": false,
+    "public_contingency_cells": 821,
+    "scope": "File integrity and independent arithmetic only",
+    "status": "PASS"
+  },
+  "prior_files_overwritten": false,
+  "source_files_verified": 7,
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests/test_oracle_reliability.py",
+    "research/evidence_contract/tests/test_oracle_reliability_reporting.py"
+  ],
+  "exit_code": 0,
+  "model_calls": 0
+}

@@ -1,5 +1,13 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+Ưu tiên hiện tại sau [B v2 ngày 16/11](B_ORACLE_RELIABILITY_20261116.md):
+P0/P1/P2 đã hoàn tất, không cần chạy lại pilot hoặc huấn luyện để bù reference
+còn thiếu. Theo [protocol mới](B_PROSPECTIVE_PROTOCOL_DRAFT.md), tiếp tục hoàn thiện
+lineage/exposure corpus, semantic mapping và panel C2 có backup được xác minh;
+chốt contrast, sizing/budget trước cohort mới. Reference approval và scientific
+GO cần chủ dự án/người có thẩm quyền. Round 1 vẫn OPEN; nhận R02 pha 2/R03 khi có,
+giữ phiếu/ZIP cũ và báo agreement trước phân xử. Chưa có B PDF hoặc submission.
+
 Mốc tiếp nhận R02 16/11: **pha 1 86/86 đã nhập**, đã tính agreement trước phân
 xử và tạo [ZIP pha 2 riêng 46 ca](R02_REVIEW_INTAKE_20261116.md). Gửi cho đúng R02,
 nhận JSON pha 2; tiếp tục thu pha 1 R03 rồi mới cấp gói riêng. Có 19 bất đồng
