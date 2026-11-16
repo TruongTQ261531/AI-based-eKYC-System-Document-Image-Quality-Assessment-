@@ -4,15 +4,18 @@ The user's instruction of 16 November 2026 requires every completed milestone
 to be recorded locally and synchronized to GitHub after relevant validation.
 The standing project instructions are in [AGENTS.md](AGENTS.md).
 
-Use the active progress branch `codex/ekyc-progress-20261116` while its changes
-are under review. Fetch first, inspect the exact diff, stage explicit project
+The user's subsequent explicit instruction on 16 November consolidates all
+completed progress into `main`, the sole working and synchronization branch.
+The progress branch was fast-forwarded into main at `df9f937`; its redundant
+branch references are removed after verifying the remote main includes it.
+Fetch first, inspect the exact diff, stage explicit project
 paths, commit, push normally and verify local HEAD against `git ls-remote`.
 Do not report synchronization from a local commit alone. Do not force-push.
 
-The initial bulk push to `main` was rejected by automatic approval review.
-The safer alternative is the isolated progress branch and a reviewable pull
-request. `main` stays unchanged until an approved merge; branch synchronization
-must not be described as a completed merge into `main`.
+Historically, automatic approval review rejected the initial bulk main push,
+so work used an isolated progress branch. The user's later explicit consolidation
+request authorized the main update, which succeeded without a force-push.
+Earlier receipts and notes about a pending main merge retain their historical meaning.
 
 Publish code, progress documents, aggregate results and hashes. Raw human
 reviews, reviewer identities/notes, analyst joins, image bundles awaiting release
