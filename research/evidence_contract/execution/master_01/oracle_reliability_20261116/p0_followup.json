@@ -1,0 +1,9 @@
+{
+  "baseline_tests_passed": 50,
+  "baseline_tests_repeated": 50,
+  "model_calls": 0,
+  "protected_files": 2685,
+  "retry_note": "Initial orchestration omitted running session ID; original audit completed in background. Retry reached exclusive receipt write and was refused with FileExistsError; initial intake and plan preserved. p0_tests.log holds the second successful run.",
+  "scope": "Same existing tests rerun during intake status check; do not count as 100 distinct tests",
+  "status": "PASS"
+}

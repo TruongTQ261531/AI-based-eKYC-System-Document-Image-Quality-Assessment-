@@ -1,0 +1,34 @@
+{
+  "approved_external_reference_ids": [],
+  "coverage_denominators": [
+    "all comparisons",
+    "labeled subset"
+  ],
+  "frozen_policy": "master/reference_policy.py",
+  "model_call_budget": 0,
+  "new_policy": "oracle_reliability/policy.py",
+  "no_claims": [
+    "independent gold",
+    "natural fault discovery",
+    "graph superiority",
+    "calibrated confidence",
+    "confirmatory result"
+  ],
+  "outputs_origin": "oracle_unit_injected for new controls; actual_model caches for historical development replay only",
+  "planned_work": [
+    "Fail-closed typed reference validation, evidence grades and TD3 field-specific checks from literal MRZ",
+    "Separate pointwise/relation/structure lanes and explicit C2 source transition",
+    "Equal-information flat comparator plus reference-policy-v1 boundary counterexamples",
+    "Authored expectation controls, deterministic permutations and malformed input negative tests",
+    "Pilot replay using frozen labels with no external reference approval; abstention accounting and policy operating points",
+    "Independent stdlib arithmetic/hash verifier, preserving unresolved alarms and unique comparison denominators",
+    "Prospective B protocol and open reviewer round plan"
+  ],
+  "policy_version": "oracle-reliability/2",
+  "risk_definition": "(FP+FN among decisions) / decided and labeled rows; abstention separately counted as missed fault for all-fault sensitivity",
+  "schema": "oracle-reliability-development-plan/1",
+  "scope": "P0-P2 first implementation milestone; P3 remains open and P4 draft only",
+  "source_handoff_sha256": "8bcaa8180a322bf84f3cad12fcb21ec8e692579b8033e81d4ce6b758dcbe2c9c",
+  "status": "DEVELOPMENT_ONLY",
+  "training_budget": 0
+}
