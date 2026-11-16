@@ -1,0 +1,29 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "research/evidence_contract/tests/test_reporting_v2.py",
+    "research/evidence_contract/tests/test_sizing.py",
+    "-q"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "start": "2026-11-16T17:48:07.753256+00:00",
+  "end": "2026-11-16T17:48:10.239469+00:00",
+  "exit_code": 1,
+  "counts": {
+    "passed": 22,
+    "failed": 1,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "cc61c6742046719999079a09522fc484a4d0e6fa6afb9898722705198c2af019",
+  "log": "metrics_sizing_tests_01.log",
+  "runner_sha256": "51d50302980c7bdfee54d3b462d2738c6a6db2b35b33005ce1536fea03d73fe8"
+}

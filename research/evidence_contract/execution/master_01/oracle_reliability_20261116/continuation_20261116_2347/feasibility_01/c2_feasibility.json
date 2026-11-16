@@ -1,0 +1,33 @@
+{
+  "approved_references": 0,
+  "by_field": {
+    "dob": 400,
+    "expiry_date": 400,
+    "id_number": 300
+  },
+  "by_kind": {
+    "body_mrz": 1100
+  },
+  "candidate_instances": 400,
+  "candidate_inventory_digest": "088ab3bf7cb21ecfb44eb2ba8f0335648c2d64f64a1ec6106c8e897c4d1782c8",
+  "candidate_pairs": 1100,
+  "cohort_selected": false,
+  "eligible_pairs": 0,
+  "mechanical_status": {
+    "LITERAL_OR_PRECISION_DIFFERENCE": 1097,
+    "mrz_format_unsupported": 3
+  },
+  "new_model_calls": 0,
+  "provider_instances_scanned": 1000,
+  "reason_counts": {
+    "backup_supported_after": 1100,
+    "backup_supported_before": 1100,
+    "primary_removed_after": 1100,
+    "primary_supported_before": 1100,
+    "provenance_verified": 1100,
+    "reference_approved": 1100,
+    "semantic_equality_approved": 1100
+  },
+  "schema": "c2-inventory-feasibility/1",
+  "scope": "Potential source pairs in cached provider template metadata; no before/after mutation or semantic approval"
+}

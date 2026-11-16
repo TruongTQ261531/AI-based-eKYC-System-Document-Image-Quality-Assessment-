@@ -1,0 +1,30 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "research.evidence_contract.oracle_reliability.feasibility",
+    "--output",
+    "research/evidence_contract/execution/master_01/oracle_reliability_20261116/continuation_20261116_2347/feasibility_01",
+    "--private",
+    "research/evidence_contract/local/master_01/oracle_reliability_20261116/continuation_20261116_2347/feasibility_01"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "start": "2026-11-16T17:30:05.464316+00:00",
+  "end": "2026-11-16T17:35:32.062306+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "620c777a31cf9ede8e87bb8715cf92c9feb1e17be15581e38fc93ba365ebc889",
+  "log": "feasibility_01.log",
+  "runner_sha256": "51d50302980c7bdfee54d3b462d2738c6a6db2b35b33005ce1536fea03d73fe8"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "synthetic_views": 2,
+  "synthetic_cases": 3,
+  "packet_states": {
+    "AGREEMENT": 1,
+    "DISAGREEMENT": 1,
+    "UNRESOLVED": 1
+  },
+  "exact_agreement": [
+    {
+      "pair_sha256": "130fff8879406cc73ff54a201158247f8ef13c1eae2c0df0c1c5dc1a0e549d55",
+      "matched": 2,
+      "denominator": 3,
+      "value": 0.6666666666666666
+    }
+  ],
+  "explicit_decisions": 3,
+  "synthetic_approved_before_revocation": 1,
+  "synthetic_approved_after_revocation": 0,
+  "production_approved": 0,
+  "actual_labels_changed": 0,
+  "actual_reviewers_created": 0,
+  "model_calls": 0,
+  "training_runs": 0,
+  "production_gate_still_unknown": true,
+  "independent_truth_established": false
+}

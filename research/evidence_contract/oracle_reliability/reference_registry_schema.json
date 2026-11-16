@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reference decision envelope v1",
+  "description": "Structural description only. reference_registry.py additionally enforces designated signatures, exact reference/context bindings, state transitions, chain, time order, independence roles and checkpoint. No JSON schema can establish semantic truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["payload", "signature_hex"],
+  "properties": {
+    "signature_hex": {"type": "string", "pattern": "^[0-9a-f]{128}$"},
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "mode", "registry_version", "candidate_id", "bindings", "action", "authority_id", "authority_role", "timestamp", "basis_sha256", "sequence", "previous_event_sha256", "supersedes_id"],
+      "properties": {
+        "schema": {"const": "reference-decision/1"},
+        "registry_version": {"const": "reference-registry/1"},
+        "mode": {"enum": ["PRODUCTION", "SYNTHETIC"]},
+        "candidate_id": {"$ref": "#/$defs/sha"},
+        "bindings": {
+          "type": "object", "additionalProperties": false,
+          "required": ["reference_id", "physical_instance_sha256", "source_artifact_sha256", "source_version", "field", "kind", "precision", "value_sha256", "rights_record_sha256"],
+          "properties": {
+            "reference_id": {"$ref": "#/$defs/sha"},
+            "physical_instance_sha256": {"$ref": "#/$defs/sha"},
+            "source_artifact_sha256": {"$ref": "#/$defs/sha"},
+            "source_version": {"type": "string", "minLength": 1},
+            "field": {"type": "string", "minLength": 1},
+            "kind": {"enum": ["text", "identifier", "date_full", "date_yymmdd"]},
+            "precision": {"type": "string", "minLength": 1},
+            "value_sha256": {"$ref": "#/$defs/sha"},
+            "rights_record_sha256": {"anyOf": [{"$ref": "#/$defs/sha"}, {"type": "null"}]}
+          }
+        },
+        "action": {"enum": ["REVIEW_PROPOSED", "ADJUDICATED_ACCEPT", "ADJUDICATED_REJECT", "ADJUDICATED_UNRESOLVED", "OWNER_APPROVED", "REVOKED", "SUPERSEDED"]},
+        "authority_id": {"type": "string", "minLength": 1},
+        "authority_role": {"enum": ["reviewer", "adjudicator", "reference_approver"]},
+        "timestamp": {"type": "string", "format": "date-time"},
+        "basis_sha256": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sha"}},
+        "sequence": {"type": "integer", "minimum": 1},
+        "previous_event_sha256": {"$ref": "#/$defs/sha"},
+        "supersedes_id": {"anyOf": [{"$ref": "#/$defs/sha"}, {"type": "null"}]}
+      }
+    }
+  },
+  "$defs": {"sha": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}

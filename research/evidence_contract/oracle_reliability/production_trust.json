@@ -1,0 +1,8 @@
+{
+  "schema": "reference-trust-configuration/1",
+  "mode": "PRODUCTION",
+  "authorities": {},
+  "expected_journal_head_sha256": null,
+  "owner_protocol_approval_sha256": null,
+  "status": "NO_HUMAN_AUTHORITY_CONFIGURED"
+}

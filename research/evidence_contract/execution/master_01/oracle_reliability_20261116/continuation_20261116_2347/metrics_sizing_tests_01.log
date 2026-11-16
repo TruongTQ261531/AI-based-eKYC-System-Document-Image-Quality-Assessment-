@@ -1,0 +1,15 @@
+..............F........                                                  [100%]
+================================== FAILURES ===================================
+_________ test_wilson_matches_nist_one_sided_example_and_empty_is_na __________
+
+    def test_wilson_matches_nist_one_sided_example_and_empty_is_na():
+        # Two-sided alpha=.10 has the same lower endpoint as one-sided 95%.
+        assert s.wilson(.13,200,.10)['low']==pytest.approx(.09577,abs=.00001)
+        assert s.wilson(.5,0)['width'] is None
+>       assert s.wilson(0,10)['low']==0
+E       assert 2.7755575615628914e-17 == 0
+
+research\evidence_contract\tests\test_sizing.py:10: AssertionError
+=========================== short test summary info ===========================
+FAILED research/evidence_contract/tests/test_sizing.py::test_wilson_matches_nist_one_sided_example_and_empty_is_na
+1 failed, 22 passed in 1.08s

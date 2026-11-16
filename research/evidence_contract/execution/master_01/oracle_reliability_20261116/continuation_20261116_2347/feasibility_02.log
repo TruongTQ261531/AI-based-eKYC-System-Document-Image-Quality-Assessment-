@@ -1,0 +1,10 @@
+{
+  "status": "PASS_METADATA_AUDIT",
+  "files_scanned": 22861,
+  "exposure": {
+    "EXPOSURE_UNKNOWN": 808,
+    "EXPOSED_CONFIRMED": 192
+  },
+  "c2_candidates": 1100,
+  "c2_eligible": 0
+}

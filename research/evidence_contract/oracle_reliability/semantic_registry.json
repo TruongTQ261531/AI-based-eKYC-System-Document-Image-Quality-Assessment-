@@ -1,0 +1,32 @@
+{
+  "schema": "semantic-field-registry/1",
+  "status": "DEVELOPMENT_MAPPING_NOT_HUMAN_APPROVED",
+  "normalization_policy": "oracle-reliability/2",
+  "fields": {
+    "id_number": {"aliases": ["id_number"], "kind": "identifier", "precision": "literal_identifier", "sources": ["body", "duplicated_body", "mrz_td3"], "mrz": "ordinary_document_number_only", "forbidden_substitutions": ["student_id", "unqualified_number", "O_to_0"]},
+    "full_name": {"aliases": ["full_name"], "kind": "text", "precision": "complete_name", "sources": ["body", "duplicated_body"], "mrz": "unsupported_no_name_checksum", "forbidden_substitutions": ["name_component", "surname_only", "school"]},
+    "dob": {"aliases": ["dob", "birth_date"], "kind": "date_full", "precision": "full_date_or_separate_yymmdd", "sources": ["body", "duplicated_body", "mrz_td3"], "mrz": "date_yymmdd_only_no_century", "forbidden_substitutions": ["issue_date", "expiry_date", "guessed_century"]},
+    "expiry_date": {"aliases": ["expiry_date"], "kind": "date_full", "precision": "full_date_or_separate_yymmdd", "sources": ["body", "duplicated_body", "mrz_td3"], "mrz": "date_yymmdd_only_no_century", "forbidden_substitutions": ["dob", "issue_date", "guessed_century"]},
+    "gender": {"aliases": ["gender", "sex"], "kind": "text", "precision": "literal_no_enum_translation", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["name_inference", "portrait_inference"]},
+    "nationality": {"aliases": ["nationality"], "kind": "text", "precision": "literal_no_country_code_translation", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["issuing_state", "birth_country"]},
+    "address": {"aliases": ["address"], "kind": "text", "precision": "complete_address", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["birth_place", "residence_component"]},
+    "school": {"aliases": ["school"], "kind": "text", "precision": "literal", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["id_number", "full_name"]},
+    "student_id": {"aliases": ["student_id"], "kind": "identifier", "precision": "literal_identifier", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["id_number", "school"]},
+    "category": {"aliases": ["category"], "kind": "text", "precision": "literal", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["category_code_without_verified_map"]},
+    "category_code": {"aliases": ["category_code"], "kind": "identifier", "precision": "literal_identifier", "sources": ["body", "duplicated_body"], "mrz": "unsupported_by_v2", "forbidden_substitutions": ["category_without_verified_map"]}
+  },
+  "ambiguous_native_keys": {
+    "number": ["id_number", "other_document_number"],
+    "number2": ["id_number", "other_document_number"],
+    "number3": ["id_number", "other_document_number"],
+    "name": ["given_name_component", "full_name"],
+    "surname": ["surname_component"],
+    "birth_date_2": ["dob", "other_date_representation"],
+    "birth_date_22": ["dob", "other_date_representation"],
+    "expiry_date2": ["expiry_date", "other_date_representation"],
+    "expiry_date_2": ["expiry_date", "other_date_representation"],
+    "nationality/nationality_eng": ["nationality", "combined_representation"]
+  },
+  "unapproved_composition": ["name+surname", "residence_line0+residence_line1", "mrz_line0+mrz_line1_as_arbitrary_field"],
+  "canonicalization": {"text": "NFC, trimmed collapsed whitespace, casefold", "identifier": "NFC and trim; case/O/0 distinct", "date_full": "YYYY-MM-DD or DD/MM/YYYY with calendar validation", "date_yymmdd": "YYMMDD only; 000229 rejected as century-dependent"}
+}

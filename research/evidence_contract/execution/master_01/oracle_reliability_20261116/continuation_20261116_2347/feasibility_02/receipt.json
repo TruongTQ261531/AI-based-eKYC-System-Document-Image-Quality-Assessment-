@@ -1,0 +1,21 @@
+{
+  "approvals_created": 0,
+  "cohort_selected": false,
+  "end": "2026-11-16T17:45:04.523406+00:00",
+  "model_calls": 0,
+  "private_outputs": {
+    "c2_candidates.json": "48fda5a4b8d7b6733b826dcd8b66e78a23fcecce0bb78dba07693bcc54a0dfac",
+    "input_hashes.json": "b140eb1190016da6731481b379283237f8390fb0b71dad7bb418ff1ff3b84a04",
+    "lineage.json": "95fae35205cc7e6c11c713d68fd1fc2475a3ba797b9c6b678b32eb4e4c58d63a"
+  },
+  "source_hashes": {
+    "c2_inventory.py": "f2a690725b556b184caeadd386bac30f89d1debe2cff84c4d1b0f107c5995a67",
+    "corpus_audit.py": "1bad468a775d4488b868cb70829b9e7bdd74b95b571e35b8b32eb9f42b2ea46f",
+    "feasibility.py": "91ace5e0ad571b50efe08280fce1dd7b0b8fa44ad7213618242d463cec090651",
+    "semantic_registry.json": "f7fe7be244a6211a7b42cc81d6ce02d04e089405dd2dd3faa9795843dc73adc7",
+    "semantic_registry.py": "8f4576204d7a11aec341534514728c72060add1a732413600882f138ba3eadc3"
+  },
+  "start": "2026-11-16T17:44:34.054667+00:00",
+  "status": "PASS_METADATA_AUDIT",
+  "training_runs": 0
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_READ_ONLY_COMPATIBILITY",
+  "issued_packages_checked": 3,
+  "phase1_validation": {
+    "schema": "strict-review-validation/1",
+    "phase": "phase1",
+    "raw_sha256": "1d324ae5aefd6478137c0bf98218899c7728f02ca702f6dc492a8d79fcbc99b7",
+    "normalized_sha256": "b25d59d918c7cd0ba01702bc0c16b3c19acd973245ab2c7ebe83352dcbeb074b",
+    "package_sha256": "0b859413a9a96282520c1e2c09d08c506e48e57f301ab84036506997ebca31f8",
+    "job_id": "3b89c791e8ab755659b745200f10435046a80cd09b5637821839f053e7bbb196",
+    "observations": 86,
+    "expected_observations": 86,
+    "missing": 0,
+    "complete": true,
+    "origin": "HUMAN_SUBMITTED_UNVERIFIED",
+    "gold_created": false,
+    "independent_truth_verified": false
+  },
+  "existing_phase1_seal_complete": true,
+  "phase2_cases": 46,
+  "duplicate_import_rejected": true,
+  "raw_submission_unchanged": true,
+  "new_imports": 0,
+  "labels_changed": 0,
+  "new_reviews_created": 0,
+  "review_round_closed": false
+}

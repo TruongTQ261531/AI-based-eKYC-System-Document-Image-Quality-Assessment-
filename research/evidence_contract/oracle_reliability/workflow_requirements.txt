@@ -1,0 +1,2 @@
+# New signature-verification workflow only. Existing frozen readers unchanged.
+cryptography==50.0.2

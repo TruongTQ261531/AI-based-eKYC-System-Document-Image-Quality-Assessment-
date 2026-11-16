@@ -1,0 +1,30 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "research/evidence_contract/tests/test_reference_workflow.py",
+    "research/evidence_contract/tests/test_reviewer_intake_v2.py",
+    "research/evidence_contract/tests/test_semantic_lineage_c2.py",
+    "-q"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "start": "2026-11-16T17:42:25.628691+00:00",
+  "end": "2026-11-16T17:42:28.189426+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 51,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "634f39587a391a7de3d4dd0243de561345223c5f13cd16526523fa54274b87ed",
+  "log": "p2_tests_02.log",
+  "runner_sha256": "51d50302980c7bdfee54d3b462d2738c6a6db2b35b33005ce1536fea03d73fe8"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "protected_files": 2741,
+  "missing": 0,
+  "changed": 0,
+  "inventory_sha256": "39fc8495950611f596766650c3205ce1acae5e1d471b89bf5baab88a4b07bfbd"
+}

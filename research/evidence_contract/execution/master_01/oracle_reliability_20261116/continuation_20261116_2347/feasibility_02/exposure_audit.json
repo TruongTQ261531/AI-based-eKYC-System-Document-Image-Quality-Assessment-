@@ -1,0 +1,445 @@
+{
+  "by_type": {
+    "alb_id": {
+      "EXPOSED_CONFIRMED": 19,
+      "EXPOSURE_UNKNOWN": 81
+    },
+    "aze_passport": {
+      "EXPOSED_CONFIRMED": 18,
+      "EXPOSURE_UNKNOWN": 82
+    },
+    "esp_id": {
+      "EXPOSED_CONFIRMED": 19,
+      "EXPOSURE_UNKNOWN": 81
+    },
+    "est_id": {
+      "EXPOSED_CONFIRMED": 18,
+      "EXPOSURE_UNKNOWN": 82
+    },
+    "fin_id": {
+      "EXPOSED_CONFIRMED": 19,
+      "EXPOSURE_UNKNOWN": 81
+    },
+    "grc_passport": {
+      "EXPOSED_CONFIRMED": 20,
+      "EXPOSURE_UNKNOWN": 80
+    },
+    "lva_passport": {
+      "EXPOSED_CONFIRMED": 21,
+      "EXPOSURE_UNKNOWN": 79
+    },
+    "rus_internalpassport": {
+      "EXPOSED_CONFIRMED": 20,
+      "EXPOSURE_UNKNOWN": 80
+    },
+    "srb_passport": {
+      "EXPOSED_CONFIRMED": 19,
+      "EXPOSURE_UNKNOWN": 81
+    },
+    "svk_id": {
+      "EXPOSED_CONFIRMED": 19,
+      "EXPOSURE_UNKNOWN": 81
+    }
+  },
+  "cache_hash_links": 6214,
+  "cross_instance_recorded_hash_collisions": 0,
+  "downloads": 0,
+  "evidence_links": 14331,
+  "exposure_states": {
+    "EXPOSED_CONFIRMED": 192,
+    "EXPOSURE_UNKNOWN": 808
+  },
+  "files_scanned": 22861,
+  "human_approvals": 0,
+  "input_inventory_digest": "dfae1fa799c9e49c8bd9d83335c4846d0d417007c2d19381914c05f05e626289",
+  "model_calls": 0,
+  "new_cohort_selected": false,
+  "other_datasets": "MIDV-500/2019, MIDV-UP and renderer identities are outside this MIDV-2020 classifier; no unseen claim",
+  "parse_exclusions": {},
+  "physical_instances": 1000,
+  "provider_template_header_sha256": "75dd3432dc70ced7642db64bedf5f8e7385664425f62dc80ef7b289a135133ad",
+  "schema": "corpus-exposure-audit/1",
+  "scope": [
+    "research/data",
+    "research/results",
+    "research/cache"
+  ],
+  "semantic_mapping": [
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "",
+      "proposed_field": null,
+      "regions": 1,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "authority",
+      "proposed_field": null,
+      "regions": 400,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "authority_eng",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "authority_line0",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "authority_line1",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_country",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_date",
+      "proposed_field": "dob",
+      "regions": 1000,
+      "state": "LEXICAL_MAPPING_ONLY"
+    },
+    {
+      "alternatives": [
+        "dob",
+        "other_date_representation"
+      ],
+      "human_approved": false,
+      "native_key": "birth_date_2",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "dob",
+        "other_date_representation"
+      ],
+      "human_approved": false,
+      "native_key": "birth_date_22",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_place",
+      "proposed_field": null,
+      "regions": 500,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_place_eng",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_place_line0",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_place_line1",
+      "proposed_field": null,
+      "regions": 67,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "birth_place_line2",
+      "proposed_field": null,
+      "regions": 27,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "code",
+      "proposed_field": null,
+      "regions": 500,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "expiry_date",
+      "proposed_field": "expiry_date",
+      "regions": 900,
+      "state": "LEXICAL_MAPPING_ONLY"
+    },
+    {
+      "alternatives": [
+        "expiry_date",
+        "other_date_representation"
+      ],
+      "human_approved": false,
+      "native_key": "expiry_date2",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "expiry_date",
+        "other_date_representation"
+      ],
+      "human_approved": false,
+      "native_key": "expiry_date_2",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "face",
+      "proposed_field": null,
+      "regions": 1000,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "gender",
+      "proposed_field": "gender",
+      "regions": 1000,
+      "state": "LEXICAL_MAPPING_ONLY"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "height",
+      "proposed_field": null,
+      "regions": 200,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "id_number",
+      "proposed_field": "id_number",
+      "regions": 700,
+      "state": "LEXICAL_MAPPING_ONLY"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "issue_date",
+      "proposed_field": null,
+      "regions": 800,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "issue_place",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "mrz_line0",
+      "proposed_field": null,
+      "regions": 400,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "mrz_line1",
+      "proposed_field": null,
+      "regions": 400,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "given_name_component",
+        "full_name"
+      ],
+      "human_approved": false,
+      "native_key": "name",
+      "proposed_field": null,
+      "regions": 1000,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "name_code",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "name_eng",
+      "proposed_field": null,
+      "regions": 200,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "nationality",
+      "proposed_field": "nationality",
+      "regions": 800,
+      "state": "LEXICAL_MAPPING_ONLY"
+    },
+    {
+      "alternatives": [
+        "nationality",
+        "combined_representation"
+      ],
+      "human_approved": false,
+      "native_key": "nationality/nationality_eng",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "id_number",
+        "other_document_number"
+      ],
+      "human_approved": false,
+      "native_key": "number",
+      "proposed_field": null,
+      "regions": 999,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "id_number",
+        "other_document_number"
+      ],
+      "human_approved": false,
+      "native_key": "number2",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "id_number",
+        "other_document_number"
+      ],
+      "human_approved": false,
+      "native_key": "number3",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "patronymic",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "photo",
+      "proposed_field": null,
+      "regions": 1000,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "residence_line0",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "residence_line1",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "signature",
+      "proposed_field": null,
+      "regions": 800,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [
+        "surname_component"
+      ],
+      "human_approved": false,
+      "native_key": "surname",
+      "proposed_field": null,
+      "regions": 1000,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "surname_eng",
+      "proposed_field": null,
+      "regions": 200,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "surname_second",
+      "proposed_field": null,
+      "regions": 100,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    },
+    {
+      "alternatives": [],
+      "human_approved": false,
+      "native_key": "type",
+      "proposed_field": null,
+      "regions": 400,
+      "state": "AMBIGUOUS_OR_UNSUPPORTED"
+    }
+  ],
+  "status": "PREPARATORY_ONLY",
+  "total_project_history_complete": false,
+  "unknown_pretraining_overlap": true
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "research.evidence_contract.execution.master_01.oracle_reliability_20261116.continuation_20261116_2347.check_issued_packages",
+    "D:\\App\\review-R02-2026-11-16T08-52-31-439Z.json"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "start": "2026-11-16T17:42:44.143841+00:00",
+  "end": "2026-11-16T17:42:44.982569+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "c5d9a1acd1df65bd6a49e92b0e19db24c087c65fa457a01b62c2a2880e664cd4",
+  "log": "issued_compatibility_02.log",
+  "runner_sha256": "51d50302980c7bdfee54d3b462d2738c6a6db2b35b33005ce1536fea03d73fe8"
+}

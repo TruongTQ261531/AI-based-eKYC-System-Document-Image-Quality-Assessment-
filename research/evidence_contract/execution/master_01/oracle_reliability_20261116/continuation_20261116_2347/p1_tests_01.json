@@ -1,0 +1,33 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests/test_reviewer_intake_v2.py",
+    "research/evidence_contract/tests/test_semantic_lineage_c2.py",
+    "--basetemp",
+    "research/evidence_contract/local/master_01/oracle_reliability_20261116/continuation_20261116_2347/p1_qa01"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "start": "2026-11-16T17:30:05.465345+00:00",
+  "end": "2026-11-16T17:30:07.899957+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "8b46845a04e3bc7a3337330acfbb58a1f24155d32117f1e10227ddb626c214c5",
+  "log": "p1_tests_01.log",
+  "runner_sha256": "51d50302980c7bdfee54d3b462d2738c6a6db2b35b33005ce1536fea03d73fe8"
+}
