@@ -1,0 +1,70 @@
+{
+  "B": {
+    "control_cases": 58,
+    "metric_groups": 492,
+    "policy_reexecuted": false,
+    "private_labels_reproduced": false,
+    "public_contingency_cells": 823,
+    "scope": "File integrity and independent arithmetic only",
+    "status": "PASS"
+  },
+  "R02": {
+    "aggregate_sha256": {
+      "phase2_agreement.json": "75d3a6cd2b21f7ddf4203dcebf29aaadaf5bca09152a51609ab2082697ab11fe",
+      "r02_descriptive.json": "1697508cd57b4e3631d9819094ba6159f91facb026b924a94f897d35a39e73c6",
+      "r02_postreview_analysis.json": "9c94ad2a8c5435fa83be177f346f5896fc4650aa22b4dc76bf27d8c1ba97c074",
+      "r02_primary_status_by_contract.json": "f286f3674ec3e8d455abb1f8118d15b1c44059e875966721b60e3ebc8e7a1311"
+    },
+    "agreement_tables": 18,
+    "alarm_panels": 12,
+    "labels_pooled": false,
+    "method_summary_panels": 216,
+    "primary_cases": 42,
+    "reviewed_cases": 46,
+    "round_status": "OPEN",
+    "scope": "Independent aggregate arithmetic only; not reference truth or provenance",
+    "status": "PASS"
+  },
+  "approved_reference_count": 0,
+  "authorities": 0,
+  "environment": {
+    "dependencies": {
+      "cryptography": "50.0.2",
+      "numpy": "2.4.6",
+      "pillow": "13.0.0",
+      "pytest": "9.1.1",
+      "torch": "2.14.1"
+    },
+    "logical_cpus": 8,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"
+  },
+  "metrics": {
+    "cells": 823,
+    "groups": 492,
+    "new_labels": 0,
+    "scope": "Independent arithmetic, not independent truth",
+    "status": "PASS"
+  },
+  "reviewer_pipeline": {
+    "cached_output_bindings": 92,
+    "diagnostic_cases": 4,
+    "historical_author_phase2_report_replayed": true,
+    "independence_verified": false,
+    "model_calls": 0,
+    "own_phase1_evidence_bindings": 92,
+    "phase1_agreement_replayed": true,
+    "phase1_slots": 86,
+    "phase2_cases": 46,
+    "portable_files": 35,
+    "portable_image_files": 30,
+    "primary_cases": 42,
+    "protected_files_unchanged": 2493,
+    "raw_answers_changed": 0,
+    "raw_bytes_and_answers_preserved": true,
+    "role_correction_separate": true,
+    "status": "PASS",
+    "training_runs": 0
+  },
+  "status": "PASS"
+}

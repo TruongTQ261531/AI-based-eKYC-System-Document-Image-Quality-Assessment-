@@ -1,0 +1,18 @@
+{
+  "D4": "OWNER_SELECTED_FOR_DEVELOPMENT_IMPLEMENTATION",
+  "R03": "PENDING",
+  "checkpoint": "b4ff37496d58aaa733e02493057b3ae2891a186f",
+  "head": "b4ff37496d58aaa733e02493057b3ae2891a186f",
+  "other_decisions": "PENDING",
+  "owner_request_sha256": "154d200c9ad2a5fe8a2eaccae38ac85bb5c795882806de6e2196f17c33c81e3a",
+  "policy_sha256": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26",
+  "prospective_started": false,
+  "protected_files": 3695,
+  "protected_manifest_sha256": "325f7e1697c88f21d6564585ceb4fd3d789a0e43940a0e71f80a99cfb11271f9",
+  "remote_main": "b4ff37496d58aaa733e02493057b3ae2891a186f",
+  "round_status": "OPEN",
+  "schema": "D4-development-preflight/1",
+  "scientific_gate": "NO_GO_SUPERIORITY",
+  "timestamp": "2026-11-17T04:17:10.235460+00:00",
+  "working_tree_clean_before": true
+}
