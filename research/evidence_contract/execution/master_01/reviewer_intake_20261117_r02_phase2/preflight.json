@@ -1,0 +1,27 @@
+{
+  "initial_head": "a47280531553b844b9c9b44d65ed0f47eba93701",
+  "protected_files": 3645,
+  "protected_manifest_sha256": "fda348bd78496d0602b2f2d5af405c327c1f463d64840c80f3d912baf1da641e",
+  "raw_sha256": "d1b9a1526767d98e52725f26ed554068be8c218b049febd068eb2da21ffe270d",
+  "received_at_utc": "2026-11-17T03:32:18.409019+00:00",
+  "round_status": "OPEN",
+  "schema": "phase2-intake-preflight/1",
+  "source_bytes_preserved": true,
+  "status": "VALIDATED_COMPLETE",
+  "user_attribution": "User supplied this export as R02 in the current conversation",
+  "validation": {
+    "complete": true,
+    "expected_observations": 46,
+    "gold_created": false,
+    "independent_truth_verified": false,
+    "job_id": "9d860b0d10de42d688a6ab8d1984f518116822cd1d082cfca1592c17cf6f24bd",
+    "missing": 0,
+    "normalized_sha256": "4813ecabf57899329f11dae31c47063154cfd35e51bbbd7982b10cd31827d3d1",
+    "observations": 46,
+    "origin": "HUMAN_SUBMITTED_UNVERIFIED",
+    "package_sha256": "7c36d6440af67bfbed06e8ca35f060df4c4feebcbbbfd5412edde52a14b0ac0d",
+    "phase": "phase2",
+    "raw_sha256": "d1b9a1526767d98e52725f26ed554068be8c218b049febd068eb2da21ffe270d",
+    "schema": "strict-review-validation/1"
+  }
+}

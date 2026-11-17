@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "protected_files_unchanged": 3645,
+  "raw_bytes_and_answers_preserved": true,
+  "strict_phase2_items": 46,
+  "own_phase1_slots": 86,
+  "canonical_pairs_compared": 46,
+  "primary_pairs": 42,
+  "primary_physical_instances": 3,
+  "old_author_report_replayed": true,
+  "old_R02_phase1_package_replay": "PASS",
+  "actual_phase2_reviewers": 2,
+  "external_phase2_reviewers_per_organizer": 1,
+  "independence_verified": false,
+  "round_status": "OPEN",
+  "adjudicated_cases": 0,
+  "labels_pooled": false,
+  "model_calls": 0,
+  "training_runs": 0
+}

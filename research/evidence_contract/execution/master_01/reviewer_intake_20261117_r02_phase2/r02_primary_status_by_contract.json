@@ -1,0 +1,47 @@
+{
+  "C1": {
+    "pointwise": {
+      "CONFIRMED_FAULT": 3,
+      "NO_FAULT": 6
+    },
+    "relation": {
+      "CONFIRMED_FAULT": 3,
+      "NO_FAULT": 6
+    }
+  },
+  "C2": {
+    "pointwise": {
+      "INCONCLUSIVE": 5,
+      "INVALID_TEST": 4
+    },
+    "relation": {
+      "INCONCLUSIVE": 5,
+      "INVALID_TEST": 4
+    }
+  },
+  "C3": {
+    "pointwise": {
+      "CONFIRMED_FAULT": 1,
+      "INCONCLUSIVE": 3,
+      "INVALID_TEST": 2,
+      "NO_FAULT": 6
+    },
+    "relation": {
+      "INCONCLUSIVE": 4,
+      "INVALID_TEST": 2,
+      "NO_FAULT": 6
+    }
+  },
+  "C4": {
+    "pointwise": {
+      "CONFIRMED_FAULT": 5,
+      "INCONCLUSIVE": 2,
+      "NO_FAULT": 5
+    },
+    "relation": {
+      "CONFIRMED_FAULT": 1,
+      "INCONCLUSIVE": 6,
+      "NO_FAULT": 5
+    }
+  }
+}

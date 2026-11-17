@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\execution\master_01\reviewer_intake_20261117_r02_phase2\workflow.py", line 162, in <module>
+    globals()[parser.parse_args().action]()
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\execution\master_01\reviewer_intake_20261117_r02_phase2\workflow.py", line 103, in analyze
+    first,author_report,_,_=sealed_view(AUTHOR,'AUTHOR')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\execution\master_01\reviewer_intake_20261117_r02_phase2\workflow.py", line 97, in sealed_view
+    return build_view(export,links,labels,code),report,links,labels
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\reviewer_tools\phase2_comparison.py", line 28, in build_view
+    need(row['stratum'] in ('primary','diagnostic'),'Unknown stratum')
+  File "D:\laptrinhcuatao\Ekyc\versions\research-document-recovery\research\evidence_contract\reviewer_tools\strict.py", line 10, in need
+    raise ValueError(message)
+ValueError: Unknown stratum

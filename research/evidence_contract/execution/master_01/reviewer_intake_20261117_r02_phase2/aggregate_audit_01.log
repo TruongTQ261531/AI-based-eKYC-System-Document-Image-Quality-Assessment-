@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Independent aggregate arithmetic only; not reference truth or provenance",
+  "agreement_tables": 18,
+  "method_summary_panels": 216,
+  "alarm_panels": 12,
+  "reviewed_cases": 46,
+  "primary_cases": 42,
+  "round_status": "OPEN",
+  "labels_pooled": false,
+  "aggregate_sha256": {
+    "phase2_agreement.json": "75d3a6cd2b21f7ddf4203dcebf29aaadaf5bca09152a51609ab2082697ab11fe",
+    "r02_descriptive.json": "1697508cd57b4e3631d9819094ba6159f91facb026b924a94f897d35a39e73c6",
+    "r02_postreview_analysis.json": "9c94ad2a8c5435fa83be177f346f5896fc4650aa22b4dc76bf27d8c1ba97c074",
+    "r02_primary_status_by_contract.json": "f286f3674ec3e8d455abb1f8118d15b1c44059e875966721b60e3ebc8e7a1311"
+  }
+}

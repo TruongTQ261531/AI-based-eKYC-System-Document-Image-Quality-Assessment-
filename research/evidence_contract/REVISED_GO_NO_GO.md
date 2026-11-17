@@ -1,5 +1,17 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Sau **[R02 pha 2 46/46 ngày 17/11](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
+**NO_GO_SUPERIORITY giữ nguyên**. Đã có 2 đánh giá đầy đủ ở mỗi pha (tác giả
+và R02), trong đó 1 external theo organizer. Pointwise primary agreement
+30/42 và relation 33/42 là mô tả trước phân xử, không phải gold hoặc accuracy.
+R02 vẫn cho A TP/FN=4/5 so với B3=9/0; FP B3=1/17 biến mất trong sensitivity
+giữ bất định ca có cờ. C2 vẫn 0/9 binary; chỉ 3 ID primary, chưa có reference
+được duyệt hoặc bằng chứng prospective. A_flat tiếp tục trùng A trên pilot.
+Round 1 OPEN, R03 chưa nộp; không closure/adjudication, không sửa frozen A,
+guard hoặc nhãn tác giả. **432 tests + 6 subtests PASS** xác nhận tooling và
+accounting, không cấp scientific GO hay xác nhận bài submission-ready.
+Các quyết định trước intake bên dưới giữ nguyên phạm vi lịch sử.
+
 Ngày **17/11**, [B continuation](B_CONTINUATION_REPORT_20261117.md) có trạng thái
 **GO_PREPARATORY_ONLY**, vẫn **NO_GO_SUPERIORITY**. 411 tests + 6 subtests chỉ xác
 nhận tooling/development; production approved reference = 0, C2 eligible = 0.

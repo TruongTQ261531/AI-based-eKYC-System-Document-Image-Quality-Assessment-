@@ -1,5 +1,24 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+Ưu tiên sau **[intake R02 pha 2 ngày 17/11](R02_PHASE2_REVIEW_INTAKE_20261117.md)**:
+
+1. R02 đã hoàn tất 86/86 pha 1 và 46/46 pha 2; không gửi lại ZIP hay yêu cầu
+   làm lại toàn phiếu. Raw, role correction và báo cáo tác giả giữ nguyên.
+2. Tiếp tục nhận pha 1 R03, khóa snapshot rồi cấp pha 2 riêng. Không gửi bảng
+   bất đồng/đáp án/báo cáo R02 cho người đang chấm độc lập. Pha 2 hiện có
+   tác giả + 1 external; chưa có đối chiếu giữa hai external.
+3. Round 1 OPEN: chỉ đóng khi thành phần/cutoff và authority được quyết định
+   rõ. Giữ 1 bất đồng binary pointwise và các khác biệt validity/uncertainty
+   để phân xử sau khóa vòng; không tự đổi đáp án hoặc lấy đa số làm gold.
+4. Theo [D1–D12](B_OWNER_DECISIONS_20261117.md), tiếp tục reference/lineage/
+   rights, contrast/comparator và prospective design/sizing. R02 không tự
+   giải quyết C2 (0/9 binary), 3 ID primary hoặc superiority: A còn FN=5/9
+   theo riêng panel R02. Không mở TASK 6B/7B hoặc chạy lại model để tăng n.
+
+Mốc này **432 tests + 6 subtests PASS**, 3.645 tệp cũ không đổi; code, aggregate
+và receipt được đồng bộ main. Các kế hoạch/bảng bên dưới là lịch sử trước
+lần nhận R02 pha 2; trạng thái chờ R02 trong đó đã được thay bằng DONE ở trên.
+
 Ưu tiên hiện tại **17/11**, sau [mốc continuation](B_CONTINUATION_REPORT_20261117.md):
 tooling chuẩn bị đã qua **411 tests + 6 subtests**. Không cần làm lại phiếu cá
 nhân, rebuild ZIP cũ hoặc chạy lại pilot để tạo số mẫu mới. Tiếp tục theo

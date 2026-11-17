@@ -1,0 +1,38 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests/test_phase2_comparison.py",
+    "research/evidence_contract/tests/test_reviewer_intake_v2.py",
+    "research/evidence_contract/tests/test_task55_ifv.py",
+    "research/evidence_contract/tests/test_ifv_analysis.py",
+    "research/evidence_contract/tests/test_ifv_aggregate.py",
+    "research/evidence_contract/tests/test_review_agreement.py",
+    "--basetemp",
+    "research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa_03"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "a47280531553b844b9c9b44d65ed0f47eba93701",
+  "start": "2026-11-17T03:37:20.321529+00:00",
+  "end": "2026-11-17T03:37:23.235136+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 70,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "fd2873662a07aea85cb42eb4fc473afadd6912f0e9ff3ce7469a1cd34b162045",
+  "log": "targeted_tests_03.log",
+  "runner_sha256": "4f57fe2f4339833aa33d324143ecd5673ffe43f5f9db6e6507032413bfd1762d"
+}

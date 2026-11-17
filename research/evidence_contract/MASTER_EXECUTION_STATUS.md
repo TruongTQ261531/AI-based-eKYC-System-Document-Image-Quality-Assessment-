@@ -1,5 +1,18 @@
 # EASE 2027 · Master execution
 
+Mốc mới nhất **17/11 — [R02 pha 2 hoàn tất 46/46](R02_PHASE2_REVIEW_INTAKE_20261117.md)**.
+Pha 1 và pha 2 đều có 2 người hoàn tất: tác giả + R02; 1 người ngoài dự án theo
+xác nhận organizer, không tự xác minh độc lập. Đã giữ raw bytes, niêm phong
+đáp án theo pha 1 của R02 và tính agreement trước phân xử trên cùng 46 ca.
+Primary pointwise khớp 30/42 (κ=0,5862), relation 33/42 (κ=0,6619); có 1 ca
+binary pointwise đối nghịch. R02 ghi nhận A TP/FN=4/5, B3=9/0, C2 0/9 binary.
+**432 tests + 6 subtests PASS**, 3.645 tệp cũ nguyên vẹn; verifier độc lập
+kiểm 18 bảng agreement, 216 method panels và 12 bảng cảnh báo. Không đổi
+phiếu, guard, mô hình hoặc báo cáo tác giả; không inference/training.
+Round 1 OPEN, R03 PENDING, adjudication/approved references = 0;
+**NO_GO_SUPERIORITY**, chưa mở TASK 6B/7B. [Receipt](execution/master_01/reviewer_intake_20261117_r02_phase2/README.md).
+Các mốc bên dưới giữ ý nghĩa lịch sử, gồm cả những dòng từng chờ R02 pha 2.
+
 Mốc **17/11**: [B continuation](B_CONTINUATION_REPORT_20261117.md) hoàn tất phần
 chuẩn bị P0–P4 theo deep-research handoff. **411 tests + 6 subtests PASS**, 2.741
 file frozen được bảo toàn. Strict intake kiểm cả 3 ZIP đã phát; workflow phê

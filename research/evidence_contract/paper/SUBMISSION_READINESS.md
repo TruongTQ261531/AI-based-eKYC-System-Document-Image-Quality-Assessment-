@@ -1,5 +1,20 @@
 # EASE 2027 submission readiness
 
+Latest actual review, **17 November**: [R02 completed phase 2, 46/46 cases](../R02_PHASE2_REVIEW_INTAKE_20261117.md).
+Both phases now have the author and R02, one external reviewer per organizer
+clarification. Own-phase-1 labels remain separate. Primary paired agreement is
+30/42 pointwise (kappa 0.5862) and 33/42 relation (0.6619), before adjudication;
+one shared-binary pointwise case is opposed. Under R02, A still misses 5/9
+operational pointwise faults; C2 has 0/9 binary primary labels. The false-alarm
+advantage over B3 does not persist in the separate withholding sensitivity.
+**432 tests + 6 subtests pass**; all 3,645 protected files and original answers
+are preserved. Round 1 remains OPEN, R03 pending, no pooled labels, approved
+reference, adjudicated gold, population inference or new model execution.
+The frozen manuscript still describes the original author-only endpoint panel;
+this intake is a separate development addendum, not an implicit paper rewrite.
+NO_GO_SUPERIORITY and not-submission-ready remain. Older milestones below retain
+their historical scope and reviewer counts.
+
 Latest continuation, **17 November**: [B preparation](../B_CONTINUATION_REPORT_20261117.md)
 adds strict intake, semantic/exposure/C2 audits, a synthetic signed authority and
 adjudication workflow, explicit NA accounting and 384 sizing sensitivity scenarios.

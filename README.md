@@ -16,6 +16,15 @@ weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
+Mốc mới nhất **17/11: [R02 pha 2 đã đủ 46/46 ca](research/evidence_contract/R02_PHASE2_REVIEW_INTAKE_20261117.md)**.
+Cả tác giả và R02 đã hoàn tất hai pha; 1 người ngoài theo xác nhận organizer.
+Agreement primary: pointwise 30/42 (κ=0,5862), relation 33/42 (κ=0,6619),
+chưa phân xử hoặc gộp nhãn. Theo riêng R02, A vẫn FN=5/9 lỗi pointwise;
+C2 còn 0/9 primary có nhãn binary. **432 tests + 6 subtests PASS**, 3.645 tệp
+lịch sử không đổi. Round 1 OPEN, chờ R03; vẫn NO_GO_SUPERIORITY. Raw review
+giữ local, code/aggregate/receipt và tiến độ đồng bộ main. Các mốc tiếp theo
+bên dưới mô tả trạng thái trước lần tiếp nhận này.
+
 Mốc mới **17/11**: [continuation B](research/evidence_contract/B_CONTINUATION_REPORT_20261117.md)
 hoàn tất strict intake, semantic/exposure audit, workflow reference/adjudication
 synthetic và accounting/sizing: **411 tests + 6 subtests PASS**. Quét 22.861 JSON,

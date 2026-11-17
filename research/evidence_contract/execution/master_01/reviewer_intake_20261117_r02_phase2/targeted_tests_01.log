@@ -1,0 +1,139 @@
+.............EE.................EEE......E.E..............E..E...        [100%]
+=================================== ERRORS ====================================
+_ ERROR at setup of test_synthetic_intake_preserves_raw_and_does_not_score[phase1] _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_synthetic_intake_preserves_raw_and_does_not_score[phase2] _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_issued_archive_hash_and_assigned_reviewer_are_required[phase1] _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_issued_archive_hash_and_assigned_reviewer_are_required[phase2] _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+______ ERROR at setup of test_legacy_duplicate_and_public_write_rejected ______
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+____ ERROR at setup of test_no_frozen_human_export_means_no_output_access _____
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_phase2_build_seals_first_and_keeps_join_outside_packet _
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_____ ERROR at setup of test_postreview_entry_rejects_unsealed_submission _____
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+_______ ERROR at setup of test_package_hash_guard_rejects_modified_copy _______
+
+self = WindowsPath('D:/laptrinhcuatao/Ekyc/versions/research-document-recovery/research/evidence_contract/local/master_01/reviewer_intake_20261117_r02_phase2/targeted_qa')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery\\research\\evidence_contract\\local\\master_01\\reviewer_intake_20261117_r02_phase2\\targeted_qa'
+
+D:\Environment_Code\Lib\pathlib.py:1116: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR research/evidence_contract/tests/test_reviewer_intake_v2.py::test_synthetic_intake_preserves_raw_and_does_not_score[phase1]
+ERROR research/evidence_contract/tests/test_reviewer_intake_v2.py::test_synthetic_intake_preserves_raw_and_does_not_score[phase2]
+ERROR research/evidence_contract/tests/test_reviewer_intake_v2.py::test_issued_archive_hash_and_assigned_reviewer_are_required[phase1]
+ERROR research/evidence_contract/tests/test_reviewer_intake_v2.py::test_issued_archive_hash_and_assigned_reviewer_are_required[phase2]
+ERROR research/evidence_contract/tests/test_reviewer_intake_v2.py::test_legacy_duplicate_and_public_write_rejected
+ERROR research/evidence_contract/tests/test_task55_ifv.py::test_no_frozen_human_export_means_no_output_access
+ERROR research/evidence_contract/tests/test_task55_ifv.py::test_phase2_build_seals_first_and_keeps_join_outside_packet
+ERROR research/evidence_contract/tests/test_ifv_analysis.py::test_postreview_entry_rejects_unsealed_submission
+ERROR research/evidence_contract/tests/test_ifv_aggregate.py::test_package_hash_guard_rejects_modified_copy
+56 passed, 9 errors in 2.97s

@@ -1,10 +1,19 @@
 # Gửi cho người đánh giá độc lập
 
+**Cập nhật mới nhất 17/11: [R02 đã hoàn tất cả hai pha](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
+86/86 pha 1 và 46/46 pha 2. Không cần gửi lại gói hoặc yêu cầu R02 làm lại.
+Đã tính agreement trước phân xử tác giả/R02 theo canonical join organizer;
+không gộp nhãn hoặc thay đáp án. R03 tiếp tục gói pha 1 riêng; chỉ cấp pha 2
+sau khi khóa pha 1 của R03. Round 1 OPEN; chưa áp dụng cutoff hay authority.
+Không gửi báo cáo kết quả, bảng bất đồng hoặc đáp án tác giả/R02 kèm ZIP chấm.
+Hai người hoàn tất pha 2 hiện gồm 1 tác giả + 1 external theo organizer;
+chưa xác minh tính độc lập bằng chỉ riêng JSON. Bằng chứng và gói cũ giữ nguyên.
+
 Cập nhật organizer **17/11**: giữ nguyên các ZIP đã phát. Lớp
 [strict intake mới](reviewer_tools/README.md) kiểm hash gói được cấp, thứ tự pha,
 schema và duplicate, giữ raw bytes; không bắt người chấm đổi giao diện hay cài
 thêm gì. Workflow reference/adjudication chỉ được kiểm bằng synthetic, không
-đóng Round 1 hoặc tạo gold. Tiếp tục nhận R02 pha 2/R03 như hướng dẫn bên dưới;
+đóng Round 1 hoặc tạo gold. R02 pha 2 đã nhận; tiếp tục nhận R03 theo hướng dẫn dưới;
 không gửi tài liệu tiến độ B hoặc bảng bất đồng kèm gói chấm độc lập.
 
 Cập nhật 16/11/2026. Không cần gửi toàn bộ project hoặc cài Python/model.
@@ -13,9 +22,9 @@ Người chấm điền trên trình duyệt, rồi gửi lại JSON đã xuất
 
 **Đã nhận R02 pha 1: 86/86 mục**, vai trò ngoài dự án do organizer đính chính
 riêng; phiếu gốc giữ nguyên. [Kết quả và giới hạn](R02_REVIEW_INTAKE_20261116.md).
-Gửi tiếp cho đúng người này **`local/reviewer_exports/r02_20261116/reviewer_R02_phase2.zip`**:
-46 ca (42 primary + 4 diagnostic), 30 file ảnh, khoảng 0,67 MB. Giải nén, mở
-`index.html`, chấm đủ rồi gửi lại JSON. Không cần gửi lại pha 1 hay toàn project.
+Gói **`local/reviewer_exports/r02_20261116/reviewer_R02_phase2.zip`** đã được R02
+hoàn thành: 46 ca (42 primary + 4 diagnostic), 30 file ảnh, khoảng 0,67 MB.
+Giữ nguyên gói/manifest để đối chiếu; không cần gửi lại pha 1 hay toàn project.
 R03 vẫn dùng ZIP pha 1 v2 phía dưới. Không chuyển gói pha 2 của R02 cho R03.
 
 Kế hoạch nội bộ organizer sau mốc B: **Round 1 vẫn OPEN**, đề xuất snapshot
@@ -28,8 +37,8 @@ nguyên; không gửi kèm báo cáo B, đáp án tác giả hoặc bảng bất
 
 ## Bao nhiêu người là phù hợp?
 
-Không có số người chấm nào tự bảo đảm kết quả đúng. Pilot pha 2 hiện có một tác
-giả đánh giá; pha 1 đã có thêm R02, vẫn chưa là gold độc lập.
+Không có số người chấm nào tự bảo đảm kết quả đúng. Pilot pha 1 và pha 2 hiện
+có tác giả + R02 hoàn tất; R03 chưa nộp, vẫn chưa là gold độc lập.
 Thêm người giúp đo bất đồng; vẫn phải kiểm hướng dẫn, lỗi annotation, nguồn
 tham chiếu và phân xử. Agreement cao cũng không tự chứng minh annotation đúng.
 [Phân tích chất lượng annotation](https://aclanthology.org/2024.cl-3.1/)
@@ -48,6 +57,8 @@ NA khi không có biến thiên hoặc thiếu dữ liệu. Với transcript, b�
 riêng, giữ O/0 khác nhau. Công cụ `task55.agreement` hiện hỗ trợ **pha 1**,
 đã có agreement tác giả/R02; xem báo cáo intake ở trên. Chưa có agreement giữa
 hai người ngoài vì R03 chưa nộp.
+Pha 2 hiện có `reviewer_tools.phase2_comparison` và báo cáo R02 ngày 17/11;
+kappa/exact agreement được báo riêng cho câu trả lời và nhãn guard suy ra.
 Đối chiếu pha 2 cần nối các mã ca riêng từng reviewer về cùng frozen sample
 trên máy organizer; không ghép trực tiếp bằng case ID hoặc gộp thành gold.
 [Tài liệu alpha của tác giả](https://www.asc.upenn.edu/krippendorffs-alpha-reliability) ·

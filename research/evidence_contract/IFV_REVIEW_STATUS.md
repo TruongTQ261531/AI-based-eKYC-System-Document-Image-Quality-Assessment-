@@ -1,5 +1,22 @@
 # Trạng thái IFV
 
+**INTERIM_TWO_REVIEWERS_UNADJUDICATED — cập nhật 17/11 sau [R02 pha 2](R02_PHASE2_REVIEW_INTAKE_20261117.md).**
+
+| Người / pha | Pha 1 | Pha 2 | Vai trò và trạng thái |
+|---|---:|---:|---|
+| Tác giả | 86/86 | 46/46 | Giữ nguyên phiếu và báo cáo lịch sử |
+| R02 | 86/86 | 46/46 | External theo đính chính organizer; raw role không đổi |
+| R03 | Chưa nhận | Chưa cấp sau pha 1 | PENDING |
+
+Pha 2 có 2 người hoàn tất, 1 người ngoài; Round 1 OPEN, chưa phân xử/gộp nhãn.
+Pointwise primary khớp 30/42 (κ=0,5862), relation 33/42 (κ=0,6619); cả hai
+cùng có nhãn binary pointwise ở 23 ca, gồm 22 khớp và 1 đối nghịch. R02 có
+26/42 binary pointwise và 21/42 relation, nhưng tập ca có nhãn khác tác giả.
+R02 có 11 cờ literal/9 primary; cờ không phải phán quyết người chấm sai.
+**432 tests + 6 subtests PASS**, raw bytes và 3.645 tệp cũ giữ nguyên. Không có
+gold/approved reference/GO mới. Các snapshot bên dưới thuộc các mốc trước
+intake này; trạng thái từng chờ R02 pha 2 đã được thay bằng DONE.
+
 Cập nhật **17/11**: strict intake mới đã kiểm read-only cả 3 ZIP đã phát và
 R02 86/86, chặn duplicate import; không thay phiếu, role hoặc nhãn. Quy trình
 phân xử mới chỉ dry-run synthetic; **chưa có agreement/adjudication pha 2 thật
@@ -11,7 +28,7 @@ Mốc [B Oracle Reliability ngày 16/11](B_ORACLE_RELIABILITY_20261116.md) khôn
 trạng thái người chấm hoặc nhãn. Không nhận JSON mới; Round 1 vẫn OPEN theo
 [đề xuất snapshot](B_PROSPECTIVE_PROTOCOL_DRAFT.md). Replay giữ báo cáo tác giả
 và panel withholding riêng; không biến reference do dựng thành gold hoặc sửa
-raw role/đáp án của R02. Các số người chấm bên dưới vẫn là trạng thái hiện tại.
+raw role/đáp án của R02. Các số người chấm bên dưới là trạng thái tại mốc đó.
 
 **R02_PHASE1_COMPLETE_UNADJUDICATED**, cập nhật 16/11/2026, Asia/Bangkok.
 Đã có **2 người nộp pha 1: tác giả + 1 người ngoài R02**. R02 đủ 86/86 mục,

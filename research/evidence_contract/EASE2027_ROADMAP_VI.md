@@ -1,5 +1,15 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+**17/11, cập nhật sau khi nhận [R02 pha 2](R02_PHASE2_REVIEW_INTAKE_20261117.md):**
+R02 hoàn tất cả hai pha (86/86 và 46/46); đã có 1 người ngoài tác giả hoàn tất
+pilot. Đã nhập nguyên trạng, đo agreement pha 2 và báo riêng kết quả R02;
+432 tests + 6 subtests qua, 3.645 tệp lịch sử không đổi. R03 vẫn chờ, Round 1
+OPEN. Mốc tiếp theo là thu/khóa review còn lại theo cutoff được quyết định,
+rồi phân xử có authority; không gửi kết quả hiện có vào gói chấm độc lập.
+C2 0/9 binary và A còn FN=5/9 theo R02; thêm reviewer chưa tăng số ID hoặc
+đáp ứng prospective/novelty/reference. Giữ NO_GO_SUPERIORITY và kế hoạch B
+theo D1–D12, không mở TASK 6B/7B. Các mốc bên dưới là lịch sử trước intake này.
+
 **17/11: mốc chuẩn bị theo deep-research report đã hoàn tất**, xem
 [báo cáo](B_CONTINUATION_REPORT_20261117.md). Strict intake/reference workflow,
 audit 22.861 JSON, C2 inventory, metrics NA và 384 sizing scenarios đã có code,

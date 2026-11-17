@@ -1,0 +1,137 @@
+{
+  "status": "INTERIM_ANALYSIS_COMPLETE",
+  "cases": 46,
+  "raw_after": {
+    "compared": 46,
+    "matched": 29,
+    "disagreed": 17,
+    "exact_agreement": 0.6304347826086957,
+    "cohen_kappa": 0.37689243027888447,
+    "kappa_unavailable_reason": null,
+    "contingencies": [
+      {
+        "first": "correct",
+        "second": "correct",
+        "count": 22
+      },
+      {
+        "first": "correct",
+        "second": "readable_omission",
+        "count": 4
+      },
+      {
+        "first": "correct",
+        "second": "unsupported_verified",
+        "count": 1
+      },
+      {
+        "first": "correct",
+        "second": "wrong_value",
+        "count": 2
+      },
+      {
+        "first": "readable_omission",
+        "second": "correct",
+        "count": 2
+      },
+      {
+        "first": "readable_omission",
+        "second": "readable_omission",
+        "count": 4
+      },
+      {
+        "first": "readable_omission",
+        "second": "uncertain",
+        "count": 2
+      },
+      {
+        "first": "uncertain",
+        "second": "correct",
+        "count": 2
+      },
+      {
+        "first": "uncertain",
+        "second": "readable_omission",
+        "count": 1
+      },
+      {
+        "first": "uncertain",
+        "second": "wrong_value",
+        "count": 1
+      },
+      {
+        "first": "unsupported_verified",
+        "second": "unsupported_verified",
+        "count": 1
+      },
+      {
+        "first": "wrong_value",
+        "second": "uncertain",
+        "count": 1
+      },
+      {
+        "first": "wrong_value",
+        "second": "unsupported_verified",
+        "count": 1
+      },
+      {
+        "first": "wrong_value",
+        "second": "wrong_value",
+        "count": 2
+      }
+    ]
+  },
+  "primary_pointwise": {
+    "compared": 42,
+    "matched": 30,
+    "disagreed": 12,
+    "exact_agreement": 0.7142857142857143,
+    "cohen_kappa": 0.5862068965517242,
+    "kappa_unavailable_reason": null,
+    "contingencies": [
+      {
+        "first": "CONFIRMED_FAULT",
+        "second": "CONFIRMED_FAULT",
+        "count": 5
+      },
+      {
+        "first": "CONFIRMED_FAULT",
+        "second": "INCONCLUSIVE",
+        "count": 2
+      },
+      {
+        "first": "INCONCLUSIVE",
+        "second": "CONFIRMED_FAULT",
+        "count": 3
+      },
+      {
+        "first": "INCONCLUSIVE",
+        "second": "INCONCLUSIVE",
+        "count": 8
+      },
+      {
+        "first": "INCONCLUSIVE",
+        "second": "INVALID_TEST",
+        "count": 5
+      },
+      {
+        "first": "NO_FAULT",
+        "second": "CONFIRMED_FAULT",
+        "count": 1
+      },
+      {
+        "first": "NO_FAULT",
+        "second": "INVALID_TEST",
+        "count": 1
+      },
+      {
+        "first": "NO_FAULT",
+        "second": "NO_FAULT",
+        "count": 17
+      }
+    ]
+  },
+  "R02_coherence_flags": 11,
+  "round_closed": false,
+  "labels_pooled": false
+}
