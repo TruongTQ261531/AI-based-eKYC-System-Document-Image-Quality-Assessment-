@@ -1,5 +1,16 @@
 # EASE 2027 · Master execution
 
+Mốc **17/11**: [B continuation](B_CONTINUATION_REPORT_20261117.md) hoàn tất phần
+chuẩn bị P0–P4 theo deep-research handoff. **411 tests + 6 subtests PASS**, 2.741
+file frozen được bảo toàn. Strict intake kiểm cả 3 ZIP đã phát; workflow phê
+duyệt/phân xử chỉ chạy synthetic, production approved = 0. Audit 22.861 JSON xác
+nhận 192/1.000 instance đã exposure, 808 unknown; C2 1.100 candidate/0 eligible.
+Accounting vẫn 492 nhóm/823 cells; 384 sizing scenarios chỉ là minh họa. Có
+[protocol v2](B_PROSPECTIVE_PROTOCOL_DRAFT_v2_20261117.md), [outline/readiness](paper/B_EASE_READINESS_20261117.md)
+và [D1–D12](B_OWNER_DECISIONS_20261117.md). Round 1 OPEN, R02 pha 2/R03 chờ;
+`GO_PREPARATORY_ONLY`, `NO_GO_SUPERIORITY`, không inference/training hoặc TASK6B/7B.
+Mỗi mốc được đồng bộ main; các con số/thời điểm bên dưới giữ ý nghĩa lịch sử.
+
 Mốc B mới **16/11**: [Oracle Reliability & Abstention](B_ORACLE_RELIABILITY_20261116.md)
 đã hoàn tất P0/P1/P2: policy v2 riêng, 58 control logic, replay 46 ca lịch sử,
 336 tests + 6 subtests PASS; verifier độc lập tái tính 492 nhóm metric.

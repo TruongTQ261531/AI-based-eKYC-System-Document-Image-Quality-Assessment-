@@ -1,5 +1,15 @@
 # EASE 2027 submission readiness
 
+Latest continuation, **17 November**: [B preparation](../B_CONTINUATION_REPORT_20261117.md)
+adds strict intake, semantic/exposure/C2 audits, a synthetic signed authority and
+adjudication workflow, explicit NA accounting and 384 sizing sensitivity scenarios.
+**411 tests + 6 subtests pass**; 2,741 protected assets remain unchanged. A new
+[B outline](B_ORACLE_RELIABILITY_OUTLINE_20261117.md), [twelve-claim ledger](B_CLAIM_TO_EVIDENCE_20261117.md)
+and [readiness matrix](B_EASE_READINESS_20261117.md) are available. No production
+approvals, prospective results or B PDF exist. Research and Emerging remain
+not submission-ready; scientific NO_GO_SUPERIORITY persists. Current official
+track pages were checked again; dated milestones below preserve their old scope.
+
 Latest B milestone, 16 November: [Oracle Reliability & Abstention](../B_ORACLE_RELIABILITY_20261116.md)
 P0/P1/P2 are complete for development: 58 symbolic controls, historical replay,
 336 tests + 6 subtests, and an independent aggregate verifier. Stricter evidence

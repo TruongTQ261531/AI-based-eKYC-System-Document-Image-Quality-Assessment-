@@ -1,5 +1,12 @@
 # Gửi cho người đánh giá độc lập
 
+Cập nhật organizer **17/11**: giữ nguyên các ZIP đã phát. Lớp
+[strict intake mới](reviewer_tools/README.md) kiểm hash gói được cấp, thứ tự pha,
+schema và duplicate, giữ raw bytes; không bắt người chấm đổi giao diện hay cài
+thêm gì. Workflow reference/adjudication chỉ được kiểm bằng synthetic, không
+đóng Round 1 hoặc tạo gold. Tiếp tục nhận R02 pha 2/R03 như hướng dẫn bên dưới;
+không gửi tài liệu tiến độ B hoặc bảng bất đồng kèm gói chấm độc lập.
+
 Cập nhật 16/11/2026. Không cần gửi toàn bộ project hoặc cài Python/model.
 Gói điền phiếu cần **ảnh + giao diện + manifest**, không chỉ một JSON trống.
 Người chấm điền trên trình duyệt, rồi gửi lại JSON đã xuất.

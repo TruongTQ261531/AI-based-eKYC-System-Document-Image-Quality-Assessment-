@@ -1,5 +1,15 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+Ngày **17/11**, [B continuation](B_CONTINUATION_REPORT_20261117.md) có trạng thái
+**GO_PREPARATORY_ONLY**, vẫn **NO_GO_SUPERIORITY**. 411 tests + 6 subtests chỉ xác
+nhận tooling/development; production approved reference = 0, C2 eligible = 0.
+Round 1 OPEN; protocol v2 và 384 sizing scenarios chưa được khóa. Các gate còn
+BLOCKED_HUMAN_REVIEW / BLOCKED_REFERENCE_APPROVAL / BLOCKED_PROTOCOL_APPROVAL /
+BLOCKED_RIGHTS được liệt kê cụ thể cùng [D1–D12](B_OWNER_DECISIONS_20261117.md).
+Không mở TASK6B/7B, không tạo gold/approval từ synthetic. Research/Emerging đều
+chưa submission-ready; [readiness matrix](paper/B_EASE_READINESS_20261117.md) phân
+biệt đúng chủ đề hội nghị với bằng chứng đủ cho claim.
+
 Sau [P0–P2 B Oracle Reliability ngày 16/11](B_ORACLE_RELIABILITY_20261116.md),
 **NO_GO_SUPERIORITY giữ nguyên**. Policy v2 và replay đã kiểm; hai nguồn cùng sai
 vẫn gây FP. Tier 2 trên constructed controls có risk pointwise 1/7 và coverage

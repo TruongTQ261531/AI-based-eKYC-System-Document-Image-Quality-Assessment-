@@ -1,0 +1,18 @@
+{
+  "schema": "milestone-sync/1",
+  "status": "VERIFIED_REMOTE_EQUALS_LOCAL",
+  "initial_head": "0f40f5e014b1065d86c10ad453ed23e2db17ac34",
+  "p0_head": "0d47988274cde4060c6e3b727f80c1197eb5ecd2",
+  "local_head_at_check": "ace4628cc3c8b909b7a327a0eda48ff0410b4db8",
+  "remote_head_at_check": "ace4628cc3c8b909b7a327a0eda48ff0410b4db8",
+  "remote": "origin",
+  "branch": "main",
+  "remote_branches": ["main"],
+  "check_date_local": "2026-11-17",
+  "method": "git fetch origin main; inspect 0/0 divergence; explicit stage; CRLF-aware diff check; normal commit/push; git rev-parse HEAD and git ls-remote --heads origin",
+  "new_files_committed": 74,
+  "existing_files_modified_at_tooling_milestone": 0,
+  "private_files_published": 0,
+  "force_push": false,
+  "scope": "Tooling, tests and aggregate milestone. Subsequent documentation delivery has its own final remote verification."
+}

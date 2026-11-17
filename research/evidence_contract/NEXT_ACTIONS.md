@@ -1,5 +1,17 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+Ưu tiên hiện tại **17/11**, sau [mốc continuation](B_CONTINUATION_REPORT_20261117.md):
+tooling chuẩn bị đã qua **411 tests + 6 subtests**. Không cần làm lại phiếu cá
+nhân, rebuild ZIP cũ hoặc chạy lại pilot để tạo số mẫu mới. Tiếp tục theo
+[protocol v2](B_PROSPECTIVE_PROTOCOL_DRAFT_v2_20261117.md) và
+[bảng quyết định D1–D12](B_OWNER_DECISIONS_20261117.md): nhận JSON thật/cutoff rõ,
+chỉ định authority/phân xử; chốt contrast/endpoint/floors/margin, design/budget,
+rights và exposure trước cohort. Comparator asserted mới có đặc tả; lineage
+pixel/near-duplicate và novelty vẫn cần hoàn thiện theo claim đã chọn.
+R02 pha 2/R03 còn chờ; Round 1 OPEN. 384 sizing scenarios không phải final N;
+0 production approvals, 0/1.100 C2 candidates eligible. Scientific NO-GO giữ nguyên.
+Các đoạn/bảng cũ dưới đây là tiến độ tại thời điểm được ghi.
+
 Ưu tiên hiện tại sau [B v2 ngày 16/11](B_ORACLE_RELIABILITY_20261116.md):
 P0/P1/P2 đã hoàn tất, không cần chạy lại pilot hoặc huấn luyện để bù reference
 còn thiếu. Theo [protocol mới](B_PROSPECTIVE_PROTOCOL_DRAFT.md), tiếp tục hoàn thiện

@@ -1,5 +1,12 @@
 # Trạng thái IFV
 
+Cập nhật **17/11**: strict intake mới đã kiểm read-only cả 3 ZIP đã phát và
+R02 86/86, chặn duplicate import; không thay phiếu, role hoặc nhãn. Quy trình
+phân xử mới chỉ dry-run synthetic; **chưa có agreement/adjudication pha 2 thật
+mới**. Round 1 OPEN, R02 pha 2 và R03 vẫn chờ. [B continuation](B_CONTINUATION_REPORT_20261117.md)
+và [hướng dẫn intake](reviewer_tools/README.md). Việc chọn cutoff/authority là
+D1–D3 trong [bảng quyết định](B_OWNER_DECISIONS_20261117.md), chưa được tự áp dụng.
+
 Mốc [B Oracle Reliability ngày 16/11](B_ORACLE_RELIABILITY_20261116.md) không thay
 trạng thái người chấm hoặc nhãn. Không nhận JSON mới; Round 1 vẫn OPEN theo
 [đề xuất snapshot](B_PROSPECTIVE_PROTOCOL_DRAFT.md). Replay giữ báo cáo tác giả

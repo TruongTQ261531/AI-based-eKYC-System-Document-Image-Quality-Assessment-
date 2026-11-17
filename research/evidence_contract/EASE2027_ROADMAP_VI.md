@@ -1,5 +1,16 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+**17/11: mốc chuẩn bị theo deep-research report đã hoàn tất**, xem
+[báo cáo](B_CONTINUATION_REPORT_20261117.md). Strict intake/reference workflow,
+audit 22.861 JSON, C2 inventory, metrics NA và 384 sizing scenarios đã có code,
+aggregate và receipts; **411 tests + 6 subtests PASS**. Protocol/claim ledger/
+outline B đã version riêng, không sửa paper hay bằng chứng frozen. Còn các
+[quyết định D1–D12](B_OWNER_DECISIONS_20261117.md), actual review/reference, lineage
+đủ theo claim, comparator asserted và prospective evidence. Không tự chuyển
+sizing minh họa thành N đã duyệt. Research vẫn mục tiêu có điều kiện; Emerging
+là kế hoạch hẹp nếu khoa học phù hợp. [Readiness và deadline đã kiểm lại](paper/B_EASE_READINESS_20261117.md).
+Round 1 OPEN, NO_GO_SUPERIORITY; các mốc dưới đây là lịch sử.
+
 Mốc B tiếp theo ngày 16/11 đã xong [P0/P1/P2](B_ORACLE_RELIABILITY_20261116.md):
 reference policy v2, hai mức abstention, matched flat baseline, control/replay và
 verifier. 336 tests + 6 subtests PASS; kết quả âm về shared wrong reference được

@@ -16,6 +16,15 @@ weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
+Mốc mới **17/11**: [continuation B](research/evidence_contract/B_CONTINUATION_REPORT_20261117.md)
+hoàn tất strict intake, semantic/exposure audit, workflow reference/adjudication
+synthetic và accounting/sizing: **411 tests + 6 subtests PASS**. Quét 22.861 JSON,
+xác nhận ít nhất 192 instance đã exposure; 1.100 C2 candidates chưa có cặp đủ
+điều kiện. Có [protocol v2](research/evidence_contract/B_PROSPECTIVE_PROTOCOL_DRAFT_v2_20261117.md),
+384 sizing scenarios, outline/claim ledger và [D1–D12 cần chốt](research/evidence_contract/B_OWNER_DECISIONS_20261117.md).
+`GO_PREPARATORY_ONLY`, vẫn `NO_GO_SUPERIORITY`; không có inference/training hoặc
+phiếu/phê duyệt thật mới. Các mốc ngày 16/11 dưới đây là lịch sử đã bảo toàn.
+
 Mốc B mới 16/11: [Oracle Reliability & Abstention](research/evidence_contract/B_ORACLE_RELIABILITY_20261116.md)
 đã có policy v2, 58 control logic, replay pilot và verifier độc lập;
 **336 tests và 6 subtests PASS**. Hai nguồn cùng sai vẫn gây false alarm, không có superiority.

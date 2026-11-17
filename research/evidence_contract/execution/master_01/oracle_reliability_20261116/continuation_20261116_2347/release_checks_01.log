@@ -1,0 +1,33 @@
+{
+  "status": "PASS_RELEASE_AUDIT",
+  "protected_files_unchanged": 2741,
+  "command_logs_hash_verified": 17,
+  "tested_code_config_files_unchanged": 25,
+  "full_tests_passed": 411,
+  "subtests_passed": 6,
+  "claim_records_checked": 12,
+  "local_links_checked": 282,
+  "metrics": {
+    "status": "PASS",
+    "groups": 492,
+    "cells": 823,
+    "new_labels": 0,
+    "scope": "Independent arithmetic, not independent truth"
+  },
+  "exposure": {
+    "EXPOSED_CONFIRMED": 192,
+    "EXPOSURE_UNKNOWN": 808
+  },
+  "c2_candidates": 1100,
+  "c2_eligible": 0,
+  "sizing_scenarios": 384,
+  "production_authorities": 0,
+  "production_approvals": 0,
+  "scientific_state": "GO_PREPARATORY_ONLY",
+  "confirmatory": false,
+  "new_model_calls": 0,
+  "training_runs": 0,
+  "tooling_head": "ace4628cc3c8b909b7a327a0eda48ff0410b4db8",
+  "base_head": "0f40f5e014b1065d86c10ad453ed23e2db17ac34",
+  "scope": "File/count/link and arithmetic verification; no independent scientific truth or final Git push asserted"
+}
