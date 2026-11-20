@@ -1,14 +1,16 @@
 # Trạng thái IFV
 
-**Cập nhật 20/11: R03 đã hoàn tất pha 1, gói pha 2 đã sẵn sàng. Round 1 vẫn mở.** Thống kê pha 2 hiện dựa trên [tác giả và R02](R02_PHASE2_REVIEW_INTAKE_20261117.md).
+**Ngày 20/11, cả ba người đã nộp đủ hai pha. Round 1 đang mở.** Trên 42 ca chính, R02 và R03 khớp kết luận về giá trị trên ảnh biến đổi ở 32 ca và kết luận về quan hệ giữa hai ảnh ở 34 ca. Có 1 ca chính mà hai người kết luận ngược nhau về lỗi giá trị. [Kết quả R03 và đối chiếu trước phân xử](R03_PHASE2_REVIEW_INTAKE_20261120.md)
 
 | Người / pha | Pha 1 | Pha 2 | Vai trò và trạng thái |
 |---|---:|---:|---|
 | Tác giả | 86/86 | 46/46 | Giữ nguyên phiếu và báo cáo lịch sử |
 | R02 | 86/86 | 46/46 | External theo đính chính organizer; raw role không đổi |
-| R03 | 86/86 | Đã tạo gói 46 ca, chờ phiếu | [Tiếp nhận 20/11](R03_PHASE1_REVIEW_INTAKE_20261120.md) |
+| R03 | 86/86 | 46/46 | Khai vai trò người chấm ngoài dự án, từng gặp ảnh hoặc giá trị ở 68/86 mục pha 1. [Tiếp nhận pha 1](R03_PHASE1_REVIEW_INTAKE_20261120.md) |
 
-Pha 2 có 2 người hoàn tất, 1 người ngoài; Round 1 OPEN, chưa phân xử/gộp nhãn.
+## Mốc 17/11 với tác giả và R02
+
+Tại mốc này, pha 2 có 2 người hoàn tất, trong đó có 1 người ngoài dự án.
 Pointwise primary khớp 30/42 (κ=0,5862), relation 33/42 (κ=0,6619); cả hai
 cùng có nhãn binary pointwise ở 23 ca, gồm 22 khớp và 1 đối nghịch. R02 có
 26/42 binary pointwise và 21/42 relation, nhưng tập ca có nhãn khác tác giả.

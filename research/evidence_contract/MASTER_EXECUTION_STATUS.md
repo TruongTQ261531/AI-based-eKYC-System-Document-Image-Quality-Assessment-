@@ -1,6 +1,10 @@
 # EASE 2027 · Master execution
 
-## Mốc mới nhất · 20/11/2026 — D4 P1 development
+## Khảo sát ngày 20/11/2026
+
+Cả tác giả, R02 và R03 đã nộp đủ hai pha. Trên 42 ca chính, R02 và R03 khớp kết luận về giá trị ở 32 ca, khớp kết luận về quan hệ giữa hai ảnh ở 34 ca. Round 1 đang mở, chờ quyết định của chủ dự án về chốt vòng và phân xử. [Biên bản R03 pha 2](R03_PHASE2_REVIEW_INTAKE_20261120.md)
+
+## Mốc kỹ thuật · 20/11/2026 — D4 P1 development
 
 [Bản bàn giao tổng thể](../../PROJECT_HANDOFF_20261120_VI.md) là điểm vào khi
 nhận việc. Từ mốc P0, D4 checked v2 vs MRZ-metadata-asserted đã được triển khai

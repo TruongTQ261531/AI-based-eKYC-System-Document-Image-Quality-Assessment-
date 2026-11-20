@@ -1,6 +1,8 @@
 # Gửi cho người đánh giá độc lập
 
-**Cập nhật mới nhất 17/11: [R02 đã hoàn tất cả hai pha](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
+**Ngày 20/11, R02 và R03 đã nộp đủ hai pha.** Phần thu phiếu của hai người chấm đã hoàn tất. Chủ dự án đang chờ chốt vòng và phân xử.
+
+**Mốc 17/11 · [R02 đã hoàn tất cả hai pha](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
 86/86 pha 1 và 46/46 pha 2. Không cần gửi lại gói hoặc yêu cầu R02 làm lại.
 Đã tính agreement trước phân xử tác giả/R02 theo canonical join organizer;
 không gộp nhãn hoặc thay đáp án. R03 tiếp tục gói pha 1 riêng; chỉ cấp pha 2

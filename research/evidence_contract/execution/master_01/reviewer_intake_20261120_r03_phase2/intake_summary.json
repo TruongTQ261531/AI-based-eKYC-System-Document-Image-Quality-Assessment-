@@ -1,0 +1,126 @@
+{
+  "adjudicated_cases": 0,
+  "all_three_same_operational_status_all": {
+    "pointwise": 27,
+    "relation": 30
+  },
+  "all_three_same_operational_status_primary": {
+    "pointwise": 26,
+    "relation": 29
+  },
+  "approved_references": 0,
+  "bytes_match_private_original": true,
+  "completed_both_phases": [
+    "AUTHOR",
+    "R02",
+    "R03"
+  ],
+  "diagnostic_cases": 4,
+  "external_pair_primary_binary_overlap": {
+    "pointwise": {
+      "binary_matched": 21,
+      "binary_opposed": 1,
+      "both_binary": 22,
+      "first_binary": 26,
+      "first_only_binary": 4,
+      "neither_binary": 15,
+      "second_binary": 23,
+      "second_only_binary": 1
+    },
+    "relation": {
+      "binary_matched": 17,
+      "binary_opposed": 0,
+      "both_binary": 17,
+      "first_binary": 21,
+      "first_only_binary": 4,
+      "neither_binary": 21,
+      "second_binary": 17,
+      "second_only_binary": 0
+    }
+  },
+  "independence_verified": false,
+  "labels_pooled": false,
+  "model_calls": 0,
+  "pairwise_cases_differing_on_any_of_six_dimensions": {
+    "AUTHOR_R02": 23,
+    "AUTHOR_R03": 29,
+    "R02_R03": 26
+  },
+  "phase": "phase2",
+  "phase1_snapshot": "d57613872163de808ce8c5ac9a5e9657f142b2d51264db1e10bc095eecd9e0b8",
+  "phase2_packet_id": "5b22a4852640de44a3daf54c2270eb193581dbadc80721a3cfdb8318a9f47ad1",
+  "phase2_sealed_replay_verified": true,
+  "physical_documents_primary": 3,
+  "primary_cases": 42,
+  "r03_coherence": {
+    "flagged_cases": 1,
+    "flagged_primary_cases": 1,
+    "flags": {
+      "after_correct_disagrees_with_phase1_transcript": 1
+    },
+    "meaning": "Literal discrepancies to retain for possible adjudication; no corrections or fault labels inferred."
+  },
+  "r03_diagnostic_relation_status": {
+    "INCONCLUSIVE": 2,
+    "INVALID_TEST": 2
+  },
+  "r03_primary_status": {
+    "pointwise": {
+      "CONFIRMED_FAULT": 10,
+      "INCONCLUSIVE": 17,
+      "INVALID_TEST": 2,
+      "NO_FAULT": 13
+    },
+    "relation": {
+      "CONFIRMED_FAULT": 4,
+      "INCONCLUSIVE": 23,
+      "INVALID_TEST": 2,
+      "NO_FAULT": 13
+    }
+  },
+  "r03_raw_counts": {
+    "absence_check": {
+      "all_sources_removed": 9,
+      "not_applicable": 35,
+      "not_established": 2
+    },
+    "after_reading": {
+      "correct": 21,
+      "readable_omission": 11,
+      "uncertain": 1,
+      "unsupported_verified": 3,
+      "wrong_value": 10
+    },
+    "before_reading": {
+      "correct": 17,
+      "readable_omission": 8,
+      "uncertain": 2,
+      "wrong_value": 19
+    },
+    "test_validity": {
+      "invalid": 4,
+      "uncertain": 7,
+      "valid": 35
+    }
+  },
+  "raw_answers_changed": 0,
+  "reviewer": "R03",
+  "round_status": "OPEN",
+  "schema": "r03-phase2-intake-summary/1",
+  "status": "PHASE2_COMPLETE_UNADJUDICATED",
+  "strict_validation": {
+    "complete": true,
+    "expected_observations": 46,
+    "gold_created": false,
+    "independent_truth_verified": false,
+    "job_id": "96eca79ffe534f31ffe72c8c17b464fc425eaeee7fda9ab08e3984d86e8798a4",
+    "missing": 0,
+    "normalized_sha256": "79cbb88301989080b2bc26931bc2bef4e3a76a1ab09c2134ba3b721ea07e081d",
+    "observations": 46,
+    "origin": "HUMAN_SUBMITTED_UNVERIFIED",
+    "package_sha256": "da073e760380c745623a0eb6b553a1d6168ffe830abfc804fed35a7e4d0c7667",
+    "phase": "phase2",
+    "raw_sha256": "6fddf43dc615e7118e278ae9004d760a98a1a84489b366c9db8dbf8dc2a891a8",
+    "schema": "strict-review-validation/1"
+  }
+}

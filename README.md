@@ -22,15 +22,15 @@ weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
-Ngày 20/11, R03 đã hoàn tất 86/86 mục pha 1. Gói pha 2 gồm 46 ca đã sẵn sàng và đang chờ phiếu.
+Ngày 20/11, R03 đã hoàn tất 86/86 mục pha 1 và 46/46 ca pha 2. Trên 42 ca chính, R02 và R03 thống nhất ở 32 ca về giá trị OCR trên ảnh biến đổi và 34 ca về quan hệ giữa hai ảnh. [Kết quả khảo sát và các ca cần phân xử](research/evidence_contract/R03_PHASE2_REVIEW_INTAKE_20261120.md).
 R03 khai đã gặp ảnh hoặc giá trị ở 68/86 mục. [Kết quả pha 1 và giới hạn về tính độc lập](research/evidence_contract/R03_PHASE1_REVIEW_INTAKE_20261120.md).
-Kết quả pha 2 hiện dựa trên [phiếu tác giả và R02 ngày 17/11](research/evidence_contract/R02_PHASE2_REVIEW_INTAKE_20261117.md).
+[Kết quả pha 2 ngày 17/11](research/evidence_contract/R02_PHASE2_REVIEW_INTAKE_20261117.md) ghi lại mốc tác giả và R02 đã nộp.
 Tại snapshot review ngày 17/11, cả tác giả và R02 đã hoàn tất hai pha; 1 người
 ngoài theo xác nhận organizer.
 Agreement primary: pointwise 30/42 (κ=0,5862), relation 33/42 (κ=0,6619),
 chưa phân xử hoặc gộp nhãn. Theo riêng R02, A vẫn FN=5/9 lỗi pointwise;
 C2 còn 0/9 primary có nhãn binary. **432 tests + 6 subtests PASS**, 3.645 tệp
-lịch sử không đổi. Round 1 OPEN, chờ pha 2 của R03; vẫn NO_GO_SUPERIORITY. Raw review
+lịch sử không đổi. Round 1 đang chờ quyết định chốt vòng và phân xử. Raw review
 giữ local, code/aggregate/receipt và tiến độ đồng bộ main. Các mốc tiếp theo
 bên dưới mô tả trạng thái trước lần tiếp nhận này.
 

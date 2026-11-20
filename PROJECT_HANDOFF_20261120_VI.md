@@ -42,7 +42,7 @@ Kết quả lịch sử B không cho thấy superiority. Trong constructed contr
 
 - Người tổ chức dự án đã hoàn thành pha 1 86/86 mục và pha 2 46/46 ca.
 - R02 đã hoàn thành pha 1 86/86 và pha 2 46/46. Vai trò ban đầu bị chọn nhầm thành tác giả; người dùng xác nhận người chấm không tham gia xây dựng project. Raw export được giữ nguyên; hiệu chỉnh vai trò được ghi riêng.
-- R03 đã hoàn tất 86/86 mục pha 1 trên 31 ảnh và khai đã gặp ảnh hoặc giá trị ở 68 mục. Tính độc lập của phiếu này còn chưa xác minh. Gói pha 2 gồm 46 ca đã sẵn sàng, đang chờ phiếu. Round 1 vẫn OPEN. [Biên bản tiếp nhận R03](research/evidence_contract/R03_PHASE1_REVIEW_INTAKE_20261120.md).
+- R03 đã hoàn tất 86/86 mục pha 1 trên 31 ảnh và 46/46 ca pha 2. R03 khai đã gặp ảnh hoặc giá trị ở 68 mục pha 1. Tính độc lập còn chưa xác minh. R02 và R03 khớp kết luận về giá trị ở 32/42 ca chính, về quan hệ giữa hai ảnh ở 34/42 ca chính. [Biên bản tiếp nhận và đối chiếu pha 2](research/evidence_contract/R03_PHASE2_REVIEW_INTAKE_20261120.md).
 - Chưa chốt cutoff hoặc tiến hành phân xử. Giữ kín bảng bất đồng, kết quả, đáp án và raw phiếu với người đang chấm độc lập.
 - Agreement tác giả/R02 trên 42 ca primary: pointwise 30/42, Cohen κ=0,5862; relation 33/42, κ=0,6619. Có một ca binary pointwise đối nghịch. Đây là mức agreement quan sát được, không phải gold truth. Pha 2 primary chỉ gồm 3 physical IDs; không coi nhiều trường hoặc ca là nhiều ID độc lập.
 - Theo phiếu R02, A có TP/FN 4/5 trên nhóm lỗi pointwise được tính; B3 9/0; C2 không có primary binary được gán. Đây là báo cáo theo người chấm, chưa phân xử và không phải đánh giá toàn bộ quần thể.
@@ -74,7 +74,7 @@ Các module D4: d4_controls.py, d4_run.py, d4_historical.py, verify_d4.py, mrz_a
 
 1. Chưa có protocol prospective được phê duyệt. D4–D9 còn endpoint, coverage/fault floor, margin, clustering, cỡ mẫu, ngân sách và stop rules chưa khóa.
 2. Reference authority/approvals thật bằng 0; C2 eligible pairs bằng 0; truth độc lập và quy trình phân xử chưa có.
-3. Round 1 OPEN và đang chờ pha 2 của R03. Reviewer feedback không được thay bằng số lượng test phần mềm.
+3. Round 1 đang mở. Cả ba người đã nộp đủ, còn chờ chủ dự án chốt vòng và quy trình phân xử theo D1–D3.
 4. Exposure chưa được khép kín. UNKNOWN không chứng minh unseen; lineage nội dung/pixel và overlap pretraining còn thiếu.
 5. Constructed controls không phải lỗi tự nhiên, ảnh độc lập hay hiệu quả trên người dùng. Kết quả hiện có gồm counterexample làm cả hai arm thất bại.
 6. Novelty comparison chưa hoàn chỉnh, manuscript B chưa hoàn thành/được review; anonymous release và quyền phát hành artifact chưa được duyệt.
@@ -141,4 +141,4 @@ Lệnh đầy đủ và output hash của mốc P1 được ghi trong p1_full_te
 
 ## Snapshot ngắn để người nhận bắt đầu
 
-Mốc P1 ban đầu có 579 tests + 6 subtests PASS. Sau commit `46af24d`, đã rà soát D4 và kiểm lại 144 cặp trên 72 ca dựng sẵn. Cả 16 cặp có khác biệt đều thuộc nhóm can thiệp kiểm tra literal MRZ. Việc kỹ thuật tiếp theo là đối chiếu pixel/near-duplicate và truy nguồn các asset được phép dùng, sau đó kiểm tra nguồn hỗ trợ C2. Pha 2 của R03 vẫn chờ phiếu. Scientific gate giữ ở `NO_GO_SUPERIORITY`.
+Mốc P1 ban đầu có 579 tests + 6 subtests PASS. Sau commit `46af24d`, đã rà soát D4 và kiểm lại 144 cặp trên 72 ca dựng sẵn. Cả 16 cặp có khác biệt đều thuộc nhóm can thiệp kiểm tra literal MRZ. Việc kỹ thuật tiếp theo là đối chiếu pixel/near-duplicate và truy nguồn các asset được phép dùng, sau đó kiểm tra nguồn hỗ trợ C2. Phiếu pha 2 của R03 đã được tiếp nhận và đối chiếu. Scientific gate giữ ở `NO_GO_SUPERIORITY`.

@@ -2,6 +2,8 @@
 
 ## Trạng thái làm việc hiện tại · 20/11/2026
 
+Khảo sát đã thu đủ hai pha của tác giả, R02 và R03. Danh sách bất đồng đã được lập để chờ chủ dự án chốt vòng, người phân xử và quy tắc phân xử theo D1–D3. Trong 22 ca chính mà R02 và R03 cùng có kết luận lỗi hoặc không lỗi về giá trị OCR, một ca có kết luận đối nghịch. [Kết quả khảo sát](R03_PHASE2_REVIEW_INTAKE_20261120.md)
+
 Đọc [bản bàn giao tổng thể](../../PROJECT_HANDOFF_20261120_VI.md) trước khi
 tiếp nhận. D4 P1 đã được triển khai và full Evidence Contract suite đạt 579
 tests + 6 subtests. Kết quả chỉ là constructed development và replay lịch sử;

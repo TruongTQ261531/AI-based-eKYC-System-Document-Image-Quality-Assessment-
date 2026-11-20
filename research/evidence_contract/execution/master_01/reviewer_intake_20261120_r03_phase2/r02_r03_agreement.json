@@ -1,0 +1,814 @@
+{
+  "adjudicated_cases": 0,
+  "any_dimension_disagreement_cases": 26,
+  "ci": null,
+  "first": "R02",
+  "independence_verified": false,
+  "independent_gold_created": false,
+  "labels_pooled": false,
+  "mode": "HUMAN_SUBMITTED_UNVERIFIED",
+  "model_calls": 0,
+  "p_value": null,
+  "provenance": {
+    "first_view_sha256": "02eb58ecff754aa2f57c504327c3618bf4d27552c9314001611e4854235cc548",
+    "second_view_sha256": "4658222603fbe0c5e3956b503f5e770b06b38be5055b8213ee0b4337fdfc4e7d"
+  },
+  "round_status": "OPEN",
+  "schema": "phase2-interim-agreement/1",
+  "scope": "Descriptive paired agreement; not truth/accuracy or independent population reliability",
+  "second": "R03",
+  "status": "INTERIM_TWO_REVIEWERS_UNADJUDICATED",
+  "views": {
+    "all": {
+      "all_raw_dimensions_matched": 22,
+      "binary_overlap": {
+        "pointwise": {
+          "binary_matched": 21,
+          "binary_opposed": 1,
+          "both_binary": 22,
+          "first_binary": 26,
+          "first_only_binary": 4,
+          "neither_binary": 19,
+          "second_binary": 23,
+          "second_only_binary": 1
+        },
+        "relation": {
+          "binary_matched": 17,
+          "binary_opposed": 0,
+          "both_binary": 17,
+          "first_binary": 21,
+          "first_only_binary": 4,
+          "neither_binary": 25,
+          "second_binary": 17,
+          "second_only_binary": 0
+        }
+      },
+      "both_endpoint_labels_matched": 34,
+      "cases": 46,
+      "derived": {
+        "pointwise": {
+          "cohen_kappa": 0.6427184466019418,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 8,
+              "first": "CONFIRMED_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 1,
+              "first": "CONFIRMED_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 10,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 5,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 3,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 1,
+              "first": "NO_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 3,
+              "first": "NO_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 13,
+              "first": "NO_FAULT",
+              "second": "NO_FAULT"
+            }
+          ],
+          "disagreed": 12,
+          "exact_agreement": 0.7391304347826086,
+          "kappa_unavailable_reason": null,
+          "matched": 34
+        },
+        "relation": {
+          "cohen_kappa": 0.6765119549929677,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 4,
+              "first": "CONFIRMED_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 16,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 5,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 3,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 4,
+              "first": "NO_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 13,
+              "first": "NO_FAULT",
+              "second": "NO_FAULT"
+            }
+          ],
+          "disagreed": 10,
+          "exact_agreement": 0.782608695652174,
+          "kappa_unavailable_reason": null,
+          "matched": 36
+        }
+      },
+      "physical_instances": 5,
+      "raw": {
+        "absence_check": {
+          "cohen_kappa": 0.9424280350438048,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 9,
+              "first": "all_sources_removed",
+              "second": "all_sources_removed"
+            },
+            {
+              "count": 1,
+              "first": "all_sources_removed",
+              "second": "not_established"
+            },
+            {
+              "count": 35,
+              "first": "not_applicable",
+              "second": "not_applicable"
+            },
+            {
+              "count": 1,
+              "first": "not_established",
+              "second": "not_established"
+            }
+          ],
+          "disagreed": 1,
+          "exact_agreement": 0.9782608695652174,
+          "kappa_unavailable_reason": null,
+          "matched": 45
+        },
+        "after_reading": {
+          "cohen_kappa": 0.7388218594748048,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 21,
+              "first": "correct",
+              "second": "correct"
+            },
+            {
+              "count": 2,
+              "first": "correct",
+              "second": "readable_omission"
+            },
+            {
+              "count": 1,
+              "first": "correct",
+              "second": "uncertain"
+            },
+            {
+              "count": 2,
+              "first": "correct",
+              "second": "wrong_value"
+            },
+            {
+              "count": 9,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            },
+            {
+              "count": 3,
+              "first": "uncertain",
+              "second": "wrong_value"
+            },
+            {
+              "count": 3,
+              "first": "unsupported_verified",
+              "second": "unsupported_verified"
+            },
+            {
+              "count": 5,
+              "first": "wrong_value",
+              "second": "wrong_value"
+            }
+          ],
+          "disagreed": 8,
+          "exact_agreement": 0.8260869565217391,
+          "kappa_unavailable_reason": null,
+          "matched": 38
+        },
+        "before_reading": {
+          "cohen_kappa": 0.5283663704716336,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 17,
+              "first": "correct",
+              "second": "correct"
+            },
+            {
+              "count": 9,
+              "first": "correct",
+              "second": "wrong_value"
+            },
+            {
+              "count": 8,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            },
+            {
+              "count": 1,
+              "first": "readable_omission",
+              "second": "uncertain"
+            },
+            {
+              "count": 3,
+              "first": "uncertain",
+              "second": "wrong_value"
+            },
+            {
+              "count": 1,
+              "first": "unsupported_verified",
+              "second": "wrong_value"
+            },
+            {
+              "count": 1,
+              "first": "wrong_value",
+              "second": "uncertain"
+            },
+            {
+              "count": 6,
+              "first": "wrong_value",
+              "second": "wrong_value"
+            }
+          ],
+          "disagreed": 15,
+          "exact_agreement": 0.6739130434782609,
+          "kappa_unavailable_reason": null,
+          "matched": 31
+        },
+        "test_validity": {
+          "cohen_kappa": 0.23150357995226728,
+          "compared": 46,
+          "contingencies": [
+            {
+              "count": 3,
+              "first": "invalid",
+              "second": "invalid"
+            },
+            {
+              "count": 2,
+              "first": "invalid",
+              "second": "uncertain"
+            },
+            {
+              "count": 3,
+              "first": "invalid",
+              "second": "valid"
+            },
+            {
+              "count": 3,
+              "first": "uncertain",
+              "second": "valid"
+            },
+            {
+              "count": 1,
+              "first": "valid",
+              "second": "invalid"
+            },
+            {
+              "count": 5,
+              "first": "valid",
+              "second": "uncertain"
+            },
+            {
+              "count": 29,
+              "first": "valid",
+              "second": "valid"
+            }
+          ],
+          "disagreed": 14,
+          "exact_agreement": 0.6956521739130435,
+          "kappa_unavailable_reason": null,
+          "matched": 32
+        }
+      }
+    },
+    "diagnostic": {
+      "all_raw_dimensions_matched": 0,
+      "binary_overlap": {
+        "pointwise": {
+          "binary_matched": 0,
+          "binary_opposed": 0,
+          "both_binary": 0,
+          "first_binary": 0,
+          "first_only_binary": 0,
+          "neither_binary": 4,
+          "second_binary": 0,
+          "second_only_binary": 0
+        },
+        "relation": {
+          "binary_matched": 0,
+          "binary_opposed": 0,
+          "both_binary": 0,
+          "first_binary": 0,
+          "first_only_binary": 0,
+          "neither_binary": 4,
+          "second_binary": 0,
+          "second_only_binary": 0
+        }
+      },
+      "both_endpoint_labels_matched": 2,
+      "cases": 4,
+      "derived": {
+        "pointwise": {
+          "cohen_kappa": 0.0,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 1,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            }
+          ],
+          "disagreed": 2,
+          "exact_agreement": 0.5,
+          "kappa_unavailable_reason": null,
+          "matched": 2
+        },
+        "relation": {
+          "cohen_kappa": 0.0,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 1,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            }
+          ],
+          "disagreed": 2,
+          "exact_agreement": 0.5,
+          "kappa_unavailable_reason": null,
+          "matched": 2
+        }
+      },
+      "physical_instances": 3,
+      "raw": {
+        "absence_check": {
+          "cohen_kappa": 0.6,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 1,
+              "first": "all_sources_removed",
+              "second": "not_established"
+            },
+            {
+              "count": 2,
+              "first": "not_applicable",
+              "second": "not_applicable"
+            },
+            {
+              "count": 1,
+              "first": "not_established",
+              "second": "not_established"
+            }
+          ],
+          "disagreed": 1,
+          "exact_agreement": 0.75,
+          "kappa_unavailable_reason": null,
+          "matched": 3
+        },
+        "after_reading": {
+          "cohen_kappa": 0.5,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 2,
+              "first": "correct",
+              "second": "correct"
+            },
+            {
+              "count": 1,
+              "first": "correct",
+              "second": "readable_omission"
+            },
+            {
+              "count": 1,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            }
+          ],
+          "disagreed": 1,
+          "exact_agreement": 0.75,
+          "kappa_unavailable_reason": null,
+          "matched": 3
+        },
+        "before_reading": {
+          "cohen_kappa": 0.14285714285714285,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 1,
+              "first": "correct",
+              "second": "wrong_value"
+            },
+            {
+              "count": 1,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            },
+            {
+              "count": 1,
+              "first": "readable_omission",
+              "second": "uncertain"
+            },
+            {
+              "count": 1,
+              "first": "unsupported_verified",
+              "second": "wrong_value"
+            }
+          ],
+          "disagreed": 3,
+          "exact_agreement": 0.25,
+          "kappa_unavailable_reason": null,
+          "matched": 1
+        },
+        "test_validity": {
+          "cohen_kappa": -0.2,
+          "compared": 4,
+          "contingencies": [
+            {
+              "count": 1,
+              "first": "invalid",
+              "second": "invalid"
+            },
+            {
+              "count": 1,
+              "first": "invalid",
+              "second": "valid"
+            },
+            {
+              "count": 1,
+              "first": "uncertain",
+              "second": "valid"
+            },
+            {
+              "count": 1,
+              "first": "valid",
+              "second": "invalid"
+            }
+          ],
+          "disagreed": 3,
+          "exact_agreement": 0.25,
+          "kappa_unavailable_reason": null,
+          "matched": 1
+        }
+      }
+    },
+    "primary": {
+      "all_raw_dimensions_matched": 22,
+      "binary_overlap": {
+        "pointwise": {
+          "binary_matched": 21,
+          "binary_opposed": 1,
+          "both_binary": 22,
+          "first_binary": 26,
+          "first_only_binary": 4,
+          "neither_binary": 15,
+          "second_binary": 23,
+          "second_only_binary": 1
+        },
+        "relation": {
+          "binary_matched": 17,
+          "binary_opposed": 0,
+          "both_binary": 17,
+          "first_binary": 21,
+          "first_only_binary": 4,
+          "neither_binary": 21,
+          "second_binary": 17,
+          "second_only_binary": 0
+        }
+      },
+      "both_endpoint_labels_matched": 32,
+      "cases": 42,
+      "derived": {
+        "pointwise": {
+          "cohen_kappa": 0.6695515342250196,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 8,
+              "first": "CONFIRMED_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 1,
+              "first": "CONFIRMED_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 1,
+              "first": "INCONCLUSIVE",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 9,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 4,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 2,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 1,
+              "first": "NO_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 3,
+              "first": "NO_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 13,
+              "first": "NO_FAULT",
+              "second": "NO_FAULT"
+            }
+          ],
+          "disagreed": 10,
+          "exact_agreement": 0.7619047619047619,
+          "kappa_unavailable_reason": null,
+          "matched": 32
+        },
+        "relation": {
+          "cohen_kappa": 0.712820512820513,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 4,
+              "first": "CONFIRMED_FAULT",
+              "second": "CONFIRMED_FAULT"
+            },
+            {
+              "count": 15,
+              "first": "INCONCLUSIVE",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 4,
+              "first": "INVALID_TEST",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 2,
+              "first": "INVALID_TEST",
+              "second": "INVALID_TEST"
+            },
+            {
+              "count": 4,
+              "first": "NO_FAULT",
+              "second": "INCONCLUSIVE"
+            },
+            {
+              "count": 13,
+              "first": "NO_FAULT",
+              "second": "NO_FAULT"
+            }
+          ],
+          "disagreed": 8,
+          "exact_agreement": 0.8095238095238095,
+          "kappa_unavailable_reason": null,
+          "matched": 34
+        }
+      },
+      "physical_instances": 3,
+      "raw": {
+        "absence_check": {
+          "cohen_kappa": 1.0,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 9,
+              "first": "all_sources_removed",
+              "second": "all_sources_removed"
+            },
+            {
+              "count": 33,
+              "first": "not_applicable",
+              "second": "not_applicable"
+            }
+          ],
+          "disagreed": 0,
+          "exact_agreement": 1.0,
+          "kappa_unavailable_reason": null,
+          "matched": 42
+        },
+        "after_reading": {
+          "cohen_kappa": 0.7535624476110646,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 19,
+              "first": "correct",
+              "second": "correct"
+            },
+            {
+              "count": 1,
+              "first": "correct",
+              "second": "readable_omission"
+            },
+            {
+              "count": 1,
+              "first": "correct",
+              "second": "uncertain"
+            },
+            {
+              "count": 2,
+              "first": "correct",
+              "second": "wrong_value"
+            },
+            {
+              "count": 8,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            },
+            {
+              "count": 3,
+              "first": "uncertain",
+              "second": "wrong_value"
+            },
+            {
+              "count": 3,
+              "first": "unsupported_verified",
+              "second": "unsupported_verified"
+            },
+            {
+              "count": 5,
+              "first": "wrong_value",
+              "second": "wrong_value"
+            }
+          ],
+          "disagreed": 7,
+          "exact_agreement": 0.8333333333333334,
+          "kappa_unavailable_reason": null,
+          "matched": 35
+        },
+        "before_reading": {
+          "cohen_kappa": 0.5684931506849316,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 17,
+              "first": "correct",
+              "second": "correct"
+            },
+            {
+              "count": 8,
+              "first": "correct",
+              "second": "wrong_value"
+            },
+            {
+              "count": 7,
+              "first": "readable_omission",
+              "second": "readable_omission"
+            },
+            {
+              "count": 3,
+              "first": "uncertain",
+              "second": "wrong_value"
+            },
+            {
+              "count": 1,
+              "first": "wrong_value",
+              "second": "uncertain"
+            },
+            {
+              "count": 6,
+              "first": "wrong_value",
+              "second": "wrong_value"
+            }
+          ],
+          "disagreed": 12,
+          "exact_agreement": 0.7142857142857143,
+          "kappa_unavailable_reason": null,
+          "matched": 30
+        },
+        "test_validity": {
+          "cohen_kappa": 0.25000000000000006,
+          "compared": 42,
+          "contingencies": [
+            {
+              "count": 2,
+              "first": "invalid",
+              "second": "invalid"
+            },
+            {
+              "count": 2,
+              "first": "invalid",
+              "second": "uncertain"
+            },
+            {
+              "count": 2,
+              "first": "invalid",
+              "second": "valid"
+            },
+            {
+              "count": 2,
+              "first": "uncertain",
+              "second": "valid"
+            },
+            {
+              "count": 5,
+              "first": "valid",
+              "second": "uncertain"
+            },
+            {
+              "count": 29,
+              "first": "valid",
+              "second": "valid"
+            }
+          ],
+          "disagreed": 11,
+          "exact_agreement": 0.7380952380952381,
+          "kappa_unavailable_reason": null,
+          "matched": 31
+        }
+      }
+    }
+  }
+}
