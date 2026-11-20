@@ -42,7 +42,8 @@ Kết quả lịch sử B không cho thấy superiority. Trong constructed contr
 
 - Người tổ chức dự án đã hoàn thành pha 1 86/86 mục và pha 2 46/46 ca.
 - R02 đã hoàn thành pha 1 86/86 và pha 2 46/46. Vai trò ban đầu bị chọn nhầm thành tác giả; người dùng xác nhận người chấm không tham gia xây dựng project. Raw export được giữ nguyên; hiệu chỉnh vai trò được ghi riêng.
-- Theo trạng thái công khai mới nhất trong repository, R03 chưa nộp. Round 1 vẫn OPEN; không có cutoff hoặc adjudication thật. Không gửi bảng bất đồng, kết quả, đáp án hoặc raw phiếu cho người đang chấm độc lập.
+- R03 đã hoàn tất 86/86 mục pha 1 trên 31 ảnh và khai đã gặp ảnh hoặc giá trị ở 68 mục. Tính độc lập của phiếu này còn chưa xác minh. Gói pha 2 gồm 46 ca đã sẵn sàng, đang chờ phiếu. Round 1 vẫn OPEN. [Biên bản tiếp nhận R03](research/evidence_contract/R03_PHASE1_REVIEW_INTAKE_20261120.md).
+- Chưa chốt cutoff hoặc tiến hành phân xử. Giữ kín bảng bất đồng, kết quả, đáp án và raw phiếu với người đang chấm độc lập.
 - Agreement tác giả/R02 trên 42 ca primary: pointwise 30/42, Cohen κ=0,5862; relation 33/42, κ=0,6619. Có một ca binary pointwise đối nghịch. Đây là mức agreement quan sát được, không phải gold truth. Pha 2 primary chỉ gồm 3 physical IDs; không coi nhiều trường hoặc ca là nhiều ID độc lập.
 - Theo phiếu R02, A có TP/FN 4/5 trên nhóm lỗi pointwise được tính; B3 9/0; C2 không có primary binary được gán. Đây là báo cáo theo người chấm, chưa phân xử và không phải đánh giá toàn bộ quần thể.
 - Audit exposure xác nhận tối thiểu 192/1.000 instance MIDV-2020 đã có exposure; 808 UNKNOWN, không được gọi là unseen. Metadata của 1.000 instance đã được truy cập. Pixel/near-duplicate, cross-corpus lineage và pretraining overlap chưa được khép kín.
@@ -73,7 +74,7 @@ Các module D4: d4_controls.py, d4_run.py, d4_historical.py, verify_d4.py, mrz_a
 
 1. Chưa có protocol prospective được phê duyệt. D4–D9 còn endpoint, coverage/fault floor, margin, clustering, cỡ mẫu, ngân sách và stop rules chưa khóa.
 2. Reference authority/approvals thật bằng 0; C2 eligible pairs bằng 0; truth độc lập và quy trình phân xử chưa có.
-3. Round 1 OPEN; R03 đang chờ. Reviewer feedback không được thay bằng số lượng test phần mềm.
+3. Round 1 OPEN và đang chờ pha 2 của R03. Reviewer feedback không được thay bằng số lượng test phần mềm.
 4. Exposure chưa được khép kín. UNKNOWN không chứng minh unseen; lineage nội dung/pixel và overlap pretraining còn thiếu.
 5. Constructed controls không phải lỗi tự nhiên, ảnh độc lập hay hiệu quả trên người dùng. Kết quả hiện có gồm counterexample làm cả hai arm thất bại.
 6. Novelty comparison chưa hoàn chỉnh, manuscript B chưa hoàn thành/được review; anonymous release và quyền phát hành artifact chưa được duyệt.
@@ -85,7 +86,7 @@ Các trạng thái cần giữ: GO_PREPARATORY_ONLY cho phát triển chuẩn b�
 
 ### Làm được ngay, không cần phiếu review mới
 
-1. Code review D4 adapter, kiểm tra frozen hash, guard matrix và giới hạn của counterexamples; giữ policy đóng băng.
+1. Đã rà soát D4 adapter và đối chiếu mã nguồn với manifest P1. Bộ kiểm tra độc lập hiện đối chiếu từng endpoint, lý do của mỗi arm và hash đầu vào cho từng cặp có kết quả khác nhau. Lệnh tái kiểm tra ở mục 9. Ba phản ví dụ ở mục 5 vẫn giới hạn kết luận trên các nguồn tham chiếu cùng sai.
 2. Hoàn thiện audit pixel/near-duplicate và lineage cho các asset được phép dùng; báo riêng file, image instance, physical ID, template và cluster. Không chọn cohort xác nhận từ audit kết quả thuận lợi.
 3. Tiếp tục C2 evidence audit: phân biệt PASS/FAIL/UNKNOWN, xác minh source support sau mutation, provenance và authority. Không tự cấp approved reference.
 4. Cập nhật literature/novelty matrix bằng nguồn sơ cấp, lập related-work claims có citation và ghi rõ khác biệt với oracle validity, metamorphic testing, selective prediction và abstention hiện có.
@@ -122,8 +123,11 @@ Chạy từ repository research-document-recovery với Python hiện có tại 
 
 ~~~powershell
 D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -B -m research.evidence_contract.oracle_reliability.verify_d4 research/evidence_contract/execution/master_01/d4_development_20261117/controls_01
-D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -B -m pytest -q -p no:cacheprovider research/evidence_contract/tests
+$qa = Join-Path 'research/evidence_contract/local' ('d4_review_' + [guid]::NewGuid().ToString('N'))
+D:\laptrinhcuatao\Ekyc\.venv\Scripts\python.exe -X utf8 -B -m pytest -q -p no:cacheprovider research/evidence_contract/tests --basetemp $qa
 ~~~
+
+Lần rà soát ngày 20/11 xác nhận hash của 9 tệp nguồn khớp manifest P1. Bộ kiểm tra D4 chạy đạt cả ở chế độ thường và với `-O`. Lần chạy toàn bộ đầu tiên có 3 kiểm thử ghi tệp thất bại vì dùng thư mục tạm hệ thống. Khi dùng thư mục tạm trong phạm vi cho phép như lệnh trên, toàn bộ 585 kiểm thử và 6 subtest đều đạt.
 
 Lệnh đầy đủ và output hash của mốc P1 được ghi trong p1_full_tests_01.json. Để chạy lại runner tạo output mới, truyền một thư mục execution chưa tồn tại và bảo toàn output cũ; replay lịch sử còn tạo rows.json trong local, tuyệt đối không stage thư mục local.
 
@@ -137,4 +141,4 @@ Lệnh đầy đủ và output hash của mốc P1 được ghi trong p1_full_te
 
 ## Snapshot ngắn để người nhận bắt đầu
 
-HEAD khi lập bản bàn giao: 1a7ae72f5ae5954cd93140f29ef0975407c904ab, branch main; tại lúc bắt đầu cập nhật, origin/main trùng local. D4 P1 đã triển khai và có 579 tests + 6 subtests PASS. Kết quả chỉ là constructed-development parity/divergence và historical abstention replay. Việc gần nhất là rà soát tài liệu/mã, kiểm chứng receipts, đồng bộ thay đổi này lên main rồi tiếp tục audit lineage/C2 và literature. Không mở prospective cohort hoặc tuyên bố superiority trước khi các gate và quyết định D1–D12 được giải quyết.
+Mốc P1 ban đầu có 579 tests + 6 subtests PASS. Sau commit `46af24d`, đã rà soát D4 và kiểm lại 144 cặp trên 72 ca dựng sẵn. Cả 16 cặp có khác biệt đều thuộc nhóm can thiệp kiểm tra literal MRZ. Việc kỹ thuật tiếp theo là đối chiếu pixel/near-duplicate và truy nguồn các asset được phép dùng, sau đó kiểm tra nguồn hỗ trợ C2. Pha 2 của R03 vẫn chờ phiếu. Scientific gate giữ ở `NO_GO_SUPERIORITY`.

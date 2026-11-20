@@ -2,9 +2,9 @@
 
 **Bàn giao tổng thể cập nhật 20/11/2026:** [PROJECT_HANDOFF_20261120_VI.md](PROJECT_HANDOFF_20261120_VI.md)
 ghi mục tiêu sản phẩm và EASE 2027, sơ đồ tài liệu, bằng chứng A/B, trạng thái
-D4 P1, giới hạn, việc còn lại và lệnh tái kiểm tra. Mốc gần nhất: D4 development
-PASS constructed controls, 579 tests + 6 subtests PASS; scientific gate vẫn
-NO_GO_SUPERIORITY và chưa có prospective cohort.
+D4 P1, giới hạn, việc còn lại và lệnh tái kiểm tra. Ngày 20/11, bộ kiểm tra D4
+đã đối chiếu 144 cặp kết quả trên 72 ca dựng sẵn. Bộ Evidence Contract chạy đạt
+585 kiểm thử và 6 subtest. Scientific gate vẫn ở `NO_GO_SUPERIORITY`.
 
 Repository chứa luồng eKYC mentor và các nghiên cứu OCR trong namespace riêng.
 Luồng camera → thông tin → kiểm tra cử động → đối chiếu vẫn chạy ở **8000**.
@@ -22,13 +22,15 @@ weights VLM/LoRA và ảnh nghiên cứu vẫn ở máy, không đưa lên Git.
 Các checkpoint chất lượng đã có trong lịch sử repository được giữ nguyên.
 
 Nghiên cứu EASE 2027 hiện nằm trong [Evidence-Contract Testing](research/evidence_contract/PUBLICATION_NOTES.md).
-Mốc đánh giá con người mới nhất **17/11: [R02 pha 2 đã đủ 46/46 ca](research/evidence_contract/R02_PHASE2_REVIEW_INTAKE_20261117.md)**.
+Ngày 20/11, R03 đã hoàn tất 86/86 mục pha 1. Gói pha 2 gồm 46 ca đã sẵn sàng và đang chờ phiếu.
+R03 khai đã gặp ảnh hoặc giá trị ở 68/86 mục. [Kết quả pha 1 và giới hạn về tính độc lập](research/evidence_contract/R03_PHASE1_REVIEW_INTAKE_20261120.md).
+Kết quả pha 2 hiện dựa trên [phiếu tác giả và R02 ngày 17/11](research/evidence_contract/R02_PHASE2_REVIEW_INTAKE_20261117.md).
 Tại snapshot review ngày 17/11, cả tác giả và R02 đã hoàn tất hai pha; 1 người
 ngoài theo xác nhận organizer.
 Agreement primary: pointwise 30/42 (κ=0,5862), relation 33/42 (κ=0,6619),
 chưa phân xử hoặc gộp nhãn. Theo riêng R02, A vẫn FN=5/9 lỗi pointwise;
 C2 còn 0/9 primary có nhãn binary. **432 tests + 6 subtests PASS**, 3.645 tệp
-lịch sử không đổi. Round 1 OPEN, chờ R03; vẫn NO_GO_SUPERIORITY. Raw review
+lịch sử không đổi. Round 1 OPEN, chờ pha 2 của R03; vẫn NO_GO_SUPERIORITY. Raw review
 giữ local, code/aggregate/receipt và tiến độ đồng bộ main. Các mốc tiếp theo
 bên dưới mô tả trạng thái trước lần tiếp nhận này.
 
