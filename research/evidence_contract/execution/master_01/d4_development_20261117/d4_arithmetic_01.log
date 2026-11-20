@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "controls": 72,
+  "paired_tier_evaluations": 144,
+  "divergence_tier_pairs": 16,
+  "arithmetic": {
+    "status": "PASS",
+    "groups": 216,
+    "cells": 272,
+    "new_labels": 0,
+    "scope": "Independent arithmetic, not independent truth"
+  },
+  "shared_input_fingerprints_checked": 144,
+  "physical_ids": 0,
+  "scope": "Independent accounting/binding, not empirical truth or efficacy"
+}

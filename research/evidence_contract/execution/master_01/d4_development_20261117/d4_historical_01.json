@@ -1,0 +1,31 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "research.evidence_contract.oracle_reliability.d4_historical",
+    "--output",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/historical_01",
+    "--private",
+    "research/evidence_contract/local/master_01/d4_development_20261117/historical_01"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "1a7ae72f5ae5954cd93140f29ef0975407c904ab",
+  "start": "2026-11-17T04:27:13.257141+00:00",
+  "end": "2026-11-17T04:27:14.943933+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 0,
+  "stdout_stderr_sha256": "4dd0dd1de30174a6c95d0a99e99de2729eda110c793d8ea440d7692ca46e3df6",
+  "log": "d4_historical_01.log",
+  "runner_sha256": "4f57fe2f4339833aa33d324143ecd5673ffe43f5f9db6e6507032413bfd1762d"
+}

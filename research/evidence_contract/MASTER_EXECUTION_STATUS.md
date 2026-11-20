@@ -1,5 +1,24 @@
 # EASE 2027 · Master execution
 
+## Mốc mới nhất · 20/11/2026 — D4 P1 development
+
+[Bản bàn giao tổng thể](../../PROJECT_HANDOFF_20261120_VI.md) là điểm vào khi
+nhận việc. Từ mốc P0, D4 checked v2 vs MRZ-metadata-asserted đã được triển khai
+trong adapter riêng, không sửa policy đóng băng. **72 constructed controls,
+144 paired evaluations, 288 arm evaluations; 144 checked regressions chính xác;
+8 ca/16 tier pairs chỉ divergence tại treatment, 0 divergence ngoài treatment.**
+Replay lịch sử 46 ca không có approved reference nên semantic pointwise/relation
+đều UNKNOWN; structure NO_FAULT theo parser. Full suite **579 tests + 6 subtests
+PASS**. Receipts và outputs: [D4 development](execution/master_01/d4_development_20261117/).
+
+Đây là development/software evidence, không phải superiority, dữ liệu mới,
+human truth, cohort prospective hoặc bằng chứng chi phí end-to-end. Model calls,
+training, annotation mới, approved references và prospective observations đều
+bằng 0. R02 đã hoàn tất hai pha; R03 vẫn pending; Round 1 OPEN.
+**GO_PREPARATORY_ONLY; NO_GO_SUPERIORITY; Research chưa sẵn sàng nộp.**
+P2 pixel/lineage/C2 audit và các quyết định D1–D12 còn lại chưa khép.
+Các mục bên dưới là snapshot lịch sử tại thời điểm ghi; không ghi đè receipts cũ.
+
 Mốc mới nhất **17/11 — [R02 pha 2 hoàn tất 46/46](R02_PHASE2_REVIEW_INTAKE_20261117.md)**.
 Pha 1 và pha 2 đều có 2 người hoàn tất: tác giả + R02; 1 người ngoài dự án theo
 xác nhận organizer, không tự xác minh độc lập. Đã giữ raw bytes, niêm phong

@@ -1,0 +1,56 @@
+{
+  "actual_new_observations": 0,
+  "annotation_budget_shared": true,
+  "arm_evaluations": 288,
+  "controls": 72,
+  "cost_scope": "One warm-process execution per arm/tier/control; validation/predicate timers are local software observations, no end-to-end eKYC or human cost claim",
+  "costs": {
+    "checked_v2": {
+      "declared_mrz_resolutions": 0,
+      "evaluation_ns": 15937900,
+      "literal_td3_calls": 64,
+      "mrz_work_ns": 4159800
+    },
+    "mrz_metadata_asserted": {
+      "declared_mrz_resolutions": 64,
+      "evaluation_ns": 10880700,
+      "literal_td3_calls": 0,
+      "mrz_work_ns": 130200
+    }
+  },
+  "counterexamples": [
+    "shared_wrong_reference",
+    "corroborated_shared_wrong_reference",
+    "correlated_wrong_body_and_valid_MRZ"
+  ],
+  "divergence_tier_pairs": 16,
+  "divergence_unique_controls": 8,
+  "endpoints": 3,
+  "frozen_checked_exact_regressions": 144,
+  "human_active_minutes": null,
+  "human_annotations_created": 0,
+  "model_calls": 0,
+  "non_treatment_divergences": 0,
+  "paired_evaluations": 144,
+  "process_cpu_ns": 359375000,
+  "prospective_started": false,
+  "reference_approvals_created": 0,
+  "runtime_ns": 399245600,
+  "schema": "D4-development-results/1",
+  "scientific_gate": "NO_GO_SUPERIORITY",
+  "status": "PASS_CONSTRUCTED_DEVELOPMENT",
+  "symbolic_physical_ids": 0,
+  "tiers": [
+    1,
+    2
+  ],
+  "training_runs": 0,
+  "valid_MRZ_parity_cases": [
+    "TD3_dob",
+    "TD3_expiry_date",
+    "TD3_id_number",
+    "valid_MRZ_correct_output"
+  ],
+  "valid_MRZ_parity_tier_pairs": 8,
+  "withheld_truth": "Truth is evaluation-only authored control data; never passed to compare_pair"
+}

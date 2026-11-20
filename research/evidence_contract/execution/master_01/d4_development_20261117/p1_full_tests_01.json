@@ -1,0 +1,33 @@
+{
+  "command": [
+    "D:\\laptrinhcuatao\\Ekyc\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests",
+    "--basetemp",
+    "research/evidence_contract/local/master_01/d4_development_20261117/p1_full_qa_01"
+  ],
+  "cwd": "D:\\laptrinhcuatao\\Ekyc\\versions\\research-document-recovery",
+  "python": "3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]",
+  "head": "1a7ae72f5ae5954cd93140f29ef0975407c904ab",
+  "start": "2026-11-17T04:27:13.261667+00:00",
+  "end": "2026-11-17T04:27:53.321198+00:00",
+  "exit_code": 0,
+  "counts": {
+    "passed": 579,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "deselected": 0
+  },
+  "subtests_passed": 6,
+  "stdout_stderr_sha256": "cb693231086e2077bd3155cc889c4760b0faf6c513bd345271d1602abd093503",
+  "log": "p1_full_tests_01.log",
+  "runner_sha256": "4f57fe2f4339833aa33d324143ecd5673ffe43f5f9db6e6507032413bfd1762d"
+}

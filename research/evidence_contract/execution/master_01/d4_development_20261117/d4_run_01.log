@@ -1,0 +1,9 @@
+{
+  "status": "PASS_CONSTRUCTED_DEVELOPMENT",
+  "controls": 72,
+  "paired_evaluations": 144,
+  "divergence_unique_controls": 8,
+  "divergence_tier_pairs": 16,
+  "non_treatment_divergences": 0,
+  "model_calls": 0
+}

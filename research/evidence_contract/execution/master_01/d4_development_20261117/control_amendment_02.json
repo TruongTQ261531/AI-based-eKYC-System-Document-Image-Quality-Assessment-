@@ -1,0 +1,24 @@
+{
+  "baseline_changed": false,
+  "case": "correlated_wrong_body_and_valid_MRZ",
+  "corrected_expected": [
+    "FAULT",
+    "FAULT",
+    "NO_FAULT"
+  ],
+  "correction": "First amendment mistyped the pre-existing constructed relation truth as null; source line and original source hash show it was false. No truth field or production code changed. Initial apply_patch failed before mutation.",
+  "failure_receipt": "d4_targeted_01.json",
+  "initial_expected": [
+    "FAULT",
+    "UNKNOWN",
+    "NO_FAULT"
+  ],
+  "original_control_source_sha256": "c675dfc90aecca4874a12bf0d1784e62d46de3033c72b6abc7611d757a38a3d7",
+  "reason": "Inspection of frozen evaluate C2 branch: its source-transition rule does not apply the C3/C4 original-output-correct guard. Both arms inherit this behavior. Preserve the policy and constructed truth; correct only the new specification expectation.",
+  "supersedes": "control_amendment_01.json",
+  "truth_unchanged": [
+    false,
+    false,
+    false
+  ]
+}

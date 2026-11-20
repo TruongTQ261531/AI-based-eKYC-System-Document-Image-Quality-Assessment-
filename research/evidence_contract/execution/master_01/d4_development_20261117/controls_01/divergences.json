@@ -1,0 +1,272 @@
+[
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_checksum_failed",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_bad_checksum",
+    "shared_input_sha256": "e65d3d3f08d6c2144c46fbdf4fc36ba0b69a873b2c35d0c51c8a5e35e9515a28",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_checksum_failed",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_bad_checksum",
+    "shared_input_sha256": "2895faf69e857fd9e826f1971d46375c51d12b054170f4114a8fc3118857061e",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_missing",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_missing_literal",
+    "shared_input_sha256": "44de7b514532261484c16cd7131f460686697bc11cb543154fba5ba9572a4c67",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_missing",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_missing_literal",
+    "shared_input_sha256": "cd66bb6bb5b50913111ad6a3e31ba3d356a855bdcc61f85675ce4a064e986608",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "TD3_wrong_value",
+    "shared_input_sha256": "739b4bad84866c2c077504e1ec061e4536f8a1b3302ed7bcd56ab9360cf95171",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "TD3_wrong_value",
+    "shared_input_sha256": "b00f5020c8d16bf10dd81899b04cd7a77b7fbfe4966cbdc4ec15490bbd4d3f8a",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_date_invalid_or_ambiguous",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_invalid_date",
+    "shared_input_sha256": "b0bc30a4f8b133ba58387c03d2d50fdead1bee620bfeebe5beff8370d4660086",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_date_invalid_or_ambiguous",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "TD3_invalid_date",
+    "shared_input_sha256": "3d41bc16b1aaa77f17dd451e18d7b6345330878d5c90f8a996669b1cc9a51ee4",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_checksum_failed",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "literal_checksum_defect_correct_output",
+    "shared_input_sha256": "7142f0836869173547406caf340b73461d312756ddaef9977ae7b7adc62c47f0",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_checksum_failed",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "literal_checksum_defect_correct_output",
+    "shared_input_sha256": "908a3d17738755a9c04a90950b73ed4b4b51a07f0597a059b8a3e8ebc2220f7a",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "declared_wrong_MRZ_value_false_alarm",
+    "shared_input_sha256": "87d493af5a1ccf676b466d2a12b22ab48acbacae329b0695a89a35b5cee4e019",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "declared_wrong_MRZ_value_false_alarm",
+    "shared_input_sha256": "a5412789c3c1ec743d4eda318389da60857aa2a5afdb9963e6a8f60554c1ea47",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "declared_wrong_value_matches_faulty_output",
+    "shared_input_sha256": "3c4aecea387a6f406525e10b7cb91531621b7d34d8404bcdebec8d0bd0364cff",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_literal_reference_mismatch"
+    },
+    "endpoints": [
+      "pointwise"
+    ],
+    "name": "declared_wrong_value_matches_faulty_output",
+    "shared_input_sha256": "1569f64b5191ea68db334bd0e5faa648320f8ce1ff2d947aabc6e38d1f40d519",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_format_unsupported",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "MRZ_format_defect_faulty_output",
+    "shared_input_sha256": "f3d80ed953ab749ae307191ebd287a6e1a8810ee9245930cf4393d9a36a47606",
+    "tier": 1,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  },
+  {
+    "asserted_reasons": {
+      "pointwise": "typed_value_comparison",
+      "relation": "typed_value_comparison"
+    },
+    "checked_reasons": {
+      "pointwise": "mrz_format_unsupported",
+      "relation": "C2_main_removal_and_backup_unverified"
+    },
+    "endpoints": [
+      "pointwise",
+      "relation"
+    ],
+    "name": "MRZ_format_defect_faulty_output",
+    "shared_input_sha256": "a16c924a632ab651091d8c9c4fc7d3646b853e75c83275d54007ee53ac36c09b",
+    "tier": 2,
+    "treatment": "Literal TD3 verification omitted; same typed profile, declared tier and shared guards"
+  }
+]

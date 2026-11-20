@@ -1,5 +1,23 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+## Cập nhật 20/11/2026 — D4 P1 development
+
+D4 đã được triển khai và kiểm thử trên 72 constructed controls. Kết quả:
+**PASS_CONSTRUCTED_DEVELOPMENT**, 0 divergence ngoài treatment; 46 ca lịch sử
+không có reference đã duyệt nên semantic pointwise/relation tiếp tục abstain.
+Full suite 579 tests + 6 subtests PASS. Đây là kiểm chứng code/controls trong
+miền development, không cấp scientific GO.
+
+Vì vậy **NO_GO_SUPERIORITY tiếp tục giữ nguyên**. Không mở confirmatory
+prospective cohort/TASK 6B/7B; chưa có approved production reference, C2 eligible
+pair, reviewer Round 1 closure, hoặc release-rights decision. R03 vẫn pending.
+P2 lineage/C2 audit, protocol D1–D12, independent truth, novelty và manuscript
+readiness còn thiếu. Chi tiết điều kiện ở
+[bản bàn giao tổng thể](../../PROJECT_HANDOFF_20261120_VI.md).
+
+Các quyết định ngày 17/11 và phần tiếp theo dưới đây được giữ nguyên làm lịch
+sử, không bị thay bởi development-only result.
+
 Sau **[R02 pha 2 46/46 ngày 17/11](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
 **NO_GO_SUPERIORITY giữ nguyên**. Đã có 2 đánh giá đầy đủ ở mỗi pha (tác giả
 và R02), trong đó 1 external theo organizer. Pointwise primary agreement

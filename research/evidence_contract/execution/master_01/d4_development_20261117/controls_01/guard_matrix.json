@@ -1,0 +1,99 @@
+{
+  "adapter_proof": {
+    "changed_resolver_call_sites": 1,
+    "common_mrz_field_precision_profiles": {
+      "dob": [
+        13,
+        19,
+        "date_yymmdd"
+      ],
+      "expiry_date": [
+        21,
+        27,
+        "date_yymmdd"
+      ],
+      "id_number": [
+        0,
+        9,
+        "identifier"
+      ]
+    },
+    "evaluate_code_object_shared": true,
+    "frozen_policy_sha256": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26",
+    "global_monkeypatch": false,
+    "other_resolver_ast_identical": true
+  },
+  "guards": [
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "authority"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "image_field_mutation_binding"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "output_origin"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "parser_usability"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "typed_value_and_precision_profile"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "semantic_key"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "source_flags"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "conflicting_values"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "missing_support"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "C1_inventory"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "C2_transition"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "transformation_validity"
+    },
+    {
+      "asserted": "shared frozen admission/resolver",
+      "checked": "shared frozen admission/resolver",
+      "guard": "tier"
+    },
+    {
+      "asserted": "not recomputed",
+      "checked": "recomputed",
+      "guard": "literal_TD3_format_dates_checksums_value_consistency"
+    }
+  ],
+  "note": "Same field/precision support profiles; no century inference. Legacy reason strings retained, actual literal-call counts disambiguate arm behavior."
+}

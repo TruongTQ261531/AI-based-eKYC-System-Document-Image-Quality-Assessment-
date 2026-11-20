@@ -1,0 +1,49 @@
+........................................................................ [ 30%]
+....................................................................FF.. [ 61%]
+........................................................................ [ 92%]
+.................                                                        [100%]
+================================== FAILURES ===================================
+_ test_predeclared_d4_controls_and_frozen_regression[correlated_wrong_body_and_valid_MRZ-1] _
+
+case = {'name': 'correlated_wrong_body_and_valid_MRZ', 'context': {'contract': 'C2', 'key': 'id_number', 'before_pixel_sha256...ty/2', 'scope': 'constructed_control', 'field_key': 'id_number', ...}, 'before_raw': '{"id_number": "L898902C3"}', ...}
+tier = 1
+
+    @pytest.mark.parametrize('tier',(1,2))
+    @pytest.mark.parametrize('case',cases(),ids=lambda c:c['name'])
+    def test_predeclared_d4_controls_and_frozen_regression(case,tier):
+        args=inputs(case);before=deepcopy(args)
+        result=compare_pair(*args,minimum_grade=tier)
+        assert result['arms']['checked_v2']==policy.evaluate(*args,minimum_grade=tier)
+        assert args==before
+        for arm,expected in case['expected_by_tier'][str(tier)].items():
+>           assert [result['arms'][arm][e]['state'] for e in policy.ENDPOINTS]==expected
+E           AssertionError: assert ['FAULT', 'FAULT', 'NO_FAULT'] == ['FAULT', 'UN...', 'NO_FAULT']
+E             
+E             At index 1 diff: 'FAULT' != 'UNKNOWN'
+E             Use -v to get more diff
+
+research\evidence_contract\tests\test_d4_comparator.py:18: AssertionError
+_ test_predeclared_d4_controls_and_frozen_regression[correlated_wrong_body_and_valid_MRZ-2] _
+
+case = {'name': 'correlated_wrong_body_and_valid_MRZ', 'context': {'contract': 'C2', 'key': 'id_number', 'before_pixel_sha256...ty/2', 'scope': 'constructed_control', 'field_key': 'id_number', ...}, 'before_raw': '{"id_number": "L898902C3"}', ...}
+tier = 2
+
+    @pytest.mark.parametrize('tier',(1,2))
+    @pytest.mark.parametrize('case',cases(),ids=lambda c:c['name'])
+    def test_predeclared_d4_controls_and_frozen_regression(case,tier):
+        args=inputs(case);before=deepcopy(args)
+        result=compare_pair(*args,minimum_grade=tier)
+        assert result['arms']['checked_v2']==policy.evaluate(*args,minimum_grade=tier)
+        assert args==before
+        for arm,expected in case['expected_by_tier'][str(tier)].items():
+>           assert [result['arms'][arm][e]['state'] for e in policy.ENDPOINTS]==expected
+E           AssertionError: assert ['FAULT', 'FAULT', 'NO_FAULT'] == ['FAULT', 'UN...', 'NO_FAULT']
+E             
+E             At index 1 diff: 'FAULT' != 'UNKNOWN'
+E             Use -v to get more diff
+
+research\evidence_contract\tests\test_d4_comparator.py:18: AssertionError
+=========================== short test summary info ===========================
+FAILED research/evidence_contract/tests/test_d4_comparator.py::test_predeclared_d4_controls_and_frozen_regression[correlated_wrong_body_and_valid_MRZ-1]
+FAILED research/evidence_contract/tests/test_d4_comparator.py::test_predeclared_d4_controls_and_frozen_regression[correlated_wrong_body_and_valid_MRZ-2]
+2 failed, 231 passed in 2.60s

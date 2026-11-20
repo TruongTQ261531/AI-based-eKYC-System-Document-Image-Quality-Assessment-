@@ -1,5 +1,19 @@
 # eKYC → EASE 2027: tiến độ sau lượt đánh giá cá nhân
 
+## Snapshot 20/11/2026
+
+Điểm vào bàn giao là [PROJECT_HANDOFF_20261120_VI.md](../../PROJECT_HANDOFF_20261120_VI.md).
+D4 P1 comparator đã chạy trên constructed controls và replay lịch sử; 579 tests
++ 6 subtests PASS. Không có prospective data, inference/training, reference mới
+hoặc người chấm mới; kết quả không chứng minh superiority. Round 1 OPEN, R03
+pending, GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY.
+
+Việc kỹ thuật còn làm được độc lập với phiếu là audit lineage/pixel/C2, code
+review D4, literature/novelty matrix và threat/reproducibility work. Cỡ mẫu,
+endpoint, margin, authority, rights và release cần quyết định trước khi chạy
+prospective. Các ngày CFP trong tài liệu này là kế hoạch dựa trên lần kiểm
+17/11/2026 và cần xác minh lại trên nguồn chính thức.
+
 **17/11, cập nhật sau khi nhận [R02 pha 2](R02_PHASE2_REVIEW_INTAKE_20261117.md):**
 R02 hoàn tất cả hai pha (86/86 và 46/46); đã có 1 người ngoài tác giả hoàn tất
 pilot. Đã nhập nguyên trạng, đo agreement pha 2 và báo riêng kết quả R02;

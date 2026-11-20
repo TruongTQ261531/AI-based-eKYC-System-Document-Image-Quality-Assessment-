@@ -1,5 +1,23 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## Trạng thái làm việc hiện tại · 20/11/2026
+
+Đọc [bản bàn giao tổng thể](../../PROJECT_HANDOFF_20261120_VI.md) trước khi
+tiếp nhận. D4 P1 đã được triển khai và full Evidence Contract suite đạt 579
+tests + 6 subtests. Kết quả chỉ là constructed development và replay lịch sử;
+NO_GO_SUPERIORITY vẫn còn.
+
+Việc tiếp theo không phụ thuộc phiếu mới: (1) review adapter và counterexamples
+D4; (2) hoàn thiện pixel/near-duplicate/lineage audit trên assets được phép;
+(3) làm rõ PASS/FAIL/UNKNOWN cho C2; (4) cập nhật novelty matrix bằng nguồn sơ
+cấp; (5) hoàn thiện threats, reproducibility và release-rights checklist.
+Không chọn prospective cohort, tạo approved reference hay kết luận superiority
+trước khi các điều kiện protocol/authority/rights được ghi nhận. R03 và các mục
+human gate tiếp tục theo trạng thái thực nhận, không thay bằng test kỹ thuật.
+
+Danh sách phụ thuộc và thứ tự rộng hơn nằm trong bản bàn giao tổng thể. Các mốc
+cũ bên dưới được giữ nguyên như nhật ký lịch sử.
+
 Ưu tiên sau **[intake R02 pha 2 ngày 17/11](R02_PHASE2_REVIEW_INTAKE_20261117.md)**:
 
 1. R02 đã hoàn tất 86/86 pha 1 và 46/46 pha 2; không gửi lại ZIP hay yêu cầu
