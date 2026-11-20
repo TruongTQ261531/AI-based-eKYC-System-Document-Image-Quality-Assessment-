@@ -1,12 +1,12 @@
 # Trạng thái IFV
 
-**INTERIM_TWO_REVIEWERS_UNADJUDICATED — cập nhật 17/11 sau [R02 pha 2](R02_PHASE2_REVIEW_INTAKE_20261117.md).**
+**Cập nhật 20/11: R03 đã hoàn tất pha 1, gói pha 2 đã sẵn sàng. Round 1 vẫn mở.** Thống kê pha 2 hiện dựa trên [tác giả và R02](R02_PHASE2_REVIEW_INTAKE_20261117.md).
 
 | Người / pha | Pha 1 | Pha 2 | Vai trò và trạng thái |
 |---|---:|---:|---|
 | Tác giả | 86/86 | 46/46 | Giữ nguyên phiếu và báo cáo lịch sử |
 | R02 | 86/86 | 46/46 | External theo đính chính organizer; raw role không đổi |
-| R03 | Chưa nhận | Chưa cấp sau pha 1 | PENDING |
+| R03 | 86/86 | Đã tạo gói 46 ca, chờ phiếu | [Tiếp nhận 20/11](R03_PHASE1_REVIEW_INTAKE_20261120.md) |
 
 Pha 2 có 2 người hoàn tất, 1 người ngoài; Round 1 OPEN, chưa phân xử/gộp nhãn.
 Pointwise primary khớp 30/42 (κ=0,5862), relation 33/42 (κ=0,6619); cả hai
