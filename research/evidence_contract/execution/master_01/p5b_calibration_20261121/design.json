@@ -1,0 +1,153 @@
+{
+  "schema": "p5b/design-1",
+  "baseline": "5a333092fd3a4fa7c538e70d323a9b5e58b02ace",
+  "methods": [
+    "v3",
+    "cluster_t",
+    "bounded"
+  ],
+  "nominal_alpha": 0.05,
+  "coverage_floor": 0.8,
+  "sensitivity_floor": 0.8,
+  "far_margin": 0.05,
+  "power_target": 0.8,
+  "stages": {
+    "calibration": {
+      "seed": 11032617,
+      "repetitions": 800
+    },
+    "held_out": {
+      "seed": 98073163,
+      "repetitions": 1600
+    }
+  },
+  "mc": "Pointwise Wilson 95%. At p=.05 half-width approximately 1.51 / 1.07 pp for 800 / 1600. At p=.8 about 2.77 / 1.96 pp. No multiplicity guarantee.",
+  "selection": "Compare all three fixed methods on identical cohorts, no winner tuning. Per stage, consider reference mixed alternative at 200 IDs, each isolated mixed null and joint null, all marginal test sizes at their corresponding null, composite size and each conditional marginal coverage at reference. FEASIBLE requires lower Wilson power >= .8, upper size <= .05 and lower coverage >= .95 throughout. INFEASIBLE if power upper < .8, any size lower > .05 or coverage upper < .95; otherwise INSUFFICIENT_EVIDENCE. Both stages must qualify separately for promotion. Report stress, size and model violations separately.",
+  "stopping": "One fixed grid per stage, no adaptive extensions, prospective or automatic promotion. Abort on unexpected infeasible joint cells. Expected invalid scenario must be rejected before sampling. No alternative added after examination.",
+  "defaults": {
+    "family": "mixed",
+    "ids": 200,
+    "sizes": [
+      4
+    ],
+    "prevalence": 0.2,
+    "truth": 0.9,
+    "miss_multiplier": 1,
+    "icc": 0.2,
+    "template_size": 1,
+    "template_copy": 0,
+    "coverage": 0.88,
+    "sensitivity": 0.94,
+    "effect": 0.1,
+    "reverse": 0,
+    "invalid": 0.01,
+    "lost_fault": 0.015
+  },
+  "scenarios": {
+    "mixed_50": {
+      "ids": 50
+    },
+    "mixed_100": {
+      "ids": 100
+    },
+    "mixed_150": {
+      "ids": 150
+    },
+    "mixed_200": {},
+    "null_far": {
+      "effect": 0.05
+    },
+    "null_sensitivity": {
+      "sensitivity": 0.7999
+    },
+    "null_coverage": {
+      "coverage": 0.7999
+    },
+    "null_joint": {
+      "effect": 0.05,
+      "sensitivity": 0.7999,
+      "coverage": 0.7999
+    },
+    "unequal": {
+      "sizes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "rare": {
+      "prevalence": 0.02,
+      "sensitivity": 1,
+      "invalid": 0,
+      "lost_fault": 0
+    },
+    "prevalent": {
+      "prevalence": 0.3
+    },
+    "missing_mcar": {
+      "truth": 0.52
+    },
+    "missing_mnar": {
+      "truth": 0.52,
+      "miss_multiplier": 0.3
+    },
+    "dependent": {
+      "icc": 0.65
+    },
+    "template": {
+      "template_size": 5,
+      "template_copy": 0.35
+    },
+    "sparse": {
+      "effect": 0.006
+    },
+    "invalid_heavy": {
+      "invalid": 0.07,
+      "lost_fault": 0.01,
+      "sensitivity": 0.9,
+      "coverage": 0.83
+    },
+    "active_panel": {
+      "family": "active",
+      "coverage": 0,
+      "sensitivity": 0,
+      "invalid": 0,
+      "lost_fault": 0
+    },
+    "stress_bidirectional": {
+      "family": "stress",
+      "reverse": 0.08
+    },
+    "stress_full": {
+      "family": "stress",
+      "reverse": 0.015,
+      "coverage": 1,
+      "lost_fault": 0,
+      "invalid": 0
+    },
+    "stress_near": {
+      "family": "stress",
+      "reverse": 0.015,
+      "coverage": 0.999,
+      "lost_fault": 0,
+      "invalid": 0
+    },
+    "stress_template_null": {
+      "family": "stress",
+      "reverse": 0.04,
+      "template_size": 5,
+      "template_copy": 0.45,
+      "sensitivity": 0.7999
+    },
+    "no_truth": {
+      "truth": 0
+    },
+    "impossible_mixed": {
+      "coverage": 0.999,
+      "expect_rejection": true
+    }
+  },
+  "sizing": "Every tested n for mixed. In addition fixed independent equal-size mixed scenario: analytic sufficient Hoeffding planning upper bound for 80% joint power incl. both 30-unit guards, union of five failure events at .04 each. Hypothetical numbers beyond cap only."
+}
+
