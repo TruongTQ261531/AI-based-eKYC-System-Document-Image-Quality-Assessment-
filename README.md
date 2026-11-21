@@ -1,5 +1,7 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
+[Checklist P0–P4 cập nhật 21/11](research/evidence_contract/CHECKLIST_P0_P4_20261121.md) ghi kết quả tái lập D4, giới hạn dữ liệu, protocol v3 và bảng bằng chứng cho các claim hiện tại.
+
 Ngày 21/11, audit P2 kiểm kê 5.428 khung chính và xác định 362 nhóm ảnh có thể gần trùng. Trong 1.100 cặp nguồn C2 trên 400 mã giấy tờ, hiện có 0 cặp đủ cả tám điều kiện. [Kết quả P2 và phần bằng chứng còn thiếu](research/evidence_contract/P2_AUDIT_VI.md)
 
 [Hồ sơ bàn giao tổng thể](PROJECT_HANDOFF_20261120_VI.md)

@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## Checklist P0–P4 · 21/11/2026
+
+Đã tái lập D4 từ baseline `dd2e109`, kiểm lại P1/P2 và hoàn thiện thiết kế v3 cùng ledger cho các claim hiện tại. Ba ngưỡng và năm trần đã được chủ dự án chọn. Chưa có scientific lock hoặc quyền chạy prospective. [Nghiệm thu và biên bản](CHECKLIST_P0_P4_20261121.md)
+
 ## Audit P2 · 21/11/2026
 
 Đã kiểm kê ảnh lịch sử, đối chiếu hash file và pixel, tìm nhóm gần trùng và đánh giá tám điều kiện trên từng cặp C2. D4 đã hoàn tất kiểm chứng development. AUTHOR, R02 và R03 đã hoàn thành hai pha. Round 1 đang mở và scientific gate vẫn là `NO_GO_SUPERIORITY`. [Bảng kết quả, giới hạn và lệnh tái lập](P2_AUDIT_VI.md)

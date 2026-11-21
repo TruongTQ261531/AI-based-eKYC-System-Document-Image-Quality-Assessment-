@@ -1,5 +1,9 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## Sau checklist P0–P4 ngày 21/11/2026
+
+Protocol v3 đã có quyết định thiết kế và trần ngân sách. Việc còn mở là ghi nhận quyết định D1–D3, hoàn thiện quyền và exposure cho đúng phiên bản dữ liệu, kiểm khả năng đạt độ chính xác trong các trần, rồi trình quyết định có mở prospective hay không. Chủ dự án đã yêu cầu chưa chạy. [Checklist và bằng chứng](CHECKLIST_P0_P4_20261121.md)
+
 ## Sau audit P2 · 21/11/2026
 
 1. Chốt phạm vi Round 1, người có quyền phân xử và quy tắc xử lý bất đồng. Tiêu chí đạt là D1–D3 có quyết định được ghi nhận, ràng buộc đúng các snapshot đã nhận.
