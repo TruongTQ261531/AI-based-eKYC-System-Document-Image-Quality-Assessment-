@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "research/evidence_contract/tests",
+    "--basetemp",
+    "<fresh directory under research/evidence_contract/local>"
+  ],
+  "exit_code": 0,
+  "log_sha256": "1e8b908a9a4855cd4cd4f949fab7aa572313ed6c72affb57eb51b6f779cb89dd",
+  "python": "3.11.4",
+  "suite": "research/evidence_contract/tests",
+  "summary": "595 passed, 6 subtests passed in 49.25s"
+}

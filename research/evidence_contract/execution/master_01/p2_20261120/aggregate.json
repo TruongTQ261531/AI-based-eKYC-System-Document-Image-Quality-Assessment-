@@ -1,0 +1,168 @@
+{
+  "c2": {
+    "approved_references": 0,
+    "by_field": {
+      "dob": 400,
+      "expiry_date": 400,
+      "id_number": 300
+    },
+    "by_kind": {
+      "body_mrz": 1100
+    },
+    "candidate_count": 1100,
+    "candidate_inventory_digest": "088ab3bf7cb21ecfb44eb2ba8f0335648c2d64f64a1ec6106c8e897c4d1782c8",
+    "condition_counts": {
+      "backup_supported_after": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      },
+      "backup_supported_before": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      },
+      "distinct_sources": {
+        "FAIL": 0,
+        "PASS": 1100,
+        "UNKNOWN": 0
+      },
+      "primary_removed_after": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      },
+      "primary_supported_before": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      },
+      "provenance_verified": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      },
+      "reference_approved": {
+        "FAIL": 1100,
+        "PASS": 0,
+        "UNKNOWN": 0
+      },
+      "semantic_equality_approved": {
+        "FAIL": 0,
+        "PASS": 0,
+        "UNKNOWN": 1100
+      }
+    },
+    "eligible": 0,
+    "followup_groups": {
+      "image_and_parent_link": 110,
+      "image_bound": 96,
+      "provider_only": 894
+    },
+    "mechanical": {
+      "LITERAL_OR_PRECISION_DIFFERENCE": 1097,
+      "mrz_format_unsupported": 3
+    },
+    "missing_evidence": {
+      "LITERAL_OR_PRECISION_DIFFERENCE": 1097,
+      "mrz_format_unsupported": 3,
+      "no_bound_backup_after_observation": 1100,
+      "no_bound_backup_before_observation": 1100,
+      "no_bound_primary_before_observation": 1100,
+      "no_bound_primary_removal": 1100,
+      "no_production_approval": 1100,
+      "semantic_equivalence_pending": 1100,
+      "source_pair_provenance_unverified": 1100
+    },
+    "physical_ids": 400,
+    "production_authorities": 0
+  },
+  "config_sha256": "24789139aae66a620a6619f049c0e4d9cd5c4a6bb4bdcd7e14a8c4022ac83d81",
+  "historical_midv2020_exposure": {
+    "EXPOSED_CONFIRMED": 192,
+    "EXPOSURE_UNKNOWN": 808
+  },
+  "lineage_snapshot_sha256": "95fae35205cc7e6c11c713d68fd1fc2475a3ba797b9c6b678b32eb4e4c58d63a",
+  "pillow": "13.0.0",
+  "pixel": {
+    "additional_frame_errors": {
+      "SyntaxError": 12
+    },
+    "additional_frames_hashed": 12,
+    "collection_layout_groups": 129,
+    "config": {
+      "alpha": "discard",
+      "dhash": "64 horizontal adjacent comparisons, L 9x8 LANCZOS",
+      "distance": 3,
+      "frame": "primary for comparisons; record hash or decode error for each additional MPO frame",
+      "icc": "no color profile conversion",
+      "max_bytes": 67108864,
+      "max_frames": 4,
+      "max_pixels": 32000000,
+      "mode": "RGB8",
+      "orientation": "EXIF transpose",
+      "version": "rgb-exif-dhash/3"
+    },
+    "corpus_evidence_counts": {
+      "MIDV-2020": 1308,
+      "MIDV-UP": 24,
+      "UNKNOWN": 1596,
+      "project_authored": 2500
+    },
+    "decoded": 5428,
+    "entries": 5428,
+    "exact_pixel_multiple_evidenced_corpora": 0,
+    "exact_pixel_multiple_physical_ids": 0,
+    "exact_pixel_multiple_roles": 24,
+    "exact_pixel_multiple_study_collections": 1194,
+    "excluded_entries": 0,
+    "exclusions": {},
+    "file_bound_parent_links": 944,
+    "file_bytes_hashed": 5428,
+    "file_duplicate_groups": 1159,
+    "historical_role_basis": "manifest role, bound by file bytes and path",
+    "image_exposure": {
+      "EXPOSURE_UNKNOWN": 876,
+      "RECORDED_HISTORICAL_STUDY": 4552
+    },
+    "input_inventory_digest": "cfa06a695670f365451a77a28c4c4ea3c6b493d26a27bb3dcb6d592fdd2eff86",
+    "metadata_exclusions": {
+      "metadata_hash_unmatched": 0
+    },
+    "metadata_manifest_digest": "db02fb4c1307dc7ff4b5efd2f2870056c82e76842bb164866b850db2cbee709e",
+    "metadata_referenced_paths_missing": 0,
+    "near_candidate_components": 362,
+    "physical_id_capture_label_groups": 2998,
+    "physical_ids": 678,
+    "physical_ids_multiple_roles": 24,
+    "physical_ids_multiple_study_collections": 200,
+    "pixel_duplicate_groups": 1241,
+    "scope": "historical research/data raster files; primary image for grouping",
+    "unknown_metadata_entries": {
+      "capture": 1024,
+      "layout": 1784,
+      "original_sha256": 5248,
+      "physical_id": 876,
+      "role": 960
+    }
+  },
+  "private_manifest_sha256": {
+    "c2_private.json": "53c62cc205361691fa733ecbef8db2acbf60828a6b67b227776a529cf68fabc7",
+    "pixel_private.json": "f469a3a7f6bb97851966b761ea8ab2660180a41d7ec1eb4808b2bd0c4f098ffb"
+  },
+  "python": "3.11.4",
+  "schema": "p2-research-audit/1",
+  "scientific_gate": "NO_GO_SUPERIORITY",
+  "source_sha256": {
+    "c2_evidence_audit.py": "c7e270d671bfcb2bffab16e4a22fb67633c3b7e452982dbc982176c237daadd7",
+    "c2_inventory.py": "f2a690725b556b184caeadd386bac30f89d1debe2cff84c4d1b0f107c5995a67",
+    "corpus_audit.py": "1bad468a775d4488b868cb70829b9e7bdd74b95b571e35b8b32eb9f42b2ea46f",
+    "p2_audit.py": "b867b5dfb28b1fbd0f0a377d6af8ff55a22d974a74dffa2761123402909065f8",
+    "pixel_lineage_audit.py": "8b63343a71a6133e5182aeaf356d21fb6b776b0e45c637c73a551af846d5a021",
+    "policy.py": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26",
+    "production_trust.json": "e8a42025fdf7acac1eac8ee1aba5b85e3e11ab7d611883f2300868c8bbe9e240",
+    "reference_registry.py": "8db68a78922759b3ebe586d8d037e688e7497bd0f3edd2565b819cfac7d210d6",
+    "semantic_registry.json": "f7fe7be244a6211a7b42cc81d6ce02d04e089405dd2dd3faa9795843dc73adc7",
+    "semantic_registry.py": "8f4576204d7a11aec341534514728c72060add1a732413600882f138ba3eadc3"
+  }
+}

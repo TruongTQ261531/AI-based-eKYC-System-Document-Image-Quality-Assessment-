@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## Audit P2 · 21/11/2026
+
+Đã kiểm kê ảnh lịch sử, đối chiếu hash file và pixel, tìm nhóm gần trùng và đánh giá tám điều kiện trên từng cặp C2. D4 đã hoàn tất kiểm chứng development. AUTHOR, R02 và R03 đã hoàn thành hai pha. Round 1 đang mở và scientific gate vẫn là `NO_GO_SUPERIORITY`. [Bảng kết quả, giới hạn và lệnh tái lập](P2_AUDIT_VI.md)
+
 ## Khảo sát ngày 20/11/2026
 
 Cả tác giả, R02 và R03 đã nộp đủ hai pha. Trên 42 ca chính, R02 và R03 khớp kết luận về giá trị ở 32 ca, khớp kết luận về quan hệ giữa hai ảnh ở 34 ca. Round 1 đang mở, chờ quyết định của chủ dự án về chốt vòng và phân xử. [Biên bản R03 pha 2](R03_PHASE2_REVIEW_INTAKE_20261120.md)

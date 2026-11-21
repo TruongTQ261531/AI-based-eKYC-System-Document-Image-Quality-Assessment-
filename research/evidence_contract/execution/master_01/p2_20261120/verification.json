@@ -1,0 +1,112 @@
+{
+  "additional_frame_errors": {
+    "SyntaxError": 12
+  },
+  "additional_frames_hashed": 12,
+  "aggregate_sha256": "dd3d652449e9041ce0bc186b33545b994456ef5ef6626149bf8f5cb9e443b2b4",
+  "candidate_pairs": 1100,
+  "cross_role_exact_pixel_patterns": [
+    {
+      "collection_roles": [
+        {
+          "collection": "fair_controls_v1",
+          "role": "train"
+        },
+        {
+          "collection": "hard_pairs_v1",
+          "role": "train"
+        },
+        {
+          "collection": "recovery_v4",
+          "role": "calibration"
+        },
+        {
+          "collection": "source_visibility_v3",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2_r2",
+          "role": "train"
+        }
+      ],
+      "pixel_groups": 6
+    },
+    {
+      "collection_roles": [
+        {
+          "collection": "fair_controls_v1",
+          "role": "train"
+        },
+        {
+          "collection": "hard_pairs_v1",
+          "role": "train"
+        },
+        {
+          "collection": "recovery_v4",
+          "role": "development"
+        },
+        {
+          "collection": "source_visibility_v3",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2_r2",
+          "role": "train"
+        }
+      ],
+      "pixel_groups": 8
+    },
+    {
+      "collection_roles": [
+        {
+          "collection": "fair_controls_v1",
+          "role": "train"
+        },
+        {
+          "collection": "hard_pairs_v1",
+          "role": "train"
+        },
+        {
+          "collection": "recovery_v4",
+          "role": "test"
+        },
+        {
+          "collection": "source_visibility_v3",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2",
+          "role": "train"
+        },
+        {
+          "collection": "vlm_lora_v2_r2",
+          "role": "train"
+        }
+      ],
+      "pixel_groups": 10
+    }
+  ],
+  "d4_replayed": true,
+  "distinct_file_hashes": 3499,
+  "distinct_primary_pixel_hashes": 3324,
+  "exact_candidate_source_pair_records_matched": 0,
+  "followup_physical_ids": {
+    "image_and_parent_link": 40,
+    "image_bound": 35,
+    "provider_only": 325
+  },
+  "historical_manifests_checked": 20,
+  "images": 5428,
+  "near_candidate_entries": 4116,
+  "protected_files": 84,
+  "status": "PARTIAL_AUXILIARY_FRAME_COVERAGE",
+  "verifier_sha256": "721b85cabb22deddce8fd140413c6fab84d6b4b5b063181d153f7e469e0c6891"
+}

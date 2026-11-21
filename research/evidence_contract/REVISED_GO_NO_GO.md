@@ -1,5 +1,9 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+## Quyết định sau P2 · 21/11/2026
+
+`NO_GO_SUPERIORITY`. Cả ba người đã nộp đủ hai pha. Round 1 chờ D1–D3. Việc kiểm tra ảnh lịch sử đã cung cấp bằng chứng về mức tái sử dụng và các nguồn còn thiếu khi xét C2. Claim độc lập, quyền phát hành và thiết kế prospective còn chờ phê duyệt. [Kết quả P2](P2_AUDIT_VI.md)
+
 ## Cập nhật 20/11/2026 — D4 P1 development
 
 D4 đã được triển khai và kiểm thử trên 72 constructed controls. Kết quả:

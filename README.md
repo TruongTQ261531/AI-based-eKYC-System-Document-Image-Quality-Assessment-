@@ -1,6 +1,8 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
-**Bàn giao tổng thể cập nhật 20/11/2026:** [PROJECT_HANDOFF_20261120_VI.md](PROJECT_HANDOFF_20261120_VI.md)
+Ngày 21/11, audit P2 kiểm kê 5.428 khung chính và xác định 362 nhóm ảnh có thể gần trùng. Trong 1.100 cặp nguồn C2 trên 400 mã giấy tờ, hiện có 0 cặp đủ cả tám điều kiện. [Kết quả P2 và phần bằng chứng còn thiếu](research/evidence_contract/P2_AUDIT_VI.md)
+
+[Hồ sơ bàn giao tổng thể](PROJECT_HANDOFF_20261120_VI.md)
 ghi mục tiêu sản phẩm và EASE 2027, sơ đồ tài liệu, bằng chứng A/B, trạng thái
 D4 P1, giới hạn, việc còn lại và lệnh tái kiểm tra. Ngày 20/11, bộ kiểm tra D4
 đã đối chiếu 144 cặp kết quả trên 72 ca dựng sẵn. Bộ Evidence Contract chạy đạt

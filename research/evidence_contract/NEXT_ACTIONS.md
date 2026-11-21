@@ -1,6 +1,12 @@
 # Các bước tiếp theo sau IFV cá nhân
 
-## Trạng thái làm việc hiện tại · 20/11/2026
+## Sau audit P2 · 21/11/2026
+
+1. Chốt phạm vi Round 1, người có quyền phân xử và quy tắc xử lý bất đồng. Tiêu chí đạt là D1–D3 có quyết định được ghi nhận, ràng buộc đúng các snapshot đã nhận.
+2. Xác minh nguồn trên những giấy tờ đã liên kết được ảnh. Mỗi cặp muốn đưa vào C2 cần có hồ sơ ảnh trước/sau, định danh hai vùng, khả năng đọc, precision, quyền sử dụng và quyết định về reference. Báo số cặp đủ cả tám điều kiện và lý do cho các cặp còn lại.
+3. Chốt thiết kế prospective sau khi biết số cụm có quyền và có truth. Tiêu chí đạt là D4–D12 có quyết định về contrast, endpoint, floors, margin, cỡ mẫu, ngân sách, xử lý exposure và giới hạn claim. [Kết quả và blocker P2](P2_AUDIT_VI.md)
+
+## Mốc khảo sát và kế hoạch trước P2 · 20/11/2026
 
 Khảo sát đã thu đủ hai pha của tác giả, R02 và R03. Danh sách bất đồng đã được lập để chờ chủ dự án chốt vòng, người phân xử và quy tắc phân xử theo D1–D3. Trong 22 ca chính mà R02 và R03 cùng có kết luận lỗi hoặc không lỗi về giá trị OCR, một ca có kết luận đối nghịch. [Kết quả khảo sát](R03_PHASE2_REVIEW_INTAKE_20261120.md)
 
