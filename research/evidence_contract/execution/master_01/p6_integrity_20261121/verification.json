@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "public": {
+    "public_source_artifacts": 136,
+    "candidate_groups": 24,
+    "local_adapter_runs": 12,
+    "paired_D4_evaluations": 144
+  },
+  "private": {
+    "exact_groups_checked": 24,
+    "member_files_redecoded": 144,
+    "independent_membership_and_training_replay": true,
+    "private_token_release_scan": "PASS"
+  }
+}

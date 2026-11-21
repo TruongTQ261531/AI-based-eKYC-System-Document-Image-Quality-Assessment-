@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## P6 · 21/11/2026
+
+Hoàn tất đối chiếu 24 nhóm P2, 12 adapter và 44 bảng đánh giá liên kết. Xác nhận tái sử dụng ảnh và giữ UNKNOWN cho pretraining ngoài. D4 đã có bảng phân tầng 144 cặp theo tier và endpoint. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Audit checkpoint](P6_CHECKPOINT_LEAKAGE_AUDIT_VI.md) · [Characterization](P6_D4_CHARACTERIZATION_VI.md) · [Claim ledger](P6_CLAIM_TO_EVIDENCE_MATRIX.md)
+
 ## P5B · 21/11/2026
 
 Hoàn tất 55.200 cohort mô phỏng. Cả ba phương pháp có kết luận `INFEASIBLE` ở cả hai pha theo tiêu chí đã ghi trên main trước khi chạy. [Quyết định và kiểm chứng](P5B_STATISTICAL_CALIBRATION_VI.md)

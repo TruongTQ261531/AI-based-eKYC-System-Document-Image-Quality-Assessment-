@@ -1,5 +1,7 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
+[Audit P6 ở cấp checkpoint](research/evidence_contract/P6_CHECKPOINT_LEAKAGE_AUDIT_VI.md) xác nhận 24 nhóm pixel V4 được dùng khi train 12 adapter LoRA ở các nghiên cứu sau. Lượt đo V4 sử dụng RapidOCR. [Đặc tính D4](research/evidence_contract/P6_D4_CHARACTERIZATION_VI.md) và [ma trận claim](research/evidence_contract/P6_CLAIM_TO_EVIDENCE_MATRIX.md) ghi phạm vi của từng kết luận.
+
 Xem [kết quả P5B](research/evidence_contract/P5B_STATISTICAL_CALIBRATION_VI.md) cho quyết định chuyển trọng tâm sang mô tả hành vi D4. Ba phương pháp đã thử đều chưa đủ để mở đánh giá superiority trong trần 200 ID.
 
 [Mô phỏng khả thi P5](research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md) cho thấy với 200 ID, kết luận thống kê phụ thuộc cả power, độ phủ và sai số loại I. Thiết kế tham chiếu chưa đạt điều kiện mở thực nghiệm.

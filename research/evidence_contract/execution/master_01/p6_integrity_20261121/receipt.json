@@ -1,0 +1,92 @@
+{
+  "schema": "p6-integrity/1",
+  "baseline": "6ff44ed9d7a9001e31778c2abb814e0705fb4e11",
+  "baseline_tree": "859163ada99a662c2525f4aabe0df333264b373b",
+  "python": "3.11.4",
+  "node": "v24.22.3",
+  "scope": "read-only historical evidence and checkpoint metadata; SHA-256 on locally available weights",
+  "regression": {
+    "target_receipt": "15 passed in 0.90s",
+    "full_receipt": "624 passed, 6 subtests passed in 61.94s (0:01:01)",
+    "r2metadata": "4 passed, 10 deselected in 1.46s"
+  },
+  "frontend": "15 passed, 0 failed",
+  "d4": {
+    "status": "PASS",
+    "controls": 72,
+    "paired_tier_evaluations": 144,
+    "divergence_tier_pairs": 16,
+    "arithmetic": {
+      "status": "PASS",
+      "groups": 216,
+      "cells": 272,
+      "new_labels": 0,
+      "scope": "Independent arithmetic, not independent truth"
+    },
+    "shared_input_fingerprints_checked": 144,
+    "physical_ids": 0,
+    "scope": "Independent accounting/binding, not empirical truth or efficacy"
+  },
+  "verification": {
+    "status": "PASS",
+    "public": {
+      "public_source_artifacts": 136,
+      "candidate_groups": 24,
+      "local_adapter_runs": 12,
+      "paired_D4_evaluations": 144
+    },
+    "private": {
+      "exact_groups_checked": 24,
+      "member_files_redecoded": 144,
+      "independent_membership_and_training_replay": true,
+      "private_token_release_scan": "PASS"
+    }
+  },
+  "frozen_trees": {
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121": "7549326b6cd5e91b90887728e54c2d18a46d89ff",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121": "f7247c246d9ccf7b4cef14e36ea09b0477aabcdc",
+    "research/evidence_contract/execution/master_01/d4_development_20261117": "33b98b8b7308981432a4020412e7695023a556c7",
+    "research/evidence_contract/execution/master_01/p2_20261120": "61389cc66cecfb4d8982467ef8bbd916f9801a1e"
+  },
+  "public_files_sha256": {
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/aggregate.json": "48ae64f2d9d9b21acf245e5c92419061174bf6dd105dc02a590fa16dbcaa6c38",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/manifest.json": "2b7614e0f02b19e429d8e36ffa1434062c5305a1815326831f6422f11dce7977",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/verification.json": "8f525e356e6f4628576191d00d031ab59329646aca90954dd3da9be79f624854",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/D4_STRATA.md": "3c039348bd2ebe606045f7acad1a5439c7ef45c526ffd8c742878787ec10f8c6",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/REPLAY.md": "c17a9c73cca380f9900299143388455d0bb1098900f4e59227503dbed0e9d8fb",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/audit.py": "5534c3bbfa6f2a3c1cc4c06586d760954cf9e6355735028e1a566df922e20baf",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/verify.py": "b3847f0f3a0496f8e02d23352092634ce1721e0e9e0292887d62a004955cdc0f",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/characterize.py": "ed22c632daa93680dfddf17c661ec686303c22bcef1140700061de553936ec5c",
+    "research/evidence_contract/execution/master_01/p6_integrity_20261121/tables.py": "b434ccad9234ba7f708aec3673aaa83b707d3e68de40c5d5e11ad7b86d486e69",
+    "research/evidence_contract/P6_CHECKPOINT_LEAKAGE_AUDIT_VI.md": "3c6469e8b735488ab2f5ea7da653be7d9614d8675195e0a8d293d16d26435dba",
+    "research/evidence_contract/P6_D4_CHARACTERIZATION_VI.md": "fb9ad8850d0122b8a84ce808fab1375e7dcb82de839a038a7b10df24025b4985",
+    "research/evidence_contract/P6_CLAIM_TO_EVIDENCE_MATRIX.md": "20f182201000f6e822d0cddbd336722e5b461909a6e0f6954227b3a9c48f393d",
+    "research/evidence_contract/tests/test_p6_integrity.py": "77f9d7f2a77a683aa55586f28ab06ae73c2171af62534716a429d0f5a726dfb0"
+  },
+  "local_logs_sha256": {
+    "target.log": "305bc9727408ccbdbd9147f9640f4091a6fe3e9488b84fcb9da4ab7158ea1f1d",
+    "full.log": "6e2f93d3e3b338f22e2a88a5e2c5706fcc7ab9c8afea05c3f99b9bf8f625b06e",
+    "target_receipt.log": "35599830d843681a46111b0a97f879fc060f0003147e76193331d00933d098d5",
+    "full_receipt.log": "d475ea0881ca2f6e1e8e9da5e28c14695c008151e3b8f2b5597f43029db3de37",
+    "node.log": "b5341933f4fa11da67e3807fdec82c2370404f8769a96039602a2803c47ff9ba",
+    "d4.log": "1f378fcd5db0ff404e73551001cf8bae7f0eaba5cf7deb64ad3ba1bce8adeb78",
+    "verification.log": "f6516acc6e88ac3c7f6c1f8c4b4f667bc270afa2d809d27235a10bfa74c256ea",
+    "r2metadata.log": "aaf13a9415bb46a2e156bca93737b79e6da0653c8fec338f62d60172cc3bf3a6"
+  },
+  "development_corrections": [
+    "Frozen malformed value-kind and malformed source fixtures explicitly categorized before publication.",
+    "Initial output-boundary test used a temp directory under the authorized local root. Changed the test to exercise an outside sibling; initial and passing logs retained."
+  ],
+  "privacy": "Only aggregate data, public-source metadata and whole-private-bundle digests staged; all 24 groups scanned for identifiers, member paths and member hashes.",
+  "operational": {
+    "new_inference_calls": 0,
+    "new_human_labels": 0,
+    "training_runs": 0,
+    "prospective_opened": false,
+    "approved_references_created": 0
+  },
+  "decisions": [
+    "GO_PREPARATORY_ONLY",
+    "NO_GO_SUPERIORITY"
+  ]
+}
