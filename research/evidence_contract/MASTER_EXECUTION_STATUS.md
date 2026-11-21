@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## P5B · 21/11/2026
+
+Hoàn tất 55.200 cohort mô phỏng. Cả ba phương pháp có kết luận `INFEASIBLE` ở cả hai pha theo tiêu chí đã ghi trên main trước khi chạy. [Quyết định và kiểm chứng](P5B_STATISTICAL_CALIBRATION_VI.md)
+
 ## P5 · 21/11/2026
 
 Đã mô phỏng 151 điểm trên 14 bộ giả định. Chỉ hai bộ đạt mục tiêu power riêng tại mức giảm FAR 10 điểm; chưa bộ nào đạt đồng thời các yêu cầu power và hiệu chuẩn của P5. Không có lượt đọc ảnh mới. [Kết quả, tác động guard và trần tài nguyên](P5_STATISTICAL_FEASIBILITY_VI.md)

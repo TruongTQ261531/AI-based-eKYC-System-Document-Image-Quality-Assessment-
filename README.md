@@ -1,5 +1,7 @@
 # eKYC cục bộ: camera → giấy tờ → xác nhận thông tin → selfie
 
+Xem [kết quả P5B](research/evidence_contract/P5B_STATISTICAL_CALIBRATION_VI.md) cho quyết định chuyển trọng tâm sang mô tả hành vi D4. Ba phương pháp đã thử đều chưa đủ để mở đánh giá superiority trong trần 200 ID.
+
 [Mô phỏng khả thi P5](research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md) cho thấy với 200 ID, kết luận thống kê phụ thuộc cả power, độ phủ và sai số loại I. Thiết kế tham chiếu chưa đạt điều kiện mở thực nghiệm.
 
 [Checklist P0–P4 cập nhật 21/11](research/evidence_contract/CHECKLIST_P0_P4_20261121.md) ghi kết quả tái lập D4, giới hạn dữ liệu, protocol v3 và bảng bằng chứng cho các claim hiện tại.

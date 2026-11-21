@@ -1,5 +1,7 @@
 # Hồ sơ bàn giao dự án eKYC — trạng thái 20/11/2026
 
+**Bàn giao P5B ngày 21/11.** Đã kiểm cơ chế D4, đối chiếu ba phương pháp trên seed calibration và held-out, chạy full regression và lưu biên bản. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Báo cáo, ma trận và lệnh tái lập](research/evidence_contract/P5B_STATISTICAL_CALIBRATION_VI.md)
+
 **P5 ngày 21/11.** Mô phỏng thống kê cho protocol v3 đã hoàn tất. Thiết kế tham chiếu có power 65,9% ở hiệu ứng FAR +10 điểm, và sai số loại I tại biên sensitivity là 7,8%. Giữ nguyên v3, chưa mở chạy prospective. [Báo cáo P5, ma trận và phép tái lập](research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md)
 
 **Bàn giao theo checklist ngày 21/11.** Đã tái lập D4, đối chiếu lineage và C2, lập protocol v3 theo các ngưỡng và trần chủ dự án chọn, và cập nhật ledger có nguồn sơ cấp. Chưa mở thực nghiệm prospective. [Tiến độ P0–P4 và lệnh tái lập](research/evidence_contract/CHECKLIST_P0_P4_20261121.md)

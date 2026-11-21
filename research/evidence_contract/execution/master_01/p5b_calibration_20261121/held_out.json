@@ -1,0 +1,4798 @@
+{
+  "design_sha256": "4bb46c132721d854ae8823e1b94bfcbecb6dd1ee94338516628bdbd354875e96",
+  "stage": "held_out",
+  "n": 1600,
+  "points": {
+    "mixed_50": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        4288925307
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "sparse_units": 1500,
+            "issued": 92,
+            "constant_bootstrap": 8
+          },
+          "issued": 92,
+          "insufficient": 1508,
+          "joint": 38,
+          "passes": [
+            83,
+            74,
+            55
+          ],
+          "covers": [
+            84,
+            82,
+            89
+          ],
+          "joint_covers": 73,
+          "inference_seconds": 0.7280660000178614,
+          "peak_traced_bytes": 5613376
+        },
+        "cluster_t": {
+          "status": {
+            "sparse_units": 1500,
+            "issued": 92,
+            "constant_score": 8
+          },
+          "issued": 92,
+          "insufficient": 1508,
+          "joint": 29,
+          "passes": [
+            82,
+            73,
+            47
+          ],
+          "covers": [
+            83,
+            79,
+            89
+          ],
+          "joint_covers": 69,
+          "inference_seconds": 0.09743680003157351,
+          "peak_traced_bytes": 35432
+        },
+        "bounded": {
+          "status": {
+            "sparse_units": 1500,
+            "issued": 100
+          },
+          "issued": 100,
+          "insufficient": 1500,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            100,
+            100,
+            100
+          ],
+          "joint_covers": 100,
+          "inference_seconds": 0.06243059995176736,
+          "peak_traced_bytes": 27576
+        }
+      }
+    },
+    "mixed_100": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        1891509537
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1567,
+            "constant_bootstrap": 33
+          },
+          "issued": 1567,
+          "insufficient": 33,
+          "joint": 1125,
+          "passes": [
+            1513,
+            1432,
+            1287
+          ],
+          "covers": [
+            1464,
+            1371,
+            1522
+          ],
+          "joint_covers": 1245,
+          "inference_seconds": 2.605699000043387,
+          "peak_traced_bytes": 23282596
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1567,
+            "constant_score": 33
+          },
+          "issued": 1567,
+          "insufficient": 33,
+          "joint": 1081,
+          "passes": [
+            1512,
+            1450,
+            1219
+          ],
+          "covers": [
+            1443,
+            1344,
+            1530
+          ],
+          "joint_covers": 1211,
+          "inference_seconds": 0.14832190000015544,
+          "peak_traced_bytes": 239658
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            18,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.09051250001357403,
+          "peak_traced_bytes": 195672
+        }
+      }
+    },
+    "mixed_150": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        2701763668
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1593,
+            "constant_bootstrap": 7
+          },
+          "issued": 1593,
+          "insufficient": 7,
+          "joint": 1440,
+          "passes": [
+            1580,
+            1539,
+            1504
+          ],
+          "covers": [
+            1488,
+            1364,
+            1543
+          ],
+          "joint_covers": 1240,
+          "inference_seconds": 2.913736400041671,
+          "peak_traced_bytes": 25320937
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1593,
+            "constant_score": 7
+          },
+          "issued": 1593,
+          "insufficient": 7,
+          "joint": 1427,
+          "passes": [
+            1579,
+            1546,
+            1485
+          ],
+          "covers": [
+            1479,
+            1343,
+            1555
+          ],
+          "joint_covers": 1223,
+          "inference_seconds": 0.15335430001141503,
+          "peak_traced_bytes": 354976
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            197,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.09331770001881523,
+          "peak_traced_bytes": 291672
+        }
+      }
+    },
+    "mixed_200": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        4093764275
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1599,
+            "constant_bootstrap": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 1553,
+          "passes": [
+            1597,
+            1581,
+            1573
+          ],
+          "covers": [
+            1518,
+            1381,
+            1553
+          ],
+          "joint_covers": 1275,
+          "inference_seconds": 3.399377600020671,
+          "peak_traced_bytes": 25359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1599,
+            "constant_score": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 1544,
+          "passes": [
+            1597,
+            1586,
+            1559
+          ],
+          "covers": [
+            1507,
+            1366,
+            1564
+          ],
+          "joint_covers": 1262,
+          "inference_seconds": 0.15029730003152508,
+          "peak_traced_bytes": 470354
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            514,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.0898954000294907,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "null_far": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.05000000000000001
+      ],
+      "seed": [
+        98073163,
+        3298777157
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.03600000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.004
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01206
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0013399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.04824
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0053599999999999984
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1599,
+            "constant_bootstrap": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 47,
+          "passes": [
+            1596,
+            1581,
+            48
+          ],
+          "covers": [
+            1488,
+            1421,
+            1551
+          ],
+          "joint_covers": 1291,
+          "inference_seconds": 1.7294573000108358,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1599,
+            "constant_score": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 31,
+          "passes": [
+            1596,
+            1583,
+            32
+          ],
+          "covers": [
+            1478,
+            1403,
+            1567
+          ],
+          "joint_covers": 1281,
+          "inference_seconds": 0.1477786999894306,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            525,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.09032610002759611,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "null_sensitivity": {
+      "target": [
+        0.8800000000000001,
+        0.7999,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        2413915107
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.14398200000000003
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.015998
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.03151799999999999
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.003501999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 147,
+          "passes": [
+            1599,
+            149,
+            1563
+          ],
+          "covers": [
+            1495,
+            1451,
+            1551
+          ],
+          "joint_covers": 1311,
+          "inference_seconds": 1.692189799992775,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 148,
+          "passes": [
+            1599,
+            152,
+            1554
+          ],
+          "covers": [
+            1487,
+            1448,
+            1559
+          ],
+          "joint_covers": 1307,
+          "inference_seconds": 0.1436836999928346,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            528,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08681919999798993,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "null_coverage": {
+      "target": [
+        0.7999,
+        0.9399999999999998,
+        0.10000000000000003
+      ],
+      "seed": [
+        98073163,
+        150316323
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01927799999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0021419999999999985
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.07711199999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.008567999999999994
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.52641
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.05848999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1594,
+            "constant_bootstrap": 6
+          },
+          "issued": 1594,
+          "insufficient": 6,
+          "joint": 89,
+          "passes": [
+            99,
+            1576,
+            1563
+          ],
+          "covers": [
+            1495,
+            1365,
+            1537
+          ],
+          "joint_covers": 1231,
+          "inference_seconds": 1.7346949000275345,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1594,
+            "constant_score": 6
+          },
+          "issued": 1594,
+          "insufficient": 6,
+          "joint": 87,
+          "passes": [
+            96,
+            1576,
+            1556
+          ],
+          "covers": [
+            1498,
+            1354,
+            1544
+          ],
+          "joint_covers": 1231,
+          "inference_seconds": 0.1505724000162445,
+          "peak_traced_bytes": 469837
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.09238780001032865,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "null_joint": {
+      "target": [
+        0.7999,
+        0.7999,
+        0.05000000000000002
+      ],
+      "seed": [
+        98073163,
+        3083685891
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.14398200000000003
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.015998
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.03151799999999999
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.003501999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.03600000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.004
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.02647799999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.002941999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.10591199999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.011767999999999992
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.52641
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.05848999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            83,
+            105,
+            54
+          ],
+          "covers": [
+            1517,
+            1495,
+            1546
+          ],
+          "joint_covers": 1369,
+          "inference_seconds": 1.6862778999857255,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            73,
+            110,
+            41
+          ],
+          "covers": [
+            1526,
+            1490,
+            1559
+          ],
+          "joint_covers": 1385,
+          "inference_seconds": 0.14204619999509305,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08990180002729176,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "unequal": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        2589661650
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1589,
+            "constant_bootstrap": 11
+          },
+          "issued": 1589,
+          "insufficient": 11,
+          "joint": 1394,
+          "passes": [
+            1576,
+            1524,
+            1471
+          ],
+          "covers": [
+            1504,
+            1389,
+            1535
+          ],
+          "joint_covers": 1272,
+          "inference_seconds": 1.7268916000248282,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1589,
+            "constant_score": 11
+          },
+          "issued": 1589,
+          "insufficient": 11,
+          "joint": 1372,
+          "passes": [
+            1577,
+            1530,
+            1443
+          ],
+          "covers": [
+            1498,
+            1363,
+            1546
+          ],
+          "joint_covers": 1255,
+          "inference_seconds": 0.14612400002079085,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            282,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08697489999758545,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "rare": {
+      "target": [
+        0.88,
+        1.0,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        1344736274
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0019999999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0882
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.009799999999999998
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.02205
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0024499999999999995
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.003959999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.00043999999999999974
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.015839999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.001759999999999999
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.7519499999999999
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.08354999999999997
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.04152250003971858,
+          "peak_traced_bytes": 32932
+        },
+        "cluster_t": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.03844480001862394,
+          "peak_traced_bytes": 32968
+        },
+        "bounded": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.03749790001893416,
+          "peak_traced_bytes": 32904
+        }
+      }
+    },
+    "prevalent": {
+      "target": [
+        0.8799999999999999,
+        0.9400000000000001,
+        0.1
+      ],
+      "seed": [
+        98073163,
+        1718012018
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.25379999999999997
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.028199999999999992
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.00405
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0004499999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.009450000000000014
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0010500000000000012
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.063
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0069999999999999975
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.01575
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0017499999999999994
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.006299999999999999
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0006999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00639
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007099999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.02556
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.002839999999999999
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.513
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.05699999999999998
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 1536,
+          "passes": [
+            1598,
+            1599,
+            1539
+          ],
+          "covers": [
+            1501,
+            1396,
+            1525
+          ],
+          "joint_covers": 1254,
+          "inference_seconds": 1.6899736000050325,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 1510,
+          "passes": [
+            1598,
+            1599,
+            1513
+          ],
+          "covers": [
+            1489,
+            1382,
+            1533
+          ],
+          "joint_covers": 1238,
+          "inference_seconds": 0.14649939998344053,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            542,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08854830000927905,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "missing_mcar": {
+      "target": [
+        0.8799999999999999,
+        0.94,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        3032549578
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.09776
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.09024
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0015600000000000002
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0014399999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0010400000000000001
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00096
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0036400000000000056
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.003360000000000005
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.04160000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.038400000000000004
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.010400000000000003
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.009600000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0041600000000000005
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00384
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0028079999999999984
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0025919999999999984
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.011231999999999994
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.010367999999999994
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.34580000000000005
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.3192
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1569,
+            "constant_bootstrap": 31
+          },
+          "issued": 1569,
+          "insufficient": 31,
+          "joint": 1281,
+          "passes": [
+            1568,
+            1458,
+            1375
+          ],
+          "covers": [
+            1467,
+            1366,
+            1520
+          ],
+          "joint_covers": 1242,
+          "inference_seconds": 1.7359409999626223,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1569,
+            "constant_score": 31
+          },
+          "issued": 1569,
+          "insufficient": 31,
+          "joint": 1250,
+          "passes": [
+            1568,
+            1474,
+            1329
+          ],
+          "covers": [
+            1456,
+            1344,
+            1530
+          ],
+          "joint_covers": 1220,
+          "inference_seconds": 0.1479719000562909,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            502,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08933310000429628,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "missing_mnar": {
+      "target": [
+        0.8799999999999999,
+        0.9812108559498957,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        2141988166
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.09776
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.09024
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.000468
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002532
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.000312
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.001688
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0010920000000000016
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.005908000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.04160000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.038400000000000004
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.010400000000000003
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.009600000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0041600000000000005
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00384
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0028079999999999984
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0025919999999999984
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.011231999999999994
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.010367999999999994
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.34580000000000005
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.3192
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "constant_bootstrap": 414,
+            "issued": 1186
+          },
+          "issued": 1186,
+          "insufficient": 414,
+          "joint": 1044,
+          "passes": [
+            1186,
+            1183,
+            1045
+          ],
+          "covers": [
+            1127,
+            1186,
+            1140
+          ],
+          "joint_covers": 1081,
+          "inference_seconds": 1.7374670000208425,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "constant_score": 414,
+            "issued": 1186
+          },
+          "issued": 1186,
+          "insufficient": 414,
+          "joint": 1015,
+          "passes": [
+            1186,
+            1183,
+            1016
+          ],
+          "covers": [
+            1112,
+            1186,
+            1148
+          ],
+          "joint_covers": 1074,
+          "inference_seconds": 0.14654649997100933,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            502,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08892290001676884,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "dependent": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        1971613266
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1579,
+            "constant_bootstrap": 21
+          },
+          "issued": 1579,
+          "insufficient": 21,
+          "joint": 1195,
+          "passes": [
+            1552,
+            1481,
+            1296
+          ],
+          "covers": [
+            1482,
+            1290,
+            1522
+          ],
+          "joint_covers": 1170,
+          "inference_seconds": 1.7000371999893105,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1579,
+            "constant_score": 21
+          },
+          "issued": 1579,
+          "insufficient": 21,
+          "joint": 1154,
+          "passes": [
+            1551,
+            1483,
+            1254
+          ],
+          "covers": [
+            1467,
+            1281,
+            1531
+          ],
+          "joint_covers": 1155,
+          "inference_seconds": 0.14377349999267608,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            606,
+            0,
+            2
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08854530000098748,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "template": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        1558056722
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.004859999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0005399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01943999999999999
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0021599999999999983
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1582,
+            "constant_bootstrap": 18
+          },
+          "issued": 1582,
+          "insufficient": 18,
+          "joint": 874,
+          "passes": [
+            1418,
+            1383,
+            1152
+          ],
+          "covers": [
+            1205,
+            1023,
+            1371
+          ],
+          "joint_covers": 666,
+          "inference_seconds": 1.8044893000333104,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "sparse_units": 1226,
+            "issued": 370,
+            "constant_score": 4
+          },
+          "issued": 370,
+          "insufficient": 1230,
+          "joint": 114,
+          "passes": [
+            313,
+            304,
+            182
+          ],
+          "covers": [
+            300,
+            268,
+            367
+          ],
+          "joint_covers": 218,
+          "inference_seconds": 0.13474220000352943,
+          "peak_traced_bytes": 59472
+        },
+        "bounded": {
+          "status": {
+            "sparse_units": 1226,
+            "issued": 374
+          },
+          "issued": 374,
+          "insufficient": 1226,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            374,
+            374,
+            374
+          ],
+          "joint_covers": 374,
+          "inference_seconds": 0.08359089998702984,
+          "peak_traced_bytes": 46816
+        }
+      }
+    },
+    "sparse": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.006000000000000002
+      ],
+      "seed": [
+        98073163,
+        3618601153
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.004320000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.00047999999999999996
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.018396
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0020439999999999994
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.073584
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.008175999999999998
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5985
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06649999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1517,
+            "constant_bootstrap": 83
+          },
+          "issued": 1517,
+          "insufficient": 83,
+          "joint": 0,
+          "passes": [
+            1517,
+            1507,
+            0
+          ],
+          "covers": [
+            1421,
+            1302,
+            1501
+          ],
+          "joint_covers": 1207,
+          "inference_seconds": 1.807869100026437,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1517,
+            "constant_score": 83
+          },
+          "issued": 1517,
+          "insufficient": 83,
+          "joint": 0,
+          "passes": [
+            1517,
+            1508,
+            0
+          ],
+          "covers": [
+            1409,
+            1283,
+            1510
+          ],
+          "joint_covers": 1183,
+          "inference_seconds": 0.1495356000305037,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            508,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08649309999600518,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "invalid_heavy": {
+      "target": [
+        0.83,
+        0.9,
+        0.10000000000000003
+      ],
+      "seed": [
+        98073163,
+        797084980
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16200000000000003
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.012600000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0014
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0035999999999999964
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0003999999999999995
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.05040000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0056
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.003240000000000005
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.00036000000000000046
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.01296000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.0014400000000000018
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.5633999999999999
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06259999999999998
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 791,
+          "passes": [
+            907,
+            1392,
+            1564
+          ],
+          "covers": [
+            1508,
+            1428,
+            1541
+          ],
+          "joint_covers": 1303,
+          "inference_seconds": 1.7051244999602204,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 790,
+          "passes": [
+            901,
+            1409,
+            1558
+          ],
+          "covers": [
+            1493,
+            1411,
+            1552
+          ],
+          "joint_covers": 1285,
+          "inference_seconds": 0.15624189995287452,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.0913118000535178,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "active_panel": {
+      "target": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "seed": [
+        98073163,
+        114146469
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.14400000000000004
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.016
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.03600000000000001
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.004
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.07200000000000002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.6480000000000001
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.072
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "constant_bootstrap": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 1.8004305000649765,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "constant_score": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.1663111000234494,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.0894537999847671,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "stress_bidirectional": {
+      "target": [
+        0.8800000000000001,
+        0.9399999999999998,
+        0.09999999999999996
+      ],
+      "seed": [
+        98073163,
+        306194602
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00630000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0007000000000000009
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.1296
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.014399999999999996
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.057600000000000005
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.006399999999999999
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01926
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0021399999999999995
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.07704
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.008559999999999998
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.41130000000000005
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0457
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1599,
+            "constant_bootstrap": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 1006,
+          "passes": [
+            1599,
+            1591,
+            1012
+          ],
+          "covers": [
+            1493,
+            1395,
+            1518
+          ],
+          "joint_covers": 1245,
+          "inference_seconds": 1.8111665999895195,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 1599,
+            "constant_score": 1
+          },
+          "issued": 1599,
+          "insufficient": 1,
+          "joint": 997,
+          "passes": [
+            1599,
+            1592,
+            1002
+          ],
+          "covers": [
+            1477,
+            1376,
+            1520
+          ],
+          "joint_covers": 1218,
+          "inference_seconds": 0.154832099993655,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            514,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.09487159999844152,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "stress_full": {
+      "target": [
+        1.0,
+        0.94,
+        0.1
+      ],
+      "seed": [
+        98073163,
+        1589893487
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01080000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0012000000000000008
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.08280000000000001
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0092
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0108
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0011999999999999997
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.6084
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0676
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "constant_bootstrap": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 1.7169926000424311,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "constant_score": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.14085810001415666,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            1600,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08619809997617267,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "stress_near": {
+      "target": [
+        0.9990000000000001,
+        0.94,
+        0.1
+      ],
+      "seed": [
+        98073163,
+        2265620607
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.16920000000000002
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.018799999999999997
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01080000000000001
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0012000000000000008
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.08280000000000001
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0092
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.0108
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0011999999999999997
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.00018000000000000017
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 2.0000000000000015e-05
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.0007200000000000007
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 8.000000000000006e-05
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.6075
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.06749999999999999
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 789,
+            "constant_bootstrap": 811
+          },
+          "issued": 789,
+          "insufficient": 811,
+          "joint": 703,
+          "passes": [
+            789,
+            781,
+            711
+          ],
+          "covers": [
+            789,
+            701,
+            754
+          ],
+          "joint_covers": 669,
+          "inference_seconds": 1.7391317999135936,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "issued": 789,
+            "constant_score": 811
+          },
+          "issued": 789,
+          "insufficient": 811,
+          "joint": 696,
+          "passes": [
+            789,
+            782,
+            703
+          ],
+          "covers": [
+            789,
+            687,
+            757
+          ],
+          "joint_covers": 658,
+          "inference_seconds": 0.15399440002511255,
+          "peak_traced_bytes": 469896
+        },
+        "bounded": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 0,
+          "passes": [
+            1600,
+            0,
+            0
+          ],
+          "covers": [
+            1600,
+            1600,
+            1600
+          ],
+          "joint_covers": 1600,
+          "inference_seconds": 0.08803980000084266,
+          "peak_traced_bytes": 387672
+        }
+      }
+    },
+    "stress_template_null": {
+      "target": [
+        0.8799999999999999,
+        0.7999,
+        0.10000000000000002
+      ],
+      "seed": [
+        98073163,
+        3630392079
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.14398200000000003
+        },
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.015998
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.0027
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0002999999999999999
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.0018000000000000002
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.00019999999999999996
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.03151799999999999
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.003501999999999998
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.10080000000000001
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.0112
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.028800000000000003
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0031999999999999993
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": true,
+          "probability": 0.018000000000000006
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": true,
+          "probability": 0.007200000000000001
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.0007999999999999998
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.01926
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0021399999999999995
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": true,
+          "probability": 0.07704
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.008559999999999998
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": true,
+          "probability": 0.46889999999999993
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.05209999999999998
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "issued": 1600
+          },
+          "issued": 1600,
+          "insufficient": 0,
+          "joint": 219,
+          "passes": [
+            1405,
+            470,
+            885
+          ],
+          "covers": [
+            1214,
+            1130,
+            1296
+          ],
+          "joint_covers": 713,
+          "inference_seconds": 1.7869707999925595,
+          "peak_traced_bytes": 19359212
+        },
+        "cluster_t": {
+          "status": {
+            "sparse_units": 1527,
+            "issued": 73
+          },
+          "issued": 73,
+          "insufficient": 1527,
+          "joint": 6,
+          "passes": [
+            57,
+            19,
+            25
+          ],
+          "covers": [
+            61,
+            54,
+            73
+          ],
+          "joint_covers": 45,
+          "inference_seconds": 0.08326859994849656,
+          "peak_traced_bytes": 23712
+        },
+        "bounded": {
+          "status": {
+            "sparse_units": 1527,
+            "issued": 73
+          },
+          "issued": 73,
+          "insufficient": 1527,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            73,
+            73,
+            73
+          ],
+          "joint_covers": 73,
+          "inference_seconds": 0.055445600002713036,
+          "peak_traced_bytes": 19307
+        }
+      }
+    },
+    "no_truth": {
+      "target": [
+        0.8800000000000001,
+        null,
+        null
+      ],
+      "seed": [
+        98073163,
+        3023974105
+      ],
+      "cells": [
+        {
+          "fault": true,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.188
+        },
+        {
+          "fault": true,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.003
+        },
+        {
+          "fault": true,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.002
+        },
+        {
+          "fault": true,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.0070000000000000106
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.08000000000000002
+        },
+        {
+          "fault": false,
+          "checked": "FAULT",
+          "asserted": "FAULT",
+          "known": false,
+          "probability": 0.020000000000000004
+        },
+        {
+          "fault": false,
+          "checked": "INVALID_TEST",
+          "asserted": "INVALID_TEST",
+          "known": false,
+          "probability": 0.008
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.005399999999999997
+        },
+        {
+          "fault": false,
+          "checked": "UNKNOWN",
+          "asserted": "UNKNOWN",
+          "known": false,
+          "probability": 0.021599999999999987
+        },
+        {
+          "fault": false,
+          "checked": "NO_FAULT",
+          "asserted": "NO_FAULT",
+          "known": false,
+          "probability": 0.665
+        }
+      ],
+      "methods": {
+        "v3": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.046523800017894246,
+          "peak_traced_bytes": 32932
+        },
+        "cluster_t": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.04560469996795291,
+          "peak_traced_bytes": 32968
+        },
+        "bounded": {
+          "status": {
+            "sparse_units": 1600
+          },
+          "issued": 0,
+          "insufficient": 1600,
+          "joint": 0,
+          "passes": [
+            0,
+            0,
+            0
+          ],
+          "covers": [
+            0,
+            0,
+            0
+          ],
+          "joint_covers": 0,
+          "inference_seconds": 0.04307479998533381,
+          "peak_traced_bytes": 32904
+        }
+      }
+    },
+    "impossible_mixed": {
+      "rejected": "Infeasible joint transition probabilities"
+    }
+  },
+  "verdicts": {
+    "v3": "INFEASIBLE",
+    "cluster_t": "INFEASIBLE",
+    "bounded": "INFEASIBLE"
+  }
+}

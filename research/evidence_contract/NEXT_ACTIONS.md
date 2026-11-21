@@ -1,5 +1,9 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## Sau P5B · 21/11/2026
+
+Ưu tiên mô tả các chuyển tiếp mà D4 cho phép, số cảnh báo rút và số lỗi có nhãn bị hoãn theo loại nguồn. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. Quyền dữ liệu, reference, truth và tỷ lệ can thiệp thực sự chạm nguồn vẫn đang mở. [Quyết định P5B](P5B_STATISTICAL_CALIBRATION_VI.md)
+
 ## Sau mô phỏng P5 · 21/11/2026
 
 Dừng trước prospective. Ưu tiên so sánh một phương án hiệu chỉnh suy luận cho sensitivity và trường hợp coverage hằng trong bản amendment riêng, rồi kiểm hiệu chuẩn trên seed giữ riêng. Quyết định này cần đọc cùng phần quyền, truth, ngân sách và nhật ký quyết định v3. [Mô phỏng P5 và quy tắc dừng](P5_STATISTICAL_FEASIBILITY_VI.md)

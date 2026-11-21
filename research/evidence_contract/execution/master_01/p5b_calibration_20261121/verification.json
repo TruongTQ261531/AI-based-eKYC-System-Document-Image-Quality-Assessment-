@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "stages": {
+    "calibration": {
+      "v3": "INFEASIBLE",
+      "cluster_t": "INFEASIBLE",
+      "bounded": "INFEASIBLE"
+    },
+    "held_out": {
+      "v3": "INFEASIBLE",
+      "cluster_t": "INFEASIBLE",
+      "bounded": "INFEASIBLE"
+    }
+  },
+  "distinct_seed_pairs": 46,
+  "candidate_replay": "all issued, marginal decisions, interval coverages and joint tallies across both stages",
+  "v3_replay": "reference point both stages, all counts; independent v3 entrypoint parity test on unequal sizes",
+  "sizing": {
+    "endpoint_sufficient_ids": [
+      971,
+      9784,
+      4794
+    ],
+    "guard_sufficient_ids": [
+      286,
+      55
+    ],
+    "all_sufficient_ids": 9784
+  }
+}

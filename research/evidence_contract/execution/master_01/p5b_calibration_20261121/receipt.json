@@ -1,0 +1,117 @@
+{
+  "schema": "p5b/calibration-receipt-1",
+  "baseline": "5a333092fd3a4fa7c538e70d323a9b5e58b02ace",
+  "baseline_tree": "a2c5bbef94854d53eb88ea949e2fc2f48e3b1286",
+  "design_commit": "616014ae5457aca735dbdeed0b29da3da6e42e70",
+  "phase_counts": {
+    "calibration": 18400,
+    "held_out": 36800,
+    "simulated_scenarios_per_stage": 23,
+    "rejected_before_sampling_per_stage": 1
+  },
+  "scope": {
+    "synthetic_only": true,
+    "reader_calls": 0,
+    "training_runs": 0,
+    "new_human_labels": 0,
+    "prospective_opened": false,
+    "approved_reference_created": false
+  },
+  "gates": [
+    "GO_PREPARATORY_ONLY",
+    "NO_GO_SUPERIORITY"
+  ],
+  "environment": {
+    "python": "3.11.4",
+    "system": "Windows",
+    "machine": "AMD64",
+    "scipy": "1.17.1",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1",
+    "node": "v24.22.3",
+    "openblas_threads": 2,
+    "omp_threads": 2
+  },
+  "checks": {
+    "targeted": "14 passed in 6.17s",
+    "full_regression": "609 passed, 6 subtests passed in 49.20s",
+    "node_regression": "15 passed, 0 failed",
+    "d4": {
+      "status": "PASS",
+      "controls": 72,
+      "paired_tier_evaluations": 144,
+      "divergence_tier_pairs": 16,
+      "arithmetic": {
+        "status": "PASS",
+        "groups": 216,
+        "cells": 272,
+        "new_labels": 0,
+        "scope": "Independent arithmetic, not independent truth"
+      },
+      "shared_input_fingerprints_checked": 144,
+      "physical_ids": 0,
+      "scope": "Independent accounting/binding, not empirical truth or efficacy"
+    },
+    "independent_verification": "PASS",
+    "both_stages_same_seed_scientific_fields_exact": true,
+    "retained_negative_results": "All 23 operating points and the preflight rejection in each stage. All methods failed the prespecified statistical gate.",
+    "preflight_format": "Extra terminal blank lines corrected before final staging; initial check log retained.",
+    "profiling": "Time and incremental tracemalloc peak per method. RSS was not collected; psutil is unavailable.",
+    "local_log_sha256": {
+      "target.log": "b4616b028d4eb21cdaa8da6ce78ffda87a4006856400d98c6c4bd699aaee0aff",
+      "full.log": "2678ce14a74633e17fe0028a3be3a8557afe60860da354fc7b4ffbaabeb94a94",
+      "target2.log": "694fad90d3c96b99c9b0d23bd9ccef4447bcc15adb6b0fe2899ced902e72f180",
+      "full2.log": "6c943c51d023954ac0225898697790ef754b58213e4f145227f0e9b2df33f3dc",
+      "node.log": "2d522e4e74b72aae5e57f3cb1022d5fd5fce8416db46b07838544e31ef90c166",
+      "d4.log": "1f378fcd5db0ff404e73551001cf8bae7f0eaba5cf7deb64ad3ba1bce8adeb78",
+      "verify.log": "7a86046ee0bc4954cacdf8598798981d60836c015c79a70b0782d1d91b733ce0",
+      "whitespace_before.log": "ad4eb1d043a1aa2f2f44247323588a19497e29a6883e4ea77dd6de70ccabd9f8"
+    }
+  },
+  "frozen_files_sha256": {
+    "research/evidence_contract/B_PROTOCOL_V3_20261121.md": "156857bc542b4e96e0300d7369d2bf7e97e416a6d8856d1142897b6cd0e87d27",
+    "research/evidence_contract/CHECKLIST_P0_P4_20261121.md": "1580f50b305cba62982eb348972014be04a4e67415b18717ea5cfe0c54cd9dde",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/accounting.json": "dca460400a5fd18c63dbc1ede1088f77a27294b2f8371035261ef9a7420e336d",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/aggregate_cells.json": "221bd8c669b62d776ca55d828a86bc38951bf86d360ae5fd2acc95ecaa9a7195",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/control_results.json": "5aec74aaac1a36e2243a00aaa62d8819ae209d5ba318f502f931cb3a2955cc98",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/divergences.json": "10628fccd59efe7e6cb4ab0b0c151d91f7927305fcf42c4247887797f9e46785",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/expected_controls.json": "fb46a77a99b6051ff985a0bee9858e65c3789e50e7b8a2a926b61de4cbe052e3",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/expected_vs_actual.md": "bc083580888430d5ffcc2e42bedccce6e62cdcd596167b675f7cd27780226ac4",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/guard_matrix.json": "173f6db44e9b12e78036076c735582c2279c802f4ee27e8df1026f51fd2686ac",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/manifest.json": "f156c9a7f196134e9a49d9717325401b0f85da72a61510f57c94c4c8797e73d0",
+    "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/summary.json": "4ec904b4e8ede35a46af5b7708bb6f58de4db2647549bd622bbae08fecc887bf",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/coverage_guard.png": "034033becc8b6a5d47b411515791ac81df048d117ea4c188869a78940fd3ad32",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/design.json": "446dfbdc3845cef105f3c3a950aa7d0cb9a33568b17003b2f3e52fe82a8e7061",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/MATRIX.md": "1886c27f171f73fd44f71f44ea165dbb370ecec625e291dc11dab685f4774338",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/operating_points.json": "67bdfe9b10dbb47126a5633e678f2b60b672e563ba817519905109fa10e1a36c",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/power.png": "6bb09fb8214796dc5ebd665520fcf03d6c071b526725958d6131885fd4eef05a",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/receipt.json": "b40d5e28b9fcae1b2fb00ac667158649dd22977d83b8713e9d5d33abac399039",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/render.py": "a12fd9b302aa3eed9a8bc89b441ae434ac4107ecb2cdf1d44434caa4593bbc28",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/verification.json": "ba2001805cd056ed85bf4f1574a346b547d9fb1d81f825a984c52caad12aea49",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/verify.py": "a28df52442019001c97576bf7231a2624d5ac880493099a6977a4bcee2880770",
+    "research/evidence_contract/oracle_reliability/ACCOUNTING_AND_SIZING.md": "b155b1de92f3a19d22c3c631d378c632fb7147d5cfc36f76f8bf0271024f1706",
+    "research/evidence_contract/oracle_reliability/mrz_ablation_v1.py": "6e4228d501e4f32e37d366c97406442710bc7fc20c5b83cf326275ecf34f3bd8",
+    "research/evidence_contract/oracle_reliability/p5_simulation.py": "298a7d842bd7ce166ff2b23b730f903a7b571ee241d80572b41f7fe5a1efb5b3",
+    "research/evidence_contract/oracle_reliability/policy.py": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26",
+    "research/evidence_contract/oracle_reliability/protocol_v3.py": "7633be1982a52de8f39b4a61ede8dfbd772ff9e8ecd73ed4505ad1dccace9f34",
+    "research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md": "02f1db5deb933b5a90a084d8425b4a6e1ebf559e4fef63acc376b1d0a1485e8f"
+  },
+  "p5b_files_sha256": {
+    "research/evidence_contract/P5B_STATISTICAL_CALIBRATION_VI.md": "b5d9d64075e53633df9a422e08b14a8eec9a6c85958dd8321a740e4f0c5be99a",
+    "research/evidence_contract/D4_MECHANISM_BOUNDS_VI.md": "c49718e615c642ffc6ee5bf064b7780935269ad641e35f001873f365fcae4e20",
+    "research/evidence_contract/B_PROTOCOL_V4_CANDIDATE.md": "7f7a7c95e548966c02d5a83883b11c80ecb46f41536a4167276293b3af81ad14",
+    "research/evidence_contract/oracle_reliability/protocol_v4_candidate.py": "f77dff52a69add6491637b7cbb0fb864eefa777145ea40f00ae0205be53dffb7",
+    "research/evidence_contract/oracle_reliability/p5b_simulation.py": "c4d1300ab77fe692b00f43dcdf47a9efb10897f34b31f84f206dfc575079c4f4",
+    "research/evidence_contract/tests/test_p5b.py": "358c2b057406ea9acb0daee5e03a2127844139432d443cab239f7aa36d0ccbcf",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/design.json": "4bb46c132721d854ae8823e1b94bfcbecb6dd1ee94338516628bdbd354875e96",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/calibration.json": "dcb0642492b0a469e3b4ecc4aed046601bcad478ab109d12ec294a1724357165",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/held_out.json": "340aa894a8969a186e7b1c191403b266cd3a5de5aa90ac8b788d095098b5dc8a",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/MATRIX.md": "471fa56720dbdc098ef1d6e38d4728844b81fbc6d59ba21af9b014c0bc2434f9",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/size.png": "658fea66fbe4258880b83d8239bf21f0bef400b96ec78d417700ee20c23d167c",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/calibration.png": "ebe96da8990c64669236631d909f72554f6f2f5a9070012cacc7b0f8a3ddfca5",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/render.py": "e42dfc893773bc42d7d0d6d0a6e864d56f9e007344cac31bb188be39a7345273",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/verify.py": "1b1bb310bea4db48552c0e8aa7cea668c16794de1bf41e30c42527f0c160631d",
+    "research/evidence_contract/execution/master_01/p5b_calibration_20261121/verification.json": "cdbddefd5cf089f2464b5bcbc03a1c5cd1bb20333cb4813e69817fd24c40302f"
+  }
+}
