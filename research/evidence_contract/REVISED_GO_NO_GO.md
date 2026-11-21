@@ -1,5 +1,9 @@
 # Quyết định sau khi hoàn tất IFV cá nhân
 
+## Sau P5 · 21/11/2026
+
+Giữ `NO_GO_SUPERIORITY` và chưa mở prospective. Bằng chứng mới là kết quả mô phỏng của thủ tục thống kê v3; tính khả thi vận hành thực tế còn thiếu số đo. [Quyết định theo từng giả định](P5_STATISTICAL_FEASIBILITY_VI.md)
+
 ## Quyết định sau P2 · 21/11/2026
 
 `NO_GO_SUPERIORITY`. Cả ba người đã nộp đủ hai pha. Round 1 chờ D1–D3. Việc kiểm tra ảnh lịch sử đã cung cấp bằng chứng về mức tái sử dụng và các nguồn còn thiếu khi xét C2. Claim độc lập, quyền phát hành và thiết kế prospective còn chờ phê duyệt. [Kết quả P2](P2_AUDIT_VI.md)

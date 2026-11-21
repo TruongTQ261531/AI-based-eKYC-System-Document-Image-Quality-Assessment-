@@ -1,0 +1,91 @@
+{
+  "main_grid_cohorts": 181200,
+  "attempted_bootstrap_draws": 1605420000,
+  "invalid_bootstrap_draws": 0,
+  "insufficient_before_bootstrap": 20658,
+  "reference_same_seed_exact": true,
+  "independent_data_seed": [
+    628104,
+    17
+  ],
+  "independent_replication": {
+    "null_sensitivity": {
+      "joint_pass": {
+        "k": 208,
+        "n": 2400,
+        "rate": 0.08666666666666667,
+        "lo": 0.07606083561529436,
+        "hi": 0.09859355237694248
+      },
+      "coverage_if_issued": {
+        "decision_coverage": {
+          "k": 2269,
+          "n": 2400,
+          "rate": 0.9454166666666667,
+          "lo": 0.9355959489187246,
+          "hi": 0.9538137882146412
+        },
+        "all_fault_sensitivity": {
+          "k": 2192,
+          "n": 2400,
+          "rate": 0.9133333333333333,
+          "lo": 0.9014064476230575,
+          "hi": 0.9239391643847056
+        },
+        "paired_far_difference": {
+          "k": 2299,
+          "n": 2400,
+          "rate": 0.9579166666666666,
+          "lo": 0.9491253268497827,
+          "hi": 0.9652444590338177
+        }
+      },
+      "insufficient": {
+        "k": 0,
+        "n": 2400,
+        "rate": 0.0,
+        "lo": 0.0,
+        "hi": 0.001598049990609079
+      }
+    },
+    "effect_grid": {
+      "joint_pass": {
+        "k": 1554,
+        "n": 2400,
+        "rate": 0.6475,
+        "lo": 0.6281645367676133,
+        "hi": 0.6663640384851569
+      },
+      "coverage_if_issued": {
+        "decision_coverage": {
+          "k": 2259,
+          "n": 2400,
+          "rate": 0.94125,
+          "lo": 0.9311179368011165,
+          "hi": 0.949971784082171
+        },
+        "all_fault_sensitivity": {
+          "k": 2114,
+          "n": 2400,
+          "rate": 0.8808333333333334,
+          "lo": 0.8672589702424086,
+          "hi": 0.8931905150147442
+        },
+        "paired_far_difference": {
+          "k": 2283,
+          "n": 2400,
+          "rate": 0.95125,
+          "lo": 0.9418901829624581,
+          "hi": 0.9591675769210172
+        }
+      },
+      "insufficient": {
+        "k": 0,
+        "n": 2400,
+        "rate": 0.0,
+        "lo": 0.0,
+        "hi": 0.001598049990609079
+      }
+    }
+  }
+}

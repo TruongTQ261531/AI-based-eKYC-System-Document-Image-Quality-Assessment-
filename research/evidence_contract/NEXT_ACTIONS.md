@@ -1,5 +1,9 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## Sau mô phỏng P5 · 21/11/2026
+
+Dừng trước prospective. Ưu tiên so sánh một phương án hiệu chỉnh suy luận cho sensitivity và trường hợp coverage hằng trong bản amendment riêng, rồi kiểm hiệu chuẩn trên seed giữ riêng. Quyết định này cần đọc cùng phần quyền, truth, ngân sách và nhật ký quyết định v3. [Mô phỏng P5 và quy tắc dừng](P5_STATISTICAL_FEASIBILITY_VI.md)
+
 ## Sau checklist P0–P4 ngày 21/11/2026
 
 Protocol v3 đã có quyết định thiết kế và trần ngân sách. Việc còn mở là ghi nhận quyết định D1–D3, hoàn thiện quyền và exposure cho đúng phiên bản dữ liệu, kiểm khả năng đạt độ chính xác trong các trần, rồi trình quyết định có mở prospective hay không. Chủ dự án đã yêu cầu chưa chạy. [Checklist và bằng chứng](CHECKLIST_P0_P4_20261121.md)

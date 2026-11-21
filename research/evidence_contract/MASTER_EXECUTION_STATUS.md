@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## P5 · 21/11/2026
+
+Đã mô phỏng 151 điểm trên 14 bộ giả định. Chỉ hai bộ đạt mục tiêu power riêng tại mức giảm FAR 10 điểm; chưa bộ nào đạt đồng thời các yêu cầu power và hiệu chuẩn của P5. Không có lượt đọc ảnh mới. [Kết quả, tác động guard và trần tài nguyên](P5_STATISTICAL_FEASIBILITY_VI.md)
+
 ## Checklist P0–P4 · 21/11/2026
 
 Đã tái lập D4 từ baseline `dd2e109`, kiểm lại P1/P2 và hoàn thiện thiết kế v3 cùng ledger cho các claim hiện tại. Ba ngưỡng và năm trần đã được chủ dự án chọn. Chưa có scientific lock hoặc quyền chạy prospective. [Nghiệm thu và biên bản](CHECKLIST_P0_P4_20261121.md)

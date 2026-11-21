@@ -1,0 +1,75 @@
+{
+  "scope": "Synthetic protocol-v3 operating characteristics, equal cases per physical ID",
+  "baseline_commit": "7180d8329cdda17963fbbb414fdb47f0541db641",
+  "experiment": {
+    "prospective_opened": false,
+    "reader_calls": 0,
+    "real_annotations": 0,
+    "image_inputs": 0
+  },
+  "data_seed": 5212026,
+  "bootstrap_seed": 20261121,
+  "independent_data_seed": [
+    628104,
+    17
+  ],
+  "bootstrap_replicates": 10000,
+  "profiles": 14,
+  "grid_points": 151,
+  "cohorts_per_point": 1200,
+  "main_grid_cohorts": 181200,
+  "independent_replication_cohorts_per_point": 2400,
+  "independent_replication_points": 2,
+  "full_grid_repeat": {
+    "start_utc": "2026-11-21T06:47:02.563106+00:00",
+    "end_utc": "2026-11-21T06:50:19.208627+00:00",
+    "main_grid_seconds": 196.645521,
+    "full_grid_counts_reproduced": true
+  },
+  "verification": {
+    "reference_same_seed_exact": true,
+    "tests": "7 passed in 2.29s",
+    "test_arguments": [
+      "-X",
+      "utf8",
+      "-B",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "research/evidence_contract/tests/test_p5_simulation.py",
+      "research/evidence_contract/tests/test_protocol_v3.py"
+    ],
+    "local_test_log_sha256": "48512bad0967a1617a44159fb8378173ba741d303b8d144b74126ea754cbcab5"
+  },
+  "runtime": {
+    "os": "Windows",
+    "architecture": "AMD64",
+    "python": "3.11.4",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1",
+    "openblas_threads": 2,
+    "omp_threads": 2
+  },
+  "frozen_input_sha256": {
+    "research/evidence_contract/B_PROTOCOL_V3_20261121.md": "156857bc542b4e96e0300d7369d2bf7e97e416a6d8856d1142897b6cd0e87d27",
+    "research/evidence_contract/oracle_reliability/protocol_v3.py": "7633be1982a52de8f39b4a61ede8dfbd772ff9e8ecd73ed4505ad1dccace9f34",
+    "research/evidence_contract/oracle_reliability/ACCOUNTING_AND_SIZING.md": "b155b1de92f3a19d22c3c631d378c632fb7147d5cfc36f76f8bf0271024f1706"
+  },
+  "analysis_sha256": {
+    "research/evidence_contract/oracle_reliability/p5_simulation.py": "298a7d842bd7ce166ff2b23b730f903a7b571ee241d80572b41f7fe5a1efb5b3",
+    "research/evidence_contract/tests/test_p5_simulation.py": "fc8dd81422506a1dfec5afc6d2253ebf4815da0383b2ef5644b66b7577eadbd9",
+    "research/evidence_contract/tests/test_protocol_v3.py": "6b1ae06b672b8e1caa730f80621f1d3c18053f1c3a57c45af843ea0ffa2fe596",
+    "research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md": "02f1db5deb933b5a90a084d8425b4a6e1ebf559e4fef63acc376b1d0a1485e8f",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/design.json": "446dfbdc3845cef105f3c3a950aa7d0cb9a33568b17003b2f3e52fe82a8e7061",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/operating_points.json": "67bdfe9b10dbb47126a5633e678f2b60b672e563ba817519905109fa10e1a36c",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/verification.json": "ba2001805cd056ed85bf4f1574a346b547d9fb1d81f825a984c52caad12aea49",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/MATRIX.md": "1886c27f171f73fd44f71f44ea165dbb370ecec625e291dc11dab685f4774338",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/render.py": "a12fd9b302aa3eed9a8bc89b441ae434ac4107ecb2cdf1d44434caa4593bbc28",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/verify.py": "a28df52442019001c97576bf7231a2624d5ac880493099a6977a4bcee2880770",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/power.png": "6bb09fb8214796dc5ebd665520fcf03d6c071b526725958d6131885fd4eef05a",
+    "research/evidence_contract/execution/master_01/p5_simulation_20261121/coverage_guard.png": "034033becc8b6a5d47b411515791ac81df048d117ea4c188869a78940fd3ad32"
+  }
+}

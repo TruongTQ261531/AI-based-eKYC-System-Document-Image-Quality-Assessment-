@@ -1,0 +1,89 @@
+{
+  "schema": "p5-synthetic-design/1",
+  "baseline": "7180d8329cdda17963fbbb414fdb47f0541db641",
+  "seed": 5212026,
+  "trials": 1200,
+  "bootstrap_replicates": 10000,
+  "reference_effect": 0.1,
+  "effects": [
+    0.06,
+    0.07,
+    0.08,
+    0.09,
+    0.1,
+    0.12,
+    0.15,
+    0.18
+  ],
+  "criteria": {
+    "target_joint_power": 0.8,
+    "nominal_type_I": 0.05,
+    "nominal_lower_bound_coverage": 0.95,
+    "mc_interval": "pointwise two-sided Wilson 95%",
+    "classification": "Power-only: FEASIBLE if lower MC bound >=0.80; INFEASIBLE if upper <0.80; otherwise INSUFFICIENT_EVIDENCE. Statistical qualification also checks matched null rates and conditional interval coverage at nominal levels; uncertainty or absent intervals precludes qualification."
+  },
+  "defaults": {
+    "ids": 200,
+    "cases": 4,
+    "prevalence": 0.2,
+    "truth_availability": 0.9,
+    "icc": 0.2,
+    "abstention": 0.07,
+    "sensitivity": 0.91,
+    "discordance": 0.2,
+    "miss_truth_multiplier": 1
+  },
+  "profiles": {
+    "reference": {},
+    "independent": {
+      "icc": 0
+    },
+    "strong_dependence": {
+      "icc": 0.6
+    },
+    "rare_fault": {
+      "prevalence": 0.05
+    },
+    "very_rare_fault": {
+      "prevalence": 0.02
+    },
+    "missing_truth": {
+      "truth_availability": 0.55
+    },
+    "informative_missing": {
+      "truth_availability": 0.75,
+      "miss_truth_multiplier": 0.35
+    },
+    "low_disagreement": {
+      "discordance": 0.1
+    },
+    "high_disagreement": {
+      "discordance": 0.36
+    },
+    "fewer_cases": {
+      "cases": 2
+    },
+    "tight_floors": {
+      "abstention": 0.17,
+      "sensitivity": 0.83
+    },
+    "near_full_coverage": {
+      "abstention": 0.001
+    },
+    "full_coverage": {
+      "abstention": 0
+    },
+    "high_deferral": {
+      "abstention": 0.5,
+      "sensitivity": 0.45
+    }
+  },
+  "resource_caps": {
+    "ids": 200,
+    "cases_per_id": 4,
+    "calls": 1600,
+    "human_hours": 120,
+    "days": 7,
+    "gib": 50
+  }
+}
