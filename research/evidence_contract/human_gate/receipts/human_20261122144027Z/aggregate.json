@@ -1,0 +1,478 @@
+{
+  "all_priority": {
+    "adjudicated": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "approved": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "conditions": {
+      "backup_supported_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 110,
+          "physical_ids": 40
+        }
+      },
+      "backup_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 110,
+          "physical_ids": 40
+        }
+      },
+      "distinct_sources": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 110,
+          "physical_ids": 40
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "primary_removed_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 110,
+          "physical_ids": 40
+        }
+      },
+      "primary_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 110,
+          "physical_ids": 40
+        }
+      },
+      "provenance_verified": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 110,
+          "physical_ids": 40
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "reference_approved": {
+        "FAIL": {
+          "candidates": 110,
+          "physical_ids": 40
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "semantic_equality_approved": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 110,
+          "physical_ids": 40
+        }
+      }
+    },
+    "eligible": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "missing_d10": {
+      "candidates": 110,
+      "physical_ids": 40
+    },
+    "observations_received": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "prepared": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "scope": {
+      "candidates": 110,
+      "physical_ids": 40
+    },
+    "semantic_approval_missing": {
+      "candidates": 110,
+      "physical_ids": 40
+    },
+    "shareable": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "two_proposals": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "waiting_both_prepared": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "waiting_one": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "without_any_proposals": {
+      "candidates": 110,
+      "physical_ids": 40
+    }
+  },
+  "baseline": "81557747d9f1a3467b0f6bdb0dad6f60805a9fe4",
+  "checks": {
+    "coherence_flags": 1,
+    "immutable_views": 3,
+    "organizer_queue_sha256": "d46efeeb913a0bab120cf972d79e05c5b8de40d7eb467467ad3efc92dd15eda7",
+    "phase1_queue": 86,
+    "phase2_queue": 33,
+    "protected": {
+      "execution_tree": "ae2b8ae66f715da990a89bed70ee8864f8856114",
+      "historical_execution_paths": 1107,
+      "protected_p2_byte_hashes": 84
+    },
+    "raw_submissions": 6,
+    "source_crops": 646,
+    "source_html": "269ecb4d47eab505fddb1a1d390c1b3a7f2d13259c7bd2664ec2e59c2bbfa749",
+    "source_ledger": "94b771e6782adb69fac4ea650eaffaab2b7336591a5278399f822abe1ce150c1",
+    "upstream_rights": {
+      "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+      "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+    }
+  },
+  "closure": {
+    "adjudicated": 0,
+    "authority_roles": {},
+    "pending_digest": "ebce9c02ac81ec415ef40adf85fb68423b86201f0e35a7e53d5bb7eb0921f4c4",
+    "signed_records": 0,
+    "status": "SIGNATURE_PENDING"
+  },
+  "deferred": {
+    "candidates": 65,
+    "physical_ids": 32,
+    "primary_touched": 42,
+    "primary_untouched": 23
+  },
+  "package_sha256": {
+    "R02": "ff4bd2260b0424556859b7e71f08298829ad4a38b39c8cfb2edb2574a99e2cc7",
+    "R03": "e487506084d5c0b756e60882f883672ee7ceb28a375521dace5fb7314b07abf2"
+  },
+  "queue_sha256": "c0b35d1a809c023b2e8eeb26d3aa90a95176fcf4543e3b91e9a9325986ef18f8",
+  "registry_approved": 0,
+  "rights": [
+    {
+      "artifact": "provider_annotations",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 1,
+      "version_digest": "3977845dd9d7678539e1639c0e1d340747ea57ddd9cd344a20ab6a29b8f472bd"
+    },
+    {
+      "artifact": "original_frames",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 24,
+      "version_digest": "9240d46aba34a9ce46333d97e19038524d56c99f3e384bc14c3e0854bc230ce6"
+    },
+    {
+      "artifact": "derived_frames",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 34,
+      "version_digest": "7cbe507cb1e40e3147b2c8e831cf22b46f7d7a7b59d478c695995719dc9c8970"
+    },
+    {
+      "artifact": "region_crops",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 140,
+      "version_digest": "7354db87d098b0c6360e876fd1a59bf3e1624d4688e6317303b4151f9a0121c9"
+    },
+    {
+      "artifact": "review_workspaces",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 2,
+      "version_digest": "2e921f1afc38c67bac33d3646f819e4330b2a692c7c649bc7f38b8c2849d8694"
+    }
+  ],
+  "rights_file_sha256": "1317a5b4957b9908562dad198e01e38617f808625b7eb0535278ff462398c44b",
+  "schema": "c2-human-evidence-gate/1",
+  "scientific_gate": "NO_GO_SUPERIORITY",
+  "selected": {
+    "adjudicated": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "approved": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "conditions": {
+      "backup_supported_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 45,
+          "physical_ids": 24
+        }
+      },
+      "backup_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 45,
+          "physical_ids": 24
+        }
+      },
+      "distinct_sources": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 45,
+          "physical_ids": 24
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "primary_removed_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 45,
+          "physical_ids": 24
+        }
+      },
+      "primary_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 45,
+          "physical_ids": 24
+        }
+      },
+      "provenance_verified": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 45,
+          "physical_ids": 24
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "reference_approved": {
+        "FAIL": {
+          "candidates": 45,
+          "physical_ids": 24
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "semantic_equality_approved": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 45,
+          "physical_ids": 24
+        }
+      }
+    },
+    "eligible": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "missing_d10": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "observations_received": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "prepared": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "scope": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "semantic_approval_missing": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "shareable": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "two_proposals": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "waiting_both_prepared": {
+      "candidates": 45,
+      "physical_ids": 24
+    },
+    "waiting_one": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "without_any_proposals": {
+      "candidates": 45,
+      "physical_ids": 24
+    }
+  },
+  "source_precision": {
+    "DAY_MONTH_FOUR_DIGIT_YEAR": 26,
+    "DAY_MONTH_NAME_TWO_DIGIT_YEAR": 8,
+    "LITERAL_IDENTIFIER": 11
+  }
+}

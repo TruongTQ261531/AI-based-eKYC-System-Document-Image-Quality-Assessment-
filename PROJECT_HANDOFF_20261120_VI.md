@@ -1,5 +1,9 @@
 # Hồ sơ bàn giao dự án eKYC — trạng thái 20/11/2026
 
+## C2-45 · Hồ sơ kiểm chứng con người ngày 22/11/2026
+
+Hai gói ngoại tuyến C2-45 và ma trận quyền theo phiên bản đã sẵn sàng trên máy organizer. 45 candidate/24 ID chờ cả hai đề xuất, 0 được phép chia sẻ. Round 1 đã đóng thu nhận và chờ chữ ký thật. Chủ dự án xử lý D10 và authority trước khi cấp gói. [Kết quả và hồ sơ bàn giao](research/evidence_contract/C2_45_HUMAN_EVIDENCE_GATE_VI.md)
+
 ## Sau P6 · 22/11/2026
 
 Đã chốt intake Round 1 hiệu lực 21/11, hoàn tất agreement và quyết định tách người phân xử khỏi AUTHOR/R02/R03. Envelope chờ ký, phân xử chờ authority và chưa có reference được duyệt. Đã tái dựng cặp ảnh và vùng cho 110 candidate trên 40 giấy tờ. Có 45 candidate/24 ID đạt tiêu chí hình học, 0 candidate đủ điều kiện C2. [Biên bản](research/evidence_contract/ROUND1_CLOSURE_20261122_VI.md) · [Báo cáo C2](research/evidence_contract/C2_QUALIFICATION_VI.md)

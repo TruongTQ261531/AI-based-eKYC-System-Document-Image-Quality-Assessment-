@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidate-specific source observations",
+  "type": "object",
+  "required": [
+    "schema",
+    "role",
+    "assessor",
+    "candidate_id",
+    "item_sha256",
+    "exposure",
+    "observations",
+    "semantic_judgment",
+    "precision_judgment",
+    "basis_sha256",
+    "rationale"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "c2-source-review/1"
+    },
+    "role": {
+      "const": "reviewer"
+    },
+    "assessor": {
+      "enum": [
+        "R02",
+        "R03"
+      ]
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "item_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "exposure": {
+      "enum": [
+        "PREVIOUSLY_SEEN",
+        "NO_KNOWN_EXPOSURE",
+        "UNCERTAIN"
+      ]
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_supported_before",
+        "primary_removed_after",
+        "backup_supported_before",
+        "backup_supported_after"
+      ],
+      "properties": {
+        "primary_supported_before": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "primary_removed_after": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "backup_supported_before": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        },
+        "backup_supported_after": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "semantic_judgment": {
+      "enum": [
+        "SAME_FIELD",
+        "DIFFERENT_FIELD",
+        "UNKNOWN"
+      ]
+    },
+    "precision_judgment": {
+      "enum": [
+        "COMPATIBLE",
+        "INCOMPATIBLE",
+        "UNKNOWN"
+      ]
+    },
+    "basis_sha256": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20000,
+      "pattern": "\\S"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "log_sha256": "1218c88778b94a9deb2e009930db649018e58abc5f2ffc595ed5f0e73dd3423c",
+  "python": "3.11.4",
+  "seconds": 58.72,
+  "suite": "full",
+  "summary": "657 passed, 6 subtests passed in 56.43s",
+  "tests": [
+    "all"
+  ]
+}

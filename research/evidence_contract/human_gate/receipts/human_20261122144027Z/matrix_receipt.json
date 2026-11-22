@@ -1,0 +1,14 @@
+{
+  "configured_authorities": 0,
+  "matrix_sha256": "a4096a9975716abede8599134e1692a49f3a5f7d5fa3caa1b77fd82d9ea6f7ce",
+  "phases": {
+    "C2_45": 45,
+    "DEFERRED_65": 65
+  },
+  "raw_returns_furnished": 0,
+  "rights_approved_versions": 0,
+  "rows": 110,
+  "schema": "c2-state-matrix-receipt/1",
+  "unissued_forms": 90,
+  "verified_production_proposals": 0
+}

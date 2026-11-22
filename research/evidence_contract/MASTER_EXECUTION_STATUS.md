@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## C2-45 · Hồ sơ kiểm chứng con người ngày 22/11/2026
+
+Đã chuẩn bị và kiểm hai gói C2-45 trên 24 ID, mỗi gói 45 phiếu trống. Đối chiếu 110 candidate/40 ID cho kết quả 0 đủ điều kiện. Chữ ký Round 1, D10, hai proposal và phân xử còn chờ. [Kết quả và hồ sơ bàn giao](C2_45_HUMAN_EVIDENCE_GATE_VI.md)
+
 ## Sau P6 · 22/11/2026
 
 P6 DONE. Round 1 CLOSED_BY_OWNER_DECISION, agreement COMPLETE, chữ ký SIGNATURE_PENDING, adjudication PENDING, 0 reference được duyệt. Đã đối chiếu ảnh và vùng cho 110/110 candidate trên 40 ID. Có 45 candidate/24 ID đạt tiêu chí hình học và 0 candidate đủ tám điều kiện. GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Quyết định D1–D3](ROUND1_CLOSURE_20261122_VI.md) · [Kiểm chứng kỹ thuật C2](C2_QUALIFICATION_VI.md)

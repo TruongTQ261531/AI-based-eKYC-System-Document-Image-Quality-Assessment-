@@ -1,0 +1,44 @@
+{
+  "sources": {
+    "human_gate/closure.py": "ecd215b4951654e8be5cfdbc02de299e17e470b91474d889687be166f3a0ae51",
+    "human_gate/package.py": "437ccb00bfa6fe82c24f9c3621d745e19185d129e50ca58fe76565e247af9a1a",
+    "human_gate/prepare.py": "cadc1dd818ff36ed718abb67db2f428c85ab4fa2e360487313e0c13f036106f2",
+    "human_gate/release_scan.py": "16972d5e08f5298853c33a2307354234f34187ba8926739319b0d8ddc584e96d",
+    "human_gate/review.py": "454433a011bb58836d0d4683ea2cd36dd7eb926759253e06463f7fb71429513a",
+    "human_gate/review.schema.json": "9a150cc223e4c7a9188fd36b53f7bfb75320562b26901102f55aa6fded59c395",
+    "human_gate/state_matrix.py": "d58362a882fd9ef01d4ae4b6ae70981ebb49529af538747c91dbfb450159d994",
+    "human_gate/tests_receipt.py": "80ef805c71c70c679d465d4c52ae97dad7171e2bb8fc4d401fb7f11bfb9eef21",
+    "human_gate/verify.py": "ae6b90fc4d428c09773f2280a4c39b6b3500948868cd85fd182bc8e83e7b5b7e",
+    "tests/test_c2_human_gate.py": "9c38c65956ecc18ca7dfe51120cab680918512b179b3836a978e782d5db1a796"
+  },
+  "tests": {
+    "full": {
+      "exit_code": 0,
+      "log_sha256": "052c134f24948823d3ed95b656d70aa64738f7d201a41d54c9a6c067ad700bfb",
+      "python": "3.11.4",
+      "seconds": 47.25,
+      "suite": "full",
+      "summary": "657 passed, 6 subtests passed in 45.06s",
+      "tests": [
+        "all"
+      ]
+    },
+    "targeted": {
+      "exit_code": 0,
+      "log_sha256": "54f03398e4159cbd0a852dc2dc7af324c8a66733fd38001030199852d026efa3",
+      "python": "3.11.4",
+      "seconds": 3.27,
+      "suite": "targeted",
+      "summary": "72 passed in 1.97s",
+      "tests": [
+        "test_c2_human_gate",
+        "test_post_p6_qualification",
+        "test_reference_workflow",
+        "test_semantic_lineage_c2",
+        "test_c2_evidence_audit",
+        "test_review_agreement",
+        "test_pixel_lineage_audit"
+      ]
+    }
+  }
+}

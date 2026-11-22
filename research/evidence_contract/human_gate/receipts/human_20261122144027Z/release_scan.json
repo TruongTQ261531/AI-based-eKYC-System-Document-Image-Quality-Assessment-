@@ -1,0 +1,8 @@
+{
+  "added_text_manifest_sha256": "a43c9fdf76635f454b829d3722f08eef1365a6dbef9fa0e300c178db496d3ad4",
+  "baseline": "81557747d9f1a3467b0f6bdb0dad6f60805a9fe4",
+  "diff_paths_excluding_own_receipt": 24,
+  "private_files_staged": 0,
+  "private_identifier_or_image_path_matches": 0,
+  "status": "RELEASE_SCAN_VERIFIED"
+}

@@ -1,5 +1,9 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## C2-45 · Hồ sơ kiểm chứng con người ngày 22/11/2026
+
+Chủ dự án hoàn tất D10 theo năm tập artifact, chỉ định authority và ký payload Round 1. Đã chuẩn bị hai workspace riêng cho 45 candidate/24 ID. Có 0 gói được phép cấp cho assessors, 0 proposal thực và 0 reference được duyệt. Sau khi đủ quyền, R02/R03 khai exposure và nộp từng ca. [Kết quả và hồ sơ bàn giao](C2_45_HUMAN_EVIDENCE_GATE_VI.md)
+
 ## Sau P6 · 22/11/2026
 
 D1–D3 đã quyết định. Đã xác minh nguồn và vùng của 110 candidate/40 ID. Ưu tiên xử lý quyền và đối chiếu nội dung của 45 candidate/24 ID có biến đổi phù hợp về hình học. Với 65 candidate còn lại, cần tìm biến đổi lịch sử bổ sung đạt tiêu chí. Đầu vào cho bước con người là ảnh/crop đã gắn hash, hai đề xuất độc lập theo từng candidate, phân xử có căn cứ và D10. Đóng dấu Round 1 cần authority round_owner và chữ ký thực. [Kết quả và điều kiện chuyển nhóm](C2_QUALIFICATION_VI.md) · [Round 1](ROUND1_CLOSURE_20261122_VI.md)
