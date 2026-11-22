@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "log_sha256": "ce85a21875a5e3d6b3a29514aa76fbfbac59ca782a4703912f42076562ba1ead",
+  "seconds": 5.3,
+  "suite": "targeted",
+  "summary": "80 passed in 3.09s",
+  "tests": [
+    "test_c2_evidence_audit.py",
+    "test_semantic_lineage_c2.py",
+    "test_pixel_lineage_audit.py",
+    "test_reference_policy.py",
+    "test_reference_workflow.py",
+    "test_review_agreement.py",
+    "test_post_p6_qualification.py"
+  ]
+}

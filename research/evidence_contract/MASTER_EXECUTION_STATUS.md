@@ -1,5 +1,9 @@
 # EASE 2027 · Master execution
 
+## Sau P6 · 22/11/2026
+
+P6 DONE. Round 1 CLOSED_BY_OWNER_DECISION, agreement COMPLETE, chữ ký SIGNATURE_PENDING, adjudication PENDING, 0 reference được duyệt. Đã đối chiếu ảnh và vùng cho 110/110 candidate trên 40 ID. Có 45 candidate/24 ID đạt tiêu chí hình học và 0 candidate đủ tám điều kiện. GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Quyết định D1–D3](ROUND1_CLOSURE_20261122_VI.md) · [Kiểm chứng kỹ thuật C2](C2_QUALIFICATION_VI.md)
+
 ## P6 · 21/11/2026
 
 Hoàn tất đối chiếu 24 nhóm P2, 12 adapter và 44 bảng đánh giá liên kết. Xác nhận tái sử dụng ảnh và giữ UNKNOWN cho pretraining ngoài. D4 đã có bảng phân tầng 144 cặp theo tier và endpoint. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Audit checkpoint](P6_CHECKPOINT_LEAKAGE_AUDIT_VI.md) · [Characterization](P6_D4_CHARACTERIZATION_VI.md) · [Claim ledger](P6_CLAIM_TO_EVIDENCE_MATRIX.md)

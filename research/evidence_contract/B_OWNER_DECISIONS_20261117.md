@@ -1,5 +1,9 @@
 # Các quyết định cần chủ dự án — 17/11/2026
 
+## Sau P6 · 22/11/2026
+
+D1, D2 và D3 đã được chủ dự án quyết định. Cutoff Round 1 có hiệu lực ngày 21/11. R02 và R03 là hai người đánh giá, AUTHOR là tác giả nội bộ. Người phân xử phải là một người khác cả ba. Chủ dự án phê duyệt reference sau phân xử và kiểm quyền D10. Trạng thái D4–D12 theo từng quyết định đã ghi. [Biên bản và snapshot](ROUND1_CLOSURE_20261122_VI.md)
+
 Đây là các lựa chọn khoa học và phân quyền chưa được chốt, **không phải yêu cầu
 bạn làm lại phiếu cá nhân**. Mã kiểm thử/audit đã hoàn tất mốc chuẩn bị; bảng này
 giúp chốt một thiết kế cụ thể trước cohort mới. Không mục nào dưới đây được tự

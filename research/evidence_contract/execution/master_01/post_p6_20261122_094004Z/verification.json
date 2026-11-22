@@ -1,0 +1,20 @@
+{
+  "aggregate_sha256": "786cca653ab97f47d4925117360366a706253f4adaaf12c908d59aee9019b809",
+  "baseline": "c99e467ddf403afed5bd520a0b69d22d277a38d0",
+  "code_hash_basis": "UTF-8 source with LF line endings",
+  "code_sha256": {
+    "post_p6_closure.py": "59922778f22336a9d8c4222c1cd2b34a28f6b5a7ce6c5594729e782d6528cd14",
+    "post_p6_geometry.py": "fc386a35a3948948aa15d186b752d0884c7da141b3e9314c2d5bb7c843489042",
+    "post_p6_qualification.py": "48c2af44d084a59f79cba3dd4b56703f5daaab84efcb9c4e6b1a772d7206feb0",
+    "test_post_p6_qualification.py": "ac178d6d88bf96fcda83eeee249e3d3ed326049282c76dae0afc9918cfacad7c",
+    "verify_post_p6.py": "8588e19569c778792d922a29a3cb6985cd9cd3e16c30daf23c8df3c901d5b933"
+  },
+  "historical_execution_files": 1101,
+  "independent_truth_approvals": 0,
+  "original_joins_checked": 3,
+  "p2_protected_byte_hashes": 84,
+  "private_crop_hash_and_pixel_checks": 646,
+  "public_counts_reconciled": true,
+  "sealed_submissions_checked": 6,
+  "status": "VERIFIED"
+}

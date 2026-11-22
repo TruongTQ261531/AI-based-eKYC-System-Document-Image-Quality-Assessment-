@@ -1,5 +1,9 @@
 # Hồ sơ bàn giao dự án eKYC — trạng thái 20/11/2026
 
+## Sau P6 · 22/11/2026
+
+Đã chốt intake Round 1 hiệu lực 21/11, hoàn tất agreement và quyết định tách người phân xử khỏi AUTHOR/R02/R03. Envelope chờ ký, phân xử chờ authority và chưa có reference được duyệt. Đã tái dựng cặp ảnh và vùng cho 110 candidate trên 40 giấy tờ. Có 45 candidate/24 ID đạt tiêu chí hình học, 0 candidate đủ điều kiện C2. [Biên bản](research/evidence_contract/ROUND1_CLOSURE_20261122_VI.md) · [Báo cáo C2](research/evidence_contract/C2_QUALIFICATION_VI.md)
+
 **Bàn giao P5B ngày 21/11.** Đã kiểm cơ chế D4, đối chiếu ba phương pháp trên seed calibration và held-out, chạy full regression và lưu biên bản. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. [Báo cáo, ma trận và lệnh tái lập](research/evidence_contract/P5B_STATISTICAL_CALIBRATION_VI.md)
 
 **P5 ngày 21/11.** Mô phỏng thống kê cho protocol v3 đã hoàn tất. Thiết kế tham chiếu có power 65,9% ở hiệu ứng FAR +10 điểm, và sai số loại I tại biên sensitivity là 7,8%. Giữ nguyên v3, chưa mở chạy prospective. [Báo cáo P5, ma trận và phép tái lập](research/evidence_contract/P5_STATISTICAL_FEASIBILITY_VI.md)

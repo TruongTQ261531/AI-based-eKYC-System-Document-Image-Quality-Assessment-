@@ -1,5 +1,9 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## Sau P6 · 22/11/2026
+
+D1–D3 đã quyết định. Đã xác minh nguồn và vùng của 110 candidate/40 ID. Ưu tiên xử lý quyền và đối chiếu nội dung của 45 candidate/24 ID có biến đổi phù hợp về hình học. Với 65 candidate còn lại, cần tìm biến đổi lịch sử bổ sung đạt tiêu chí. Đầu vào cho bước con người là ảnh/crop đã gắn hash, hai đề xuất độc lập theo từng candidate, phân xử có căn cứ và D10. Đóng dấu Round 1 cần authority round_owner và chữ ký thực. [Kết quả và điều kiện chuyển nhóm](C2_QUALIFICATION_VI.md) · [Round 1](ROUND1_CLOSURE_20261122_VI.md)
+
 ## Sau P5B · 21/11/2026
 
 Ưu tiên mô tả các chuyển tiếp mà D4 cho phép, số cảnh báo rút và số lỗi có nhãn bị hoãn theo loại nguồn. Giữ GO_PREPARATORY_ONLY và NO_GO_SUPERIORITY. Quyền dữ liệu, reference, truth và tỷ lệ can thiệp thực sự chạm nguồn vẫn đang mở. [Quyết định P5B](P5B_STATISTICAL_CALIBRATION_VI.md)

@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "log_sha256": "95ccb30db02ed98941eb51c69e66bfd79971d176bb62d309d72e4e80dfbff835",
+  "seconds": 86.08,
+  "suite": "full",
+  "summary": "638 passed, 6 subtests passed in 83.64s (0:01:23)",
+  "tests": [
+    "all Evidence Contract tests"
+  ]
+}

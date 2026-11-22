@@ -1,5 +1,9 @@
 # Gửi cho người đánh giá độc lập
 
+## Sau P6 · 22/11/2026
+
+Đã đóng thu nhận Round 1 ngày 21/11 với AUTHOR, R02 và R03. Cả ba hoàn tất 86/86 mục và 46/46 ca. Người đến sau thuộc Round 2 hoặc amendment. Organizer giữ riêng bảng bất đồng cho người phân xử. Đối với từng reference C2, R02 và R03 phải đề xuất riêng và khai exposure của chính candidate. [Biên bản Round 1](ROUND1_CLOSURE_20261122_VI.md)
+
 **Ngày 20/11, R02 và R03 đã nộp đủ hai pha.** Phần thu phiếu của hai người chấm đã hoàn tất. Chủ dự án đang chờ chốt vòng và phân xử.
 
 **Mốc 17/11 · [R02 đã hoàn tất cả hai pha](R02_PHASE2_REVIEW_INTAKE_20261117.md)**,
