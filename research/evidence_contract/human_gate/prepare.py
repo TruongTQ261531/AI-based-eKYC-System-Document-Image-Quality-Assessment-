@@ -135,6 +135,26 @@ def cluster_metrics(rows,issued):
         eligible=pair([r for r in rows if all(v=='PASS' for v in r['conditions'].values())]),conditions=conditions)
 
 
+def write_packages(dest,items,assets,source_docs,scope='C2_MASTER_45'):
+    sets={k:set() for k in ('provider_annotations','original_frames','derived_frames','region_crops','review_workspaces')}
+    sets['provider_annotations'].update(item['template_sha256'] for item in items)
+    for item in items:
+        for side,key in [('before','original_frames'),('after','derived_frames')]:
+            sets[key].add(item['full'][side]['file'])
+        sets['region_crops'].update(r['sha256'] for r in item['regions'] if 'sha256' in r)
+    packages={}
+    for role in ('R02','R03'):
+        manifest=render(dest/role,role,items,assets,scope=scope)
+        save_new(dest/(role+'_manifest.json'),manifest)
+        packages[role]=digest(manifest)
+        sets['review_workspaces'].add(packages[role])
+    rights=[dict(artifact=k,version_digest=digest(sorted(v)),members=sorted(v),decisions=dict(PENDING),
+                 authority_of_record=None,required_approver='PROJECT_OWNER_D10',evidence=source_docs)
+            for k,v in sets.items()]
+    save_new(dest/'artifact_rights.json',rights)
+    return packages,rights
+
+
 def prepare(dest, signed=None):
     evidence,baseline,draft,checks=preflight()
     trust=production_trust()
@@ -155,22 +175,7 @@ def prepare(dest, signed=None):
     if packet is not None:
         save_new(dest/'signed_round1.json',dict(envelope=signed,packet=packet,signed_envelope_sha256=digest(signed)))
     save_new(dest/'queue.json',items)
-    sets={k:set() for k in ('provider_annotations','original_frames','derived_frames','region_crops','review_workspaces')}
-    sets['provider_annotations'].add(archive)
-    for item in items:
-        for side,key in [('before','original_frames'),('after','derived_frames')]:
-            sets[key].add(item['full'][side]['file'])
-        sets['region_crops'].update(r['sha256'] for r in item['regions'] if 'sha256' in r)
-    packages={}
-    for role in ('R02','R03'):
-        manifest=render(dest/role,role,items,assets)
-        save_new(dest/(role+'_manifest.json'),manifest)
-        packages[role]=digest(manifest)
-        sets['review_workspaces'].add(packages[role])
-    rights=[dict(artifact=k,version_digest=digest(sorted(v)),members=sorted(v),decisions=dict(PENDING),
-                 authority_of_record=None,required_approver='PROJECT_OWNER_D10',evidence=checks['upstream_rights'])
-            for k,v in sets.items()]
-    save_new(dest/'artifact_rights.json',rights)
+    packages,rights=write_packages(dest,items,assets,checks['upstream_rights'])
     # A fresh directory holds only unissued preparation artifacts; no IFV adjudications are imported.
     issued={r['candidate_id'] for r in items}
     left=[r for r in all_rows if r['candidate_id'] not in issued]

@@ -121,3 +121,7 @@ cost benefit hoặc confirmatory superiority. [Quyết định đầy đủ](REV
 ## Kiểm toán D10 ngày 23/11/2026
 
 Đã nối 24/24 ảnh với manifest Smart Engines FTP. Hai workspace nguyên gói ở mức BLOCKED_RIGHTS do thiếu căn cứ quyền cho mẫu Hy Lạp (8 ca / 6 giấy tờ). Chủ dự án có thể xin xác nhận hoặc xét riêng phiên bản 37 ca / 18 giấy tờ sau kiểm quyền và lập digest mới. Hiện 0/45 được cấp, lưu phiếu mới đang chờ. GO_PREPARATORY_ONLY, NO_GO_SUPERIORITY, P5B INFEASIBLE và TASK 6B/7B blocked. [Phiếu trình chủ dự án](D10_OWNER_APPROVAL_PACKET_VI.md) · [Receipt](D10_AUDIT_VERIFICATION.json)
+
+## C2-37 · 23/11/2026
+
+Chủ dự án đối chiếu quyền chân dung nhúng và điều kiện tiếp nhận, quyết định D10 cho đúng hai digest workspace 37, phạm vi lưu phản hồi và authority/closure. Chỉ sau khi đủ quyền mới giao riêng và thu proposal thật. Có thể tiếp tục review endpoint, sensitivity với truth thiếu và tài liệu tái lập. [Hồ sơ D10 của 37](C2_37_D10_VI.md)

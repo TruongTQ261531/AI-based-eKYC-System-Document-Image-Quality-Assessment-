@@ -19,3 +19,10 @@
 | Protocol ứng viên đã đạt tiêu chí superiority trong trần 200 ID | Ba thủ tục, kịch bản tham chiếu P5B đã ghi trước | UNSUPPORTED | P5B kết luận INFEASIBLE ở cả calibration và held-out. P6 không tạo thêm kết quả thống kê. [P5B](P5B_STATISTICAL_CALIBRATION_VI.md) |
 
 **Hướng sau P6.** Tiếp tục characterization với hai mẫu số riêng cho controls và historical replay. Nếu sau này cần một benchmark độc lập cho các LoRA đã kiểm, lập amendment ấn định checkpoint, khung test chưa dùng lúc fit, nguyên tắc loại ID/pixel/parent và quyền sử dụng trước khi thu hoặc chấm. Với pretraining ngoài, yêu cầu manifest có thể đối chiếu hoặc giữ kết luận UNKNOWN. Chưa mở một benchmark như vậy.
+
+## C2-37 · 23/11/2026
+
+| Claim tại mốc 23/11 | Phạm vi | Trạng thái | Căn cứ |
+|---|---|---|---|
+| Có thể dựng và kiểm hai gói không chứa tài sản của sáu giấy tờ bị loại | 37 candidate / 18 ID, 155 ảnh mỗi gói, 74 form trống | PREPARED_TECHNICAL_37 | [Receipt kỹ thuật](human_gate/receipts/c2_37_20261123/verification.json) |
+| Có human truth hoặc chứng minh hiệu quả thực tế trên C2-37 | 0 proposal, 0 approved reference | Chưa có căn cứ | [Protocol mô tả](C2_37_ANALYSIS_PROTOCOL_VI.md) |

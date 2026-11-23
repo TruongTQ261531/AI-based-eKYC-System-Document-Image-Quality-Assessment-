@@ -1,0 +1,287 @@
+{
+  "acquisition_sha256": "6e5a137282fde408fbb6f620eb2adb928ab35cf0ed9d747c8774ea60a57f9f9c",
+  "assessor_sharing": "REVIEW_ACCESS_PENDING",
+  "baseline": "10177b1dc72dde35d98a943c92022c5416851744",
+  "forms_per_workspace": 37,
+  "held": {
+    "candidates": 8,
+    "physical_ids": 6
+  },
+  "images_per_workspace": 155,
+  "master_aggregate_sha256": "e905d29584e5579047a3834fe5089ba19bf6034cc162a44ce49ddbf74cd6a2a4",
+  "owner_approval": null,
+  "package_sha256": {
+    "R02": "32863c2bb639e27f52fe0e3a301de1eb655610d3479e7caf303243994ed64cfe",
+    "R03": "212e9c1c894496d1d2cc6bc0b7f1d225b011807b97658899dd15c53389d2fcc4"
+  },
+  "queue_sha256": "7ceabd648278be594c9f66d9a32f974ed010fdcc37abc59c4727d6633ed7622d",
+  "rights": [
+    {
+      "artifact": "provider_annotations",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 1,
+      "version_digest": "3977845dd9d7678539e1639c0e1d340747ea57ddd9cd344a20ab6a29b8f472bd"
+    },
+    {
+      "artifact": "original_frames",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 18,
+      "version_digest": "eb63872bc7aadac517ef4bb50f733e2a5c08ea13c97fa9e4281b14b9b9deabac"
+    },
+    {
+      "artifact": "derived_frames",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 27,
+      "version_digest": "4824d097d68bbbf7942dcc573fbcb8f7be20ee481bd7d4f13e52e9a04634fd58"
+    },
+    {
+      "artifact": "region_crops",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 110,
+      "version_digest": "3de11e25b32f2adbe167aeb0670c53a4442b08fdf9318979609f85505de786d6"
+    },
+    {
+      "artifact": "review_workspaces",
+      "authority_of_record": null,
+      "decisions": {
+        "aggregate_release": "AGGREGATE_ONLY_PERMITTED",
+        "assessor_sharing": "REVIEW_ACCESS_PENDING",
+        "image_release": "RELEASE_PENDING",
+        "internal_use": "INTERNAL_USE_PERMITTED",
+        "review_retention": "RETENTION_PENDING"
+      },
+      "evidence": {
+        "license.txt": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d",
+        "readme.txt": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+      },
+      "required_approver": "PROJECT_OWNER_D10",
+      "unique_members": 2,
+      "version_digest": "1057ff9baff0c3846eb09a986328186996e58a0c658447844a1d5c21cf1bacf8"
+    }
+  ],
+  "rights_file_sha256": "31bf62f98c7c970989dd57b8c393bd39b8c763f0cc3eb4b244c6651168381358",
+  "scientific_gate": "GO_PREPARATORY_ONLY",
+  "scope": "C2_37_PROPOSED",
+  "selected": {
+    "adjudicated": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "approved": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "conditions": {
+      "backup_supported_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 37,
+          "physical_ids": 18
+        }
+      },
+      "backup_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 37,
+          "physical_ids": 18
+        }
+      },
+      "distinct_sources": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 37,
+          "physical_ids": 18
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "primary_removed_after": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 37,
+          "physical_ids": 18
+        }
+      },
+      "primary_supported_before": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 37,
+          "physical_ids": 18
+        }
+      },
+      "provenance_verified": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 37,
+          "physical_ids": 18
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "reference_approved": {
+        "FAIL": {
+          "candidates": 37,
+          "physical_ids": 18
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 0,
+          "physical_ids": 0
+        }
+      },
+      "semantic_equality_approved": {
+        "FAIL": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "PASS": {
+          "candidates": 0,
+          "physical_ids": 0
+        },
+        "UNKNOWN": {
+          "candidates": 37,
+          "physical_ids": 18
+        }
+      }
+    },
+    "eligible": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "missing_d10": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "observations_received": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "prepared": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "scope": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "semantic_approval_missing": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "shareable": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "two_proposals": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "waiting_both_prepared": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "waiting_one": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "without_any_proposals": {
+      "candidates": 37,
+      "physical_ids": 18
+    }
+  },
+  "selection_sha256": "60e9e054bb6502261fadd3b533364f6607faa9daeeec7d4039880299fe45cddc",
+  "source_precision": {
+    "DAY_MONTH_FOUR_DIGIT_YEAR": 26,
+    "LITERAL_IDENTIFIER": 11
+  },
+  "type_mapping_sha256": "a41152727a918b51dc0389c9c9a6385dee2e3d9fc79cb87a9719e606c4045ed5"
+}

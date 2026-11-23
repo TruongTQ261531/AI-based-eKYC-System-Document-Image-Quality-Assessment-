@@ -176,3 +176,7 @@ Hạn abstract **22/02**, paper **01/03/2027**, AoE; tối đa **10+2 trang**.
 Chưa quyết định chuyển track. Nhánh A+B giữ exploratory. Phần đánh giá cá
 nhân của bạn ở cả hai pha được ghi nhận DONE. Việc còn cần nguồn lực con
 người là reference độc lập phù hợp claim; không tiếp tục chờ phiếu đã nhận.
+
+## C2-37 · 23/11/2026
+
+Mốc chuẩn bị kỹ thuật cuối tháng 11 đã đạt trên 37 ca / 18 ID. [Receipt kỹ thuật](human_gate/receipts/c2_37_20261123/verification.json). Mốc chấm đầu tháng 12 phụ thuộc D10/authority; mốc phân tích tiếp theo phụ thuộc proposal, adjudication và reference thật. Tiếp tục nhánh mô tả, không mở prospective hoặc bổ sung tám ca theo kết quả.

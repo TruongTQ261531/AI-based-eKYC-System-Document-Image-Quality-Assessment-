@@ -1,0 +1,64 @@
+{
+  "approved_references": 0,
+  "assessor_sharing": "REVIEW_ACCESS_PENDING",
+  "eligible_candidates": 0,
+  "node_log_sha256": "aed42a69658c56b47495c30c8e2a21a563d00341c437914f0b1759252bd58c53",
+  "node_tests_passed": 15,
+  "p5b": "INFEASIBLE",
+  "protocol_sha256": "34977940c0284dacb5ea3b3e488a8833acef902f4f034aa683441bfd2df78478",
+  "replayed_identical_files": {
+    "c2_37_20261123": [
+      "aggregate.json",
+      "verification.json",
+      "R02_manifest.json",
+      "R03_manifest.json",
+      "queue.json",
+      "selection.json",
+      "artifact_rights.json"
+    ],
+    "human_20261122144027Z": [
+      "aggregate.json",
+      "artifact_rights.json",
+      "queue.json",
+      "R02_manifest.json",
+      "R03_manifest.json"
+    ]
+  },
+  "scientific_gate": "GO_PREPARATORY_ONLY",
+  "status": "PREPARED_TECHNICAL_37",
+  "superiority": "NO_GO_SUPERIORITY",
+  "task_6b_7b": "BLOCKED",
+  "tests": {
+    "full": {
+      "exit_code": 0,
+      "log_sha256": "056ab0109f70fbedb3098b3d5bf7124dac44121d0f16cbcb0e13646c9f215d4b",
+      "python": "3.11.4",
+      "seconds": 53.91,
+      "suite": "full",
+      "summary": "667 passed, 6 subtests passed in 51.78s",
+      "tests": [
+        "all"
+      ]
+    },
+    "targeted": {
+      "exit_code": 0,
+      "log_sha256": "6ba12aaa497a7f9312d1203ebf604e38cde57356301996617bc14c7c4ece98a5",
+      "python": "3.11.4",
+      "seconds": 3.03,
+      "suite": "targeted",
+      "summary": "82 passed in 1.86s",
+      "tests": [
+        "test_c2_human_gate",
+        "test_post_p6_qualification",
+        "test_reference_workflow",
+        "test_semantic_lineage_c2",
+        "test_c2_evidence_audit",
+        "test_review_agreement",
+        "test_pixel_lineage_audit",
+        "test_c2_37_verify"
+      ]
+    }
+  },
+  "verification_sha256": "61577f9ca40cebc4d6c5bb22287d465705200983dad500103a3e3f075b188c03",
+  "verified_aggregate_sha256": "b60d5ac5f22f880e6fd59030554daeee5c19f1eeb9b86b41d4177bcef4e6e958"
+}

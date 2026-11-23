@@ -1,0 +1,17 @@
+{
+  "aggregate_sha256": "b60d5ac5f22f880e6fd59030554daeee5c19f1eeb9b86b41d4177bcef4e6e958",
+  "asset_files_per_workspace": 156,
+  "excluded_asset_or_form_matches": 0,
+  "excluded_candidates": 8,
+  "excluded_physical_ids": 6,
+  "forms_per_workspace": 37,
+  "images_per_workspace": 155,
+  "package_manifests_checked": 2,
+  "retained_candidates": 37,
+  "retained_physical_ids": 18,
+  "review_access": "REVIEW_ACCESS_PENDING",
+  "rights_versions_checked": 5,
+  "status": "VERIFIED_TECHNICAL_37",
+  "total_forms": 74,
+  "verified_master_aggregate_sha256": "e905d29584e5579047a3834fe5089ba19bf6034cc162a44ce49ddbf74cd6a2a4"
+}

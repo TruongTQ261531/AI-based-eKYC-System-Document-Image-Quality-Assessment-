@@ -1,0 +1,25 @@
+{
+  "baseline": "10177b1dc72dde35d98a943c92022c5416851744",
+  "private_matches": 0,
+  "public_blob_sha256_excluding_self": {
+    "research/evidence_contract/C2_37_ANALYSIS_PROTOCOL_VI.md": "34977940c0284dacb5ea3b3e488a8833acef902f4f034aa683441bfd2df78478",
+    "research/evidence_contract/C2_37_D10_VI.md": "d46dd000d6a8b3099574dde49cfa44b59f71979e98aaa8b327961218d0f9b620",
+    "research/evidence_contract/C2_37_FIRST_CONTINUATION_VI.md": "554e41bf911314352740affa36d75c38f2ac8883260c79951dfd73965265b079",
+    "research/evidence_contract/EASE2027_ROADMAP_VI.md": "4e3f7e09ba2496d84f802d18ae487db1a5c6b41ba9752e7e86e431e3eae58ff8",
+    "research/evidence_contract/MASTER_EXECUTION_STATUS.md": "8d8d9ae1e583c5384ed45009e4a3c810ec75eac177dba90cb8186bb51f4a2c02",
+    "research/evidence_contract/NEXT_ACTIONS.md": "ac890b033d006524f4129660629b575811fb64b6684a7009a2ff6199484daaeb",
+    "research/evidence_contract/P6_CLAIM_TO_EVIDENCE_MATRIX.md": "2b82191d025b3e9e9f3758c376015363d822d7f7cbaa7cf1ff593a1d99cd53e0",
+    "research/evidence_contract/human_gate/package.py": "52a0ea7a4817d59d278c4f388f55dcfda03c1932f8dc040bcaae740be7c98163",
+    "research/evidence_contract/human_gate/prepare.py": "f38696f91f58242f9ad598c1183fb11f6bdb819504dfd5d9eb30bb8ec8404eb1",
+    "research/evidence_contract/human_gate/prepare37.py": "5efee85332599be1666b7a8c8900c1eb5e185c60cc65667283455fd7cf0a9939",
+    "research/evidence_contract/human_gate/receipts/c2_37_20261123/REPLAY.md": "35aa5a28257d23fc6df6ffcd83acceaed89accddcdaf1c4ee3f0913e8e15add4",
+    "research/evidence_contract/human_gate/receipts/c2_37_20261123/aggregate.json": "b60d5ac5f22f880e6fd59030554daeee5c19f1eeb9b86b41d4177bcef4e6e958",
+    "research/evidence_contract/human_gate/receipts/c2_37_20261123/scan.py": "f6818c61733cc1b05c30913ec9f62436722be4f5a1aa0922e6ba219347ced0d9",
+    "research/evidence_contract/human_gate/receipts/c2_37_20261123/validation.json": "f71d664343e97f45e6ccdbbeac0c5b09a152a1acf798464679d96b9b21006fe4",
+    "research/evidence_contract/human_gate/receipts/c2_37_20261123/verification.json": "61577f9ca40cebc4d6c5bb22287d465705200983dad500103a3e3f075b188c03",
+    "research/evidence_contract/human_gate/verify37.py": "6a3f43180972f006499a6f7639be4d7dc9af864a6e1bb038b335b4eb9139022e",
+    "research/evidence_contract/tests/test_c2_37_verify.py": "ef5a43f050b8ce5304223d635296d4c3b38ca5905d863ec64c644437a12e6e8c"
+  },
+  "public_files_including_receipt": 18,
+  "status": "RELEASE_SCAN_VERIFIED"
+}

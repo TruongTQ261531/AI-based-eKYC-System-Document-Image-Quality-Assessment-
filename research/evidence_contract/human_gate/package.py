@@ -48,7 +48,8 @@ document.addEventListener('submit', function (event) {
 """
 
 
-def render(folder, assessor, items, assets):
+def render(folder, assessor, items, assets, *, scope='C2_MASTER_45'):
+    need((scope, len(items)) in {('C2_MASTER_45',45),('C2_37_PROPOSED',37)},'Unexpected package scope')
     folder.mkdir()
     (folder/'assets').mkdir()
     names={}
@@ -65,8 +66,14 @@ def render(folder, assessor, items, assets):
         'Trang chạy ngoại tuyến, không tự lưu hoặc gửi câu trả lời.</p>',
         '<p>Nguồn MIDV-2020, Bulatov và cộng sự, Computer Optics 46(2), 2022. '
         'CC BY-SA 2.5. Chân dung tổng hợp từ Generated Photos. Các ảnh dẫn xuất đã cắt/che vùng.</p>']
+    if scope == 'C2_37_PROPOSED':
+        sections.append('<p>C2-37 · MIDV-2020: A Comprehensive Benchmark Dataset for Identity Document Analysis. '
+                        'DOI 10.18287/2412-6179-CO-1006. Ảnh và dẫn xuất: https://creativecommons.org/licenses/by-sa/2.5/. '
+                        'Chân dung: Generated Photos (https://generated.photos/). Mẫu nền: Government of Azerbaijan, '
+                        'Government of Latvia, Government of Serbia / Twofortnights / Wikimedia Commons. Nguồn: EdisonTD. '
+                        'Ảnh dẫn xuất do nhóm nghiên cứu cắt/che; crop trích vùng body và MRZ.</p>')
     for n,item in enumerate(items,1):
-        sections.append(f'<details><summary>{n}/45 · {escape(item["field"])} · {item["candidate_id"]}</summary>')
+        sections.append(f'<details><summary>{n}/{len(items)} · {escape(item["field"])} · {item["candidate_id"]}</summary>')
         sections.append(f'<form data-assessor="{assessor}" data-candidate="{item["candidate_id"]}" data-item="{digest(item)}">')
         sections.append(select('exposure',PROPS['exposure']['enum']))
         sections.append('<p>Trường body '+escape(item['native_key'])+' · '+escape(item['source_precision']['body'])+
