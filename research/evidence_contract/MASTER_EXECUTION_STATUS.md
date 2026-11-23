@@ -285,3 +285,7 @@ bảo toàn; kiểm thử, gói tổng hợp và hash cuối lượt nằm trong
 Đọc [NEXT_ACTIONS](NEXT_ACTIONS.md) để tiếp tục reference/adequacy. Kết quả kiểm thử
 và bảo toàn của mốc này nằm trong
 [completion manifest](execution/master_01/development_20261116/completion_manifest.json).
+
+## Kiểm toán D10 ngày 23/11/2026
+
+Đã nối 24/24 ảnh với manifest Smart Engines FTP. Hai workspace nguyên gói ở mức BLOCKED_RIGHTS do thiếu căn cứ quyền cho mẫu Hy Lạp (8 ca / 6 giấy tờ). Chủ dự án có thể xin xác nhận hoặc xét riêng phiên bản 37 ca / 18 giấy tờ sau kiểm quyền và lập digest mới. Hiện 0/45 được cấp, lưu phiếu mới đang chờ. GO_PREPARATORY_ONLY, NO_GO_SUPERIORITY, P5B INFEASIBLE và TASK 6B/7B blocked. [Phiếu trình chủ dự án](D10_OWNER_APPROVAL_PACKET_VI.md) · [Receipt](D10_AUDIT_VERIFICATION.json)

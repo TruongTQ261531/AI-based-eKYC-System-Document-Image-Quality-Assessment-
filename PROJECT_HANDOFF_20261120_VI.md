@@ -158,3 +158,7 @@ Lệnh đầy đủ và output hash của mốc P1 được ghi trong p1_full_te
 ## Snapshot ngắn để người nhận bắt đầu
 
 Mốc P1 ban đầu có 579 tests + 6 subtests PASS. Sau commit `46af24d`, đã rà soát D4 và kiểm lại 144 cặp trên 72 ca dựng sẵn. Cả 16 cặp có khác biệt đều thuộc nhóm can thiệp kiểm tra literal MRZ. Việc kỹ thuật tiếp theo là đối chiếu pixel/near-duplicate và truy nguồn các asset được phép dùng, sau đó kiểm tra nguồn hỗ trợ C2. Phiếu pha 2 của R03 đã được tiếp nhận và đối chiếu. Scientific gate giữ ở `NO_GO_SUPERIORITY`.
+
+## Kiểm toán D10 ngày 23/11/2026
+
+Đã nối 24/24 ảnh với manifest Smart Engines FTP. Hai workspace nguyên gói ở mức BLOCKED_RIGHTS do thiếu căn cứ quyền cho mẫu Hy Lạp (8 ca / 6 giấy tờ). Chủ dự án có thể xin xác nhận hoặc xét riêng phiên bản 37 ca / 18 giấy tờ sau kiểm quyền và lập digest mới. Hiện 0/45 được cấp, lưu phiếu mới đang chờ. GO_PREPARATORY_ONLY, NO_GO_SUPERIORITY, P5B INFEASIBLE và TASK 6B/7B blocked. [Phiếu trình chủ dự án](research/evidence_contract/D10_OWNER_APPROVAL_PACKET_VI.md) · [Receipt](research/evidence_contract/D10_AUDIT_VERIFICATION.json)

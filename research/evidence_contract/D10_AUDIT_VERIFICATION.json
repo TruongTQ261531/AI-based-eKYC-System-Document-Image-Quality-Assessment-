@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-23",
+  "baseline": "d0c8e8b915aa5d6fc152406763a6c8a965dbddd9",
+  "source_documents": [
+    {
+      "source": "ftp://smartengines.com/midv-2020/license.txt",
+      "bytes": 439,
+      "sha256": "3b6bc8eb8a4a6bba41619051803991d9de949f7f722eee30bc0954c7b38aed7d"
+    },
+    {
+      "source": "ftp://smartengines.com/midv-2020/readme.txt",
+      "bytes": 9576,
+      "sha256": "02b2b1b562a97c6cfec9cc2986dc55dd711ef20b92454150a072815373d07eb4"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "url": "https://l3i-share.univ-lr.fr/MIDV2020/midv2020.html",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "1ccb3e4fe349f845dad26648e27e13d7c8cde480f596ca5766aca7cdb4bdf3fb"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "1c955999ff3c4626d4c96ea2dade89148d9cf6dd6e58bd9c88a293620a45475d"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/2.5/legalcode",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "aaaca68768aa0f5a127ad3c45f9ad84aef6fe1cdf2dcc791cc90dec14cd86a32"
+    },
+    {
+      "url": "https://www.computeroptics.ru/KO/PDF/KO46-2/460212.pdf",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "3ad272277b779c37dfd612f63c5ed0c0aa1b8f274597139aa893cc95c48e9528"
+    },
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdxB1gvdVlRcARUlMolTJzyqY93XBZHhwiBwkDx8BDyMIPWIg/closedform",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "190372ab8b93bb402a9696ce43c14c69b19b01992f696e02fa68d4bdc07bae6a"
+    },
+    {
+      "url": "https://generated.photos/terms-and-conditions",
+      "format": "cached web-tool text extract, not original response bytes",
+      "sha256": "4b5a88ba224361315425f07f9bde5412d23ef155cc2f9980001b77d6a24b0aa4"
+    },
+    {
+      "source": "Wikimedia Commons API: Greek passport biodata page.png",
+      "format": "response bytes",
+      "sha256": "ada4e2da0cae9cd3a3136a5d8f2810f71f43f9db9c5a1bc45d55a3a77e004def"
+    },
+    {
+      "source": "Wikimedia Commons API: LR Pases 3. lapa.jpg",
+      "format": "response bytes",
+      "sha256": "25cdf07121f74f2d4c1fc66c0c6deb0aed4ba0259a70d30fecd8540d67491cf0"
+    },
+    {
+      "source": "Wikimedia Commons API: Passport of Serbia ID.jpg",
+      "format": "response bytes",
+      "sha256": "bc551572ef898b9575b3c5125250d426c7ce2e8cf709ec7c2e9cf9f11432282e"
+    },
+    {
+      "source": "Wikimedia Commons API: The data page of the Azerbaijani biometric passport.jpg",
+      "format": "response bytes",
+      "sha256": "25adde0eeba3847ede2cc9785196d2433b14a8f9416d41493a5baa876e8d0c12"
+    },
+    {
+      "url": "ftp://smartengines.com/midv-500/documents.pdf",
+      "format": "original bytes",
+      "sha256": "afdf190963ed5c4f1183a970d9355b624bd5472226fca5dc386356fdddd04572"
+    },
+    {
+      "url": "ftp://smartengines.com/midv-2020/md5.txt",
+      "format": "original bytes",
+      "sha256": "13a39b97deb00ca6c4f195ee1b557dbb15ef2c76743f43ade8bae995a2c81506"
+    }
+  ],
+  "independent_review": "Second review of FTP documents, four attributed Commons sources, access form, CC and portrait terms. Greek deletion log 390695606 reconciled.",
+  "template_block_bytes": 5242880,
+  "source_photos_matched": 24,
+  "rights_manifest_sha256": "1317a5b4957b9908562dad198e01e38617f808625b7eb0535278ff462398c44b",
+  "technical_replay": "human_gate.verify human_20261122144027Z: VERIFIED_TECHNICAL",
+  "rights_versions_checked": 5,
+  "verified_member_counts": [
+    1,
+    24,
+    34,
+    140,
+    2
+  ],
+  "tests": {
+    "targeted": {
+      "summary": "72 passed in 2.89s",
+      "exit_code": 0,
+      "log_sha256": "abddeddbe1f065704593da2d9dafcdca53a69f3e9a7dadbb8822334d945f2044"
+    },
+    "full": {
+      "summary": "657 passed, 6 subtests passed in 65.52s (0:01:05)",
+      "exit_code": 0,
+      "log_sha256": "33ac6edf96e8ee1ad6b65a712bd7b3a73fa749d9d6a98ad6eb63d6ef90e94a9f"
+    }
+  },
+  "private_release_scan": {
+    "baseline": "d0c8e8b915aa5d6fc152406763a6c8a965dbddd9",
+    "allowlisted_public_files_including_receipt": 10,
+    "private_path_or_identifier_matches": 0,
+    "method": "Scan staged added text against frozen private candidate IDs, image and crop paths, physical IDs, image member digests and raw payload indicators. Check explicit path allowlist and absence of deletions. Repeat with staged receipt."
+  },
+  "staged_blob_sha256_excluding_self": {
+    "PROJECT_HANDOFF_20261120_VI.md": "02c2b489363c9297e8b1a495d3ea3a7f1e3be37d9a4f6468b56bb08d646b0f88",
+    "research/evidence_contract/C2_45_D10_RIGHTS_VI.md": "5fc0160393ad5fc59abd829dac71c193d6ba4bf3c69b7ba5109c560e735b8279",
+    "research/evidence_contract/D10_OWNER_APPROVAL_PACKET_VI.md": "6c130fdbb9ebd6e405b981c0f2d38514a983398f1bd32b94bb2425a84dd227f3",
+    "research/evidence_contract/D10_RIGHTS_RISK_MATRIX.json": "8a92946fe3fa742aad204ce98e659faa7497fdc38db4f54af9b9bd06292918bc",
+    "research/evidence_contract/MASTER_EXECUTION_STATUS.md": "6527a7f194b69b515f84060c8c1364e70824ca70d3dd5c63401b1b805bdcf9db",
+    "research/evidence_contract/MIDV2020_ACQUISITION_PROVENANCE_VI.md": "119fad7ad947fa8b2d04fa705991d631acf32242fbdcf6e9c0b6291f19fb2a92",
+    "research/evidence_contract/MIDV2020_ATTRIBUTION_AND_DERIVATIVES_VI.md": "a59ed8f2956fe6fa4c7850f61afe00462e45bc3113a3903400f45cb5d545b651",
+    "research/evidence_contract/MIDV2020_LICENSE_AUDIT_VI.md": "59cd7637ab066547e4c2a40ceb28e87bd34d43f8a288cc4b602c6050658fae84",
+    "research/evidence_contract/NEXT_ACTIONS.md": "9029068bb06d46a58c0d2bd3f28747a90f1b13aab02570955ac1a242dba5d020"
+  },
+  "historical_receipts_modified": 0,
+  "research_data_modified": 0,
+  "assessor_sharing": "REVIEW_ACCESS_PENDING",
+  "shareable_candidates": 0,
+  "package_assessment": "BLOCKED_RIGHTS",
+  "owner_approval": null,
+  "review_retention": "RETENTION_PENDING",
+  "image_release": "RELEASE_PENDING"
+}

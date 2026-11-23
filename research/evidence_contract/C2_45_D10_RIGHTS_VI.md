@@ -20,3 +20,7 @@ CC BY-SA 2.5 cho phép chia sẻ và sửa đổi tác phẩm theo điều kiệ
 **Cách đọc trạng thái.** `INTERNAL_USE_PERMITTED` giới hạn ở công việc nội bộ đã giao. `REVIEW_ACCESS_PENDING` chặn việc cấp gói cho assessor. `RETENTION_PENDING` chờ quyết định lưu phản hồi thật. `AGGREGATE_ONLY_PERMITTED` áp dụng cho số đếm, mã và receipt an toàn theo chính sách đồng bộ của dự án. `RELEASE_PENDING` giữ ảnh/crop ngoài GitHub. Chưa ghi nhận quyết định từ chối quyền.
 
 **Đầu ra cần từ chủ dự án.** Lập rights record dẫn hash artifact/phiên bản và căn cứ nguồn, nêu người nhận R02/R03, phạm vi xem riêng, nơi và thời hạn lưu câu trả lời, cách ghi công, quyền phát hành từng loại, người duyệt và ngày hiệu lực. Gắn hash của record vào hồ sơ candidate. Quyền gửi riêng, nếu được cấp, cần được ghi tách khỏi quyền xuất bản supplement.
+
+## Kiểm toán D10 ngày 23/11/2026
+
+Đã nối 24/24 ảnh với manifest Smart Engines FTP. Hai workspace nguyên gói ở mức BLOCKED_RIGHTS do thiếu căn cứ quyền cho mẫu Hy Lạp (8 ca / 6 giấy tờ). Chủ dự án có thể xin xác nhận hoặc xét riêng phiên bản 37 ca / 18 giấy tờ sau kiểm quyền và lập digest mới. Hiện 0/45 được cấp, lưu phiếu mới đang chờ. GO_PREPARATORY_ONLY, NO_GO_SUPERIORITY, P5B INFEASIBLE và TASK 6B/7B blocked. [Phiếu trình chủ dự án](D10_OWNER_APPROVAL_PACKET_VI.md) · [Receipt](D10_AUDIT_VERIFICATION.json)
