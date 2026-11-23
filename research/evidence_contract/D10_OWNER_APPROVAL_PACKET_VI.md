@@ -50,3 +50,5 @@ Thank you,
 [Project owner / institution / contact]
 
 Ưu tiên gửi cho đầu mối Smart Engines trong readme sau khi chủ dự án duyệt. Nếu cần điều khoản riêng sFTP, hỏi đầu mối trên trang L3i về phiên bản form và đối tượng áp dụng. Chỉ chuyển tiếp câu hỏi đến chủ thể quyền liên quan khi bên cung cấp chưa giải đáp được; dùng mã mẫu công khai, không đính kèm ảnh, phiếu hay danh tính.
+
+[Điền phiếu bốn nhóm bằng mã lựa chọn trong chat](D10_OWNER_DECISION_FORM_VI.md).
