@@ -1,0 +1,29 @@
+{
+  "baseline": "197dc57d2dca7978ff6594ba868606fd334dfb74",
+  "scope": "SYNTHETIC_ONLY",
+  "environment": "Cloud Python 3.13.5; pinned reporting.py blob 008fd33ef28d4a9df941b95a9c4f6916096739ea",
+  "blobs": {
+    "c2_37_fixture_v2.py": "d3a84be5dacdf42ac373792cb0a143874d95636f",
+    "test_c2_37_fixture_v2.py": "eb45f027cce52c9c94dc2d8169b74a6a19cf681b",
+    "differential_v2.py": "126bd367ba29cc469e96818d6b8b2d5dd7926fa6"
+  },
+  "unit_tests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "differential": {
+    "panels": 128,
+    "rounded_values": 2688,
+    "checksum": "b3b46e04",
+    "python_executed": true,
+    "js_executed_in_separate_tool_runtime": true,
+    "node_cli_executed": false
+  },
+  "limitations": [
+    "Node CLI attempt failed because v1 CJS files were absent from partial cloud staging directory; full checkout replay deferred G06.",
+    "Checksum is noncryptographic aggregate comparison, not per-value proof.",
+    "No production registry, actual membership, real output, D10 or model execution."
+  ],
+  "model_calls": 0,
+  "training_runs": 0
+}
