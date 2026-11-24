@@ -1,0 +1,837 @@
+{
+  "baseline": "5b70e502d699b0deb129fc8829294de65445e446",
+  "execution": "JavaScript audit function executed on GitHub connector text at pinned baseline; CLI wrapper not executed in organizer",
+  "source_blobs": {
+    "controls": {
+      "path": "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/control_results.json",
+      "git_blob_sha": "d4b3afa50416f3dc5138207321a9d2c2bbe04264"
+    },
+    "controlSummary": {
+      "path": "research/evidence_contract/execution/master_01/d4_development_20261117/controls_01/summary.json",
+      "git_blob_sha": "564d60da386d9b3b91f2ce485cb75c64fb3a8b99"
+    },
+    "historical": {
+      "path": "research/evidence_contract/execution/master_01/d4_development_20261117/historical_01/summary.json",
+      "git_blob_sha": "fc83d5612a46ca6a6e8ec3c8af6c54953c5d2d8c"
+    },
+    "design": {
+      "path": "research/evidence_contract/execution/master_01/p5b_calibration_20261121/design.json",
+      "git_blob_sha": "467889e40a2d7779ffef793d4747bd888e72a965"
+    },
+    "calibration": {
+      "path": "research/evidence_contract/execution/master_01/p5b_calibration_20261121/calibration.json",
+      "git_blob_sha": "fbd39c98678321079843231f9803bbf8b85bfe36"
+    },
+    "heldOut": {
+      "path": "research/evidence_contract/execution/master_01/p5b_calibration_20261121/held_out.json",
+      "git_blob_sha": "4c991c83f073fb42b912e9e258b56cde65461152"
+    },
+    "p5": {
+      "path": "research/evidence_contract/execution/master_01/p5_simulation_20261121/verification.json",
+      "git_blob_sha": "3b21cd236ca1b652403c9f494432e5bea6ce640a"
+    },
+    "p6": {
+      "path": "research/evidence_contract/execution/master_01/p6_integrity_20261121/aggregate.json",
+      "git_blob_sha": "8f98efe4d47be81cf153ceb6a83e73d1f31ff011"
+    },
+    "p6verify": {
+      "path": "research/evidence_contract/execution/master_01/p6_integrity_20261121/verification.json",
+      "git_blob_sha": "49f63171aded847623e515c9c48be06f058ad815"
+    },
+    "ifv": {
+      "path": "research/evidence_contract/execution/master_01/reviewer_intake_20261120_r03_phase2/r02_r03_agreement.json",
+      "git_blob_sha": "1b0168e41aba82ab317f6877dbcdff8ebdb4a3ae"
+    },
+    "ifvAuthor": {
+      "path": "research/evidence_contract/execution/master_01/reviewer_intake_20261120_r03_phase2/author_r03_agreement.json",
+      "git_blob_sha": "2ba1166e08e8ec51334203be23542a71d8dbafef"
+    },
+    "c2": {
+      "path": "research/evidence_contract/human_gate/receipts/c2_37_20261123/aggregate.json",
+      "git_blob_sha": "9ba7bc586f5d16ad07ebe8ead93e86e6da2db0e3"
+    },
+    "c2verify": {
+      "path": "research/evidence_contract/human_gate/receipts/c2_37_20261123/verification.json",
+      "git_blob_sha": "bcc9a577c9304a8123619d47164d8dd73f3a0b88"
+    }
+  },
+  "result": {
+    "scope": "PUBLIC_ROW_RECOUNT_AND_AGGREGATE_ARITHMETIC_ONLY",
+    "checks": 269,
+    "failures": [],
+    "states": [
+      "FAULT",
+      "NO_FAULT",
+      "UNKNOWN",
+      "INVALID_TEST"
+    ],
+    "matrices": {
+      "1": [
+        [
+          23,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "2": [
+        [
+          8,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          49,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ]
+      ]
+    },
+    "divergenceTierPairs": 16,
+    "divergenceControls": 8,
+    "expectationMismatch": 0,
+    "ifv": {
+      "external": {
+        "all": {
+          "pointwise": {
+            "n": 46,
+            "matched": 34,
+            "kappa": 0.6427184466019418
+          },
+          "relation": {
+            "n": 46,
+            "matched": 36,
+            "kappa": 0.6765119549929677
+          }
+        },
+        "diagnostic": {
+          "pointwise": {
+            "n": 4,
+            "matched": 2,
+            "kappa": 0
+          },
+          "relation": {
+            "n": 4,
+            "matched": 2,
+            "kappa": 0
+          }
+        },
+        "primary": {
+          "pointwise": {
+            "n": 42,
+            "matched": 32,
+            "kappa": 0.6695515342250196
+          },
+          "relation": {
+            "n": 42,
+            "matched": 34,
+            "kappa": 0.712820512820513
+          }
+        }
+      },
+      "author": {
+        "all": {
+          "pointwise": {
+            "n": 46,
+            "matched": 33,
+            "kappa": 0.5785764622973925
+          },
+          "relation": {
+            "n": 46,
+            "matched": 34,
+            "kappa": 0.5533980582524272
+          }
+        },
+        "diagnostic": {
+          "pointwise": {
+            "n": 4,
+            "matched": 2,
+            "kappa": 0
+          },
+          "relation": {
+            "n": 4,
+            "matched": 2,
+            "kappa": 0
+          }
+        },
+        "primary": {
+          "pointwise": {
+            "n": 42,
+            "matched": 31,
+            "kappa": 0.6068085106382979
+          },
+          "relation": {
+            "n": 42,
+            "matched": 32,
+            "kappa": 0.5906432748538011
+          }
+        }
+      }
+    },
+    "p5": {
+      "null_sensitivity": {
+        "joint_pass": {
+          "k": 208,
+          "n": 2400,
+          "rate": 0.08666666666666667,
+          "lo": 0.07606083561529436,
+          "hi": 0.09859355237694248
+        },
+        "decision_coverage": {
+          "k": 2269,
+          "n": 2400,
+          "rate": 0.9454166666666667,
+          "lo": 0.9355959489187246,
+          "hi": 0.9538137882146412
+        },
+        "all_fault_sensitivity": {
+          "k": 2192,
+          "n": 2400,
+          "rate": 0.9133333333333333,
+          "lo": 0.9014064476230575,
+          "hi": 0.9239391643847056
+        },
+        "paired_far_difference": {
+          "k": 2299,
+          "n": 2400,
+          "rate": 0.9579166666666666,
+          "lo": 0.9491253268497827,
+          "hi": 0.9652444590338177
+        },
+        "insufficient": {
+          "k": 0,
+          "n": 2400,
+          "rate": 0,
+          "lo": 1.0842021724855044e-19,
+          "hi": 0.001598049990609079
+        }
+      },
+      "effect_grid": {
+        "joint_pass": {
+          "k": 1554,
+          "n": 2400,
+          "rate": 0.6475,
+          "lo": 0.6281645367676133,
+          "hi": 0.6663640384851569
+        },
+        "decision_coverage": {
+          "k": 2259,
+          "n": 2400,
+          "rate": 0.94125,
+          "lo": 0.9311179368011165,
+          "hi": 0.949971784082171
+        },
+        "all_fault_sensitivity": {
+          "k": 2114,
+          "n": 2400,
+          "rate": 0.8808333333333334,
+          "lo": 0.8672589702424086,
+          "hi": 0.8931905150147442
+        },
+        "paired_far_difference": {
+          "k": 2283,
+          "n": 2400,
+          "rate": 0.95125,
+          "lo": 0.9418901829624581,
+          "hi": 0.9591675769210172
+        },
+        "insufficient": {
+          "k": 0,
+          "n": 2400,
+          "rate": 0,
+          "lo": 1.0842021724855044e-19,
+          "hi": 0.001598049990609079
+        }
+      }
+    },
+    "p5b": {
+      "calibration": {
+        "v3": {
+          "power": {
+            "k": 778,
+            "n": 800,
+            "rate": 0.9725,
+            "lo": 0.9587135934055472,
+            "hi": 0.981770368580089
+          },
+          "coverage": [
+            {
+              "k": 753,
+              "n": 799,
+              "rate": 0.9424280350438048,
+              "lo": 0.9240601244506151,
+              "hi": 0.9565620609538642
+            },
+            {
+              "k": 694,
+              "n": 799,
+              "rate": 0.8685857321652065,
+              "lo": 0.8433855491355324,
+              "hi": 0.8902586760458513
+            },
+            {
+              "k": 773,
+              "n": 799,
+              "rate": 0.967459324155194,
+              "lo": 0.9527471230793547,
+              "hi": 0.9776980996888858
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 20,
+              "n": 800,
+              "rate": 0.025,
+              "lo": 0.016241010941098317,
+              "hi": 0.03829892145429392
+            },
+            "null_sensitivity": {
+              "k": 54,
+              "n": 800,
+              "rate": 0.0675,
+              "lo": 0.052100544489878206,
+              "hi": 0.08703318342803158
+            },
+            "null_coverage": {
+              "k": 41,
+              "n": 800,
+              "rate": 0.05125,
+              "lo": 0.038000874036155985,
+              "hi": 0.06878816735843825
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 49,
+              "n": 800,
+              "rate": 0.06125,
+              "lo": 0.04663822513060468,
+              "hi": 0.08005523873987608
+            },
+            {
+              "k": 56,
+              "n": 800,
+              "rate": 0.07,
+              "lo": 0.05429745287534132,
+              "hi": 0.0898123806615401
+            },
+            {
+              "k": 20,
+              "n": 800,
+              "rate": 0.025,
+              "lo": 0.016241010941098317,
+              "hi": 0.03829892145429392
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        },
+        "cluster_t": {
+          "power": {
+            "k": 775,
+            "n": 800,
+            "rate": 0.96875,
+            "lo": 0.9542750723897365,
+            "hi": 0.9787447311674423
+          },
+          "coverage": [
+            {
+              "k": 743,
+              "n": 799,
+              "rate": 0.9299123904881101,
+              "lo": 0.9100765735062756,
+              "hi": 0.9456340932163233
+            },
+            {
+              "k": 684,
+              "n": 799,
+              "rate": 0.8560700876095119,
+              "lo": 0.8300258308078872,
+              "hi": 0.8787068756916161
+            },
+            {
+              "k": 776,
+              "n": 799,
+              "rate": 0.9712140175219024,
+              "lo": 0.9571756766647802,
+              "hi": 0.9807430017080246
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 14,
+              "n": 800,
+              "rate": 0.0175,
+              "lo": 0.010452543513909231,
+              "hi": 0.029159072024568154
+            },
+            "null_sensitivity": {
+              "k": 56,
+              "n": 800,
+              "rate": 0.07,
+              "lo": 0.05429745287534132,
+              "hi": 0.0898123806615401
+            },
+            "null_coverage": {
+              "k": 39,
+              "n": 800,
+              "rate": 0.04875,
+              "lo": 0.03586441780162572,
+              "hi": 0.06594851797399691
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 47,
+              "n": 800,
+              "rate": 0.05875,
+              "lo": 0.04446627494469538,
+              "hi": 0.07725108330681373
+            },
+            {
+              "k": 58,
+              "n": 800,
+              "rate": 0.0725,
+              "lo": 0.05650070581885901,
+              "hi": 0.09258523333699402
+            },
+            {
+              "k": 14,
+              "n": 800,
+              "rate": 0.0175,
+              "lo": 0.010452543513909231,
+              "hi": 0.029159072024568154
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        },
+        "bounded": {
+          "power": {
+            "k": 0,
+            "n": 800,
+            "rate": 0,
+            "lo": 4.336808689942018e-19,
+            "hi": 0.004778876205676033
+          },
+          "coverage": [
+            {
+              "k": 800,
+              "n": 800,
+              "rate": 1,
+              "lo": 0.995221123794324,
+              "hi": 1
+            },
+            {
+              "k": 800,
+              "n": 800,
+              "rate": 1,
+              "lo": 0.995221123794324,
+              "hi": 1
+            },
+            {
+              "k": 800,
+              "n": 800,
+              "rate": 1,
+              "lo": 0.995221123794324,
+              "hi": 1
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            },
+            "null_sensitivity": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            },
+            "null_coverage": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            },
+            {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            },
+            {
+              "k": 0,
+              "n": 800,
+              "rate": 0,
+              "lo": 4.336808689942018e-19,
+              "hi": 0.004778876205676033
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        }
+      },
+      "heldOut": {
+        "v3": {
+          "power": {
+            "k": 1553,
+            "n": 1600,
+            "rate": 0.970625,
+            "lo": 0.9611574098270818,
+            "hi": 0.97783814470071
+          },
+          "coverage": [
+            {
+              "k": 1518,
+              "n": 1599,
+              "rate": 0.949343339587242,
+              "lo": 0.9374767811136825,
+              "hi": 0.959056055675607
+            },
+            {
+              "k": 1381,
+              "n": 1599,
+              "rate": 0.8636647904940588,
+              "lo": 0.845971771007048,
+              "hi": 0.8796146515301431
+            },
+            {
+              "k": 1553,
+              "n": 1599,
+              "rate": 0.9712320200125079,
+              "lo": 0.9618419506762123,
+              "hi": 0.9783633277103286
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 47,
+              "n": 1600,
+              "rate": 0.029375,
+              "lo": 0.022161855299290042,
+              "hi": 0.0388425901729183
+            },
+            "null_sensitivity": {
+              "k": 147,
+              "n": 1600,
+              "rate": 0.091875,
+              "lo": 0.07868236648457982,
+              "hi": 0.1070226838385969
+            },
+            "null_coverage": {
+              "k": 89,
+              "n": 1600,
+              "rate": 0.055625,
+              "lo": 0.0454220201611873,
+              "hi": 0.06795667934842778
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 99,
+              "n": 1600,
+              "rate": 0.061875,
+              "lo": 0.05108664858037474,
+              "hi": 0.07476211141433717
+            },
+            {
+              "k": 149,
+              "n": 1600,
+              "rate": 0.093125,
+              "lo": 0.07984373859677327,
+              "hi": 0.1083553238234228
+            },
+            {
+              "k": 48,
+              "n": 1600,
+              "rate": 0.03,
+              "lo": 0.02270156709719836,
+              "hi": 0.03954988442351967
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        },
+        "cluster_t": {
+          "power": {
+            "k": 1544,
+            "n": 1600,
+            "rate": 0.965,
+            "lo": 0.9548233030508729,
+            "hi": 0.9729491970403316
+          },
+          "coverage": [
+            {
+              "k": 1507,
+              "n": 1599,
+              "rate": 0.9424640400250156,
+              "lo": 0.9299543904831293,
+              "hi": 0.9528528218041667
+            },
+            {
+              "k": 1366,
+              "n": 1599,
+              "rate": 0.8542839274546592,
+              "lo": 0.8361413757879653,
+              "hi": 0.8707282860646895
+            },
+            {
+              "k": 1564,
+              "n": 1599,
+              "rate": 0.9781113195747342,
+              "lo": 0.9697111859121985,
+              "hi": 0.9842197169763356
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 31,
+              "n": 1600,
+              "rate": 0.019375,
+              "lo": 0.013682759307089523,
+              "hi": 0.02736958938896389
+            },
+            "null_sensitivity": {
+              "k": 148,
+              "n": 1600,
+              "rate": 0.0925,
+              "lo": 0.0792629552122823,
+              "hi": 0.10768910115940408
+            },
+            "null_coverage": {
+              "k": 87,
+              "n": 1600,
+              "rate": 0.054375,
+              "lo": 0.044293600210652095,
+              "hi": 0.0665910872019436
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 96,
+              "n": 1600,
+              "rate": 0.06,
+              "lo": 0.04938349238879486,
+              "hi": 0.07272424946038798
+            },
+            {
+              "k": 152,
+              "n": 1600,
+              "rate": 0.095,
+              "lo": 0.0815872393854592,
+              "hi": 0.11035284118026592
+            },
+            {
+              "k": 32,
+              "n": 1600,
+              "rate": 0.02,
+              "lo": 0.014202237741129692,
+              "hi": 0.028097117003433404
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        },
+        "bounded": {
+          "power": {
+            "k": 0,
+            "n": 1600,
+            "rate": 0,
+            "lo": 2.168404344971009e-19,
+            "hi": 0.0023951611922532253
+          },
+          "coverage": [
+            {
+              "k": 1600,
+              "n": 1600,
+              "rate": 1,
+              "lo": 0.9976048388077468,
+              "hi": 1
+            },
+            {
+              "k": 1600,
+              "n": 1600,
+              "rate": 1,
+              "lo": 0.9976048388077468,
+              "hi": 1
+            },
+            {
+              "k": 1600,
+              "n": 1600,
+              "rate": 1,
+              "lo": 0.9976048388077468,
+              "hi": 1
+            }
+          ],
+          "sizes": {
+            "null_far": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            },
+            "null_sensitivity": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            },
+            "null_coverage": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            },
+            "null_joint": {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            }
+          },
+          "marginalSizes": [
+            {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            },
+            {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            },
+            {
+              "k": 0,
+              "n": 1600,
+              "rate": 0,
+              "lo": 2.168404344971009e-19,
+              "hi": 0.0023951611922532253
+            }
+          ],
+          "verdict": "INFEASIBLE"
+        }
+      }
+    },
+    "p6": {
+      "groups": 24,
+      "roles": {
+        "development": 8,
+        "test": 10,
+        "calibration": 6
+      },
+      "adapters": 12,
+      "adapterEvaluations": 44,
+      "importedEvaluations": 8,
+      "trainPresentationsPerRun": [
+        48
+      ],
+      "sameCheckpointOverlap": 0,
+      "upstreamPretrainingUnknown": 24,
+      "independentTruth": 0
+    },
+    "c2": {
+      "candidates": 37,
+      "physicalIds": 18,
+      "approved": 0,
+      "eligible": 0,
+      "shareable": 0
+    },
+    "historical": {
+      "cases": 46,
+      "primary": 42,
+      "physicalIds": 3,
+      "selectiveRisk": null
+    }
+  },
+  "limitations": [
+    "No private bytes, source membership, real human truth, model execution or new Monte Carlo draws independently reproduced.",
+    "P5 independent-replication Wilson summaries; P5B scenario probability masses, count invariants and verdicts, not original simulation rerun.",
+    "Public D4 result rows recounted; frozen evaluator not re-executed."
+  ]
+}
