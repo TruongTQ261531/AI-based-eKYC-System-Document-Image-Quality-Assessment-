@@ -1,0 +1,243 @@
+{
+  "baseline": "7f11f1c17c33d2b6b4e912a271f4773a058efb46",
+  "execution": "Pure JavaScript functions executed in ChatGPT tool runtime; Node wrapper not executed on organizer or CI.",
+  "scope": "SYNTHETIC_ONLY",
+  "tests_passed": 43,
+  "passed": [
+    "complete status",
+    "37 candidates 18 IDs 45 images",
+    "template strata",
+    "field composition",
+    "clusters conserve cases",
+    "transition matrix exact",
+    "coverage includes missing truth",
+    "truth counts conserve",
+    "UNKNOWN distinct from truth missing",
+    "withdrawals conserve",
+    "all fault sensitivity denominator",
+    "missed faults conserve",
+    "FAR delta",
+    "missing truth -> null rates",
+    "all fault -> no FAR",
+    "missing output suppresses metrics",
+    "missing decision suppresses metrics",
+    "zero outputs not UNKNOWN",
+    "reject production",
+    "reject extra field",
+    "reject duplicate case",
+    "reject incomplete cohort",
+    "reject Greek template",
+    "reject changed name",
+    "reject changed checkpoint_sha256",
+    "reject changed config_sha256",
+    "reject changed runtime_sha256",
+    "reject changed profile",
+    "reject duplicate output",
+    "reject extraneous image",
+    "reject wrong arm output",
+    "reject wrong arm reference",
+    "reject wrong tier",
+    "reject wrong endpoint",
+    "reject binary reversal",
+    "reject truth from reader",
+    "reject truth wrong output",
+    "reject approval without adjudication",
+    "reject proposals before rights",
+    "reject duplicate decision",
+    "reject truth string",
+    "no scientific promotion",
+    "missing-truth extrema verified by exhaustive assignment"
+  ],
+  "failed": [],
+  "fixture_summary": {
+    "flow": {
+      "enrolled": 37,
+      "physical_ids": 18,
+      "rights": 37,
+      "two_proposals": 37,
+      "adjudicated": 37,
+      "reference_approved": 37,
+      "eight_conditions_pass": 37,
+      "unique_images_with_output": 45,
+      "unique_images_expected": 45,
+      "paired_outputs": 37,
+      "paired_decisions": 37,
+      "missing_output_candidates": 0,
+      "missing_decisions_given_outputs": 0,
+      "truth_known_in_frame": 25,
+      "missing_truth_in_frame": 12,
+      "frame_coverage": {
+        "k": 37,
+        "n": 37,
+        "value": 1
+      },
+      "physical_ids_in_frame": 18,
+      "availability": {
+        "BOTH_BOUND": 37,
+        "BEFORE_ONLY": 0,
+        "AFTER_ONLY": 0,
+        "NEITHER": 0
+      }
+    },
+    "metrics": {
+      "n": 37,
+      "truth_known": 25,
+      "truth_faults": 13,
+      "truth_nonfaults": 12,
+      "truth_missing": 12,
+      "truth_availability": {
+        "k": 25,
+        "n": 37,
+        "value": 0.6756756756756757
+      },
+      "states": [
+        "FAULT",
+        "NO_FAULT",
+        "UNKNOWN",
+        "INVALID_TEST"
+      ],
+      "asserted_to_checked": [
+        [
+          11,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          5,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      "arms": {
+        "asserted": {
+          "states": {
+            "FAULT": 17,
+            "NO_FAULT": 10,
+            "UNKNOWN": 5,
+            "INVALID_TEST": 5
+          },
+          "coverage": {
+            "k": 27,
+            "n": 37,
+            "value": 0.7297297297297297
+          },
+          "abstention": {
+            "k": 5,
+            "n": 37,
+            "value": 0.13513513513513514
+          },
+          "sensitivity": {
+            "k": 6,
+            "n": 13,
+            "value": 0.46153846153846156
+          },
+          "far": {
+            "k": 5,
+            "n": 12,
+            "value": 0.4166666666666667
+          },
+          "selective_risk": {
+            "k": 9,
+            "n": 18,
+            "value": 0.5
+          },
+          "missed_faults_by_state": {
+            "NO_FAULT": 4,
+            "UNKNOWN": 2,
+            "INVALID_TEST": 1
+          },
+          "sensitivity_missing_truth_bounds": {
+            "minimum": 0.3157894736842105,
+            "maximum": 0.631578947368421,
+            "can_be_undefined": false
+          },
+          "far_missing_truth_bounds": {
+            "minimum": 0.2777777777777778,
+            "maximum": 0.6111111111111112,
+            "can_be_undefined": false
+          }
+        },
+        "checked": {
+          "states": {
+            "FAULT": 11,
+            "NO_FAULT": 5,
+            "UNKNOWN": 16,
+            "INVALID_TEST": 5
+          },
+          "coverage": {
+            "k": 16,
+            "n": 37,
+            "value": 0.43243243243243246
+          },
+          "abstention": {
+            "k": 16,
+            "n": 37,
+            "value": 0.43243243243243246
+          },
+          "sensitivity": {
+            "k": 4,
+            "n": 13,
+            "value": 0.3076923076923077
+          },
+          "far": {
+            "k": 3,
+            "n": 12,
+            "value": 0.25
+          },
+          "selective_risk": {
+            "k": 5,
+            "n": 11,
+            "value": 0.45454545454545453
+          },
+          "missed_faults_by_state": {
+            "NO_FAULT": 2,
+            "UNKNOWN": 6,
+            "INVALID_TEST": 1
+          },
+          "sensitivity_missing_truth_bounds": {
+            "minimum": 0.19047619047619047,
+            "maximum": 0.47058823529411764,
+            "can_be_undefined": false
+          },
+          "far_missing_truth_bounds": {
+            "minimum": 0.15,
+            "maximum": 0.4375,
+            "can_be_undefined": false
+          }
+        }
+      },
+      "far_difference": {
+        "k": 2,
+        "n": 12,
+        "value": 0.16666666666666666
+      },
+      "withdrawn_alarms": 6,
+      "withdrawn_false_alarms": 2,
+      "withdrawn_true_detections": 2,
+      "withdrawn_unknown_truth": 2,
+      "far_difference_missing_truth_bounds": {
+        "minimum": 0.09090909090909091,
+        "maximum": 0.2857142857142857,
+        "can_be_undefined": false
+      }
+    }
+  },
+  "private_inputs_used": 0,
+  "model_calls": 0,
+  "training_runs": 0,
+  "production_references_created": 0
+}
