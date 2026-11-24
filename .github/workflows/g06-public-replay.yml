@@ -1,0 +1,48 @@
+# G06 — CPU-only public artifact replay and fixture tests
+# Runs G02 (public recount, 269 arithmetic checks) and G03 (43 fixture checks).
+# No model downloads, training, inference, private data, or GPU required.
+name: G06 Public Replay
+
+on:
+  push:
+    branches: [antigravity/g06-public-replay]
+    paths:
+      - 'research/evidence_contract/cloud_g01_g03/**'
+      - '.github/workflows/g06-public-replay.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'research/evidence_contract/cloud_g01_g03/**'
+      - '.github/workflows/g06-public-replay.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Record environment
+        run: |
+          echo "node: $(node --version)"
+          echo "os: $(uname -a)"
+          echo "commit: $(git rev-parse HEAD)"
+
+      - name: G02 — Public recount (269 checks)
+        run: node research/evidence_contract/cloud_g01_g03/public_recount.cjs
+
+      - name: G03 — C2-37 fixture tests (43 checks)
+        run: node research/evidence_contract/cloud_g01_g03/test_c2_37_fixture.cjs
+
+      - name: G06 — Regression tests
+        run: node research/evidence_contract/cloud_g01_g03/test_g06_regression.cjs

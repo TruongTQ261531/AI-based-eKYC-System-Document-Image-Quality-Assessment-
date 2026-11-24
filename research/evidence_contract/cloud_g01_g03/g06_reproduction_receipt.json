@@ -1,0 +1,128 @@
+{
+  "task": "G06",
+  "title": "Independent CLI Reproduction and CPU-only CI Validation",
+  "date": "2026-11-24T15:44:00+07:00",
+  "executor": "Antigravity (Claude Opus 4.6)",
+  "baseline_commit": "47fbf848fedb148efa20b9888d22247c59995d98",
+  "branch": "antigravity/g06-public-replay",
+  "environment": {
+    "os": "Microsoft Windows NT 10.0.26300.0",
+    "node_version": "v26.13.1",
+    "runtime": "Node.js CLI on Windows (independent of ChatGPT cloud)",
+    "gpu_used": false,
+    "cuda_used": false,
+    "models_downloaded": false,
+    "private_data_accessed": false
+  },
+  "g02_recount": {
+    "command": "node research/evidence_contract/cloud_g01_g03/public_recount.cjs",
+    "exit_code": 0,
+    "checks": 269,
+    "failures": 0,
+    "scope": "PUBLIC_ROW_RECOUNT_AND_AGGREGATE_ARITHMETIC_ONLY",
+    "input_artifacts": 13,
+    "all_hashes_match_receipt": true,
+    "source_blob_hashes": {
+      "controls": "d4b3afa50416f3dc5138207321a9d2c2bbe04264",
+      "controlSummary": "564d60da386d9b3b91f2ce485cb75c64fb3a8b99",
+      "historical": "fc83d5612a46ca6a6e8ec3c8af6c54953c5d2d8c",
+      "design": "467889e40a2d7779ffef793d4747bd888e72a965",
+      "calibration": "fbd39c98678321079843231f9803bbf8b85bfe36",
+      "heldOut": "4c991c83f073fb42b912e9e258b56cde65461152",
+      "p5": "3b21cd236ca1b652403c9f494432e5bea6ce640a",
+      "p6": "8f98efe4d47be81cf153ceb6a83e73d1f31ff011",
+      "p6verify": "49f63171aded847623e515c9c48be06f058ad815",
+      "ifv": "1b0168e41aba82ab317f6877dbcdff8ebdb4a3ae",
+      "ifvAuthor": "2ba1166e08e8ec51334203be23542a71d8dbafef",
+      "c2": "9ba7bc586f5d16ad07ebe8ead93e86e6da2db0e3",
+      "c2verify": "bcc9a577c9304a8123619d47164d8dd73f3a0b88"
+    },
+    "discrepancies_vs_historical": "NONE — all 269 checks pass, all 13 blob hashes identical to public_recount_receipt.json"
+  },
+  "g03_fixture": {
+    "command": "node research/evidence_contract/cloud_g01_g03/test_c2_37_fixture.cjs",
+    "exit_code": 0,
+    "tests_passed": 43,
+    "tests_failed": 0,
+    "scope": "SYNTHETIC_ONLY",
+    "missing_truth_assignments_enumerated": 4096,
+    "discrepancies_vs_historical": "NONE — all 43 tests pass, fixture_summary matches fixture_receipt.json exactly"
+  },
+  "g06_regression": {
+    "command": "node research/evidence_contract/cloud_g01_g03/test_g06_regression.cjs",
+    "exit_code": 0,
+    "tests_passed": 18,
+    "tests_failed": 0,
+    "categories": [
+      "exit_code_correctness",
+      "no_hardcoded_success",
+      "input_hash_validation",
+      "receipt_integrity",
+      "denominator_verification",
+      "path_portability",
+      "no_gpu_dependencies",
+      "no_network_dependencies",
+      "scope_guard",
+      "input_file_existence",
+      "missing_value_handling"
+    ]
+  },
+  "technical_review": {
+    "hardcoded_success": false,
+    "silent_failures": false,
+    "exit_code_on_failure": true,
+    "denominator_handling": "CORRECT — all denominators derived from actual data counts",
+    "missing_value_handling": "CORRECT — null truth handled with explicit bounds and can_be_undefined",
+    "fixture_assumptions": "CORRECT — synthetic only, production scope rejected",
+    "input_binding": "CORRECT — reader/checkpoint/config/runtime/profile binding enforced",
+    "hash_validation": "CORRECT — git blob SHA1 computed and compared",
+    "path_portability": "PASS — all paths use forward slashes",
+    "private_file_dependencies": false,
+    "gpu_cuda_dependencies": false,
+    "issues_found": []
+  },
+  "ci_workflow": {
+    "file": ".github/workflows/g06-public-replay.yml",
+    "runner": "ubuntu-latest (CPU-only)",
+    "node_version": "22",
+    "permissions": "contents: read",
+    "steps": ["G02 public recount", "G03 fixture tests", "G06 regression tests"],
+    "secrets_used": false,
+    "models_downloaded": false,
+    "self_hosted_runner": false,
+    "actual_run_id": null,
+    "actual_run_status": "NOT_EXECUTED — workflow created but not yet pushed/triggered"
+  },
+  "historical_receipts_preserved": true,
+  "changed_files": [
+    ".github/workflows/g06-public-replay.yml",
+    "research/evidence_contract/cloud_g01_g03/test_g06_regression.cjs",
+    "research/evidence_contract/cloud_g01_g03/g06_reproduction_receipt.json",
+    "research/evidence_contract/cloud_g01_g03/G06_REPORT_20261124_VI.md"
+  ],
+  "scientific_gates": {
+    "GO_PREPARATORY_ONLY": "MAINTAINED",
+    "NO_GO_SUPERIORITY": "MAINTAINED",
+    "P5B_INFEASIBLE": "MAINTAINED",
+    "TASK_6B_7B_BLOCKED": "MAINTAINED",
+    "D10_REVIEW_ACCESS_PENDING": "MAINTAINED",
+    "RETENTION_PENDING": "MAINTAINED",
+    "RELEASE_PENDING": "MAINTAINED",
+    "NO_TRAIN_DECISION": "MAINTAINED",
+    "new_c2_inference": false,
+    "training_performed": false,
+    "private_data_accessed": false,
+    "greek_cases_reopened": false,
+    "reference_truth_generated": false,
+    "thresholds_modified": false,
+    "evidence_fabricated": false
+  },
+  "known_limitations": [
+    "CI workflow created but actual GitHub Actions run not yet triggered — workflow will execute when branch is pushed",
+    "Independent reproduction performed on Windows; CI targets ubuntu-latest for cross-platform validation",
+    "No private bytes, model execution, or human truth independently reproduced — this verifies only public tracked artifacts",
+    "P5/P5B Wilson summaries recounted from stored results, not from new Monte Carlo simulation",
+    "D4 control results recounted from public JSON, frozen evaluator not re-executed"
+  ],
+  "verdict": "PASS"
+}
