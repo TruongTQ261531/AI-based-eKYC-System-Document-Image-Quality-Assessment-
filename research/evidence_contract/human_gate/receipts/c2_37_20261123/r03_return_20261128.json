@@ -1,0 +1,37 @@
+{
+  "schema": "c2-37-return-content-receipt/1",
+  "date_local": "2026-11-28",
+  "scope": "C2_37_PROPOSED",
+  "assessor_code_in_submission": "R03",
+  "status": "CONTENT_VALIDATED_ONLY",
+  "source_sha256": "cf12370d87b287a015dd3be910089b1a6fdef7adaabd2dd2df0ceaa1f5950cdb",
+  "source_bytes": 40283,
+  "source_copy_created": false,
+  "sealed_queue_sha256": "7ceabd648278be594c9f66d9a32f974ed010fdcc37abc59c4727d6633ed7622d",
+  "sealed_r03_manifest_digest": "212e9c1c894496d1d2cc6bc0b7f1d225b011807b97658899dd15c53389d2fcc4",
+  "received": {
+    "forms": 37,
+    "unique_candidates": 37,
+    "missing_candidates": 0,
+    "physical_ids": 18,
+    "forms_passing_schema_item_binding_and_evidence": 37,
+    "matches_sealed_queue_order": true
+  },
+  "local_workspace": {
+    "current_index_matches_manifest": false,
+    "backup_index_matches_manifest": true,
+    "current_static_case_markup_matches_backup": true,
+    "current_case_bindings_match_sealed_queue": true,
+    "current_index_has_bulk_export_and_browser_draft_storage": true,
+    "exact_reviewer_runtime_verified": false
+  },
+  "evidence_use": {
+    "documented_review_access": "REVIEW_ACCESS_PENDING",
+    "documented_retention": "RETENTION_PENDING",
+    "authority_status": "NO_HUMAN_AUTHORITY_CONFIGURED",
+    "authenticated_proposals_from_this_return": 0,
+    "approved_references": 0,
+    "compatible_d4_candidates_in_locked_panel": 0,
+    "scientific_gate": "NO_GO_SUPERIORITY"
+  }
+}

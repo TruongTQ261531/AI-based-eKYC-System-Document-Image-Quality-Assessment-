@@ -1,5 +1,15 @@
 # Các bước tiếp theo sau IFV cá nhân
 
+## C2-37 · Phiếu R03 ngày 28/11/2026
+
+Đã kiểm tra đủ 37/37 ca R03. Bản JSON gốc ở vị trí người dùng cung cấp.
+Để đưa phiếu vào quy trình nghiên cứu, organizer cần ghi quyết định D10 về
+quyền tiếp cận và lưu phiếu theo đúng phiên bản đã dùng, kể cả chức năng lưu
+nháp của giao diện cập nhật. Bước xác thực proposal cần người chấm được chỉ
+định và thẩm quyền registry. Khi có đủ hai đánh giá hợp lệ, tiếp tục đối
+chiếu từng ca trước phân xử theo protocol của panel. [Biên nhận](human_gate/receipts/c2_37_20261123/r03_return_20261128.json)
+· [D10](C2_37_D10_VI.md) · [Protocol](C2_37_ANALYSIS_PROTOCOL_VI.md)
+
 ## C2-45 · Hồ sơ kiểm chứng con người ngày 22/11/2026
 
 Chủ dự án hoàn tất D10 theo năm tập artifact, chỉ định authority và ký payload Round 1. Đã chuẩn bị hai workspace riêng cho 45 candidate/24 ID. Có 0 gói được phép cấp cho assessors, 0 proposal thực và 0 reference được duyệt. Sau khi đủ quyền, R02/R03 khai exposure và nộp từng ca. [Kết quả và hồ sơ bàn giao](C2_45_HUMAN_EVIDENCE_GATE_VI.md)

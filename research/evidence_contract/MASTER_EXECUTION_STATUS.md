@@ -1,5 +1,20 @@
 # EASE 2027 · Master execution
 
+## C2-37 · Kiểm tra phiếu R03 ngày 28/11/2026
+
+Nhận một JSON gộp của R03 cho C2-37. Cả **37/37 phiếu trên 18 giấy tờ** khớp
+danh sách đã khóa và qua kiểm tra schema, mã ca, digest của mục và hash bằng
+chứng trước/sau. Bản HTML local có tính năng xuất gộp và lưu nháp, khác hash
+của bản HTML trong manifest. Phần biểu mẫu tĩnh khớp bản gốc và bản gốc khớp
+manifest. Phiếu đã qua kiểm tra cấu trúc. Hồ sơ D10 về quyền tiếp cận và lưu phiếu
+còn chờ, registry production có 0 đề xuất đã xác thực từ lô này và 0 reference
+được duyệt. [Biên nhận](human_gate/receipts/c2_37_20261123/r03_return_20261128.json)
+· [D10 C2-37](C2_37_D10_VI.md)
+
+Panel vẫn có 0/37 ca tương thích với D4 ở trường và precision đã khóa.
+C2-37 tiếp tục theo hướng mô tả nguồn và giữ NO_GO_SUPERIORITY.
+[Kiểm tra tương thích](G04_5_C2_37_COMPATIBILITY_AUDIT_VI.md)
+
 ## C2-45 · Hồ sơ kiểm chứng con người ngày 22/11/2026
 
 Đã chuẩn bị và kiểm hai gói C2-45 trên 24 ID, mỗi gói 45 phiếu trống. Đối chiếu 110 candidate/40 ID cho kết quả 0 đủ điều kiện. Chữ ký Round 1, D10, hai proposal và phân xử còn chờ. [Kết quả và hồ sơ bàn giao](C2_45_HUMAN_EVIDENCE_GATE_VI.md)
