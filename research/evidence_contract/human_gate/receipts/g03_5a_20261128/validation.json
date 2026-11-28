@@ -1,0 +1,136 @@
+{
+  "base_commit": "d86f5c47d312b4fb96fe5cb569f77aca823d476b",
+  "schema": "g03.5a-validation/1",
+  "snapshot": {
+    "approved_references_at_seal": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "authority_status": "NO_HUMAN_AUTHORITY_CONFIGURED",
+    "c2_eligible_at_seal": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "compatibility": {
+      "AMBIGUOUS_MAPPING": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "STRUCTURALLY_COMPATIBLE": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "UNSUPPORTED_LITERAL_PROFILE": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "UNSUPPORTED_PRECISION": {
+        "candidates": 26,
+        "physical_ids": 16
+      },
+      "UNSUPPORTED_SOURCE_SLOT": {
+        "candidates": 11,
+        "physical_ids": 11
+      }
+    },
+    "conditions_at_seal": {
+      "backup_supported_after": "UNKNOWN",
+      "backup_supported_before": "UNKNOWN",
+      "distinct_sources": "PASS",
+      "primary_removed_after": "UNKNOWN",
+      "primary_supported_before": "UNKNOWN",
+      "provenance_verified": "PASS",
+      "reference_approved": "FAIL",
+      "semantic_equality_approved": "UNKNOWN"
+    },
+    "d10_pending_at_seal": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "d4_input_frame": {
+      "candidates": 0,
+      "physical_ids": 0
+    },
+    "enrolled": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "input_blockers": {
+      "D4_INCOMPATIBLE": {
+        "candidates": 37,
+        "physical_ids": 18
+      },
+      "PAIRED_OUTPUT_MISSING": {
+        "candidates": 37,
+        "physical_ids": 18
+      },
+      "REFERENCE_MISSING": {
+        "candidates": 37,
+        "physical_ids": 18
+      },
+      "RIGHTS_MISSING": {
+        "candidates": 37,
+        "physical_ids": 18
+      }
+    },
+    "ordered_binding_digest": "a14eb649da2ca529eb944f9d43ad143eaf940ef1572c89578eb5f1828ff138fd",
+    "pins": {
+      "cache_preflight": "a299554981a063dd2b807aa366c28aef5ee27b8329d29a66f83143b40368d3c0",
+      "g04_5": "b56649ff9bc7dd125771f12423338a0da04680f5a8d44866ccb3d618a3343d5b",
+      "manifests": {
+        "R02": "32863c2bb639e27f52fe0e3a301de1eb655610d3479e7caf303243994ed64cfe",
+        "R03": "212e9c1c894496d1d2cc6bc0b7f1d225b011807b97658899dd15c53389d2fcc4"
+      },
+      "queue": "7ceabd648278be594c9f66d9a32f974ed010fdcc37abc59c4727d6633ed7622d",
+      "rights": "31bf62f98c7c970989dd57b8c393bd39b8c763f0cc3eb4b244c6651168381358",
+      "selection": "60e9e054bb6502261fadd3b533364f6607faa9daeeec7d4039880299fe45cddc"
+    },
+    "pointwise_metrics": null,
+    "real_d4_calls": 0,
+    "real_forms_opened": 0,
+    "relation_metrics": null,
+    "schema": "g03.5a-local-integration/1",
+    "scientific_gate": "GO_PREPARATORY_ONLY",
+    "scope": "PREPARATORY_ONLY",
+    "truth_not_supplied": {
+      "candidates": 37,
+      "physical_ids": 18
+    },
+    "verified_pairs_at_cache_preflight": {
+      "candidates": 0,
+      "physical_ids": 0
+    }
+  },
+  "tests": {
+    "command": [
+      "python",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "pytest",
+      "--import-mode=importlib",
+      "-p",
+      "no:cacheprovider",
+      "-q",
+      "research/evidence_contract/tests/test_g03_5a_integration.py",
+      "research/evidence_contract/tests/test_g04_5_compatibility.py",
+      "research/evidence_contract/tests/test_c2_human_gate.py",
+      "research/evidence_contract/cloud_g01_g03/test_c2_37_fixture_v2.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "passed": 96,
+    "python": "3.11.4",
+    "skipped": 0,
+    "source_sha256": {
+      "cloud_g01_g03/test_c2_37_fixture_v2.py": "5a8daf5da181e47f27833c074d10b072c4c635a161978d764b739aa8194e8403",
+      "human_gate/integration37.py": "f25dd78b230dae1316654432b1820ff23b48aad7952dd1af7a4726e62427a9f5",
+      "human_gate/integration37_fixture.py": "818608bc926c62eefaf45dd862b91e1b35ce7e1e1751370f51dee44b1d3cc899",
+      "tests/test_c2_human_gate.py": "9c38c65956ecc18ca7dfe51120cab680918512b179b3836a978e782d5db1a796",
+      "tests/test_g03_5a_integration.py": "c805551ca231096f734a9a04bcf8e5956dfc21470e7acb6b79a86fe12bce37cf",
+      "tests/test_g04_5_compatibility.py": "97be135bbf6022395f8cc26cf29b401ec56fde87731330a35ff3938a25408af5"
+    },
+    "subtests_passed": 12
+  }
+}
