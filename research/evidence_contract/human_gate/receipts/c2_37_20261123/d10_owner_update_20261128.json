@@ -1,0 +1,38 @@
+{
+  "schema": "c2-37-d10-owner-update/1",
+  "date_local": "2026-11-28",
+  "scope": "C2_37_PROPOSED",
+  "run": "c2_37_20261123",
+  "decision_status": "CONDITIONAL_REVIEW_PENDING_RIGHTS",
+  "panel": {
+    "candidates": 37,
+    "physical_ids": 18,
+    "excluded_candidates": 8,
+    "excluded_physical_ids": 6
+  },
+  "local_reconciliation": {
+    "sealed_artifact_family_digests_verified": 5,
+    "sealed_manifests_verified": 2,
+    "images_verified_per_workspace": 155,
+    "current_html_matches_sealed_manifest_workspaces": 0,
+    "backup_html_matches_sealed_manifest_workspaces": 2,
+    "current_static_form_markup_matches_sealed_workspaces": 2,
+    "local_zip_files_hashed": 157,
+    "local_zip_matches_updated_workspace": true,
+    "delivery_history_verified": false,
+    "recipient_workspace_version_verified": false
+  },
+  "review_return": {
+    "content_validated_forms": 37,
+    "status": "CONTENT_VALIDATED_ONLY",
+    "received_before_d10_completion": true
+  },
+  "rights_evidence": "PENDING",
+  "retention_implementation": "PENDING_VERIFICATION",
+  "signature": "PENDING",
+  "effective_date": null,
+  "review_access": "REVIEW_ACCESS_PENDING",
+  "retention": "RETENTION_PENDING",
+  "release": "RELEASE_PENDING",
+  "scientific_gate": "GO_PREPARATORY_ONLY"
+}

@@ -1,5 +1,14 @@
 # EASE 2027 · Master execution
 
+## C2-37 · D10 ngày 28/11/2026
+
+Đã ghi nhận quyết định có điều kiện của chủ dự án. Đã xác minh năm digest
+nhóm bản niêm phong và đối chiếu hai workspace local có HTML cập nhật.
+Chờ xác nhận phiên bản đã giao, căn cứ phân phối và cách triển khai lưu trữ.
+Chữ ký và ngày hiệu lực còn chờ. R03 giữ `CONTENT_VALIDATED_ONLY`. Quyền tiếp
+cận, lưu trữ và phát hành đều đang chờ. [Hồ sơ D10](C2_37_D10_VI.md)
+
+
 ## C2-37 · Kiểm tra phiếu R03 ngày 28/11/2026
 
 Nhận một JSON gộp của R03 cho C2-37. Cả **37/37 phiếu trên 18 giấy tờ** khớp
