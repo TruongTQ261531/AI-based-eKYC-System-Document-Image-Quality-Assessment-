@@ -1,0 +1,33 @@
+{
+  "decision_date_local": "2026-11-28",
+  "decision_status": "OWNER_POLICY_ACCEPTED",
+  "scope": "C2_37_PROPOSED",
+  "run": "c2_37_20261123",
+  "implementation_status": "VERIFIED_HISTORICAL_LINEAGE_AND_SOURCE_BINDINGS",
+  "reviewer_exposure_reconciliation": "PENDING_AUTHORIZED_USE",
+  "r03_evidence_status": "CONTENT_VALIDATED_ONLY",
+  "scientific_gate": "GO_PREPARATORY_ONLY",
+  "candidate_direct_exposure": {
+    "EXPOSURE_UNKNOWN": 37
+  },
+  "historical_physical_id_exposure": {
+    "EXPOSED": 18
+  },
+  "panel": {
+    "candidates": 37,
+    "physical_ids": 18
+  },
+  "private_ledger_sha256_canonical": "1d495f39cf97ea77b1a3eeab9a3a4d4f530d68a8a9186f7ff94a96a44b330232",
+  "reviewer_declared_exposure_mapping": {
+    "NO_KNOWN_EXPOSURE": "EXPOSURE_UNKNOWN",
+    "PREVIOUSLY_SEEN": "EXPOSED",
+    "UNCERTAIN": "EXPOSURE_UNKNOWN"
+  },
+  "reviewer_submissions_opened": 0,
+  "schema": "c2-37-d11-technical-check/1",
+  "source_stage_bindings": 148,
+  "source_stage_bindings_with_missing_crop": 5,
+  "source_stage_direct_exposure": {
+    "EXPOSURE_UNKNOWN": 148
+  }
+}

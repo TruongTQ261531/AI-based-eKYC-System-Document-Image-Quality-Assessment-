@@ -1,5 +1,15 @@
 # EASE 2027 · Master execution
 
+## C2-37 · D11 ngày 28/11/2026
+
+Chủ dự án đã chấp thuận quy tắc exposure và dự án đã ghi thành hồ sơ D11.
+Kiểm tra local đối chiếu 37 ca với 18 giấy tờ có dấu vết trong nghiên cứu
+trước đây và ghi 148 liên kết nguồn trước/sau. Exposure trực tiếp ở cấp
+ca và từng nguồn còn chưa xác định trong lần kiểm này. Phiếu R03 giữ
+`CONTENT_VALIDATED_ONLY` và còn chờ quyền sử dụng để đối chiếu khai báo.
+[Quyết định D11 và phạm vi xác minh](C2_37_D11_EXPOSURE_POLICY_VI.md)
+
+
 ## C2-37 · D10 ngày 28/11/2026
 
 Đã ghi nhận quyết định có điều kiện của chủ dự án. Đã xác minh năm digest
