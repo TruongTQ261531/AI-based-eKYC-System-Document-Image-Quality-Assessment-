@@ -1,0 +1,189 @@
+{
+  "assessor_results_opened": 0,
+  "assets_per_manifest": 155,
+  "d4_pins": {
+    "mrz_ablation_v1.py": "6e4228d501e4f32e37d366c97406442710bc7fc20c5b83cf326275ecf34f3bd8",
+    "policy.py": "c30218c6e0727ac9a56efa4addd7390f2a68527af29d2ae60c0524a7b5518a26"
+  },
+  "enrolled": {
+    "candidates": 37,
+    "physical_ids": 18
+  },
+  "evidence_domain": "TECHNICAL_METADATA_AND_PIXELS",
+  "gates": "GO_PREPARATORY_ONLY / NO_GO_SUPERIORITY / P5B INFEASIBLE / TASK 6B/7B BLOCKED",
+  "groups": {
+    "body_precision": {
+      "FOUR_DIGIT_YEAR": {
+        "candidates": 26,
+        "physical_ids": 16
+      },
+      "IDENTIFIER": {
+        "candidates": 11,
+        "physical_ids": 11
+      }
+    },
+    "both_mrz_crop_files": {
+      "AT_LEAST_ONE_DIFFERS": {
+        "candidates": 5,
+        "physical_ids": 3
+      },
+      "IDENTICAL": {
+        "candidates": 32,
+        "physical_ids": 15
+      }
+    },
+    "both_mrz_polygon_pixels": {
+      "IDENTICAL": {
+        "candidates": 37,
+        "physical_ids": 18
+      }
+    },
+    "diagnostic_yymmdd_projection": {
+      "DIFFERENT": {
+        "candidates": 1,
+        "physical_ids": 1
+      },
+      "MATCH": {
+        "candidates": 25,
+        "physical_ids": 16
+      }
+    },
+    "field": {
+      "dob": {
+        "candidates": 14,
+        "physical_ids": 14
+      },
+      "expiry_date": {
+        "candidates": 12,
+        "physical_ids": 12
+      },
+      "id_number": {
+        "candidates": 11,
+        "physical_ids": 11
+      }
+    },
+    "locked_identifier_vs_optional_data": {
+      "DIFFERENT": {
+        "candidates": 4,
+        "physical_ids": 4
+      },
+      "MATCH_EXACT": {
+        "candidates": 7,
+        "physical_ids": 7
+      }
+    },
+    "mutation": {
+      "field_clip": {
+        "candidates": 5,
+        "physical_ids": 4
+      },
+      "value_mask": {
+        "candidates": 32,
+        "physical_ids": 15
+      }
+    },
+    "number_vs_document_slot": {
+      "MATCH": {
+        "candidates": 11,
+        "physical_ids": 11
+      }
+    },
+    "td3_native_precision": {
+      "td3_literal_checks_pass": {
+        "candidates": 37,
+        "physical_ids": 18
+      }
+    },
+    "technical": {
+      "AMBIGUOUS_MAPPING": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "STRUCTURALLY_COMPATIBLE": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "UNSUPPORTED_LITERAL_PROFILE": {
+        "candidates": 0,
+        "physical_ids": 0
+      },
+      "UNSUPPORTED_PRECISION": {
+        "candidates": 26,
+        "physical_ids": 16
+      },
+      "UNSUPPORTED_SOURCE_SLOT": {
+        "candidates": 11,
+        "physical_ids": 11
+      }
+    },
+    "template": {
+      "aze_passport": {
+        "candidates": 12,
+        "physical_ids": 7
+      },
+      "lva_passport": {
+        "candidates": 11,
+        "physical_ids": 4
+      },
+      "srb_passport": {
+        "candidates": 14,
+        "physical_ids": 7
+      }
+    },
+    "template_field": {
+      "aze_passport/dob": {
+        "candidates": 5,
+        "physical_ids": 5
+      },
+      "aze_passport/expiry_date": {
+        "candidates": 4,
+        "physical_ids": 4
+      },
+      "aze_passport/id_number": {
+        "candidates": 3,
+        "physical_ids": 3
+      },
+      "lva_passport/dob": {
+        "candidates": 4,
+        "physical_ids": 4
+      },
+      "lva_passport/expiry_date": {
+        "candidates": 3,
+        "physical_ids": 3
+      },
+      "lva_passport/id_number": {
+        "candidates": 4,
+        "physical_ids": 4
+      },
+      "srb_passport/dob": {
+        "candidates": 5,
+        "physical_ids": 5
+      },
+      "srb_passport/expiry_date": {
+        "candidates": 5,
+        "physical_ids": 5
+      },
+      "srb_passport/id_number": {
+        "candidates": 4,
+        "physical_ids": 4
+      }
+    }
+  },
+  "manifest_digests": {
+    "R02": "32863c2bb639e27f52fe0e3a301de1eb655610d3479e7caf303243994ed64cfe",
+    "R03": "212e9c1c894496d1d2cc6bc0b7f1d225b011807b97658899dd15c53389d2fcc4"
+  },
+  "pending_human_evidence_at_seal": {
+    "candidates": 37,
+    "physical_ids": 18
+  },
+  "provider_header_sha256": "75dd3432dc70ced7642db64bedf5f8e7385664425f62dc80ef7b289a135133ad",
+  "queue_sha256": "7ceabd648278be594c9f66d9a32f974ed010fdcc37abc59c4727d6633ed7622d",
+  "real_d4_evaluations": 0,
+  "schema": "g04.5-c2-37-compatibility/1",
+  "scientific_eligible_at_seal": {
+    "candidates": 0,
+    "physical_ids": 0
+  },
+  "scope_aggregate_sha256": "b60d5ac5f22f880e6fd59030554daeee5c19f1eeb9b86b41d4177bcef4e6e958"
+}
